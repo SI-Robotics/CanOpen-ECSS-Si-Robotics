@@ -1,0 +1,68 @@
+git clone https://gitlab.com/n7space/canopen/lely-core.git --depth=1 --branch=v3.5.0
+
+autoreconf -i
+
+
+
+
+./configure --host=arm-none-eabi \
+"LDFLAGS= -mcpu=cortex-m4 \
+-mthumb \
+-mfloat-abi=hard \
+-mfpu=fpv4-sp-d16 \
+-ffunction-sections \
+-fdata-sections \
+-Wl,--gc-sections \
+--specs=nosys.specs" \
+"CFLAGS= -O2 -ggdb3 \
+-mcpu=cortex-m4 \
+-mthumb \
+-mfloat-abi=hard \
+-mfpu=fpv4-sp-d16 \
+-ffunction-sections \
+-fdata-sections \
+-DLELY_HAVE_ITIMERSPEC=1" \
+--enable-ecss-compliance \
+--disable-shared \
+--disable-python \
+--disable-tests \
+--disable-unit-tests \
+--disable-threads
+
+
+
+
+make -j
+
+make check
+
+make html
+
+sudo make install
+
+make install DESTDIR="$PWD/_stm32_install"
+
+////////////////////dcf
+
+cd python/dcf-tools
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -U pip wheel
+pip install empy
+pip install pyyaml
+pip install "setuptools==65.5.1"
+
+python3 setup.py install
+dcf2dev --help
+
+// go back to main repo
+mkdir -p stm32/od
+cp test/co-nmt-master.dcf stm32/od/master.dcf
+cp test/co-nmt-slave.dcf  stm32/od/slave.dcf
+
+dcf2dev --header stm32/od/master.dcf od_master > stm32/od/od_master.h
+dcf2dev          stm32/od/master.dcf od_master > stm32/od/od_master.c
+
+dcf2dev --header stm32/od/slave.dcf od_slave > stm32/od/od_slave.h
+dcf2dev          stm32/od/slave.dcf od_slave > stm32/od/od_slave.c
+
