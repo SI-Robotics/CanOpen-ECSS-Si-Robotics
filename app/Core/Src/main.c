@@ -36,13 +36,36 @@
 #include <lely/util/memory.h>
 #include <lely/util/mempool.h>
 #include <string.h>
+#include <lely/util/error.h>
+//#include <lely/co/nmt_rdn.h>
+
+
+#if defined(LELY_NO_CO_NMT_HB)
+#warning "LELY_NO_CO_NMT_HB is defined"
+#endif
+#if defined(LELY_NO_CO_HB)
+#warning "LELY_NO_CO_HB is defined"
+#endif
+#if defined(LELY_NO_CO_NMT)
+#warning "LELY_NO_CO_NMT is defined"
+#endif
+
+#define PDO
+
 //#define ACTUATOR
 #define MASTER
 
 #ifdef ACTUATOR
-#include "od_slave.h"   // wygenerowane przez dcf2dev
+#ifdef PDO
+#include <lely/co/rpdo.h>
+#include <lely/co/tpdo.h>
+#include "od_slave_pdo.h"
 #else
-#include "od_master.h"
+#include "od_slave.h"   // wygenerowane przez dcf2dev
+
+#endif
+#else
+#include "od_master_pdo.h"
 #endif
 /* USER CODE END Includes */
 
@@ -84,7 +107,10 @@ static uint8_t g_pool_mem[MEMPOOL_SIZE] __attribute__((aligned(16)));
 static can_net_t *g_net = NULL;
 static co_dev_t  *g_dev = NULL;
 static co_nmt_t  *g_nmt = NULL;
-
+#if defined(ACTUATOR)
+static co_rpdo_t *g_rpdo1 = NULL;
+static co_tpdo_t *g_tpdo1 = NULL;
+#endif
 static struct timespec g_ts = {0};
 
 //volatile int g_fail_bus_a = 0;
@@ -97,14 +123,38 @@ static volatile uint32_t g_last_rx_id  = 0;
 static volatile uint32_t g_last_tx_id  = 0;
 static volatile uint32_t g_last_bus    = 0;
 static volatile uint32_t g_fail_code   = 0;
-
+//static volatile uint32_t g_fail_code = 0;
 static volatile uint_least8_t g_active_bus = BUS_A;
+//static volatile uint_least8_t g_active_bus = BUS_A;
 //static volatile co_nmt_ecss_rdn_reason_t g_rdn_reason = 0;
+
+static can_timer_t* ttest = NULL;
+static volatile struct timespec g_deadline;
+static volatile int g_deadline_valid = 0;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+static int my_can_next_func(const struct timespec* tp, void* data)
+{
+    (void)data;
+    if (!tp) { g_deadline_valid = 0; return 0; }   // brak deadline
+    g_deadline = *tp;
+    g_deadline_valid = 1;
+//    __BKPT(0);
+    return 0;
+}
+
+
+
+static int ttest_cb(const struct timespec* tp, void* data){
+  (void)tp; (void)data;
+//  __BKPT(0);                 // będzie walić co 100ms jak timery działają
+  return 0;
+}
 
 /* USER CODE END PFP */
 
@@ -142,11 +192,22 @@ static uint32_t len_to_dlc(uint8_t len)
 
 static void die(uint32_t code) {
   g_fail_code = code;
+  volatile int errc = get_errc();  // <<<<< KLUCZ: zobacz w debuggerze
+  (void)errc;
   __BKPT(0);
   __disable_irq();
   while (1) {}
 }
 
+static void assert_obj(co_dev_t* dev, uint16_t idx) {
+  co_obj_t* o = co_dev_find_obj(dev, idx);
+  if (!o) {
+	  __BKPT(0);
+    Error_Handler();
+  }
+}
+
+#define DIE(code) do { die(code); } while(0)
 //////////////////////////////////////////////////////////////////////////
 
 static void FDCAN_AcceptAll(FDCAN_HandleTypeDef *h)
@@ -174,6 +235,7 @@ static FDCAN_HandleTypeDef* bus_to_fdcan(uint_least8_t bus_id)
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
+
 static int lely_can_send(const struct can_msg *msg, uint_least8_t bus_id, void *data)
 {
   (void)data;
@@ -185,11 +247,23 @@ static int lely_can_send(const struct can_msg *msg, uint_least8_t bus_id, void *
   // bus_id = g_active_bus;
 
   FDCAN_HandleTypeDef *h = bus_to_fdcan(bus_id);
-  if (!h) return -1;
-
+  if (!h) {
+    g_fail_code = 0xE002; // bad bus_id
+    __BKPT(0);
+    return -1;
+  }
   FDCAN_TxHeaderTypeDef txh;
   memset(&txh, 0, sizeof(txh));
-
+#if defined(ACTUATOR)
+  if(msg->id == 0x182)
+  {
+//	  __BKPT(0);
+  }
+  if(msg->id == 0x702)
+  {
+	  __BKPT(0);
+  }
+#endif
   const bool is_ext = (msg->flags & CAN_FLAG_IDE) != 0;
   const bool is_rtr = (msg->flags & CAN_FLAG_RTR) != 0;
 
@@ -206,22 +280,77 @@ static int lely_can_send(const struct can_msg *msg, uint_least8_t bus_id, void *
   const uint8_t n = (msg->len > 8) ? 8 : (uint8_t)msg->len;
   if (!is_rtr && n) memcpy(payload, msg->data, n);
   if (HAL_FDCAN_AddMessageToTxFifoQ(h, &txh, payload) != HAL_OK)
-    return -1;
+  {
+	    g_fail_code = 0xE001;                // TX fail during NMT create
+	    g_last_bus  = bus_id;
+	    g_last_tx_id = msg->id;
+	    __BKPT(0);
+	    return -1;
+  }
+
 
   return 0;
 }
 
+static inline uint32_t u32_le(const uint8_t *d)
+{
+  return (uint32_t)d[0]
+      | ((uint32_t)d[1] << 8)
+      | ((uint32_t)d[2] << 16)
+      | ((uint32_t)d[3] << 24);
+}
+
+static void lely_time_tick_1ms(void)
+{
+  g_ts.tv_nsec += 1000000L;
+  if (g_ts.tv_nsec >= 1000000000L) {
+    g_ts.tv_nsec -= 1000000000L;
+    g_ts.tv_sec += 1;
+  }
+  if (g_net) (void)can_net_set_time(g_net, &g_ts);
+}
+
+static void on_ecss_rdn(co_nmt_t *nmt, uint_least8_t bus_id,co_nmt_ecss_rdn_reason_t reason, void *data)
+{
+  (void)nmt; (void)reason; (void)data;
+  g_active_bus = bus_id;
+  __BKPT(0);
+}
+
+
+
 static void lely_can_rx_push(uint_least8_t bus_id, uint32_t id, bool ext, bool rtr, uint8_t *data, uint8_t len)
 {
   if (!g_net) return;
-  if (!ext && id == 0x702)
-  {
-//    __BKPT(0); // heartbeat slave node 2
-  }
-  if (!ext && id == 0x582)
-  { // odpowiedź SDO od node 2
-//    __BKPT(0);
-  }
+
+//#if defined(ACTUATOR)
+//  // RPDO1 dla node 2: COB-ID 0x200 + 2 = 0x202
+//  if (!ext && !rtr && id == (0x200u + NODE_ID) && len >= 4) {
+//    uint32_t cmd = u32_le(data);
+//    // zapis do OD: 0x2001:00 (RPDO1_command_u32)
+//    (void)co_dev_set_val(g_dev, 0x2001, 0x00, &cmd, sizeof(cmd));
+//    // debug: breakpoint / LED
+//    // __BKPT(0);
+//  }
+//#elif defined(MASTER)
+//  if (!ext && !rtr && id == (0x180u + 2u) && len >= 4) {
+//    uint32_t tp = u32_le(data);
+//    // tu np. breakpoint:
+//    // __BKPT(0);
+//    (void)tp;
+//  }
+//#endif
+//  if (!ext && id == 0x702)
+//  {
+////    __BKPT(0); // heartbeat slave node 2
+//  }
+//  if (!ext && id == 0x582)
+//  { // odpowiedź SDO od node 2
+////    __BKPT(0);
+//  }
+
+
+  g_last_rx_id = id;
   struct can_msg m = CAN_MSG_INIT;
   m.id = id;
   if (ext) m.flags |= CAN_FLAG_IDE;
@@ -232,10 +361,28 @@ static void lely_can_rx_push(uint_least8_t bus_id, uint32_t id, bool ext, bool r
   if (len && data) memcpy(m.data, data, len);
 
   g_last_rx_id = id;
+  if (!ext && (id == 0x000u || id == (0x700u + NODE_ID))) {
+    __BKPT(0);
+  }
+#if defined(MASTER)
+  // TPDO1 od slave NODE_ID=2 ma COB-ID 0x180 + 2 = 0x182
+  if (!ext && !rtr && id == (0x180u + 2u) && len >= 4) {
+    volatile uint32_t tpdo_u32 = u32_le(data);   // podgląd w debuggerze
+    g_last_rx_id = id;                           // już masz, ale nie szkodzi
+//    __BKPT(0);                                   // <<< tu Ci zatrzyma jak przyszło TPDO
+    (void)tpdo_u32;
+  }
+#endif
   (void)can_net_recv(g_net, &m, bus_id);
+	#if defined(MASTER)
+	  // podgląd TPDO1 od node2: 0x182
+	  if (!ext && !rtr && id == (0x180u + 2u) && len >= 4) {
+		volatile uint32_t tp = u32_le(data);
+		(void)tp;
+		// __BKPT(0);
+	  }
+	#endif
 }
-
-
 
 void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t it)
 {
@@ -260,27 +407,72 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t it)
   }
 }
 
-/* ====== czas dla can_net ====== */
-static void lely_time_tick_1ms(void)
+static void send_nmt(uint8_t cs, uint8_t node_id, uint_least8_t bus_id)
 {
-  g_ts.tv_nsec += 1000000L;
-  if (g_ts.tv_nsec >= 1000000000L) {
-    g_ts.tv_nsec -= 1000000000L;
-    g_ts.tv_sec += 1;
-  }
-  if (g_net) (void)can_net_set_time(g_net, &g_ts);
+  // NMT: COB-ID 0x000, 2 bajty: [cs, node]
+  struct can_msg m = CAN_MSG_INIT;
+  m.id  = 0x000;
+  m.len = 2;
+  m.data[0] = cs;        // 0x01=start, 0x02=stop, 0x80=pre-op, 0x81=reset node, 0x82=reset comm
+  m.data[1] = node_id;   // 0=all nodes, albo konkretny node
+
+  (void)lely_can_send(&m, bus_id, NULL);
+}
+
+static void send_rpdo1_u32(uint8_t node_id, uint32_t val, uint_least8_t bus_id){
+  struct can_msg m = CAN_MSG_INIT;
+  m.id  = 0x200u + node_id;
+  m.len = 4;
+  m.data[0] = (uint8_t)(val & 0xFF);
+  m.data[1] = (uint8_t)((val >> 8) & 0xFF);
+  m.data[2] = (uint8_t)((val >> 16) & 0xFF);
+  m.data[3] = (uint8_t)((val >> 24) & 0xFF);
+  (void)lely_can_send(&m, bus_id, NULL);
 }
 
 
-static void on_ecss_rdn(co_nmt_t *nmt, uint_least8_t bus_id,co_nmt_ecss_rdn_reason_t reason, void *data)
+#if defined(ACTUATOR)
+static void pdo_config_slave_runtime(void)
 {
-  (void)nmt; (void)reason; (void)data;
-  g_active_bus = bus_id;
-  __BKPT(0);
+  // TPDO1 -> 0x2000:00 (U32), COB-ID 0x180+NODE
+  uint32_t tpdo_cobid     = 0x180u + NODE_ID;        // 0x182
+  uint32_t tpdo_cobid_dis = tpdo_cobid | 0x80000000u;
+  uint8_t  tt_event = 255; // event-driven
+  uint16_t inhibit = 0;
+  uint16_t event_ms = 0;
+
+  (void)co_dev_set_val(g_dev, 0x1800, 0x01, &tpdo_cobid_dis, sizeof(tpdo_cobid_dis));
+  uint8_t n0 = 0;
+  (void)co_dev_set_val(g_dev, 0x1A00, 0x00, &n0, sizeof(n0));
+
+  uint32_t map_t = 0x21000020u; // idx=0x2000 sub=0 len=32
+  (void)co_dev_set_val(g_dev, 0x1A00, 0x01, &map_t, sizeof(map_t));
+  uint8_t n1 = 1;
+  (void)co_dev_set_val(g_dev, 0x1A00, 0x00, &n1, sizeof(n1));
+
+  (void)co_dev_set_val(g_dev, 0x1800, 0x02, &tt_event, sizeof(tt_event));
+  (void)co_dev_set_val(g_dev, 0x1800, 0x03, &inhibit, sizeof(inhibit));
+  (void)co_dev_set_val(g_dev, 0x1800, 0x05, &event_ms, sizeof(event_ms));
+
+  (void)co_dev_set_val(g_dev, 0x1800, 0x01, &tpdo_cobid, sizeof(tpdo_cobid));
+
+  // RPDO1 <- 0x2001:00 (U32), COB-ID 0x200+NODE
+  uint32_t rpdo_cobid     = 0x200u + NODE_ID;        // 0x202
+  uint32_t rpdo_cobid_dis = rpdo_cobid | 0x80000000u;
+
+  (void)co_dev_set_val(g_dev, 0x1400, 0x01, &rpdo_cobid_dis, sizeof(rpdo_cobid_dis));
+  (void)co_dev_set_val(g_dev, 0x1600, 0x00, &n0, sizeof(n0));
+
+  uint32_t map_r = 0x21010020u; // idx=0x2001 sub=0 len=32
+  (void)co_dev_set_val(g_dev, 0x1600, 0x01, &map_r, sizeof(map_r));
+  (void)co_dev_set_val(g_dev, 0x1600, 0x00, &n1, sizeof(n1));
+
+  (void)co_dev_set_val(g_dev, 0x1400, 0x01, &rpdo_cobid, sizeof(rpdo_cobid));
 }
+#endif
 
 
-/* ====== MASTER test: SDO write ====== */
+
 #if defined(MASTER)
 static void send_sdo_write_u32(uint8_t node, uint16_t idx, uint8_t sub, uint32_t val)
 {
@@ -300,19 +492,10 @@ static void send_sdo_write_u32(uint8_t node, uint16_t idx, uint8_t sub, uint32_t
 }
 #endif
 
-static void send_nmt(uint8_t cs, uint8_t node_id, uint_least8_t bus_id)
-{
-  // NMT: COB-ID 0x000, 2 bajty: [cs, node]
-  struct can_msg m = CAN_MSG_INIT;
-  m.id  = 0x000;
-  m.len = 2;
-  m.data[0] = cs;        // 0x01=start, 0x02=stop, 0x80=pre-op, 0x81=reset node, 0x82=reset comm
-  m.data[1] = node_id;   // 0=all nodes, albo konkretny node
 
-  (void)lely_can_send(&m, bus_id, NULL);
-}
 
-#define DIE(code) do { die(code); } while(0)
+
+
 
 static void CANopen_Start(void)
 {
@@ -322,38 +505,95 @@ static void CANopen_Start(void)
 	  g_net = can_net_create(alloc, BUS_A);
 	  if (!g_net) DIE(2);
 
+
 	  can_net_set_send_func(g_net, &lely_can_send, NULL);
+	  can_net_set_next_func(g_net, &my_can_next_func, NULL);
+	  g_ts.tv_sec = 0;
+	  g_ts.tv_nsec = 1000000L;   // 1ms start
+	  (void)can_net_set_time(g_net, &g_ts);
+
+	  ttest = can_timer_create(alloc);
+	  if (!ttest) DIE(90);
+	  can_timer_set_func(ttest, ttest_cb, NULL);
+
+	  struct timespec interval = { .tv_sec = 0, .tv_nsec = 100000000L }; // 100 ms
+	  can_timer_start(ttest, g_net, NULL, &interval);
+
 	  g_dev = app_od_init();
 	  if (!g_dev) DIE(3);
 
-	  co_dev_set_id(g_dev, (co_unsigned8_t)NODE_ID);
+	  int ret2 = co_dev_set_id(g_dev, (co_unsigned8_t)NODE_ID);
+	  (void)ret2;
+	  // --- ECSS RDN: napraw minimalne suby zanim zrobisz co_nmt_create() ---
 
-
+//	  {
+//	    co_unsigned8_t sub0 = 4;
+//	    co_unsigned8_t bdefault = BUS_A;
+//
+//	    (void)co_dev_set_val(g_dev, CO_NMT_RDN_REDUNDANCY_OBJ_IDX, 0x00, &sub0, sizeof(sub0));
+//	    (void)co_dev_set_val(g_dev, CO_NMT_RDN_REDUNDANCY_OBJ_IDX, 0x01, &bdefault, sizeof(bdefault));
+//	  }
 #if defined(ACTUATOR)
-	  // producer heartbeat (0x1017)
-	  const co_unsigned16_t hb_ms = 100;
-	  if (co_dev_set_val(g_dev, 0x1017, 0x00, &hb_ms, sizeof(hb_ms)) != sizeof(hb_ms))
-	    DIE(4);
-#endif
+  const co_unsigned16_t hb_ms = 100;
+  if (co_dev_set_val(g_dev, 0x1017, 0x00, &hb_ms, sizeof(hb_ms)) != sizeof(hb_ms))
+    DIE(34);
 
-#if defined(MASTER)
-	  // consumer heartbeat (0x1016:01) - monitoruj node 2 co 100ms
-	  const co_unsigned32_t hb_cons = ((co_unsigned32_t)2u << 16) | 100u;
-	  if (co_dev_set_val(g_dev, 0x1016, 0x01, &hb_cons, sizeof(hb_cons)) != sizeof(hb_cons))
-	    DIE(5);
 #endif
+//#if defined(MASTER)
+//  co_unsigned32_t vid = 0;
+//  if (co_dev_get_val_u32(g_dev, 0x1018, 0x01, &vid) != 0) { // jeśli nie masz co_dev_get_val_u32 -> patrz niżej
+//    DIE(35);
+//  }
+//#endif
 
+
+//	  assert_obj(g_dev, 0x1000);
+//	  assert_obj(g_dev, 0x1001);
+//	  assert_obj(g_dev, 0x1017);
+//	  assert_obj(g_dev, 0x1F80);
+//	  assert_obj(g_dev, 0x1200);
+	  int err = get_errc();
+	  (void)err;
+	  set_errc(0);
 	  g_nmt = co_nmt_create(g_net, g_dev);
 	  if (!g_nmt) DIE(6);
+	  const void* p = co_dev_get_val(g_dev, 0x1017, 0x00);
+	  volatile uint16_t hb = p ? *(const uint16_t*)p : 0xFFFF;
+	  (void)hb; // podejrzyj w debuggerze
 
-	  co_nmt_set_ecss_rdn_ind(g_nmt, &on_ecss_rdn, NULL);
+//	  co_nmt_set_ecss_rdn_ind(g_nmt, &on_ecss_rdn, NULL);
+//	  (void)co_nmt_set_alternate_bus_id(g_nmt, (co_unsigned8_t)BUS_B);
+#if defined(ACTUATOR)
+	  pdo_config_slave_runtime(); // <-- KLUCZ
+  g_rpdo1 = co_rpdo_create(g_net, g_dev, 1);
+  if (!g_rpdo1) DIE(61);
 
-	  (void)co_nmt_set_alternate_bus_id(g_nmt, (co_unsigned8_t)BUS_B);
+  g_tpdo1 = co_tpdo_create(g_net, g_dev, 1);
+  if (!g_tpdo1) DIE(62);
 
-		#if defined(ACTUATOR)
-		  // SLAVE: wymuś BOOT-UP (0x700+NODE_ID, 0x00) i PRE-OP po starcie stosu
-		  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_RESET_NODE);
-		#endif
+  co_rpdo_start(g_rpdo1);
+  co_tpdo_start(g_tpdo1);
+
+  // BOOT-UP: 0x700+ID, data=0
+
+  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_RESET_COMM);
+
+  // NIE startuj tutaj - master wysyła NMT START ALL
+#endif
+#if defined(MASTER)
+  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_RESET_COMM);
+//  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_START);
+#endif
+
+//	  co_nmt_set_ecss_rdn_ind(g_nmt, &on_ecss_rdn, NULL);
+//
+//	  (void)co_nmt_set_alternate_bus_id(g_nmt, (co_unsigned8_t)BUS_B);
+//
+//		#if defined(ACTUATOR)
+//		  // SLAVE: wymuś BOOT-UP (0x700+NODE_ID, 0x00) i PRE-OP po starcie stosu
+//		  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_RESET_NODE);
+//		  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_START);
+//		#endif
 //#if defined(MASTER)
 //	  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_START);
 //#endif
@@ -419,29 +659,46 @@ int main(void)
 	    lely_time_tick_1ms();
 
 		#if defined(MASTER)
-			if (!started && ms >= 1000) {
-			  started = true;
-			  send_nmt(0x01, 0x00, BUS_A);   // START ALL nodes (raz)
-			}
-			// po ~1s: START (nie RESET!)
-//			if (!started && ms >= 1000) {
-//			  started = true;
-//			  (void)co_nmt_cs_ind(g_nmt, CO_NMT_CS_START);
-//			}
+		  if (!started && ms >= 1000) {
+			started = true;
+			send_nmt(0x01, 0x00, BUS_A); // START ALL
+		  }
 
-			// po ~1.5s: SDO test do slave=2
-			if (ms == 1500) {
-			  send_sdo_write_u32(2, 0x2000, 0x00, 0xDEADBEEF);
-			}
+		  if (started && (ms % 10) == 0) {
+			static uint32_t v = 0;
+			v++;
+			send_rpdo1_u32(2, v, BUS_A); // RPDO1 do node2 => 0x202
+		  }
+		#endif
+		#if defined(ACTUATOR)
+//		    if (g_deadline_valid) {
+//		      // jeśli aktualny czas >= deadline, to odpal timery
+//		      if ((g_ts.tv_sec > g_deadline.tv_sec) ||
+//		          (g_ts.tv_sec == g_deadline.tv_sec && g_ts.tv_nsec >= g_deadline.tv_nsec)) {
+//		        g_deadline_valid = 0;
+////		        can_net_process(g_net);   // albo can_net_step()/can_net_poll() zależnie od wersji
+//		      }
+//		    }
 
-			// test przełączenia TX na BUS_B (tylko jeśli chcesz)
-			if (ms == 2000) {
-			  g_active_bus = BUS_B;
-			  // albo jeśli masz w swojej wersji:
-			  // (void)co_nmt_set_active_bus(g_nmt, BUS_B);
+
+
+		  if ((ms % 100) == 0) {
+			static uint32_t cnt = 0;
+			cnt++;
+			(void)co_dev_set_val(g_dev, 0x2100, 0x00, &cnt, sizeof(cnt));
+			if (g_tpdo1) co_tpdo_event(g_tpdo1); // TPDO1 = 0x182
+		  }
+//		  can_net_create(alloc, bus_id)
+		  // sprawdź czy RPDO1 doszło -> Lely zapisze 0x2001:00
+		  static uint32_t last = 0;
+		  const void *p = co_dev_get_val(g_dev, 0x2101, 0x00);
+		  if (p) {
+			uint32_t v = *(const uint32_t*)p;
+			if (v != last) {
+			  last = v;
+//			   __BKPT(0);
 			}
-		#else
-			(void)started;
+		  }
 		#endif
     /* USER CODE END WHILE */
 
