@@ -400,9 +400,11 @@ static co_sub_t od_slave_1400sub2 = {
 static struct {
 	co_unsigned8_t sub0;
 	co_unsigned32_t sub1;
+	co_unsigned32_t sub2;
 } od_slave_1600_val = {
-	.sub0 = 0x01,
-	.sub1 = 0x21010020,
+	.sub0 = 0x02,
+	.sub1 = 0x60400010,
+	.sub2 = 0x607A0020,
 };
 
 static co_obj_t od_slave_1600 = {
@@ -429,7 +431,7 @@ static co_sub_t od_slave_1600sub0 = {
 	.max = { .u8 = CO_UNSIGNED8_MAX },
 #endif
 #if !LELY_NO_CO_OBJ_DEFAULT
-	.def = { .u8 = 0x01 },
+	.def = { .u8 = 0x02 },
 #endif
 	.val = &od_slave_1600_val.sub0,
 	.access = CO_ACCESS_RW,
@@ -453,9 +455,33 @@ static co_sub_t od_slave_1600sub1 = {
 	.max = { .u32 = CO_UNSIGNED32_MAX },
 #endif
 #if !LELY_NO_CO_OBJ_DEFAULT
-	.def = { .u32 = 0x21010020 },
+	.def = { .u32 = 0x60400010 },
 #endif
 	.val = &od_slave_1600_val.sub1,
+	.access = CO_ACCESS_RW,
+	.pdo_mapping = 0,
+	.flags = 0,
+	.dn_ind = &co_sub_default_dn_ind,
+#if !LELY_NO_CO_OBJ_UPLOAD
+	.up_ind = &co_sub_default_up_ind
+#endif
+};
+
+static co_sub_t od_slave_1600sub2 = {
+	.node = { .key = &od_slave_1600sub2.subidx },
+	.subidx = 0x02,
+	.type = CO_DEFTYPE_UNSIGNED32,
+#if !LELY_NO_CO_OBJ_NAME
+	.name = CO_DEV_STRING("Mapped object 2"),
+#endif
+#if !LELY_NO_CO_OBJ_LIMITS
+	.min = { .u32 = CO_UNSIGNED32_MIN },
+	.max = { .u32 = CO_UNSIGNED32_MAX },
+#endif
+#if !LELY_NO_CO_OBJ_DEFAULT
+	.def = { .u32 = 0x607A0020 },
+#endif
+	.val = &od_slave_1600_val.sub2,
 	.access = CO_ACCESS_RW,
 	.pdo_mapping = 0,
 	.flags = 0,
@@ -640,9 +666,11 @@ static co_sub_t od_slave_1800sub5 = {
 static struct {
 	co_unsigned8_t sub0;
 	co_unsigned32_t sub1;
+	co_unsigned32_t sub2;
 } od_slave_1A00_val = {
-	.sub0 = 0x01,
-	.sub1 = 0x21000020,
+	.sub0 = 0x02,
+	.sub1 = 0x60410010,
+	.sub2 = 0x60640020,
 };
 
 static co_obj_t od_slave_1A00 = {
@@ -669,7 +697,7 @@ static co_sub_t od_slave_1A00sub0 = {
 	.max = { .u8 = CO_UNSIGNED8_MAX },
 #endif
 #if !LELY_NO_CO_OBJ_DEFAULT
-	.def = { .u8 = 0x01 },
+	.def = { .u8 = 0x02 },
 #endif
 	.val = &od_slave_1A00_val.sub0,
 	.access = CO_ACCESS_RW,
@@ -693,9 +721,33 @@ static co_sub_t od_slave_1A00sub1 = {
 	.max = { .u32 = CO_UNSIGNED32_MAX },
 #endif
 #if !LELY_NO_CO_OBJ_DEFAULT
-	.def = { .u32 = 0x21000020 },
+	.def = { .u32 = 0x60410010 },
 #endif
 	.val = &od_slave_1A00_val.sub1,
+	.access = CO_ACCESS_RW,
+	.pdo_mapping = 0,
+	.flags = 0,
+	.dn_ind = &co_sub_default_dn_ind,
+#if !LELY_NO_CO_OBJ_UPLOAD
+	.up_ind = &co_sub_default_up_ind
+#endif
+};
+
+static co_sub_t od_slave_1A00sub2 = {
+	.node = { .key = &od_slave_1A00sub2.subidx },
+	.subidx = 0x02,
+	.type = CO_DEFTYPE_UNSIGNED32,
+#if !LELY_NO_CO_OBJ_NAME
+	.name = CO_DEV_STRING("Mapped object 2"),
+#endif
+#if !LELY_NO_CO_OBJ_LIMITS
+	.min = { .u32 = CO_UNSIGNED32_MIN },
+	.max = { .u32 = CO_UNSIGNED32_MAX },
+#endif
+#if !LELY_NO_CO_OBJ_DEFAULT
+	.def = { .u32 = 0x60640020 },
+#endif
+	.val = &od_slave_1A00_val.sub2,
 	.access = CO_ACCESS_RW,
 	.pdo_mapping = 0,
 	.flags = 0,
@@ -1020,38 +1072,80 @@ static co_sub_t od_slave_1F80sub0 = {
 };
 
 static struct {
-	co_unsigned32_t sub0;
-} od_slave_2100_val = {
-	.sub0 = 0x00000000,
+	co_unsigned16_t sub0;
+} od_slave_6040_val = {
+	.sub0 = 0x0000,
 };
 
-static co_obj_t od_slave_2100 = {
-	.node = { .key = &od_slave_2100.idx },
-	.idx = 0x2100,
+static co_obj_t od_slave_6040 = {
+	.node = { .key = &od_slave_6040.idx },
+	.idx = 0x6040,
 	.code = CO_OBJECT_VAR,
 #if !LELY_NO_CO_OBJ_NAME
-	.name = CO_DEV_STRING("TPDO1_counter_u32"),
+	.name = CO_DEV_STRING("Controlword"),
 #endif
 	.tree = { .cmp = &uint8_cmp },
-	.val = &od_slave_2100_val,
-	.size = sizeof(od_slave_2100_val)
+	.val = &od_slave_6040_val,
+	.size = sizeof(od_slave_6040_val)
 };
 
-static co_sub_t od_slave_2100sub0 = {
-	.node = { .key = &od_slave_2100sub0.subidx },
+static co_sub_t od_slave_6040sub0 = {
+	.node = { .key = &od_slave_6040sub0.subidx },
 	.subidx = 0x00,
-	.type = CO_DEFTYPE_UNSIGNED32,
+	.type = CO_DEFTYPE_UNSIGNED16,
 #if !LELY_NO_CO_OBJ_NAME
-	.name = CO_DEV_STRING("TPDO1_counter_u32"),
+	.name = CO_DEV_STRING("Controlword"),
 #endif
 #if !LELY_NO_CO_OBJ_LIMITS
-	.min = { .u32 = CO_UNSIGNED32_MIN },
-	.max = { .u32 = CO_UNSIGNED32_MAX },
+	.min = { .u16 = CO_UNSIGNED16_MIN },
+	.max = { .u16 = CO_UNSIGNED16_MAX },
 #endif
 #if !LELY_NO_CO_OBJ_DEFAULT
-	.def = { .u32 = 0x00000000 },
+	.def = { .u16 = 0x0000 },
 #endif
-	.val = &od_slave_2100_val.sub0,
+	.val = &od_slave_6040_val.sub0,
+	.access = CO_ACCESS_RW,
+	.pdo_mapping = 1,
+	.flags = 0,
+	.dn_ind = &co_sub_default_dn_ind,
+#if !LELY_NO_CO_OBJ_UPLOAD
+	.up_ind = &co_sub_default_up_ind
+#endif
+};
+
+static struct {
+	co_unsigned16_t sub0;
+} od_slave_6041_val = {
+	.sub0 = 0x0000,
+};
+
+static co_obj_t od_slave_6041 = {
+	.node = { .key = &od_slave_6041.idx },
+	.idx = 0x6041,
+	.code = CO_OBJECT_VAR,
+#if !LELY_NO_CO_OBJ_NAME
+	.name = CO_DEV_STRING("Statusword"),
+#endif
+	.tree = { .cmp = &uint8_cmp },
+	.val = &od_slave_6041_val,
+	.size = sizeof(od_slave_6041_val)
+};
+
+static co_sub_t od_slave_6041sub0 = {
+	.node = { .key = &od_slave_6041sub0.subidx },
+	.subidx = 0x00,
+	.type = CO_DEFTYPE_UNSIGNED16,
+#if !LELY_NO_CO_OBJ_NAME
+	.name = CO_DEV_STRING("Statusword"),
+#endif
+#if !LELY_NO_CO_OBJ_LIMITS
+	.min = { .u16 = CO_UNSIGNED16_MIN },
+	.max = { .u16 = CO_UNSIGNED16_MAX },
+#endif
+#if !LELY_NO_CO_OBJ_DEFAULT
+	.def = { .u16 = 0x0000 },
+#endif
+	.val = &od_slave_6041_val.sub0,
 	.access = CO_ACCESS_RO,
 	.pdo_mapping = 1,
 	.flags = 0,
@@ -1062,38 +1156,80 @@ static co_sub_t od_slave_2100sub0 = {
 };
 
 static struct {
-	co_unsigned32_t sub0;
-} od_slave_2101_val = {
-	.sub0 = 0x00000000,
+	co_integer32_t sub0;
+} od_slave_6064_val = {
+	.sub0 = 0,
 };
 
-static co_obj_t od_slave_2101 = {
-	.node = { .key = &od_slave_2101.idx },
-	.idx = 0x2101,
+static co_obj_t od_slave_6064 = {
+	.node = { .key = &od_slave_6064.idx },
+	.idx = 0x6064,
 	.code = CO_OBJECT_VAR,
 #if !LELY_NO_CO_OBJ_NAME
-	.name = CO_DEV_STRING("RPDO1_command_u32"),
+	.name = CO_DEV_STRING("Position actual value"),
 #endif
 	.tree = { .cmp = &uint8_cmp },
-	.val = &od_slave_2101_val,
-	.size = sizeof(od_slave_2101_val)
+	.val = &od_slave_6064_val,
+	.size = sizeof(od_slave_6064_val)
 };
 
-static co_sub_t od_slave_2101sub0 = {
-	.node = { .key = &od_slave_2101sub0.subidx },
+static co_sub_t od_slave_6064sub0 = {
+	.node = { .key = &od_slave_6064sub0.subidx },
 	.subidx = 0x00,
-	.type = CO_DEFTYPE_UNSIGNED32,
+	.type = CO_DEFTYPE_INTEGER32,
 #if !LELY_NO_CO_OBJ_NAME
-	.name = CO_DEV_STRING("RPDO1_command_u32"),
+	.name = CO_DEV_STRING("Position actual value"),
 #endif
 #if !LELY_NO_CO_OBJ_LIMITS
-	.min = { .u32 = CO_UNSIGNED32_MIN },
-	.max = { .u32 = CO_UNSIGNED32_MAX },
+	.min = { .i32 = CO_INTEGER32_MIN },
+	.max = { .i32 = CO_INTEGER32_MAX },
 #endif
 #if !LELY_NO_CO_OBJ_DEFAULT
-	.def = { .u32 = 0x00000000 },
+	.def = { .i32 = 0 },
 #endif
-	.val = &od_slave_2101_val.sub0,
+	.val = &od_slave_6064_val.sub0,
+	.access = CO_ACCESS_RO,
+	.pdo_mapping = 1,
+	.flags = 0,
+	.dn_ind = &co_sub_default_dn_ind,
+#if !LELY_NO_CO_OBJ_UPLOAD
+	.up_ind = &co_sub_default_up_ind
+#endif
+};
+
+static struct {
+	co_integer32_t sub0;
+} od_slave_607A_val = {
+	.sub0 = 0,
+};
+
+static co_obj_t od_slave_607A = {
+	.node = { .key = &od_slave_607A.idx },
+	.idx = 0x607A,
+	.code = CO_OBJECT_VAR,
+#if !LELY_NO_CO_OBJ_NAME
+	.name = CO_DEV_STRING("Target position"),
+#endif
+	.tree = { .cmp = &uint8_cmp },
+	.val = &od_slave_607A_val,
+	.size = sizeof(od_slave_607A_val)
+};
+
+static co_sub_t od_slave_607Asub0 = {
+	.node = { .key = &od_slave_607Asub0.subidx },
+	.subidx = 0x00,
+	.type = CO_DEFTYPE_INTEGER32,
+#if !LELY_NO_CO_OBJ_NAME
+	.name = CO_DEV_STRING("Target position"),
+#endif
+#if !LELY_NO_CO_OBJ_LIMITS
+	.min = { .i32 = CO_INTEGER32_MIN },
+	.max = { .i32 = CO_INTEGER32_MAX },
+#endif
+#if !LELY_NO_CO_OBJ_DEFAULT
+	.def = { .i32 = 0 },
+#endif
+	.val = &od_slave_607A_val.sub0,
 	.access = CO_ACCESS_RW,
 	.pdo_mapping = 1,
 	.flags = 0,
@@ -1135,6 +1271,7 @@ od_slave_init(void) {
 		co_dev_insert_obj(&od_slave, &od_slave_1600);
 		co_obj_insert_sub(&od_slave_1600, &od_slave_1600sub0);
 		co_obj_insert_sub(&od_slave_1600, &od_slave_1600sub1);
+		co_obj_insert_sub(&od_slave_1600, &od_slave_1600sub2);
 
 		co_dev_insert_obj(&od_slave, &od_slave_1800);
 		co_obj_insert_sub(&od_slave_1800, &od_slave_1800sub0);
@@ -1147,6 +1284,7 @@ od_slave_init(void) {
 		co_dev_insert_obj(&od_slave, &od_slave_1A00);
 		co_obj_insert_sub(&od_slave_1A00, &od_slave_1A00sub0);
 		co_obj_insert_sub(&od_slave_1A00, &od_slave_1A00sub1);
+		co_obj_insert_sub(&od_slave_1A00, &od_slave_1A00sub2);
 
 		co_dev_insert_obj(&od_slave, &od_slave_1F50);
 		co_obj_insert_sub(&od_slave_1F50, &od_slave_1F50sub0);
@@ -1167,11 +1305,17 @@ od_slave_init(void) {
 		co_dev_insert_obj(&od_slave, &od_slave_1F80);
 		co_obj_insert_sub(&od_slave_1F80, &od_slave_1F80sub0);
 
-		co_dev_insert_obj(&od_slave, &od_slave_2100);
-		co_obj_insert_sub(&od_slave_2100, &od_slave_2100sub0);
+		co_dev_insert_obj(&od_slave, &od_slave_6040);
+		co_obj_insert_sub(&od_slave_6040, &od_slave_6040sub0);
 
-		co_dev_insert_obj(&od_slave, &od_slave_2101);
-		co_obj_insert_sub(&od_slave_2101, &od_slave_2101sub0);
+		co_dev_insert_obj(&od_slave, &od_slave_6041);
+		co_obj_insert_sub(&od_slave_6041, &od_slave_6041sub0);
+
+		co_dev_insert_obj(&od_slave, &od_slave_6064);
+		co_obj_insert_sub(&od_slave_6064, &od_slave_6064sub0);
+
+		co_dev_insert_obj(&od_slave, &od_slave_607A);
+		co_obj_insert_sub(&od_slave_607A, &od_slave_607Asub0);
 	}
 	return dev;
 }

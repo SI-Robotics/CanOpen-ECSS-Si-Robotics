@@ -1,0 +1,38 @@
+# ---- Project ----
+PROJECT_NAME           = "ESA CANopen Docs"
+OUTPUT_DIRECTORY       = doxygen_out
+CREATE_SUBDIRS         = NO
+
+# ---- Input ----
+INPUT                  = inc src
+FILE_PATTERNS          = *.h *.c
+RECURSIVE              = YES
+
+# ---- What to extract ----
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_LOCAL_CLASSES  = YES
+
+# ---- Doxygen parsing ----
+OPTIMIZE_OUTPUT_FOR_C  = YES
+JAVADOC_AUTOBRIEF      = YES
+MULTILINE_CPP_IS_BRIEF = YES
+
+# ---- Useful for code navigation ----
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# ---- Diagrams (optional) ----
+HAVE_DOT               = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+CLASS_DIAGRAMS         = YES
+DOT_IMAGE_FORMAT       = svg
+
+# ---- Output formats ----
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
