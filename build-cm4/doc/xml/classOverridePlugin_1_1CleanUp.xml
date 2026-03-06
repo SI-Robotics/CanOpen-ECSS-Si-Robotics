@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOverridePlugin_1_1CleanUp" kind="class" language="C++" prot="public">
+    <compoundname>OverridePlugin::CleanUp</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOverridePlugin_1_1CleanUp_1a397b724b6d96e22d3c072be81a06a892" prot="private" static="no" mutable="no">
+        <type>int32_t &amp;</type>
+        <definition>int32_t&amp; Override::OverridePlugin::CleanUp::vc_</definition>
+        <argsstring></argsstring>
+        <name>vc_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="49" column="11" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOverridePlugin_1_1CleanUp_1a15183fb8ea23634d3b263f42e8e97b16" prot="private" static="no" mutable="no">
+        <type>const int32_t</type>
+        <definition>const int32_t Override::OverridePlugin::CleanUp::org_value_</definition>
+        <argsstring></argsstring>
+        <name>org_value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="50" column="17" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOverridePlugin_1_1CleanUp_1a2a70f788d09404cc8f53355fe5f7764b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Override::OverridePlugin::CleanUp::CleanUp</definition>
+        <argsstring>(int32_t &amp;vc)</argsstring>
+        <name>CleanUp</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>vc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="40" column="12" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverridePlugin_1_1CleanUp_1ad763519c365d7fb99ea965ba29e3f37e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Override::OverridePlugin::CleanUp::~CleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>~CleanUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="41" column="3" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverridePlugin_1_1CleanUp_1a035dc97fbbf124685bc5f7b797b792e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Override::OverridePlugin::CleanUp::CleanUp</definition>
+        <argsstring>(const CleanUp &amp;)=delete</argsstring>
+        <name>CleanUp</name>
+        <param>
+          <type>const <ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="43" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverridePlugin_1_1CleanUp_1aa6540d98cbab41e7809f85aefd242625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Override::OverridePlugin::CleanUp::CleanUp</definition>
+        <argsstring>(CleanUp &amp;&amp;)=delete</argsstring>
+        <name>CleanUp</name>
+        <param>
+          <type><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="44" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverridePlugin_1_1CleanUp_1ab682c7907fecbc2da82ea4b7e62bef69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref> &amp;</type>
+        <definition>CleanUp&amp; Override::OverridePlugin::CleanUp::operator=</definition>
+        <argsstring>(const CleanUp &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="45" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverridePlugin_1_1CleanUp_1af01bffb76dba542110e2847ea97b88be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref> &amp;</type>
+        <definition>CleanUp&amp; Override::OverridePlugin::CleanUp::operator=</definition>
+        <argsstring>(CleanUp &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="46" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RAII-based cleanup executor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="38" column="1" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="38" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classOverridePlugin_1_1CleanUp_1a2a70f788d09404cc8f53355fe5f7764b" prot="public" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>CleanUp</name></member>
+      <member refid="classOverridePlugin_1_1CleanUp_1a035dc97fbbf124685bc5f7b797b792e7" prot="public" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>CleanUp</name></member>
+      <member refid="classOverridePlugin_1_1CleanUp_1aa6540d98cbab41e7809f85aefd242625" prot="public" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>CleanUp</name></member>
+      <member refid="classOverridePlugin_1_1CleanUp_1ab682c7907fecbc2da82ea4b7e62bef69" prot="public" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>operator=</name></member>
+      <member refid="classOverridePlugin_1_1CleanUp_1af01bffb76dba542110e2847ea97b88be" prot="public" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>operator=</name></member>
+      <member refid="classOverridePlugin_1_1CleanUp_1a15183fb8ea23634d3b263f42e8e97b16" prot="private" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>org_value_</name></member>
+      <member refid="classOverridePlugin_1_1CleanUp_1a397b724b6d96e22d3c072be81a06a892" prot="private" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>vc_</name></member>
+      <member refid="classOverridePlugin_1_1CleanUp_1ad763519c365d7fb99ea965ba29e3f37e" prot="public" virt="non-virtual"><scope>OverridePlugin::CleanUp</scope><name>~CleanUp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

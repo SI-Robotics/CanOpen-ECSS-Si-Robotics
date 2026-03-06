@@ -1,0 +1,899 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="types_8h" kind="file" language="C++">
+    <compoundname>types.h</compoundname>
+    <includes refid="features_8h" local="no">lely/compat/features.h</includes>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+    <includes refid="stdint_8h" local="no">stdint.h</includes>
+    <includedby refid="msg_8h" local="no">include/lely/can/msg.h</includedby>
+    <includedby refid="compat_2time_8h" local="no">include/lely/compat/time.h</includedby>
+    <includedby refid="val_8c" local="no">lib/co/val.c</includedby>
+    <includedby refid="test-cpputest_8cpp" local="no">unit-tests/cpputest/test-cpputest.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>include/lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>include/lely/co/csdo.h</label>
+        <link refid="csdo_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>unit-tests/can/test-net.cpp</label>
+        <link refid="test-net_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/lely/can/buf.h</label>
+        <link refid="buf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>unit-tests/libtest/tools/co-nmt-cs-ind.hpp</label>
+        <link refid="co-nmt-cs-ind_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>unit-tests/libtest/tools/co-tpdo-sample-ind.cpp</label>
+        <link refid="co-tpdo-sample-ind_8cpp"/>
+      </node>
+      <node id="45">
+        <label>include/lely/co/rpdo.h</label>
+        <link refid="rpdo_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>unit-tests/libtest/tools/co-nmt-rdn-ind.hpp</label>
+        <link refid="co-nmt-rdn-ind_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="29">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="77">
+        <label>unit-tests/libtest/tools/sdo-create-message.hpp</label>
+        <link refid="sdo-create-message_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>include/lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>unit-tests/libtest/tools/lely-unit-test.cpp</label>
+        <link refid="lely-unit-test_8cpp"/>
+      </node>
+      <node id="67">
+        <label>unit-tests/libtest/tools/can-send.hpp</label>
+        <link refid="can-send_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>unit-tests/libtest/tools/co-nmt-st-ind.cpp</label>
+        <link refid="co-nmt-st-ind_8cpp"/>
+      </node>
+      <node id="11">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="34">
+        <label>lib/co/nmt_srv.h</label>
+        <link refid="nmt__srv_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>unit-tests/libtest/tools/co-tpdo-ind.hpp</label>
+        <link refid="co-tpdo-ind_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>unit-tests/can/test-msg.cpp</label>
+        <link refid="test-msg_8cpp"/>
+      </node>
+      <node id="20">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="53">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="84">
+        <label>lib/co/val.c</label>
+        <link refid="val_8c"/>
+      </node>
+      <node id="46">
+        <label>lib/co/rpdo.c</label>
+        <link refid="rpdo_8c"/>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/can/test-buf.cpp</label>
+        <link refid="test-buf_8cpp"/>
+      </node>
+      <node id="36">
+        <label>unit-tests/libtest/tools/co-nmt-cs-ind.cpp</label>
+        <link refid="co-nmt-cs-ind_8cpp"/>
+      </node>
+      <node id="38">
+        <label>unit-tests/libtest/tools/co-nmt-hb-ind.cpp</label>
+        <link refid="co-nmt-hb-ind_8cpp"/>
+      </node>
+      <node id="32">
+        <label>unit-tests/co/obj-init/nmt-redundancy.hpp</label>
+        <link refid="nmt-redundancy_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>unit-tests/libtest/tools/co-rpdo-err.cpp</label>
+        <link refid="co-rpdo-err_8cpp"/>
+      </node>
+      <node id="75">
+        <label>unit-tests/co/test-sdo.cpp</label>
+        <link refid="test-sdo_8cpp"/>
+      </node>
+      <node id="31">
+        <label>lib/co/nmt_rdn.c</label>
+        <link refid="nmt__rdn_8c"/>
+      </node>
+      <node id="30">
+        <label>lib/co/nmt_rdn.h</label>
+        <link refid="nmt__rdn_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>unit-tests/libtest/tools/co-nmt-rdn-ind.cpp</label>
+        <link refid="co-nmt-rdn-ind_8cpp"/>
+      </node>
+      <node id="27">
+        <label>lib/co/nmt_hb.c</label>
+        <link refid="nmt__hb_8c"/>
+      </node>
+      <node id="26">
+        <label>lib/co/nmt_hb.h</label>
+        <link refid="nmt__hb_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="83">
+        <label>lib/util/diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="41">
+        <label>unit-tests/libtest/tools/co-nmt-st-ind.hpp</label>
+        <link refid="co-nmt-st-ind_8hpp"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="68">
+        <label>unit-tests/libtest/tools/can-send.cpp</label>
+        <link refid="can-send_8cpp"/>
+      </node>
+      <node id="69">
+        <label>lib/can/msg.c</label>
+        <link refid="msg_8c"/>
+      </node>
+      <node id="4">
+        <label>lib/can/buf.c</label>
+        <link refid="buf_8c"/>
+      </node>
+      <node id="1">
+        <label>include/lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>lib/util/time.c</label>
+        <link refid="time_8c"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="51">
+        <label>unit-tests/libtest/tools/co-rpdo-ind.cpp</label>
+        <link refid="co-rpdo-ind_8cpp"/>
+      </node>
+      <node id="65">
+        <label>lib/can/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="10">
+        <label>lib/co/csdo.c</label>
+        <link refid="csdo_8c"/>
+      </node>
+      <node id="25">
+        <label>include/lely/co/nmt.h</label>
+        <link refid="nmt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>unit-tests/libtest/tools/co-nmt-hb-ind.hpp</label>
+        <link refid="co-nmt-hb-ind_8hpp"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>unit-tests/libtest/tools/co-rpdo-err.hpp</label>
+        <link refid="co-rpdo-err_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>unit-tests/cpputest/test-cpputest.cpp</label>
+        <link refid="test-cpputest_8cpp"/>
+      </node>
+      <node id="6">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="44">
+        <label>unit-tests/libtest/tools/co-nmt-sync-ind.cpp</label>
+        <link refid="co-nmt-sync-ind_8cpp"/>
+      </node>
+      <node id="74">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="57">
+        <label>include/lely/co/tpdo.h</label>
+        <link refid="tpdo_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="28">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="59">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="58">
+        <label>lib/co/tpdo.c</label>
+        <link refid="tpdo_8c"/>
+      </node>
+      <node id="54">
+        <label>include/lely/co/sync.h</label>
+        <link refid="sync_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>include/lely/co/ssdo.h</label>
+        <link refid="ssdo_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>include/lely/co/emcy.h</label>
+        <link refid="emcy_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="50">
+        <label>unit-tests/libtest/tools/co-rpdo-ind.hpp</label>
+        <link refid="co-rpdo-ind_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>unit-tests/util/test-time.cpp</label>
+        <link refid="test-time_8cpp"/>
+      </node>
+      <node id="60">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="43">
+        <label>unit-tests/libtest/tools/co-nmt-sync-ind.hpp</label>
+        <link refid="co-nmt-sync-ind_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="63">
+        <label>unit-tests/libtest/tools/co-tpdo-sample-ind.hpp</label>
+        <link refid="co-tpdo-sample-ind_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>unit-tests/libtest/tools/sdo-create-message.cpp</label>
+        <link refid="sdo-create-message_8cpp"/>
+      </node>
+      <node id="47">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="55">
+        <label>lib/co/sync.c</label>
+        <link refid="sync_8c"/>
+      </node>
+      <node id="70">
+        <label>lib/co/pdo.c</label>
+        <link refid="pdo_8c"/>
+      </node>
+      <node id="73">
+        <label>unit-tests/libtest/tools/lely-unit-test.hpp</label>
+        <link refid="lely-unit-test_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="5">
+        <label>lib/co/emcy.c</label>
+        <link refid="emcy_8c"/>
+      </node>
+      <node id="22">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="62">
+        <label>unit-tests/libtest/tools/co-tpdo-ind.cpp</label>
+        <link refid="co-tpdo-ind_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="80">
+        <label>include/lely/util/time.h</label>
+        <link refid="util_2time_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="types_8h_1a6dcac6a5cea7d9c842145e1444d91e22" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int clockid_t</definition>
+        <argsstring></argsstring>
+        <name>clockid_t</name>
+        <briefdescription>
+<para>Used for clock ID type in the clock and timer functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/sys/types.h" line="43" column="13" bodyfile="include/lely/compat/sys/types.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" prot="public" static="no">
+        <type>ptrdiff_t</type>
+        <definition>typedef ptrdiff_t ssize_t</definition>
+        <argsstring></argsstring>
+        <name>ssize_t</name>
+        <briefdescription>
+<para>Used for a count of bytes or an error indication. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/sys/types.h" line="46" column="19" bodyfile="include/lely/compat/sys/types.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a1262a4ef8ca912f4d52ad9a940d4be34" prot="public" static="no">
+        <type>int_least64_t</type>
+        <definition>typedef int_least64_t time_t</definition>
+        <argsstring></argsstring>
+        <name>time_t</name>
+        <briefdescription>
+<para>Used for time in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/sys/types.h" line="50" column="23" bodyfile="include/lely/compat/sys/types.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the C11 and POSIX compatibility library; it includes <computeroutput>&lt;<ref refid="types_8h" kindref="compound">sys/types.h</ref>&gt;</computeroutput>, if it exists, and defines any missing functionality. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2014-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_COMPAT_SYS_TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_COMPAT_SYS_TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="features_8h" kindref="compound">lely/compat/features.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_HAVE_SYS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_HOSTED<sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(defined(_POSIX_C_SOURCE)<sp/>||<sp/>defined(__MINGW32__)<sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>defined(__NEWLIB__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_HAVE_SYS_TYPES_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_HAVE_SYS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">sys/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">//<sp/>!LELY_HAVE_SYS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stdint_8h" kindref="compound">stdint.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="types_8h_1a6dcac6a5cea7d9c842145e1444d91e22" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="types_8h_1a6dcac6a5cea7d9c842145e1444d91e22" kindref="member">clockid_t</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ptrdiff_t<sp/><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_HOSTED</highlight></codeline>
+<codeline lineno="50" refid="types_8h_1a1262a4ef8ca912f4d52ad9a940d4be34" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int_least64_t<sp/><ref refid="types_8h_1a1262a4ef8ca912f4d52ad9a940d4be34" kindref="member">time_t</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_HAVE_SYS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_COMPAT_SYS_TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/compat/sys/types.h"/>
+  </compounddef>
+</doxygen>

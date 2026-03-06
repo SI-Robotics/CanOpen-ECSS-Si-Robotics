@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_11f2ddf9acf2421997c88978c4de6c8a" kind="dir">
+    <compoundname>unit-tests/co/common</compoundname>
+    <innerfile refid="co-types_8hpp">co-types.hpp</innerfile>
+    <innerfile refid="nmt-alloc-sizes_8hpp">nmt-alloc-sizes.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/common/"/>
+  </compounddef>
+</doxygen>

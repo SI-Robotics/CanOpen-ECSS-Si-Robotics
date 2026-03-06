@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="unionmax__align__t" kind="union" language="C++" prot="public">
+    <compoundname>max_align_t</compoundname>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionmax__align__t_1a7a05325ed828a7d4f296b9c0af40b1f0" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long max_align_t::_ll</definition>
+        <argsstring></argsstring>
+        <name>_ll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/stddef.h" line="35" column="11" bodyfile="include/lely/compat/stddef.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmax__align__t_1a607064ca31f132115c453bc02fcba6e2" prot="public" static="no" mutable="no">
+        <type>long double</type>
+        <definition>long double max_align_t::_ld</definition>
+        <argsstring></argsstring>
+        <name>_ld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/stddef.h" line="36" column="13" bodyfile="include/lely/compat/stddef.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmax__align__t_1a11c087ef5e60044efd4cea923b31edcb" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* max_align_t::_ptr</definition>
+        <argsstring></argsstring>
+        <name>_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/stddef.h" line="37" column="6" bodyfile="include/lely/compat/stddef.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmax__align__t_1acb721d95c7c29d08ec5af54ec226e2e4" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* max_align_t::_fptr) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>_fptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/stddef.h" line="38" column="1" bodyfile="include/lely/compat/stddef.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An object type whose alignment is as great as is supported by the implementation in all contexts. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/compat/stddef.h" line="34" column="1" bodyfile="include/lely/compat/stddef.h" bodystart="34" bodyend="39"/>
+    <listofallmembers>
+      <member refid="unionmax__align__t_1acb721d95c7c29d08ec5af54ec226e2e4" prot="public" virt="non-virtual"><scope>max_align_t</scope><name>_fptr</name></member>
+      <member refid="unionmax__align__t_1a607064ca31f132115c453bc02fcba6e2" prot="public" virt="non-virtual"><scope>max_align_t</scope><name>_ld</name></member>
+      <member refid="unionmax__align__t_1a7a05325ed828a7d4f296b9c0af40b1f0" prot="public" virt="non-virtual"><scope>max_align_t</scope><name>_ll</name></member>
+      <member refid="unionmax__align__t_1a11c087ef5e60044efd4cea923b31edcb" prot="public" virt="non-virtual"><scope>max_align_t</scope><name>_ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

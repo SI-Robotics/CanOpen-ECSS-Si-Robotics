@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="co-types_8hpp" kind="file" language="C++">
+    <compoundname>co-types.hpp</compoundname>
+    <includes refid="type_8h" local="no">lely/co/type.h</includes>
+    <includes local="no">lely/co/def/basic.def</includes>
+    <includedby refid="obj-init_8hpp" local="yes">unit-tests/co/obj-init/obj-init.hpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="3">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>unit-tests/co/common/co-types.hpp</label>
+        <link refid="co-types_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/co/def/basic.def</label>
+      </node>
+      <node id="2">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="41">
+        <label>unit-tests/co/obj-init/sync-cobid.hpp</label>
+        <link refid="sync-cobid_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>unit-tests/co/obj-init/sdo-client-par.hpp</label>
+        <link refid="sdo-client-par_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="2">
+        <label>unit-tests/co/obj-init/obj-init.hpp</label>
+        <link refid="obj-init_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>unit-tests/co/holder/dev.hpp</label>
+        <link refid="dev_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="37">
+        <label>unit-tests/co/obj-init/nmt-redundancy.hpp</label>
+        <link refid="nmt-redundancy_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>unit-tests/co/obj-init/tpdo-comm-par.hpp</label>
+        <link refid="tpdo-comm-par_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>unit-tests/co/obj-init/sync-window-length.hpp</label>
+        <link refid="sync-window-length_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="26">
+        <label>unit-tests/co/obj-init/rpdo-comm-par.hpp</label>
+        <link refid="rpdo-comm-par_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="29">
+        <label>unit-tests/co/obj-init/sdo-server-par.hpp</label>
+        <link refid="sdo-server-par_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="39">
+        <label>unit-tests/co/obj-init/nmt-startup.hpp</label>
+        <link refid="nmt-startup_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>unit-tests/co/holder/obj.hpp</label>
+        <link refid="obj_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="34">
+        <label>unit-tests/co/obj-init/error-behavior-object.hpp</label>
+        <link refid="error-behavior-object_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="1">
+        <label>unit-tests/co/common/co-types.hpp</label>
+        <link refid="co-types_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="38">
+        <label>unit-tests/co/obj-init/nmt-slave-assignment.hpp</label>
+        <link refid="nmt-slave-assignment_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>unit-tests/co/obj-init/rpdo-map-par.hpp</label>
+        <link refid="rpdo-map-par_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>unit-tests/co/obj-init/emcy-error-register.hpp</label>
+        <link refid="emcy-error-register_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="18">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/co/obj-init/emcy-predefined-error-field.hpp</label>
+        <link refid="emcy-predefined-error-field_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>unit-tests/co/obj-init/tpdo-map-par.hpp</label>
+        <link refid="tpdo-map-par_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="36">
+        <label>unit-tests/co/obj-init/nmt-hb-producer.hpp</label>
+        <link refid="nmt-hb-producer_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="40">
+        <label>unit-tests/co/obj-init/request-nmt.hpp</label>
+        <link refid="request-nmt_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+      <node id="35">
+        <label>unit-tests/co/obj-init/nmt-hb-consumer.hpp</label>
+        <link refid="nmt-hb-consumer_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="co-types_8hpp_1adabff02a2562ad7bb327e333117f82a4" prot="public" static="no">
+        <name>LELY_CO_DEFINE_TYPE</name>
+        <param><defname>NAME</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>tag</defname></param>
+        <param><defname>c_type</defname></param>
+        <initializer>  template &lt;&gt; \
+  struct <ref refid="structCoType" kindref="compound">CoType</ref>&lt;CO_DEFTYPE_##NAME&gt; { \
+    using type = co_##name##_t; \
+  };</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/co-types.hpp" line="32" column="9" bodyfile="unit-tests/co/common/co-types.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UNIT_TEST_COMMON_CO_TYPES_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UNIT_TEST_COMMON_CO_TYPES_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="type_8h" kindref="compound">lely/co/type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;co_</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">16_t<sp/>deftype&gt;</highlight></codeline>
+<codeline lineno="30" refid="structCoType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCoType" kindref="compound">CoType</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_DEFINE_TYPE(NAME,<sp/>name,<sp/>tag,<sp/>c_type)<sp/>\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/>template<sp/>&lt;&gt;<sp/>\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"><sp/><sp/>struct<sp/>CoType&lt;CO_DEFTYPE_##NAME&gt;<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>using<sp/>type<sp/>=<sp/>co_##name##_t;<sp/>\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/co/def/basic.def&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_CO_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>LELY_UNIT_TEST_COMMON_CO_TYPES_HPP_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/co/common/co-types.hpp"/>
+  </compounddef>
+</doxygen>

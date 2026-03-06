@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoNmtHbInd" kind="class" language="C++" prot="public">
+    <compoundname>CoNmtHbInd</compoundname>
+    <includes refid="co-nmt-hb-ind_8hpp" local="no">co-nmt-hb-ind.hpp</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCoNmtHbInd_1a4acacec6da77a14b8707b890bb0b9f8d" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoNmtHbInd::num_called</definition>
+        <argsstring></argsstring>
+        <name>num_called</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="45" column="17" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtHbInd_1a81e76e307a3a03bb905885e33784afc8" prot="private" static="yes" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+        <definition>co_nmt_t * CoNmtHbInd::nmt_</definition>
+        <argsstring></argsstring>
+        <name>nmt_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="46" column="19" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtHbInd_1a24ec7642ab1e7e7ee15ff8a235a45557" prot="private" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoNmtHbInd::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <initializer>= 255u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="47" column="25" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtHbInd_1a06cb9b7e6101a69441571d34f953e27c" prot="private" static="yes" mutable="no">
+        <type><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref></type>
+        <definition>co_nmt_ec_state_t CoNmtHbInd::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <initializer>= static_cast&lt;<ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref>&gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="48" column="28" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtHbInd_1a774b06de378628c081fbd01afd824f13" prot="private" static="yes" mutable="no">
+        <type><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref></type>
+        <definition>co_nmt_ec_reason_t CoNmtHbInd::reason_</definition>
+        <argsstring></argsstring>
+        <name>reason_</name>
+        <initializer>= static_cast&lt;<ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref>&gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="49" column="29" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtHbInd_1a414102ada4fe8a92e8319c62c85163e3" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * CoNmtHbInd::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="50" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtHbInd_1a43d2842361dbaf4ca8f2d670e5398ae4" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool CoNmtHbInd::skipCallToDefaultInd</definition>
+        <argsstring></argsstring>
+        <name>skipCallToDefaultInd</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="52" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCoNmtHbInd_1a3ce50086241c6162d3d0601b38d54194" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtHbInd::Func</definition>
+        <argsstring>(co_nmt_t *nmt, co_unsigned8_t id, co_nmt_ec_state_t state, co_nmt_ec_reason_t reason, void *data)</argsstring>
+        <name>Func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref></type>
+          <declname>reason</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="31" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.cpp" bodystart="41" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtHbInd_1aed649ab64c287d0575579a052114cb53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtHbInd::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="33" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.cpp" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtHbInd_1a49c32f11440cb87f0f28e45579bd0063" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtHbInd::Check</definition>
+        <argsstring>(const co_nmt_t *nmt, co_unsigned8_t id, co_nmt_ec_state_t state, co_nmt_ec_reason_t reason, const void *data)</argsstring>
+        <name>Check</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref></type>
+          <declname>reason</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="34" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.cpp" bodystart="69" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtHbInd_1ad87243a59526be13538ff943be993380" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t CoNmtHbInd::GetNumCalled</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumCalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="38" column="3" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtHbInd_1ab76e711b9f84efe65b84c4d62edd3cb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtHbInd::SkipCallToDefaultInd</definition>
+        <argsstring>()</argsstring>
+        <name>SkipCallToDefaultInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="42" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.cpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="nmt_8h_1a8625d5788e64421b19ef19deac4d4fe8" kindref="member">co_nmt_hb_ind_t</ref> spy. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="29" column="1" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="29" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classCoNmtHbInd_1a49c32f11440cb87f0f28e45579bd0063" prot="public" virt="non-virtual"><scope>CoNmtHbInd</scope><name>Check</name></member>
+      <member refid="classCoNmtHbInd_1aed649ab64c287d0575579a052114cb53" prot="public" virt="non-virtual"><scope>CoNmtHbInd</scope><name>Clear</name></member>
+      <member refid="classCoNmtHbInd_1a414102ada4fe8a92e8319c62c85163e3" prot="private" virt="non-virtual"><scope>CoNmtHbInd</scope><name>data_</name></member>
+      <member refid="classCoNmtHbInd_1a3ce50086241c6162d3d0601b38d54194" prot="public" virt="non-virtual"><scope>CoNmtHbInd</scope><name>Func</name></member>
+      <member refid="classCoNmtHbInd_1ad87243a59526be13538ff943be993380" prot="public" virt="non-virtual"><scope>CoNmtHbInd</scope><name>GetNumCalled</name></member>
+      <member refid="classCoNmtHbInd_1a24ec7642ab1e7e7ee15ff8a235a45557" prot="private" virt="non-virtual"><scope>CoNmtHbInd</scope><name>id_</name></member>
+      <member refid="classCoNmtHbInd_1a81e76e307a3a03bb905885e33784afc8" prot="private" virt="non-virtual"><scope>CoNmtHbInd</scope><name>nmt_</name></member>
+      <member refid="classCoNmtHbInd_1a4acacec6da77a14b8707b890bb0b9f8d" prot="private" virt="non-virtual"><scope>CoNmtHbInd</scope><name>num_called</name></member>
+      <member refid="classCoNmtHbInd_1a774b06de378628c081fbd01afd824f13" prot="private" virt="non-virtual"><scope>CoNmtHbInd</scope><name>reason_</name></member>
+      <member refid="classCoNmtHbInd_1a43d2842361dbaf4ca8f2d670e5398ae4" prot="private" virt="non-virtual"><scope>CoNmtHbInd</scope><name>skipCallToDefaultInd</name></member>
+      <member refid="classCoNmtHbInd_1ab76e711b9f84efe65b84c4d62edd3cb3" prot="public" virt="non-virtual"><scope>CoNmtHbInd</scope><name>SkipCallToDefaultInd</name></member>
+      <member refid="classCoNmtHbInd_1a06cb9b7e6101a69441571d34f953e27c" prot="private" virt="non-virtual"><scope>CoNmtHbInd</scope><name>state_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

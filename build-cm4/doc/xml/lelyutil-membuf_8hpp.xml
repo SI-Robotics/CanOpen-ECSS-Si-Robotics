@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="lelyutil-membuf_8hpp" kind="file" language="C++">
+    <compoundname>lelyutil-membuf.hpp</compoundname>
+    <includes refid="lely-defs_8hpp" local="yes">lely-defs.hpp</includes>
+    <includedby refid="test-csdo_8cpp" local="no">unit-tests/co/test-csdo.cpp</includedby>
+    <includedby refid="lelyutil-membuf_8cpp" local="yes">unit-tests/libtest/override/lelyutil-membuf.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/override/lelyutil-membuf.hpp</label>
+        <link refid="lelyutil-membuf_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>defs.hpp</label>
+        <link refid="defs_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely-defs.hpp</label>
+        <link refid="lely-defs_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>unit-tests/libtest/override/lelyutil-membuf.hpp</label>
+        <link refid="lelyutil-membuf_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>unit-tests/libtest/override/lelyutil-membuf.cpp</label>
+        <link refid="lelyutil-membuf_8cpp"/>
+      </node>
+      <node id="2">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceLelyOverride">LelyOverride</innernamespace>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_OVERRIDE_LELY_UTIL_MEMBUF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_OVERRIDE_LELY_UTIL_MEMBUF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lely-defs_8hpp" kindref="compound">lely-defs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_LELY_OVERRIDE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>0.<sp/>Declare<sp/>valid<sp/>calls<sp/>counter<sp/>for<sp/>the<sp/>overridden<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">LelyOverride<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="membuf_8h_1a65a95b325d6fa74d4c1d12ba94194652" kindref="member">membuf_reserve</ref>(int32_t<sp/>valid_calls);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>LelyOverride</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>HAVE_LELY_OVERRIDE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>!LELY_OVERRIDE_LELY_UTIL_MEMBUF_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/libtest/override/lelyutil-membuf.hpp"/>
+  </compounddef>
+</doxygen>

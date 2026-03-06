@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structpnode" kind="struct" language="C++" prot="public">
+    <compoundname>pnode</compoundname>
+    <includes refid="pheap_8h" local="no">pheap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* pnode::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>A pointer to the key of this node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The key MUST be set before the node is inserted into a heap and MUST NOT be modified while the node is part of the heap. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="59" column="12" bodyfile="include/lely/util/pheap.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpnode_1a65384ee10be6b2c249f0e997cb841a68" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+        <definition>struct pnode* pnode::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>A pointer to the parent node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="61" column="12" bodyfile="include/lely/util/pheap.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpnode_1afc38237c842520749a966b89d54b6e9d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+        <definition>struct pnode* pnode::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+<para>A pointer to the next sibling node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="63" column="12" bodyfile="include/lely/util/pheap.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpnode_1a9ac08cee497b9f360956e97de23a27dc" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+        <definition>struct pnode* pnode::child</definition>
+        <argsstring></argsstring>
+        <name>child</name>
+        <briefdescription>
+<para>A pointer to the first child node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="65" column="12" bodyfile="include/lely/util/pheap.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A node in a pairing heap. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To associate a value with a node, embed the node in a struct containing the value and use <ref refid="include_2lely_2util_2util_8h_1a026477dab7d696e7a49042759f166cfa" kindref="member">structof()</ref> to obtain the struct from the node.</para>
+<para><simplesect kind="see"><para><ref refid="structpheap" kindref="compound">pheap</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/util/pheap.h" line="53" column="1" bodyfile="include/lely/util/pheap.h" bodystart="53" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structpnode_1a9ac08cee497b9f360956e97de23a27dc" prot="public" virt="non-virtual"><scope>pnode</scope><name>child</name></member>
+      <member refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" prot="public" virt="non-virtual"><scope>pnode</scope><name>key</name></member>
+      <member refid="structpnode_1afc38237c842520749a966b89d54b6e9d" prot="public" virt="non-virtual"><scope>pnode</scope><name>next</name></member>
+      <member refid="structpnode_1a65384ee10be6b2c249f0e997cb841a68" prot="public" virt="non-virtual"><scope>pnode</scope><name>parent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

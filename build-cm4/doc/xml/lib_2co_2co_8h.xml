@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="lib_2co_2co_8h" kind="file" language="C++">
+    <compoundname>co.h</compoundname>
+    <includes refid="include_2lely_2co_2co_8h" local="no">lely/co/co.h</includes>
+    <includedby refid="crc_8c" local="yes">lib/co/crc.c</includedby>
+    <includedby refid="csdo_8c" local="yes">lib/co/csdo.c</includedby>
+    <includedby refid="dev_8c" local="yes">lib/co/dev.c</includedby>
+    <includedby refid="emcy_8c" local="yes">lib/co/emcy.c</includedby>
+    <includedby refid="nmt_8c" local="yes">lib/co/nmt.c</includedby>
+    <includedby refid="nmt__hb_8c" local="yes">lib/co/nmt_hb.c</includedby>
+    <includedby refid="nmt__hb_8h" local="yes">lib/co/nmt_hb.h</includedby>
+    <includedby refid="nmt__rdn_8c" local="yes">lib/co/nmt_rdn.c</includedby>
+    <includedby refid="nmt__rdn_8h" local="yes">lib/co/nmt_rdn.h</includedby>
+    <includedby refid="nmt__srv_8c" local="yes">lib/co/nmt_srv.c</includedby>
+    <includedby refid="nmt__srv_8h" local="yes">lib/co/nmt_srv.h</includedby>
+    <includedby refid="obj_8c" local="yes">lib/co/obj.c</includedby>
+    <includedby refid="pdo_8c" local="yes">lib/co/pdo.c</includedby>
+    <includedby refid="rpdo_8c" local="yes">lib/co/rpdo.c</includedby>
+    <includedby refid="sdo_8c" local="yes">lib/co/sdo.c</includedby>
+    <includedby refid="lib_2co_2sdo_8h" local="yes">lib/co/sdo.h</includedby>
+    <includedby refid="ssdo_8c" local="yes">lib/co/ssdo.c</includedby>
+    <includedby refid="sync_8c" local="yes">lib/co/sync.c</includedby>
+    <includedby refid="tpdo_8c" local="yes">lib/co/tpdo.c</includedby>
+    <includedby refid="type_8c" local="yes">lib/co/type.c</includedby>
+    <includedby refid="val_8c" local="yes">lib/co/val.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/co/co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="18">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="19">
+        <label>lib/co/nmt_srv.h</label>
+        <link refid="nmt__srv_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>lib/co/type.c</label>
+        <link refid="type_8c"/>
+      </node>
+      <node id="25">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="29">
+        <label>lib/co/val.c</label>
+        <link refid="val_8c"/>
+      </node>
+      <node id="22">
+        <label>lib/co/rpdo.c</label>
+        <link refid="rpdo_8c"/>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/obj-init/nmt-redundancy.hpp</label>
+        <link refid="nmt-redundancy_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>lib/co/obj.c</label>
+        <link refid="obj_8c"/>
+      </node>
+      <node id="13">
+        <label>lib/co/nmt_rdn.c</label>
+        <link refid="nmt__rdn_8c"/>
+      </node>
+      <node id="14">
+        <label>lib/co/nmt_rdn.h</label>
+        <link refid="nmt__rdn_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lib/co/nmt_hb.c</label>
+        <link refid="nmt__hb_8c"/>
+      </node>
+      <node id="8">
+        <label>lib/co/nmt_hb.h</label>
+        <link refid="nmt__hb_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/co/csdo.c</label>
+        <link refid="csdo_8c"/>
+      </node>
+      <node id="23">
+        <label>lib/co/sdo.c</label>
+        <link refid="sdo_8c"/>
+      </node>
+      <node id="24">
+        <label>lib/co/sdo.h</label>
+        <link refid="lib_2co_2sdo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>lib/co/tpdo.c</label>
+        <link refid="tpdo_8c"/>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="4">
+        <label>lib/co/dev.c</label>
+        <link refid="dev_8c"/>
+      </node>
+      <node id="26">
+        <label>lib/co/sync.c</label>
+        <link refid="sync_8c"/>
+      </node>
+      <node id="1">
+        <label>lib/co/co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lib/co/crc.c</label>
+        <link refid="crc_8c"/>
+      </node>
+      <node id="21">
+        <label>lib/co/pdo.c</label>
+        <link refid="pdo_8c"/>
+      </node>
+      <node id="5">
+        <label>lib/co/emcy.c</label>
+        <link refid="emcy_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lib_2co_2co_8h_1aa4b64e71098bbe5b050550404d3ed87e" prot="public" static="no">
+        <name>LELY_NO_CO_DCF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="33" column="10" bodyfile="lib/co/co.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1a7a0ece30f5e10f9f0c672c6bea08c81f" prot="public" static="no">
+        <name>LELY_NO_CO_SDEV</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="36" column="10" bodyfile="lib/co/co.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1aa58793aa73bbf926323ac895761d777b" prot="public" static="no">
+        <name>LELY_NO_CO_WTM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="39" column="10" bodyfile="lib/co/co.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1a9009c4dc1111fb572d58c3e35f262959" prot="public" static="no">
+        <name>LELY_NO_CO_GW</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="42" column="10" bodyfile="lib/co/co.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1a9d8aea143feac3a52b14747a313bf13f" prot="public" static="no">
+        <name>LELY_NO_CO_GW_TXT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="45" column="10" bodyfile="lib/co/co.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1aa4b64e71098bbe5b050550404d3ed87e" prot="public" static="no">
+        <name>LELY_NO_CO_DCF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="51" column="10" bodyfile="lib/co/co.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1a7679e34dbcab1c6e293475a7821f2786" prot="public" static="no">
+        <name>LELY_NO_CO_OBJ_FILE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="54" column="10" bodyfile="lib/co/co.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1a9d8aea143feac3a52b14747a313bf13f" prot="public" static="no">
+        <name>LELY_NO_CO_GW_TXT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="57" column="10" bodyfile="lib/co/co.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2co_8h_1a034a70a7699fbe7b2c70a5331ce71f96" prot="public" static="no">
+        <name>trace</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/co.h" line="61" column="9" bodyfile="lib/co/co.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the internal header file of the CANopen library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_INTERN_CO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_INTERN_CO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2co_2co_8h" kindref="compound">lely/co/co.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>EDS/DCF<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_DCF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_DCF<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>static<sp/>device<sp/>description<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_SDEV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_SDEV<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>Wireless<sp/>Transmission<sp/>Media<sp/>(WTM)<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_WTM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_WTM<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>gateway<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_GW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_GW<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>ASCII<sp/>gateway<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_GW_TXT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_GW_TXT<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_STDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>EDS/DCF<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_DCF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_DCF<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>UploadFile/DownloadFile<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_OBJ_FILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_OBJ_FILE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Disable<sp/>ASCII<sp/>gateway<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_NO_CO_GW_TXT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_NO_CO_GW_TXT<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(NDEBUG)<sp/>||<sp/>LELY_NO_STDIO<sp/>||<sp/>LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>trace(...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="diag_8h" kindref="compound">lely/util/diag.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>trace(...)<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diag_at(DIAG_DEBUG,<sp/>0,<sp/>&amp;(struct<sp/>floc){<sp/>__FILE__,<sp/>__LINE__,<sp/>0<sp/>},<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CO_INTERN_CO_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/co/co.h"/>
+  </compounddef>
+</doxygen>

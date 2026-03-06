@@ -1,0 +1,1127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__nmt" kind="struct" language="C++" prot="public">
+    <compoundname>co_nmt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__nmt_1ae28c490575536d606166d8499d501864" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_nmt::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="159" column="11" bodyfile="lib/co/nmt.c" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a715edf28e91720e08ff4e0175d697175" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_nmt::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to a CANopen device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="161" column="10" bodyfile="lib/co/nmt.c" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a321cff172dbb3c9d4690c2372b7c7f5c" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_nmt::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The pending node-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="163" column="16" bodyfile="lib/co/nmt.c" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1aea53847077fa8d6008d51af429c78fae" prot="public" static="no" mutable="no">
+        <type>uint_least8_t *</type>
+        <definition>uint_least8_t* co_nmt::dcf_comm_begin</definition>
+        <argsstring></argsstring>
+        <name>dcf_comm_begin</name>
+        <briefdescription>
+<para>A pointer to the first byte in the concise DCF backup of the communication parameters (object 1000-1FFF). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="180" column="15" bodyfile="lib/co/nmt.c" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a4f3b174e83e753bf43ac05f1a7d464ea" prot="public" static="no" mutable="no">
+        <type>uint_least8_t *</type>
+        <definition>uint_least8_t* co_nmt::dcf_comm_end</definition>
+        <argsstring></argsstring>
+        <name>dcf_comm_end</name>
+        <briefdescription>
+<para>A pointer to one past the last byte in the concise DCF backup of the communication parameters,. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="185" column="15" bodyfile="lib/co/nmt.c" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a40d9f861048f582dba739d345e5ea885" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8c_1aae3d5d4d2caa6a2bfa3c23c8124dcdac" kindref="member">co_nmt_state_t</ref> *</type>
+        <definition>co_nmt_state_t* co_nmt::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>The current state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="187" column="16" bodyfile="lib/co/nmt.c" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1aa4d76ba389c268d88b4b6758dc67f76d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__nmt__srv" kindref="compound">co_nmt_srv</ref></type>
+        <definition>struct co_nmt_srv co_nmt::srv</definition>
+        <argsstring></argsstring>
+        <name>srv</name>
+        <briefdescription>
+<para>The NMT service manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="187" column="16" bodyfile="lib/co/nmt.c" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a68daa5b9d4ee2a276a9d8df650eee04d" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_nmt::startup</definition>
+        <argsstring></argsstring>
+        <name>startup</name>
+        <briefdescription>
+<para>The NMT startup value (object 1F80). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="191" column="17" bodyfile="lib/co/nmt.c" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a0dbd7cb53c570b34e26ab8f98b2a84c9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool co_nmt::master</definition>
+        <argsstring></argsstring>
+        <name>master</name>
+        <briefdescription>
+<para>A flag specifying whether the NMT service is a master or a slave. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="194" column="6" bodyfile="lib/co/nmt.c" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1acc56a4ef6fd738bbd0bcb1e888de8271" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_nmt::recv_000</definition>
+        <argsstring></argsstring>
+        <name>recv_000</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver for NMT messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="197" column="12" bodyfile="lib/co/nmt.c" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a66c622df8ba62d632b451b227bb830ea" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8h_1aa836c64c4b795c9c1221debc3f8fe6f2" kindref="member">co_nmt_cs_ind_t</ref> *</type>
+        <definition>co_nmt_cs_ind_t* co_nmt::cs_ind</definition>
+        <argsstring></argsstring>
+        <name>cs_ind</name>
+        <briefdescription>
+<para>A pointer to the NMT command indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="199" column="17" bodyfile="lib/co/nmt.c" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ae878cdbf521696bcadeb971353a57f57" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_nmt::cs_data</definition>
+        <argsstring></argsstring>
+        <name>cs_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__nmt_1a66c622df8ba62d632b451b227bb830ea" kindref="member">cs_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="201" column="6" bodyfile="lib/co/nmt.c" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a7f4a2131929e015f626c5225443396a2" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_nmt::recv_700</definition>
+        <argsstring></argsstring>
+        <name>recv_700</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver for NMT error control messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="203" column="12" bodyfile="lib/co/nmt.c" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a8c47c6c14b5d85ec3cf0022e8c9e6e1d" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_nmt::ec_timer</definition>
+        <argsstring></argsstring>
+        <name>ec_timer</name>
+        <briefdescription>
+<para>A pointer to the CAN timer for life guarding or heartbeat production. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="213" column="13" bodyfile="lib/co/nmt.c" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a7472ee29aefd474e8cce19bfb3609b48" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_nmt::st</definition>
+        <argsstring></argsstring>
+        <name>st</name>
+        <briefdescription>
+<para>The state of the NMT service (including the toggle bit). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="215" column="16" bodyfile="lib/co/nmt.c" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ab9c8400bc8075d7cc6fb4e16d312e102" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_nmt::ms</definition>
+        <argsstring></argsstring>
+        <name>ms</name>
+        <briefdescription>
+<para>The producer heartbeat time (in milliseconds). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="229" column="17" bodyfile="lib/co/nmt.c" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1aaca85b279d7894dbc26ca04c71f6885e" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned co_nmt::rdn_enabled</definition>
+        <argsstring></argsstring>
+        <name>rdn_enabled</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag specifying whether redundancy manager is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="232" column="10" bodyfile="lib/co/nmt.c" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a62e7a946c506ab3e36f3d6687756a7fe" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned co_nmt::bus_selection</definition>
+        <argsstring></argsstring>
+        <name>bus_selection</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag specifying whether the bus selection process is active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="234" column="10" bodyfile="lib/co/nmt.c" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a46925d8f9422181b62e9a9729ebee0c6" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+        <definition>co_nmt_rdn_t* co_nmt::rdn</definition>
+        <argsstring></argsstring>
+        <name>rdn</name>
+        <briefdescription>
+<para>A pointer to the redundancy manager service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="236" column="14" bodyfile="lib/co/nmt.c" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1aae56eb407804c0cda8ceb04b281d9957" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8h_1af25bffc8b7c0a984ceca51b644ec7f00" kindref="member">co_nmt_ecss_rdn_ind_t</ref> *</type>
+        <definition>co_nmt_ecss_rdn_ind_t* co_nmt::rdn_ind</definition>
+        <argsstring></argsstring>
+        <name>rdn_ind</name>
+        <briefdescription>
+<para>A pointer to the redundancy event indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="238" column="23" bodyfile="lib/co/nmt.c" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a78e9c192c567f2452be1c576a99ad74d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_nmt::rdn_data</definition>
+        <argsstring></argsstring>
+        <name>rdn_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__nmt_1aae56eb407804c0cda8ceb04b281d9957" kindref="member">rdn_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="240" column="6" bodyfile="lib/co/nmt.c" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a9dbde35670f26d3c438568dc9ecd8576" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+        <definition>co_nmt_hb_t* co_nmt::hbs[CO_NMT_MAX_NHB]</definition>
+        <argsstring>[CO_NMT_MAX_NHB]</argsstring>
+        <name>hbs</name>
+        <briefdescription>
+<para>An array of pointers to the heartbeat consumers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="244" column="13" bodyfile="lib/co/nmt.c" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a9c41f41d358c9f61ce011fc3e08d57e2" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_nmt::nhb</definition>
+        <argsstring></argsstring>
+        <name>nhb</name>
+        <briefdescription>
+<para>The number of heartbeat consumers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="249" column="16" bodyfile="lib/co/nmt.c" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ad73813ff50ea07be420ade2768e24837" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8h_1a8625d5788e64421b19ef19deac4d4fe8" kindref="member">co_nmt_hb_ind_t</ref> *</type>
+        <definition>co_nmt_hb_ind_t* co_nmt::hb_ind</definition>
+        <argsstring></argsstring>
+        <name>hb_ind</name>
+        <briefdescription>
+<para>A pointer to the heartbeat event indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="251" column="17" bodyfile="lib/co/nmt.c" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a1e666c6975538d36beb2f66ab69a1b7d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_nmt::hb_data</definition>
+        <argsstring></argsstring>
+        <name>hb_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__nmt_1ad73813ff50ea07be420ade2768e24837" kindref="member">hb_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="253" column="6" bodyfile="lib/co/nmt.c" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ac7f64f0dcf6487dc210335508e9013d3" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8h_1a68ac03befbe3a5e72bbfd426e0a8bcd2" kindref="member">co_nmt_st_ind_t</ref> *</type>
+        <definition>co_nmt_st_ind_t* co_nmt::st_ind</definition>
+        <argsstring></argsstring>
+        <name>st_ind</name>
+        <briefdescription>
+<para>A pointer to the state change event indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="255" column="17" bodyfile="lib/co/nmt.c" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ac84d425b8fdf7bef50693914f4fec2b5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_nmt::st_data</definition>
+        <argsstring></argsstring>
+        <name>st_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__nmt_1ac7f64f0dcf6487dc210335508e9013d3" kindref="member">st_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="257" column="6" bodyfile="lib/co/nmt.c" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a77fa9247ccd68b3000b47dd4259f75af" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcan__buf" kindref="compound">can_buf</ref></type>
+        <definition>struct can_buf co_nmt::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+<para>A pointer to the CAN frame buffer for NMT messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="257" column="6" bodyfile="lib/co/nmt.c" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ab874f1880b9ff39a16cf9cebeae842e3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>struct can_msg co_nmt::begin[CO_NMT_CAN_BUF_SIZE]</definition>
+        <argsstring>[CO_NMT_CAN_BUF_SIZE]</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>The static memory buffer used by <ref refid="structco__nmt_1a77fa9247ccd68b3000b47dd4259f75af" kindref="member">buf</ref> in the absence of dynamic memory allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="257" column="6" bodyfile="lib/co/nmt.c" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ae706ada4be132bf9033317f1092ad886" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref></type>
+        <definition>struct timespec co_nmt::inhibit</definition>
+        <argsstring></argsstring>
+        <name>inhibit</name>
+        <briefdescription>
+<para>The time at which the next NMT message may be sent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="257" column="6" bodyfile="lib/co/nmt.c" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a22dabb0aa43e509527a849dbae983fab" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_nmt::cs_timer</definition>
+        <argsstring></argsstring>
+        <name>cs_timer</name>
+        <briefdescription>
+<para>A pointer to the CAN timer for sending buffered NMT messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="271" column="13" bodyfile="lib/co/nmt.c" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a609c4673be0006130760a63a6cc20414" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool co_nmt::halt</definition>
+        <argsstring></argsstring>
+        <name>halt</name>
+        <briefdescription>
+<para>A flag indicating if the startup procedure was halted because of a mandatory slave boot failure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="282" column="6" bodyfile="lib/co/nmt.c" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ac348d5f99003f6769df40121cd840b49" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__nmt__slave" kindref="compound">co_nmt_slave</ref></type>
+        <definition>struct co_nmt_slave co_nmt::slaves[CO_NUM_NODES]</definition>
+        <argsstring>[CO_NUM_NODES]</argsstring>
+        <name>slaves</name>
+        <briefdescription>
+<para>An array containing the state of each NMT slave. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="282" column="6" bodyfile="lib/co/nmt.c" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a605c8ebeeac067a23ff8ddd1d392a835" prot="public" static="no" mutable="no">
+        <type>int_least32_t</type>
+        <definition>int_least32_t co_nmt::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>The default SDO timeout (in milliseconds) used during the NMT &apos;boot slave&apos; and &apos;check configuration&apos; processes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="289" column="15" bodyfile="lib/co/nmt.c" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a82ce6e2483ed11cd29969280feaf6a5f" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8h_1af9e0c9925a0c0b76d7c6d36c0f07aad5" kindref="member">co_nmt_sdo_ind_t</ref> *</type>
+        <definition>co_nmt_sdo_ind_t* co_nmt::dn_ind</definition>
+        <argsstring></argsstring>
+        <name>dn_ind</name>
+        <briefdescription>
+<para>A pointer to the SDO download progress indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="303" column="18" bodyfile="lib/co/nmt.c" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1aebaf1768a869cd7f5dd0be1a68078e4e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_nmt::dn_data</definition>
+        <argsstring></argsstring>
+        <name>dn_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__nmt_1a82ce6e2483ed11cd29969280feaf6a5f" kindref="member">dn_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="305" column="6" bodyfile="lib/co/nmt.c" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a5be3c327c127527ab589a0aed8ed41cc" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8h_1af9e0c9925a0c0b76d7c6d36c0f07aad5" kindref="member">co_nmt_sdo_ind_t</ref> *</type>
+        <definition>co_nmt_sdo_ind_t* co_nmt::up_ind</definition>
+        <argsstring></argsstring>
+        <name>up_ind</name>
+        <briefdescription>
+<para>A pointer to the SDO upload progress indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="307" column="18" bodyfile="lib/co/nmt.c" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a93b3cce549cfb391798542ba8408f9a7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_nmt::up_data</definition>
+        <argsstring></argsstring>
+        <name>up_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__nmt_1a5be3c327c127527ab589a0aed8ed41cc" kindref="member">up_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="309" column="6" bodyfile="lib/co/nmt.c" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1ac7281c9548390d680df974bcf37303a5" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8h_1a9e477885c11d1221907ff6cde3a50787" kindref="member">co_nmt_sync_ind_t</ref> *</type>
+        <definition>co_nmt_sync_ind_t* co_nmt::sync_ind</definition>
+        <argsstring></argsstring>
+        <name>sync_ind</name>
+        <briefdescription>
+<para>A pointer to the SYNC indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="312" column="19" bodyfile="lib/co/nmt.c" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1af348877b59cc196a62287d8416162248" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_nmt::sync_data</definition>
+        <argsstring></argsstring>
+        <name>sync_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__nmt_1ac7281c9548390d680df974bcf37303a5" kindref="member">sync_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="314" column="6" bodyfile="lib/co/nmt.c" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a1ab871bb2e53e985bcc147fd32d2bdcf" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_nmt::tpdo_event_wait</definition>
+        <argsstring></argsstring>
+        <name>tpdo_event_wait</name>
+        <briefdescription>
+<para>The number of calls to <ref refid="nmt_8h_1a6c624b6b4f02b58e1af775a7635d3c22" kindref="member">co_nmt_on_tpdo_event_lock()</ref> minus the number of calls to <ref refid="nmt_8h_1a78cdcb54009e0d3aa2e9ca571a538ffc" kindref="member">co_nmt_on_tpdo_event_unlock()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="320" column="8" bodyfile="lib/co/nmt.c" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt_1a15269ff171a695ef125284953092493d" prot="public" static="no" mutable="no">
+        <type>uint_least32_t</type>
+        <definition>uint_least32_t co_nmt::tpdo_event_mask[CO_NMT_TPDO_EVENT_MASK_COUNT]</definition>
+        <argsstring>[CO_NMT_TPDO_EVENT_MASK_COUNT]</argsstring>
+        <name>tpdo_event_mask</name>
+        <briefdescription>
+<para>A bit mask tracking all Transmit-PDO events indicated by <ref refid="nmt_8h_1a5ec22dc893345b807555e6da482d5f69" kindref="member">co_nmt_on_tpdo_event()</ref> that have been postponed because <ref refid="structco__nmt_1a1ab871bb2e53e985bcc147fd32d2bdcf" kindref="member">tpdo_event_wait</ref> &gt; 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="326" column="16" bodyfile="lib/co/nmt.c" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen NMT master/slave service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_nmt</label>
+        <link refid="structco__nmt"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv_000</edgelabel>
+          <edgelabel>recv_700</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>rdn</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>slaves</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>cs_timer</edgelabel>
+          <edgelabel>ec_timer</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>srv</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>begin</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>hbs</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>co_sdo_par</label>
+        <link refid="structco__sdo__par"/>
+      </node>
+      <node id="31">
+        <label>co_obj</label>
+        <link refid="structco__obj"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>co_nmt_rdn</label>
+        <link refid="structco__nmt__rdn"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>bus_toggle_timer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>co_sync</label>
+        <link refid="structco__sync"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>co_nmt_state</label>
+        <link refid="structco__nmt__state"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>on_cs</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>co_emcy</label>
+        <link refid="structco__emcy"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>obj_1003</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>nodes</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>begin</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>sub_1001_00</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>msgs</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>co_nmt_hb</label>
+        <link refid="structco__nmt__hb"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>can_msg</label>
+        <link refid="structcan__msg"/>
+      </node>
+      <node id="14">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>co_emcy_node</label>
+        <link refid="structco__emcy__node"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>co_sub</label>
+        <link refid="structco__sub"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>max</edgelabel>
+          <edgelabel>min</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>can_buf</label>
+        <link refid="structcan__buf"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>co_emcy_msg</label>
+        <link refid="structco__emcy__msg"/>
+      </node>
+      <node id="28">
+        <label>co_ssdo</label>
+        <link refid="structco__ssdo"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>co_sdo_req</label>
+        <link refid="structco__sdo__req"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>membuf</edgelabel>
+          <edgelabel>membuf_</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>co_csdo</label>
+        <link refid="structco__csdo"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>dn_buf</edgelabel>
+          <edgelabel>up_buf</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>dn_dcf</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>co_csdo_dn_dcf</label>
+        <link refid="structco__csdo__dn__dcf"/>
+      </node>
+      <node id="21">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="16">
+        <label>co_nmt_srv</label>
+        <link refid="structco__nmt__srv"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>sync</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>tpdos</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>rpdos</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>csdos</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>ssdos</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>emcy</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>co_nmt_slave</label>
+        <link refid="structco__nmt__slave"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>co_pdo_map_par</label>
+        <link refid="structco__pdo__map__par"/>
+      </node>
+      <node id="23">
+        <label>co_rpdo</label>
+        <link refid="structco__rpdo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer_event</edgelabel>
+          <edgelabel>timer_swnd</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>comm</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>co_pdo_comm_par</label>
+        <link refid="structco__pdo__comm__par"/>
+      </node>
+      <node id="26">
+        <label>co_csdo_state</label>
+        <link refid="structco__csdo__state"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>co_tpdo</label>
+        <link refid="structco__tpdo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer_event</edgelabel>
+          <edgelabel>timer_swnd</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>comm</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>co_val</label>
+        <link refid="unionco__val"/>
+      </node>
+      <node id="8">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="10">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>co_ssdo_state</label>
+        <link refid="structco__ssdo__state"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/nmt.c" line="157" column="1" bodyfile="lib/co/nmt.c" bodystart="157" bodyend="328"/>
+    <listofallmembers>
+      <member refid="structco__nmt_1ab874f1880b9ff39a16cf9cebeae842e3" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>begin</name></member>
+      <member refid="structco__nmt_1a77fa9247ccd68b3000b47dd4259f75af" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>buf</name></member>
+      <member refid="structco__nmt_1a62e7a946c506ab3e36f3d6687756a7fe" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>bus_selection</name></member>
+      <member refid="structco__nmt_1ae878cdbf521696bcadeb971353a57f57" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>cs_data</name></member>
+      <member refid="structco__nmt_1a66c622df8ba62d632b451b227bb830ea" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>cs_ind</name></member>
+      <member refid="structco__nmt_1a22dabb0aa43e509527a849dbae983fab" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>cs_timer</name></member>
+      <member refid="structco__nmt_1aea53847077fa8d6008d51af429c78fae" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>dcf_comm_begin</name></member>
+      <member refid="structco__nmt_1a4f3b174e83e753bf43ac05f1a7d464ea" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>dcf_comm_end</name></member>
+      <member refid="structco__nmt_1a715edf28e91720e08ff4e0175d697175" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>dev</name></member>
+      <member refid="structco__nmt_1aebaf1768a869cd7f5dd0be1a68078e4e" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>dn_data</name></member>
+      <member refid="structco__nmt_1a82ce6e2483ed11cd29969280feaf6a5f" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>dn_ind</name></member>
+      <member refid="structco__nmt_1a8c47c6c14b5d85ec3cf0022e8c9e6e1d" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>ec_timer</name></member>
+      <member refid="structco__nmt_1a609c4673be0006130760a63a6cc20414" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>halt</name></member>
+      <member refid="structco__nmt_1a1e666c6975538d36beb2f66ab69a1b7d" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>hb_data</name></member>
+      <member refid="structco__nmt_1ad73813ff50ea07be420ade2768e24837" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>hb_ind</name></member>
+      <member refid="structco__nmt_1a9dbde35670f26d3c438568dc9ecd8576" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>hbs</name></member>
+      <member refid="structco__nmt_1a321cff172dbb3c9d4690c2372b7c7f5c" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>id</name></member>
+      <member refid="structco__nmt_1ae706ada4be132bf9033317f1092ad886" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>inhibit</name></member>
+      <member refid="structco__nmt_1a0dbd7cb53c570b34e26ab8f98b2a84c9" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>master</name></member>
+      <member refid="structco__nmt_1ab9c8400bc8075d7cc6fb4e16d312e102" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>ms</name></member>
+      <member refid="structco__nmt_1ae28c490575536d606166d8499d501864" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>net</name></member>
+      <member refid="structco__nmt_1a9c41f41d358c9f61ce011fc3e08d57e2" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>nhb</name></member>
+      <member refid="structco__nmt_1a46925d8f9422181b62e9a9729ebee0c6" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>rdn</name></member>
+      <member refid="structco__nmt_1a78e9c192c567f2452be1c576a99ad74d" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>rdn_data</name></member>
+      <member refid="structco__nmt_1aaca85b279d7894dbc26ca04c71f6885e" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>rdn_enabled</name></member>
+      <member refid="structco__nmt_1aae56eb407804c0cda8ceb04b281d9957" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>rdn_ind</name></member>
+      <member refid="structco__nmt_1acc56a4ef6fd738bbd0bcb1e888de8271" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>recv_000</name></member>
+      <member refid="structco__nmt_1a7f4a2131929e015f626c5225443396a2" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>recv_700</name></member>
+      <member refid="structco__nmt_1ac348d5f99003f6769df40121cd840b49" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>slaves</name></member>
+      <member refid="structco__nmt_1aa4d76ba389c268d88b4b6758dc67f76d" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>srv</name></member>
+      <member refid="structco__nmt_1a7472ee29aefd474e8cce19bfb3609b48" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>st</name></member>
+      <member refid="structco__nmt_1ac84d425b8fdf7bef50693914f4fec2b5" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>st_data</name></member>
+      <member refid="structco__nmt_1ac7f64f0dcf6487dc210335508e9013d3" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>st_ind</name></member>
+      <member refid="structco__nmt_1a68daa5b9d4ee2a276a9d8df650eee04d" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>startup</name></member>
+      <member refid="structco__nmt_1a40d9f861048f582dba739d345e5ea885" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>state</name></member>
+      <member refid="structco__nmt_1af348877b59cc196a62287d8416162248" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>sync_data</name></member>
+      <member refid="structco__nmt_1ac7281c9548390d680df974bcf37303a5" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>sync_ind</name></member>
+      <member refid="structco__nmt_1a605c8ebeeac067a23ff8ddd1d392a835" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>timeout</name></member>
+      <member refid="structco__nmt_1a15269ff171a695ef125284953092493d" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>tpdo_event_mask</name></member>
+      <member refid="structco__nmt_1a1ab871bb2e53e985bcc147fd32d2bdcf" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>tpdo_event_wait</name></member>
+      <member refid="structco__nmt_1a93b3cce549cfb391798542ba8408f9a7" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>up_data</name></member>
+      <member refid="structco__nmt_1a5be3c327c127527ab589a0aed8ed41cc" prot="public" virt="non-virtual"><scope>co_nmt</scope><name>up_ind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

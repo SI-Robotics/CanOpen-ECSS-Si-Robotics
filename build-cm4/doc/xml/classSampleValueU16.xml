@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSampleValueU16" kind="class" language="C++" prot="public">
+    <compoundname>SampleValueU16</compoundname>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classSampleValueU16_1a02c6cee13c2928e75d82f485e45791fc" prot="private" static="no">
+        <type>co_unsigned16_t</type>
+        <definition>using SampleValueU16::sub_type =  co_unsigned16_t</definition>
+        <argsstring></argsstring>
+        <name>sub_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1053" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classSampleValueU16_1ac3be7968c8a93e838dfdc03795ae9f7f" prot="private" static="no">
+        <type>std::vector&lt; uint_least8_t &gt;</type>
+        <definition>using SampleValueU16::segment_data_t =  std::vector&lt;uint_least8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>segment_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1054" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1054" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSampleValueU16_1a29ce47027ab2fc4cb13e2f59c0e2c2bd" prot="private" static="no" mutable="no">
+        <type>const sub_type</type>
+        <definition>const sub_type SampleValueU16::VAL</definition>
+        <argsstring></argsstring>
+        <name>VAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1094" column="18" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1094" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSampleValueU16_1af26c63ae98f76708a8622f8c75722e94" prot="private" static="no" mutable="no">
+        <type>std::array&lt; uint_least8_t, sizeof(sub_type)&gt;</type>
+        <definition>std::array&lt;uint_least8_t, sizeof(sub_type)&gt; SampleValueU16::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1095" column="14" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1095" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSampleValueU16_1a22e4c4b5d1f41e157e2eb241b7505ae6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SampleValueU16::SampleValueU16</definition>
+        <argsstring>(const sub_type val=0x1234u)</argsstring>
+        <name>SampleValueU16</name>
+        <param>
+          <type>const sub_type</type>
+          <declname>val</declname>
+          <defval>0x1234u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1057" column="12" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1057" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU16_1a63834671f2b8f5987d54d8a2dce2294a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>segment_data_t</type>
+        <definition>segment_data_t SampleValueU16::GetSegmentData</definition>
+        <argsstring>()</argsstring>
+        <name>GetSegmentData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1062" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1062" bodyend="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU16_1adae7a54c0a64b306e068d8685377c906" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void* SampleValueU16::GetValPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1071" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1071" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU16_1a9b109d1cfc3331c5f73579758daa842a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* SampleValueU16::GetBufPtr</definition>
+        <argsstring>()</argsstring>
+        <name>GetBufPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1076" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1076" bodyend="1078"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU16_1a8071c83dca64bc1d794991e2392e28f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>sub_type</type>
+        <definition>sub_type SampleValueU16::GetVal</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1081" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1081" bodyend="1083"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classSampleValueU16_1a93cb3b56e76e6e9b657253c1d8a648e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::array&lt; uint_least8_t, sizeof(sub_type)&gt;</type>
+        <definition>static std::array&lt;uint_least8_t, sizeof(sub_type)&gt; SampleValueU16::StLe16InArray</definition>
+        <argsstring>(const sub_type val)</argsstring>
+        <name>StLe16InArray</name>
+        <param>
+          <type>const sub_type</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1086" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1086" bodyend="1091"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Unsigned 16-bit sample value wrapper. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-csdo.cpp" line="1052" column="1" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1052" bodyend="1096"/>
+    <listofallmembers>
+      <member refid="classSampleValueU16_1af26c63ae98f76708a8622f8c75722e94" prot="private" virt="non-virtual"><scope>SampleValueU16</scope><name>buf</name></member>
+      <member refid="classSampleValueU16_1a9b109d1cfc3331c5f73579758daa842a" prot="public" virt="non-virtual"><scope>SampleValueU16</scope><name>GetBufPtr</name></member>
+      <member refid="classSampleValueU16_1a63834671f2b8f5987d54d8a2dce2294a" prot="public" virt="non-virtual"><scope>SampleValueU16</scope><name>GetSegmentData</name></member>
+      <member refid="classSampleValueU16_1a8071c83dca64bc1d794991e2392e28f6" prot="public" virt="non-virtual"><scope>SampleValueU16</scope><name>GetVal</name></member>
+      <member refid="classSampleValueU16_1adae7a54c0a64b306e068d8685377c906" prot="public" virt="non-virtual"><scope>SampleValueU16</scope><name>GetValPtr</name></member>
+      <member refid="classSampleValueU16_1a22e4c4b5d1f41e157e2eb241b7505ae6" prot="public" virt="non-virtual"><scope>SampleValueU16</scope><name>SampleValueU16</name></member>
+      <member refid="classSampleValueU16_1ac3be7968c8a93e838dfdc03795ae9f7f" prot="private" virt="non-virtual"><scope>SampleValueU16</scope><name>segment_data_t</name></member>
+      <member refid="classSampleValueU16_1a93cb3b56e76e6e9b657253c1d8a648e8" prot="public" virt="non-virtual"><scope>SampleValueU16</scope><name>StLe16InArray</name></member>
+      <member refid="classSampleValueU16_1a02c6cee13c2928e75d82f485e45791fc" prot="private" virt="non-virtual"><scope>SampleValueU16</scope><name>sub_type</name></member>
+      <member refid="classSampleValueU16_1a29ce47027ab2fc4cb13e2f59c0e2c2bd" prot="private" virt="non-virtual"><scope>SampleValueU16</scope><name>VAL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,870 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="sdo-consts_8hpp" kind="file" language="C++">
+    <compoundname>sdo-consts.hpp</compoundname>
+    <includes refid="stdint_8h" local="no">stdint.h</includes>
+    <includedby refid="test-csdo_8cpp" local="no">unit-tests/co/test-csdo.cpp</includedby>
+    <includedby refid="test-ssdo_8cpp" local="no">unit-tests/co/test-ssdo.cpp</includedby>
+    <includedby refid="can-send_8cpp" local="yes">unit-tests/libtest/tools/can-send.cpp</includedby>
+    <includedby refid="lely-unit-test_8hpp" local="yes">unit-tests/libtest/tools/lely-unit-test.hpp</includedby>
+    <includedby refid="sdo-create-message_8cpp" local="yes">unit-tests/libtest/tools/sdo-create-message.cpp</includedby>
+    <includedby refid="sdo-create-message_8hpp" local="yes">unit-tests/libtest/tools/sdo-create-message.hpp</includedby>
+    <includedby refid="sdo-init-expected-data_8cpp" local="yes">unit-tests/libtest/tools/sdo-init-expected-data.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/tools/sdo-consts.hpp</label>
+        <link refid="sdo-consts_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="12">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="27">
+        <label>unit-tests/libtest/tools/sdo-create-message.hpp</label>
+        <link refid="sdo-create-message_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>unit-tests/libtest/tools/lely-unit-test.cpp</label>
+        <link refid="lely-unit-test_8cpp"/>
+      </node>
+      <node id="3">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-sdo.cpp</label>
+        <link refid="test-sdo_8cpp"/>
+      </node>
+      <node id="17">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/libtest/tools/can-send.cpp</label>
+        <link refid="can-send_8cpp"/>
+      </node>
+      <node id="2">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/tools/sdo-consts.hpp</label>
+        <link refid="sdo-consts_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="24">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="28">
+        <label>unit-tests/libtest/tools/sdo-init-expected-data.cpp</label>
+        <link refid="sdo-init-expected-data_8cpp"/>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="26">
+        <label>unit-tests/libtest/tools/sdo-create-message.cpp</label>
+        <link refid="sdo-create-message_8cpp"/>
+      </node>
+      <node id="18">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="5">
+        <label>unit-tests/libtest/tools/lely-unit-test.hpp</label>
+        <link refid="lely-unit-test_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="23">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="20">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sdo-consts_8hpp_1a32223d029fc180576d3f9394225dd8bb" prot="public" static="no">
+        <name>CHECK_SDO_CAN_MSG_CMD</name>
+        <param><defname>res</defname></param>
+        <param><defname>msg</defname></param>
+        <initializer>CHECK_EQUAL((res), (msg)[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="83" column="9" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sdo-consts_8hpp_1aff0028fe9fd693d41b8fbfc28c88ba1c" prot="public" static="no">
+        <name>CHECK_SDO_CAN_MSG_IDX</name>
+        <param><defname>idx</defname></param>
+        <param><defname>msg</defname></param>
+        <initializer>CHECK_EQUAL((idx), <ref refid="endian_8h_1a9ca3bc1b969a3643f4d5e90b3226a3a1" kindref="member">ldle_u16</ref>((msg) + 1u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="84" column="9" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sdo-consts_8hpp_1af56434b580404fbf2ffd7635f9d7a84e" prot="public" static="no">
+        <name>CHECK_SDO_CAN_MSG_SUBIDX</name>
+        <param><defname>subidx</defname></param>
+        <param><defname>msg</defname></param>
+        <initializer>CHECK_EQUAL((subidx), (msg)[3u])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="85" column="9" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sdo-consts_8hpp_1a97cb5a1cef1ca74136a2af9d794f2c10" prot="public" static="no">
+        <name>CHECK_SDO_CAN_MSG_AC</name>
+        <param><defname>ac</defname></param>
+        <param><defname>msg</defname></param>
+        <initializer>CHECK_EQUAL((ac), <ref refid="endian_8h_1a344bdf8c77b3f34c5d31e67a1148493a" kindref="member">ldle_u32</ref>((msg) + 4u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="86" column="9" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sdo-consts_8hpp_1a805f94ca6522f522f0b014d9050abf0c" prot="public" static="no">
+        <name>CHECK_SDO_CAN_MSG_VAL</name>
+        <param><defname>val</defname></param>
+        <param><defname>msg</defname></param>
+        <initializer>CHECK_EQUAL((val), <ref refid="endian_8h_1a344bdf8c77b3f34c5d31e67a1148493a" kindref="member">ldle_u32</ref>((msg) + 4u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="87" column="9" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ad8722ec96e7968130089f0324b8be965" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_CCS_DN_SEG_REQ</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_CCS_DN_SEG_REQ</name>
+        <initializer>= 0x00u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="29" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a5bec35b11a183b3b1f7160f80b9f7169" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_CCS_DN_INI_REQ</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_CCS_DN_INI_REQ</name>
+        <initializer>= 0x20u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="30" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a64d7675c25f64505002ac3b69b2f7845" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_CCS_UP_INI_REQ</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_CCS_UP_INI_REQ</name>
+        <initializer>= 0x40u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="31" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a5db776ac059f2e5f8f26ef575877e9ba" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_CCS_UP_SEG_REQ</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_CCS_UP_SEG_REQ</name>
+        <initializer>= 0x60u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="32" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ae64bc9f5c448eda79b9d58302f3ff5bf" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_CCS_BLK_UP_REQ</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_CCS_BLK_UP_REQ</name>
+        <initializer>= 0xa0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="33" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a322ba63cd011084386727ad9ebaa4b5a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_CCS_BLK_DN_REQ</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_CCS_BLK_DN_REQ</name>
+        <initializer>= 0xc0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="34" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a579584eb942f3482ef9e22e3702ca68a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_CS_ABORT</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_CS_ABORT</name>
+        <initializer>= 0x80u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="36" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ac74a9c40294908be1d6ebbf13add733a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SCS_UP_SEG_RES</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SCS_UP_SEG_RES</name>
+        <initializer>= 0x00u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="38" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a4929c0e481e45344cc4a360ede4afaa8" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SCS_DN_SEG_RES</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SCS_DN_SEG_RES</name>
+        <initializer>= 0x20u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="39" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a6039766939f8bf838b2d604abd1ac94b" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SCS_UP_INI_RES</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SCS_UP_INI_RES</name>
+        <initializer>= 0x40u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="40" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ada340cea744a3790815247a4d5de655f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SCS_DN_INI_RES</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SCS_DN_INI_RES</name>
+        <initializer>= 0x60u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="41" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ac068df3fc2c703b7269bdd4d1316c5fd" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SCS_BLK_DN_RES</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SCS_BLK_DN_RES</name>
+        <initializer>= 0xa0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="42" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a15a614ca658dabd1fe69ab13adaf1eff" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SCS_BLK_UP_RES</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SCS_BLK_UP_RES</name>
+        <initializer>= 0xc0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="43" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a7fe4449e4cadc7208a73077f113fd888" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_MAX_SEQNO</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_MAX_SEQNO</name>
+        <initializer>= 127u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="45" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a9cf30f9a370fc0ab1903718863d37484" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SC_END_BLK</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SC_END_BLK</name>
+        <initializer>= 0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="47" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1af0fdad3030baf22cf63b69a9a0a24e14" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SC_BLK_RES</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SC_BLK_RES</name>
+        <initializer>= 0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="48" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1aecd314b7df88c4fb0d334b2ae5af52e0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SC_START_UP</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SC_START_UP</name>
+        <initializer>= 0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="49" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a26b2e23936d40479458aad741b8932b0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SEG_LAST</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SEG_LAST</name>
+        <initializer>= 0x01u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="51" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a0f26981d52226f2bab8f1d7547c48616" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SEG_TOGGLE</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SEG_TOGGLE</name>
+        <initializer>= 0x10u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="52" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a5b079df8536f563c230a710085175eb5" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SEQ_LAST</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SEQ_LAST</name>
+        <initializer>= 0x80u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="53" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a0e7f26a1ff9145d68eacc92836955f1e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SEG_SIZE_MASK</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SEG_SIZE_MASK</name>
+        <initializer>= 0x0eu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="54" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1aec6ec9498e676cacb552604cc20e8ce8" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SC_MASK</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SC_MASK</name>
+        <initializer>= 0x03u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="55" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ac7ffa8663501c6c536b052330cf91908" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_BLK_CRC</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_BLK_CRC</name>
+        <initializer>= 0x04u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="57" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a0db43a75f7227904aa6679f28c512597" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_BLK_SIZE_IND</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_BLK_SIZE_IND</name>
+        <initializer>= 0x02u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="58" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a7d01e999efada0293f073ec82cc129a5" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_BLK_SIZE_MASK</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_BLK_SIZE_MASK</name>
+        <initializer>= 0x1cu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="59" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ade2ece2a8e45702e771b342b6fec966c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SC_INI_BLK</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SC_INI_BLK</name>
+        <initializer>= 0x00u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="60" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1acced101dfc05eb5e24df609d8842120d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_INI_SIZE_IND</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_INI_SIZE_IND</name>
+        <initializer>= 0x01u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="62" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1ac0a5149f4c4ec0c0d468c648741f352b" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_INI_SIZE_EXP</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_INI_SIZE_EXP</name>
+        <initializer>= 0x02u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="63" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a716934c775cb69122af2c38dfb7c9c1c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_INI_SIZE_MASK</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_INI_SIZE_MASK</name>
+        <initializer>= 0x0fu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="64" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1afdc04bfc86577ab51734b5c48344751e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_MSG_SIZE</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_MSG_SIZE</name>
+        <initializer>= 8u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="66" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1a5e851a1819af18445b153c75e97fb91f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_INI_DATA_SIZE</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_INI_DATA_SIZE</name>
+        <initializer>= 4u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="67" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sdo-consts_8hpp_1aa3ac13a7fc3e7f871a5ae6221d741f9f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SEG_MAX_DATA_SIZE</definition>
+        <argsstring></argsstring>
+        <name>CO_SDO_SEG_MAX_DATA_SIZE</name>
+        <initializer>= 7u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="68" column="19" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sdo-consts_8hpp_1a6e443311305ae074ddd434fa2888e1f2" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_SEG_SIZE_SET</definition>
+        <argsstring>(const uint8_t n)</argsstring>
+        <name>CO_SDO_SEG_SIZE_SET</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="71" column="1" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-consts_8hpp_1a50e7a6540618a3f88d22c991553cb1d0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_BLK_SIZE_SET</definition>
+        <argsstring>(const uint8_t n)</argsstring>
+        <name>CO_SDO_BLK_SIZE_SET</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="75" column="1" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-consts_8hpp_1a7e0eb5ddae9317fde9b8d70a568dd5f5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t CO_SDO_INI_SIZE_EXP_SET</definition>
+        <argsstring>(const uint8_t n)</argsstring>
+        <name>CO_SDO_INI_SIZE_EXP_SET</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-consts.hpp" line="79" column="1" bodyfile="unit-tests/libtest/tools/sdo-consts.hpp" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UNIT_TEST_SDO_DEFINES_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UNIT_TEST_SDO_DEFINES_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stdint_8h" kindref="compound">stdint.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>values<sp/>described<sp/>in<sp/>CiA<sp/>301,<sp/>section<sp/>7.2.4.3<sp/>SDO<sp/>protocols</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a60ecfea2bd41bc55f40f9abedc6a2a33" kindref="member">CO_SDO_CCS_DN_SEG_REQ</ref><sp/>=<sp/>0x00u;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a1e58f67e944363a9312f33ad795a1189" kindref="member">CO_SDO_CCS_DN_INI_REQ</ref><sp/>=<sp/>0x20u;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a52e6acc2db6f614f2391eb2728eca572" kindref="member">CO_SDO_CCS_UP_INI_REQ</ref><sp/>=<sp/>0x40u;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1adf854c28cb66ca22ece763521c799b1a" kindref="member">CO_SDO_CCS_UP_SEG_REQ</ref><sp/>=<sp/>0x60u;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1aca877ebd2887c91706a4488817bb6eec" kindref="member">CO_SDO_CCS_BLK_UP_REQ</ref><sp/>=<sp/>0xa0u;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a44b8b1fd8c207ff87f5bede2aed8d78e" kindref="member">CO_SDO_CCS_BLK_DN_REQ</ref><sp/>=<sp/>0xc0u;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a428c9c200f3e308daf034980d92e6705" kindref="member">CO_SDO_CS_ABORT</ref><sp/>=<sp/>0x80u;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a2a1fb338650d7e01eb2afb1480c202e7" kindref="member">CO_SDO_SCS_UP_SEG_RES</ref><sp/>=<sp/>0x00u;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a3fc5d72df2f79d3bad11a55f85cb6a31" kindref="member">CO_SDO_SCS_DN_SEG_RES</ref><sp/>=<sp/>0x20u;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a3f1f7ea44d889b9fd8c9a37df2d57634" kindref="member">CO_SDO_SCS_UP_INI_RES</ref><sp/>=<sp/>0x40u;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1ad15701b129f535d88a6809508ae533cb" kindref="member">CO_SDO_SCS_DN_INI_RES</ref><sp/>=<sp/>0x60u;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a7e689ff511c60309c672dd19b79bd263" kindref="member">CO_SDO_SCS_BLK_DN_RES</ref><sp/>=<sp/>0xa0u;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a939141fa1ff0170af1affe7d8e74cd20" kindref="member">CO_SDO_SCS_BLK_UP_RES</ref><sp/>=<sp/>0xc0u;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1aa63d156dc29020d0b83eb6367126e510" kindref="member">CO_SDO_MAX_SEQNO</ref><sp/>=<sp/>127u;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a316e1e04297ec60353b2dd523edab34d" kindref="member">CO_SDO_SC_END_BLK</ref><sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1abde3bbff60a2f360dc749ac48be2c189" kindref="member">CO_SDO_SC_BLK_RES</ref><sp/>=<sp/>0x02;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1ab1ccd72141050ac2541431a7025999bf" kindref="member">CO_SDO_SC_START_UP</ref><sp/>=<sp/>0x03;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1aa8a64c90c8fdf3e561affff7b63c39a0" kindref="member">CO_SDO_SEG_LAST</ref><sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a199b6fc0fc3c78f2f90b448227801706" kindref="member">CO_SDO_SEG_TOGGLE</ref><sp/>=<sp/>0x10u;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a0a93cb436d01e9a74eb18541e0846232" kindref="member">CO_SDO_SEQ_LAST</ref><sp/>=<sp/>0x80u;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a0f578db3ab9f2323d002f71649abae87" kindref="member">CO_SDO_SEG_SIZE_MASK</ref><sp/>=<sp/>0x0eu;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a5554a49618a261706f7356d0b6d4f8b8" kindref="member">CO_SDO_SC_MASK</ref><sp/>=<sp/>0x03u;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a592b7ab28fbacf10623eaf367c1637a7" kindref="member">CO_SDO_BLK_CRC</ref><sp/>=<sp/>0x04u;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a1fa2c3377cc31e2ee76ab140d17a5ee5" kindref="member">CO_SDO_BLK_SIZE_IND</ref><sp/>=<sp/>0x02u;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1ac419385fa4cfc79f969d27b77b19b44c" kindref="member">CO_SDO_BLK_SIZE_MASK</ref><sp/>=<sp/>0x1cu;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1af67e98b3d8045e4ee71189b99918da2a" kindref="member">CO_SDO_SC_INI_BLK</ref><sp/>=<sp/>0x00u;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a6a89a1f5ba1e56961d8317e0086268c0" kindref="member">CO_SDO_INI_SIZE_IND</ref><sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1acfc334ae2557097b62cf1a14da21d2c0" kindref="member">CO_SDO_INI_SIZE_EXP</ref><sp/>=<sp/>0x02u;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">constexpr<sp/>uint8_t<sp/><ref refid="lib_2co_2sdo_8h_1a340bde92775cee26b1a21c250076b3a2" kindref="member">CO_SDO_INI_SIZE_MASK</ref><sp/>=<sp/>0x0fu;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">constexpr<sp/>uint8_t<sp/>CO_SDO_MSG_SIZE<sp/>=<sp/>8u;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">constexpr<sp/>uint8_t<sp/>CO_SDO_INI_DATA_SIZE<sp/>=<sp/>4u;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">constexpr<sp/>uint8_t<sp/>CO_SDO_SEG_MAX_DATA_SIZE<sp/>=<sp/>7u;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">constexpr<sp/>uint8_t</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><ref refid="lib_2co_2sdo_8h_1a2aab6732d53670d95dec691f616af0bf" kindref="member">CO_SDO_SEG_SIZE_SET</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((7u<sp/>-<sp/>n)<sp/>&lt;&lt;<sp/>1u)<sp/>&amp;<sp/><ref refid="lib_2co_2sdo_8h_1a0f578db3ab9f2323d002f71649abae87" kindref="member">CO_SDO_SEG_SIZE_MASK</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">constexpr<sp/>uint8_t</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><ref refid="lib_2co_2sdo_8h_1a256626a4583e8d5ddda3cb1c3df879f5" kindref="member">CO_SDO_BLK_SIZE_SET</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((7u<sp/>-<sp/>n)<sp/>&lt;&lt;<sp/>2u)<sp/>&amp;<sp/><ref refid="lib_2co_2sdo_8h_1ac419385fa4cfc79f969d27b77b19b44c" kindref="member">CO_SDO_BLK_SIZE_MASK</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">constexpr<sp/>uint8_t</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="lib_2co_2sdo_8h_1a867c0aa4549018ca02d6ca84bbff673e" kindref="member">CO_SDO_INI_SIZE_EXP_SET</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(((4u<sp/>-<sp/>n)<sp/>&lt;&lt;<sp/>2u)<sp/>|<sp/>0x03u)<sp/>&amp;<sp/><ref refid="lib_2co_2sdo_8h_1a340bde92775cee26b1a21c250076b3a2" kindref="member">CO_SDO_INI_SIZE_MASK</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_SDO_CAN_MSG_CMD(res,<sp/>msg)<sp/>CHECK_EQUAL((res),<sp/>(msg)[0])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_SDO_CAN_MSG_IDX(idx,<sp/>msg)<sp/>CHECK_EQUAL((idx),<sp/>ldle_u16((msg)<sp/>+<sp/>1u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_SDO_CAN_MSG_SUBIDX(subidx,<sp/>msg)<sp/>CHECK_EQUAL((subidx),<sp/>(msg)[3u])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_SDO_CAN_MSG_AC(ac,<sp/>msg)<sp/>CHECK_EQUAL((ac),<sp/>ldle_u32((msg)<sp/>+<sp/>4u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_SDO_CAN_MSG_VAL(val,<sp/>msg)<sp/>CHECK_EQUAL((val),<sp/>ldle_u32((msg)<sp/>+<sp/>4u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>LELY_UNIT_TEST_SDO_DEFINES_HPP_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/libtest/tools/sdo-consts.hpp"/>
+  </compounddef>
+</doxygen>

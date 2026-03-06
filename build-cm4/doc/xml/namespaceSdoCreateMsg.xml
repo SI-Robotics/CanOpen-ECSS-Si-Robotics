@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceSdoCreateMsg" kind="namespace" language="C++">
+    <compoundname>SdoCreateMsg</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a3dae95eb7898d102b98d25704c9ae456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::Abort</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, co_unsigned32_t ac=0)</argsstring>
+        <name>Abort</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="34" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="37" bodyend="45" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="34" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a31d27899f4d27fd4a128f760a05a2126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::Default</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id)</argsstring>
+        <name>Default</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="36" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="48" bodyend="57" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="36" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a5bc97b68e86b961d340677395326d101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkDnIniReq</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, co_unsigned8_t cs_flags=0, size_t size=0)</argsstring>
+        <name>BlkDnIniReq</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="39" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="60" bodyend="73" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="39" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a36f251b948b7671f1304366ef600e7cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkDnSubReq</definition>
+        <argsstring>(uint_least32_t recipient_id, co_unsigned8_t seqno, co_unsigned8_t cs_flags=0, const std::vector&lt; uint_least8_t &gt; &amp;data={})</argsstring>
+        <name>BlkDnSubReq</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>seqno</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint_least8_t &gt; &amp;</type>
+          <declname>data</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="43" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="76" bodyend="87" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="43" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1aeb51c31b03ff2db8c0da9c16d78a8655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkDnSubRes</definition>
+        <argsstring>(const uint_least8_t ackseq, const uint_least8_t blksize, const uint_least32_t recipient_id, const co_unsigned8_t cs_flags=0)</argsstring>
+        <name>BlkDnSubRes</name>
+        <param>
+          <type>const uint_least8_t</type>
+          <declname>ackseq</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t</type>
+          <declname>blksize</declname>
+        </param>
+        <param>
+          <type>const uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="47" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="90" bodyend="101" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="47" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1ac7ef738f9d279aaec9da7335225ad00b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkDnIniRes</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, co_unsigned8_t cs_flags=0, co_unsigned8_t blksize=0)</argsstring>
+        <name>BlkDnIniRes</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>blksize</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="51" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="104" bodyend="115" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="51" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a11583d6cc30b52c6bf5fcf05834e196e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkDnEndReq</definition>
+        <argsstring>(uint_least32_t recipient_id, co_unsigned16_t crc, co_unsigned8_t cs_flags=0)</argsstring>
+        <name>BlkDnEndReq</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="55" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="118" bodyend="128" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="55" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1ac998b3fffa7b319f56cb57d4f4fe30ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkDnEndRes</definition>
+        <argsstring>(uint_least32_t recipient_id, co_unsigned8_t cs_flags=0)</argsstring>
+        <name>BlkDnEndRes</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="58" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="131" bodyend="138" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="58" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a1e83709c42f4919c920feb416052eae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::DnIniReq</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, const uint_least8_t buf[CO_SDO_INI_DATA_SIZE], uint_least8_t cs_flags=0)</argsstring>
+        <name>DnIniReq</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t</type>
+          <declname>buf</declname>
+          <array>[CO_SDO_INI_DATA_SIZE]</array>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="60" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="141" bodyend="151" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="60" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1adbfdcb0e5aa3fbeec8804134324b117f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::DnIniRes</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id)</argsstring>
+        <name>DnIniRes</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="65" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="154" bodyend="160" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="65" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a4a566dd7f4a01d76654b9d899a3fac73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::DnSegReq</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, const uint_least8_t buf[], uint8_t size, uint_least8_t cs_flags=0)</argsstring>
+        <name>DnSegReq</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t</type>
+          <declname>buf</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="68" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="163" bodyend="174" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="68" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a560788dcd032df82a9437b3890cf769c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::DnSegRes</definition>
+        <argsstring>(uint_least32_t recipient_id, co_unsigned8_t cs_flags=0)</argsstring>
+        <name>DnSegRes</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="72" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="177" bodyend="183" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="72" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1aaddc6cf8eb545adfae9bcb1b8bb943b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::UpIniReq</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id)</argsstring>
+        <name>UpIniReq</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="74" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="186" bodyend="192" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="74" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a01928db14d094f109d478fed2abad9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::UpIniRes</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, uint_least8_t cs_flags=0, const std::vector&lt; uint_least8_t &gt; &amp;data={})</argsstring>
+        <name>UpIniRes</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint_least8_t &gt; &amp;</type>
+          <declname>data</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="77" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="195" bodyend="206" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="77" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a3198b947a89bd4ad6e318a673664f17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::UpIniResWithSize</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, size_t size)</argsstring>
+        <name>UpIniResWithSize</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="81" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="209" bodyend="219" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="81" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1af41d3a348afb3ddb73e86d068a26ad01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkUpSegReq</definition>
+        <argsstring>(uint_least32_t recipient_id, uint_least8_t seqno, const std::vector&lt; uint_least8_t &gt; &amp;data, co_unsigned8_t cs_flags=0)</argsstring>
+        <name>BlkUpSegReq</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>seqno</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint_least8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="84" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="222" bodyend="234" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="84" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a037d5914e36294123a94317e1486a462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::UpSegRes</definition>
+        <argsstring>(uint_least32_t recipient_id, const std::vector&lt; uint_least8_t &gt; &amp;data, co_unsigned8_t cs_flags=0)</argsstring>
+        <name>UpSegRes</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint_least8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="88" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="237" bodyend="248" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="88" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a25dcde1a87b0fe5721fd913517f40b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkUpIniReq</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, co_unsigned8_t blksize=CO_SDO_MAX_SEQNO, uint_least8_t pst=0)</argsstring>
+        <name>BlkUpIniReq</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>blksize</declname>
+          <defval><ref refid="lib_2co_2sdo_8h_1aa63d156dc29020d0b83eb6367126e510" kindref="member">CO_SDO_MAX_SEQNO</ref></defval>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>pst</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="92" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="251" bodyend="262" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="92" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a2055da669264ebfb1bc09fb9b6a3ef5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkUpReq</definition>
+        <argsstring>(uint_least32_t recipient_id, co_unsigned8_t cs_flags=0)</argsstring>
+        <name>BlkUpReq</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="97" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="265" bodyend="271" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="97" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1aafbc9e6951f8b44e91760ddca706c13c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkUpRes</definition>
+        <argsstring>(uint_least32_t recipient_id, co_unsigned8_t size=0, co_unsigned8_t cs_flags=0)</argsstring>
+        <name>BlkUpRes</name>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cs_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="99" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="274" bodyend="283" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="99" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-create-message_8hpp_1a1c21bbdddaec7a637fd364e24ebf4372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>can_msg SdoCreateMsg::BlkUpIniRes</definition>
+        <argsstring>(co_unsigned16_t idx, co_unsigned8_t subidx, uint_least32_t recipient_id, co_unsigned32_t size=0)</argsstring>
+        <name>BlkUpIniRes</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>recipient_id</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="102" column="9" bodyfile="unit-tests/libtest/tools/sdo-create-message.cpp" bodystart="286" bodyend="299" declfile="unit-tests/libtest/tools/sdo-create-message.hpp" declline="102" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/sdo-create-message.hpp" line="33" column="1"/>
+  </compounddef>
+</doxygen>

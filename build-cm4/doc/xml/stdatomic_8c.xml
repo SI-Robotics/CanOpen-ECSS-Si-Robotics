@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="stdatomic_8c" kind="file" language="C++">
+    <compoundname>stdatomic.c</compoundname>
+    <includes refid="compat_8h" local="yes">compat.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>compat.h</label>
+        <link refid="compat_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>lib/compat/stdatomic.c</label>
+        <link refid="stdatomic_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>This file is part of the C11 and POSIX compatibility library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="stdatomic_8h" kindref="compound">lely/compat/stdatomic.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2013-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="compat_8h" kindref="compound">compat.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_ATOMICS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_COMPAT_STDATOMIC_INLINE<sp/>extern<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stdatomic_8h" kindref="compound">lely/compat/stdatomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="lib/compat/stdatomic.c"/>
+  </compounddef>
+</doxygen>

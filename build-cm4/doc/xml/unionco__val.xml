@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="unionco__val" kind="union" language="C++" prot="public">
+    <compoundname>co_val</compoundname>
+    <includes refid="val_8h" local="no">val.h</includes>
+    <briefdescription>
+<para>A union of the CANopen static data types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/co/val.h" line="323" column="1" bodyfile="include/lely/co/val.h" bodystart="323" bodyend="327"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

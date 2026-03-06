@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1400RpdoCommPar_1_1Sub06SyncStartValue" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1400RpdoCommPar::Sub06SyncStartValue</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SubT&lt; 0x06u, CO_DEFTYPE_UNSIGNED8 &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Obj1400RpdoCommPar::Sub06SyncStartValue</label>
+        <link refid="structObj1400RpdoCommPar_1_1Sub06SyncStartValue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x06u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Obj1400RpdoCommPar::Sub06SyncStartValue</label>
+        <link refid="structObj1400RpdoCommPar_1_1Sub06SyncStartValue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x06u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/rpdo-comm-par.hpp" line="38" column="3" bodyfile="unit-tests/co/obj-init/rpdo-comm-par.hpp" bodystart="38" bodyend="38"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

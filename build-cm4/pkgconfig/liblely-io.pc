@@ -1,0 +1,12 @@
+prefix=/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/install-cm4
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: liblely-io
+Description: Lely I/O library
+URL: https://gitlab.com/lely_industries/lely-core
+Version: 1.9.2
+Requires: liblely-compat >= 3.5.0 liblely-util >= 3.5.0 liblely-can >= 1.9.2
+Cflags: -I${includedir}
+Libs: -L${libdir} -llely-io

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcan__buf" kind="struct" language="C++" prot="public">
+    <compoundname>can_buf</compoundname>
+    <includes refid="buf_8h" local="no">buf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcan__buf_1a228cb013874f45335ffaae74de9174ce" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcan__msg" kindref="compound">can_msg</ref> *</type>
+        <definition>struct can_msg* can_buf::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+<para>A pointer to the allocated memory for the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/buf.h" line="44" column="14" bodyfile="include/lely/can/buf.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__buf_1aee869f8263cb5468371256f86289959d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t can_buf::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The total size (in number of frames) of the buffer, excluding the unused frame used to distinguish between a full and an empty buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This needs to be a power of two minus one, so we can use &apos;<computeroutput>&amp; size</computeroutput>&apos; instead of &apos;<computeroutput>% (size + 1)</computeroutput>&apos; in wrapping calculations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/buf.h" line="51" column="8" bodyfile="include/lely/can/buf.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__buf_1a575f49ba9b4511cae6278b9e9bda7e35" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t can_buf::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>The offset (with respect to <ref refid="structcan__buf_1a228cb013874f45335ffaae74de9174ce" kindref="member">ptr</ref>) of the first value available for reading (and two past the last available for writing, modulo <ref refid="structcan__buf_1aee869f8263cb5468371256f86289959d" kindref="member">size</ref> + 1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/buf.h" line="57" column="8" bodyfile="include/lely/can/buf.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__buf_1a285a1b8cf5301623871605c95031fff4" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t can_buf::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>The offset (with respect to <ref refid="structcan__buf_1a228cb013874f45335ffaae74de9174ce" kindref="member">ptr</ref>) of one past the last value available for reading (and the first available for writing, modulo <ref refid="structcan__buf_1aee869f8263cb5468371256f86289959d" kindref="member">size</ref> + 1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/buf.h" line="63" column="8" bodyfile="include/lely/can/buf.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CAN frame buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>can_msg</label>
+        <link refid="structcan__msg"/>
+      </node>
+      <node id="1">
+        <label>can_buf</label>
+        <link refid="structcan__buf"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/can/buf.h" line="42" column="1" bodyfile="include/lely/can/buf.h" bodystart="42" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structcan__buf_1a575f49ba9b4511cae6278b9e9bda7e35" prot="public" virt="non-virtual"><scope>can_buf</scope><name>begin</name></member>
+      <member refid="structcan__buf_1a285a1b8cf5301623871605c95031fff4" prot="public" virt="non-virtual"><scope>can_buf</scope><name>end</name></member>
+      <member refid="structcan__buf_1a228cb013874f45335ffaae74de9174ce" prot="public" virt="non-virtual"><scope>can_buf</scope><name>ptr</name></member>
+      <member refid="structcan__buf_1aee869f8263cb5468371256f86289959d" prot="public" virt="non-virtual"><scope>can_buf</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

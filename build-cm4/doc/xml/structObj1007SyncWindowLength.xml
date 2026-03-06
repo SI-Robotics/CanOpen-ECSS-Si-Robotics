@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1007SyncWindowLength" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1007SyncWindowLength</compoundname>
+    <basecompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1007u, CO_DEFTYPE_UNSIGNED32 &gt;</basecompoundref>
+    <includes refid="sync-window-length_8hpp" local="no">sync-window-length.hpp</includes>
+    <briefdescription>
+<para>0x1007: Synchronous window length </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Obj1007SyncWindowLength</label>
+        <link refid="structObj1007SyncWindowLength"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::template SubT</label>
+      </node>
+      <node id="2">
+        <label>ObjValueInitT&lt; 0x1007u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Obj1007SyncWindowLength</label>
+        <link refid="structObj1007SyncWindowLength"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::template SubT</label>
+      </node>
+      <node id="2">
+        <label>ObjValueInitT&lt; 0x1007u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/sync-window-length.hpp" line="29" column="1" bodyfile="unit-tests/co/obj-init/sync-window-length.hpp" bodystart="29" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1007SyncWindowLength</scope><name>idx</name></member>
+      <member refid="structObjValueInitT_1ab2cb6c513bd6369ca8e29c9af7680a43" prot="public" virt="non-virtual"><scope>Obj1007SyncWindowLength</scope><name>max_idx</name></member>
+      <member refid="structObjValueInitT_1ae8313a2dc00a492ba33858abc30c6d80" prot="public" virt="non-virtual"><scope>Obj1007SyncWindowLength</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

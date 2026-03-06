@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__obj" kind="struct" language="C++" prot="public">
+    <compoundname>co_obj</compoundname>
+    <includes refid="detail_2obj_8h" local="no">obj.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__obj_1a0c972674e4ef689e1e014227dedb58de" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref></type>
+        <definition>struct rbnode co_obj::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+<para>The node of this object in the tree of objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="105" column="17" bodyfile="include/lely/co/detail/obj.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__obj_1a51c9df1e3478e267b6ae465abd4ee29d" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_obj::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to the CANopen device containing this object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="35" column="10" bodyfile="include/lely/co/detail/obj.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__obj_1ad6c3c5a9a6d6bbd98bf161a678f029be" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_obj::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <briefdescription>
+<para>The object index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="37" column="17" bodyfile="include/lely/co/detail/obj.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__obj_1a92de0da7fbcccb76e58473b726ae795f" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_obj::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+<para>The object code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="39" column="16" bodyfile="include/lely/co/detail/obj.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__obj_1aa8a7bce3f2d2720b15375e60ce184d44" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbtree" kindref="compound">rbtree</ref></type>
+        <definition>struct rbtree co_obj::tree</definition>
+        <argsstring></argsstring>
+        <name>tree</name>
+        <briefdescription>
+<para>The tree containing all the sub-objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="39" column="16" bodyfile="include/lely/co/detail/obj.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__obj_1adaddcb0d0cb2d19038821f2e642877a6" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_obj::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+<para>A pointer to the object value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="47" column="6" bodyfile="include/lely/co/detail/obj.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__obj_1a210ae5bfb9d2d53d5135299ac1d62101" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_obj::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The size (in bytes) of the value at <ref refid="structco__obj_1adaddcb0d0cb2d19038821f2e642877a6" kindref="member">val</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="49" column="8" bodyfile="include/lely/co/detail/obj.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_obj</label>
+        <link refid="structco__obj"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/co/detail/obj.h" line="31" column="1" bodyfile="include/lely/co/detail/obj.h" bodystart="31" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structco__obj_1a92de0da7fbcccb76e58473b726ae795f" prot="public" virt="non-virtual"><scope>co_obj</scope><name>code</name></member>
+      <member refid="structco__obj_1a51c9df1e3478e267b6ae465abd4ee29d" prot="public" virt="non-virtual"><scope>co_obj</scope><name>dev</name></member>
+      <member refid="structco__obj_1ad6c3c5a9a6d6bbd98bf161a678f029be" prot="public" virt="non-virtual"><scope>co_obj</scope><name>idx</name></member>
+      <member refid="structco__obj_1a0c972674e4ef689e1e014227dedb58de" prot="public" virt="non-virtual"><scope>co_obj</scope><name>node</name></member>
+      <member refid="structco__obj_1a210ae5bfb9d2d53d5135299ac1d62101" prot="public" virt="non-virtual"><scope>co_obj</scope><name>size</name></member>
+      <member refid="structco__obj_1aa8a7bce3f2d2720b15375e60ce184d44" prot="public" virt="non-virtual"><scope>co_obj</scope><name>tree</name></member>
+      <member refid="structco__obj_1adaddcb0d0cb2d19038821f2e642877a6" prot="public" virt="non-virtual"><scope>co_obj</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

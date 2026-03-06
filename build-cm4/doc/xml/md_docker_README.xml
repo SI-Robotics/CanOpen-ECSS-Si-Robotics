@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md_docker_README" kind="page">
+    <compoundname>md_docker_README</compoundname>
+    <title>Lely core libraries - development docker images</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This folder contains docker images configurations used by Continous Integration system to build and validate lely-core libraries. The same contaniners can be used by developers to quickly set up local development environment.</para>
+<sect1 id="md_docker_README_1autotoc_md9">
+<title>Folder structure</title>
+<para>Instead of a single huge image, various tools use separate images. It makes images smaller but also helps isolating various validations. Each image configuration file (Dockerfile) is stored in separate folder.</para>
+<para>Dockerfiles are organized in following folder structure:<itemizedlist>
+<listitem><para><computeroutput>&lt;tool&gt;/Dockerfile</computeroutput> - for tools that have dedicated base container (e.g. gcc)</para>
+</listitem><listitem><para><computeroutput>&lt;tool&gt;/&lt;distribution&gt;/Dockerfile</computeroutput> - for tools that needs container built from scratch image of selected distribution</para>
+</listitem></itemizedlist>
+</para>
+<para>The <computeroutput>&lt;tool&gt;</computeroutput> name corresponds to the CI task defined in <computeroutput>.gitlab-ci.yml</computeroutput>, usually name of the tasks include the name of the used container. The CI setup can be treated as instruction on images usage.</para>
+<para>Some of the images that needs to be built from scratch have a common base stored in <computeroutput>build/&lt;distribution&gt;</computeroutput> which allows to simply share layers between images.</para>
+</sect1>
+<sect1 id="md_docker_README_1autotoc_md10">
+<title>GitLab.com Docker Repository</title>
+<para>All images used by project&apos;s CI system can be directly downloaded from project&apos;s GitLab.com Docker Registry.</para>
+<para>To browse available images go to: <computeroutput>Project GitLab.com page &gt; Packages &amp; Registries &gt; Registry</computeroutput>.</para>
+<para>Each available image has an icon which allows to copy the direct link to the selected image and pass it to Docker commands.</para>
+<para>For example:</para>
+<para><computeroutput>docker run -ti registry.gitlab.com/n7space/canopen/lely-core/lcov:bullseye bash</computeroutput></para>
+<para>will download <computeroutput>lcov</computeroutput> tool&apos;s image and run interactive bash in it.</para>
+<para>NOTE: Depending on user&apos;s settings, the image might need to be manually pulled from the registry (using <computeroutput>docker pull</computeroutput>) before executing <computeroutput>docker run</computeroutput>.</para>
+</sect1>
+<sect1 id="md_docker_README_1autotoc_md11">
+<title>Using tools from images</title>
+<para>To execute tools provided by containers <computeroutput>docker run</computeroutput> command needs to be used.</para>
+<para>For tools that require multiple commands to be called, user can:<itemizedlist>
+<listitem><para>call one command at a time, prefixing each with <computeroutput>docker run &lt;IMAGE&gt;</computeroutput>,</para>
+</listitem><listitem><para>create shell inside container by calling <computeroutput>docker run -ti &lt;IMAGE&gt; bash</computeroutput> and executing all commands in that shell.</para>
+</listitem></itemizedlist>
+</para>
+<para>It is recommended in second approach and necessary in the first one to mount local folder inside container using <computeroutput>-v &lt;local path&gt;:&lt;container path&gt;</computeroutput> switch.</para>
+<para>Switching working directory using <computeroutput>--workdir &lt;container path&gt;</computeroutput> can be helpful.</para>
+<para>It is worth noting, that by default docker will run container as <computeroutput>root</computeroutput> user, so all files created by container in mounted volume/directory will be owned by <computeroutput>root</computeroutput>, which might be incovinient. One of the solutions is to pass <computeroutput>--user $(id -u):$(id -g)</computeroutput> switch when calling build commands.</para>
+<para>In both cases <computeroutput>--rm</computeroutput> switch will help save disk space.</para>
+<para>For example:</para>
+<para><programlisting><codeline><highlight class="normal">docker<sp/>run<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-v<sp/>$PWD:/home/dev/lely-core<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>--workdir<sp/>/home/dev/lely-core<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>--user<sp/>$(id<sp/>-u):$(id<sp/>-g)<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>--rm<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lely-core/gcc:10<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>autoreconf<sp/>-i</highlight></codeline>
+</programlisting></para>
+<para>will execute autotools autoreconf inside GCC 10 image using current directory as working directory. For this command to succeed, the current directory should be the root folder of the repository checkout.</para>
+<para>To use some features of the library setting up the environment variables is required. It can be achieved by creating a file named, for example, <computeroutput>env-variables.var</computeroutput> containing the entries in the following format: <programlisting><codeline><highlight class="normal">VARIABLE_NAME1=VALUE1</highlight></codeline>
+<codeline><highlight class="normal">VARIABLE_NAME2=VALUE2</highlight></codeline>
+</programlisting> After that the option <computeroutput>--env-file env-variables.var</computeroutput> can be added to the <computeroutput>docker run</computeroutput> command to load these values into the container.</para>
+</sect1>
+<sect1 id="md_docker_README_1autotoc_md12">
+<title>Building image locally</title>
+<para>Dockerfiles are prepared for building images targeting CI and Docker Registry, so building them locally does not follow common Docker patterns.</para>
+<para><itemizedlist>
+<listitem><para>Images assume they are downloaded from registry, so names should be prefixed with some <computeroutput>prefix/</computeroutput> and <computeroutput>REGISTRY=prefix</computeroutput> argument passed while building.</para>
+</listitem><listitem><para>Some tools require additional arguments (like tool version, e.g. gcc).</para>
+</listitem></itemizedlist>
+</para>
+<para>Example - building <emphasis>lcov</emphasis> image, which depends on <emphasis>build</emphasis> image.</para>
+<para><orderedlist>
+<listitem><para>In <computeroutput>build/bullseye/</computeroutput> : <computeroutput>docker build -t lely-core/build:bullseye .</computeroutput></para>
+</listitem><listitem><para>In <computeroutput>lcov/bullseye/</computeroutput> : <computeroutput>docker build -t lely-core/lcov:bullseye --build-arg REGISTRY=lely-core .</computeroutput></para>
+</listitem></orderedlist>
+</para>
+<para>Example - building <emphasis>gcc</emphasis> image for GCC 10.</para>
+<para>In <computeroutput>gcc/</computeroutput> : <computeroutput>docker build -t lely-core/gcc:10 --build-arg __GNUC__=10 .</computeroutput> </para>
+</sect1>
+    </detaileddescription>
+    <location file="docker/README.md"/>
+  </compounddef>
+</doxygen>

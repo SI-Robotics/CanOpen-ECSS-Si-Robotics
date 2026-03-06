@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1f82RequestNmt" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1f82RequestNmt</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; 0x1f82u &gt;</basecompoundref>
+    <includes refid="request-nmt_8hpp" local="no">request-nmt.hpp</includes>
+    <innerclass refid="structObj1f82RequestNmt_1_1Sub00SupportedNumberOfSlaves" prot="public">Obj1f82RequestNmt::Sub00SupportedNumberOfSlaves</innerclass>
+    <innerclass refid="structObj1f82RequestNmt_1_1SubNthRequestNmtService" prot="public">Obj1f82RequestNmt::SubNthRequestNmtService</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structObj1f82RequestNmt_1a3ad09cf13f4229ddb4b54f2c937d0c3f" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t Obj1f82RequestNmt::ALL_NODES</definition>
+        <argsstring></argsstring>
+        <name>ALL_NODES</name>
+        <initializer>= 0x80u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/request-nmt.hpp" line="36" column="31" bodyfile="unit-tests/co/obj-init/request-nmt.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>0x1f82: Request NMT </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1f82u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1f82RequestNmt</label>
+        <link refid="structObj1f82RequestNmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1f82u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1f82RequestNmt</label>
+        <link refid="structObj1f82RequestNmt"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/request-nmt.hpp" line="31" column="1" bodyfile="unit-tests/co/obj-init/request-nmt.hpp" bodystart="31" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structObj1f82RequestNmt_1a3ad09cf13f4229ddb4b54f2c937d0c3f" prot="public" virt="non-virtual"><scope>Obj1f82RequestNmt</scope><name>ALL_NODES</name></member>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1f82RequestNmt</scope><name>idx</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>Obj1f82RequestNmt</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>Obj1f82RequestNmt</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

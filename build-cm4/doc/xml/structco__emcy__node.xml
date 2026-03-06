@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__emcy__node" kind="struct" language="C++" prot="public">
+    <compoundname>co_emcy_node</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__emcy__node_1ab43338b80b56342c7759698ffed8baa8" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_emcy_node::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The node-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="74" column="16" bodyfile="lib/co/emcy.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy__node_1a162e25c701a4802229dc4759193f3147" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_emcy_node::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="76" column="12" bodyfile="lib/co/emcy.c" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A remote CANopen EMCY producer node. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_emcy_node</label>
+        <link refid="structco__emcy__node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="8">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/emcy.c" line="72" column="1" bodyfile="lib/co/emcy.c" bodystart="72" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structco__emcy__node_1ab43338b80b56342c7759698ffed8baa8" prot="public" virt="non-virtual"><scope>co_emcy_node</scope><name>id</name></member>
+      <member refid="structco__emcy__node_1a162e25c701a4802229dc4759193f3147" prot="public" virt="non-virtual"><scope>co_emcy_node</scope><name>recv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

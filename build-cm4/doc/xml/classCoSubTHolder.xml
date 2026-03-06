@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoSubTHolder" kind="class" language="C++" prot="public">
+    <compoundname>CoSubTHolder</compoundname>
+    <basecompoundref refid="classHolder" prot="public" virt="non-virtual">Holder&lt; co_sub_t &gt;</basecompoundref>
+    <includes refid="sub_8hpp" local="no">sub.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCoSubTHolder_1a72e66945eeb2999d7610444d6a0810d6" prot="private" static="no" mutable="no">
+        <type><ref refid="unionco__val" kindref="compound">co_val</ref></type>
+        <definition>co_val CoSubTHolder::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/sub.hpp" line="52" column="10" bodyfile="unit-tests/co/holder/sub.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoSubTHolder_1a2ec9944329f35a509983b37f2ba917d5" prot="private" static="no" mutable="no">
+        <type><ref refid="structco__array" kindref="compound">co_array</ref></type>
+        <definition>co_array CoSubTHolder::array</definition>
+        <argsstring></argsstring>
+        <name>array</name>
+        <initializer>= <ref refid="val_8h_1a58f6814657a3c14db2e19be4167565c9" kindref="member">CO_ARRAY_INIT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/sub.hpp" line="53" column="12" bodyfile="unit-tests/co/holder/sub.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoSubTHolder_1a397a90f51e2c05db3e811422f9663a3e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CoSubTHolder::CoSubTHolder</definition>
+        <argsstring>(const co_unsigned8_t subidx, const co_unsigned16_t type)</argsstring>
+        <name>CoSubTHolder</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/sub.hpp" line="41" column="12" bodyfile="unit-tests/co/holder/sub.hpp" bodystart="41" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper for <ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> that separates unit-tests from memory allocation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows for the same unit tests to run with dynamic allocation disabled or enabled. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Holder&lt; co_sub_t &gt;</label>
+        <link refid="classHolder"/>
+      </node>
+      <node id="1">
+        <label>CoSubTHolder</label>
+        <link refid="classCoSubTHolder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Holder&lt; co_sub_t &gt;</label>
+        <link refid="classHolder"/>
+      </node>
+      <node id="1">
+        <label>CoSubTHolder</label>
+        <link refid="classCoSubTHolder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/holder/sub.hpp" line="37" column="1" bodyfile="unit-tests/co/holder/sub.hpp" bodystart="37" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classCoSubTHolder_1a2ec9944329f35a509983b37f2ba917d5" prot="private" virt="non-virtual"><scope>CoSubTHolder</scope><name>array</name></member>
+      <member refid="classCoSubTHolder_1a397a90f51e2c05db3e811422f9663a3e" prot="public" virt="non-virtual"><scope>CoSubTHolder</scope><name>CoSubTHolder</name></member>
+      <member refid="classHolder_1ad59deb9a4fe2c6537acce42e7dbc82e9" prot="public" virt="non-virtual"><scope>CoSubTHolder</scope><name>Get</name></member>
+      <member refid="classHolder_1a170a9917cf3853b51ca969e3a9294b93" prot="protected" virt="non-virtual"><scope>CoSubTHolder</scope><name>Holder</name></member>
+      <member refid="classHolder_1ae77834c0ce75d610901582fb26c83ea6" prot="public" virt="non-virtual"><scope>CoSubTHolder</scope><name>Reclaim</name></member>
+      <member refid="classHolder_1a9c1acf25ee7d3f0d9e2c333bcbc998af" prot="public" virt="non-virtual"><scope>CoSubTHolder</scope><name>Take</name></member>
+      <member refid="classCoSubTHolder_1a72e66945eeb2999d7610444d6a0810d6" prot="private" virt="non-virtual"><scope>CoSubTHolder</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

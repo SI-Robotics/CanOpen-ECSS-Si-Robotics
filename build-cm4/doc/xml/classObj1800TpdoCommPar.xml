@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classObj1800TpdoCommPar" kind="class" language="C++" prot="public">
+    <compoundname>Obj1800TpdoCommPar</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; 0x1800u, 0x1800u, 0x19ffu &gt;</basecompoundref>
+    <includes refid="tpdo-comm-par_8hpp" local="no">tpdo-comm-par.hpp</includes>
+    <innerclass refid="structObj1800TpdoCommPar_1_1Sub00HighestSubidxSupported" prot="public">Obj1800TpdoCommPar::Sub00HighestSubidxSupported</innerclass>
+    <innerclass refid="structObj1800TpdoCommPar_1_1Sub01CobId" prot="public">Obj1800TpdoCommPar::Sub01CobId</innerclass>
+    <innerclass refid="structObj1800TpdoCommPar_1_1Sub02TransmissionType" prot="public">Obj1800TpdoCommPar::Sub02TransmissionType</innerclass>
+    <innerclass refid="structObj1800TpdoCommPar_1_1Sub03InhibitTime" prot="public">Obj1800TpdoCommPar::Sub03InhibitTime</innerclass>
+    <innerclass refid="structObj1800TpdoCommPar_1_1Sub04Reserved" prot="public">Obj1800TpdoCommPar::Sub04Reserved</innerclass>
+    <innerclass refid="structObj1800TpdoCommPar_1_1Sub05EventTimer" prot="public">Obj1800TpdoCommPar::Sub05EventTimer</innerclass>
+    <innerclass refid="structObj1800TpdoCommPar_1_1Sub06SyncStartValue" prot="public">Obj1800TpdoCommPar::Sub06SyncStartValue</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classObj1800TpdoCommPar_1a8d32cd3aa1498a3f8f35223de992581e" prot="public" static="yes" mutable="no">
+        <type>const Sub02TransmissionType::sub_type</type>
+        <definition>const Sub02TransmissionType::sub_type Obj1800TpdoCommPar::SYNCHRONOUS_ACYCLIC_TRANSMISSION</definition>
+        <argsstring></argsstring>
+        <name>SYNCHRONOUS_ACYCLIC_TRANSMISSION</name>
+        <initializer>= 0x00u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="42" column="7" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classObj1800TpdoCommPar_1a0d444f678042b903f3be2fd3b3f858f7" prot="public" static="yes" mutable="no">
+        <type>const Sub02TransmissionType::sub_type</type>
+        <definition>const Sub02TransmissionType::sub_type Obj1800TpdoCommPar::RESERVED_TRANSMISSION</definition>
+        <argsstring></argsstring>
+        <name>RESERVED_TRANSMISSION</name>
+        <initializer>= 0xf1u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="48" column="48" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classObj1800TpdoCommPar_1af720b8251032a0a7341ed13ccfaefed9" prot="public" static="yes" mutable="no">
+        <type>const Sub02TransmissionType::sub_type</type>
+        <definition>const Sub02TransmissionType::sub_type Obj1800TpdoCommPar::SYNCHRONOUS_RTR_TRANSMISSION</definition>
+        <argsstring></argsstring>
+        <name>SYNCHRONOUS_RTR_TRANSMISSION</name>
+        <initializer>=
+      0xfcu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="49" column="48" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classObj1800TpdoCommPar_1a0bc405d6c4c504c4145519ebdb04d43f" prot="public" static="yes" mutable="no">
+        <type>const Sub02TransmissionType::sub_type</type>
+        <definition>const Sub02TransmissionType::sub_type Obj1800TpdoCommPar::EVENT_DRIVEN_RTR_TRANSMISSION</definition>
+        <argsstring></argsstring>
+        <name>EVENT_DRIVEN_RTR_TRANSMISSION</name>
+        <initializer>=
+      0xfdu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="51" column="48" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classObj1800TpdoCommPar_1a3e1403d0dba5a8d14dfcd4dd0b358130" prot="public" static="yes" mutable="no">
+        <type>const Sub02TransmissionType::sub_type</type>
+        <definition>const Sub02TransmissionType::sub_type Obj1800TpdoCommPar::EVENT_DRIVEN_TRANSMISSION</definition>
+        <argsstring></argsstring>
+        <name>EVENT_DRIVEN_TRANSMISSION</name>
+        <initializer>=
+      0xfeu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="53" column="48" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classObj1800TpdoCommPar_1afe4483d6ed9118f5068cfb6523b9cb40" prot="public" static="yes" mutable="no">
+        <type>const Sub02TransmissionType::sub_type</type>
+        <definition>const Sub02TransmissionType::sub_type Obj1800TpdoCommPar::EVENT_DRIVEN_APP_TRANSMISSION</definition>
+        <argsstring></argsstring>
+        <name>EVENT_DRIVEN_APP_TRANSMISSION</name>
+        <initializer>=
+      0xffu</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="55" column="48" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classObj1800TpdoCommPar_1aa3266285887e58653d518db989877eec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Sub02TransmissionType::sub_type</type>
+        <definition>static Sub02TransmissionType::sub_type Obj1800TpdoCommPar::SYNCHRONOUS_TRANSMISSION</definition>
+        <argsstring>(const co_unsigned8_t cycle)</argsstring>
+        <name>SYNCHRONOUS_TRANSMISSION</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>cycle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="44" column="3" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>0x1800-0x19ff: TPDO communication parameter </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1800u, 0x1800u, 0x19ffu &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1800TpdoCommPar</label>
+        <link refid="classObj1800TpdoCommPar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1800u, 0x1800u, 0x19ffu &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1800TpdoCommPar</label>
+        <link refid="classObj1800TpdoCommPar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/tpdo-comm-par.hpp" line="30" column="1" bodyfile="unit-tests/co/obj-init/tpdo-comm-par.hpp" bodystart="30" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classObj1800TpdoCommPar_1afe4483d6ed9118f5068cfb6523b9cb40" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>EVENT_DRIVEN_APP_TRANSMISSION</name></member>
+      <member refid="classObj1800TpdoCommPar_1a0bc405d6c4c504c4145519ebdb04d43f" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>EVENT_DRIVEN_RTR_TRANSMISSION</name></member>
+      <member refid="classObj1800TpdoCommPar_1a3e1403d0dba5a8d14dfcd4dd0b358130" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>EVENT_DRIVEN_TRANSMISSION</name></member>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>idx</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>min_idx</name></member>
+      <member refid="classObj1800TpdoCommPar_1a0d444f678042b903f3be2fd3b3f858f7" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>RESERVED_TRANSMISSION</name></member>
+      <member refid="classObj1800TpdoCommPar_1a8d32cd3aa1498a3f8f35223de992581e" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>SYNCHRONOUS_ACYCLIC_TRANSMISSION</name></member>
+      <member refid="classObj1800TpdoCommPar_1af720b8251032a0a7341ed13ccfaefed9" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>SYNCHRONOUS_RTR_TRANSMISSION</name></member>
+      <member refid="classObj1800TpdoCommPar_1aa3266285887e58653d518db989877eec" prot="public" virt="non-virtual"><scope>Obj1800TpdoCommPar</scope><name>SYNCHRONOUS_TRANSMISSION</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

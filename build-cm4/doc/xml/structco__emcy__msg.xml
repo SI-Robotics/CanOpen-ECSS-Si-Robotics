@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__emcy__msg" kind="struct" language="C++" prot="public">
+    <compoundname>co_emcy_msg</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__emcy__msg_1ab3307630d4e4f41f510235990fd44842" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_emcy_msg::eec</definition>
+        <argsstring></argsstring>
+        <name>eec</name>
+        <briefdescription>
+<para>The emergency error code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="66" column="17" bodyfile="lib/co/emcy.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy__msg_1a1753d9e77af091caad0da9e26ff2e6f0" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_emcy_msg::er</definition>
+        <argsstring></argsstring>
+        <name>er</name>
+        <briefdescription>
+<para>The error register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="68" column="16" bodyfile="lib/co/emcy.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An EMCY message. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/co/emcy.c" line="64" column="1" bodyfile="lib/co/emcy.c" bodystart="64" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structco__emcy__msg_1ab3307630d4e4f41f510235990fd44842" prot="public" virt="non-virtual"><scope>co_emcy_msg</scope><name>eec</name></member>
+      <member refid="structco__emcy__msg_1a1753d9e77af091caad0da9e26ff2e6f0" prot="public" virt="non-virtual"><scope>co_emcy_msg</scope><name>er</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

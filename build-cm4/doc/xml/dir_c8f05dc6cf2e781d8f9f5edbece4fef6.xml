@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c8f05dc6cf2e781d8f9f5edbece4fef6" kind="dir">
+    <compoundname>unit-tests/can</compoundname>
+    <innerfile refid="test-buf_8cpp">test-buf.cpp</innerfile>
+    <innerfile refid="test-msg_8cpp">test-msg.cpp</innerfile>
+    <innerfile refid="test-net_8cpp">test-net.cpp</innerfile>
+    <innerfile refid="can_2tests-main_8cpp">tests-main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/can/"/>
+  </compounddef>
+</doxygen>

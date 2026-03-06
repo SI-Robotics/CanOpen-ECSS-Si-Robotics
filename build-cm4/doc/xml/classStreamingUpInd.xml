@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classStreamingUpInd" kind="class" language="C++" prot="public">
+    <compoundname>StreamingUpInd</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classStreamingUpInd_1ae78f747ea4547c11544d5cb8a2d92d2f" prot="public" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t StreamingUpInd::valid_calls</definition>
+        <argsstring></argsstring>
+        <name>valid_calls</name>
+        <initializer>= 0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="4270" column="25" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="4270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStreamingUpInd_1aff1c76eed1d7b9d0a95cbc51a9231771" prot="public" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t StreamingUpInd::num_called</definition>
+        <argsstring></argsstring>
+        <name>num_called</name>
+        <initializer>= 0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="4271" column="25" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="4271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStreamingUpInd_1a9d74cd76baf77da3cbbb46342441d584" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t StreamingUpInd::segment_size</definition>
+        <argsstring></argsstring>
+        <name>segment_size</name>
+        <initializer>= 2u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="4272" column="31" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="4272" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classStreamingUpInd_1a633b9bbbccb5aef6bc95986696305d5c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>static co_unsigned32_t StreamingUpInd::Func</definition>
+        <argsstring>(const co_sub_t *const sub, struct co_sdo_req *const req, const co_unsigned32_t ac, void *const)</argsstring>
+        <name>Func</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *const</type>
+          <declname>sub</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *const</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>const co_unsigned32_t</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>void * const</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="4275" column="3" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="4275" bodyend="4305"/>
+      </memberdef>
+      <memberdef kind="function" id="classStreamingUpInd_1a0b6ce620175895fa37f1ec995abdfa56" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void StreamingUpInd::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="4308" column="3" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="4308" bodyend="4311"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="obj_8h_1a48fac3932d2be917ea30a193a972f7c2" kindref="member">co_sub_up_ind_t</ref> mock with streaming support. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-ssdo.cpp" line="4268" column="1" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="4268" bodyend="4312"/>
+    <listofallmembers>
+      <member refid="classStreamingUpInd_1a0b6ce620175895fa37f1ec995abdfa56" prot="public" virt="non-virtual"><scope>StreamingUpInd</scope><name>Clear</name></member>
+      <member refid="classStreamingUpInd_1a633b9bbbccb5aef6bc95986696305d5c" prot="public" virt="non-virtual"><scope>StreamingUpInd</scope><name>Func</name></member>
+      <member refid="classStreamingUpInd_1aff1c76eed1d7b9d0a95cbc51a9231771" prot="public" virt="non-virtual"><scope>StreamingUpInd</scope><name>num_called</name></member>
+      <member refid="classStreamingUpInd_1a9d74cd76baf77da3cbbb46342441d584" prot="public" virt="non-virtual"><scope>StreamingUpInd</scope><name>segment_size</name></member>
+      <member refid="classStreamingUpInd_1ae78f747ea4547c11544d5cb8a2d92d2f" prot="public" virt="non-virtual"><scope>StreamingUpInd</scope><name>valid_calls</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

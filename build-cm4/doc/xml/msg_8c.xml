@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="msg_8c" kind="file" language="C++">
+    <compoundname>msg.c</compoundname>
+    <includes refid="can_8h" local="yes">can.h</includes>
+    <includes refid="msg_8h" local="no">lely/can/msg.h</includes>
+    <includes refid="bits_8h" local="no">lely/util/bits.h</includes>
+    <includes refid="error_8h" local="no">lely/util/error.h</includes>
+    <includes refid="include_2lely_2util_2util_8h" local="no">lely/util/util.h</includes>
+    <includes local="no">assert.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>assert.h</label>
+      </node>
+      <node id="10">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>lib/can/msg.c</label>
+        <link refid="msg_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/util/bits.h</label>
+        <link refid="bits_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="msg_8c_1a49ce35c40a60ec5188c72c2d245dc3eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint_least16_t</type>
+        <definition>static uint_least16_t can_crc_bits</definition>
+        <argsstring>(uint_least16_t crc, uint_least8_t byte, size_t off, size_t bits)</argsstring>
+        <name>can_crc_bits</name>
+        <param>
+          <type>uint_least16_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>byte</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>off</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+<para>Computes a bitwise CRC-15-CAN checksum of a single byte. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="msg_8c_1a8d0971035562abf5cda63b1b6fcef4cb" kindref="member">can_crc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/msg.c" line="310" column="1" bodyfile="lib/can/msg.c" bodystart="310" bodyend="321" declfile="lib/can/msg.c" declline="40" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="msg_8c_1a51fb472c28f0c8ff8228b9facac51cd2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint_least16_t</type>
+        <definition>static uint_least16_t can_crc_bytes</definition>
+        <argsstring>(uint_least16_t crc, const unsigned char *bp, size_t n)</argsstring>
+        <name>can_crc_bytes</name>
+        <param>
+          <type>uint_least16_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>bp</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Computes a CRC-15-CAN checksum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="msg_8c_1a8d0971035562abf5cda63b1b6fcef4cb" kindref="member">can_crc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/msg.c" line="324" column="1" bodyfile="lib/can/msg.c" bodystart="324" bodyend="393" declfile="lib/can/msg.c" declline="44" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="msg_8c_1a9499f67fc380eaad6bcfa95a1b9fc34d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref></type>
+        <definition>ssize_t can_msg_bits</definition>
+        <argsstring>(const struct can_msg *msg, enum can_msg_bits_mode mode)</argsstring>
+        <name>can_msg_bits</name>
+        <param>
+          <type>const struct <ref refid="structcan__msg" kindref="compound">can_msg</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9ae" kindref="member">can_msg_bits_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Computes the size (in bits) of the specified CAN format frame on the CAN bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN frame format frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method used to compute the size (one of <ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9aea9d1e81c1479f529cf8415736a8b16240" kindref="member">CAN_MSG_BITS_MODE_NO_STUFF</ref>, <ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9aea767c17e560d7e198217235d3ce453772" kindref="member">CAN_MSG_BITS_MODE_WORST</ref> or <ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9aea94c9751c4e541801c50e11edac271645" kindref="member">CAN_MSG_BITS_MODE_EXACT</ref>).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bits on success, or -1 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/msg.c" line="48" column="1" bodyfile="lib/can/msg.c" bodystart="48" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="msg_8c_1a8d0971035562abf5cda63b1b6fcef4cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint_least16_t</type>
+        <definition>uint_least16_t can_crc</definition>
+        <argsstring>(uint_least16_t crc, const void *ptr, ptrdiff_t off, size_t bits)</argsstring>
+        <name>can_crc</name>
+        <param>
+          <type>uint_least16_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>off</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+<para>Computes a bitwise CRC-15-CAN checksum, based on the 0x4599 generator polynomial. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The implementation uses a table with precomputed values for efficiency.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>crc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the initial value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the bits to be hashed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>off</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the offset (in bits) with respect to <bold>ptr</bold> of the first bit to be hashed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bits to hash.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the updated CRC. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/msg.c" line="279" column="1" bodyfile="lib/can/msg.c" bodystart="279" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CAN library; it contains the implementation of the CAN frame functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="msg_8h" kindref="compound">lely/can/msg.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2015-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="can_8h" kindref="compound">can.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="msg_8h" kindref="compound">lely/can/msg.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="bits_8h" kindref="compound">lely/util/bits.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="error_8h" kindref="compound">lely/util/error.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2util_2util_8h" kindref="compound">lely/util/util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_STDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Include<sp/>inttypes.h<sp/>after<sp/>stdio.h<sp/>to<sp/>enforce<sp/>declarations<sp/>of<sp/>format<sp/>specifiers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>Newlib.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint_least16_t<sp/><ref refid="msg_8c_1a49ce35c40a60ec5188c72c2d245dc3eb" kindref="member">can_crc_bits</ref>(uint_least16_t<sp/>crc,<sp/>uint_least8_t<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>off,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bits);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint_least16_t<sp/><ref refid="msg_8c_1a51fb472c28f0c8ff8228b9facac51cd2" kindref="member">can_crc_bytes</ref>(</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least16_t<sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*bp,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref></highlight></codeline>
+<codeline lineno="48" refid="msg_8h_1a9499f67fc380eaad6bcfa95a1b9fc34d" refkind="member"><highlight class="normal"><ref refid="msg_8c_1a9499f67fc380eaad6bcfa95a1b9fc34d" kindref="member">can_msg_bits</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9ae" kindref="member">can_msg_bits_mode</ref><sp/>mode)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(msg);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CANFD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/>CAN_FLAG_FDF)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" kindref="member">ERRNUM_INVAL</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>&gt;<sp/><ref refid="msg_8h_1a50e7829fe89da0a893a3424f4508a048" kindref="member">CAN_MAX_LEN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" kindref="member">ERRNUM_INVAL</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(mode)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9aea9d1e81c1479f529cf8415736a8b16240" kindref="member">CAN_MSG_BITS_MODE_NO_STUFF</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref><sp/>bits<sp/>=<sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299a655b60a1111aa11cc8008076864f583a" kindref="member">CAN_FLAG_IDE</ref>)<sp/>?<sp/>67<sp/>:<sp/>47;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299ac53d2ee74ca555870bbabaec7a189a7f" kindref="member">CAN_FLAG_RTR</ref>))</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>*<sp/>8;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bits;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9aea767c17e560d7e198217235d3ce453772" kindref="member">CAN_MSG_BITS_MODE_WORST</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref><sp/>bits<sp/>=<sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299a655b60a1111aa11cc8008076864f583a" kindref="member">CAN_FLAG_IDE</ref>)<sp/>?<sp/>80<sp/>:<sp/>55;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299ac53d2ee74ca555870bbabaec7a189a7f" kindref="member">CAN_FLAG_RTR</ref>))</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>*<sp/>10;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bits;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="msg_8h_1af1701a6f02eac72790c8f78756bbd9aea94c9751c4e541801c50e11edac271645" kindref="member">CAN_MSG_BITS_MODE_EXACT</ref>:<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" kindref="member">ERRNUM_INVAL</ref>);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>data[16]<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>*bp<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int_least8_t<sp/>off<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref><sp/>bits<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299a655b60a1111aa11cc8008076864f583a" kindref="member">CAN_FLAG_IDE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>s<sp/>=<sp/>SOF,<sp/>B<sp/>=<sp/>(base)<sp/>Identifier,<sp/>S<sp/>=<sp/>SRR,<sp/>I<sp/>=<sp/>IDE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>E<sp/>=<sp/>Identifier<sp/>(extension),<sp/>R<sp/>=<sp/>RTR<sp/>=<sp/>1<sp/>=<sp/>R1,<sp/>0<sp/>=<sp/>R0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DLC4<sp/>=<sp/>DLC,<sp/>0-7<sp/>=<sp/>Data,<sp/>C<sp/>=<sp/>CRC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[0-3]<sp/><sp/><sp/>|.sBBBBBB<sp/>BBBBBSIE<sp/>EEEEEEEE<sp/>EEEEEEEE|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[4-7]<sp/><sp/><sp/>|ER10DLC4<sp/>00000000<sp/>11111111<sp/>22222222|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[8-11]<sp/><sp/>|33333333<sp/>44444444<sp/>55555555<sp/>66666666|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[12-14]<sp/>|77777777<sp/>CCCCCCCC<sp/>CCCCCCC.<sp/>........|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>msg-&gt;<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>&amp;<sp/><ref refid="msg_8h_1a09f4b69c9fcccb9d90daf65213d4237a" kindref="member">CAN_MASK_EID</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>off<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>23)<sp/>&amp;<sp/>0x3f;<sp/></highlight><highlight class="comment">//<sp/>SOF<sp/>=<sp/>0,<sp/>base<sp/>(Identifier)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8<sp/>-<sp/>off;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>((</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>15)<sp/>&amp;<sp/>0xf8)<sp/></highlight><highlight class="comment">//<sp/>base<sp/>(Identifier)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(0x03<sp/>&lt;&lt;<sp/>1)<sp/></highlight><highlight class="comment">//<sp/>SRR,<sp/>IDE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>17)<sp/>&amp;<sp/>0x01);<sp/></highlight><highlight class="comment">//<sp/>Identifier<sp/>(extension)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>9)<sp/>&amp;<sp/>0xff;<sp/></highlight><highlight class="comment">//<sp/>Identifier<sp/>(extension)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0xff;<sp/></highlight><highlight class="comment">//<sp/>Identifier<sp/>(extension)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>((</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>7)<sp/>&amp;<sp/>0x80u)<sp/></highlight><highlight class="comment">//<sp/>Identifier<sp/>(extension)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(((msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299ac53d2ee74ca555870bbabaec7a189a7f" kindref="member">CAN_FLAG_RTR</ref>)<sp/>?<sp/>1u<sp/>:<sp/>0u)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>6)<sp/></highlight><highlight class="comment">//<sp/>RTR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>&amp;<sp/>0x0fu);<sp/></highlight><highlight class="comment">//<sp/>R1<sp/>=<sp/>0,<sp/>R0<sp/>=<sp/>0,<sp/>DLC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>s<sp/>=<sp/>SOF,<sp/>B<sp/>=<sp/>(base)<sp/>Identifier,<sp/>R<sp/>=<sp/>RTR,<sp/>I<sp/>=<sp/>IDE,<sp/>0<sp/>=<sp/>R0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DLC4<sp/>=<sp/>DLC,<sp/>0-7<sp/>=<sp/>Data,<sp/>C<sp/>=<sp/>CRC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[0-3]<sp/><sp/><sp/>|.....sBB<sp/>BBBBBBBB<sp/>BRI0DLC4<sp/>00000000|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[4-7]<sp/><sp/><sp/>|11111111<sp/>22222222<sp/>33333333<sp/>44444444|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[8-11]<sp/><sp/>|55555555<sp/>66666666<sp/>77777777<sp/>CCCCCCCC|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data[12-14]<sp/>|CCCCCCC.<sp/>........<sp/>........<sp/>........|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>msg-&gt;<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ac920384f941f7bd5776671654305bbba" kindref="member">CAN_MASK_BID</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>off<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>9)<sp/>&amp;<sp/>0x03;<sp/></highlight><highlight class="comment">//<sp/>SOF<sp/>=<sp/>0,<sp/>base<sp/>(Identifier)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8<sp/>-<sp/>off;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0xff;<sp/></highlight><highlight class="comment">//<sp/>base<sp/>(Identifier)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>((</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>7)<sp/>&amp;<sp/>0x80u)<sp/></highlight><highlight class="comment">//<sp/>base<sp/>(Identifier)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(((msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299ac53d2ee74ca555870bbabaec7a189a7f" kindref="member">CAN_FLAG_RTR</ref>)<sp/>?<sp/>1u<sp/>:<sp/>0u)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>6)<sp/></highlight><highlight class="comment">//<sp/>RTR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>&amp;<sp/>0x0fu);<sp/></highlight><highlight class="comment">//<sp/>IDE<sp/>=<sp/>0,<sp/>R0<sp/>=<sp/>0,<sp/>DLC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299ac53d2ee74ca555870bbabaec7a189a7f" kindref="member">CAN_FLAG_RTR</ref>)<sp/>&amp;&amp;<sp/>msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint_least8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref>;<sp/>i++,<sp/>bits<sp/>+=<sp/>8)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>msg-&gt;<ref refid="structcan__msg_1a12e8389ecebff10d0b92b1a2c281e48f" kindref="member">data</ref>[i]<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least16_t<sp/>crc<sp/>=<sp/><ref refid="msg_8c_1a8d0971035562abf5cda63b1b6fcef4cb" kindref="member">can_crc</ref>(0,<sp/>data,<sp/>off,<sp/>bits);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(!((off<sp/>+<sp/>bits)<sp/>%<sp/>8));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>(crc<sp/>&gt;&gt;<sp/>7)<sp/>&amp;<sp/>0xffu;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp++<sp/>=<sp/>(crc<sp/>&lt;&lt;<sp/>1)<sp/>&amp;<sp/>0xffu;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>15;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Count<sp/>the<sp/>stuffed<sp/>bits.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref><sp/>stuff<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>mask<sp/>=<sp/>0x1fu;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>same<sp/>=<sp/>mask;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref><sp/>i<sp/>=<sp/>off;<sp/>i<sp/>&lt;<sp/>off<sp/>+<sp/>bits;)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Alternate<sp/>between<sp/>looking<sp/>for<sp/>a<sp/>series<sp/>of<sp/>zeros<sp/>and<sp/>ones.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>same<sp/>=<sp/>same<sp/>?<sp/>0<sp/>:<sp/>mask;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Extract<sp/>5<sp/>bits<sp/>at<sp/>i<sp/>at<sp/>look<sp/>for<sp/>a<sp/>bit<sp/>flip.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>five<sp/>=<sp/>(((uint_least16_t)data[i<sp/>/<sp/>8]<sp/>&lt;&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>data[i<sp/>/<sp/>8<sp/>+<sp/>1])</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;&gt;<sp/>(16<sp/>-<sp/>5<sp/>-<sp/>i<sp/>%<sp/>8);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/><ref refid="bits_8h_1a560460b071325166d388b41cebd9d9db" kindref="member">clz8</ref>((uint_least8_t)(five<sp/>&amp;<sp/>mask)<sp/>^<sp/>same)<sp/>-<sp/>3;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>n;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&lt;<sp/>5)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>bit<sp/>stuffing<sp/>needed.<sp/>Check<sp/>the<sp/>next<sp/>5<sp/>bits.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>0x1f;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Insert<sp/>a<sp/>stuffed<sp/>bit<sp/>and<sp/>look<sp/>for<sp/>the<sp/>next<sp/>4<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(the<sp/>5th<sp/>bit<sp/>is<sp/>the<sp/>stuffed<sp/>one).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mask<sp/>==<sp/>0x1e)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i--;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>0x1e;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;=<sp/>off<sp/>+<sp/>bits)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stuff++;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>stuff;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>3;<sp/></highlight><highlight class="comment">//<sp/>CRC<sp/>delimiter,<sp/>ACK<sp/>slot,<sp/>ACK<sp/>delimiter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>7;<sp/></highlight><highlight class="comment">//<sp/>EOF<sp/>sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>+=<sp/>3;<sp/></highlight><highlight class="comment">//<sp/>intermission</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bits;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_STDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">snprintf_can_msg(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!s)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!msg)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>len<sp/>=<sp/>msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CANFD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/>CAN_FLAG_FDF)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>(len,<sp/>CANFD_MAX_LEN);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>(len,<sp/><ref refid="msg_8h_1a50e7829fe89da0a893a3424f4508a048" kindref="member">CAN_MAX_LEN</ref>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/>t<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299a655b60a1111aa11cc8008076864f583a" kindref="member">CAN_FLAG_IDE</ref>)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cppcheck-suppress<sp/>nullPointer<sp/>symbolName=s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>snprintf(s,<sp/>n,<sp/></highlight><highlight class="stringliteral">&quot;%08&quot;</highlight><highlight class="normal"><sp/>PRIX32,<sp/>msg-&gt;<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>&amp;<sp/><ref refid="msg_8h_1a09f4b69c9fcccb9d90daf65213d4237a" kindref="member">CAN_MASK_EID</ref>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cppcheck-suppress<sp/>nullPointer<sp/>symbolName=s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>snprintf(s,<sp/>n,<sp/></highlight><highlight class="stringliteral">&quot;%03&quot;</highlight><highlight class="normal"><sp/>PRIX32,<sp/>msg-&gt;<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ac920384f941f7bd5776671654305bbba" kindref="member">CAN_MASK_BID</ref>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>+=<sp/>r;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>((</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)r,<sp/>n);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s<sp/>+=<sp/>r;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>-=<sp/>r;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CANFD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/>CAN_FLAG_FDF)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>snprintf(s,<sp/>n,<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>[%02d]<sp/>&quot;</highlight><highlight class="normal">,<sp/>len);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>snprintf(s,<sp/>n,<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>[%d]<sp/>&quot;</highlight><highlight class="normal">,<sp/>len);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>+=<sp/>r;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>((</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)r,<sp/>n);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s<sp/>+=<sp/>r;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>-=<sp/>r;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>&amp;<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299ac53d2ee74ca555870bbabaec7a189a7f" kindref="member">CAN_FLAG_RTR</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>snprintf(s,<sp/>n,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>remote<sp/>request&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>+=<sp/>r;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint_least8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>snprintf(s,<sp/>n,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>%02X&quot;</highlight><highlight class="normal">,<sp/>msg-&gt;<ref refid="structcan__msg_1a12e8389ecebff10d0b92b1a2c281e48f" kindref="member">data</ref>[i]);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>+=<sp/>r;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>((</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)r,<sp/>n);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s<sp/>+=<sp/>r;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>-=<sp/>r;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">asprintf_can_msg(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>snprintf_can_msg(NULL,<sp/>0,<sp/>msg);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s<sp/>=<sp/>malloc(n<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!s)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>snprintf_can_msg(s,<sp/>n<sp/>+<sp/>1,<sp/>msg);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errsv<sp/>=<sp/>errno;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(s);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>errsv;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*ps<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_STDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">uint_least16_t</highlight></codeline>
+<codeline lineno="279" refid="msg_8h_1a8d0971035562abf5cda63b1b6fcef4cb" refkind="member"><highlight class="normal"><ref refid="msg_8c_1a8d0971035562abf5cda63b1b6fcef4cb" kindref="member">can_crc</ref>(uint_least16_t<sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/>ptrdiff_t<sp/>off,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bits)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(ptr<sp/>||<sp/>!bits);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>*bp<sp/>=<sp/>ptr;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bp<sp/>+=<sp/>off<sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>off<sp/>%=<sp/>8;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(off<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bp--;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>off<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(off<sp/>&amp;&amp;<sp/>bits)<sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>((8u<sp/>-<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)off),<sp/>bits);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/><ref refid="msg_8c_1a49ce35c40a60ec5188c72c2d245dc3eb" kindref="member">can_crc_bits</ref>(crc,<sp/>*bp,<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)off,<sp/>n);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bp++;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>-=<sp/>n;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>bits<sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/><ref refid="msg_8c_1a51fb472c28f0c8ff8228b9facac51cd2" kindref="member">can_crc_bytes</ref>(crc,<sp/>bp,<sp/>n);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bp<sp/>+=<sp/>n;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>-=<sp/>n<sp/>*<sp/>8;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bits)</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/><ref refid="msg_8c_1a49ce35c40a60ec5188c72c2d245dc3eb" kindref="member">can_crc_bits</ref>(crc,<sp/>*bp,<sp/>0,<sp/>bits);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint_least16_t</highlight></codeline>
+<codeline lineno="310" refid="msg_8c_1a49ce35c40a60ec5188c72c2d245dc3eb" refkind="member"><highlight class="normal"><ref refid="msg_8c_1a49ce35c40a60ec5188c72c2d245dc3eb" kindref="member">can_crc_bits</ref>(uint_least16_t<sp/>crc,<sp/>uint_least8_t<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>off,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bits)</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(off<sp/>+<sp/>bits<sp/>&lt;=<sp/>8);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>&lt;&lt;=<sp/>off;<sp/>bits--;<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>&lt;&lt;=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((uint_least8_t)(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>^<sp/>(uint_least8_t)(crc<sp/>&gt;&gt;<sp/>7))<sp/>&amp;<sp/>0x80u)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>(uint_least16_t)(crc<sp/>&lt;&lt;<sp/>1)<sp/>^<sp/>0x4599u;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc<sp/>&amp;<sp/>0x7fffu;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint_least16_t</highlight></codeline>
+<codeline lineno="324" refid="msg_8c_1a51fb472c28f0c8ff8228b9facac51cd2" refkind="member"><highlight class="normal"><ref refid="msg_8c_1a51fb472c28f0c8ff8228b9facac51cd2" kindref="member">can_crc_bytes</ref>(uint_least16_t<sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*bp,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(bp<sp/>||<sp/>!n);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>table<sp/>contains<sp/>precomputed<sp/>CRC-15-CAN<sp/>checksums<sp/>for<sp/>each<sp/>of<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>256<sp/>bytes.<sp/>The<sp/>table<sp/>was<sp/>computed<sp/>with<sp/>the<sp/>following<sp/>code:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="331"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least16_t<sp/>tab[256];</highlight></codeline>
+<codeline lineno="332"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>n<sp/>=<sp/>0;<sp/>n<sp/>&lt;<sp/>256;<sp/>n++)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least16_t<sp/>crc<sp/>=<sp/>n<sp/>&lt;&lt;<sp/>7;</highlight></codeline>
+<codeline lineno="334"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>8;<sp/>k++)<sp/>{</highlight></codeline>
+<codeline lineno="335"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(crc<sp/>&amp;<sp/>0x4000)</highlight></codeline>
+<codeline lineno="336"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>(crc<sp/>&lt;&lt;<sp/>1)<sp/>^<sp/>0x4599;</highlight></codeline>
+<codeline lineno="337"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="338"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="339"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tab[n]<sp/>=<sp/>crc<sp/>&amp;<sp/>0x7fff;</highlight></codeline>
+<codeline lineno="341"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least16_t<sp/>tab[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000,<sp/>0x4599,<sp/>0x4eab,<sp/>0x0b32,<sp/>0x58cf,<sp/>0x1d56,<sp/>0x1664,<sp/>0x53fd,</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7407,<sp/>0x319e,<sp/>0x3aac,<sp/>0x7f35,<sp/>0x2cc8,<sp/>0x6951,<sp/>0x6263,<sp/>0x27fa,</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2d97,<sp/>0x680e,<sp/>0x633c,<sp/>0x26a5,<sp/>0x7558,<sp/>0x30c1,<sp/>0x3bf3,<sp/>0x7e6a,</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5990,<sp/>0x1c09,<sp/>0x173b,<sp/>0x52a2,<sp/>0x015f,<sp/>0x44c6,<sp/>0x4ff4,<sp/>0x0a6d,</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5b2e,<sp/>0x1eb7,<sp/>0x1585,<sp/>0x501c,<sp/>0x03e1,<sp/>0x4678,<sp/>0x4d4a,<sp/>0x08d3,</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2f29,<sp/>0x6ab0,<sp/>0x6182,<sp/>0x241b,<sp/>0x77e6,<sp/>0x327f,<sp/>0x394d,<sp/>0x7cd4,</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x76b9,<sp/>0x3320,<sp/>0x3812,<sp/>0x7d8b,<sp/>0x2e76,<sp/>0x6bef,<sp/>0x60dd,<sp/>0x2544,</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02be,<sp/>0x4727,<sp/>0x4c15,<sp/>0x098c,<sp/>0x5a71,<sp/>0x1fe8,<sp/>0x14da,<sp/>0x5143,</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x73c5,<sp/>0x365c,<sp/>0x3d6e,<sp/>0x78f7,<sp/>0x2b0a,<sp/>0x6e93,<sp/>0x65a1,<sp/>0x2038,</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07c2,<sp/>0x425b,<sp/>0x4969,<sp/>0x0cf0,<sp/>0x5f0d,<sp/>0x1a94,<sp/>0x11a6,<sp/>0x543f,</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5e52,<sp/>0x1bcb,<sp/>0x10f9,<sp/>0x5560,<sp/>0x069d,<sp/>0x4304,<sp/>0x4836,<sp/>0x0daf,</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2a55,<sp/>0x6fcc,<sp/>0x64fe,<sp/>0x2167,<sp/>0x729a,<sp/>0x3703,<sp/>0x3c31,<sp/>0x79a8,</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x28eb,<sp/>0x6d72,<sp/>0x6640,<sp/>0x23d9,<sp/>0x7024,<sp/>0x35bd,<sp/>0x3e8f,<sp/>0x7b16,</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5cec,<sp/>0x1975,<sp/>0x1247,<sp/>0x57de,<sp/>0x0423,<sp/>0x41ba,<sp/>0x4a88,<sp/>0x0f11,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x057c,<sp/>0x40e5,<sp/>0x4bd7,<sp/>0x0e4e,<sp/>0x5db3,<sp/>0x182a,<sp/>0x1318,<sp/>0x5681,</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x717b,<sp/>0x34e2,<sp/>0x3fd0,<sp/>0x7a49,<sp/>0x29b4,<sp/>0x6c2d,<sp/>0x671f,<sp/>0x2286,</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2213,<sp/>0x678a,<sp/>0x6cb8,<sp/>0x2921,<sp/>0x7adc,<sp/>0x3f45,<sp/>0x3477,<sp/>0x71ee,</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5614,<sp/>0x138d,<sp/>0x18bf,<sp/>0x5d26,<sp/>0x0edb,<sp/>0x4b42,<sp/>0x4070,<sp/>0x05e9,</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0f84,<sp/>0x4a1d,<sp/>0x412f,<sp/>0x04b6,<sp/>0x574b,<sp/>0x12d2,<sp/>0x19e0,<sp/>0x5c79,</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7b83,<sp/>0x3e1a,<sp/>0x3528,<sp/>0x70b1,<sp/>0x234c,<sp/>0x66d5,<sp/>0x6de7,<sp/>0x287e,</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x793d,<sp/>0x3ca4,<sp/>0x3796,<sp/>0x720f,<sp/>0x21f2,<sp/>0x646b,<sp/>0x6f59,<sp/>0x2ac0,</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0d3a,<sp/>0x48a3,<sp/>0x4391,<sp/>0x0608,<sp/>0x55f5,<sp/>0x106c,<sp/>0x1b5e,<sp/>0x5ec7,</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x54aa,<sp/>0x1133,<sp/>0x1a01,<sp/>0x5f98,<sp/>0x0c65,<sp/>0x49fc,<sp/>0x42ce,<sp/>0x0757,</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20ad,<sp/>0x6534,<sp/>0x6e06,<sp/>0x2b9f,<sp/>0x7862,<sp/>0x3dfb,<sp/>0x36c9,<sp/>0x7350,</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x51d6,<sp/>0x144f,<sp/>0x1f7d,<sp/>0x5ae4,<sp/>0x0919,<sp/>0x4c80,<sp/>0x47b2,<sp/>0x022b,</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x25d1,<sp/>0x6048,<sp/>0x6b7a,<sp/>0x2ee3,<sp/>0x7d1e,<sp/>0x3887,<sp/>0x33b5,<sp/>0x762c,</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7c41,<sp/>0x39d8,<sp/>0x32ea,<sp/>0x7773,<sp/>0x248e,<sp/>0x6117,<sp/>0x6a25,<sp/>0x2fbc,</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0846,<sp/>0x4ddf,<sp/>0x46ed,<sp/>0x0374,<sp/>0x5089,<sp/>0x1510,<sp/>0x1e22,<sp/>0x5bbb,</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0af8,<sp/>0x4f61,<sp/>0x4453,<sp/>0x01ca,<sp/>0x5237,<sp/>0x17ae,<sp/>0x1c9c,<sp/>0x5905,</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7eff,<sp/>0x3b66,<sp/>0x3054,<sp/>0x75cd,<sp/>0x2630,<sp/>0x63a9,<sp/>0x689b,<sp/>0x2d02,</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x276f,<sp/>0x62f6,<sp/>0x69c4,<sp/>0x2c5d,<sp/>0x7fa0,<sp/>0x3a39,<sp/>0x310b,<sp/>0x7492,</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5368,<sp/>0x16f1,<sp/>0x1dc3,<sp/>0x585a,<sp/>0x0ba7,<sp/>0x4e3e,<sp/>0x450c,<sp/>0x0095</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overflow<sp/>prevention</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n--)<sp/>{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>index<sp/>=</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp<sp/>^<sp/>(uint_least8_t)(crc<sp/>&gt;&gt;<sp/>7);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least16_t<sp/>lookup<sp/>=<sp/>tab[index<sp/>&amp;<sp/>0xffu];</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>(uint_least16_t)(lookup</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>^<sp/>(uint_least16_t)(crc<sp/>&lt;&lt;<sp/>8))</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<sp/>0x7fffu;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bp++;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/can/msg.c"/>
+  </compounddef>
+</doxygen>

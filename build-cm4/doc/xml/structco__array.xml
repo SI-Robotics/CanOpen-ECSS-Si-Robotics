@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__array" kind="struct" language="C++" prot="public">
+    <compoundname>co_array</compoundname>
+    <includes refid="val_8h" local="no">val.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__array_1a968193c0f2f2e1defd071f996c7afa23" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__array__hdr" kindref="compound">co_array_hdr</ref></type>
+        <definition>struct co_array_hdr co_array::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+<para>The header containing the capacity and current size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/val.h" line="334" column="8" bodyfile="include/lely/co/val.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__array_1a60601763b70471c67d04524b45ab54fb" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char co_array::data[CO_ARRAY_CAPACITY]</definition>
+        <argsstring>[CO_ARRAY_CAPACITY]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The bytes in the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/val.h" line="354" column="6" bodyfile="include/lely/co/val.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__array_1a8272d446badcff021f5c6bcdeea4a25d" prot="public" static="no" mutable="no">
+        <type>union <ref refid="unionco__val" kindref="compound">co_val</ref></type>
+        <definition>union co_val co_array::val_</definition>
+        <argsstring></argsstring>
+        <name>val_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/val.h" line="354" column="6" bodyfile="include/lely/co/val.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__array_1ad3c33176e21fc885e022d33dd6642748" prot="public" static="no" mutable="no">
+        <type>union co_array::@0</type>
+        <definition>union co_array::@0 co_array::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/val.h" line="357" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen array. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>co_array_hdr</label>
+        <link refid="structco__array__hdr"/>
+      </node>
+      <node id="1">
+        <label>co_array</label>
+        <link refid="structco__array"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>val_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_val</label>
+        <link refid="unionco__val"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/co/val.h" line="349" column="1" bodyfile="include/lely/co/val.h" bodystart="349" bodyend="358"/>
+    <listofallmembers>
+      <member refid="structco__array_1a60601763b70471c67d04524b45ab54fb" prot="public" virt="non-virtual"><scope>co_array</scope><name>data</name></member>
+      <member refid="structco__array_1a968193c0f2f2e1defd071f996c7afa23" prot="public" virt="non-virtual"><scope>co_array</scope><name>hdr</name></member>
+      <member refid="structco__array_1ad3c33176e21fc885e022d33dd6642748" prot="public" virt="non-virtual"><scope>co_array</scope><name>u</name></member>
+      <member refid="structco__array_1a8272d446badcff021f5c6bcdeea4a25d" prot="public" virt="non-virtual"><scope>co_array</scope><name>val_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

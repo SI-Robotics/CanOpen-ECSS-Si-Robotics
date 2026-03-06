@@ -1,0 +1,1388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-pheap_8cpp" kind="file" language="C++">
+    <compoundname>test-pheap.cpp</compoundname>
+    <includes local="no">cassert</includes>
+    <includes local="no">set</includes>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="pheap_8h" local="no">lely/util/pheap.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/util/test-pheap.cpp</label>
+        <link refid="test-pheap_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assert.h</label>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cassert</label>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="3">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>lely/util/pheap.h</label>
+        <link refid="pheap_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>pheap_init()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_PheapInit, EmptyWhenInitialized)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_PheapInit</type>
+        </param>
+        <param>
+          <type>EmptyWhenInitialized</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an uninitialized pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1abf8210a361e60a430190c662b974a797" kindref="member">pheap_init()</ref> is called with a pointer to the integer comparison function</para>
+<para><bold>Then</bold> the heap size is zero, the first node pointer is null and the comparison function is set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="91" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pnode_init()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a9d766de204a0c1c6e9c60a9df07b45b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_PheapInit, PnodeInit)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_PheapInit</type>
+        </param>
+        <param>
+          <type>PnodeInit</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the uninitialized node (pnode) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1afd211eeefb84dd2b4509198adaa1b0cb" kindref="member">pnode_init()</ref> is called with a pointer to the key value</para>
+<para><bold>Then</bold> the node is initialized with the given value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="109" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pnode_next()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1ae3e889566d1a47b59d1ed76fb2c7588b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PnodeNext_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PnodeNext_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with a single node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next()</ref> is called</para>
+<para><bold>Then</bold> a null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="137" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="137" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a720ac9f668df1e9adf7d2f44a4b68385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PnodeNext_Child)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PnodeNext_Child</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with nodes inserted (node 1 is a child of node 0) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next()</ref> is called for the node 0</para>
+<para><bold>Then</bold> the address of the node 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="151" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="151" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a8dd78928660665b27b23049cdc321881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PnodeNext_Parent)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PnodeNext_Parent</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with nodes inserted (node 1 has no child and no next node) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next()</ref> is called for the node 1</para>
+<para><bold>Then</bold> the address of the parent&apos;s next node (null pointer) is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="165" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="165" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_empty()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a6094a416d91e6a1e0bef847e210b94bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapEmpty_IsEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapEmpty_IsEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1af2317265d047b9da51422346ffe72703" kindref="member">pheap_empty()</ref> is called</para>
+<para><bold>Then</bold> 1 is returned <linebreak/>
+calls <ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="184" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1ad9101fa3fc82545e4fd6dcc0f29359a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapEmpty_IsNotEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapEmpty_IsNotEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a non-empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1af2317265d047b9da51422346ffe72703" kindref="member">pheap_empty()</ref> is called</para>
+<para><bold>Then</bold> 0 is returned <linebreak/>
+calls <ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="192" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="192" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_size()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a66b54c312b6a2034fd6625105b0d604f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapSize_IsEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapSize_IsEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size()</ref> is called</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="208" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="208" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a733859d053c87de0ddeabf9811571570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapSize_HasOneElement)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapSize_HasOneElement</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size()</ref> is called</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="215" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="215" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a1dd6b6b866a63ec7a17abcc888049a01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapSize_HasMultipleElements)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapSize_HasMultipleElements</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size()</ref> is called</para>
+<para><bold>Then</bold> the number of nodes is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="226" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="226" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_insert()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1adefcd6baff48981903b4b19f60918d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapInsert_WhenEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapInsert_WhenEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert()</ref> is called with a node (pnode) address</para>
+<para><bold>Then</bold> the node is inserted, heap size is one </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="243" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="243" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1aac9c47eb647261aa38ee621c1a156e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapInsert_OneInserted)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapInsert_OneInserted</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert()</ref> is called with a node address</para>
+<para><bold>Then</bold> the node is inserted, heap size is two </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="255" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="255" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a6e43662bbb996a83744ae6d0eedca3e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapInsert_MultipleInserted)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapInsert_MultipleInserted</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert()</ref> is called with a node address</para>
+<para><bold>Then</bold> the node is inserted, heap size has increased by one </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="269" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="269" bodyend="277"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_remove()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a4d5e94a6c38cc1377206f45ab423754c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapRemove_NodeIsOnlyElement)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapRemove_NodeIsOnlyElement</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove()</ref> is called with the node address</para>
+<para><bold>Then</bold> the node is removed and the pairing heap is empty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="289" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="289" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a30c8c3e4f94edd7881ed1eeac20ecc05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapRemove_NodeIsNotParentAndIsNotOnlyElement)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapRemove_NodeIsNotParentAndIsNotOnlyElement</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove()</ref> is called with the non-parent node address</para>
+<para><bold>Then</bold> the node is removed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="303" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="303" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a50d1199eb5b6492bfa0001a1b5caa3ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapRemove_NodeIsParentAndIsNotOnlyElement)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapRemove_NodeIsParentAndIsNotOnlyElement</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove()</ref> is called with the parent node address</para>
+<para><bold>Then</bold> the node is removed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="317" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="317" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a1bf7f578655554b4b1f0d06a299b512e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapRemove_NodeFromTheMiddleThatHasChild)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapRemove_NodeFromTheMiddleThatHasChild</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove()</ref> is called with the address of the node which has a child node</para>
+<para><bold>Then</bold> the node is removed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="332" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="332" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a7bc27afb5cfa0280bdc6cbf9a8d270a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapRemove_NodeWithParentAndSibling)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapRemove_NodeWithParentAndSibling</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove()</ref> is called with the address of the node which has both parent and sibling nodes</para>
+<para><bold>Then</bold> the node is removed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="349" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="349" bodyend="358"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_find()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a2c2650be9b95cc9da267b22e1c39207c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapFind_Empty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapFind_Empty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find()</ref> is called with an address of any key</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="370" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="370" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a55f3c5e83a14202cfd5591b5ca5ada92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapFind_NotEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapFind_NotEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find()</ref> is called with an address of key of one of the inserted <bold>Then</bold> an address of the node with the key is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="380" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="380" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a148e56f916c90eb5630959b029eef456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapFind_FindNotPresentWhenMultipleElements)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapFind_FindNotPresentWhenMultipleElements</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find()</ref> is called with an address of a key which is not present in any of the nodes stored in the heap</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="395" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="395" bodyend="399"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_first()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a29cc77e1e7d6a7d02d34bafcb61a56ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapFirst_OneInserted)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapFirst_OneInserted</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first()</ref> is called</para>
+<para><bold>Then</bold> the node address is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="411" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="411" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1aef077c27a6c0274a31d3a12f131d47a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapFirst_MultipleInserted)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapFirst_MultipleInserted</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first()</ref> is called</para>
+<para><bold>Then</bold> the address of the node with a minimum key value is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="422" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="422" bodyend="427"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pnode_foreach()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a34d08a5b53f0a537be4aa71e3df6e472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PnodeForeach_EmptyHeap)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PnodeForeach_EmptyHeap</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach()</ref> is used with heap&apos;s root node</para>
+<para><bold>Then</bold> body of the loop was not executed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="439" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="439" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1aada2661089c5440e834d4a48a1e06ef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PnodeForeach_OnlyHead)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PnodeForeach_OnlyHead</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach()</ref> is used with heap&apos;s root node</para>
+<para><bold>Then</bold> body of the loop is executed once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="452" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="452" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1afdf6ee608f999a0932f47fec420868a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PnodeForeach_MultipleElements)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PnodeForeach_MultipleElements</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach()</ref> is used with heap&apos;s root node</para>
+<para><bold>Then</bold> body of the loop is executed once for each node <linebreak/>
+calls <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="470" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="470" bodyend="482"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_foreach()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a1af22b602e28076863e6e80dcf3db663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapForeach_EmptyHeap)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapForeach_EmptyHeap</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach()</ref> is used</para>
+<para><bold>Then</bold> body of the loop was not executed <linebreak/>
+calls <ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="495" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="495" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a2aaedf3b8a898777f833577436de2f4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapForeach_OnlyHead)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapForeach_OnlyHead</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach()</ref> is used</para>
+<para><bold>Then</bold> body of the loop is executed once <linebreak/>
+calls <ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="509" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="509" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1aab6598cb85fa21af3ab64eae9d537ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapForeach_MultipleElements)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapForeach_MultipleElements</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach()</ref> is used</para>
+<para><bold>Then</bold> body of the loop is executed once for each node <linebreak/>
+calls <ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first()</ref> <linebreak/>
+calls <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="528" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="528" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a5e1c4050f777a019246cd841adc9df1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapForeach_MultiElementsRemoveCurrent)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapForeach_MultiElementsRemoveCurrent</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach()</ref> is used and one of the nodes is removed</para>
+<para><bold>Then</bold> body of the loop is executed once for each node and the removed node is not present in the heap <linebreak/>
+calls <ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first()</ref> <linebreak/>
+calls <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="550" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="550" bodyend="561"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pheap_contains()</header>
+      <memberdef kind="function" id="test-pheap_8cpp_1a484b59ebf8ad91c3fe9b6a8a11931178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapContains_HeapEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapContains_HeapEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty pairing heap (pheap) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains()</ref> is called with a node address</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="573" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="573" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1ad4ca0ae68699b00e791504dc2e0494d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapContains_OneInserted_Contains)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapContains_OneInserted_Contains</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains()</ref> is called with the node address</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="584" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="584" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a2d05d452f8faf67f46840b9e3578051c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapContains_OneInserted_NotContain)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapContains_OneInserted_NotContain</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with one node (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains()</ref> is called with address of the node which is not present in the heap</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="596" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="596" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a90ff47bd1ba8d6f9961e2c8241caa734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapContains_Many_Contains)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapContains_Many_Contains</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains()</ref> is called with address of the node which is present in the heap</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="608" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="608" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1aea9b72e2fd751639c7452ac11f62be83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Pheap, PheapContains_Many_NotContain)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>PheapContains_Many_NotContain</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pairing heap (pheap) with multiple nodes (pnode) inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains()</ref> is called with address of the node which is not present in the heap</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="624" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="624" bodyend="631"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-pheap_8cpp_1ae1511895ee4a652db85b23c95e1a0894" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int pheap_cmp_ints</definition>
+        <argsstring>(const void *const p1, const void *const p2) noexcept</argsstring>
+        <name>pheap_cmp_ints</name>
+        <param>
+          <type>const void *const</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="35" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="35" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a18353f1177016af7bcdedebf22b3bf65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(PheapCmpInts)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>PheapCmpInts</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="50" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1ad3f7e01408d30325a4d720db49bb891a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(PheapCmpInts, PheapCmpInts)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>PheapCmpInts</type>
+        </param>
+        <param>
+          <type>PheapCmpInts</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="52" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1a1b8152bb1c889fbd54c3a773ee2ee764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_BASE</definition>
+        <argsstring>(Util_PheapBase)</argsstring>
+        <name>TEST_BASE</name>
+        <param>
+          <type>Util_PheapBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="62" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="62" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1ad77fe61cae0e3c9713e17cf57552271b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP_BASE</definition>
+        <argsstring>(Util_PheapInit, Util_PheapBase)</argsstring>
+        <name>TEST_GROUP_BASE</name>
+        <param>
+          <type>Util_PheapInit</type>
+        </param>
+        <param>
+          <type>Util_PheapBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="79" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="test-pheap_8cpp_1ac249c6497011942e5cc1a46a03a9992c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP_BASE</definition>
+        <argsstring>(Util_Pheap, Util_PheapBase)</argsstring>
+        <name>TEST_GROUP_BASE</name>
+        <param>
+          <type>Util_Pheap</type>
+        </param>
+        <param>
+          <type>Util_PheapBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-pheap.cpp" line="117" column="1" bodyfile="unit-tests/util/test-pheap.cpp" bodystart="117" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pheap_8h" kindref="compound">lely/util/pheap.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">pheap_cmp_ints(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p2)<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>assert(p1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>assert(p2);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>val1<sp/>=<sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">int32_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>val2<sp/>=<sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">int32_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p2);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val1<sp/>&gt;<sp/>val2)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val1<sp/>==<sp/>val2)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(PheapCmpInts){};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(PheapCmpInts,<sp/>PheapCmpInts)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>a<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>b<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>c<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>pheap_cmp_ints(&amp;a,<sp/>&amp;c));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/>pheap_cmp_ints(&amp;a,<sp/>&amp;b));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/>pheap_cmp_ints(&amp;b,<sp/>&amp;a));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">TEST_BASE(Util_PheapBase)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>heap;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>NODES_NUM<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>nodes[NODES_NUM];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>keys[NODES_NUM]<sp/>=<sp/>{-32454,<sp/>-2431,<sp/>0,<sp/><sp/><sp/><sp/><sp/>273,<sp/><sp/><sp/>332,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3244,<sp/><sp/><sp/>4444,<sp/><sp/>13444,<sp/>17895,<sp/>21995};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FillHeap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>how_many)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(how_many<sp/>&lt;=<sp/>NODES_NUM);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>how_many;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[i]);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">TEST_GROUP_BASE(Util_PheapInit,<sp/>Util_PheapBase){};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"></codeline>
+<codeline lineno="91" refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_PheapInit,<sp/>EmptyWhenInitialized)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1abf8210a361e60a430190c662b974a797" kindref="member">pheap_init</ref>(&amp;heap,<sp/>pheap_cmp_ints);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>FUNCTIONPOINTERS_EQUAL(pheap_cmp_ints,<sp/>heap.<ref refid="structpheap_1a17952eab3e3c56dbd22ab2f7d39138dc" kindref="member">cmp</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"></codeline>
+<codeline lineno="103"></codeline>
+<codeline lineno="109" refid="test-pheap_8cpp_1a9d766de204a0c1c6e9c60a9df07b45b7" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_PheapInit,<sp/>PnodeInit)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1afd211eeefb84dd2b4509198adaa1b0cb" kindref="member">pnode_init</ref>(&amp;nodes[0],<sp/>&amp;keys[0]);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(keys[0],<sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(nodes[0].key));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">TEST_GROUP_BASE(Util_Pheap,<sp/>Util_PheapBase)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>0;<sp/><sp/></highlight><highlight class="comment">//<sp/>dummy<sp/>line<sp/>to<sp/>workaround<sp/>clang-format<sp/>issue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pheap_8h_1abf8210a361e60a430190c662b974a797" kindref="member">pheap_init</ref>(&amp;heap,<sp/>pheap_cmp_ints);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>NODES_NUM;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="pheap_8h_1afd211eeefb84dd2b4509198adaa1b0cb" kindref="member">pnode_init</ref>(&amp;nodes[i],<sp/>&amp;keys[i]);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"></codeline>
+<codeline lineno="137" refid="test-pheap_8cpp_1ae3e889566d1a47b59d1ed76fb2c7588b" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PnodeNext_Null)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next</ref>(&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ret);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="test-pheap_8cpp_1a720ac9f668df1e9adf7d2f44a4b68385" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PnodeNext_Child)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next</ref>(&amp;nodes[0]));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="test-pheap_8cpp_1a8dd78928660665b27b23049cdc321881" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PnodeNext_Parent)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next</ref>(&amp;nodes[1]));</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"></codeline>
+<codeline lineno="177"></codeline>
+<codeline lineno="184" refid="test-pheap_8cpp_1a6094a416d91e6a1e0bef847e210b94bc" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapEmpty_IsEmpty)<sp/>{<sp/>CHECK_EQUAL(1,<sp/><ref refid="pheap_8h_1af2317265d047b9da51422346ffe72703" kindref="member">pheap_empty</ref>(&amp;heap));<sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="test-pheap_8cpp_1ad9101fa3fc82545e4fd6dcc0f29359a7" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapEmpty_IsNotEmpty)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="pheap_8h_1af2317265d047b9da51422346ffe72703" kindref="member">pheap_empty</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"></codeline>
+<codeline lineno="202"></codeline>
+<codeline lineno="208" refid="test-pheap_8cpp_1a66b54c312b6a2034fd6625105b0d604f" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapSize_IsEmpty)<sp/>{<sp/>CHECK_EQUAL(0,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));<sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="test-pheap_8cpp_1a733859d053c87de0ddeabf9811571570" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapSize_HasOneElement)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1uL,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="test-pheap_8cpp_1a1dd6b6b866a63ec7a17abcc888049a01" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapSize_HasMultipleElements)<sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2uL,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"></codeline>
+<codeline lineno="237"></codeline>
+<codeline lineno="243" refid="test-pheap_8cpp_1adefcd6baff48981903b4b19f60918d90" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapInsert_WhenEmpty)<sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(&amp;nodes[0],<sp/><ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="test-pheap_8cpp_1aac9c47eb647261aa38ee621c1a156e1c" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapInsert_OneInserted)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(&amp;nodes[1],<sp/><ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find</ref>(&amp;heap,<sp/>&amp;keys[1]));</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2u,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="test-pheap_8cpp_1a6e43662bbb996a83744ae6d0eedca3e8" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapInsert_MultipleInserted)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(&amp;nodes[2],<sp/><ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find</ref>(&amp;heap,<sp/>&amp;keys[2]));</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(3u,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"></codeline>
+<codeline lineno="283"></codeline>
+<codeline lineno="289" refid="test-pheap_8cpp_1a4d5e94a6c38cc1377206f45ab423754c" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapRemove_NodeIsOnlyElement)<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0uL,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/><ref refid="pheap_8h_1af2317265d047b9da51422346ffe72703" kindref="member">pheap_empty</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="test-pheap_8cpp_1a30c8c3e4f94edd7881ed1eeac20ecc05" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapRemove_NodeIsNotParentAndIsNotOnlyElement)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1uL,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="test-pheap_8cpp_1a50d1199eb5b6492bfa0001a1b5caa3ea" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapRemove_NodeIsParentAndIsNotOnlyElement)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1uL,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="test-pheap_8cpp_1a1bf7f578655554b4b1f0d06a299b512e" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapRemove_NodeFromTheMiddleThatHasChild)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(3uL,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="test-pheap_8cpp_1a7bc27afb5cfa0280bdc6cbf9a8d270a8" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapRemove_NodeWithParentAndSibling)<sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(&amp;heap,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(3uL,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"></codeline>
+<codeline lineno="364"></codeline>
+<codeline lineno="370" refid="test-pheap_8cpp_1a2c2650be9b95cc9da267b22e1c39207c" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapFind_Empty)<sp/>{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find</ref>(&amp;heap,<sp/>&amp;keys[0]));</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes</highlight></codeline>
+<codeline lineno="380" refid="test-pheap_8cpp_1a55f3c5e83a14202cfd5591b5ca5ada92" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapFind_NotEmpty)<sp/>{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[2],<sp/><ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find</ref>(&amp;heap,<sp/>&amp;keys[2]));</highlight></codeline>
+<codeline lineno="387"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395" refid="test-pheap_8cpp_1a148e56f916c90eb5630959b029eef456" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapFind_FindNotPresentWhenMultipleElements)<sp/>{</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/>FillHeap(3);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find</ref>(&amp;heap,<sp/>&amp;keys[3]));</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"></codeline>
+<codeline lineno="405"></codeline>
+<codeline lineno="411" refid="test-pheap_8cpp_1a29cc77e1e7d6a7d02d34bafcb61a56ee" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapFirst_OneInserted)<sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[0],<sp/><ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="415"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422" refid="test-pheap_8cpp_1aef077c27a6c0274a31d3a12f131d47a3" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapFirst_MultipleInserted)<sp/>{</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/>FillHeap(6u);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="427"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"></codeline>
+<codeline lineno="433"></codeline>
+<codeline lineno="439" refid="test-pheap_8cpp_1a34d08a5b53f0a537be4aa71e3df6e472" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PnodeForeach_EmptyHeap)<sp/>{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach</ref>(<ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap),<sp/>node)<sp/>node_counter++;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452" refid="test-pheap_8cpp_1aada2661089c5440e834d4a48a1e06ef4" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PnodeForeach_OnlyHead)<sp/>{</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/>FillHeap(1);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach</ref>(<ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap),<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/>POINTERS_EQUAL(<ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap),<sp/>node);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>node_counter++;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470" refid="test-pheap_8cpp_1afdf6ee608f999a0932f47fec420868a9" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PnodeForeach_MultipleElements)<sp/>{</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/>FillHeap(NODES_NUM);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/>std::set&lt;int32_t&gt;<sp/>visited_keys;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach</ref>(<ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap),<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/>visited_keys.insert(*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">int32_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(node-&gt;key));</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/>node_counter++;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(NODES_NUM,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(NODES_NUM,<sp/>visited_keys.size());</highlight></codeline>
+<codeline lineno="482"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"></codeline>
+<codeline lineno="488"></codeline>
+<codeline lineno="495" refid="test-pheap_8cpp_1a1af22b602e28076863e6e80dcf3db663" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapForeach_EmptyHeap)<sp/>{</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach</ref>(&amp;heap,<sp/>node)<sp/>node_counter++;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509" refid="test-pheap_8cpp_1a2aaedf3b8a898777f833577436de2f4a" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapForeach_OnlyHead)<sp/>{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/>FillHeap(1);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach</ref>(&amp;heap,<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>POINTERS_EQUAL(<ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(&amp;heap),<sp/>node);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/>node_counter++;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528" refid="test-pheap_8cpp_1aab6598cb85fa21af3ab64eae9d537ffc" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapForeach_MultipleElements)<sp/>{</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/>FillHeap(NODES_NUM);</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/>std::set&lt;int32_t&gt;<sp/>visited_keys;</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach</ref>(&amp;heap,<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>visited_keys.insert(*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">int32_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(node-&gt;key));</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/>node_counter++;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(NODES_NUM,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(NODES_NUM,<sp/>visited_keys.size());</highlight></codeline>
+<codeline lineno="540"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550" refid="test-pheap_8cpp_1a5e1c4050f777a019246cd841adc9df1b" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapForeach_MultiElementsRemoveCurrent)<sp/>{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iteration_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/>FillHeap(NODES_NUM);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" kindref="member">pheap_foreach</ref>(&amp;heap,<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iteration_counter<sp/>==<sp/>2)<sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(&amp;heap,<sp/>node);</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>iteration_counter++;</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(NODES_NUM,<sp/>iteration_counter);</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(NODES_NUM<sp/>-<sp/>1,<sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(&amp;heap));</highlight></codeline>
+<codeline lineno="561"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"></codeline>
+<codeline lineno="567"></codeline>
+<codeline lineno="573" refid="test-pheap_8cpp_1a484b59ebf8ad91c3fe9b6a8a11931178" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapContains_HeapEmpty)<sp/>{</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[0]));</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[1]));</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[2]));</highlight></codeline>
+<codeline lineno="577"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="584" refid="test-pheap_8cpp_1ad4ca0ae68699b00e791504dc2e0494d4" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapContains_OneInserted_Contains)<sp/>{</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[0]));</highlight></codeline>
+<codeline lineno="588"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596" refid="test-pheap_8cpp_1a2d05d452f8faf67f46840b9e3578051c" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapContains_OneInserted_NotContain)<sp/>{</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[1]));</highlight></codeline>
+<codeline lineno="600"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608" refid="test-pheap_8cpp_1a90ff47bd1ba8d6f9961e2c8241caa734" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapContains_Many_Contains)<sp/>{</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[1]));</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[2]));</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[3]));</highlight></codeline>
+<codeline lineno="616"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="624" refid="test-pheap_8cpp_1aea9b72e2fd751639c7452ac11f62be83" refkind="member"><highlight class="normal"><ref refid="test-pheap_8cpp_1a49b2eb489ee9bf811e5300007e695921" kindref="member">TEST</ref>(Util_Pheap,<sp/>PheapContains_Many_NotContain)<sp/>{</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(&amp;heap,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[0]));</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(&amp;heap,<sp/>&amp;nodes[4]));</highlight></codeline>
+<codeline lineno="631"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/util/test-pheap.cpp"/>
+  </compounddef>
+</doxygen>

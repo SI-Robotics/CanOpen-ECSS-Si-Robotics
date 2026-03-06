@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_991d32df2b40d96a28a191a37b25c77f" kind="dir">
+    <compoundname>unit-tests/libtest/tools</compoundname>
+    <innerfile refid="can-send_8cpp">can-send.cpp</innerfile>
+    <innerfile refid="can-send_8hpp">can-send.hpp</innerfile>
+    <innerfile refid="co-csdo-dn-con_8cpp">co-csdo-dn-con.cpp</innerfile>
+    <innerfile refid="co-csdo-dn-con_8hpp">co-csdo-dn-con.hpp</innerfile>
+    <innerfile refid="co-csdo-up-con_8cpp">co-csdo-up-con.cpp</innerfile>
+    <innerfile refid="co-csdo-up-con_8hpp">co-csdo-up-con.hpp</innerfile>
+    <innerfile refid="co-nmt-cs-ind_8cpp">co-nmt-cs-ind.cpp</innerfile>
+    <innerfile refid="co-nmt-cs-ind_8hpp">co-nmt-cs-ind.hpp</innerfile>
+    <innerfile refid="co-nmt-hb-ind_8cpp">co-nmt-hb-ind.cpp</innerfile>
+    <innerfile refid="co-nmt-hb-ind_8hpp">co-nmt-hb-ind.hpp</innerfile>
+    <innerfile refid="co-nmt-rdn-ind_8cpp">co-nmt-rdn-ind.cpp</innerfile>
+    <innerfile refid="co-nmt-rdn-ind_8hpp">co-nmt-rdn-ind.hpp</innerfile>
+    <innerfile refid="co-nmt-st-ind_8cpp">co-nmt-st-ind.cpp</innerfile>
+    <innerfile refid="co-nmt-st-ind_8hpp">co-nmt-st-ind.hpp</innerfile>
+    <innerfile refid="co-nmt-sync-ind_8cpp">co-nmt-sync-ind.cpp</innerfile>
+    <innerfile refid="co-nmt-sync-ind_8hpp">co-nmt-sync-ind.hpp</innerfile>
+    <innerfile refid="co-rpdo-err_8cpp">co-rpdo-err.cpp</innerfile>
+    <innerfile refid="co-rpdo-err_8hpp">co-rpdo-err.hpp</innerfile>
+    <innerfile refid="co-rpdo-ind_8cpp">co-rpdo-ind.cpp</innerfile>
+    <innerfile refid="co-rpdo-ind_8hpp">co-rpdo-ind.hpp</innerfile>
+    <innerfile refid="co-sub-dn-ind_8cpp">co-sub-dn-ind.cpp</innerfile>
+    <innerfile refid="co-sub-dn-ind_8hpp">co-sub-dn-ind.hpp</innerfile>
+    <innerfile refid="co-sub-up-ind_8cpp">co-sub-up-ind.cpp</innerfile>
+    <innerfile refid="co-sub-up-ind_8hpp">co-sub-up-ind.hpp</innerfile>
+    <innerfile refid="co-tpdo-ind_8cpp">co-tpdo-ind.cpp</innerfile>
+    <innerfile refid="co-tpdo-ind_8hpp">co-tpdo-ind.hpp</innerfile>
+    <innerfile refid="co-tpdo-sample-ind_8cpp">co-tpdo-sample-ind.cpp</innerfile>
+    <innerfile refid="co-tpdo-sample-ind_8hpp">co-tpdo-sample-ind.hpp</innerfile>
+    <innerfile refid="lely-cpputest-ext_8hpp">lely-cpputest-ext.hpp</innerfile>
+    <innerfile refid="lely-unit-test_8cpp">lely-unit-test.cpp</innerfile>
+    <innerfile refid="lely-unit-test_8hpp">lely-unit-test.hpp</innerfile>
+    <innerfile refid="sdo-consts_8hpp">sdo-consts.hpp</innerfile>
+    <innerfile refid="sdo-create-message_8cpp">sdo-create-message.cpp</innerfile>
+    <innerfile refid="sdo-create-message_8hpp">sdo-create-message.hpp</innerfile>
+    <innerfile refid="sdo-init-expected-data_8cpp">sdo-init-expected-data.cpp</innerfile>
+    <innerfile refid="sdo-init-expected-data_8hpp">sdo-init-expected-data.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/"/>
+  </compounddef>
+</doxygen>

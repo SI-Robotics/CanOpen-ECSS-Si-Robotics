@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1600RpdoMapPar_1_1Sub00NumOfMappedObjs" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1600RpdoMapPar::Sub00NumOfMappedObjs</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SubT&lt; 0x00, CO_DEFTYPE_UNSIGNED8 &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SubT&lt; 0x00, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+      </node>
+      <node id="1">
+        <label>Obj1600RpdoMapPar::Sub00NumOfMappedObjs</label>
+        <link refid="structObj1600RpdoMapPar_1_1Sub00NumOfMappedObjs"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SubT&lt; 0x00, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+      </node>
+      <node id="1">
+        <label>Obj1600RpdoMapPar::Sub00NumOfMappedObjs</label>
+        <link refid="structObj1600RpdoMapPar_1_1Sub00NumOfMappedObjs"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/rpdo-map-par.hpp" line="32" column="3" bodyfile="unit-tests/co/obj-init/rpdo-map-par.hpp" bodystart="32" bodyend="32"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

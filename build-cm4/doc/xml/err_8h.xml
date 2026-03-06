@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="err_8h" kind="file" language="C++">
+    <compoundname>err.h</compoundname>
+    <includes refid="features_8h" local="no">lely/compat/features.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/lely/can/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>can_state</name>
+        <enumvalue id="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a7db2add3bd2ed5a01893a3d2a012ac67" prot="public">
+          <name>CAN_STATE_ACTIVE</name>
+          <briefdescription>
+<para>The error active state (TX/RX error count &lt; 128). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a55bf95125361a6b2f976fce630317615" prot="public">
+          <name>CAN_STATE_PASSIVE</name>
+          <briefdescription>
+<para>The error passive state (TX/RX error count &lt; 256). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a0c39026fd2b2217c760f9d6c3e1229f4" prot="public">
+          <name>CAN_STATE_BUSOFF</name>
+          <briefdescription>
+<para>The bus off state (TX/RX error count &gt;= 256). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a2bb74d448dac491e9cfcc7f7bcc14857" prot="public">
+          <name>CAN_STATE_SLEEPING</name>
+          <briefdescription>
+<para>The device is in sleep mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a644e7a441f2e607b93528d3128508cc8" prot="public">
+          <name>CAN_STATE_STOPPED</name>
+          <briefdescription>
+<para>The device is stopped. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The states of a CAN node, depending on the TX/RX error count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/err.h" line="28" column="1" bodyfile="include/lely/can/err.h" bodystart="28" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="err_8h_1a8631050e71dfdbab46a862853d16903c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>can_error</name>
+        <enumvalue id="err_8h_1a8631050e71dfdbab46a862853d16903ca37137f0febf9c7d7c56ef6f92354241d" prot="public">
+          <name>CAN_ERROR_BIT</name>
+          <initializer>= 1u &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>A single bit error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1a8631050e71dfdbab46a862853d16903ca83689dbb5c4ea9b3ef351f64b40155fa" prot="public">
+          <name>CAN_ERROR_STUFF</name>
+          <initializer>= 1u &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>A bit stuffing error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1a8631050e71dfdbab46a862853d16903cad4604379becaa13df2444c3bb84934dc" prot="public">
+          <name>CAN_ERROR_CRC</name>
+          <initializer>= 1u &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>A CRC sequence error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1a8631050e71dfdbab46a862853d16903ca225beca2274575939d123e3c4512c49f" prot="public">
+          <name>CAN_ERROR_FORM</name>
+          <initializer>= 1u &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>A form error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1a8631050e71dfdbab46a862853d16903cabd43a054ac70bc0999a7a480bb795d5a" prot="public">
+          <name>CAN_ERROR_ACK</name>
+          <initializer>= 1u &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>An acknowledgment error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1a8631050e71dfdbab46a862853d16903caef3614cc7f5ca467efa0b441ad639c6e" prot="public">
+          <name>CAN_ERROR_OTHER</name>
+          <initializer>= 1u &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>One or more other errors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The error flags of a CAN bus, which are not mutually exclusive. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/err.h" line="42" column="1" bodyfile="include/lely/can/err.h" bodystart="42" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the CAN library; it contains CAN bus error definitions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2015-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CAN_ERR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CAN_ERR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="features_8h" kindref="compound">lely/compat/features.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7" kindref="member">can_state</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a7db2add3bd2ed5a01893a3d2a012ac67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a7db2add3bd2ed5a01893a3d2a012ac67" kindref="member">CAN_STATE_ACTIVE</ref>,</highlight></codeline>
+<codeline lineno="32" refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a55bf95125361a6b2f976fce630317615" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a55bf95125361a6b2f976fce630317615" kindref="member">CAN_STATE_PASSIVE</ref>,</highlight></codeline>
+<codeline lineno="34" refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a0c39026fd2b2217c760f9d6c3e1229f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a0c39026fd2b2217c760f9d6c3e1229f4" kindref="member">CAN_STATE_BUSOFF</ref>,</highlight></codeline>
+<codeline lineno="36" refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a2bb74d448dac491e9cfcc7f7bcc14857" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a2bb74d448dac491e9cfcc7f7bcc14857" kindref="member">CAN_STATE_SLEEPING</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a644e7a441f2e607b93528d3128508cc8" kindref="member">CAN_STATE_STOPPED</ref></highlight></codeline>
+<codeline lineno="39" refid="err_8h_1ac7ec472c26c564dd7067c49f67c8d2f7a644e7a441f2e607b93528d3128508cc8" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="err_8h_1a8631050e71dfdbab46a862853d16903c" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="err_8h_1a8631050e71dfdbab46a862853d16903c" kindref="member">can_error</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="err_8h_1a8631050e71dfdbab46a862853d16903ca37137f0febf9c7d7c56ef6f92354241d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1a8631050e71dfdbab46a862853d16903ca37137f0febf9c7d7c56ef6f92354241d" kindref="member">CAN_ERROR_BIT</ref><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="46" refid="err_8h_1a8631050e71dfdbab46a862853d16903ca83689dbb5c4ea9b3ef351f64b40155fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1a8631050e71dfdbab46a862853d16903ca83689dbb5c4ea9b3ef351f64b40155fa" kindref="member">CAN_ERROR_STUFF</ref><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="48" refid="err_8h_1a8631050e71dfdbab46a862853d16903cad4604379becaa13df2444c3bb84934dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1a8631050e71dfdbab46a862853d16903cad4604379becaa13df2444c3bb84934dc" kindref="member">CAN_ERROR_CRC</ref><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="50" refid="err_8h_1a8631050e71dfdbab46a862853d16903ca225beca2274575939d123e3c4512c49f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1a8631050e71dfdbab46a862853d16903ca225beca2274575939d123e3c4512c49f" kindref="member">CAN_ERROR_FORM</ref><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="52" refid="err_8h_1a8631050e71dfdbab46a862853d16903cabd43a054ac70bc0999a7a480bb795d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1a8631050e71dfdbab46a862853d16903cabd43a054ac70bc0999a7a480bb795d5a" kindref="member">CAN_ERROR_ACK</ref><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1a8631050e71dfdbab46a862853d16903caef3614cc7f5ca467efa0b441ad639c6e" kindref="member">CAN_ERROR_OTHER</ref><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>5</highlight></codeline>
+<codeline lineno="55" refid="err_8h_1a8631050e71dfdbab46a862853d16903caef3614cc7f5ca467efa0b441ad639c6e" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CAN_ERR_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/can/err.h"/>
+  </compounddef>
+</doxygen>

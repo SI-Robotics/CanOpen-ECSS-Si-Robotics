@@ -1,0 +1,1764 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-net_8cpp" kind="file" language="C++">
+    <compoundname>test-net.cpp</compoundname>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="net_8h" local="no">lely/can/net.h</includes>
+    <includes refid="default_8hpp" local="no">libtest/allocators/default.hpp</includes>
+    <includes refid="limited_8hpp" local="no">libtest/allocators/limited.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>unit-tests/can/test-net.cpp</label>
+        <link refid="test-net_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>limits</label>
+      </node>
+      <node id="19">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pool.hpp</label>
+        <link refid="pool_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>libtest/allocators/default.hpp</label>
+        <link refid="default_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="17">
+        <label>cstddef</label>
+      </node>
+      <node id="14">
+        <label>lely/util/mempool.h</label>
+        <link refid="mempool_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>libtest/allocators/limited.hpp</label>
+        <link refid="limited_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceCAN__Net__Static">CAN_Net_Static</innernamespace>
+    <innernamespace refid="namespaceCAN__NetTimer__Static">CAN_NetTimer_Static</innernamespace>
+      <sectiondef kind="user-defined">
+      <header>can_net_create()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetAllocation, CanNetCreate_NoMemoryAvailable)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetAllocation</type>
+        </param>
+        <param>
+          <type>CanNetCreate_NoMemoryAvailable</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create()</ref> is called with a limited allocator with no memory</para>
+<para><bold>Then</bold> a null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="57" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a7de62fbb26bda9914f75556591df7256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetAllocation, CanNetCreate_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetAllocation</type>
+        </param>
+        <param>
+          <type>CanNetCreate_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create()</ref> is called with an allocator</para>
+<para><bold>Then</bold> a non-null pointer to the network (can_net_t) is returned, network default parameters are set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="70" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="70" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(CAN_Net)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <briefdescription>
+<para>Test group for <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> tests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="96" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="96" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_destroy()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a34e374a7b9aae3a1577c3dd14a81748a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetDestroy_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetDestroy_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) with multiple receivers and a timer </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy()</ref> is called</para>
+<para><bold>Then</bold> the network is destroyed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="149" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="149" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a1f9526abf0ae44fc5f43a6a9672e5c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetDestroy_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetDestroy_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a null pointer to the network (can_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy()</ref> is called</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="174" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="174" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_get_time()</header>
+      <memberdef kind="function" id="test-net_8cpp_1adfd962485a3c377d19ad2bbc3e648da4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetGetTime_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetGetTime_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time()</ref> is called with no memory area to store the return value</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="191" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="191" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_set_time()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a2618a7f477f90eba437e6c21ba521e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_NoTimers)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_NoTimers</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with no timers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval</para>
+<para><bold>Then</bold> 0 is returned, the requested time is set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="203" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="203" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a8ae19433c3a0d81bf81747c8d2424b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_NoCalls)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_NoCalls</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with a timer with a callback set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval less than the timer&apos;s trigger value</para>
+<para><bold>Then</bold> 0 is returned, the requested time is set, the timer callback is not called </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="221" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="221" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1ac14834468b2ae269b4c7a4e78beb6a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_OneCall)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_OneCall</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with a timer with a callback set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval greater than the timer&apos;s trigger value</para>
+<para><bold>Then</bold> 0 is returned, the requested time is set, the timer callback is called once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="247" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="247" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1abaeb9429c09dee05f5c3fff504412df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_OneCallErr)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_OneCallErr</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with a timer with a callback returning an error set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval greater than the timer&apos;s trigger value</para>
+<para><bold>Then</bold> -1 is returned, the requested time is set, the timer callback is called once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="274" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="274" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a6ce9cb92cc57d57a4a7c648dc340ae60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_OneCallNoFunc)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_OneCallNoFunc</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with a timer without a callback </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval greater than the timer&apos;s trigger value</para>
+<para><bold>Then</bold> 0 is returned, the requested time is set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="299" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="299" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1aa5e390e61479e8e603d780844a382674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_IntervalSec)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_IntervalSec</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with a timer with at least one second interval and a callback set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval greater than the timer&apos;s trigger value</para>
+<para><bold>Then</bold> 0 is returned, the requested time is set, the timer callback is called once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="324" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="324" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a17969b26cf085e48bc1a604e8b72082a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_IntervalNSec)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_IntervalNSec</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with a timer with interval less than one second and a callback set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval greater than the timer&apos;s trigger value</para>
+<para><bold>Then</bold> 0 is returned, the requested time is set, the timer callback is called once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="352" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="352" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a917f6c73f76381303a6c82f9597b1f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_OnlyInterval)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_OnlyInterval</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with a timer with no start time value, a non-zero interval and a callback set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval few times greater than the timer&apos;s interval value</para>
+<para><bold>Then</bold> 0 is returned, the requested time is set, the timer callback is called multiple times </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="380" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="380" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1abece193eab709f46d6f66ee6ee885341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_MultipleCallsErr)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_MultipleCallsErr</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with two timers with a callback returning error set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval greater than the timer&apos;s interval value</para>
+<para><bold>Then</bold> -1 is returned, the requested time is set, the timer callback is called twice </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="407" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="407" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a4771683e71a616970b7c4f17134fe306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetTime_NextFunc)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetTime_NextFunc</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) with two timers with different start values and the next timer callback set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> is called with a time interval between the timers start values</para>
+<para><bold>Then</bold> 0 is returned, the next timer callback is called once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="437" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="437" bodyend="456"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_get_next_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a587ea22ba6d5b4f1789596dd024583d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetGetNextFunc_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetGetNextFunc_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1ab3851ccc7a12a460b130d445713e1d81" kindref="member">can_net_get_next_func()</ref> is called with no memory area to store the result</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="469" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="469" bodyend="471"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_set_next_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a31c9cf34c25235e668cd10e39c1f20b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetNextFunc_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetNextFunc_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (co_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1ac171ad107c9b4086fa3b7bd518837428" kindref="member">can_net_set_next_func()</ref> is called with pointers to the next timer callback and a user-specified data</para>
+<para><bold>Then</bold> requested pointers are set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="484" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="484" bodyend="495"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_get_send_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1ac9c3b9bf050cb0dfc5474dce81f5899c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetGetSendFunc_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetGetSendFunc_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a705d0db5ebfa63ce737151f275ef5aab" kindref="member">can_net_get_send_func()</ref> is called with no memory area to store the results</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="508" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="508" bodyend="510"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_set_send_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1ac388ae2e0a2330d0e1b310c7e1389fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetSendFunc_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetSendFunc_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" kindref="member">can_net_set_send_func()</ref> is called with pointers to the send function and a user-specified data</para>
+<para><bold>Then</bold> the requested pointers are set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="523" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="523" bodyend="534"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_get_active_bus()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a19516bc6bdc348d505c7036713f49ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetGetActiveBus_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetGetActiveBus_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1ab92b71ff8f8ba394232a3cca01c250c1" kindref="member">can_net_get_active_bus()</ref> is called</para>
+<para><bold>Then</bold> the active bus ID is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="546" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="546" bodyend="550"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_set_active_bus()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a9612f421586db9a8f8e9972702b7707d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSetActiveBus_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSetActiveBus_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1afcad2febbb8ae1ed0efd23e7ef115bc2" kindref="member">can_net_set_active_bus()</ref> is called with a bus ID</para>
+<para><bold>Then</bold> the active bus ID is set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="562" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="562" bodyend="566"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_recv()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a995eada28919bf1261adcb82d01790d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetRecv_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetRecv_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) with one receiver </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv()</ref> is called with a pointer to a CAN message and a bus ID of the active bus</para>
+<para><bold>Then</bold> 1 is returned, the receiver callback is called once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="579" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="579" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a5ee59ce4ae1890d518284a8117054cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetRecv_RecvListEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetRecv_RecvListEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) with no receivers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv()</ref> is called with a pointer to a CAN message and a bus ID of the active bus</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="601" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="601" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a55b1a74ec8d4611ca9787803fac97495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetRecv_RecvFuncError)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetRecv_RecvFuncError</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) with three receivers - two with a callback function returning an error and one with no callback </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv()</ref> is called with a pointer to a CAN message and a bus ID of the active bus</para>
+<para><bold>Then</bold> -1 is returned, the timer callback is called twice </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="617" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="617" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1adf43ae4f3f34426f8f90ba222168bd0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetRecv_InactiveBus)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetRecv_InactiveBus</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) with one receiver </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv()</ref> is called with a pointer to a CAN message and a bus ID of an inactive bus</para>
+<para><bold>Then</bold> 0 is returned, the receiver callback is not called </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="646" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="646" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a94c9b66e5d659404ecd7a986f34b2f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetRecv, CanRecvGetAlloc)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetRecv</type>
+        </param>
+        <param>
+          <type>CanRecvGetAlloc</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the receiver (can_recv_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a266fe67336789e37c35f4180cc51896a" kindref="member">can_recv_get_alloc()</ref> is called</para>
+<para><bold>Then</bold> allocator is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="887" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="887" bodyend="896"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_send()</header>
+      <memberdef kind="function" id="test-net_8cpp_1afc541fdbef1f1ea9aad4b100a76578ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSend)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSend</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) with a callback send function set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref> is called with a CAN message</para>
+<para><bold>Then</bold> 0 is returned, the send function is called once </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="675" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="675" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1aa1ceff2f9b4f5aaaabdcac15b18954c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_Net, CanNetSend_Err)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_Net</type>
+        </param>
+        <param>
+          <type>CanNetSend_Err</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the network (can_net_t) with a callback send function not set </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref> is called with a CAN message</para>
+<para><bold>Then</bold> -1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="691" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="691" bodyend="697"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_net_timer_get_alloc()</header>
+      <memberdef kind="function" id="test-net_8cpp_1aab8391ec897a7c6812cd1259159cdd60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetTimer, CanTimerGetAlloc_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <param>
+          <type>CanTimerGetAlloc_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the timer (can_timer_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a25085d8b8741c733ca4143a4636705aa" kindref="member">can_timer_get_alloc()</ref> is called</para>
+<para><bold>Then</bold> allocator is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="731" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="731" bodyend="739"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_timer_destroy()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a073323e60a183b822d06ece336e06fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetTimer, CanTimerDestroy_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <param>
+          <type>CanTimerDestroy_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a null pointer to the timer (can_timer_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy()</ref> is called</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="751" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="751" bodyend="755"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_timer_get_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1ac169e0d1d8c3b3ca94fa48b208a70ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetTimer, CanTimerGetFunc_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <param>
+          <type>CanTimerGetFunc_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the timer (can_timer_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a36d401ad79d4af7d3378f2d5e47524eb" kindref="member">can_timer_get_func()</ref> is called with no memory area to store the result</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="768" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="768" bodyend="770"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_timer_set_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1aac2bb3c8858a3e550d3c097b2f709e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetTimer, CanTimerSetFunc_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <param>
+          <type>CanTimerSetFunc_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the timer (can_timer_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func()</ref> is called with pointers to a timer callback function and a user-specified data</para>
+<para><bold>Then</bold> requested pointers are set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="783" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="783" bodyend="793"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_timer_start()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a1c2edf1a2ec47b53be0d5245493477e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetTimer, CanTimerStart_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <param>
+          <type>CanTimerStart_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the timer (can_timer_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start()</ref> is called with a pointer to the network and no start nor interval for the timer</para>
+<para><bold>Then</bold> nothing is changed <linebreak/>
+calls <ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="807" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="807" bodyend="813"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_timer_timeout()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a655351ebaa66d8ed653efe80287dbc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetTimer, CanTimerTimeout_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <param>
+          <type>CanTimerTimeout_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the timer (can_timer_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a6aedb3ac49d2c5c54be443bb10949a79" kindref="member">can_timer_timeout()</ref> is called with a pointer to the network and a timeout value</para>
+<para><bold>Then</bold> 0 is returned, the timer is started with a given timeout <linebreak/>
+calls <ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time()</ref> <linebreak/>
+calls <ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="828" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="828" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a9668a0ffc5615721b1f698253b6ed3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetTimer, CanTimerTimeout_Negative)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <param>
+          <type>CanTimerTimeout_Negative</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the timer (can_timer_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a6aedb3ac49d2c5c54be443bb10949a79" kindref="member">can_timer_timeout()</ref> is called with a pointer to the network and a negative timeout value</para>
+<para><bold>Then</bold> 0 is returned, the timer is not started <linebreak/>
+calls <ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="849" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="849" bodyend="861"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_recv_destroy()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a76a88e09cc33267556a01f5626b9e8e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetRecv, CanRecvDestroy_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetRecv</type>
+        </param>
+        <param>
+          <type>CanRecvDestroy_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a null pointer to the receiver (can_recv_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy()</ref> is called</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="908" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="908" bodyend="912"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_recv_get_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1a139b1b1caf723b0eabe12f8f07eeef89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetRecv, CanRecvGetFunc_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetRecv</type>
+        </param>
+        <param>
+          <type>CanRecvGetFunc_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a null pointer to the receiver (can_recv_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1addf2c35f7494a94230f10dfec5a00c27" kindref="member">can_recv_get_func()</ref> is called with no memory area to store the results</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="924" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="924" bodyend="926"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>can_recv_set_func()</header>
+      <memberdef kind="function" id="test-net_8cpp_1adeb602d322786881ca4aa333fc242d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CAN_NetRecv, CanRecvSetFunc)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CAN_NetRecv</type>
+        </param>
+        <param>
+          <type>CanRecvSetFunc</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the receiver (can_recv_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func()</ref> is called with pointers to receive function and the user-specified data</para>
+<para><bold>Then</bold> requested pointers are set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="939" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="939" bodyend="950"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-net_8cpp_1a4ad19c18f7617e7e6bd9bb5cde43f6cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(CAN_NetAllocation)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>CAN_NetAllocation</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="42" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a5abdc7c564d8ac46e889acc71a1953c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(CAN_NetTimer)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>CAN_NetTimer</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="705" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="705" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="test-net_8cpp_1a4c7b4a367793a7d11ae4659419aeed75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(CAN_NetRecv)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>CAN_NetRecv</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="865" column="1" bodyfile="unit-tests/can/test-net.cpp" bodystart="865" bodyend="877"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="net_8h" kindref="compound">lely/can/net.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="default_8hpp" kindref="compound">libtest/allocators/default.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="limited_8hpp" kindref="compound">libtest/allocators/limited.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">CAN_Net_Static<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>tfunc_empty_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>tfunc_err_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>rfunc_empty_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>rfunc_err_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sfunc_empty_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>CAN_Net_Static</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(CAN_NetAllocation)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classAllocators_1_1Limited" kindref="compound">Allocators::Limited</ref><sp/>allocator;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/>net<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{<sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"></codeline>
+<codeline lineno="57" refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetAllocation,<sp/>CanNetCreate_NoMemoryAvailable)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>allocator.LimitAllocationTo(0u);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>net);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="test-net_8cpp_1a7de62fbb26bda9914f75556591df7256" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetAllocation,<sp/>CanNetCreate_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>allocator.LimitAllocationTo(<ref refid="net_8h_1a01249c9ea6971f825bcd220fd644eb13" kindref="member">can_net_sizeof</ref>());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>CHECK(net<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0L,<sp/>tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref>*<sp/>tfunc<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>tdata<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1ab3851ccc7a12a460b130d445713e1d81" kindref="member">can_net_get_next_func</ref>(net,<sp/>&amp;tfunc,<sp/>&amp;tdata);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>tfunc);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>tdata);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref>*<sp/>sfunc<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>sdata<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a705d0db5ebfa63ce737151f275ef5aab" kindref="member">can_net_get_send_func</ref>(net,<sp/>&amp;sfunc,<sp/>&amp;sdata);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>sfunc);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>sdata);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="net_8h_1ab92b71ff8f8ba394232a3cca01c250c1" kindref="member">can_net_get_active_bus</ref>(net));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(CAN_Net)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="classAllocators_1_1PoolAllocator" kindref="compound">Allocators::Default</ref><sp/>allocator;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/>net<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer_func_empty(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>++CAN_Net_Static::tfunc_empty_counter;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer_func_err(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>++CAN_Net_Static::tfunc_err_counter;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>recv_func_empty(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>++CAN_Net_Static::rfunc_empty_counter;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>recv_func_err(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>++CAN_Net_Static::rfunc_err_counter;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>send_func_empty(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref>*,<sp/>uint_least8_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>++CAN_Net_Static::sfunc_empty_counter;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>send_func_err(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref>*,<sp/>uint_least8_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(net<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN_Net_Static::tfunc_empty_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN_Net_Static::tfunc_err_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN_Net_Static::rfunc_empty_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN_Net_Static::rfunc_err_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN_Net_Static::sfunc_empty_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{<sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);<sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"></codeline>
+<codeline lineno="142"></codeline>
+<codeline lineno="149" refid="test-net_8cpp_1a34e374a7b9aae3a1577c3dd14a81748a" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetDestroy_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer1<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>time1<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer1,<sp/>net,<sp/>&amp;time1,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv1<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv2<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv3<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv1,<sp/>net,<sp/>0x00,<sp/><ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299a655b60a1111aa11cc8008076864f583a" kindref="member">CAN_FLAG_IDE</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv2,<sp/>net,<sp/>0x01,<sp/>0);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv3,<sp/>net,<sp/>0x01,<sp/>0);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>net<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer1);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv1);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv2);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv3);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="test-net_8cpp_1a1f9526abf0ae44fc5f43a6a9672e5c54" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetDestroy_Null)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>net<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"></codeline>
+<codeline lineno="184"></codeline>
+<codeline lineno="191" refid="test-net_8cpp_1adfd962485a3c377d19ad2bbc3e648da4" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetGetTime_Null)<sp/>{<sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"></codeline>
+<codeline lineno="197"></codeline>
+<codeline lineno="203" refid="test-net_8cpp_1a2618a7f477f90eba437e6c21ba521e18" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_NoTimers)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{256,<sp/>640000L};</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="test-net_8cpp_1a8ae19433c3a0d81bf81747c8d2424b41" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_NoCalls)<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{4,<sp/>0L};</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/>&amp;tstart,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CAN_Net_Static::tfunc_empty_counter);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="test-net_8cpp_1ac14834468b2ae269b4c7a4e78beb6a4f" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_OneCall)<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/>&amp;tstart,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>CAN_Net_Static::tfunc_empty_counter);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="test-net_8cpp_1abaeb9429c09dee05f5c3fff504412df1" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_OneCallErr)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func_err,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/>&amp;tstart,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(-1,<sp/>ret);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>CAN_Net_Static::tfunc_err_counter);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="test-net_8cpp_1a6ce9cb92cc57d57a4a7c648dc340ae60" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_OneCallNoFunc)<sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/>&amp;tstart,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="test-net_8cpp_1aa5e390e61479e8e603d780844a382674" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_IntervalSec)<sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>interval<sp/>=<sp/>{1,<sp/>0L};</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/>&amp;tstart,<sp/>&amp;interval);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>CAN_Net_Static::tfunc_empty_counter);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352" refid="test-net_8cpp_1a17969b26cf085e48bc1a604e8b72082a" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_IntervalNSec)<sp/>{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>interval<sp/>=<sp/>{0,<sp/>40L};</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/>&amp;tstart,<sp/>&amp;interval);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>CAN_Net_Static::tfunc_empty_counter);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="test-net_8cpp_1a917f6c73f76381303a6c82f9597b1f5b" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_OnlyInterval)<sp/>{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>interval<sp/>=<sp/>{1,<sp/>0L};</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;interval);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(5,<sp/>CAN_Net_Static::tfunc_empty_counter);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="test-net_8cpp_1abece193eab709f46d6f66ee6ee885341" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_MultipleCallsErr)<sp/>{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer1<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer2<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer1,<sp/>timer_func_err,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer2,<sp/>timer_func_err,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer1,<sp/>net,<sp/>&amp;tstart,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer2,<sp/>net,<sp/>&amp;tstart,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>out_tp<sp/>=<sp/>{0,<sp/>0L};</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(net,<sp/>&amp;out_tp);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(-1,<sp/>ret);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>,<sp/>out_tp.<ref refid="structtimespec_1afc3302668d7cb5952f590da69fdd4955" kindref="member">tv_sec</ref>);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>,<sp/>out_tp.<ref refid="structtimespec_1ae3c7510dafa8cbcaede866ed13c99683" kindref="member">tv_nsec</ref>);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2,<sp/>CAN_Net_Static::tfunc_err_counter);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer1);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer2);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="test-net_8cpp_1a4771683e71a616970b7c4f17134fe306" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetTime_NextFunc)<sp/>{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>256;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{5,<sp/>30L};</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart1<sp/>=<sp/>{5,<sp/>0L};</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tstart2<sp/>=<sp/>{6,<sp/>0L};</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer1<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer2<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer1,<sp/>net,<sp/>&amp;tstart1,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer2,<sp/>net,<sp/>&amp;tstart2,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1ac171ad107c9b4086fa3b7bd518837428" kindref="member">can_net_set_next_func</ref>(net,<sp/>timer_func_empty,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>CAN_Net_Static::tfunc_empty_counter);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer1);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer2);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"></codeline>
+<codeline lineno="462"></codeline>
+<codeline lineno="469" refid="test-net_8cpp_1a587ea22ba6d5b4f1789596dd024583d1" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetGetNextFunc_Null)<sp/>{</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1ab3851ccc7a12a460b130d445713e1d81" kindref="member">can_net_get_next_func</ref>(net,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"></codeline>
+<codeline lineno="477"></codeline>
+<codeline lineno="484" refid="test-net_8cpp_1a31c9cf34c25235e668cd10e39c1f20b8" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetNextFunc_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>256;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1ac171ad107c9b4086fa3b7bd518837428" kindref="member">can_net_set_next_func</ref>(net,<sp/>timer_func_empty,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref>*<sp/>out_ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>out_data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1ab3851ccc7a12a460b130d445713e1d81" kindref="member">can_net_get_next_func</ref>(net,<sp/>&amp;out_ptr,<sp/>&amp;out_data);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/>FUNCTIONPOINTERS_EQUAL(timer_func_empty,<sp/>out_ptr);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;data,<sp/>out_data);</highlight></codeline>
+<codeline lineno="495"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"></codeline>
+<codeline lineno="501"></codeline>
+<codeline lineno="508" refid="test-net_8cpp_1ac9c3b9bf050cb0dfc5474dce81f5899c" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetGetSendFunc_Null)<sp/>{</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a705d0db5ebfa63ce737151f275ef5aab" kindref="member">can_net_get_send_func</ref>(net,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"></codeline>
+<codeline lineno="516"></codeline>
+<codeline lineno="523" refid="test-net_8cpp_1ac388ae2e0a2330d0e1b310c7e1389fa8" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetSendFunc_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>512;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" kindref="member">can_net_set_send_func</ref>(net,<sp/>send_func_empty,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref>*<sp/>out_ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>out_data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a705d0db5ebfa63ce737151f275ef5aab" kindref="member">can_net_get_send_func</ref>(net,<sp/>&amp;out_ptr,<sp/>&amp;out_data);</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/>FUNCTIONPOINTERS_EQUAL(send_func_empty,<sp/>out_ptr);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;data,<sp/>out_data);</highlight></codeline>
+<codeline lineno="534"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"></codeline>
+<codeline lineno="540"></codeline>
+<codeline lineno="546" refid="test-net_8cpp_1a19516bc6bdc348d505c7036713f49ae7" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetGetActiveBus_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1ab92b71ff8f8ba394232a3cca01c250c1" kindref="member">can_net_get_active_bus</ref>(net);</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="550"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"></codeline>
+<codeline lineno="556"></codeline>
+<codeline lineno="562" refid="test-net_8cpp_1a9612f421586db9a8f8e9972702b7707d" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSetActiveBus_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afcad2febbb8ae1ed0efd23e7ef115bc2" kindref="member">can_net_set_active_bus</ref>(net,<sp/>7);</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(7u,<sp/><ref refid="net_8h_1ab92b71ff8f8ba394232a3cca01c250c1" kindref="member">can_net_get_active_bus</ref>(net));</highlight></codeline>
+<codeline lineno="566"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"></codeline>
+<codeline lineno="572"></codeline>
+<codeline lineno="579" refid="test-net_8cpp_1a995eada28919bf1261adcb82d01790d1" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetRecv_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func</ref>(recv,<sp/>recv_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv,<sp/>net,<sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CAN_Net_Static::rfunc_empty_counter);</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv);</highlight></codeline>
+<codeline lineno="593"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight></codeline>
+<codeline lineno="601" refid="test-net_8cpp_1a5ee59ce4ae1890d518284a8117054cc5" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetRecv_RecvListEmpty)<sp/>{</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="608"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617" refid="test-net_8cpp_1a55b1a74ec8d4611ca9787803fac97495" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetRecv_RecvFuncError)<sp/>{</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv1<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv2<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv3<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func</ref>(recv1,<sp/>recv_func_err,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func</ref>(recv2,<sp/>recv_func_err,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv1,<sp/>net,<sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv2,<sp/>net,<sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv3,<sp/>net,<sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(-1,<sp/>ret);</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2u,<sp/>CAN_Net_Static::rfunc_err_counter);</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv1);</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv2);</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv3);</highlight></codeline>
+<codeline lineno="638"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646" refid="test-net_8cpp_1adf43ae4f3f34426f8f90ba222168bd0a" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetRecv_InactiveBus)<sp/>{</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func</ref>(recv,<sp/>recv_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(recv,<sp/>net,<sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afcad2febbb8ae1ed0efd23e7ef115bc2" kindref="member">can_net_set_active_bus</ref>(net,<sp/>0);</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>5);</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CAN_Net_Static::rfunc_empty_counter);</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv);</highlight></codeline>
+<codeline lineno="662"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"></codeline>
+<codeline lineno="668"></codeline>
+<codeline lineno="675" refid="test-net_8cpp_1afc541fdbef1f1ea9aad4b100a76578ef" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSend)<sp/>{</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" kindref="member">can_net_set_send_func</ref>(net,<sp/>send_func_empty,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send</ref>(net,<sp/>&amp;msg);</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"></highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CAN_Net_Static::sfunc_empty_counter);</highlight></codeline>
+<codeline lineno="683"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691" refid="test-net_8cpp_1aa1ceff2f9b4f5aaaabdcac15b18954c4" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_Net,<sp/>CanNetSend_Err)<sp/>{</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send</ref>(net,<sp/>&amp;msg);</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(-1,<sp/>ret);</highlight></codeline>
+<codeline lineno="697"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">CAN_NetTimer_Static<sp/>{</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>timer_func_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="703"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(CAN_NetTimer)<sp/>{</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/>timer<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><ref refid="classAllocators_1_1PoolAllocator" kindref="compound">Allocators::Default</ref><sp/>allocator;</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer_func(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/>++CAN_NetTimer_Static::timer_func_counter;</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/>timer<sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(timer<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/>++CAN_NetTimer_Static::timer_func_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{<sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);<sp/>}</highlight></codeline>
+<codeline lineno="721"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"></codeline>
+<codeline lineno="731" refid="test-net_8cpp_1aab8391ec897a7c6812cd1259159cdd60" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetTimer,<sp/>CanTimerGetAlloc_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref>*<sp/>tfunc<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>tdata<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a36d401ad79d4af7d3378f2d5e47524eb" kindref="member">can_timer_get_func</ref>(timer,<sp/>&amp;tfunc,<sp/>&amp;tdata);</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>tfunc);</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>tdata);</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(allocator.ToAllocT(),<sp/><ref refid="net_8h_1a25085d8b8741c733ca4143a4636705aa" kindref="member">can_timer_get_alloc</ref>(timer));</highlight></codeline>
+<codeline lineno="739"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"></highlight></codeline>
+<codeline lineno="742"></codeline>
+<codeline lineno="745"></codeline>
+<codeline lineno="751" refid="test-net_8cpp_1a073323e60a183b822d06ece336e06fd6" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetTimer,<sp/>CanTimerDestroy_Null)<sp/>{</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>timer<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"></highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(timer);</highlight></codeline>
+<codeline lineno="755"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"></codeline>
+<codeline lineno="761"></codeline>
+<codeline lineno="768" refid="test-net_8cpp_1ac169e0d1d8c3b3ca94fa48b208a70ad7" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetTimer,<sp/>CanTimerGetFunc_Null)<sp/>{</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a36d401ad79d4af7d3378f2d5e47524eb" kindref="member">can_timer_get_func</ref>(timer,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="770"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="773"></codeline>
+<codeline lineno="776"></codeline>
+<codeline lineno="783" refid="test-net_8cpp_1aac2bb3c8858a3e550d3c097b2f709e0b" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetTimer,<sp/>CanTimerSetFunc_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>768;</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"></highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"></highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref>*<sp/>out_ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>out_data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a36d401ad79d4af7d3378f2d5e47524eb" kindref="member">can_timer_get_func</ref>(timer,<sp/>&amp;out_ptr,<sp/>&amp;out_data);</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/>FUNCTIONPOINTERS_EQUAL(timer_func,<sp/>out_ptr);</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;data,<sp/>out_data);</highlight></codeline>
+<codeline lineno="793"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"></highlight></codeline>
+<codeline lineno="796"></codeline>
+<codeline lineno="799"></codeline>
+<codeline lineno="807" refid="test-net_8cpp_1a1c2edf1a2ec47b53be0d5245493477e0" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetTimer,<sp/>CanTimerStart_Null)<sp/>{</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(timer,<sp/>net,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"></highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="813"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"></highlight></codeline>
+<codeline lineno="816"></codeline>
+<codeline lineno="819"></codeline>
+<codeline lineno="828" refid="test-net_8cpp_1a655351ebaa66d8ed653efe80287dbc9b" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetTimer,<sp/>CanTimerTimeout_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"></highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a6aedb3ac49d2c5c54be443bb10949a79" kindref="member">can_timer_timeout</ref>(timer,<sp/>net,<sp/>500);</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"></highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{1,<sp/>0L};</highlight></codeline>
+<codeline lineno="835"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>CAN_NetTimer_Static::timer_func_counter);</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"></highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="840"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"></highlight></codeline>
+<codeline lineno="849" refid="test-net_8cpp_1a9668a0ffc5615721b1f698253b6ed3ff" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetTimer,<sp/>CanTimerTimeout_Negative)<sp/>{</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(timer,<sp/>timer_func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"></highlight></codeline>
+<codeline lineno="853"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a6aedb3ac49d2c5c54be443bb10949a79" kindref="member">can_timer_timeout</ref>(timer,<sp/>net,<sp/>-1);</highlight></codeline>
+<codeline lineno="854"><highlight class="normal"></highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{1,<sp/>0L};</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CAN_NetTimer_Static::timer_func_counter);</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"></highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="861"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="864"><highlight class="normal"></highlight></codeline>
+<codeline lineno="865"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(CAN_NetRecv)<sp/>{</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/>recv<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="867"><highlight class="normal"><sp/><sp/><ref refid="classAllocators_1_1PoolAllocator" kindref="compound">Allocators::Default</ref><sp/>allocator;</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"></highlight></codeline>
+<codeline lineno="869"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>recv_func(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="870"><highlight class="normal"></highlight></codeline>
+<codeline lineno="871"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/>recv<sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(allocator.ToAllocT());</highlight></codeline>
+<codeline lineno="873"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(recv<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="875"><highlight class="normal"></highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{<sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv);<sp/>}</highlight></codeline>
+<codeline lineno="877"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"></highlight></codeline>
+<codeline lineno="881"></codeline>
+<codeline lineno="887" refid="test-net_8cpp_1a94c9b66e5d659404ecd7a986f34b2f98" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetRecv,<sp/>CanRecvGetAlloc)<sp/>{</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref>*<sp/>out_ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>out_data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1addf2c35f7494a94230f10dfec5a00c27" kindref="member">can_recv_get_func</ref>(recv,<sp/>&amp;out_ptr,<sp/>&amp;out_data);</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight></codeline>
+<codeline lineno="892"><highlight class="normal"><sp/><sp/>FUNCTIONPOINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>out_ptr);</highlight></codeline>
+<codeline lineno="893"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>out_data);</highlight></codeline>
+<codeline lineno="894"><highlight class="normal"></highlight></codeline>
+<codeline lineno="895"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(allocator.ToAllocT(),<sp/><ref refid="net_8h_1a266fe67336789e37c35f4180cc51896a" kindref="member">can_recv_get_alloc</ref>(recv));</highlight></codeline>
+<codeline lineno="896"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="897"><highlight class="normal"></highlight></codeline>
+<codeline lineno="899"></codeline>
+<codeline lineno="902"></codeline>
+<codeline lineno="908" refid="test-net_8cpp_1a76a88e09cc33267556a01f5626b9e8e3" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetRecv,<sp/>CanRecvDestroy_Null)<sp/>{</highlight></codeline>
+<codeline lineno="909"><highlight class="normal"><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>recv<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"></highlight></codeline>
+<codeline lineno="911"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(recv);</highlight></codeline>
+<codeline lineno="912"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="913"><highlight class="normal"></highlight></codeline>
+<codeline lineno="915"></codeline>
+<codeline lineno="918"></codeline>
+<codeline lineno="924" refid="test-net_8cpp_1a139b1b1caf723b0eabe12f8f07eeef89" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetRecv,<sp/>CanRecvGetFunc_Null)<sp/>{</highlight></codeline>
+<codeline lineno="925"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1addf2c35f7494a94230f10dfec5a00c27" kindref="member">can_recv_get_func</ref>(recv,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="926"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="927"><highlight class="normal"></highlight></codeline>
+<codeline lineno="929"></codeline>
+<codeline lineno="932"></codeline>
+<codeline lineno="939" refid="test-net_8cpp_1adeb602d322786881ca4aa333fc242d43" refkind="member"><highlight class="normal"><ref refid="test-net_8cpp_1a28390bdc1af8fe70d3a6e3ed4edd203e" kindref="member">TEST</ref>(CAN_NetRecv,<sp/>CanRecvSetFunc)<sp/>{</highlight></codeline>
+<codeline lineno="940"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>1024;</highlight></codeline>
+<codeline lineno="941"><highlight class="normal"></highlight></codeline>
+<codeline lineno="942"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func</ref>(recv,<sp/>recv_func,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="943"><highlight class="normal"></highlight></codeline>
+<codeline lineno="944"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref>*<sp/>out_ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="945"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>out_data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="946"><highlight class="normal"><sp/><sp/><ref refid="net_8h_1addf2c35f7494a94230f10dfec5a00c27" kindref="member">can_recv_get_func</ref>(recv,<sp/>&amp;out_ptr,<sp/>&amp;out_data);</highlight></codeline>
+<codeline lineno="947"><highlight class="normal"></highlight></codeline>
+<codeline lineno="948"><highlight class="normal"><sp/><sp/>FUNCTIONPOINTERS_EQUAL(recv_func,<sp/>out_ptr);</highlight></codeline>
+<codeline lineno="949"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;data,<sp/>out_data);</highlight></codeline>
+<codeline lineno="950"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="951"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/can/test-net.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="diag_8h" kind="file" language="C++">
+    <compoundname>diag.h</compoundname>
+    <includes refid="error_8h" local="no">lely/util/error.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+    <includedby refid="dev_8c" local="no">lib/co/dev.c</includedby>
+    <includedby refid="emcy_8c" local="no">lib/co/emcy.c</includedby>
+    <includedby refid="nmt_8c" local="no">lib/co/nmt.c</includedby>
+    <includedby refid="nmt__hb_8c" local="no">lib/co/nmt_hb.c</includedby>
+    <includedby refid="nmt__rdn_8c" local="no">lib/co/nmt_rdn.c</includedby>
+    <includedby refid="nmt__srv_8c" local="no">lib/co/nmt_srv.c</includedby>
+    <includedby refid="sdo_8c" local="no">lib/co/sdo.c</includedby>
+    <includedby refid="val_8c" local="no">lib/co/val.c</includedby>
+    <includedby refid="diag_8c" local="no">lib/util/diag.c</includedby>
+    <includedby refid="test-obj_8cpp" local="no">unit-tests/co/test-obj.cpp</includedby>
+    <includedby refid="test-pdo_8cpp" local="no">unit-tests/co/test-pdo.cpp</includedby>
+    <includedby refid="lely-unit-test_8cpp" local="no">unit-tests/libtest/tools/lely-unit-test.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/util/diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/lely/util/diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>unit-tests/libtest/tools/lely-unit-test.cpp</label>
+        <link refid="lely-unit-test_8cpp"/>
+      </node>
+      <node id="7">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="9">
+        <label>lib/co/val.c</label>
+        <link refid="val_8c"/>
+      </node>
+      <node id="6">
+        <label>lib/co/nmt_rdn.c</label>
+        <link refid="nmt__rdn_8c"/>
+      </node>
+      <node id="5">
+        <label>lib/co/nmt_hb.c</label>
+        <link refid="nmt__hb_8c"/>
+      </node>
+      <node id="10">
+        <label>lib/util/diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="8">
+        <label>lib/co/sdo.c</label>
+        <link refid="sdo_8c"/>
+      </node>
+      <node id="4">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="2">
+        <label>lib/co/dev.c</label>
+        <link refid="dev_8c"/>
+      </node>
+      <node id="3">
+        <label>lib/co/emcy.c</label>
+        <link refid="emcy_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structfloc" prot="public">floc</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>diag_severity</name>
+        <enumvalue id="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a092e0c85389cd215c98eb78cebe8b4da" prot="public">
+          <name>DIAG_DEBUG</name>
+          <briefdescription>
+<para>A debug message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a6257591d5b5e5c0d1ab70e8a1bfbf5be" prot="public">
+          <name>DIAG_INFO</name>
+          <briefdescription>
+<para>An informational message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a4d0d13f3012b5edaf694ede6f6e0fe1a" prot="public">
+          <name>DIAG_WARNING</name>
+          <briefdescription>
+<para>A warning. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a8afcdbb3d2c89c506789ac37d22d8d3f" prot="public">
+          <name>DIAG_ERROR</name>
+          <briefdescription>
+<para>An error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" prot="public">
+          <name>DIAG_FATAL</name>
+          <briefdescription>
+<para>A fatal error, which SHOULD result in program termination. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The severity of a diagnostic message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="49" column="1" bodyfile="include/lely/util/diag.h" bodystart="49" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="diag_8h_1ad71e7f16fdacee79603814bc32bcd193" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void diag_handler_t(void *handle, enum diag_severity severity, int errc, const char *format, va_list ap)</definition>
+        <argsstring>(void *handle, enum diag_severity severity, int errc, const char *format, va_list ap)</argsstring>
+        <name>diag_handler_t</name>
+        <briefdescription>
+<para>The function type of a handler for <ref refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" kindref="member">diag()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extra argument specified to diag_set_handler(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the severity of the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the native error code. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a printf-style format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list with arguments to be printed according to <bold>format</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="76" column="14" bodyfile="include/lely/util/diag.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="diag_8h_1a8619098e42b155379b25b38402bb3d5f" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void diag_at_handler_t(void *handle, enum diag_severity severity, int errc, const struct floc *at, const char *format, va_list ap)</definition>
+        <argsstring>(void *handle, enum diag_severity severity, int errc, const struct floc *at, const char *format, va_list ap)</argsstring>
+        <name>diag_at_handler_t</name>
+        <briefdescription>
+<para>The function type of a handler for <ref refid="diag_8h_1ad69af5ffc0c80de7d1d45c98aa3b7bbf" kindref="member">diag_at()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extra argument specified to diag_at_set_handler(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the severity of the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the native error code. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer the location in a text file (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a printf-style format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list with arguments to be printed according to <bold>format</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="90" column="14" bodyfile="include/lely/util/diag.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void diag</definition>
+        <argsstring>(enum diag_severity severity, int errc, const char *format,...)</argsstring>
+        <name>diag</name>
+        <param>
+          <type>enum <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref></type>
+          <declname>severity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Emits a diagnostic message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function SHOULD print the severity of the diagnostic followed by the user-specified message. If the specified severity is <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" kindref="member">DIAG_FATAL</ref>, the program SHOULD be terminated after printing the message.</para>
+<para>The default error handler can be changed with diag_set_handler(), in which case the new handler is responsible for terminating the program in case of an error with severity <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" kindref="member">DIAG_FATAL</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the severity of the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the native error code generated by a system call or library function, given by <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. If errc is non-zero, a text string describing the error SHOULD be printed after the user-specified message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a printf-style format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional list of arguments to be printed according to <bold>format</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>diag_set_handler(), <ref refid="diag_8h_1ad69af5ffc0c80de7d1d45c98aa3b7bbf" kindref="member">diag_at()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="493" column="1" bodyfile="include/lely/util/diag.h" bodystart="493" bodyend="498" declfile="include/lely/util/diag.h" declline="196" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="diag_8h_1ad69af5ffc0c80de7d1d45c98aa3b7bbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void diag_at</definition>
+        <argsstring>(enum diag_severity severity, int errc, const struct floc *at, const char *format,...)</argsstring>
+        <name>diag_at</name>
+        <param>
+          <type>enum <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref></type>
+          <declname>severity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errc</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structfloc" kindref="compound">floc</ref> *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Emits a diagnostic message occurring at a location in a text file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function SHOULD print the location in a text file, where the diagnostic presumably occurred, followed by the severity and a user-specified message. If the specified severity is <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" kindref="member">DIAG_FATAL</ref>, the program SHOULD be terminated after printing the message.</para>
+<para>The default error handler can be changed with diag_at_set_handler(), in which case the new handler is responsible for terminating the program in case of an error with severity <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" kindref="member">DIAG_FATAL</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the severity of the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the native error code generated by a system call or library function, given by <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. If errc is non-zero, a text string describing the error will be printed after the user-specified message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer the location in a text file (can be NULL). If <bold>at</bold> is not NULL, the location SHOULD be printed before the severity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a printf-style format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional list of arguments to be printed according to <bold>format</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>diag_at_set_handler(), <ref refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" kindref="member">diag()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="501" column="1" bodyfile="include/lely/util/diag.h" bodystart="501" bodyend="508" declfile="include/lely/util/diag.h" declline="233" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="diag_8h_1aa0fa45cd9635899639a77f8175a9ef56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void diag_if</definition>
+        <argsstring>(enum diag_severity severity, int errc, const struct floc *at, const char *format,...)</argsstring>
+        <name>diag_if</name>
+        <param>
+          <type>enum <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref></type>
+          <declname>severity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errc</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structfloc" kindref="compound">floc</ref> *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Emits a diagnostic message occurring at a location in a text file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is equivalent to <ref refid="diag_8h_1ad69af5ffc0c80de7d1d45c98aa3b7bbf" kindref="member">diag_at()</ref>, except that it only invokes the error handler if <bold>at</bold> is not NULL. It therefore MUST NOT be used with severity <ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" kindref="member">DIAG_FATAL</ref> unless <bold>at</bold> is guaranteed to be non-NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="511" column="1" bodyfile="include/lely/util/diag.h" bodystart="511" bodyend="518" declfile="include/lely/util/diag.h" declline="253" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the utilities library; it contains the diagnostic declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_DIAG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DIAG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="error_8h" kindref="compound">lely/util/error.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_DIAG_INLINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DIAG_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DIAG_INLINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structfloc" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfloc" kindref="compound">floc</ref><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="structfloc_1aaa97e50d7cd33c3ec58f355ad45f6329" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structfloc_1aaa97e50d7cd33c3ec58f355ad45f6329" kindref="member">filename</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structfloc_1a716f6625c668fda4432f608121a012d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfloc_1a716f6625c668fda4432f608121a012d2" kindref="member">line</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structfloc_1aaa9662e5b7b4fa8479dfb034e5d96dd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfloc_1aaa9662e5b7b4fa8479dfb034e5d96dd8" kindref="member">column</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a092e0c85389cd215c98eb78cebe8b4da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a092e0c85389cd215c98eb78cebe8b4da" kindref="member">DIAG_DEBUG</ref>,</highlight></codeline>
+<codeline lineno="53" refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a6257591d5b5e5c0d1ab70e8a1bfbf5be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a6257591d5b5e5c0d1ab70e8a1bfbf5be" kindref="member">DIAG_INFO</ref>,</highlight></codeline>
+<codeline lineno="55" refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a4d0d13f3012b5edaf694ede6f6e0fe1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a4d0d13f3012b5edaf694ede6f6e0fe1a" kindref="member">DIAG_WARNING</ref>,</highlight></codeline>
+<codeline lineno="57" refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a8afcdbb3d2c89c506789ac37d22d8d3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a8afcdbb3d2c89c506789ac37d22d8d3f" kindref="member">DIAG_ERROR</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" kindref="member">DIAG_FATAL</ref></highlight></codeline>
+<codeline lineno="60" refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2ac1e5c70227d244c80b6f1b4965886d60" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="diag_8h_1ad71e7f16fdacee79603814bc32bcd193" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1ad71e7f16fdacee79603814bc32bcd193" kindref="member">diag_handler_t</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="diag_8h_1a8619098e42b155379b25b38402bb3d5f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a8619098e42b155379b25b38402bb3d5f" kindref="member">diag_at_handler_t</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(5,<sp/>0);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_STDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>floc_lex(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*begin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*end);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>snprintf_floc(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_STDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>diag_get_handler(<ref refid="diag_8h_1ad71e7f16fdacee79603814bc32bcd193" kindref="member">diag_handler_t</ref><sp/>**phandler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**phandle);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>diag_set_handler(<ref refid="diag_8h_1ad71e7f16fdacee79603814bc32bcd193" kindref="member">diag_handler_t</ref><sp/>*handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>diag_at_get_handler(<ref refid="diag_8h_1a8619098e42b155379b25b38402bb3d5f" kindref="member">diag_at_handler_t</ref><sp/>**phandler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**phandle);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>diag_at_set_handler(<ref refid="diag_8h_1a8619098e42b155379b25b38402bb3d5f" kindref="member">diag_at_handler_t</ref><sp/>*handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">LELY_UTIL_DIAG_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" kindref="member">diag</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...)<sp/>format_printf__(3,<sp/>4);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vdiag(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_list<sp/>ap)<sp/>format_printf__(3,<sp/>0);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">LELY_UTIL_DIAG_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1ad69af5ffc0c80de7d1d45c98aa3b7bbf" kindref="member">diag_at</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(4,<sp/>5);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vdiag_at(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">LELY_UTIL_DIAG_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1aa0fa45cd9635899639a77f8175a9ef56" kindref="member">diag_if</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(4,<sp/>5);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vdiag_if(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>default_diag_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>default_diag_at_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(5,<sp/>0);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>daemon_diag_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>daemon_diag_at_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmd_diag_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dialog_diag_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dialog_diag_at_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(5,<sp/>0);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_diag_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_diag_at_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(5,<sp/>0);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>syslog_diag_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>syslog_diag_at_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(5,<sp/>0);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vsnprintf_diag(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(5,<sp/>0);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vasprintf_diag(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**ps,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)<sp/>format_printf__(4,<sp/>0);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vsnprintf_diag_at(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(6,<sp/>0);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vasprintf_diag_at(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**ps,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>ap)</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format_printf__(5,<sp/>0);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_STDIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cmdname(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal">LELY_UTIL_DIAG_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493" refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" refkind="member"><highlight class="normal"><ref refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" kindref="member">diag</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...)</highlight></codeline>
+<codeline lineno="494"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)severity;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)errc;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)format;</highlight></codeline>
+<codeline lineno="498"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal">LELY_UTIL_DIAG_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="501" refid="diag_8h_1ad69af5ffc0c80de7d1d45c98aa3b7bbf" refkind="member"><highlight class="normal"><ref refid="diag_8h_1ad69af5ffc0c80de7d1d45c98aa3b7bbf" kindref="member">diag_at</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...)</highlight></codeline>
+<codeline lineno="503"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)severity;</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)errc;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)at;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)format;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal">LELY_UTIL_DIAG_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511" refid="diag_8h_1aa0fa45cd9635899639a77f8175a9ef56" refkind="member"><highlight class="normal"><ref refid="diag_8h_1aa0fa45cd9635899639a77f8175a9ef56" kindref="member">diag_if</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2" kindref="member">diag_severity</ref><sp/>severity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfloc" kindref="compound">floc</ref><sp/>*at,</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...)</highlight></codeline>
+<codeline lineno="513"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)severity;</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)errc;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)at;</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)format;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LELY_NO_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_UTIL_DIAG_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/util/diag.h"/>
+  </compounddef>
+</doxygen>

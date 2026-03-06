@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="unistd_8h" kind="file" language="C++">
+    <compoundname>unistd.h</compoundname>
+    <includes refid="features_8h" local="no">lely/compat/features.h</includes>
+    <includedby refid="test-cpputest_8cpp" local="no">unit-tests/cpputest/test-cpputest.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/compat/unistd.h</label>
+        <link refid="unistd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/lely/compat/unistd.h</label>
+        <link refid="unistd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>unit-tests/cpputest/test-cpputest.cpp</label>
+        <link refid="test-cpputest_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="unistd_8h_1adb50a0eab9fed92fc3bfc7dfa4f2c410" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* optarg</definition>
+        <argsstring></argsstring>
+        <name>optarg</name>
+        <briefdescription>
+<para>A pointer to the argument of the current option. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/unistd.h" line="44" column="13" declfile="include/lely/compat/unistd.h" declline="44" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="unistd_8h_1ad5e1c16213bbee2d5e8cc363309f418c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optind</definition>
+        <argsstring></argsstring>
+        <name>optind</name>
+        <briefdescription>
+<para>The index of the next argument to be parsed by <ref refid="unistd_8h_1a5ffa4c677fc71cecd94f140ef9db624c" kindref="member">getopt()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/unistd.h" line="47" column="12" declfile="include/lely/compat/unistd.h" declline="47" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="unistd_8h_1ae30f05ee1e2e5652f174a35c7875d25e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int opterr</definition>
+        <argsstring></argsstring>
+        <name>opterr</name>
+        <briefdescription>
+<para>A flag indicating whether a diagnostic message should be printed if an unknown option character or missing argument is detected by <ref refid="unistd_8h_1a5ffa4c677fc71cecd94f140ef9db624c" kindref="member">getopt()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/unistd.h" line="54" column="12" declfile="include/lely/compat/unistd.h" declline="54" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="unistd_8h_1a475b8db98445da73e5f62a1ef6324b95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optopt</definition>
+        <argsstring></argsstring>
+        <name>optopt</name>
+        <briefdescription>
+<para>The last option character to cause an error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/unistd.h" line="57" column="12" declfile="include/lely/compat/unistd.h" declline="57" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="unistd_8h_1a5ffa4c677fc71cecd94f140ef9db624c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getopt</definition>
+        <argsstring>(int argc, char *const argv[], const char *optstring)</argsstring>
+        <name>getopt</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>optstring</declname>
+        </param>
+        <briefdescription>
+<para>Parses options passed as arguments to <computeroutput>main()</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the argument count as passed to <computeroutput>main()</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the argument array as passed to <computeroutput>main()</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>optstring</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a string of recognized option characters; if a character is followed by a colon, the option takes an argument. If the first character is a colon, this function returns &apos;:&apos; instead of &apos;?&apos; when a missing argument is detected and does not print a diagnostic message (regardless of the value of <ref refid="unistd_8h_1ae30f05ee1e2e5652f174a35c7875d25e" kindref="member">opterr</ref>).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next option character, &apos;?&apos; if an unknown option character or missing argument is detected, or -1 if all the argument is not an option or all options are parsed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/unistd.h" line="75" column="5" declfile="include/lely/compat/unistd.h" declline="75" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the C11 and POSIX compatibility library; it includes <computeroutput>&lt;<ref refid="unistd_8h" kindref="compound">unistd.h</ref>&gt;</computeroutput>, if it exists, and defines any missing functionality. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2013-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_COMPAT_UNISTD_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_COMPAT_UNISTD_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="features_8h" kindref="compound">lely/compat/features.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_HAVE_UNISTD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_HOSTED<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(defined(_POSIX_C_SOURCE)<sp/>||<sp/>defined(__MINGW32__)<sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>defined(__NEWLIB__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_HAVE_UNISTD_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_HAVE_UNISTD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="unistd_8h" kindref="compound">unistd.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">//<sp/>!LELY_HAVE_UNISTD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="unistd_8h_1adb50a0eab9fed92fc3bfc7dfa4f2c410" kindref="member">optarg</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unistd_8h_1ad5e1c16213bbee2d5e8cc363309f418c" kindref="member">optind</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unistd_8h_1ae30f05ee1e2e5652f174a35c7875d25e" kindref="member">opterr</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unistd_8h_1a475b8db98445da73e5f62a1ef6324b95" kindref="member">optopt</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="unistd_8h_1a5ffa4c677fc71cecd94f140ef9db624c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unistd_8h_1a5ffa4c677fc71cecd94f140ef9db624c" kindref="member">getopt</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>argv[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*optstring);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_HOSTED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>sleep(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>seconds);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_HAVE_UNISTD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_COMPAT_UNISTD_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/compat/unistd.h"/>
+  </compounddef>
+</doxygen>

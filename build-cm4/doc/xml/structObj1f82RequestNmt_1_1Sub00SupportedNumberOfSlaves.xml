@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1f82RequestNmt_1_1Sub00SupportedNumberOfSlaves" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1f82RequestNmt::Sub00SupportedNumberOfSlaves</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SubT&lt; 0x00u, CO_DEFTYPE_UNSIGNED8 &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Obj1f82RequestNmt::Sub00SupportedNumberOfSlaves</label>
+        <link refid="structObj1f82RequestNmt_1_1Sub00SupportedNumberOfSlaves"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x00u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Obj1f82RequestNmt::Sub00SupportedNumberOfSlaves</label>
+        <link refid="structObj1f82RequestNmt_1_1Sub00SupportedNumberOfSlaves"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x00u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/request-nmt.hpp" line="32" column="3" bodyfile="unit-tests/co/obj-init/request-nmt.hpp" bodystart="32" bodyend="32"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

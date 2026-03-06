@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__rpdo" kind="struct" language="C++" prot="public">
+    <compoundname>co_rpdo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__rpdo_1a39757ae5ec870be9f6bfefa291e4e31e" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_rpdo::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="44" column="11" bodyfile="lib/co/rpdo.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a264e718d7c1271ef94b102defb1a50b9" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_rpdo::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to a CANopen device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="46" column="10" bodyfile="lib/co/rpdo.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a17eb7c07047fc7c3b0c6bead8394ae61" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_rpdo::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+<para>The PDO number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="48" column="17" bodyfile="lib/co/rpdo.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1abfad68d17b7c2ab8f4dd4d7971ca79e1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool co_rpdo::stopped</definition>
+        <argsstring></argsstring>
+        <name>stopped</name>
+        <briefdescription>
+<para>A flag specifying whether the Receive-PDO service is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="50" column="6" bodyfile="lib/co/rpdo.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1aa42678440f0db6e0184b7287b25c7eae" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref></type>
+        <definition>struct co_pdo_comm_par co_rpdo::comm</definition>
+        <argsstring></argsstring>
+        <name>comm</name>
+        <briefdescription>
+<para>The PDO communication parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="50" column="6" bodyfile="lib/co/rpdo.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a8090e88b622d24c11ff81f79da1ebd0c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref></type>
+        <definition>struct co_pdo_map_par co_rpdo::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+<para>The PDO mapping parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="50" column="6" bodyfile="lib/co/rpdo.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1aa47648ada1c49e2377f35b5d3d082db9" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_rpdo::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="56" column="12" bodyfile="lib/co/rpdo.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a9ae02ecf05ff5b5429f93ddda5041c92" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_rpdo::timer_event</definition>
+        <argsstring></argsstring>
+        <name>timer_event</name>
+        <briefdescription>
+<para>A pointer to the CAN timer for deadline monitoring. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="58" column="13" bodyfile="lib/co/rpdo.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1ad3445ce319d8d45fc66dd2335e87ef53" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_rpdo::timer_swnd</definition>
+        <argsstring></argsstring>
+        <name>timer_swnd</name>
+        <briefdescription>
+<para>A pointer to the CAN timer for the synchronous time window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="60" column="13" bodyfile="lib/co/rpdo.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a518a842a3bf6cc1a069a76a390d02caa" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int co_rpdo::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating we&apos;re waiting for a SYNC object to process <ref refid="structco__rpdo_1a2e92a03f889aa69ef73ecae8cd820734" kindref="member">msg</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="62" column="14" bodyfile="lib/co/rpdo.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a38f8ae66b83760652693e642913db226" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int co_rpdo::swnd</definition>
+        <argsstring></argsstring>
+        <name>swnd</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating the synchronous time window has expired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="64" column="14" bodyfile="lib/co/rpdo.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a2e92a03f889aa69ef73ecae8cd820734" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>struct can_msg co_rpdo::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+<para>A CAN frame waiting for a SYNC object to be processed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="64" column="14" bodyfile="lib/co/rpdo.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1afa6787ad41b51ec2f8a8d3ad8847d353" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref></type>
+        <definition>struct co_sdo_req co_rpdo::req</definition>
+        <argsstring></argsstring>
+        <name>req</name>
+        <briefdescription>
+<para>The CANopen SDO download request used for writing sub-objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="64" column="14" bodyfile="lib/co/rpdo.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1af99d7a772dedc6d2be72052593112dcf" prot="public" static="no" mutable="no">
+        <type><ref refid="rpdo_8h_1ae0aacb72fa7668f409c37acf06d6d81d" kindref="member">co_rpdo_ind_t</ref> *</type>
+        <definition>co_rpdo_ind_t* co_rpdo::ind</definition>
+        <argsstring></argsstring>
+        <name>ind</name>
+        <briefdescription>
+<para>A pointer to the indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="70" column="15" bodyfile="lib/co/rpdo.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a874a2da6e9875b21930d939a5d741a32" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_rpdo::ind_data</definition>
+        <argsstring></argsstring>
+        <name>ind_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__rpdo_1af99d7a772dedc6d2be72052593112dcf" kindref="member">ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="72" column="6" bodyfile="lib/co/rpdo.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1a267519eb16e492cc6a840ad4d2570d1a" prot="public" static="no" mutable="no">
+        <type><ref refid="rpdo_8h_1a1b0927f7a6806f2260f772f3b4545928" kindref="member">co_rpdo_err_t</ref> *</type>
+        <definition>co_rpdo_err_t* co_rpdo::err</definition>
+        <argsstring></argsstring>
+        <name>err</name>
+        <briefdescription>
+<para>A pointer to the error handling function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="74" column="15" bodyfile="lib/co/rpdo.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__rpdo_1af149e8ca399432ef468a5e99895a84c9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_rpdo::err_data</definition>
+        <argsstring></argsstring>
+        <name>err_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__rpdo_1a267519eb16e492cc6a840ad4d2570d1a" kindref="member">err</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/rpdo.c" line="76" column="6" bodyfile="lib/co/rpdo.c" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen Receive-PDO. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>can_msg</label>
+        <link refid="structcan__msg"/>
+      </node>
+      <node id="11">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>co_sdo_req</label>
+        <link refid="structco__sdo__req"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>membuf</edgelabel>
+          <edgelabel>membuf_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="16">
+        <label>co_pdo_map_par</label>
+        <link refid="structco__pdo__map__par"/>
+      </node>
+      <node id="1">
+        <label>co_rpdo</label>
+        <link refid="structco__rpdo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>timer_event</edgelabel>
+          <edgelabel>timer_swnd</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>comm</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>co_pdo_comm_par</label>
+        <link refid="structco__pdo__comm__par"/>
+      </node>
+      <node id="8">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="10">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/rpdo.c" line="42" column="1" bodyfile="lib/co/rpdo.c" bodystart="42" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structco__rpdo_1aa42678440f0db6e0184b7287b25c7eae" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>comm</name></member>
+      <member refid="structco__rpdo_1a264e718d7c1271ef94b102defb1a50b9" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>dev</name></member>
+      <member refid="structco__rpdo_1a267519eb16e492cc6a840ad4d2570d1a" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>err</name></member>
+      <member refid="structco__rpdo_1af149e8ca399432ef468a5e99895a84c9" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>err_data</name></member>
+      <member refid="structco__rpdo_1af99d7a772dedc6d2be72052593112dcf" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>ind</name></member>
+      <member refid="structco__rpdo_1a874a2da6e9875b21930d939a5d741a32" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>ind_data</name></member>
+      <member refid="structco__rpdo_1a8090e88b622d24c11ff81f79da1ebd0c" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>map</name></member>
+      <member refid="structco__rpdo_1a2e92a03f889aa69ef73ecae8cd820734" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>msg</name></member>
+      <member refid="structco__rpdo_1a39757ae5ec870be9f6bfefa291e4e31e" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>net</name></member>
+      <member refid="structco__rpdo_1a17eb7c07047fc7c3b0c6bead8394ae61" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>num</name></member>
+      <member refid="structco__rpdo_1aa47648ada1c49e2377f35b5d3d082db9" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>recv</name></member>
+      <member refid="structco__rpdo_1afa6787ad41b51ec2f8a8d3ad8847d353" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>req</name></member>
+      <member refid="structco__rpdo_1abfad68d17b7c2ab8f4dd4d7971ca79e1" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>stopped</name></member>
+      <member refid="structco__rpdo_1a38f8ae66b83760652693e642913db226" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>swnd</name></member>
+      <member refid="structco__rpdo_1a518a842a3bf6cc1a069a76a390d02caa" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>sync</name></member>
+      <member refid="structco__rpdo_1a9ae02ecf05ff5b5429f93ddda5041c92" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>timer_event</name></member>
+      <member refid="structco__rpdo_1ad3445ce319d8d45fc66dd2335e87ef53" prot="public" virt="non-virtual"><scope>co_rpdo</scope><name>timer_swnd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

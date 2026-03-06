@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a0e5dd269bc1bf74eefd9795b6012317" kind="dir">
+    <compoundname>unit-tests/co/holder</compoundname>
+    <innerfile refid="array-init_8hpp">array-init.hpp</innerfile>
+    <innerfile refid="dev_8hpp">dev.hpp</innerfile>
+    <innerfile refid="holder_8hpp">holder.hpp</innerfile>
+    <innerfile refid="obj_8hpp">obj.hpp</innerfile>
+    <innerfile refid="sub_8hpp">sub.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/holder/"/>
+  </compounddef>
+</doxygen>

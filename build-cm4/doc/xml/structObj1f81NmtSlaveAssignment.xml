@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1f81NmtSlaveAssignment" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1f81NmtSlaveAssignment</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; 0x1f81u &gt;</basecompoundref>
+    <includes refid="nmt-slave-assignment_8hpp" local="no">nmt-slave-assignment.hpp</includes>
+    <innerclass refid="structObj1f81NmtSlaveAssignment_1_1Sub00HighestSubidxSupported" prot="public">Obj1f81NmtSlaveAssignment::Sub00HighestSubidxSupported</innerclass>
+    <innerclass refid="structObj1f81NmtSlaveAssignment_1_1SubNthSlaveEntry" prot="public">Obj1f81NmtSlaveAssignment::SubNthSlaveEntry</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structObj1f81NmtSlaveAssignment_1ab48a2e6f18d8dccbf8347bbc44fc583d" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned32_t</type>
+        <definition>const co_unsigned32_t Obj1f81NmtSlaveAssignment::ASSIGNMENT_BIT</definition>
+        <argsstring></argsstring>
+        <name>ASSIGNMENT_BIT</name>
+        <initializer>= 0x01u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-slave-assignment.hpp" line="35" column="32" bodyfile="unit-tests/co/obj-init/nmt-slave-assignment.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1f81NmtSlaveAssignment_1af98feeb1ea88a7ecd07f6b763f4312b4" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned32_t</type>
+        <definition>const co_unsigned32_t Obj1f81NmtSlaveAssignment::BOOTED_BIT</definition>
+        <argsstring></argsstring>
+        <name>BOOTED_BIT</name>
+        <initializer>= 0x04u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-slave-assignment.hpp" line="36" column="32" bodyfile="unit-tests/co/obj-init/nmt-slave-assignment.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1f81NmtSlaveAssignment_1a52462d18f9c136c20102e6131bdd2b92" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned32_t</type>
+        <definition>const co_unsigned32_t Obj1f81NmtSlaveAssignment::MANDATORY_BIT</definition>
+        <argsstring></argsstring>
+        <name>MANDATORY_BIT</name>
+        <initializer>= 0x08u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-slave-assignment.hpp" line="37" column="32" bodyfile="unit-tests/co/obj-init/nmt-slave-assignment.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1f81NmtSlaveAssignment_1ad0c7de82ccc045668f9a39f5323dc494" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned32_t</type>
+        <definition>const co_unsigned32_t Obj1f81NmtSlaveAssignment::KEEP_ALIVE_BIT</definition>
+        <argsstring></argsstring>
+        <name>KEEP_ALIVE_BIT</name>
+        <initializer>= 0x10u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-slave-assignment.hpp" line="38" column="32" bodyfile="unit-tests/co/obj-init/nmt-slave-assignment.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>0x1f81: NMT Slave assignment </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1f81u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1f81NmtSlaveAssignment</label>
+        <link refid="structObj1f81NmtSlaveAssignment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1f81u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1f81NmtSlaveAssignment</label>
+        <link refid="structObj1f81NmtSlaveAssignment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/nmt-slave-assignment.hpp" line="31" column="1" bodyfile="unit-tests/co/obj-init/nmt-slave-assignment.hpp" bodystart="31" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structObj1f81NmtSlaveAssignment_1ab48a2e6f18d8dccbf8347bbc44fc583d" prot="public" virt="non-virtual"><scope>Obj1f81NmtSlaveAssignment</scope><name>ASSIGNMENT_BIT</name></member>
+      <member refid="structObj1f81NmtSlaveAssignment_1af98feeb1ea88a7ecd07f6b763f4312b4" prot="public" virt="non-virtual"><scope>Obj1f81NmtSlaveAssignment</scope><name>BOOTED_BIT</name></member>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1f81NmtSlaveAssignment</scope><name>idx</name></member>
+      <member refid="structObj1f81NmtSlaveAssignment_1ad0c7de82ccc045668f9a39f5323dc494" prot="public" virt="non-virtual"><scope>Obj1f81NmtSlaveAssignment</scope><name>KEEP_ALIVE_BIT</name></member>
+      <member refid="structObj1f81NmtSlaveAssignment_1a52462d18f9c136c20102e6131bdd2b92" prot="public" virt="non-virtual"><scope>Obj1f81NmtSlaveAssignment</scope><name>MANDATORY_BIT</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>Obj1f81NmtSlaveAssignment</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>Obj1f81NmtSlaveAssignment</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

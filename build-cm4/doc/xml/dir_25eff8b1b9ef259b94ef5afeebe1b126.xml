@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_25eff8b1b9ef259b94ef5afeebe1b126" kind="dir">
+    <compoundname>include/lely/compat</compoundname>
+    <innerdir refid="dir_c27d9bafc113165e672418bb055639f6">include/lely/compat/sys</innerdir>
+    <innerfile refid="features_8h">features.h</innerfile>
+    <innerfile refid="stdatomic_8h">stdatomic.h</innerfile>
+    <innerfile refid="stddef_8h">stddef.h</innerfile>
+    <innerfile refid="stdint_8h">stdint.h</innerfile>
+    <innerfile refid="string_8h">string.h</innerfile>
+    <innerfile refid="strings_8h">strings.h</innerfile>
+    <innerfile refid="compat_2time_8h">time.h</innerfile>
+    <innerfile refid="uchar_8h">uchar.h</innerfile>
+    <innerfile refid="unistd_8h">unistd.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/compat/"/>
+  </compounddef>
+</doxygen>

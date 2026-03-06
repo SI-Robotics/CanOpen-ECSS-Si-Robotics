@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ustring_8h" kind="file" language="C++">
+    <compoundname>ustring.h</compoundname>
+    <includes refid="uchar_8h" local="no">lely/compat/uchar.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+    <includedby refid="val_8c" local="no">lib/co/val.c</includedby>
+    <includedby refid="ustring_8c" local="no">lib/util/ustring.c</includedby>
+    <includedby refid="test-sdo_8cpp" local="no">unit-tests/co/test-sdo.cpp</includedby>
+    <includedby refid="test-val_8cpp" local="no">unit-tests/co/test-val.cpp</includedby>
+    <includedby refid="test-ustring_8cpp" local="no">unit-tests/util/test-ustring.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>assert.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>include/lely/util/ustring.h</label>
+        <link refid="ustring_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/co/val.c</label>
+        <link refid="val_8c"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/co/test-sdo.cpp</label>
+        <link refid="test-sdo_8cpp"/>
+      </node>
+      <node id="5">
+        <label>unit-tests/co/test-val.cpp</label>
+        <link refid="test-val_8cpp"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/util/test-ustring.cpp</label>
+        <link refid="test-ustring_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/util/ustring.c</label>
+        <link refid="ustring_8c"/>
+      </node>
+      <node id="1">
+        <label>include/lely/util/ustring.h</label>
+        <link refid="ustring_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ustring_8h_1ae703034d5e1071141af66c168015d4f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t str16len</definition>
+        <argsstring>(const char16_t *s)</argsstring>
+        <name>str16len</name>
+        <param>
+          <type>const char16_t *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of (16-bit) Unicode characters, excluding the terminating null bytes, in the string at <bold>s</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the (null-terminated) string.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of characters in the string pointed to by <bold>s</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/ustring.h" line="78" column="1" bodyfile="include/lely/util/ustring.h" bodystart="78" bodyend="85" declfile="include/lely/util/ustring.h" declline="46" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char16_t *</type>
+        <definition>char16_t * str16ncpy</definition>
+        <argsstring>(char16_t *dst, const char16_t *src, size_t n)</argsstring>
+        <name>str16ncpy</name>
+        <param>
+          <type>char16_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const char16_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Copies <bold>n</bold> (16-bit) Unicode characters from the string at <bold>src</bold> to <bold>dst</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the string at <bold>src</bold> is shorter than <bold>n</bold> characters, NUL characters are appended to the string at <bold>dst</bold> until <bold>n</bold> characters haven been written.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination address, which MUST be large enough to hold the string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the string to be copied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of (16-bit) Unicode characters to copy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>dst</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/ustring.h" line="88" column="1" bodyfile="include/lely/util/ustring.h" bodystart="88" bodyend="97" declfile="include/lely/util/ustring.h" declline="61" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="ustring_8h_1a560d760517a23822b02157683735204e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int str16ncmp</definition>
+        <argsstring>(const char16_t *s1, const char16_t *s2, size_t n)</argsstring>
+        <name>str16ncmp</name>
+        <param>
+          <type>const char16_t *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char16_t *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Compares two (16-bit) Unicode strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the first string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the second string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of characters to compare.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an integer greater than, equal to, or less than 0 if the string at <bold>s1</bold> is greater than, equal to, or less than the string at <bold>s2</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/ustring.h" line="100" column="1" bodyfile="include/lely/util/ustring.h" bodystart="100" bodyend="108" declfile="include/lely/util/ustring.h" declline="74" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the utilities library; it contains (16-bit) Unicode string functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_USTRING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_USTRING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="uchar_8h" kindref="compound">lely/compat/uchar.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_USTRING_INLINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_USTRING_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">LELY_UTIL_USTRING_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*s);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">LELY_UTIL_USTRING_INLINE<sp/>char16_t<sp/>*<ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char16_t<sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*src,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">LELY_UTIL_USTRING_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*s2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">LELY_UTIL_USTRING_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" refkind="member"><highlight class="normal"><ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*s)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*cp<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*cp<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cp++;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cp<sp/>-<sp/>s;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">LELY_UTIL_USTRING_INLINE<sp/>char16_t<sp/>*</highlight></codeline>
+<codeline lineno="88" refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" refkind="member"><highlight class="normal"><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(char16_t<sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*src,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char16_t<sp/>*cp<sp/>=<sp/>dst;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>(n<sp/>!=<sp/>0)<sp/>&amp;&amp;<sp/>(*src<sp/>!=<sp/>0);<sp/>n--,<sp/>cp++,<sp/>src++)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*cp<sp/>=<sp/>*src;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>n<sp/>!=<sp/>0;<sp/>n--)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*cp++<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dst;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">LELY_UTIL_USTRING_INLINE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="ustring_8h_1a560d760517a23822b02157683735204e" refkind="member"><highlight class="normal"><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>*s2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>n<sp/>!=<sp/>0;<sp/>n--,<sp/>s1++,<sp/>s2++)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmp<sp/>=<sp/>*s1<sp/>-<sp/>*s2;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cmp<sp/>!=<sp/>0)<sp/>||<sp/>(*s1<sp/>==<sp/>0))</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cmp;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_UTIL_USTRING_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/util/ustring.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCAN__NetTimer__Static" kind="namespace" language="C++">
+    <compoundname>CAN_NetTimer_Static</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test-net_8cpp_1ac71c9edf0bdc7bf0eb1b4d158ec656eb" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CAN_NetTimer_Static::timer_func_counter</definition>
+        <argsstring></argsstring>
+        <name>timer_func_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="702" column="15" bodyfile="unit-tests/can/test-net.cpp" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/can/test-net.cpp" line="701" column="1"/>
+  </compounddef>
+</doxygen>

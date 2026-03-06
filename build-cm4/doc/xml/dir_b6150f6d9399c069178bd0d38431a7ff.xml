@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_b6150f6d9399c069178bd0d38431a7ff" kind="dir">
+    <compoundname>include/lely/co</compoundname>
+    <innerdir refid="dir_7ae5515b8d3107a83fae3d43cae7652e">include/lely/co/detail</innerdir>
+    <innerfile refid="include_2lely_2co_2co_8h">co.h</innerfile>
+    <innerfile refid="crc_8h">crc.h</innerfile>
+    <innerfile refid="csdo_8h">csdo.h</innerfile>
+    <innerfile refid="dev_8h">dev.h</innerfile>
+    <innerfile refid="emcy_8h">emcy.h</innerfile>
+    <innerfile refid="nmt_8h">nmt.h</innerfile>
+    <innerfile refid="obj_8h">obj.h</innerfile>
+    <innerfile refid="pdo_8h">pdo.h</innerfile>
+    <innerfile refid="rpdo_8h">rpdo.h</innerfile>
+    <innerfile refid="include_2lely_2co_2sdo_8h">sdo.h</innerfile>
+    <innerfile refid="ssdo_8h">ssdo.h</innerfile>
+    <innerfile refid="sync_8h">sync.h</innerfile>
+    <innerfile refid="tpdo_8h">tpdo.h</innerfile>
+    <innerfile refid="type_8h">type.h</innerfile>
+    <innerfile refid="val_8h">val.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/co/"/>
+  </compounddef>
+</doxygen>

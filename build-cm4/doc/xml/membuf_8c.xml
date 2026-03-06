@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="membuf_8c" kind="file" language="C++">
+    <compoundname>membuf.c</compoundname>
+    <includes refid="lib_2util_2util_8h" local="yes">util.h</includes>
+    <includes refid="error_8h" local="no">lely/util/error.h</includes>
+    <includes refid="membuf_8h" local="no">lely/util/membuf.h</includes>
+    <includes local="no">assert.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>assert.h</label>
+      </node>
+      <node id="8">
+        <label>lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>util.h</label>
+        <link refid="lib_2util_2util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>lib/util/membuf.c</label>
+        <link refid="membuf_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="membuf_8c_1ade30db9cda776418cb8543a4bb8ae924" prot="public" static="no">
+        <name>LELY_UTIL_MEMBUF_INLINE</name>
+        <initializer>extern inline</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/membuf.c" line="26" column="11" bodyfile="lib/util/membuf.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="membuf_8c_1a06f95024143cbbf5f8f89e75c0bc26e2" prot="public" static="no">
+        <name>LELY_MEMBUF_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>The initial size (in bytes) of a memory buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/membuf.c" line="36" column="9" bodyfile="lib/util/membuf.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="membuf_8c_1a966fb84f8a8d5aceec6035d11da759eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void membuf_fini</definition>
+        <argsstring>(struct membuf *buf)</argsstring>
+        <name>membuf_fini</name>
+        <param>
+          <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+<para>Finalizes a memory buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="membuf_8h_1acff036bb4862cd3bbb5ed2c63fd2ba5c" kindref="member">membuf_init()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/membuf.c" line="40" column="1" bodyfile="lib/util/membuf.c" bodystart="40" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="membuf_8c_1a65a95b325d6fa74d4c1d12ba94194652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t membuf_reserve</definition>
+        <argsstring>(struct membuf *buf, size_t size)</argsstring>
+        <name>membuf_reserve</name>
+        <param>
+          <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Resizes a memory buffer, if necessary, to make room for at least an additional <bold>size</bold> bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function may also shrink the buffer if it is larger than required. Although this functions preserves the data already written to the buffer, it invalidates the pointers obtained from previous calls to <ref refid="membuf_8h_1ad8fa4a9d86d967a9f26aebb51b8662da" kindref="member">membuf_alloc()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a memory buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the required capacity of the buffer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new capacity of the buffer, or 0 on error (or if both the current capacity and <bold>size</bold> are 0). The new capacity can be larger than the requested capacity. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/membuf.c" line="52" column="1" bodyfile="lib/util/membuf.c" bodystart="52" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="membuf_8c_1abb9ceda88566561d5e8a55d077002b13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void membuf_flush</definition>
+        <argsstring>(struct membuf *buf, size_t size)</argsstring>
+        <name>membuf_flush</name>
+        <param>
+          <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Flushes <bold>size</bold> bytes from the beginning of a memory buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/membuf.c" line="86" column="1" bodyfile="lib/util/membuf.c" bodystart="86" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the utilities library; it contains the implementation of the memory buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="membuf_8h" kindref="compound">lely/util/membuf.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2util_2util_8h" kindref="compound">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="error_8h" kindref="compound">lely/util/error.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_MEMBUF_INLINE<sp/>extern<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="membuf_8h" kindref="compound">lely/util/membuf.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_MEMBUF_SIZE</highlight></codeline>
+<codeline lineno="36" refid="membuf_8c_1a06f95024143cbbf5f8f89e75c0bc26e2" refkind="member"><highlight class="preprocessor">#define<sp/>LELY_MEMBUF_SIZE<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="membuf_8h_1a966fb84f8a8d5aceec6035d11da759eb" refkind="member"><highlight class="normal"><ref refid="membuf_8c_1a966fb84f8a8d5aceec6035d11da759eb" kindref="member">membuf_fini</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmembuf" kindref="compound">membuf</ref><sp/>*buf)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(buf);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)buf;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(buf-&gt;<ref refid="structmembuf_1a3c270e160882509a6178302f030d1035" kindref="member">begin</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="membuf_8h_1a65a95b325d6fa74d4c1d12ba94194652" refkind="member"><highlight class="normal"><ref refid="membuf_8c_1a65a95b325d6fa74d4c1d12ba94194652" kindref="member">membuf_reserve</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmembuf" kindref="compound">membuf</ref><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(buf);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>capacity<sp/>=<sp/><ref refid="membuf_8h_1ab19307af72ed0a19ddec42603e46783b" kindref="member">membuf_capacity</ref>(buf);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>&lt;=<sp/>capacity)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>capacity;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" kindref="member">ERRNUM_NOMEM</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>required<sp/>size<sp/>equals<sp/>the<sp/>size<sp/>of<sp/>the<sp/>data<sp/>already<sp/>in<sp/>the<sp/>buffer,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>plus<sp/>the<sp/>data<sp/>to<sp/>be<sp/>added.<sp/>To<sp/>limit<sp/>the<sp/>number<sp/>of<sp/>allocations,<sp/>we</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>keep<sp/>doubling<sp/>the<sp/>size<sp/>of<sp/>the<sp/>buffer<sp/>until<sp/>it<sp/>is<sp/>large<sp/>enough.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buf_size<sp/>=<sp/><ref refid="membuf_8c_1a06f95024143cbbf5f8f89e75c0bc26e2" kindref="member">LELY_MEMBUF_SIZE</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(buf_size<sp/>&lt;<sp/><ref refid="membuf_8h_1afdc2b0c3e9ef81a53c5b3bb662124dec" kindref="member">membuf_size</ref>(buf)<sp/>+<sp/>size)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf_size<sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*begin<sp/>=<sp/>realloc(buf-&gt;<ref refid="structmembuf_1a3c270e160882509a6178302f030d1035" kindref="member">begin</ref>,<sp/>buf_size);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!begin)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1afe070f878613ece554c2c54e9f93259a" kindref="member">set_errc_from_errno</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;<ref refid="structmembuf_1aedc006e3ebd07df30e86d1904371b329" kindref="member">cur</ref><sp/>=<sp/>begin<sp/>+<sp/><ref refid="membuf_8h_1afdc2b0c3e9ef81a53c5b3bb662124dec" kindref="member">membuf_size</ref>(buf);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;<ref refid="structmembuf_1a3c270e160882509a6178302f030d1035" kindref="member">begin</ref><sp/>=<sp/>begin;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;<ref refid="structmembuf_1a02ec2cfc539883f36c200205261dc4bb" kindref="member">end</ref><sp/>=<sp/>buf-&gt;<ref refid="structmembuf_1a3c270e160882509a6178302f030d1035" kindref="member">begin</ref><sp/>+<sp/>buf_size;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="membuf_8h_1ab19307af72ed0a19ddec42603e46783b" kindref="member">membuf_capacity</ref>(buf);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="membuf_8h_1abb9ceda88566561d5e8a55d077002b13" refkind="member"><highlight class="normal"><ref refid="membuf_8c_1abb9ceda88566561d5e8a55d077002b13" kindref="member">membuf_flush</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmembuf" kindref="compound">membuf</ref><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(buf);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>(size,<sp/><ref refid="membuf_8h_1afdc2b0c3e9ef81a53c5b3bb662124dec" kindref="member">membuf_size</ref>(buf));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memmove(buf-&gt;<ref refid="structmembuf_1a3c270e160882509a6178302f030d1035" kindref="member">begin</ref>,<sp/>buf-&gt;<ref refid="structmembuf_1a3c270e160882509a6178302f030d1035" kindref="member">begin</ref><sp/>+<sp/>size,<sp/><ref refid="membuf_8h_1afdc2b0c3e9ef81a53c5b3bb662124dec" kindref="member">membuf_size</ref>(buf)<sp/>-<sp/>size);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;<ref refid="structmembuf_1aedc006e3ebd07df30e86d1904371b329" kindref="member">cur</ref><sp/>-=<sp/>size;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/util/membuf.c"/>
+  </compounddef>
+</doxygen>

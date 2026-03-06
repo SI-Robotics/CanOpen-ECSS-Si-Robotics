@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCAN__Net__Static" kind="namespace" language="C++">
+    <compoundname>CAN_Net_Static</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test-net_8cpp_1aae795f0eaae1bbd10fea49784b7b43f4" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CAN_Net_Static::tfunc_empty_counter</definition>
+        <argsstring></argsstring>
+        <name>tfunc_empty_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="35" column="15" bodyfile="unit-tests/can/test-net.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test-net_8cpp_1ae8b40bbabfbaf2b7730e6aa99b087490" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CAN_Net_Static::tfunc_err_counter</definition>
+        <argsstring></argsstring>
+        <name>tfunc_err_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="36" column="15" bodyfile="unit-tests/can/test-net.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test-net_8cpp_1af4ce6d8947e44b023052459a2896dcb5" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CAN_Net_Static::rfunc_empty_counter</definition>
+        <argsstring></argsstring>
+        <name>rfunc_empty_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="37" column="15" bodyfile="unit-tests/can/test-net.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test-net_8cpp_1afc8bff65b4d9476768bed60547812ad3" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CAN_Net_Static::rfunc_err_counter</definition>
+        <argsstring></argsstring>
+        <name>rfunc_err_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="38" column="15" bodyfile="unit-tests/can/test-net.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test-net_8cpp_1a291c14ff3395913928d577cca1522d5d" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CAN_Net_Static::sfunc_empty_counter</definition>
+        <argsstring></argsstring>
+        <name>sfunc_empty_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/can/test-net.cpp" line="39" column="15" bodyfile="unit-tests/can/test-net.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/can/test-net.cpp" line="34" column="1"/>
+  </compounddef>
+</doxygen>

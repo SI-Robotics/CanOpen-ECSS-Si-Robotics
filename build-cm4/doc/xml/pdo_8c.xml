@@ -1,0 +1,1521 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="pdo_8c" kind="file" language="C++">
+    <compoundname>pdo.c</compoundname>
+    <includes refid="lib_2co_2co_8h" local="yes">co.h</includes>
+    <includes refid="msg_8h" local="no">lely/can/msg.h</includes>
+    <includes refid="dev_8h" local="no">lely/co/dev.h</includes>
+    <includes refid="obj_8h" local="no">lely/co/obj.h</includes>
+    <includes refid="pdo_8h" local="no">lely/co/pdo.h</includes>
+    <includes refid="include_2lely_2co_2sdo_8h" local="no">lely/co/sdo.h</includes>
+    <includes refid="endian_8h" local="no">lely/util/endian.h</includes>
+    <includes local="no">assert.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stdbool.h</label>
+      </node>
+      <node id="23">
+        <label>assert.h</label>
+      </node>
+      <node id="21">
+        <label>lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>lely/co/pdo.h</label>
+        <link refid="pdo_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lely/co/obj.h</label>
+        <link refid="obj_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="9">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>lely/util/bits.h</label>
+        <link refid="bits_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/co/dev.h</label>
+        <link refid="dev_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lely/co/def/basic.def</label>
+      </node>
+      <node id="12">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/co/pdo.c</label>
+        <link refid="pdo_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>lely/util/endian.h</label>
+        <link refid="endian_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pdo_8c_1a01514c0670377865f0e0f025ab3d91fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>static co_unsigned32_t co_dev_cfg_pdo_comm</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t idx, const struct co_pdo_comm_par *par)</argsstring>
+        <name>co_dev_cfg_pdo_comm</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="367" column="1" bodyfile="lib/co/pdo.c" bodystart="367" bodyend="430" declfile="lib/co/pdo.c" declline="37" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a6c2eddb98279f4ae9341f53491b226d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>static co_unsigned32_t co_dev_cfg_pdo_map</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t num, const struct co_pdo_map_par *par)</argsstring>
+        <name>co_dev_cfg_pdo_map</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="433" column="1" bodyfile="lib/co/pdo.c" bodystart="433" bodyend="468" declfile="lib/co/pdo.c" declline="40" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a14786423203163b7fb514f134ce7e120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_chk_rpdo</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t idx, co_unsigned8_t subidx)</argsstring>
+        <name>co_dev_chk_rpdo</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the specified object is valid and can be mapped into a Receive-PDO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subidx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object sub-index.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the object is valid and can be mapped, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="46" column="1" bodyfile="lib/co/pdo.c" bodystart="46" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a4708bdf77fe6eb7b3fcd1911982b46e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_cfg_rpdo</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t num, const struct co_pdo_comm_par *comm, const struct co_pdo_map_par *map)</argsstring>
+        <name>co_dev_cfg_rpdo</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref> *</type>
+          <declname>comm</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Configures the communication and parameters of a Receive-PDO service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function disables the RPDO before configuring the parameters and re-enables it on success.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PDO number (in the range [1..512]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the communication parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the mapping parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="pdo_8h_1a1dcff910fa6ef1727a3448a76ebd47fb" kindref="member">co_dev_cfg_rpdo_comm()</ref>, <ref refid="pdo_8h_1af8650da425aa9aef9a6c08d9b2375e64" kindref="member">co_dev_cfg_rpdo_map()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="75" column="1" bodyfile="lib/co/pdo.c" bodystart="75" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a1dcff910fa6ef1727a3448a76ebd47fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_cfg_rpdo_comm</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t num, const struct co_pdo_comm_par *par)</argsstring>
+        <name>co_dev_cfg_rpdo_comm</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+<para>Configures the communication parameters of a Receive-PDO service by updating CANopen object 1400 - 15FF (RPDO communication parameter). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PDO number (in the range [1..512]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the communication parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="101" column="1" bodyfile="lib/co/pdo.c" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1af8650da425aa9aef9a6c08d9b2375e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_cfg_rpdo_map</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t num, const struct co_pdo_map_par *par)</argsstring>
+        <name>co_dev_cfg_rpdo_map</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+<para>Configures the mapping parameters of a Receive-PDO service by updating CANopen object 1600 - 17FF (RPDO mapping parameter). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is the responsibility of the caller to disable the RPDO before changing the mapping.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PDO number (in the range [1..512]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the mapping parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="111" column="1" bodyfile="lib/co/pdo.c" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a7608063cc681f7c6d092246bc450e80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_chk_tpdo</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t idx, co_unsigned8_t subidx)</argsstring>
+        <name>co_dev_chk_tpdo</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the specified object is valid and can be mapped into a Transmit-PDO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subidx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object sub-index.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the object is valid and can be mapped, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="125" column="1" bodyfile="lib/co/pdo.c" bodystart="125" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a6ed83f392974c4664525a8091e3bd739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_cfg_tpdo</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t num, const struct co_pdo_comm_par *comm, const struct co_pdo_map_par *map)</argsstring>
+        <name>co_dev_cfg_tpdo</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref> *</type>
+          <declname>comm</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Configures the communication and parameters of a Transmit-PDO service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function disables the TPDO before configuring the parameters and re-enables it on success.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PDO number (in the range [1..512]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the communication parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the mapping parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="pdo_8h_1a315a3a22adb0a757989fe03d09d74aca" kindref="member">co_dev_cfg_tpdo_comm()</ref>, <ref refid="pdo_8h_1aef0a5f662fe721121f82c7b5f770ca92" kindref="member">co_dev_cfg_tpdo_map()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="148" column="1" bodyfile="lib/co/pdo.c" bodystart="148" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a315a3a22adb0a757989fe03d09d74aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_cfg_tpdo_comm</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t num, const struct co_pdo_comm_par *par)</argsstring>
+        <name>co_dev_cfg_tpdo_comm</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+<para>Configures the communication parameters of a Transmit-PDO service by updating CANopen object 1800 - 19FF (TPDO communication parameter). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PDO number (in the range [1..512]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the communication parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="174" column="1" bodyfile="lib/co/pdo.c" bodystart="174" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1aef0a5f662fe721121f82c7b5f770ca92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev_cfg_tpdo_map</definition>
+        <argsstring>(const co_dev_t *dev, co_unsigned16_t num, const struct co_pdo_map_par *par)</argsstring>
+        <name>co_dev_cfg_tpdo_map</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+<para>Configures the mapping parameters of a Transmit-PDO service by updating CANopen object 1A00 - 1BFF (TPDO mapping parameter). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is the responsibility of the caller to disable the TPDO before changing the mapping.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PDO number (in the range [1..512]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the mapping parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="184" column="1" bodyfile="lib/co/pdo.c" bodystart="184" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a8eceb0c1e5064569634782340a8b3afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_pdo_map</definition>
+        <argsstring>(const struct co_pdo_map_par *par, const co_unsigned64_t *val, co_unsigned8_t n, uint_least8_t *buf, size_t *pn)</argsstring>
+        <name>co_pdo_map</name>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>const co_unsigned64_t *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>uint_least8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>pn</declname>
+        </param>
+        <briefdescription>
+<para>Maps values into a PDO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the PDO mapping parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the values to map. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of values at <bold>val</bold>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store the mapped values (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value containing the size (in bytes) of the buffer at <bold>buf</bold>. On exit, if <bold>pn</bold> is not NULL, *<bold>pn</bold> contains the number of bytes that would have been written had the buffer at <bold>buf</bold> been sufficiently large.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="pdo_8h_1a0352754fde91a97e45dedfd439fc4ded" kindref="member">co_pdo_unmap()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="196" column="1" bodyfile="lib/co/pdo.c" bodystart="196" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a0352754fde91a97e45dedfd439fc4ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_pdo_unmap</definition>
+        <argsstring>(const struct co_pdo_map_par *par, const uint_least8_t *buf, size_t n, co_unsigned64_t *val, co_unsigned8_t *pn)</argsstring>
+        <name>co_pdo_unmap</name>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>co_unsigned64_t *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t *</type>
+          <declname>pn</declname>
+        </param>
+        <briefdescription>
+<para>Unmaps a PDO into its constituent values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the PDO mapping parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the mapped values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes at <bold>buf</bold>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store the unmapped values (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value containing the size (in number of values) of the buffer at <bold>val</bold>. On exit, if <bold>pn</bold> is not NULL, *<bold>pn</bold> contains the number of values that would have been written had the buffer at <bold>val</bold> been sufficiently large.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="pdo_8h_1a8eceb0c1e5064569634782340a8b3afd" kindref="member">co_pdo_map()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="230" column="1" bodyfile="lib/co/pdo.c" bodystart="230" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1a7c9b096ebded1bbfe08f56beca7f0528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_pdo_dn</definition>
+        <argsstring>(const struct co_pdo_map_par *par, co_dev_t *dev, struct co_sdo_req *req, const uint_least8_t *buf, size_t n)</argsstring>
+        <name>co_pdo_dn</name>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Writes mapped PDO values to the object dictionary through a local SDO download request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the PDO mapping parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the CANopen SDO download request used for writing to the object dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the mapped values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes at <bold>buf</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="265" column="1" bodyfile="lib/co/pdo.c" bodystart="265" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="pdo_8c_1aa80a69ef0282edb2fb82deb451ae8a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_pdo_up</definition>
+        <argsstring>(const struct co_pdo_map_par *par, const co_dev_t *dev, struct co_sdo_req *req, uint_least8_t *buf, size_t *pn)</argsstring>
+        <name>co_pdo_up</name>
+        <param>
+          <type>const struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>uint_least8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>pn</declname>
+        </param>
+        <briefdescription>
+<para>Reads mapped PDO values from the object dictionary through a local SDO upload request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the PDO mapping parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the CANopen SDO upload request used for reading from the object dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store the mapped values (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value containing the size (in bytes) of the buffer at <bold>buf</bold>. On exit, if <bold>pn</bold> is not NULL, *<bold>pn</bold> contains the number of bytes that would have been written had the buffer at <bold>buf</bold> been sufficiently large.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or an SDO abort code on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/pdo.c" line="319" column="1" bodyfile="lib/co/pdo.c" bodystart="319" bodyend="363"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen library; it contains the implementation of the Process Data Object (PDO) functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="pdo_8h" kindref="compound">lely/co/pdo.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2016-2021 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2co_2co_8h" kindref="compound">co.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_RPDO<sp/>||<sp/>!LELY_NO_CO_TPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="msg_8h" kindref="compound">lely/can/msg.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dev_8h" kindref="compound">lely/co/dev.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="obj_8h" kindref="compound">lely/co/obj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pdo_8h" kindref="compound">lely/co/pdo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2co_2sdo_8h" kindref="compound">lely/co/sdo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="endian_8h" kindref="compound">lely/util/endian.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>co_dev_cfg_pdo_comm(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned16_t<sp/>idx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>*par);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>co_dev_cfg_pdo_map(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned16_t<sp/>num,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_RPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="46" refid="pdo_8h_1a14786423203163b7fb514f134ce7e120" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a14786423203163b7fb514f134ce7e120" kindref="member">co_dev_chk_rpdo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>idx,<sp/>co_unsigned8_t<sp/>subidx)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(dev);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(idx)<sp/>&amp;&amp;<sp/>!subidx)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>object<sp/>is<sp/>a<sp/>dummy<sp/>entry,<sp/>check<sp/>if<sp/>it<sp/>is<sp/>enabled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(<ref refid="dev_8h_1a846dad9e99af93397e53c00c7712aaa7" kindref="member">co_dev_get_dummy</ref>(dev)<sp/>&amp;<sp/>(1u<sp/>&lt;&lt;<sp/>idx)))</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__obj" kindref="compound">co_obj_t</ref><sp/>*obj<sp/>=<sp/><ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj</ref>(dev,<sp/>idx);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!obj)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>subidx);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>access<sp/>=<sp/><ref refid="obj_8h_1a134aee7e166062537594c2fed1ac1c48" kindref="member">co_sub_get_access</ref>(sub);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(access<sp/>&amp;<sp/><ref refid="obj_8h_1adb42c5ed4963697a1e43ea20f59011aa" kindref="member">CO_ACCESS_WRITE</ref>))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1af36abf5094e1cfeff01144b7ebaaa65f" kindref="member">CO_SDO_AC_NO_WRITE</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="obj_8h_1aecdec3000191061af7f8214df28861a1" kindref="member">co_sub_get_pdo_mapping</ref>(sub)<sp/>||<sp/>!(access<sp/>&amp;<sp/><ref refid="obj_8h_1a59e36803fee041573528e390d85e39cb" kindref="member">CO_ACCESS_RPDO</ref>))</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1ad06a23376e63fb3f9d2c788e17810ad2" kindref="member">CO_SDO_AC_NO_PDO</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="75" refid="pdo_8h_1a4708bdf77fe6eb7b3fcd1911982b46e0" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a4708bdf77fe6eb7b3fcd1911982b46e0" kindref="member">co_dev_cfg_rpdo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>num,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>*comm,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*map)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(comm);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>ac<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>par<sp/>=<sp/>*comm;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>the<sp/>RPDO<sp/>service<sp/>before<sp/>configuring<sp/>any<sp/>parameters.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>par.<ref refid="structco__pdo__comm__par_1aca4d4a336fcd4567526b97be8e10ea51" kindref="member">cobid</ref><sp/>|=<sp/><ref refid="pdo_8h_1ab1932711719b545f2444e57cbdcf0f78" kindref="member">CO_PDO_COBID_VALID</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1a1dcff910fa6ef1727a3448a76ebd47fb" kindref="member">co_dev_cfg_rpdo_comm</ref>(dev,<sp/>num,<sp/>&amp;par);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1af8650da425aa9aef9a6c08d9b2375e64" kindref="member">co_dev_cfg_rpdo_map</ref>(dev,<sp/>num,<sp/>map);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Re-enable<sp/>the<sp/>RPDO<sp/>service<sp/>if<sp/>necessary.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(comm-&gt;<ref refid="structco__pdo__comm__par_1aca4d4a336fcd4567526b97be8e10ea51" kindref="member">cobid</ref><sp/>&amp;<sp/><ref refid="pdo_8h_1ab1932711719b545f2444e57cbdcf0f78" kindref="member">CO_PDO_COBID_VALID</ref>))</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1a1dcff910fa6ef1727a3448a76ebd47fb" kindref="member">co_dev_cfg_rpdo_comm</ref>(dev,<sp/>num,<sp/>comm);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="101" refid="pdo_8h_1a1dcff910fa6ef1727a3448a76ebd47fb" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a1dcff910fa6ef1727a3448a76ebd47fb" kindref="member">co_dev_cfg_rpdo_comm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>num,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>*par)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!num<sp/>||<sp/>num<sp/>&gt;<sp/><ref refid="pdo_8h_1ab53c2ff246a4c1689fcfe5e5900da8be" kindref="member">CO_NUM_PDOS</ref>)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_dev_cfg_pdo_comm(dev,<sp/>0x1400<sp/>+<sp/>num<sp/>-<sp/>1,<sp/>par);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="111" refid="pdo_8h_1af8650da425aa9aef9a6c08d9b2375e64" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1af8650da425aa9aef9a6c08d9b2375e64" kindref="member">co_dev_cfg_rpdo_map</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>num,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!num<sp/>||<sp/>num<sp/>&gt;<sp/><ref refid="pdo_8h_1ab53c2ff246a4c1689fcfe5e5900da8be" kindref="member">CO_NUM_PDOS</ref>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_dev_cfg_pdo_map(dev,<sp/>0x1600<sp/>+<sp/>num<sp/>-<sp/>1,<sp/>par);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_CO_RPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_TPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="125" refid="pdo_8h_1a7608063cc681f7c6d092246bc450e80a" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a7608063cc681f7c6d092246bc450e80a" kindref="member">co_dev_chk_tpdo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>idx,<sp/>co_unsigned8_t<sp/>subidx)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(dev);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__obj" kindref="compound">co_obj_t</ref><sp/>*obj<sp/>=<sp/><ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj</ref>(dev,<sp/>idx);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!obj)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>subidx);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>access<sp/>=<sp/><ref refid="obj_8h_1a134aee7e166062537594c2fed1ac1c48" kindref="member">co_sub_get_access</ref>(sub);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(access<sp/>&amp;<sp/><ref refid="obj_8h_1a0bf0d9d9a8519fc35e64f9b87d89eda0" kindref="member">CO_ACCESS_READ</ref>))</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a25c2cb12afcaa27882ab855475cc73f8" kindref="member">CO_SDO_AC_NO_READ</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="obj_8h_1aecdec3000191061af7f8214df28861a1" kindref="member">co_sub_get_pdo_mapping</ref>(sub)<sp/>||<sp/>!(access<sp/>&amp;<sp/><ref refid="obj_8h_1aca33f8027251dd32d4a68c4a8b54f009" kindref="member">CO_ACCESS_TPDO</ref>))</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1ad06a23376e63fb3f9d2c788e17810ad2" kindref="member">CO_SDO_AC_NO_PDO</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="148" refid="pdo_8h_1a6ed83f392974c4664525a8091e3bd739" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a6ed83f392974c4664525a8091e3bd739" kindref="member">co_dev_cfg_tpdo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>num,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>*comm,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*map)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(comm);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>ac<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>par<sp/>=<sp/>*comm;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>the<sp/>TPDO<sp/>service<sp/>before<sp/>configuring<sp/>any<sp/>parameters.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>par.<ref refid="structco__pdo__comm__par_1aca4d4a336fcd4567526b97be8e10ea51" kindref="member">cobid</ref><sp/>|=<sp/><ref refid="pdo_8h_1ab1932711719b545f2444e57cbdcf0f78" kindref="member">CO_PDO_COBID_VALID</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1a315a3a22adb0a757989fe03d09d74aca" kindref="member">co_dev_cfg_tpdo_comm</ref>(dev,<sp/>num,<sp/>&amp;par);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1aef0a5f662fe721121f82c7b5f770ca92" kindref="member">co_dev_cfg_tpdo_map</ref>(dev,<sp/>num,<sp/>map);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Re-enable<sp/>the<sp/>TPDO<sp/>service<sp/>if<sp/>necessary.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(comm-&gt;<ref refid="structco__pdo__comm__par_1aca4d4a336fcd4567526b97be8e10ea51" kindref="member">cobid</ref><sp/>&amp;<sp/><ref refid="pdo_8h_1ab1932711719b545f2444e57cbdcf0f78" kindref="member">CO_PDO_COBID_VALID</ref>))</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1a315a3a22adb0a757989fe03d09d74aca" kindref="member">co_dev_cfg_tpdo_comm</ref>(dev,<sp/>num,<sp/>comm);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="174" refid="pdo_8h_1a315a3a22adb0a757989fe03d09d74aca" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a315a3a22adb0a757989fe03d09d74aca" kindref="member">co_dev_cfg_tpdo_comm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>num,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>*par)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!num<sp/>||<sp/>num<sp/>&gt;<sp/><ref refid="pdo_8h_1ab53c2ff246a4c1689fcfe5e5900da8be" kindref="member">CO_NUM_PDOS</ref>)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_dev_cfg_pdo_comm(dev,<sp/>0x1800<sp/>+<sp/>num<sp/>-<sp/>1,<sp/>par);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="184" refid="pdo_8h_1aef0a5f662fe721121f82c7b5f770ca92" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1aef0a5f662fe721121f82c7b5f770ca92" kindref="member">co_dev_cfg_tpdo_map</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>num,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!num<sp/>||<sp/>num<sp/>&gt;<sp/><ref refid="pdo_8h_1ab53c2ff246a4c1689fcfe5e5900da8be" kindref="member">CO_NUM_PDOS</ref>)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_dev_cfg_pdo_map(dev,<sp/>0x1a00<sp/>+<sp/>num<sp/>-<sp/>1,<sp/>par);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_CO_TPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="196" refid="pdo_8h_1a8eceb0c1e5064569634782340a8b3afd" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a8eceb0c1e5064569634782340a8b3afd" kindref="member">co_pdo_map</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned64_t<sp/>*val,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref>,<sp/>uint_least8_t<sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*pn)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(par);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(val);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref><sp/>&gt;<sp/><ref refid="pdo_8h_1a6805c3a2c79bd0ce040887b442e7c2c8" kindref="member">CO_PDO_NUM_MAPS</ref><sp/>||<sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>!=<sp/>par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>map<sp/>=<sp/>par-&gt;<ref refid="structco__pdo__map__par_1afdcbea057e4faeee5b5add24160c548a" kindref="member">map</ref>[i];</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!map)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>len<sp/>=<sp/>map<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(offset<sp/>+<sp/>len<sp/>&gt;<sp/><ref refid="msg_8h_1a50e7829fe89da0a893a3424f4508a048" kindref="member">CAN_MAX_LEN</ref><sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>tmp[</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(co_unsigned64_t)]<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="endian_8h_1a17810497e1fe7783e2914c792c2e6dc8" kindref="member">stle_u64</ref>(tmp,<sp/>val[i]);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(buf<sp/>&amp;&amp;<sp/>pn<sp/>&amp;&amp;<sp/>offset<sp/>+<sp/>len<sp/>&lt;=<sp/>*pn<sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="endian_8h_1abbcdaa7c7dd7f5e9de25f6b1cfd1dc8f" kindref="member">bcpyle</ref>(buf,<sp/>offset,<sp/>tmp,<sp/>0,<sp/>len);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pn)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pn<sp/>=<sp/>(offset<sp/>+<sp/>7)<sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="230" refid="pdo_8h_1a0352754fde91a97e45dedfd439fc4ded" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a0352754fde91a97e45dedfd439fc4ded" kindref="member">co_pdo_unmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>*buf,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref>,<sp/>co_unsigned64_t<sp/>*val,<sp/>co_unsigned8_t<sp/>*pn)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(par);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(buf);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref><sp/>&gt;<sp/><ref refid="pdo_8h_1a6805c3a2c79bd0ce040887b442e7c2c8" kindref="member">CO_PDO_NUM_MAPS</ref>)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>map<sp/>=<sp/>par-&gt;<ref refid="structco__pdo__map__par_1afdcbea057e4faeee5b5add24160c548a" kindref="member">map</ref>[i];</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!map)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>len<sp/>=<sp/>map<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(offset<sp/>+<sp/>len<sp/>&gt;<sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>tmp[</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(co_unsigned64_t)]<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="endian_8h_1abbcdaa7c7dd7f5e9de25f6b1cfd1dc8f" kindref="member">bcpyle</ref>(tmp,<sp/>0,<sp/>buf,<sp/>offset,<sp/>len);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&amp;&amp;<sp/>pn<sp/>&amp;&amp;<sp/>i<sp/>&lt;<sp/>*pn)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val[i]<sp/>=<sp/><ref refid="endian_8h_1ac40c402b1b65894473a167f264405b1d" kindref="member">ldle_u64</ref>(tmp);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pn)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pn<sp/>=<sp/>par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_RPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="265" refid="pdo_8h_1a7c9b096ebded1bbfe08f56beca7f0528" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1a7c9b096ebded1bbfe08f56beca7f0528" kindref="member">co_pdo_dn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par,<sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref>)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(par);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(dev);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(req);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(buf);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>&gt;<sp/><ref refid="msg_8h_1a50e7829fe89da0a893a3424f4508a048" kindref="member">CAN_MAX_LEN</ref>)</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>(par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>,<sp/><ref refid="pdo_8h_1a6805c3a2c79bd0ce040887b442e7c2c8" kindref="member">CO_PDO_NUM_MAPS</ref>);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>map<sp/>=<sp/>par-&gt;<ref refid="structco__pdo__map__par_1afdcbea057e4faeee5b5add24160c548a" kindref="member">map</ref>[i];</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!map)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned16_t<sp/>idx<sp/>=<sp/>(map<sp/>&gt;&gt;<sp/>16)<sp/>&amp;<sp/>0xffff;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>subidx<sp/>=<sp/>(map<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>len<sp/>=<sp/>map<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>PDO<sp/>length.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(offset<sp/>+<sp/>len<sp/>&gt;<sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>whether<sp/>the<sp/>sub-object<sp/>exists<sp/>and<sp/>can<sp/>be<sp/>mapped<sp/>into<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RPDO<sp/>(or<sp/>is<sp/>a<sp/>valid<sp/>dummy<sp/>entry).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1a14786423203163b7fb514f134ce7e120" kindref="member">co_dev_chk_rpdo</ref>(dev,<sp/>idx,<sp/>subidx);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>idx,<sp/>subidx);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sub)<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>the<sp/>value<sp/>and<sp/>download<sp/>it<sp/>into<sp/>the<sp/>sub-object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>tmp[<ref refid="msg_8h_1a50e7829fe89da0a893a3424f4508a048" kindref="member">CAN_MAX_LEN</ref>]<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="endian_8h_1abbcdaa7c7dd7f5e9de25f6b1cfd1dc8f" kindref="member">bcpyle</ref>(tmp,<sp/>0,<sp/>buf,<sp/>offset,<sp/>len);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="include_2lely_2co_2sdo_8h_1aada01998badaf53e901e9a9fedf054a1" kindref="member">co_sdo_req_clear</ref>(req);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>req-&gt;<ref refid="structco__sdo__req_1a3f40a5845cd58a318bec048270d16a04" kindref="member">size</ref><sp/>=<sp/>(len<sp/>+<sp/>7)<sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>req-&gt;<ref refid="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" kindref="member">buf</ref><sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>req-&gt;<ref refid="structco__sdo__req_1abfe41b89a836e6f5fa58ac816b25ea94" kindref="member">nbyte</ref><sp/>=<sp/>req-&gt;<ref refid="structco__sdo__req_1a3f40a5845cd58a318bec048270d16a04" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1aa026c13cd4d3e4aa21747cc52be2281f" kindref="member">co_sub_dn_ind</ref>(sub,<sp/>req,<sp/>0);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_CO_RPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_TPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal">co_unsigned32_t</highlight></codeline>
+<codeline lineno="319" refid="pdo_8h_1aa80a69ef0282edb2fb82deb451ae8a5d" refkind="member"><highlight class="normal"><ref refid="pdo_8c_1aa80a69ef0282edb2fb82deb451ae8a5d" kindref="member">co_pdo_up</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/>uint_least8_t<sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*pn)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(par);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(dev);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(req);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="include_2lely_2util_2util_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>(par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>,<sp/><ref refid="pdo_8h_1a6805c3a2c79bd0ce040887b442e7c2c8" kindref="member">CO_PDO_NUM_MAPS</ref>);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>map<sp/>=<sp/>par-&gt;<ref refid="structco__pdo__map__par_1afdcbea057e4faeee5b5add24160c548a" kindref="member">map</ref>[i];</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!map)</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned16_t<sp/>idx<sp/>=<sp/>(map<sp/>&gt;&gt;<sp/>16)<sp/>&amp;<sp/>0xffff;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>subidx<sp/>=<sp/>(map<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>len<sp/>=<sp/>map<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>PDO<sp/>length.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(offset<sp/>+<sp/>len<sp/>&gt;<sp/><ref refid="msg_8h_1a50e7829fe89da0a893a3424f4508a048" kindref="member">CAN_MAX_LEN</ref><sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>whether<sp/>the<sp/>sub-object<sp/>exists<sp/>and<sp/>can<sp/>be<sp/>mapped<sp/>into<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TPDO.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>ac<sp/>=<sp/><ref refid="pdo_8c_1a7608063cc681f7c6d092246bc450e80a" kindref="member">co_dev_chk_tpdo</ref>(dev,<sp/>idx,<sp/>subidx);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Upload<sp/>the<sp/>value<sp/>of<sp/>the<sp/>sub-object<sp/>and<sp/>copy<sp/>the<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="include_2lely_2co_2sdo_8h_1aada01998badaf53e901e9a9fedf054a1" kindref="member">co_sdo_req_clear</ref>(req);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1a8b52bdd17c1e07c36641902e649c8582" kindref="member">co_sub_up_ind</ref>(<ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>idx,<sp/>subidx),<sp/>req,<sp/>0);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="include_2lely_2co_2sdo_8h_1a8dc8161db0a12148da429336ed3f85c5" kindref="member">co_sdo_req_first</ref>(req)<sp/>||<sp/>!<ref refid="include_2lely_2co_2sdo_8h_1aef8084ad6b5a178e3179df7e8cb03403" kindref="member">co_sdo_req_last</ref>(req))</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" kindref="member">CO_SDO_AC_PDO_LEN</ref>;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(buf<sp/>&amp;&amp;<sp/>pn<sp/>&amp;&amp;<sp/>offset<sp/>+<sp/>len<sp/>&lt;=<sp/>*pn<sp/>*<sp/>8)</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="endian_8h_1abbcdaa7c7dd7f5e9de25f6b1cfd1dc8f" kindref="member">bcpyle</ref>(buf,<sp/>offset,<sp/>req-&gt;<ref refid="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" kindref="member">buf</ref>,<sp/>0,<sp/>len);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pn)</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pn<sp/>=<sp/>(offset<sp/>+<sp/>7)<sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_CO_TPDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>co_unsigned32_t</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">co_dev_cfg_pdo_comm(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>idx,</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref><sp/>*par)</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(dev);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(par);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>ac<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__obj" kindref="compound">co_obj_t</ref><sp/>*obj<sp/>=<sp/><ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj</ref>(dev,<sp/>idx);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!obj)</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>all<sp/>sub-objects<sp/>are<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>=<sp/>co_obj_get_val_u8(obj,<sp/>0x00);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>&gt;<sp/><ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref>)</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>COB-ID.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>&gt;=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>0x01);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;par-&gt;<ref refid="structco__pdo__comm__par_1aca4d4a336fcd4567526b97be8e10ea51" kindref="member">cobid</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>transmission<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>&gt;=<sp/>2<sp/>&amp;&amp;<sp/>!ac)<sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>0x02);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>&amp;par-&gt;<ref refid="structco__pdo__comm__par_1af3f17b730cfdb2ef3b5b2d187bf65cc4" kindref="member">trans</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>inhibit<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>&gt;=<sp/>3<sp/>&amp;&amp;<sp/>!ac)<sp/>{</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>0x03);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(sub,<sp/><ref refid="type_8h_1a0c98cf526ee59d8b97bfba5dc34b1b27" kindref="member">CO_DEFTYPE_UNSIGNED16</ref>,</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;par-&gt;<ref refid="structco__pdo__comm__par_1a8e7d222e59a684d8cba944007e6dbc4e" kindref="member">inhibit</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>event<sp/>timer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>&gt;=<sp/>5<sp/>&amp;&amp;<sp/>!ac)<sp/>{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>0x05);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub,<sp/><ref refid="type_8h_1a0c98cf526ee59d8b97bfba5dc34b1b27" kindref="member">CO_DEFTYPE_UNSIGNED16</ref>,<sp/>&amp;par-&gt;<ref refid="structco__pdo__comm__par_1ab26a939a1fc7639a3d427e48b06ffeac" kindref="member">event</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>SYNC<sp/>start<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(par-&gt;<ref refid="structco__pdo__comm__par_1afe1db998eb3a49bb523694ce02ede84c" kindref="member">n</ref><sp/>&gt;=<sp/>6<sp/>&amp;&amp;<sp/>!ac)<sp/>{</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>0x06);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>&amp;par-&gt;<ref refid="structco__pdo__comm__par_1a8c5446c68b615df54b28bb657da360c9" kindref="member">sync</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>co_unsigned32_t</highlight></codeline>
+<codeline lineno="433"><highlight class="normal">co_dev_cfg_pdo_map(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned16_t<sp/>idx,</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref><sp/>*par)</highlight></codeline>
+<codeline lineno="435"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(dev);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(par);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>ac<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__obj" kindref="compound">co_obj_t</ref><sp/>*obj<sp/>=<sp/><ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj</ref>(dev,<sp/>idx);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!obj)</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" kindref="member">CO_SDO_AC_NO_OBJ</ref>;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub_00<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>0x00);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub_00)</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>mapping<sp/>by<sp/>setting<sp/>subindex<sp/>0x00<sp/>to<sp/>zero.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(sub_00,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;(co_unsigned8_t){<sp/>0<sp/>},<sp/>NULL);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>the<sp/>mapping<sp/>parameters.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(co_unsigned8_t<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;=<sp/>par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub<sp/>=<sp/><ref refid="obj_8h_1a8c759259163839094b9724f24de93201" kindref="member">co_obj_find_sub</ref>(obj,<sp/>i);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sub)</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ac<sp/>=<sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(sub,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;par-&gt;<ref refid="structco__pdo__map__par_1afdcbea057e4faeee5b5add24160c548a" kindref="member">map</ref>[i<sp/>-<sp/>1],<sp/>NULL);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ac)</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ac;</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>mapping.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="obj_8h_1ad49aa3b8ec0cc6953969cb14b652725c" kindref="member">co_sub_dn_ind_val</ref>(sub_00,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>&amp;par-&gt;<ref refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" kindref="member">n</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_CO_RPDO<sp/>||<sp/>!LELY_NO_CO_TPDO</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/co/pdo.c"/>
+  </compounddef>
+</doxygen>

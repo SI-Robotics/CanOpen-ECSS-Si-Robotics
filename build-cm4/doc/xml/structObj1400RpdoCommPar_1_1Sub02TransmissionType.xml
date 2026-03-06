@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1400RpdoCommPar_1_1Sub02TransmissionType" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1400RpdoCommPar::Sub02TransmissionType</compoundname>
+    <basecompoundref refid="structObjInitT_1_1SubT" prot="public" virt="non-virtual">ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; 0x02u, CO_DEFTYPE_UNSIGNED8 &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; 0x02u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+        <link refid="structObjInitT_1_1SubT"/>
+      </node>
+      <node id="1">
+        <label>Obj1400RpdoCommPar::Sub02TransmissionType</label>
+        <link refid="structObj1400RpdoCommPar_1_1Sub02TransmissionType"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; 0x02u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+        <link refid="structObjInitT_1_1SubT"/>
+      </node>
+      <node id="1">
+        <label>Obj1400RpdoCommPar::Sub02TransmissionType</label>
+        <link refid="structObj1400RpdoCommPar_1_1Sub02TransmissionType"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/rpdo-comm-par.hpp" line="34" column="3" bodyfile="unit-tests/co/obj-init/rpdo-comm-par.hpp" bodystart="34" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1_1SubT_1a86b185a20c9f4761892b9643fc2f907d" prot="public" virt="non-virtual"><scope>Obj1400RpdoCommPar::Sub02TransmissionType</scope><name>default_val</name></member>
+      <member refid="structObjInitT_1_1SubT_1a058d71425a9d62638a48b817c04b0ad8" prot="public" virt="non-virtual"><scope>Obj1400RpdoCommPar::Sub02TransmissionType</scope><name>deftype</name></member>
+      <member refid="structObjInitT_1_1SubT_1a51133794b664fce91a57f351d069d920" prot="public" virt="non-virtual"><scope>Obj1400RpdoCommPar::Sub02TransmissionType</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1_1SubT_1a34509352f31bea2526e8bdcb8de853f4" prot="public" virt="non-virtual"><scope>Obj1400RpdoCommPar::Sub02TransmissionType</scope><name>min_idx</name></member>
+      <member refid="structObjInitT_1_1SubT_1a0cb33462688a6c42801a22685119a0f0" prot="public" virt="non-virtual"><scope>Obj1400RpdoCommPar::Sub02TransmissionType</scope><name>min_subidx</name></member>
+      <member refid="structObjInitT_1_1SubT_1a5dee2b5836789aac50a3a6883e63d8b3" prot="public" virt="non-virtual"><scope>Obj1400RpdoCommPar::Sub02TransmissionType</scope><name>sub_type</name></member>
+      <member refid="structObjInitT_1_1SubT_1ad3b97cf113ff6f1cc9cd097f5b37ba07" prot="public" virt="non-virtual"><scope>Obj1400RpdoCommPar::Sub02TransmissionType</scope><name>subidx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

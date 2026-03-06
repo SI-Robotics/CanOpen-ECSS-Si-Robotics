@@ -1,0 +1,1940 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-rbtree_8cpp" kind="file" language="C++">
+    <compoundname>test-rbtree.cpp</compoundname>
+    <includes local="no">cassert</includes>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="rbtree_8h" local="no">lely/util/rbtree.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>stdbool.h</label>
+      </node>
+      <node id="7">
+        <label>assert.h</label>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cassert</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>lely/util/rbtree.h</label>
+        <link refid="rbtree_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/util/test-rbtree.cpp</label>
+        <link refid="test-rbtree_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>rbtree_init()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_RbtreeInit, RbtreeInit_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_RbtreeInit</type>
+        </param>
+        <param>
+          <type>RbtreeInit_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an uninitialized instance of a red-black tree (rbtree) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a8b465047b051191f5fccb0d83c4a213b" kindref="member">rbtree_init()</ref> is called with a pointer to a comparison function</para>
+<para><bold>Then</bold> tree is initialized, has zero nodes, null pointer to root and requested comparison function set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="72" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="72" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbnode_init()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1abe22b0241ec9a200d97bc5a66881201d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_RbtreeInit, RbnodeInit_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_RbtreeInit</type>
+        </param>
+        <param>
+          <type>RbnodeInit_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an uninitialized instance of a red-black tree node (rbnode) and some key </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a152b52c2f7cd21b31084a7604808fcf4" kindref="member">rbnode_init()</ref> is called with a pointer to that key</para>
+<para><bold>Then</bold> node is initialized, has null pointers to left and right children nodes, zeroed parent pointer with black color encoded and pointer to requested key set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="95" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="95" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_size()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a044367d8020fd0fc6977818b0bbfb8fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeSize_EmptyTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeSize_EmptyTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size()</ref> is called</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="131" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a06d83354055e86c458147b7353219850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeSize_MultipleNodes)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeSize_MultipleNodes</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size()</ref> is called</para>
+<para><bold>Then</bold> number of nodes in tree is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="138" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="138" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_empty()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a8abb721ee4ffa2a62f9e187947f2f8dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeEmpty_IsEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeEmpty_IsEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty()</ref> is called</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="156" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ad505c1e8842a00be60d5f5f77671dcf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeEmpty_RootAdded)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeEmpty_RootAdded</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty()</ref> is called</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="163" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="163" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a000ae5b105d03470fc7e123d07cec04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeEmpty_LeafAdded)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeEmpty_LeafAdded</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty()</ref> is called</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="174" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="174" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_insert()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1afd5908b4d287ee926d96efd3b8aa9889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeInsert_EmptyTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeInsert_EmptyTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> is called with a pointer to an initialized node</para>
+<para><bold>Then</bold> that node is a new root and sole node of the tree </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="191" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="191" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a0588fa477e077a54aac7ac2b5bc7d97b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeInsert_OneAdded)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeInsert_OneAdded</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> is called with a pointer to an initialized node with a key higher than root node&apos;s</para>
+<para><bold>Then</bold> that node is added to the tree and is root node&apos;s right child </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="205" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="205" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ad92b7524a1592bd097a2310f102ee4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeInsert_ManyAdded)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeInsert_ManyAdded</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with two nodes, a root and its right child </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> is called with a pointer to an initialized node with a key higher than that of existing nodes</para>
+<para><bold>Then</bold> that node is added to the tree, tree is rebalanced and newly added node is new root&apos;s right child </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="222" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="222" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1aec62de01553eb1effdf8755c6a6918fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeInsert_ManyAddedRedAndBlackNodes)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeInsert_ManyAddedRedAndBlackNodes</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> is called with a pointer to an initialized node with a key higher than that of existing nodes</para>
+<para><bold>Then</bold> that node is added to the tree, tree is rebalanced and recolored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="238" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="238" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1acef1405764d653406f1286937446f0fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeInsert_NodeHasRedUncle)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeInsert_NodeHasRedUncle</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> is called with a pointer to an initialized node</para>
+<para><bold>Then</bold> that node is added to the tree, tree is rebalanced and recolored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="256" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="256" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1adef685c906f058fec827f9edb9eef737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeInsert_RightRotateAtGrandparent)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeInsert_RightRotateAtGrandparent</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> is called with a pointer to an initialized node</para>
+<para><bold>Then</bold> that node is added to the tree, tree is rebalanced and recolored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="271" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="271" bodyend="282"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbnode_prev()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a629c800023bca74922ad80475f66d5c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodePrev_NodeIsRoot)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodePrev_NodeIsRoot</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev()</ref> is called with a pointer to that node</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="294" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="294" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a550b8d2c0d12cbe1c683be188bd5130c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodePrev_NodeHasLeftSubtree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodePrev_NodeHasLeftSubtree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with a root node and its left and right children </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev()</ref> is called with a pointer to the root node</para>
+<para><bold>Then</bold> a pointer to the left child node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="305" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="305" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a3bd59ecb465efa4192a1ee717cbf6a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodePrev_NodeDoesNotHaveLeftNeighbor)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodePrev_NodeDoesNotHaveLeftNeighbor</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a full red-black tree with 7 nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev()</ref> is called with a pointer to the node with lowest key in the right sub-tree</para>
+<para><bold>Then</bold> a pointer to the root node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="320" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="320" bodyend="334"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbnode_next()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a499c4b3a67d6dd224418c14a62730e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodeNext_OnlyRootNode)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodeNext_OnlyRootNode</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next()</ref> is called with a pointer to that node</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="346" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="346" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a02b47ba18ef7e18ef45d4fc20c1cec2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodeNext_NodeHasRightSubtree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodeNext_NodeHasRightSubtree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with a root node and its left and right children </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next()</ref> is called with a pointer to the root node</para>
+<para><bold>Then</bold> a pointer to the right child node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="357" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="357" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a13327e85c53571275ffb59023b996aa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodeNext_NodeDoesNotHaveRightNeighbor)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodeNext_NodeDoesNotHaveRightNeighbor</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a full red-black tree with 7 nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next()</ref> is called with a pointer to the node with highest key in the left sub-tree</para>
+<para><bold>Then</bold> a pointer to the root node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="371" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="371" bodyend="385"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_remove()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a62b9e948cba0e089f8db34883c43ff50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_OnlyHead)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_OnlyHead</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called with a pointer to that node</para>
+<para><bold>Then</bold> that node is removed from the tree, tree is empty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="397" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="397" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a683c2531467b3dd9b8286dbdc3a5b2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_HeadOneAdded)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_HeadOneAdded</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with two nodes, a root and its right child </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called with a pointer to the root node</para>
+<para><bold>Then</bold> that node is removed from the tree, remaining node is the new root </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="411" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="411" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a6f1ae19618ee1033700e17d9b5a857dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_ElementOneAdded)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_ElementOneAdded</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with two nodes, a root and its right child </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called with a pointer to the leaf node</para>
+<para><bold>Then</bold> that node is removed from the tree, tree&apos;s original root node is the only node in tree </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="427" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="427" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a28253c70275bbdc333d96d0995e3fcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_BothLeftAndRightSubtree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_BothLeftAndRightSubtree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a balanced red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called multiple times with pointers to all nodes in tree</para>
+<para><bold>Then</bold> all nodes are removed from the tree, tree is empty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="443" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="443" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a0ffb4fc373bfeffae5cd614d5f622549" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_NextIsRootNode)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_NextIsRootNode</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with a root node and its left and right children </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called with a pointer to the root node</para>
+<para><bold>Then</bold> root node is removed from the tree, original root&apos;s successor is the new root of the tree, tree has 2 nodes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="470" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="470" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ad2740239476676133e86c509bbf2c104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_FixViolations)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_FixViolations</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called with a pointer to one of the nodes</para>
+<para><bold>Then</bold> that node is removed, tree is rebalanced and recolored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="486" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="486" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a04aa36f3dcde82efad32c99d325b2929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_FixViolationsCase2ConditionFalseOnLeftSubtree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_FixViolationsCase2ConditionFalseOnLeftSubtree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called with a pointer to one of the nodes</para>
+<para><bold>Then</bold> that node is removed, tree is rebalanced and recolored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="509" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="509" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a03216014b05b073a103fa4035485289e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRemove_FixViolationsCase3And4OnLeftSubtree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRemove_FixViolationsCase3And4OnLeftSubtree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref> is called with a pointer to one of the nodes</para>
+<para><bold>Then</bold> that node is removed, tree is rebalanced and recolored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="532" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="532" bodyend="551"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_contains()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a1561ecc50c5a047b33bfc163969e09f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeContains_EmptyTreeContainsNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeContains_EmptyTreeContainsNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains()</ref> is called with a null pointer</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="563" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="563" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a4822c81eacab85a9c29cef70649e776b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeContains_EmptyTreeContainsNotNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeContains_EmptyTreeContainsNotNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains()</ref> is called with a pointer to a node not present in the tree</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="573" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="573" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a4713a5942a85c14c785235b207e884f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeContains_TreeWithOneContains)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeContains_TreeWithOneContains</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains()</ref> is called with a pointer to that node in the tree</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="582" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="582" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a022d17b6df109522dc387b5e171bd5c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeContains_TreeWithOneDoesNotContain)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeContains_TreeWithOneDoesNotContain</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains()</ref> is called with a pointer to a node not present in the tree</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="594" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="594" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1adee4b6204230a67d1e4869e7e9e7fd75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeContains_TreeWithManyContains)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeContains_TreeWithManyContains</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with two nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains()</ref> is called with a pointer to any node in the tree</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="605" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="605" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a808fa72a29c385cdce93872e919e7ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeContains_TreeWithManyDoesNotContain)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeContains_TreeWithManyDoesNotContain</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with two nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains()</ref> is called with a pointer to a node not present in the tree</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="618" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="618" bodyend="623"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_find()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a5d989e81e86e2b2e541001773f89394c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFind_EmptyTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFind_EmptyTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find()</ref> is called with any key</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="635" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="635" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a6b74bd6d9fb71de9ed8ff08732ae178d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFind_RootOnly)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFind_RootOnly</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find()</ref> is called with the key of that node</para>
+<para><bold>Then</bold> pointer to the sole node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="645" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="645" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1aaeadc391f1a841b2986edca01df3d4ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFind_LeftChild)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFind_LeftChild</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with two nodes, a root and its left child </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find()</ref> is called with the key of the left child node</para>
+<para><bold>Then</bold> pointer to the left child node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="656" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="656" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1afce6d6627a3a396a45ed641462870c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFind_RightChild)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFind_RightChild</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with two nodes, a root and its right child </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find()</ref> is called with the key of the right child node</para>
+<para><bold>Then</bold> pointer to the right child node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="668" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="668" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a3612fdd85ee45c9870e5019d1427bfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFind_KeyNotInTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFind_KeyNotInTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find()</ref> is called with a key value that&apos;s not stored in the tree</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="680" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="680" bodyend="687"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_root()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ab885f8e656d0e4672834b35c843cdbfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRoot_EmptyTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRoot_EmptyTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root()</ref> is called</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="699" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="699" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a18c4028341a817ae0506fd09765b5556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRoot_OneNode)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRoot_OneNode</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root()</ref> is called</para>
+<para><bold>Then</bold> pointer to the sole node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="708" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="708" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1aa5a103eaa91780416c799622338cc038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeRoot_LargerTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeRoot_LargerTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with 8 nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root()</ref> is called</para>
+<para><bold>Then</bold> a pointer to the node that&apos;s at the root of the red-black tree is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="720" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="720" bodyend="733"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_last()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a1dfb8790bd104e168c6c7e2e4cc793c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeLast_EmptyTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeLast_EmptyTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last()</ref> is called</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="745" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="745" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a4edb9499c47953daeebfd9b6b8dc4fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeLast_OnlyRoot)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeLast_OnlyRoot</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last()</ref> is called</para>
+<para><bold>Then</bold> pointer to the root node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="754" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="754" bodyend="758"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ab7782f0d35e1496ee8d79031a6b730aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeLast_LargerTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeLast_LargerTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last()</ref> is called</para>
+<para><bold>Then</bold> pointer to the node with greatest key is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="765" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="765" bodyend="773"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_first()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a15eb31b896a6a4ea90306ffd6e3fa525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFirst_EmptyTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFirst_EmptyTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first()</ref> is called</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="785" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="785" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1af286cf6a07fefbfded2e996f16153d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFirst_OnlyRoot)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFirst_OnlyRoot</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with exactly one node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first()</ref> is called</para>
+<para><bold>Then</bold> pointer to the root node is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="794" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="794" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a324a1246425cf878f333ef5b382ebd2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeFirst_LargerTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeFirst_LargerTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first()</ref> is called</para>
+<para><bold>Then</bold> pointer to the node with lowest key is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="805" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="805" bodyend="813"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbnode_foreach()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1abf453798ecf20783e187d8b47b9bb012" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodeForeach_Null)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodeForeach_Null</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" kindref="member">rbnode_foreach()</ref> is used with a null pointer</para>
+<para><bold>Then</bold> no loop iterations are performed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="825" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="825" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a8df16fa3415a051ac3d36266fdf43ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbnodeForeach_NodeWithMiddleKeyValue)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbnodeForeach_NodeWithMiddleKeyValue</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" kindref="member">rbnode_foreach()</ref> is used with a pointer to a node from the tree with non-extreme key value</para>
+<para><bold>Then</bold> body of the loop is executed for requested node and all its successors in order </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="840" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="840" bodyend="858"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rbtree_foreach()</header>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a310d152e67e3ec98cc6126b0c124341d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeForeach_EmptyTree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeForeach_EmptyTree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an empty red-black tree </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" kindref="member">rbtree_foreach()</ref> is used</para>
+<para><bold>Then</bold> no loop iterations are performed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="870" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="870" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ae36c5343625a0e73d318c408a4e02d04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeForeach_TreeWithMany)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeForeach_TreeWithMany</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" kindref="member">rbtree_foreach()</ref> is used</para>
+<para><bold>Then</bold> body of the loop is executed for all nodes from the tree in order of increasing node key values </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="884" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="884" bodyend="898"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a73fa3a9859ee50c024998f73d31384dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Rbtree, RbtreeForeach_TreeWithManyRemoveCurrent)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <param>
+          <type>RbtreeForeach_TreeWithManyRemoveCurrent</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a red-black tree with multiple nodes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" kindref="member">rbtree_foreach()</ref> is used and one of the nodes is removed</para>
+<para><bold>Then</bold> body of the loop is executed for all nodes from the tree and the removed node is not present in the tree </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="906" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="906" bodyend="921"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-rbtree_8cpp_1a17806c527188ff9481c88dbb857726ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int rbtree_cmp_ints</definition>
+        <argsstring>(const void *const p1, const void *const p2)</argsstring>
+        <name>rbtree_cmp_ints</name>
+        <param>
+          <type>const void *const</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="34" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ae8927cf39f9ba53d1713715b1d9c8db7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_RbtreeCmpInts)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_RbtreeCmpInts</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="49" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1ac4b3997e04df0467aae7bade1de73ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_RbtreeCmpInts, RbtreeCmpInts)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_RbtreeCmpInts</type>
+        </param>
+        <param>
+          <type>RbtreeCmpInts</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="51" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1af54f1d9648c533b23d351fcab7ce614b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_RbtreeInit)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_RbtreeInit</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="61" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="test-rbtree_8cpp_1a551fc3fa7230697fcc2e96dcd0710039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_Rbtree)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_Rbtree</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-rbtree.cpp" line="109" column="1" bodyfile="unit-tests/util/test-rbtree.cpp" bodystart="109" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="rbtree_8h" kindref="compound">lely/util/rbtree.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">rbtree_cmp_ints(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p2)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>assert(p1);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>assert(p2);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>val1<sp/>=<sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">int32_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>val2<sp/>=<sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">int32_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p2);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val1<sp/>&gt;<sp/>val2)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val1<sp/>==<sp/>val2)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_RbtreeCmpInts){};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_RbtreeCmpInts,<sp/>RbtreeCmpInts)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>a<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>b<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>c<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>rbtree_cmp_ints(&amp;a,<sp/>&amp;c));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/>rbtree_cmp_ints(&amp;a,<sp/>&amp;b));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/>rbtree_cmp_ints(&amp;b,<sp/>&amp;a));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_RbtreeInit){};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"></codeline>
+<codeline lineno="72" refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_RbtreeInit,<sp/>RbtreeInit_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>tree;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a8b465047b051191f5fccb0d83c4a213b" kindref="member">rbtree_init</ref>(&amp;tree,<sp/>rbtree_cmp_ints);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>tree.<ref refid="structrbtree_1abd0a6e986acba39f103cb66fb1c3bd3b" kindref="member">root</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(rbtree_cmp_ints,<sp/>tree.<ref refid="structrbtree_1a05aa8f466e55f30978eeaa8e3657f298" kindref="member">cmp</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>tree.<ref refid="structrbtree_1a683522432cdda0b3bf320a6510fc9ae2" kindref="member">num_nodes</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"></codeline>
+<codeline lineno="86"></codeline>
+<codeline lineno="95" refid="test-rbtree_8cpp_1abe22b0241ec9a200d97bc5a66881201d" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_RbtreeInit,<sp/>RbnodeInit_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>node;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>key<sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a152b52c2f7cd21b31084a7604808fcf4" kindref="member">rbnode_init</ref>(&amp;node,<sp/>&amp;key);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;key,<sp/>node.<ref refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" kindref="member">key</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>node.<ref refid="structrbnode_1a079337ce0b6a84f59162a3ca60445011" kindref="member">left</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>node.<ref refid="structrbnode_1a76b1a4f6c0dcadb4f06b25c183d59a6e" kindref="member">right</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>node.<ref refid="structrbnode_1afc3eb51f72c291870f4bb8cc631d2fce" kindref="member">parent</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_Rbtree)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>tree;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>NODES_NUMBER<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>nodes[NODES_NUMBER];</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>keys[NODES_NUMBER]<sp/>=<sp/>{-10,<sp/>10,<sp/>20,<sp/>30,<sp/>40,<sp/>50,<sp/>60,<sp/>70,<sp/>80,<sp/>90};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rbtree_8h_1a8b465047b051191f5fccb0d83c4a213b" kindref="member">rbtree_init</ref>(&amp;tree,<sp/>rbtree_cmp_ints);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>NODES_NUMBER;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rbtree_8h_1a152b52c2f7cd21b31084a7604808fcf4" kindref="member">rbnode_init</ref>(&amp;nodes[i],<sp/>&amp;keys[i]);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"></codeline>
+<codeline lineno="131" refid="test-rbtree_8cpp_1a044367d8020fd0fc6977818b0bbfb8fa" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeSize_EmptyTree)<sp/>{<sp/>CHECK_EQUAL(0,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));<sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="test-rbtree_8cpp_1a06d83354055e86c458147b7353219850" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeSize_MultipleNodes)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(3u,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"></codeline>
+<codeline lineno="150"></codeline>
+<codeline lineno="156" refid="test-rbtree_8cpp_1a8abb721ee4ffa2a62f9e187947f2f8dc" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeEmpty_IsEmpty)<sp/>{<sp/>CHECK_EQUAL(1,<sp/><ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty</ref>(&amp;tree));<sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="test-rbtree_8cpp_1ad505c1e8842a00be60d5f5f77671dcf9" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeEmpty_RootAdded)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="test-rbtree_8cpp_1a000ae5b105d03470fc7e123d07cec04f" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeEmpty_LeafAdded)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"></codeline>
+<codeline lineno="185"></codeline>
+<codeline lineno="191" refid="test-rbtree_8cpp_1afd5908b4d287ee926d96efd3b8aa9889" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeInsert_EmptyTree)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>root_ptr<sp/>=<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[0],<sp/>root_ptr);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(root_ptr));</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="test-rbtree_8cpp_1a0588fa477e077a54aac7ac2b5bc7d97b" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeInsert_OneAdded)<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>root_ptr<sp/>=<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(root_ptr));</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/>root_ptr-&gt;<ref refid="structrbnode_1a76b1a4f6c0dcadb4f06b25c183d59a6e" kindref="member">right</ref>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="test-rbtree_8cpp_1ad92b7524a1592bd097a2310f102ee4bd" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeInsert_ManyAdded)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>root_ptr<sp/>=<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[2],<sp/><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(root_ptr));</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="test-rbtree_8cpp_1aec62de01553eb1effdf8755c6a6918fe" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeInsert_ManyAddedRedAndBlackNodes)<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(6U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="test-rbtree_8cpp_1acef1405764d653406f1286937446f0fd" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeInsert_NodeHasRedUncle)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[2],<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(4U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="test-rbtree_8cpp_1adef685c906f058fec827f9edb9eef737" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeInsert_RightRotateAtGrandparent)<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(7U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"></codeline>
+<codeline lineno="288"></codeline>
+<codeline lineno="294" refid="test-rbtree_8cpp_1a629c800023bca74922ad80475f66d5c6" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodePrev_NodeIsRoot)<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev</ref>(<ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree)));</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="test-rbtree_8cpp_1a550b8d2c0d12cbe1c683be188bd5130c" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodePrev_NodeHasLeftSubtree)<sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev</ref>(&amp;nodes[2]));</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[2],<sp/><ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev</ref>(&amp;nodes[3]));</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="test-rbtree_8cpp_1a3bd59ecb465efa4192a1ee717cbf6a9a" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodePrev_NodeDoesNotHaveLeftNeighbor)<sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>1<sp/>3<sp/><sp/><sp/>5<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[7]);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[4],<sp/><ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev</ref>(&amp;nodes[5]));</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"></codeline>
+<codeline lineno="340"></codeline>
+<codeline lineno="346" refid="test-rbtree_8cpp_1a499c4b3a67d6dd224418c14a62730e42" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodeNext_OnlyRootNode)<sp/>{</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(<ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree)));</highlight></codeline>
+<codeline lineno="350"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="test-rbtree_8cpp_1a02b47ba18ef7e18ef45d4fc20c1cec2e" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodeNext_NodeHasRightSubtree)<sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[3],<sp/><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(&amp;nodes[2]));</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="test-rbtree_8cpp_1a13327e85c53571275ffb59023b996aa3" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodeNext_NodeDoesNotHaveRightNeighbor)<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>1<sp/>3<sp/><sp/><sp/>5<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[7]);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[4],<sp/><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(&amp;nodes[3]));</highlight></codeline>
+<codeline lineno="385"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"></codeline>
+<codeline lineno="391"></codeline>
+<codeline lineno="397" refid="test-rbtree_8cpp_1a62b9e948cba0e089f8db34883c43ff50" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_OnlyHead)<sp/>{</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="404"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411" refid="test-rbtree_8cpp_1a683c2531467b3dd9b8286dbdc3a5b2f3" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_HeadOneAdded)<sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="419"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427" refid="test-rbtree_8cpp_1a6f1ae19618ee1033700e17d9b5a857dd" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_ElementOneAdded)<sp/>{</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[0],<sp/><ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[0],<sp/><ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="435"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443" refid="test-rbtree_8cpp_1a28253c70275bbdc333d96d0995e3fcde" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_BothLeftAndRightSubtree)<sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="462"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470" refid="test-rbtree_8cpp_1a0ffb4fc373bfeffae5cd614d5f622549" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_NextIsRootNode)<sp/>{</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[2],<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="479"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486" refid="test-rbtree_8cpp_1ad2740239476676133e86c509bbf2c104" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_FixViolations)<sp/>{</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[9]);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[8]);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[7]);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[9]);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[3],<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(9U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="502"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509" refid="test-rbtree_8cpp_1a04aa36f3dcde82efad32c99d325b2929" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_FixViolationsCase2ConditionFalseOnLeftSubtree)<sp/>{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[8]);</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[9]);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[7]);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[6],<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(9U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="525"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532" refid="test-rbtree_8cpp_1a03216014b05b073a103fa4035485289e" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRemove_FixViolationsCase3And4OnLeftSubtree)<sp/>{</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0U,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="551"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"></codeline>
+<codeline lineno="557"></codeline>
+<codeline lineno="563" refid="test-rbtree_8cpp_1a1561ecc50c5a047b33bfc163969e09f9" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeContains_EmptyTreeContainsNull)<sp/>{</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains</ref>(&amp;tree,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="565"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="573" refid="test-rbtree_8cpp_1a4822c81eacab85a9c29cef70649e776b" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeContains_EmptyTreeContainsNotNull)<sp/>{</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains</ref>(&amp;tree,<sp/>&amp;nodes[0]));</highlight></codeline>
+<codeline lineno="575"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="582" refid="test-rbtree_8cpp_1a4713a5942a85c14c785235b207e884f7" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeContains_TreeWithOneContains)<sp/>{</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains</ref>(&amp;tree,<sp/>&amp;nodes[0]));</highlight></codeline>
+<codeline lineno="586"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594" refid="test-rbtree_8cpp_1a022d17b6df109522dc387b5e171bd5c4" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeContains_TreeWithOneDoesNotContain)<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains</ref>(&amp;tree,<sp/>&amp;nodes[1]));</highlight></codeline>
+<codeline lineno="598"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="605" refid="test-rbtree_8cpp_1adee4b6204230a67d1e4869e7e9e7fd75" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeContains_TreeWithManyContains)<sp/>{</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains</ref>(&amp;tree,<sp/>&amp;nodes[1]));</highlight></codeline>
+<codeline lineno="610"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618" refid="test-rbtree_8cpp_1a808fa72a29c385cdce93872e919e7ab6" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeContains_TreeWithManyDoesNotContain)<sp/>{</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains</ref>(&amp;tree,<sp/>&amp;nodes[3]));</highlight></codeline>
+<codeline lineno="623"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"></codeline>
+<codeline lineno="629"></codeline>
+<codeline lineno="635" refid="test-rbtree_8cpp_1a5d989e81e86e2b2e541001773f89394c" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFind_EmptyTree)<sp/>{</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>key<sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find</ref>(&amp;tree,<sp/>&amp;key));</highlight></codeline>
+<codeline lineno="638"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="645" refid="test-rbtree_8cpp_1a6b74bd6d9fb71de9ed8ff08732ae178d" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFind_RootOnly)<sp/>{</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[3],<sp/><ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find</ref>(&amp;tree,<sp/>&amp;keys[3]));</highlight></codeline>
+<codeline lineno="649"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656" refid="test-rbtree_8cpp_1aaeadc391f1a841b2986edca01df3d4ec" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFind_LeftChild)<sp/>{</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find</ref>(&amp;tree,<sp/>&amp;keys[1]));</highlight></codeline>
+<codeline lineno="661"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="668" refid="test-rbtree_8cpp_1afce6d6627a3a396a45ed641462870c60" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFind_RightChild)<sp/>{</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[2],<sp/><ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find</ref>(&amp;tree,<sp/>&amp;keys[2]));</highlight></codeline>
+<codeline lineno="673"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight></codeline>
+<codeline lineno="680" refid="test-rbtree_8cpp_1a3612fdd85ee45c9870e5019d1427bfe1" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFind_KeyNotInTree)<sp/>{</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>key<sp/>=<sp/>999;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find</ref>(&amp;tree,<sp/>&amp;key));</highlight></codeline>
+<codeline lineno="687"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"></codeline>
+<codeline lineno="693"></codeline>
+<codeline lineno="699" refid="test-rbtree_8cpp_1ab885f8e656d0e4672834b35c843cdbfb" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRoot_EmptyTree)<sp/>{</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="701"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="708" refid="test-rbtree_8cpp_1a18c4028341a817ae0506fd09765b5556" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRoot_OneNode)<sp/>{</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[0],<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="712"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="720" refid="test-rbtree_8cpp_1aa5a103eaa91780416c799622338cc038" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeRoot_LargerTree)<sp/>{</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[7]);</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[6]);</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"></highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>root<sp/>=<sp/><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(&amp;tree);</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[4],<sp/>root);</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>root-&gt;parent);</highlight></codeline>
+<codeline lineno="733"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"></highlight></codeline>
+<codeline lineno="736"></codeline>
+<codeline lineno="739"></codeline>
+<codeline lineno="745" refid="test-rbtree_8cpp_1a1dfb8790bd104e168c6c7e2e4cc793c0" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeLast_EmptyTree)<sp/>{</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="747"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"></highlight></codeline>
+<codeline lineno="754" refid="test-rbtree_8cpp_1a4edb9499c47953daeebfd9b6b8dc4fb0" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeLast_OnlyRoot)<sp/>{</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="757"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[0],<sp/><ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="758"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="765" refid="test-rbtree_8cpp_1ab7782f0d35e1496ee8d79031a6b730aa" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeLast_LargerTree)<sp/>{</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[5],<sp/><ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="773"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"></highlight></codeline>
+<codeline lineno="776"></codeline>
+<codeline lineno="779"></codeline>
+<codeline lineno="785" refid="test-rbtree_8cpp_1a15eb31b896a6a4ea90306ffd6e3fa525" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFirst_EmptyTree)<sp/>{</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="787"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="794" refid="test-rbtree_8cpp_1af286cf6a07fefbfded2e996f16153d92" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFirst_OnlyRoot)<sp/>{</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"></highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[0],<sp/><ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="798"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"></highlight></codeline>
+<codeline lineno="805" refid="test-rbtree_8cpp_1a324a1246425cf878f333ef5b382ebd2c" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeFirst_LargerTree)<sp/>{</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"></highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;nodes[1],<sp/><ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="813"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"></highlight></codeline>
+<codeline lineno="816"></codeline>
+<codeline lineno="819"></codeline>
+<codeline lineno="825" refid="test-rbtree_8cpp_1abf453798ecf20783e187d8b47b9bb012" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodeForeach_Null)<sp/>{</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="827"><highlight class="normal"></highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" kindref="member">rbnode_foreach</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>current_node)<sp/>{<sp/>++node_counter;<sp/>}</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"></highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="831"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"></highlight></codeline>
+<codeline lineno="840" refid="test-rbtree_8cpp_1a8df16fa3415a051ac3d36266fdf43ded" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbnodeForeach_NodeWithMiddleKeyValue)<sp/>{</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[5]);</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"></highlight></codeline>
+<codeline lineno="849"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" kindref="member">rbnode_foreach</ref>(&amp;nodes[2],<sp/>current_node)<sp/>{</highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/>POINTERS_EQUAL(&amp;nodes[i],<sp/>current_node);</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"></highlight></codeline>
+<codeline lineno="853"><highlight class="normal"><sp/><sp/><sp/><sp/>++node_counter;</highlight></codeline>
+<codeline lineno="854"><highlight class="normal"><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"></highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(4u,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="858"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"></highlight></codeline>
+<codeline lineno="861"></codeline>
+<codeline lineno="864"></codeline>
+<codeline lineno="870" refid="test-rbtree_8cpp_1a310d152e67e3ec98cc6126b0c124341d" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeForeach_EmptyTree)<sp/>{</highlight></codeline>
+<codeline lineno="871"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"></highlight></codeline>
+<codeline lineno="873"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" kindref="member">rbtree_foreach</ref>(&amp;tree,<sp/>current_node)<sp/>{<sp/>++node_counter;<sp/>}</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"></highlight></codeline>
+<codeline lineno="875"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>node_counter);</highlight></codeline>
+<codeline lineno="876"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884" refid="test-rbtree_8cpp_1ae36c5343625a0e73d318c408a4e02d04" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeForeach_TreeWithMany)<sp/>{</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[4]);</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="887"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>node_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight></codeline>
+<codeline lineno="892"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" kindref="member">rbtree_foreach</ref>(&amp;tree,<sp/>current_node)<sp/>{</highlight></codeline>
+<codeline lineno="893"><highlight class="normal"><sp/><sp/><sp/><sp/>POINTERS_EQUAL(&amp;nodes[node_counter],<sp/>current_node);</highlight></codeline>
+<codeline lineno="894"><highlight class="normal"><sp/><sp/><sp/><sp/>++node_counter;</highlight></codeline>
+<codeline lineno="895"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="896"><highlight class="normal"></highlight></codeline>
+<codeline lineno="897"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree),<sp/>node_counter);</highlight></codeline>
+<codeline lineno="898"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="899"><highlight class="normal"></highlight></codeline>
+<codeline lineno="906" refid="test-rbtree_8cpp_1a73fa3a9859ee50c024998f73d31384dd" refkind="member"><highlight class="normal"><ref refid="test-rbtree_8cpp_1a008da5b1afac06d867f8bab60d6cef35" kindref="member">TEST</ref>(Util_Rbtree,<sp/>RbtreeForeach_TreeWithManyRemoveCurrent)<sp/>{</highlight></codeline>
+<codeline lineno="907"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[3]);</highlight></codeline>
+<codeline lineno="908"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[2]);</highlight></codeline>
+<codeline lineno="909"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[0]);</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(&amp;tree,<sp/>&amp;nodes[1]);</highlight></codeline>
+<codeline lineno="911"><highlight class="normal"></highlight></codeline>
+<codeline lineno="912"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iteration_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="913"><highlight class="normal"><sp/><sp/><ref refid="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" kindref="member">rbtree_foreach</ref>(&amp;tree,<sp/>current_node)<sp/>{</highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_node-&gt;key<sp/>==<sp/>&amp;keys[1])<sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(&amp;tree,<sp/>current_node);</highlight></codeline>
+<codeline lineno="915"><highlight class="normal"></highlight></codeline>
+<codeline lineno="916"><highlight class="normal"><sp/><sp/><sp/><sp/>++iteration_counter;</highlight></codeline>
+<codeline lineno="917"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"></highlight></codeline>
+<codeline lineno="919"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(4u,<sp/>iteration_counter);</highlight></codeline>
+<codeline lineno="920"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(3u,<sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(&amp;tree));</highlight></codeline>
+<codeline lineno="921"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="922"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/util/test-rbtree.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcan__msg" kind="struct" language="C++" prot="public">
+    <compoundname>can_msg</compoundname>
+    <includes refid="msg_8h" local="no">msg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" prot="public" static="no" mutable="no">
+        <type>uint_least32_t</type>
+        <definition>uint_least32_t can_msg::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The identifier (11 or 29 bits, depending on the <ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299a655b60a1111aa11cc8008076864f583a" kindref="member">CAN_FLAG_IDE</ref> flag). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/msg.h" line="90" column="16" bodyfile="include/lely/can/msg.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__msg_1a34d655061b20b5c16113c8c444595d33" prot="public" static="no" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t can_msg::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>The flags (any combination of <ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299" kindref="member">can_flag</ref> items). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/msg.h" line="92" column="15" bodyfile="include/lely/can/msg.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__msg_1a65a02552407656ea310316cb76e919f7" prot="public" static="no" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t can_msg::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+<para>The number of bytes in <ref refid="structcan__msg_1a12e8389ecebff10d0b92b1a2c281e48f" kindref="member">data</ref> (or the requested number of bytes in case of a remote frame). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum value is 8 for CAN format frames and 64 for CAN FD format frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/msg.h" line="98" column="15" bodyfile="include/lely/can/msg.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__msg_1a12e8389ecebff10d0b92b1a2c281e48f" prot="public" static="no" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t can_msg::data[CAN_MSG_MAX_LEN]</definition>
+        <argsstring>[CAN_MSG_MAX_LEN]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The frame payload (in case of a data frame). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/msg.h" line="100" column="15" bodyfile="include/lely/can/msg.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CAN or CAN FD format frame. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/can/msg.h" line="88" column="1" bodyfile="include/lely/can/msg.h" bodystart="88" bodyend="101"/>
+    <listofallmembers>
+      <member refid="structcan__msg_1a12e8389ecebff10d0b92b1a2c281e48f" prot="public" virt="non-virtual"><scope>can_msg</scope><name>data</name></member>
+      <member refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" prot="public" virt="non-virtual"><scope>can_msg</scope><name>flags</name></member>
+      <member refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" prot="public" virt="non-virtual"><scope>can_msg</scope><name>id</name></member>
+      <member refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" prot="public" virt="non-virtual"><scope>can_msg</scope><name>len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

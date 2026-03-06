@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOverride_1_1CallWrapper" kind="class" language="C++" prot="public">
+    <compoundname>Override::CallWrapper</compoundname>
+    <includes refid="call-wrapper_8hpp" local="no">call-wrapper.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOverride_1_1CallWrapper_1a917c8441d0ff04352b60c136c9b36ed1" prot="private" static="no" mutable="no">
+        <type>const F</type>
+        <definition>const F Override::CallWrapper&lt; F &gt;::fun_</definition>
+        <argsstring></argsstring>
+        <name>fun_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/call-wrapper.hpp" line="65" column="11" bodyfile="unit-tests/libtest/override/call-wrapper.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOverride_1_1CallWrapper_1af5ed08a6536f9e15a9b57d2c81c4e92a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Override::CallWrapper&lt; F &gt;::CallWrapper</definition>
+        <argsstring>(F f)</argsstring>
+        <name>CallWrapper</name>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/call-wrapper.hpp" line="46" column="12" bodyfile="unit-tests/libtest/override/call-wrapper.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverride_1_1CallWrapper_1a9628a1313af49f0ec0d873bcd0c57bde" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Override::CallWrapper&lt; F &gt;::IsCallValid</definition>
+        <argsstring>(int32_t &amp;valid_calls) const</argsstring>
+        <name>IsCallValid</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/call-wrapper.hpp" line="50" column="3" bodyfile="unit-tests/libtest/override/call-wrapper.hpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverride_1_1CallWrapper_1a8d7019a919856fcd5388b6748d707f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Override::CallWrapper&lt; F &gt;::call</definition>
+        <argsstring>(Args &amp;&amp;... args) -&gt; typename std::result_of&lt; F(Args...)&gt;::type</argsstring>
+        <name>call</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/call-wrapper.hpp" line="60" column="3" bodyfile="unit-tests/libtest/override/call-wrapper.hpp" bodystart="60" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic wrapper of call to a function. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows to limit successful calls to wrapped method. Supports dynamic libraries calls and linker wraps (__wrap). </para>
+    </detaileddescription>
+    <location file="unit-tests/libtest/override/call-wrapper.hpp" line="40" column="1" bodyfile="unit-tests/libtest/override/call-wrapper.hpp" bodystart="40" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classOverride_1_1CallWrapper_1a8d7019a919856fcd5388b6748d707f62" prot="public" virt="non-virtual"><scope>Override::CallWrapper</scope><name>call</name></member>
+      <member refid="classOverride_1_1CallWrapper_1af5ed08a6536f9e15a9b57d2c81c4e92a" prot="public" virt="non-virtual"><scope>Override::CallWrapper</scope><name>CallWrapper</name></member>
+      <member refid="classOverride_1_1CallWrapper_1a917c8441d0ff04352b60c136c9b36ed1" prot="private" virt="non-virtual"><scope>Override::CallWrapper</scope><name>fun_</name></member>
+      <member refid="classOverride_1_1CallWrapper_1a9628a1313af49f0ec0d873bcd0c57bde" prot="public" virt="non-virtual"><scope>Override::CallWrapper</scope><name>IsCallValid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

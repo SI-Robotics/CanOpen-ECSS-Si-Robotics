@@ -1,0 +1,676 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__nmt__srv" kind="struct" language="C++" prot="public">
+    <compoundname>co_nmt_srv</compoundname>
+    <includes refid="nmt__srv_8h" local="no">nmt_srv.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__nmt__srv_1a9fd9556bb030296878da71094044704f" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+        <definition>co_nmt_t* co_nmt_srv::nmt</definition>
+        <argsstring></argsstring>
+        <name>nmt</name>
+        <briefdescription>
+<para>A pointer to the NMT master/slave service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="32" column="10" bodyfile="lib/co/nmt_srv.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1a98d31ecd05c2503a37141b08e55c2dff" prot="public" static="no" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t co_nmt_srv::set</definition>
+        <argsstring></argsstring>
+        <name>set</name>
+        <briefdescription>
+<para>The currently enabled CANopen services (any combination of <ref refid="nmt__srv_8h_1aedf771f00d1148f241172e48d061a414" kindref="member">CO_NMT_SRV_PDO</ref>, <ref refid="nmt__srv_8h_1a6842c2a050deaa97bcafff246b34e33f" kindref="member">CO_NMT_SRV_SDO</ref>, <ref refid="nmt__srv_8h_1ae5ab6781c58491f3d2ff33baebb349dc" kindref="member">CO_NMT_SRV_SYNC</ref>, <ref refid="nmt__srv_8h_1a93cf0052dcc03eef9d3fd155dd8dd5de" kindref="member">CO_NMT_SRV_TIME</ref> and <ref refid="nmt__srv_8h_1ab655de926014d0fcb866d76739d9e554" kindref="member">CO_NMT_SRV_EMCY</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="38" column="15" bodyfile="lib/co/nmt_srv.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1a49ff89228b1f1376dce8a86e58ed40be" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1abc83397110d6ebbc0ccdd3267aaeb277" kindref="member">co_rpdo_t</ref> **</type>
+        <definition>co_rpdo_t** co_nmt_srv::rpdos</definition>
+        <argsstring></argsstring>
+        <name>rpdos</name>
+        <briefdescription>
+<para>An array of pointers to the Receive-PDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="41" column="11" bodyfile="lib/co/nmt_srv.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1af1bb1f0b6f5c780c087d563e5e5eaaaf" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_nmt_srv::nrpdo</definition>
+        <argsstring></argsstring>
+        <name>nrpdo</name>
+        <briefdescription>
+<para>The number of Receive-PDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="43" column="17" bodyfile="lib/co/nmt_srv.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1a220389d10a3811ff2a2800b338c80cc3" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a34d0cc809c356b6a6d6cdc65ec83b28a" kindref="member">co_tpdo_t</ref> **</type>
+        <definition>co_tpdo_t** co_nmt_srv::tpdos</definition>
+        <argsstring></argsstring>
+        <name>tpdos</name>
+        <briefdescription>
+<para>An array of pointers to the Transmit-PDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="47" column="11" bodyfile="lib/co/nmt_srv.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1a229af54faedd241e1060d2122417e449" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_nmt_srv::ntpdo</definition>
+        <argsstring></argsstring>
+        <name>ntpdo</name>
+        <briefdescription>
+<para>The number of Transmit-PDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="49" column="17" bodyfile="lib/co/nmt_srv.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1a2880d779753e1632ef428239ba15085c" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> **</type>
+        <definition>co_ssdo_t** co_nmt_srv::ssdos</definition>
+        <argsstring></argsstring>
+        <name>ssdos</name>
+        <briefdescription>
+<para>An array of pointers to the Server-SDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="52" column="11" bodyfile="lib/co/nmt_srv.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1a81f30fa6b024897bd1d866d0ff272eb3" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_nmt_srv::nssdo</definition>
+        <argsstring></argsstring>
+        <name>nssdo</name>
+        <briefdescription>
+<para>The number of Server-SDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="54" column="16" bodyfile="lib/co/nmt_srv.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1ad580b3a4cc2c38b47e3471cbb2009d8d" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> **</type>
+        <definition>co_csdo_t** co_nmt_srv::csdos</definition>
+        <argsstring></argsstring>
+        <name>csdos</name>
+        <briefdescription>
+<para>An array of pointers to the Client-SDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="57" column="11" bodyfile="lib/co/nmt_srv.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1a5f5a4eee123da98796905a3623c5348f" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_nmt_srv::ncsdo</definition>
+        <argsstring></argsstring>
+        <name>ncsdo</name>
+        <briefdescription>
+<para>The number of Client-SDO services. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="59" column="16" bodyfile="lib/co/nmt_srv.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1af73ff6afafb8d4a554d2f17edb6d84d1" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a068d4a2b91ca4c31f876ccb32043ca5f" kindref="member">co_sync_t</ref> *</type>
+        <definition>co_sync_t* co_nmt_srv::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <briefdescription>
+<para>A pointer to the SYNC producer/consumer service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="63" column="11" bodyfile="lib/co/nmt_srv.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__srv_1aef8ad83a4ac321774820df23e3818eeb" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a47957d5539c985907f26ff9aaa964f3a" kindref="member">co_emcy_t</ref> *</type>
+        <definition>co_emcy_t* co_nmt_srv::emcy</definition>
+        <argsstring></argsstring>
+        <name>emcy</name>
+        <briefdescription>
+<para>A pointer to the EMCY producer/consumer service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_srv.h" line="71" column="11" bodyfile="lib/co/nmt_srv.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen NMT service manager. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_nmt</label>
+        <link refid="structco__nmt"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv_000</edgelabel>
+          <edgelabel>recv_700</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>rdn</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>slaves</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>cs_timer</edgelabel>
+          <edgelabel>ec_timer</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>srv</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>begin</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>hbs</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>co_sdo_par</label>
+        <link refid="structco__sdo__par"/>
+      </node>
+      <node id="33">
+        <label>co_obj</label>
+        <link refid="structco__obj"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>co_nmt_rdn</label>
+        <link refid="structco__nmt__rdn"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>bus_toggle_timer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>co_sync</label>
+        <link refid="structco__sync"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>co_nmt_state</label>
+        <link refid="structco__nmt__state"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>on_cs</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>co_emcy</label>
+        <link refid="structco__emcy"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>obj_1003</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>nodes</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>begin</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>sub_1001_00</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>msgs</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>co_nmt_hb</label>
+        <link refid="structco__nmt__hb"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>can_msg</label>
+        <link refid="structcan__msg"/>
+      </node>
+      <node id="15">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>co_emcy_node</label>
+        <link refid="structco__emcy__node"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>co_sub</label>
+        <link refid="structco__sub"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>max</edgelabel>
+          <edgelabel>min</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>can_buf</label>
+        <link refid="structcan__buf"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>co_emcy_msg</label>
+        <link refid="structco__emcy__msg"/>
+      </node>
+      <node id="30">
+        <label>co_ssdo</label>
+        <link refid="structco__ssdo"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>co_sdo_req</label>
+        <link refid="structco__sdo__req"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>membuf</edgelabel>
+          <edgelabel>membuf_</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>co_csdo</label>
+        <link refid="structco__csdo"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>dn_buf</edgelabel>
+          <edgelabel>up_buf</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>dn_dcf</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>co_csdo_dn_dcf</label>
+        <link refid="structco__csdo__dn__dcf"/>
+      </node>
+      <node id="23">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="1">
+        <label>co_nmt_srv</label>
+        <link refid="structco__nmt__srv"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>sync</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>tpdos</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>rpdos</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>csdos</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>ssdos</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>emcy</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>co_nmt_slave</label>
+        <link refid="structco__nmt__slave"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>nmt</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>co_pdo_map_par</label>
+        <link refid="structco__pdo__map__par"/>
+      </node>
+      <node id="25">
+        <label>co_rpdo</label>
+        <link refid="structco__rpdo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>timer_event</edgelabel>
+          <edgelabel>timer_swnd</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>comm</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>co_pdo_comm_par</label>
+        <link refid="structco__pdo__comm__par"/>
+      </node>
+      <node id="28">
+        <label>co_csdo_state</label>
+        <link refid="structco__csdo__state"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>co_tpdo</label>
+        <link refid="structco__tpdo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>timer_event</edgelabel>
+          <edgelabel>timer_swnd</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>comm</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>co_val</label>
+        <link refid="unionco__val"/>
+      </node>
+      <node id="9">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="11">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>co_ssdo_state</label>
+        <link refid="structco__ssdo__state"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/nmt_srv.h" line="30" column="1" bodyfile="lib/co/nmt_srv.h" bodystart="30" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structco__nmt__srv_1ad580b3a4cc2c38b47e3471cbb2009d8d" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>csdos</name></member>
+      <member refid="structco__nmt__srv_1aef8ad83a4ac321774820df23e3818eeb" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>emcy</name></member>
+      <member refid="structco__nmt__srv_1a5f5a4eee123da98796905a3623c5348f" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>ncsdo</name></member>
+      <member refid="structco__nmt__srv_1a9fd9556bb030296878da71094044704f" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>nmt</name></member>
+      <member refid="structco__nmt__srv_1af1bb1f0b6f5c780c087d563e5e5eaaaf" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>nrpdo</name></member>
+      <member refid="structco__nmt__srv_1a81f30fa6b024897bd1d866d0ff272eb3" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>nssdo</name></member>
+      <member refid="structco__nmt__srv_1a229af54faedd241e1060d2122417e449" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>ntpdo</name></member>
+      <member refid="structco__nmt__srv_1a49ff89228b1f1376dce8a86e58ed40be" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>rpdos</name></member>
+      <member refid="structco__nmt__srv_1a98d31ecd05c2503a37141b08e55c2dff" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>set</name></member>
+      <member refid="structco__nmt__srv_1a2880d779753e1632ef428239ba15085c" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>ssdos</name></member>
+      <member refid="structco__nmt__srv_1af73ff6afafb8d4a554d2f17edb6d84d1" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>sync</name></member>
+      <member refid="structco__nmt__srv_1a220389d10a3811ff2a2800b338c80cc3" prot="public" virt="non-virtual"><scope>co_nmt_srv</scope><name>tpdos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

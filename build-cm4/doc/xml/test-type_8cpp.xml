@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-type_8cpp" kind="file" language="C++">
+    <compoundname>test-type.cpp</compoundname>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="type_8h" local="no">lely/co/type.h</includes>
+    <includes local="no">lely/co/def/type.def</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stdbool.h</label>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/co/test-type.cpp</label>
+        <link refid="test-type_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="3">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>co_type_is_basic()</header>
+      <memberdef kind="function" id="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeIsBasic_True)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeIsBasic_True</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic()</ref> is called with a basic DEFTYPE</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="41" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="41" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="test-type_8cpp_1a5ce12015faac86043abdedb443453c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeIsBasic_False)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeIsBasic_False</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic()</ref> is called with a non-basic DEFTYPE</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="67" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="67" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_type_is_array()</header>
+      <memberdef kind="function" id="test-type_8cpp_1ae5e5e104376294c9accc92da83641223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeIsArray_True)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeIsArray_True</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array()</ref> is called with an array DEFTYPE</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="93" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="test-type_8cpp_1a55d440430cea7dbfb6684b77000d8167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeIsArray_False)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeIsArray_False</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array()</ref> is called with a non-array DEFTYPE</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="105" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="105" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_type_sizeof()</header>
+      <memberdef kind="function" id="test-type_8cpp_1a03f388f7ac09ffc635fcfed4652e49d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeSizeof)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeSizeof</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1ab71cd345509aafa9a3c38bf1e54970dc" kindref="member">co_type_sizeof()</ref> is called with a DEFTYPE</para>
+<para><bold>Then</bold> the size of the type is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="145" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="145" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="test-type_8cpp_1a320c058417bbb4a483bb1d4fc01d1778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeSizeof_InvalidType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeSizeof_InvalidType</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1ab71cd345509aafa9a3c38bf1e54970dc" kindref="member">co_type_sizeof()</ref> is called with an invalid DEFTYPE</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="157" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="157" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_type_alignof()</header>
+      <memberdef kind="function" id="test-type_8cpp_1a0e523d7c2adb3eec5532f88c6922a9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeAlignof)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeAlignof</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1a9a2cd68899bfae485e9139aa80c9918e" kindref="member">co_type_alignof()</ref> is called with a DEFTYPE</para>
+<para><bold>Then</bold> alignment of the type is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="171" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="test-type_8cpp_1a7f1699b45412e6eed8acf9108741fd9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Type, CoTypeAlignof_InvalidType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <param>
+          <type>CoTypeAlignof_InvalidType</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="type_8h_1a9a2cd68899bfae485e9139aa80c9918e" kindref="member">co_type_alignof()</ref> is called with an invalid DEFTYPE</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="183" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="183" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="test-type_8cpp_1a7b3decac92180f25af2d0768a16d53e8" prot="public" static="no">
+        <name>LELY_CO_DEFINE_TYPE</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <initializer>  CHECK_EQUAL(sizeof(co_##b##_t), <ref refid="type_8c_1ab71cd345509aafa9a3c38bf1e54970dc" kindref="member">co_type_sizeof</ref>(CO_DEFTYPE_##a));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="146" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="test-type_8cpp_1a7b3decac92180f25af2d0768a16d53e8" prot="public" static="no">
+        <name>LELY_CO_DEFINE_TYPE</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <initializer>  CHECK_EQUAL(alignof(co_##b##_t), <ref refid="type_8c_1a9a2cd68899bfae485e9139aa80c9918e" kindref="member">co_type_alignof</ref>(CO_DEFTYPE_##a));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="172" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-type_8cpp_1ac8758020608ec498f189c798de835cff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(CO_Type)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>CO_Type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-type.cpp" line="31" column="1" bodyfile="unit-tests/co/test-type.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="type_8h" kindref="compound">lely/co/type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(CO_Type)<sp/>{<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>INVALID_TYPE<sp/>=<sp/>0xffff;<sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"></codeline>
+<codeline lineno="41" refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeIsBasic_True)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a98820ad70e34bb89ad1fcbae2c52a818" kindref="member">CO_DEFTYPE_BOOLEAN</ref>));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a6ed5ecd83f53098398f8ecec3435fcca" kindref="member">CO_DEFTYPE_INTEGER8</ref>));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1ada167a98bcbbb118a3ac4bbdd5d0c066" kindref="member">CO_DEFTYPE_INTEGER16</ref>));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1ab71d81006eab2b17f22579c470454d2a" kindref="member">CO_DEFTYPE_INTEGER32</ref>));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a0c98cf526ee59d8b97bfba5dc34b1b27" kindref="member">CO_DEFTYPE_UNSIGNED16</ref>));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1ae8d3ba3a791c6b07d00abd17dc103a1a" kindref="member">CO_DEFTYPE_REAL32</ref>));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a92413efa53a6ba8477667b340bb85f7a" kindref="member">CO_DEFTYPE_REAL64</ref>));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a99dda0a5b8c4a15f3efc95b860f66532" kindref="member">CO_DEFTYPE_INTEGER40</ref>));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a2b2bbeb8a708f109fe5897a18aa01cdd" kindref="member">CO_DEFTYPE_INTEGER48</ref>));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a622c4e91f0c8b5f4c49c722a2c5058cd" kindref="member">CO_DEFTYPE_INTEGER56</ref>));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1ac6b4e5430f145e29d4831b1087994297" kindref="member">CO_DEFTYPE_INTEGER64</ref>));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a86f3932ff0615487c4b1ab2ab0e1bc16" kindref="member">CO_DEFTYPE_UNSIGNED24</ref>));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a2dd4db5c1cc4fd6870e02082138e6488" kindref="member">CO_DEFTYPE_UNSIGNED40</ref>));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a2ae94c8d0b18be5da43991d7ebb9f2dd" kindref="member">CO_DEFTYPE_UNSIGNED48</ref>));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1aca2ef28001de5e6b84a4d51ef6013202" kindref="member">CO_DEFTYPE_UNSIGNED56</ref>));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a63126b14c1ef697740e26bb9f701623f" kindref="member">CO_DEFTYPE_UNSIGNED64</ref>));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="test-type_8cpp_1a5ce12015faac86043abdedb443453c70" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeIsBasic_False)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1aaa7432ac38c093c4b320337332f215ca" kindref="member">CO_DEFTYPE_TIME_OF_DAY</ref>));</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1af3a5bfbc2ce18f97716b1ea5afc26761" kindref="member">CO_DEFTYPE_TIME_DIFF</ref>));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CO_DEFTYPE_TIME_SCET</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(CO_DEFTYPE_TIME_SCET));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CO_DEFTYPE_TIME_SUTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(CO_DEFTYPE_TIME_SUTC));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a2d5250b754d68c8726780c1fd6e89c51" kindref="member">CO_DEFTYPE_VISIBLE_STRING</ref>));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1adba0c46ebd4bd9a599a946f1ff49702c" kindref="member">CO_DEFTYPE_OCTET_STRING</ref>));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a0650c33e792cda5a17428f5d7a25b5ff" kindref="member">CO_DEFTYPE_UNICODE_STRING</ref>));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(<ref refid="type_8h_1a7822f086760550587d8c7a932c8c8298" kindref="member">CO_DEFTYPE_DOMAIN</ref>));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1ad8d439c5145e56aeba18a9a7117b5027" kindref="member">co_type_is_basic</ref>(INVALID_TYPE));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"></codeline>
+<codeline lineno="87"></codeline>
+<codeline lineno="93" refid="test-type_8cpp_1ae5e5e104376294c9accc92da83641223" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeIsArray_True)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a2d5250b754d68c8726780c1fd6e89c51" kindref="member">CO_DEFTYPE_VISIBLE_STRING</ref>));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1adba0c46ebd4bd9a599a946f1ff49702c" kindref="member">CO_DEFTYPE_OCTET_STRING</ref>));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a0650c33e792cda5a17428f5d7a25b5ff" kindref="member">CO_DEFTYPE_UNICODE_STRING</ref>));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a7822f086760550587d8c7a932c8c8298" kindref="member">CO_DEFTYPE_DOMAIN</ref>));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="test-type_8cpp_1a55d440430cea7dbfb6684b77000d8167" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeIsArray_False)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a98820ad70e34bb89ad1fcbae2c52a818" kindref="member">CO_DEFTYPE_BOOLEAN</ref>));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a6ed5ecd83f53098398f8ecec3435fcca" kindref="member">CO_DEFTYPE_INTEGER8</ref>));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1ada167a98bcbbb118a3ac4bbdd5d0c066" kindref="member">CO_DEFTYPE_INTEGER16</ref>));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1ab71d81006eab2b17f22579c470454d2a" kindref="member">CO_DEFTYPE_INTEGER32</ref>));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a0c98cf526ee59d8b97bfba5dc34b1b27" kindref="member">CO_DEFTYPE_UNSIGNED16</ref>));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1ae8d3ba3a791c6b07d00abd17dc103a1a" kindref="member">CO_DEFTYPE_REAL32</ref>));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a92413efa53a6ba8477667b340bb85f7a" kindref="member">CO_DEFTYPE_REAL64</ref>));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a99dda0a5b8c4a15f3efc95b860f66532" kindref="member">CO_DEFTYPE_INTEGER40</ref>));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a2b2bbeb8a708f109fe5897a18aa01cdd" kindref="member">CO_DEFTYPE_INTEGER48</ref>));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a622c4e91f0c8b5f4c49c722a2c5058cd" kindref="member">CO_DEFTYPE_INTEGER56</ref>));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1ac6b4e5430f145e29d4831b1087994297" kindref="member">CO_DEFTYPE_INTEGER64</ref>));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a86f3932ff0615487c4b1ab2ab0e1bc16" kindref="member">CO_DEFTYPE_UNSIGNED24</ref>));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a2dd4db5c1cc4fd6870e02082138e6488" kindref="member">CO_DEFTYPE_UNSIGNED40</ref>));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a2ae94c8d0b18be5da43991d7ebb9f2dd" kindref="member">CO_DEFTYPE_UNSIGNED48</ref>));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1aca2ef28001de5e6b84a4d51ef6013202" kindref="member">CO_DEFTYPE_UNSIGNED56</ref>));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1a63126b14c1ef697740e26bb9f701623f" kindref="member">CO_DEFTYPE_UNSIGNED64</ref>));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1aaa7432ac38c093c4b320337332f215ca" kindref="member">CO_DEFTYPE_TIME_OF_DAY</ref>));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(<ref refid="type_8h_1af3a5bfbc2ce18f97716b1ea5afc26761" kindref="member">CO_DEFTYPE_TIME_DIFF</ref>));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CO_DEFTYPE_TIME_SCET</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(CO_DEFTYPE_TIME_SCET));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CO_DEFTYPE_TIME_SUTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(CO_DEFTYPE_TIME_SUTC));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="type_8h_1a2c82976d2059b4082eb0f5a1379ac952" kindref="member">co_type_is_array</ref>(INVALID_TYPE));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"></codeline>
+<codeline lineno="139"></codeline>
+<codeline lineno="145" refid="test-type_8cpp_1a03f388f7ac09ffc635fcfed4652e49d9" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeSizeof)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_DEFINE_TYPE(a,<sp/>b,<sp/>c,<sp/>d)<sp/>\</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"><sp/><sp/>CHECK_EQUAL(sizeof(co_##b##_t),<sp/>co_type_sizeof(CO_DEFTYPE_##a));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/co/def/type.def&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_CO_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="test-type_8cpp_1a320c058417bbb4a483bb1d4fc01d1778" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeSizeof_InvalidType)<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="type_8h_1ab71cd345509aafa9a3c38bf1e54970dc" kindref="member">co_type_sizeof</ref>(INVALID_TYPE));</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"></codeline>
+<codeline lineno="165"></codeline>
+<codeline lineno="171" refid="test-type_8cpp_1a0e523d7c2adb3eec5532f88c6922a9c3" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeAlignof)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_DEFINE_TYPE(a,<sp/>b,<sp/>c,<sp/>d)<sp/>\</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"><sp/><sp/>CHECK_EQUAL(alignof(co_##b##_t),<sp/>co_type_alignof(CO_DEFTYPE_##a));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/co/def/type.def&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(build/include)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_CO_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="test-type_8cpp_1a7f1699b45412e6eed8acf9108741fd9c" refkind="member"><highlight class="normal"><ref refid="test-type_8cpp_1aeb593750cf47615b2d98d353a4128827" kindref="member">TEST</ref>(CO_Type,<sp/>CoTypeAlignof_InvalidType)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/><ref refid="type_8h_1a9a2cd68899bfae485e9139aa80c9918e" kindref="member">co_type_alignof</ref>(INVALID_TYPE));</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/co/test-type.cpp"/>
+  </compounddef>
+</doxygen>

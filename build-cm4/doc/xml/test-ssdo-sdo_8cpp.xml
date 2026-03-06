@@ -1,0 +1,1427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-ssdo-sdo_8cpp" kind="file" language="C++">
+    <compoundname>test-ssdo-sdo.cpp</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="csdo_8h" local="no">lely/co/csdo.h</includes>
+    <includes refid="ssdo_8h" local="no">lely/co/ssdo.h</includes>
+    <includes refid="include_2lely_2co_2sdo_8h" local="no">lely/co/sdo.h</includes>
+    <includes refid="default_8hpp" local="no">libtest/allocators/default.hpp</includes>
+    <includes refid="lely-cpputest-ext_8hpp" local="no">libtest/tools/lely-cpputest-ext.hpp</includes>
+    <includes refid="lely-unit-test_8hpp" local="no">libtest/tools/lely-unit-test.hpp</includes>
+    <includes refid="dev_8hpp" local="yes">holder/dev.hpp</includes>
+    <includes refid="obj_8hpp" local="yes">holder/obj.hpp</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/co/csdo.h</label>
+        <link refid="csdo_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stdbool.h</label>
+      </node>
+      <node id="35">
+        <label>co-sub-up-ind.hpp</label>
+        <link refid="co-sub-up-ind_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>assert.h</label>
+      </node>
+      <node id="22">
+        <label>lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>sdo-init-expected-data.hpp</label>
+        <link refid="sdo-init-expected-data_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>obj-init/obj-init.hpp</label>
+        <link refid="obj-init_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>sdo-create-message.hpp</label>
+        <link refid="sdo-create-message_8hpp"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>cstdint</label>
+      </node>
+      <node id="12">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>pool.hpp</label>
+        <link refid="pool_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>holder/dev.hpp</label>
+        <link refid="dev_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="30">
+        <label>cassert</label>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>libtest/allocators/default.hpp</label>
+        <link refid="default_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>lely/co/obj.h</label>
+        <link refid="obj_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>limits.h</label>
+      </node>
+      <node id="9">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>lely/co/detail/dev.h</label>
+        <link refid="detail_2dev_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>co-csdo-dn-con.hpp</label>
+        <link refid="co-csdo-dn-con_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>libtest/tools/lely-cpputest-ext.hpp</label>
+        <link refid="lely-cpputest-ext_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>holder.hpp</label>
+        <link refid="holder_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vector</label>
+      </node>
+      <node id="34">
+        <label>co-sub-dn-ind.hpp</label>
+        <link refid="co-sub-dn-ind_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>obj.hpp</label>
+        <link refid="obj_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>sdo-consts.hpp</label>
+        <link refid="sdo-consts_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>lely/co/val.h</label>
+        <link refid="val_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>lely/co/dev.h</label>
+        <link refid="dev_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>common/co-types.hpp</label>
+        <link refid="co-types_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>lely/co/ssdo.h</label>
+        <link refid="ssdo_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>lely/co/def/basic.def</label>
+      </node>
+      <node id="45">
+        <label>lely/util/rbtree.h</label>
+        <link refid="rbtree_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="33">
+        <label>co-csdo-up-con.hpp</label>
+        <link refid="co-csdo-up-con_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>lely/co/detail/obj.h</label>
+        <link refid="detail_2obj_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>lely/util/mempool.h</label>
+        <link refid="mempool_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>sub.hpp</label>
+        <link refid="sub_8hpp"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>libtest/tools/lely-unit-test.hpp</label>
+        <link refid="lely-unit-test_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>cstring</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>SSDO service: object 0x1200 modification using SDO</header>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, NonZeroAbortCode)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>NonZeroAbortCode</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to a device (co_dev_t), the object dictionary contains the SDO Server Parameter object (0x1200) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> the download indication function for the object 0x1200 is called with a non-zero abort code</para>
+<para><bold>Then</bold> the same abort code value is returned, nothing is changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="152" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="152" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a47f513ad13c93e0e29daf472411af32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadHighestSubidx)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadHighestSubidx</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a value is downloaded to the server parameter &quot;Highest sub-index supported&quot; entry (idx: 0x1200, subidx: 0x00)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with CO_SDO_AC_NO_WRITE abort code <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="172" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="172" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a1c011afd81a050d033a9c8cf0502d7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_TooManyBytes)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_TooManyBytes</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a value longer than 4 bytes is downloaded to the server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with CO_SDO_AC_TYPE_LEN_HI abort code, COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="193" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="193" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a0b4068635577ea0361412bf9ef5140ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_SameAsOld)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_SameAsOld</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted with a valid server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> the same COB-ID value is downloaded to the server parameter &quot;COB-ID
+      client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 abort code, COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="218" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="218" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a1a3c11f118bb68e01a2fc4f6fbf22df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_OldValid_NewValid_NewId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_OldValid_NewValid_NewId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted with a valid server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new valid COB-ID with a new CAN-ID is downloaded to the server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with CO_SDO_AC_PARAM_VAL as abort code and the COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="244" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="244" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a93af8e78b973cad4eb1584a74993bc72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_OldValid_NewInvalid_NewId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_OldValid_NewInvalid_NewId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted with a valid server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new invalid COB-ID with a new CAN-ID is downloaded to the server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and the COB-ID is changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="272" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="272" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1ac973b3ba8b0f6034020096570a7f317a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_OldInvalid_NewValid_NewId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_OldInvalid_NewValid_NewId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted with an invalid server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new valid COB-ID with a new CAN-ID is downloaded to the server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and the COB-ID is changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="300" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="300" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a82fb07c0cfb7cf3a79812e2b4ae5b2b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_OldValid_NewValid_OldId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_OldValid_NewValid_OldId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new valid COB-ID with an old CAN-ID is downloaded to the server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and the COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="331" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="331" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a901c268023288548377442b6daf0090b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_OldValid_NewInvalid_NewIdExtended)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_OldValid_NewInvalid_NewIdExtended</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new invalid COB-ID with a new extended CAN-ID is downloaded to the server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with CO_SDO_AC_PARAM_VAL as abort code and the COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="356" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="356" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a00996c23c65219d632327d306d10926a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadReqCobid_OldValid_NewInvalid_OldIdExtended)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadReqCobid_OldValid_NewInvalid_OldIdExtended</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted with a valid server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new invalid COB-ID with a new CAN-ID with an old value but extended flag set is downloaded to the server parameter &quot;COB-ID client -&gt; server (rx)&quot; entry (idx: 0x1200, subidx: 0x01)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and requested COB-ID is set <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="384" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="384" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a599d2cc060ca3c5c9ff10e269bf1e055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadResCobid_SameAsOld)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadResCobid_SameAsOld</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> the same COB-ID value is downloaded to the server parameter &quot;COB-ID
+      server -&gt; client (tx)&quot; entry (idx: 0x1200, subidx: 0x02)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and the COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="410" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="410" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a83339cd97b09d3a988bb167236f9d33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadResCobid_OldValid_NewValid_NewId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadResCobid_OldValid_NewValid_NewId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new valid COB-ID with a new CAN-ID is downloaded to the server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry (idx: 0x1200, subidx: 0x02)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with CO_SDO_AC_PARAM_VAL as abort code and the COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="436" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="436" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1acedc6af1c86f9aad196412a7a69f8984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadResCobid_OldValid_NewInvalid_NewId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadResCobid_OldValid_NewInvalid_NewId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new invalid COB-ID with a new CAN-ID is downloaded to the server parameter &quot;server -&gt; client (tx)&quot; entry (idx: 0x1200, subidx: 0x02)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and requested COB-ID is set <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="464" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="464" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1af678bb6d989b3800ee955f1d2e6db50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadResCobid_OldInvalid_NewValid_NewId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadResCobid_OldInvalid_NewValid_NewId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and an invalid server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new valid COB-ID with a new CAN-ID is downloaded to the server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry (idx: 0x1200, subidx: 0x02)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and requested COB-ID is set <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="492" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="492" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a049fdf2cb97b7f1473c8ee9e603b5bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadResCobid_OldValid_NewValid_OldIdExtended)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadResCobid_OldValid_NewValid_OldIdExtended</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new valid COB-ID with a new CAN-ID with an old value but extended flag set is downloaded to the server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry (idx: 0x1200, subidx: 0x02)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and requested COB-ID is set <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="ssdo_8c_1aadafac91d33adb47dd2355350a30567a" kindref="member">co_ssdo_update()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="524" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="524" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a933f2d4a38a3519277d389806fc599b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadResCobid_OldValid_NewInvalid_OldId)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadResCobid_OldValid_NewInvalid_OldId</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new invalid COB-ID with an old CAN-ID is downloaded to the server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry (idx: 0x1200, subidx: 0x02)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and requested COB-ID is set <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="550" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="550" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1abc7e8810f1f3c911421146f9014b27f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadResCobid_OldValid_NewInvalid_OldIdExtended)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadResCobid_OldValid_NewInvalid_OldIdExtended</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a new invalid COB-ID with a CAN-ID with an old value but extended flag set is downloaded to the server parameter &quot;COB-ID server -&gt; client (tx)&quot; entry (idx: 0x1200, subidx: 0x02)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and requested COB-ID is set <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="578" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="578" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1abf7a6e4d89a188bc8a13688145eae0a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadNodeId_SameAsOld)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadNodeId_SameAsOld</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid Node-ID </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> Node-ID with the same value as the current Node-ID is downloaded to the server parameter &quot;Node-ID of the SDO client&quot; entry (idx: 0x1200, subidx: 0x03)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and the COB-ID is not changed <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u8() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="604" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="604" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1ae7064809f095dcfbb57a89f3a240162a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadNodeId_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadNodeId_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted and a valid Node-ID </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> Node-ID new value is downloaded to the server parameter &quot;Node-ID of
+      the SDO client&quot; entry (idx: 0x1200, subidx: 0x03)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with 0 as abort code and the requested Node-ID value is set <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> <linebreak/>
+calls co_sub_get_val_u8() <linebreak/>
+calls <ref refid="obj_8h_1a7bd038f81cc20cbff990a06246fe8fef" kindref="member">co_sub_dn()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="630" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="630" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a87c96c3a12cd6a6769cbc111465b4632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SsdoDnInd, DownloadNodeId_InvalidSubidx)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <param>
+          <type>DownloadNodeId_InvalidSubidx</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the device (co_dev_t) with the SSDO service started and the object 0x1200 inserted </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> a value is downloaded to an invalid sub-object entry (idx: 0x1200, subidx: 0x04)</para>
+<para><bold>Then</bold> 0 is returned, confirmation function is called once with CO_SDO_AC_NO_SUB as abort code <linebreak/>
+calls <ref refid="obj_8h_1af8adc501724e64018c1701188bb140cd" kindref="member">co_sub_get_type()</ref> <linebreak/>
+calls <ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val()</ref> <linebreak/>
+calls <ref refid="obj_8h_1a11138be63ac10ff58401bb00482cb552" kindref="member">co_sub_get_subidx()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="653" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="653" bodyend="665"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-ssdo-sdo_8cpp_1a3d4aa41666abc16f6dc77652c03aa055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(CO_SsdoDnInd)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>CO_SsdoDnInd</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo-sdo.cpp" line="42" column="1" bodyfile="unit-tests/co/test-ssdo-sdo.cpp" bodystart="42" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="csdo_8h" kindref="compound">lely/co/csdo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ssdo_8h" kindref="compound">lely/co/ssdo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2co_2sdo_8h" kindref="compound">lely/co/sdo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="default_8hpp" kindref="compound">libtest/allocators/default.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lely-cpputest-ext_8hpp" kindref="compound">libtest/tools/lely-cpputest-ext.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lely-unit-test_8hpp" kindref="compound">libtest/tools/lely-unit-test.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev_8hpp" kindref="compound">holder/dev.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="obj_8hpp" kindref="compound">holder/obj.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(CO_SsdoDnInd)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classAllocators_1_1PoolAllocator" kindref="compound">Allocators::Default</ref><sp/>allocator;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>DEV_ID<sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>SDO_NUM<sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>CAN_ID<sp/>=<sp/>DEV_ID;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>CAN_ID_EXT<sp/>=</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t{co_unsigned32_t{DEV_ID}<sp/>|<sp/>co_unsigned32_t{0x10000000u}};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref>*<sp/>dev<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/>net<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref>*<sp/>ssdo<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;CoDevTHolder&gt;<sp/>dev_holder;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;CoObjTHolder&gt;<sp/>obj1200;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>co_unsigned32_t<sp/>GetSrv01CobidReq()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_dev_get_val_u32(dev,<sp/>0x1200u,<sp/>0x01u);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>co_unsigned32_t<sp/>GetSrv02CobidRes()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_dev_get_val_u32(dev,<sp/>0x1200u,<sp/>0x02u);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>co_unsigned8_t<sp/>GetSrv03NodeId()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_dev_get_val_u8(dev,<sp/>0x1200u,<sp/>0x03u);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>obj<sp/>0x1200,<sp/>sub<sp/>0x00<sp/>-<sp/>highest<sp/>sub-index<sp/>supported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetSrv00HighestSubidxSupported(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>subidx)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/><ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>0x1200u,<sp/>0x00u);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sub<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>co_sub_set_val_u8(sub,<sp/>subidx);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>obj1200-&gt;InsertAndSetSub(0x00u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>subidx);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>obj<sp/>0x1200,<sp/>sub<sp/>0x01<sp/>-<sp/>COB-ID<sp/>client<sp/>-&gt;<sp/>server<sp/>(rx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetSrv01CobidReq(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/><ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>0x1200u,<sp/>0x01u);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sub<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>co_sub_set_val_u32(sub,<sp/>cobid);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>obj1200-&gt;InsertAndSetSub(0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>cobid);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>obj<sp/>0x1200,<sp/>sub<sp/>0x02<sp/>-<sp/>COB-ID<sp/>server<sp/>-&gt;<sp/>client<sp/>(tx)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetSrv02CobidRes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/><ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>0x1200u,<sp/>0x02u);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sub<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>co_sub_set_val_u32(sub,<sp/>cobid);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>obj1200-&gt;InsertAndSetSub(0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>cobid);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>obj<sp/>0x1200,<sp/>sub<sp/>0x03<sp/>-<sp/>Node-ID<sp/>of<sp/>the<sp/>SDO<sp/>client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetSrv03NodeId(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/><ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>0x1200u,<sp/>0x03u);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sub<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>co_sub_set_val_u8(sub,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>obj1200-&gt;InsertAndSetSub(0x03u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RestartSSDO()<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ssdo_8h_1a106e58fcb4be7a50addd8e5e5c0f7752" kindref="member">co_ssdo_stop</ref>(ssdo);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ssdo_8h_1a0d9e073c7171672856d58b44b2867440" kindref="member">co_ssdo_start</ref>(ssdo);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lely-unit-test_8hpp_1aa9984bde4b42b63a92671f3c56dc3155" kindref="member">LelyUnitTest::DisableDiagnosticMessages</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(net);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classCoDevTHolder" kindref="compound">CoDevTHolder</ref>(DEV_ID));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>dev<sp/>=<sp/>dev_holder-&gt;Get();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(dev);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder-&gt;CreateAndInsertObj(obj1200,<sp/>0x1200u);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>SetSrv00HighestSubidxSupported(0x03u);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>SetSrv01CobidReq(CAN_ID);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>SetSrv02CobidRes(CAN_ID);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>SetSrv03NodeId(0);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>ssdo<sp/>=<sp/><ref refid="ssdo_8h_1afdb4239ad4f417f5517ccf670312b2da" kindref="member">co_ssdo_create</ref>(net,<sp/>dev,<sp/>SDO_NUM);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(ssdo<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ssdo_8h_1a0d9e073c7171672856d58b44b2867440" kindref="member">co_ssdo_start</ref>(ssdo);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>CoCsdoDnCon::Clear();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ssdo_8h_1a106e58fcb4be7a50addd8e5e5c0f7752" kindref="member">co_ssdo_stop</ref>(ssdo);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ssdo_8h_1a3d235774ae42ffb40afd07aaed300dff" kindref="member">co_ssdo_destroy</ref>(ssdo);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder.reset();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"></codeline>
+<codeline lineno="152" refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>NonZeroAbortCode)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>ac<sp/>=<sp/><ref refid="include_2lely_2co_2sdo_8h_1a72b11ca6f2d1d6323056312dabbb51f8" kindref="member">CO_SDO_AC_ERROR</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LelyUnitTest::CallDnIndWithAbortCode(dev,<sp/>0x1200u,<sp/>0x00u,<sp/>ac);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(ac,<sp/>ret);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="test-ssdo-sdo_8cpp_1a47f513ad13c93e0e29daf472411af32b" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadHighestSubidx)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>data<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x00u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>&amp;data,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="include_2lely_2co_2sdo_8h_1af36abf5094e1cfeff01144b7ebaaa65f" kindref="member">CO_SDO_AC_NO_WRITE</ref>,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="test-ssdo-sdo_8cpp_1a1c011afd81a050d033a9c8cf0502d7dc" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_TooManyBytes)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least64_t<sp/>data<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1a63126b14c1ef697740e26bb9f701623f" kindref="member">CO_DEFTYPE_UNSIGNED64</ref>,<sp/>&amp;data,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="include_2lely_2co_2sdo_8h_1a3ab1d4126e511e6b468fd0c47e34c204" kindref="member">CO_SDO_AC_TYPE_LEN_HI</ref>,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(DEV_ID,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="test-ssdo-sdo_8cpp_1a0b4068635577ea0361412bf9ef5140ee" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_SameAsOld)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(DEV_ID,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="test-ssdo-sdo_8cpp_1a1a3c11f118bb68e01a2fc4f6fbf22df8" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_OldValid_NewValid_NewId)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID<sp/>+<sp/>1u;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="include_2lely_2co_2sdo_8h_1ac539ad462212ab0edd967ec8b73707f1" kindref="member">CO_SDO_AC_PARAM_VAL</ref>,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(CAN_ID,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="test-ssdo-sdo_8cpp_1a93af8e78b973cad4eb1584a74993bc72" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_OldValid_NewInvalid_NewId)<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>(CAN_ID<sp/>+<sp/>1u)<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="test-ssdo-sdo_8cpp_1ac973b3ba8b0f6034020096570a7f317a" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_OldInvalid_NewValid_NewId)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>SetSrv01CobidReq(CAN_ID<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>RestartSSDO();</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID<sp/>+<sp/>1u;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="test-ssdo-sdo_8cpp_1a82fb07c0cfb7cf3a79812e2b4ae5b2b5" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_OldValid_NewValid_OldId)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1aa7df4b67b1c4a4ac637064a4320ecb8e" kindref="member">CO_SDO_COBID_FRAME</ref>;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356" refid="test-ssdo-sdo_8cpp_1a901c268023288548377442b6daf0090b" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_OldValid_NewInvalid_NewIdExtended)<sp/>{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID_EXT<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="include_2lely_2co_2sdo_8h_1ac539ad462212ab0edd967ec8b73707f1" kindref="member">CO_SDO_AC_PARAM_VAL</ref>,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(CAN_ID,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="test-ssdo-sdo_8cpp_1a00996c23c65219d632327d306d10926a" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadReqCobid_OldValid_NewInvalid_OldIdExtended)<sp/>{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CAN_ID<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref><sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1aa7df4b67b1c4a4ac637064a4320ecb8e" kindref="member">CO_SDO_COBID_FRAME</ref>;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x01u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv01CobidReq());</highlight></codeline>
+<codeline lineno="395"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410" refid="test-ssdo-sdo_8cpp_1a599d2cc060ca3c5c9ff10e269bf1e055" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadResCobid_SameAsOld)<sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv02CobidRes());</highlight></codeline>
+<codeline lineno="420"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436" refid="test-ssdo-sdo_8cpp_1a83339cd97b09d3a988bb167236f9d33e" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadResCobid_OldValid_NewValid_NewId)<sp/>{</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID<sp/>+<sp/>1u;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="include_2lely_2co_2sdo_8h_1ac539ad462212ab0edd967ec8b73707f1" kindref="member">CO_SDO_AC_PARAM_VAL</ref>,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(CAN_ID,<sp/>GetSrv02CobidRes());</highlight></codeline>
+<codeline lineno="446"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464" refid="test-ssdo-sdo_8cpp_1acedc6af1c86f9aad196412a7a69f8984" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadResCobid_OldValid_NewInvalid_NewId)<sp/>{</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv02CobidRes());</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492" refid="test-ssdo-sdo_8cpp_1af678bb6d989b3800ee955f1d2e6db50d" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadResCobid_OldInvalid_NewValid_NewId)<sp/>{</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/>SetSrv02CobidRes(CAN_ID<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/>RestartSSDO();</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID<sp/>+<sp/>1u;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv02CobidRes());</highlight></codeline>
+<codeline lineno="505"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524" refid="test-ssdo-sdo_8cpp_1a049fdf2cb97b7f1473c8ee9e603b5bff" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadResCobid_OldValid_NewValid_OldIdExtended)<sp/>{</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1aa7df4b67b1c4a4ac637064a4320ecb8e" kindref="member">CO_SDO_COBID_FRAME</ref>;</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv02CobidRes());</highlight></codeline>
+<codeline lineno="534"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550" refid="test-ssdo-sdo_8cpp_1a933f2d4a38a3519277d389806fc599b2" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadResCobid_OldValid_NewInvalid_OldId)<sp/>{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=<sp/>CAN_ID_EXT<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="include_2lely_2co_2sdo_8h_1ac539ad462212ab0edd967ec8b73707f1" kindref="member">CO_SDO_AC_PARAM_VAL</ref>,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(CAN_ID,<sp/>GetSrv02CobidRes());</highlight></codeline>
+<codeline lineno="560"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578" refid="test-ssdo-sdo_8cpp_1abc7e8810f1f3c911421146f9014b27f7" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadResCobid_OldValid_NewInvalid_OldIdExtended)<sp/>{</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid<sp/>=</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CAN_ID<sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref><sp/>|<sp/><ref refid="include_2lely_2co_2sdo_8h_1aa7df4b67b1c4a4ac637064a4320ecb8e" kindref="member">CO_SDO_COBID_FRAME</ref>;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x02u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>&amp;cobid,</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(cobid,<sp/>GetSrv02CobidRes());</highlight></codeline>
+<codeline lineno="589"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604" refid="test-ssdo-sdo_8cpp_1abf7a6e4d89a188bc8a13688145eae0a4" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadNodeId_SameAsOld)<sp/>{</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>new_id<sp/>=<sp/>0x00u;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x03u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>&amp;new_id,</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>GetSrv03NodeId());</highlight></codeline>
+<codeline lineno="614"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="630" refid="test-ssdo-sdo_8cpp_1ae7064809f095dcfbb57a89f3a240162a" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadNodeId_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>new_id<sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x03u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>&amp;new_id,</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(new_id,<sp/>GetSrv03NodeId());</highlight></codeline>
+<codeline lineno="640"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653" refid="test-ssdo-sdo_8cpp_1a87c96c3a12cd6a6769cbc111465b4632" refkind="member"><highlight class="normal"><ref refid="test-ssdo-sdo_8cpp_1aec03d77457af4a9d55efe83a9645dd08" kindref="member">TEST</ref>(CO_SsdoDnInd,<sp/>DownloadNodeId_InvalidSubidx)<sp/>{</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/>obj1200-&gt;InsertAndSetSub(0x04u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>co_unsigned8_t{0x00u});</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/>RestartSSDO();</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>data<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="csdo_8h_1acb10466e5524ddb4d7d7d8adac4f92fd" kindref="member">co_dev_dn_val_req</ref>(dev,<sp/>0x1200u,<sp/>0x04u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>&amp;data,</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>CoCsdoDnCon::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CoCsdoDnCon::GetNumCalled());</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" kindref="member">CO_SDO_AC_NO_SUB</ref>,<sp/>CoCsdoDnCon::ac);</highlight></codeline>
+<codeline lineno="665"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/co/test-ssdo-sdo.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__sdo__req" kind="struct" language="C++" prot="public">
+    <compoundname>co_sdo_req</compoundname>
+    <includes refid="include_2lely_2co_2sdo_8h" local="no">sdo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__sdo__req_1a3f40a5845cd58a318bec048270d16a04" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_sdo_req::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The total size (in bytes) of the value to be uploaded/downloaded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This value MUST be set at the beginning of a new request and MUST NOT change afterwards. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="200" column="8" bodyfile="include/lely/co/sdo.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* co_sdo_req::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+<para>A pointer to the next bytes to be uploaded/downloaded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="202" column="12" bodyfile="include/lely/co/sdo.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__req_1abfe41b89a836e6f5fa58ac816b25ea94" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_sdo_req::nbyte</definition>
+        <argsstring></argsstring>
+        <name>nbyte</name>
+        <briefdescription>
+<para>The number of bytes available at <ref refid="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" kindref="member">buf</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="204" column="8" bodyfile="include/lely/co/sdo.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__req_1a15559c73eafd9a1fb19589b277c4d60d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_sdo_req::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>The offset of the bytes at <ref refid="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" kindref="member">buf</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For the first segment, <computeroutput>#offset == 0</computeroutput>. For the last segment, <computeroutput>#offset + #nbyte == #size</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="209" column="8" bodyfile="include/lely/co/sdo.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__req_1a2bd8c452c4652eb2668c57d4f939c680" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref> *</type>
+        <definition>struct membuf* co_sdo_req::membuf</definition>
+        <argsstring></argsstring>
+        <name>membuf</name>
+        <briefdescription>
+<para>A pointer to the memory buffer used by the upload/download indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The memory buffer will be cleared at the beginning of every new request, but otherwise left untouched. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="215" column="13" bodyfile="include/lely/co/sdo.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__req_1ab7ed7a3f3f0054b65778e3b698fba328" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref></type>
+        <definition>struct membuf co_sdo_req::membuf_</definition>
+        <argsstring></argsstring>
+        <name>membuf_</name>
+        <briefdescription>
+<para>The memory buffer used for storing serialized values in the absence of a user-specified buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="215" column="13" bodyfile="include/lely/co/sdo.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__req_1ad3ce844ce637d38f30ea368bd5776c16" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char co_sdo_req::begin_[CO_SDO_REQ_MEMBUF_SIZE]</definition>
+        <argsstring>[CO_SDO_REQ_MEMBUF_SIZE]</argsstring>
+        <name>begin_</name>
+        <briefdescription>
+<para>The static memory buffer used by <ref refid="structco__sdo__req_1ab7ed7a3f3f0054b65778e3b698fba328" kindref="member">membuf_</ref> in the absence of dynamic memory allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="226" column="6" bodyfile="include/lely/co/sdo.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen SDO upload/download request. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>co_sdo_req</label>
+        <link refid="structco__sdo__req"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>membuf</edgelabel>
+          <edgelabel>membuf_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/co/sdo.h" line="194" column="1" bodyfile="include/lely/co/sdo.h" bodystart="194" bodyend="228"/>
+    <listofallmembers>
+      <member refid="structco__sdo__req_1ad3ce844ce637d38f30ea368bd5776c16" prot="public" virt="non-virtual"><scope>co_sdo_req</scope><name>begin_</name></member>
+      <member refid="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" prot="public" virt="non-virtual"><scope>co_sdo_req</scope><name>buf</name></member>
+      <member refid="structco__sdo__req_1a2bd8c452c4652eb2668c57d4f939c680" prot="public" virt="non-virtual"><scope>co_sdo_req</scope><name>membuf</name></member>
+      <member refid="structco__sdo__req_1ab7ed7a3f3f0054b65778e3b698fba328" prot="public" virt="non-virtual"><scope>co_sdo_req</scope><name>membuf_</name></member>
+      <member refid="structco__sdo__req_1abfe41b89a836e6f5fa58ac816b25ea94" prot="public" virt="non-virtual"><scope>co_sdo_req</scope><name>nbyte</name></member>
+      <member refid="structco__sdo__req_1a15559c73eafd9a1fb19589b277c4d60d" prot="public" virt="non-virtual"><scope>co_sdo_req</scope><name>offset</name></member>
+      <member refid="structco__sdo__req_1a3f40a5845cd58a318bec048270d16a04" prot="public" virt="non-virtual"><scope>co_sdo_req</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

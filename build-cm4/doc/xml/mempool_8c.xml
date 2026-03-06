@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mempool_8c" kind="file" language="C++">
+    <compoundname>mempool.c</compoundname>
+    <includes refid="stddef_8h" local="no">lely/compat/stddef.h</includes>
+    <includes refid="error_8h" local="no">lely/util/error.h</includes>
+    <includes refid="mempool_8h" local="no">lely/util/mempool.h</includes>
+    <includes refid="include_2lely_2util_2util_8h" local="no">lely/util/util.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes refid="stdint_8h" local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>assert.h</label>
+      </node>
+      <node id="5">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/compat/stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/util/mempool.h</label>
+        <link refid="mempool_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/util/mempool.c</label>
+        <link refid="mempool_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="mempool_8c_1aeabf3a9bb136829feb1d55975db291da" prot="public" static="yes" mutable="no">
+        <type>const struct <ref refid="structalloc__vtbl" kindref="compound">alloc_vtbl</ref></type>
+        <definition>const struct alloc_vtbl mempool_vtbl</definition>
+        <argsstring></argsstring>
+        <name>mempool_vtbl</name>
+        <initializer>= {
+	.alloc = mempool_alloc,
+	.free = mempool_free,
+	.size = mempool_size,
+	.capacity = mempool_capacity,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/mempool.c" line="80" column="1" bodyfile="lib/util/mempool.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mempool_8c_1aae24cc2c09315ec9556ead70cd3bde7e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct <ref refid="structmempool" kindref="compound">mempool</ref> *</type>
+        <definition>static struct mempool* mempool_from_alloc</definition>
+        <argsstring>(alloc_t *const alloc)</argsstring>
+        <name>mempool_from_alloc</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/mempool.c" line="32" column="1" bodyfile="lib/util/mempool.c" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="mempool_8c_1a88414b4b27a7757e8c93225918c6c899" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t mempool_size</definition>
+        <argsstring>(alloc_t *const alloc)</argsstring>
+        <name>mempool_size</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/mempool.c" line="39" column="1" bodyfile="lib/util/mempool.c" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="mempool_8c_1ae52bce8eebb6f872c378dfab0cbbbfc1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t mempool_capacity</definition>
+        <argsstring>(alloc_t *const alloc)</argsstring>
+        <name>mempool_capacity</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/mempool.c" line="46" column="1" bodyfile="lib/util/mempool.c" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="mempool_8c_1ad1b9a0466b2a7f11c2c11671d7023b7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* mempool_alloc</definition>
+        <argsstring>(alloc_t *const alloc, size_t alignment, const size_t size)</argsstring>
+        <name>mempool_alloc</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/mempool.c" line="53" column="1" bodyfile="lib/util/mempool.c" bodystart="53" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="mempool_8c_1ad1246e5b456dbc2b4285fa7708c04b3b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mempool_free</definition>
+        <argsstring>(alloc_t *const alloc, void *const ptr)</argsstring>
+        <name>mempool_free</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <param>
+          <type>void *const</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/mempool.c" line="80" column="1" bodyfile="lib/util/mempool.c" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="mempool_8c_1a8ce5dd1a38f9d5f3f90f5c6a316c03bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* mempool_init</definition>
+        <argsstring>(struct mempool *const pool, void *const memory, const size_t size)</argsstring>
+        <name>mempool_init</name>
+        <param>
+          <type>struct <ref refid="structmempool" kindref="compound">mempool</ref> *</type>
+          <declname>pool</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>memory</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Initialized a memory pool allocator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: This allocator never really frees memory - this allocation scheme should be used in systems that initialize once at the start and can work with fixed memory buffers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the memory pool. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the memory region to be used by the pool. MUST NOT be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes availabe at <bold>memory</bold>. MUST NOT be zero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the allocator interface.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/mempool.c" line="95" column="1" bodyfile="lib/util/mempool.c" bodystart="95" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the utilities library; it contains memory pool based allocator implementation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020 N7 Space sp. z o.o.</para>
+</simplesect>
+Memory pool allocator was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">lely/compat/stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="error_8h" kindref="compound">lely/util/error.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="mempool_8h" kindref="compound">lely/util/mempool.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2util_2util_8h" kindref="compound">lely/util/util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stdint_8h" kindref="compound">stdint.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmempool" kindref="compound">mempool</ref><sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">mempool_from_alloc(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>alloc)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(alloc<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmempool" kindref="compound">mempool</ref><sp/>*)((uintptr_t)alloc);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">mempool_size(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>alloc)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmempool" kindref="compound">mempool</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pool<sp/>=<sp/>mempool_from_alloc(alloc);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pool-&gt;<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref><sp/>-<sp/>pool-&gt;<ref refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" kindref="member">beg</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">mempool_capacity(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>alloc)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmempool" kindref="compound">mempool</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pool<sp/>=<sp/>mempool_from_alloc(alloc);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pool-&gt;<ref refid="structmempool_1a0841f2c587fa4d06c905593528ae830e" kindref="member">end</ref><sp/>-<sp/>pool-&gt;<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">mempool_alloc(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>alloc,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>alignment,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(alignment<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alignment<sp/>=<sp/><ref refid="features_8h_1afcb8d15f870cea9564e9e367085258da" kindref="member">_Alignof</ref>(<ref refid="unionmax__align__t" kindref="compound">max_align_t</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="include_2lely_2util_2util_8h_1a2766c9b72579fe88c4f337b4e007c8a7" kindref="member">powerof2</ref>(alignment))<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" kindref="member">ERRNUM_INVAL</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mempool_capacity(alloc)<sp/>&lt;<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" kindref="member">ERRNUM_NOMEM</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmempool" kindref="compound">mempool</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pool<sp/>=<sp/>mempool_from_alloc(alloc);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pool-&gt;<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)<ref refid="include_2lely_2util_2util_8h_1a9ac102be1cec0ce473aa3819ff297a26" kindref="member">ALIGN</ref>((uintptr_t)pool-&gt;<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref>,<sp/>alignment);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*result<sp/>=<sp/>pool-&gt;<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pool-&gt;<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref><sp/>+=<sp/>size;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">mempool_free(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>alloc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptr)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(alloc<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)alloc;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)ptr;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structalloc__vtbl" kindref="compound">alloc_vtbl</ref><sp/>mempool_vtbl<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.alloc<sp/>=<sp/>mempool_alloc,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.free<sp/>=<sp/>mempool_free,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.size<sp/>=<sp/>mempool_size,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.capacity<sp/>=<sp/>mempool_capacity,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="95" refid="mempool_8h_1a6d8041e4b2854058c728a95e501c639a" refkind="member"><highlight class="normal"><ref refid="mempool_8c_1a8ce5dd1a38f9d5f3f90f5c6a316c03bf" kindref="member">mempool_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmempool" kindref="compound">mempool</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pool,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>memory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(pool<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(memory<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>size<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pool-&gt;<ref refid="structmempool_1ab36cf4ed6ac8315cf6c2cda71db12cd9" kindref="member">vtbl</ref><sp/>=<sp/>&amp;mempool_vtbl;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pool-&gt;<ref refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" kindref="member">beg</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)memory;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pool-&gt;<ref refid="structmempool_1a0841f2c587fa4d06c905593528ae830e" kindref="member">end</ref><sp/>=<sp/>pool-&gt;<ref refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" kindref="member">beg</ref><sp/>+<sp/>size;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pool-&gt;<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref><sp/>=<sp/>pool-&gt;<ref refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" kindref="member">beg</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;pool-&gt;<ref refid="structmempool_1ab36cf4ed6ac8315cf6c2cda71db12cd9" kindref="member">vtbl</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/util/mempool.c"/>
+  </compounddef>
+</doxygen>

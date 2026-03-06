@@ -1,0 +1,2234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-sync_8cpp" kind="file" language="C++">
+    <compoundname>test-sync.cpp</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="net_8h" local="no">lely/can/net.h</includes>
+    <includes refid="sync_8h" local="no">lely/co/sync.h</includes>
+    <includes refid="detail_2obj_8h" local="no">lely/co/detail/obj.h</includes>
+    <includes refid="default_8hpp" local="no">libtest/allocators/default.hpp</includes>
+    <includes refid="limited_8hpp" local="no">libtest/allocators/limited.hpp</includes>
+    <includes refid="can-send_8hpp" local="no">libtest/tools/can-send.hpp</includes>
+    <includes refid="lely-cpputest-ext_8hpp" local="no">libtest/tools/lely-cpputest-ext.hpp</includes>
+    <includes refid="lely-unit-test_8hpp" local="no">libtest/tools/lely-unit-test.hpp</includes>
+    <includes refid="dev_8hpp" local="yes">holder/dev.hpp</includes>
+    <includes refid="obj_8hpp" local="yes">holder/obj.hpp</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stdbool.h</label>
+      </node>
+      <node id="37">
+        <label>functional</label>
+      </node>
+      <node id="33">
+        <label>limits</label>
+      </node>
+      <node id="48">
+        <label>co-sub-up-ind.hpp</label>
+        <link refid="co-sub-up-ind_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>assert.h</label>
+      </node>
+      <node id="44">
+        <label>lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>sdo-init-expected-data.hpp</label>
+        <link refid="sdo-init-expected-data_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>obj-init/obj-init.hpp</label>
+        <link refid="obj-init_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>sdo-create-message.hpp</label>
+        <link refid="sdo-create-message_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>cstdint</label>
+      </node>
+      <node id="34">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>pool.hpp</label>
+        <link refid="pool_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>holder/dev.hpp</label>
+        <link refid="dev_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>libtest/tools/can-send.hpp</label>
+        <link refid="can-send_8hpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="31">
+        <label>cassert</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>libtest/allocators/default.hpp</label>
+        <link refid="default_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>lely/co/obj.h</label>
+        <link refid="obj_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="8">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>lely/co/detail/dev.h</label>
+        <link refid="detail_2dev_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>co-csdo-dn-con.hpp</label>
+        <link refid="co-csdo-dn-con_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>libtest/tools/lely-cpputest-ext.hpp</label>
+        <link refid="lely-cpputest-ext_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>holder.hpp</label>
+        <link refid="holder_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vector</label>
+      </node>
+      <node id="47">
+        <label>co-sub-dn-ind.hpp</label>
+        <link refid="co-sub-dn-ind_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>obj.hpp</label>
+        <link refid="obj_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>sdo-consts.hpp</label>
+        <link refid="sdo-consts_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>lely/util/bits.h</label>
+        <link refid="bits_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>lely/co/val.h</label>
+        <link refid="val_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>lely/co/dev.h</label>
+        <link refid="dev_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>common/co-types.hpp</label>
+        <link refid="co-types_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/co/sync.h</label>
+        <link refid="sync_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>lely/co/def/basic.def</label>
+      </node>
+      <node id="25">
+        <label>lely/util/rbtree.h</label>
+        <link refid="rbtree_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="32">
+        <label>cstddef</label>
+      </node>
+      <node id="46">
+        <label>co-csdo-up-con.hpp</label>
+        <link refid="co-csdo-up-con_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>lely/co/detail/obj.h</label>
+        <link refid="detail_2obj_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>lely/util/mempool.h</label>
+        <link refid="mempool_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>sub.hpp</label>
+        <link refid="sub_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>libtest/tools/lely-unit-test.hpp</label>
+        <link refid="lely-unit-test_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>lely/util/endian.h</label>
+        <link refid="endian_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>cstring</label>
+      </node>
+      <node id="30">
+        <label>libtest/allocators/limited.hpp</label>
+        <link refid="limited_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classSyncInd" prot="public">SyncInd</innerclass>
+    <innerclass refid="classSyncErr" prot="public">SyncErr</innerclass>
+      <sectiondef kind="user-defined">
+      <header>co_sync_create()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SyncCreate, CoSyncCreate_NoObj1005)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SyncCreate</type>
+        </param>
+        <param>
+          <type>CoSyncCreate_NoObj1005</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create()</ref> is called with pointers to the network and the device</para>
+<para><bold>Then</bold> a null pointer is returned and a SYNC service is not created <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref> with ERROR_CALL_NOT_IMPLEMENTED </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="158" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="158" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1aa0bb08a5fd977c83fb6447feb64c1ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SyncCreate, CoSyncCreate_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SyncCreate</type>
+        </param>
+        <param>
+          <type>CoSyncCreate_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t), the 0x1005 object with COB-ID SYNC set present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create()</ref> is called with pointers to the network and the device</para>
+<para><bold>Then</bold> a pointer to newly created SYNC service (co_sync_t) is returned, it has pointers to network and device set properly, indication function is not set <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create()</ref> <linebreak/>
+calls <ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func()</ref> <linebreak/>
+calls <ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create()</ref> <linebreak/>
+calls <ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="178" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="178" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1abe36c3a95bf8f7c5ad4e13e564585f46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Co_SyncAllocation, CoSyncCreate_NoMoreMemory)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Co_SyncAllocation</type>
+        </param>
+        <param>
+          <type>CoSyncCreate_NoMoreMemory</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t) with memory allocator limited to 0 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create()</ref> is called with pointers to the network and the device</para>
+<para><bold>Then</bold> null pointer is returned and SYNC service is not created </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="1013" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="1013" bodyend="1019"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a8dd3c9044681b40a721207bd28f06a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Co_SyncAllocation, CoSyncCreate_MemoryOnlyForSyncT)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Co_SyncAllocation</type>
+        </param>
+        <param>
+          <type>CoSyncCreate_MemoryOnlyForSyncT</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t) with memory allocator limited to only create the SYNC service instance </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create()</ref> is called with pointers to the network and the device</para>
+<para><bold>Then</bold> null pointer is returned and SYNC service is not created <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="1030" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="1030" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a31fc3c097ea8bde855e68d091a729097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Co_SyncAllocation, CoSyncCreate_MemoryOnlyForSyncTAndRecv)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Co_SyncAllocation</type>
+        </param>
+        <param>
+          <type>CoSyncCreate_MemoryOnlyForSyncTAndRecv</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t) with memory allocator limited to create the SYNC service and frame receiver (can_recv_t) instances </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create()</ref> is called with pointers to the network and the device</para>
+<para><bold>Then</bold> null pointer is returned and SYNC service is not created <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create()</ref> <linebreak/>
+calls <ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func()</ref> <linebreak/>
+calls <ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="1049" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="1049" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a62b183b1150268edefee3ad998c44bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Co_SyncAllocation, CoSyncCreate_MemoryOnlyForSyncTAndTimer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Co_SyncAllocation</type>
+        </param>
+        <param>
+          <type>CoSyncCreate_MemoryOnlyForSyncTAndTimer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t) with memory allocator limited to create the SYNC service and timer (can_timer_t) instances </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create()</ref> is called with pointers to the network and the device</para>
+<para><bold>Then</bold> null pointer is returned and SYNC service is not created <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create()</ref> <linebreak/>
+calls <ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func()</ref> <linebreak/>
+calls <ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="1068" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="1068" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1ab00d5b38850d67d07237786677c95624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Co_SyncAllocation, CoSyncCreate_AllNecessaryMemoryAvailable)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Co_SyncAllocation</type>
+        </param>
+        <param>
+          <type>CoSyncCreate_AllNecessaryMemoryAvailable</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t) with memory allocator limited to create the SYNC service, frame receiver (can_recv_t) and timer (can_timer_t) instances </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create()</ref> is called with pointers to the network and the device</para>
+<para><bold>Then</bold> a pointer to newly created SYNC service (co_sync_t) is returned <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create()</ref> <linebreak/>
+calls <ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func()</ref> <linebreak/>
+calls <ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create()</ref> <linebreak/>
+calls <ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="1088" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="1088" bodyend="1095"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_destroy()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a9f9480f92aaa679035f63b3f9f0f718c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SyncCreate, CoSyncDestroy_DestroyNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SyncCreate</type>
+        </param>
+        <param>
+          <type>CoSyncDestroy_DestroyNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t) and network (co_net_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a1c43d9c6e10ff2e6c05632151e5bc29e" kindref="member">co_sync_destroy()</ref> is called with a null pointer</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="206" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="206" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a31028b91566b4072b287db15abcc5fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_SyncCreate, CoSyncDestroy_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_SyncCreate</type>
+        </param>
+        <param>
+          <type>CoSyncDestroy_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to the initialized device (co_dev_t), network (co_net_t) and SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a1c43d9c6e10ff2e6c05632151e5bc29e" kindref="member">co_sync_destroy()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is destroyed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="214" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="214" bodyend="219"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_get_ind()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a68a932a082ed050eadd1b92cfe0ebb4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncGetInd_PointersNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncGetInd_PointersNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1ad61e709223f6e271c5e5d1dc61afd1f3" kindref="member">co_sync_get_ind()</ref> is called with no memory area to store the results</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="306" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="306" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a6376326def9bb873549d5aba93a2f897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncGetInd)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncGetInd</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1ad61e709223f6e271c5e5d1dc61afd1f3" kindref="member">co_sync_get_ind()</ref> is called with pointers to store indication function and user-specified data</para>
+<para><bold>Then</bold> passed pointers to indication function and data are set to null </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="316" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="316" bodyend="325"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_set_ind()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a4e1868bf325b60eaa4a20e737cd9c12a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncSetInd)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncSetInd</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a569a573842321e22d363beb38006c444" kindref="member">co_sync_set_ind()</ref> is called with custom indication function and a non-null pointer to user-specified data</para>
+<para><bold>Then</bold> indication function and pointer to user-specified data have requested values and can be obtained using <ref refid="sync_8h_1ad61e709223f6e271c5e5d1dc61afd1f3" kindref="member">co_sync_get_ind()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="339" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="339" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_get_err()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a1528af8dd8445fa95f53aaf7d8b4bba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncGetErr_PointersNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncGetErr_PointersNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a10628db1f68f9d2abf24e5ae6dfc609a" kindref="member">co_sync_get_err()</ref> is called with no memory area to store the results</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="361" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="361" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a46c594bc65a1c010bf1a6258d69d3bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncGetErr)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncGetErr</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a10628db1f68f9d2abf24e5ae6dfc609a" kindref="member">co_sync_get_err()</ref> is called with pointers to store error handling function and user-specified data</para>
+<para><bold>Then</bold> passed pointers to error handling function and data are set to null </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="371" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="371" bodyend="380"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_set_err()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a8112b674c3b920d976087d0868812fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncSetErr)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncSetErr</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a384461e8f9630b097dd73ea3b445a1b1" kindref="member">co_sync_set_err()</ref> is called with custom error handling function and a non-null pointer to user-specified data</para>
+<para><bold>Then</bold> error handling function and pointer to user-specified data have requested values and can be obtained using <ref refid="sync_8h_1a10628db1f68f9d2abf24e5ae6dfc609a" kindref="member">co_sync_get_err()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="394" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="394" bodyend="404"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_start()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a4a2633d1e4f4ae9bacfb7f409d87438c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStart_NoObj1006NoObj1019)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStart_NoObj1006NoObj1019</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t), the 0x1005 object with COB-ID SYNC set and present in the object dictionary, but with 0x1006 and 0x1019 objects missing </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is started and download indication function for the 0x1005 object is set <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls co_obj_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1abc9a35c287212083ebd7b9f2c23b45ed" kindref="member">co_obj_set_dn_ind()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> <linebreak/>
+calls <ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="424" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="424" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a6f2776c6e378788928883ef16a9aba8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStart_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStart_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t), with the 0x1005, 0x1006 and 0x1019 objects present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is started and download indication functions for the 0x1005, 0x1006 and 0x1019 objects are set <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls co_obj_get_val_u32() <linebreak/>
+calls co_obj_get_val_u8() <linebreak/>
+calls <ref refid="obj_8h_1abc9a35c287212083ebd7b9f2c23b45ed" kindref="member">co_obj_set_dn_ind()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> <linebreak/>
+calls <ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="446" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="446" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a805d547f6fd26ebde6e43b3191b9eee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStart_AlreadyStarted)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStart_AlreadyStarted</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to already started SYNC service (co_sync_t), with the 0x1005, 0x1006 and 0x1019 objects present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref> is called</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="465" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="465" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a3e6eb87dc954447946c4e62a55e08515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStart_IsProducer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStart_IsProducer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t), the 0x1005 object with COB-ID SYNC with CO_SYNC_COBID_PRODUCER bit set and the 0x1006 object with the communication cycle period set to 1 us </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is started, download indication functions for the 0x1005 and 0x1006 objects are set, SYNC service has started cycle period timer and disabled network receiver <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls co_obj_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1abc9a35c287212083ebd7b9f2c23b45ed" kindref="member">co_obj_set_dn_ind()</ref> <linebreak/>
+calls <ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop()</ref> <linebreak/>
+calls <ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="518" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="518" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1aa29dc0063ed2e173f120ebf21f49ee97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStart_FrameBitSet)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStart_FrameBitSet</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t), the 0x1005 object with COB-ID SYNC with CO_SYNC_COBID_FRAME bit set and the 0x1006 object with the communication cycle period set to 1 us </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is started, download indication functions for the 0x1005 and 0x1006 objects are set, SYNC service has started receiving SYNC messages using the CAN Extended Format 29-bit identifier <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls co_obj_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1abc9a35c287212083ebd7b9f2c23b45ed" kindref="member">co_obj_set_dn_ind()</ref> <linebreak/>
+calls <ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> <linebreak/>
+calls <ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="543" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="543" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a0acd84f9e4d65d0030905919eebf994c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStart_PeriodValueZero)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStart_PeriodValueZero</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t), the 0x1005 object with COB-ID SYNC with CO_SYNC_COBID_PRODUCER bit set and the 0x1006 object with the communication cycle period set to zero </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is started, download indication functions for the 0x1005 and 0x1006 objects are set, SYNC service has disabled cycle period timer and disabled network receiver i.e. cannot produce SYNC messages <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls co_obj_get_val_u32() <linebreak/>
+calls <ref refid="obj_8h_1abc9a35c287212083ebd7b9f2c23b45ed" kindref="member">co_obj_set_dn_ind()</ref> <linebreak/>
+calls <ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop()</ref> <linebreak/>
+calls <ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="569" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="569" bodyend="583"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_is_stopped()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a33251975b5644cb129213111f0af41c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncIsStopped_BeforeAfterStart)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncIsStopped_BeforeAfterStart</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to the SYNC service (co_sync_t), with the 0x1005, 0x1006 and 0x1019 objects present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped()</ref> is called before and after a call to <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref></para>
+<para><bold>Then</bold> 1 is returned in case of the first call (before <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref>), 0 is returned in case of the second call (after <ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start()</ref>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="489" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="489" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a38a39b81f68ef8a65bf88114285c2f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncIsStopped_BeforeAfterStop)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncIsStopped_BeforeAfterStop</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), with the 0x1005, 0x1006 and 0x1019 objects present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped()</ref> is called before and after a call to <ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop()</ref></para>
+<para><bold>Then</bold> 0 is returned in case of the first call (before <ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop()</ref>), 1 is returned in case of the second call (after <ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop()</ref>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="651" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="651" bodyend="660"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>co_sync_stop()</header>
+      <memberdef kind="function" id="test-sync_8cpp_1ad8d454cf5c9e562af0db086876354f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStop_NotStarted)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStop_NotStarted</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to not started SYNC service (co_sync_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop()</ref> is called</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="595" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="595" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a316e022903c594ff948abaa55ca099e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStop_NoObj1019NoObj1006)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStop_NoObj1019NoObj1006</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), the 0x1005 object with COB-ID SYNC set and present in the object dictionary, but with 0x1006 and 0x1019 objects missing </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is stopped and download indication function for the 0x1005 object is set to default <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="obj_8h_1abc9a35c287212083ebd7b9f2c23b45ed" kindref="member">co_obj_set_dn_ind()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="607" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="607" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a67eb2205fb8b6f9ca12e9f3c1f2edea6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncStop_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncStop_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), with the 0x1005, 0x1006 and 0x1019 objects present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop()</ref> is called</para>
+<para><bold>Then</bold> the SYNC service is stopped and download indication functions for the 0x1005, 0x1006 and 0x1019 objects are set to default <linebreak/>
+calls <ref refid="dev_8h_1a90b5c4318a9ddedd08ecdb6310222a6c" kindref="member">co_dev_find_obj()</ref> <linebreak/>
+calls <ref refid="obj_8h_1abc9a35c287212083ebd7b9f2c23b45ed" kindref="member">co_obj_set_dn_ind()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="625" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="625" bodyend="636"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>SYNC message receiver</header>
+      <memberdef kind="function" id="test-sync_8cpp_1a0d8ad5c5546a2ea7e36431a9b6966af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncRecv_NoErrFuncNoIndFunc)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncRecv_NoErrFuncNoIndFunc</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), configured without indication nor error handling functions </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> SYNC message is received</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="673" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="673" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a915b88ef32bd8f039cc0e7a0144de1a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncRecv_ErrHandlerOnly_NoIndFunc)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncRecv_ErrHandlerOnly_NoIndFunc</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), configured without indication function but with error handling function, with the 0x1019 object not present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> SYNC message with unexpected data length of 1 is received</para>
+<para><bold>Then</bold> error handling function is called with 0x8240 emergency error code, 0x10 error register and a pointer to the SYNC service </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="695" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="695" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a73ad2c2d6a1d67f1573755eb63ee28f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncRecv_IndFuncOnly_NoErrHandler)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncRecv_IndFuncOnly_NoErrHandler</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), configured with indication function but without error handling function, with the 0x1019 object not present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> SYNC message with unexpected data length of 1 is received</para>
+<para><bold>Then</bold> indication function is called with a pointer to the SYNC service and </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="723" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="723" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1abbf69b83400a58f2a16f6c9e138ec359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncRecv_OverflowSetToOne)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncRecv_OverflowSetToOne</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), configured with both indication function and error handling function, the object 0x1019 with counter overflow value set to 1 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> SYNC message with unexpected data length of 0 is received</para>
+<para><bold>Then</bold> indication function is called with a pointer to the SYNC service and counter set to 0; error handling function is called with 0x8240 emergency error code, 0x10 error register and a pointer to the SYNC service </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="752" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="752" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a7d6b8cdada9c01ac8bd77ca83039c0e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncRecv_OverflowSetToOneEqualToMsgLen)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncRecv_OverflowSetToOneEqualToMsgLen</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), configured with both indication function and error handling function, the object 0x1019 with counter overflow value set to 1 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> SYNC message with data length of 1 is received</para>
+<para><bold>Then</bold> indication function is called with a pointer to the SYNC service and counter set to what was received in the SYNC message; error handling function is not called </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="786" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="786" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a002eec504b9f98955565e557f4897cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncRecv_Nominal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncRecv_Nominal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started SYNC service (co_sync_t), configured with both indication function and error handling function, with the 0x1019 object not present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> SYNC message with data length of 0 is received</para>
+<para><bold>Then</bold> indication function is called with a pointer to the SYNC service and counter set to 0; error handling function is not called </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="817" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="817" bodyend="835"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>SYNC message producer</header>
+      <memberdef kind="function" id="test-sync_8cpp_1acee008993ae81857663101ebd9f694c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncTimer_ExtendedCANID)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncTimer_ExtendedCANID</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started producer SYNC service (co_sync_t), configured with indication function, communication cycle period set to some non-zero value and COB-ID with CAN Extended Format set, with the 0x1019 object not present in the object dictionary </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> communication cycle period has passed</para>
+<para><bold>Then</bold> indication function is called with a pointer to the SYNC service and counter set to 0; SYNC message with data length of 0 and Identifier Extension flag is sent <linebreak/>
+calls <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="854" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="854" bodyend="873"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1aeb83dfb4b16f2c85dd4900c5983d7792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncTimer_NoIndMaxCntNotSet)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncTimer_NoIndMaxCntNotSet</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started producer SYNC service (co_sync_t), configured without indication function, communication cycle period set to some non-zero value, without counter overflow value in the 0x1019 object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> communication cycle period has passed</para>
+<para><bold>Then</bold> indication function is not called; SYNC message with data length of 0 and no additional flags is sent <linebreak/>
+calls <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="884" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="884" bodyend="899"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a85825c19954f68c94e8d92666d291b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncTimer_MaxCntSet)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncTimer_MaxCntSet</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started producer SYNC service (co_sync_t), configured with indication function, communication cycle period set to some non-zero value, with counter overflow value set to 2 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> communication cycle period has passed twice</para>
+<para><bold>Then</bold> indication function is called twice with a pointer to the SYNC service and counter set to 1 and 2, two SYNC messages with data length of 1 and with counter values equal to 1 and 2, respectively, are sent after first and second time communication cycle period has passed <linebreak/>
+calls <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="912" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="912" bodyend="950"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a816379bf7bba43584ad83c14951024e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Sync, CoSyncTimer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CoSyncTimer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to started producer SYNC service (co_sync_t), configured with indication function, the communication cycle period set to some non-zero value, without counter overflow value in the 0x1019 object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> communication cycle period has passed</para>
+<para><bold>Then</bold> indication function is called with a pointer to the SYNC service and counter set to 0; SYNC message with data length of 0 and no additional flags is sent <linebreak/>
+calls <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="962" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="962" bodyend="981"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-sync_8cpp_1a121b7cac42c79621f1c1703c41c2bad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_BASE</definition>
+        <argsstring>(CO_SyncBase)</argsstring>
+        <name>TEST_BASE</name>
+        <param>
+          <type>CO_SyncBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="113" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="113" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a3b1cfaebbfbf1fb090ab15700d57307b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP_BASE</definition>
+        <argsstring>(CO_SyncCreate, CO_SyncBase)</argsstring>
+        <name>TEST_GROUP_BASE</name>
+        <param>
+          <type>CO_SyncCreate</type>
+        </param>
+        <param>
+          <type>CO_SyncBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="146" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a1621558650752080f5c5c398343df80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP_BASE</definition>
+        <argsstring>(CO_Sync, CO_SyncBase)</argsstring>
+        <name>TEST_GROUP_BASE</name>
+        <param>
+          <type>CO_Sync</type>
+        </param>
+        <param>
+          <type>CO_SyncBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="223" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="223" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="test-sync_8cpp_1a8eaf4c676155746a4145b290b6deaf41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP_BASE</definition>
+        <argsstring>(Co_SyncAllocation, CO_SyncBase)</argsstring>
+        <name>TEST_GROUP_BASE</name>
+        <param>
+          <type>Co_SyncAllocation</type>
+        </param>
+        <param>
+          <type>CO_SyncBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="985" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="985" bodyend="1002"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="net_8h" kindref="compound">lely/can/net.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sync_8h" kindref="compound">lely/co/sync.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="detail_2obj_8h" kindref="compound">lely/co/detail/obj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="default_8hpp" kindref="compound">libtest/allocators/default.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="limited_8hpp" kindref="compound">libtest/allocators/limited.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="can-send_8hpp" kindref="compound">libtest/tools/can-send.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lely-cpputest-ext_8hpp" kindref="compound">libtest/tools/lely-cpputest-ext.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lely-unit-test_8hpp" kindref="compound">libtest/tools/lely-unit-test.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev_8hpp" kindref="compound">holder/dev.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="obj_8hpp" kindref="compound">holder/obj.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classSyncInd" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSyncInd" kindref="compound">SyncInd</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>called;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/>sync;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>cnt;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>func(<ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sync_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>cnt_,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>sync<sp/>=<sp/>sync_;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>cnt<sp/>=<sp/>cnt_;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>=<sp/>data_;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>called<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>Clear()<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>sync<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>cnt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>called<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SyncInd::called<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/>SyncInd::sync<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">co_unsigned8_t<sp/>SyncInd::cnt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>SyncInd::data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classSyncErr" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSyncErr" kindref="compound">SyncErr</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/>sync;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>eec;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>er;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>called;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>func(<ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sync_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>eec_,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>er_,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>sync<sp/>=<sp/>sync_;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>eec<sp/>=<sp/>eec_;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>er<sp/>=<sp/>er_;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>=<sp/>data_;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>called<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>Clear()<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>sync<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>eec<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>er<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>called<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SyncErr::called<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/>SyncErr::sync<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">co_unsigned16_t<sp/>SyncErr::eec<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">co_unsigned8_t<sp/>SyncErr::er<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>SyncErr::data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">TEST_BASE(CO_SyncBase)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="lely-cpputest-ext_8hpp_1ab7266b33c21cda381ba704ad9e0aef15" kindref="member">TEST_BASE_SUPER</ref>(CO_SyncBase);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="classAllocators_1_1PoolAllocator" kindref="compound">Allocators::Default</ref><sp/>allocator;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>DEV_ID<sp/>=<sp/>0x01u;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref>*<sp/>dev;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>*<sp/>net<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;CoDevTHolder&gt;<sp/>dev_holder;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;CoObjTHolder&gt;<sp/>obj1005;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>obj<sp/>0x1005,<sp/>sub<sp/>0x00<sp/>contains<sp/>COB-ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetCobid(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>cobid)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>obj1005-&gt;InsertAndSetSub(0x00u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>cobid);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lely-unit-test_8hpp_1aa9984bde4b42b63a92671f3c56dc3155" kindref="member">LelyUnitTest::DisableDiagnosticMessages</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classCoDevTHolder" kindref="compound">CoDevTHolder</ref>(DEV_ID));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>dev<sp/>=<sp/>dev_holder-&gt;Get();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(dev<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(allocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(net<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder.reset();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">TEST_GROUP_BASE(CO_SyncCreate,<sp/>CO_SyncBase){};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"></codeline>
+<codeline lineno="158" refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_SyncCreate,<sp/>CoSyncCreate_NoObj1005)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ret);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="test-sync_8cpp_1aa0bb08a5fd977c83fb6447feb64c1ab1" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_SyncCreate,<sp/>CoSyncCreate_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>dev_holder-&gt;CreateAndInsertObj(obj1005,<sp/>0x1005u);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>CHECK(sync<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(net,<sp/><ref refid="sync_8h_1a732e50b8c08bc68066d8211d11efc414" kindref="member">co_sync_get_net</ref>(sync));</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(dev,<sp/><ref refid="sync_8h_1a5819e45bac30d2572f93d759d281356c" kindref="member">co_sync_get_dev</ref>(sync));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a66878ed7fb18646f0bedfe3a85172446" kindref="member">co_sync_ind_t</ref>*<sp/>ind<sp/>=<sp/>SyncInd::func;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1ad61e709223f6e271c5e5d1dc61afd1f3" kindref="member">co_sync_get_ind</ref>(sync,<sp/>&amp;ind,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ind);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>data);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a1c43d9c6e10ff2e6c05632151e5bc29e" kindref="member">co_sync_destroy</ref>(sync);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"></codeline>
+<codeline lineno="200"></codeline>
+<codeline lineno="206" refid="test-sync_8cpp_1a9f9480f92aaa679035f63b3f9f0f718c" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_SyncCreate,<sp/>CoSyncDestroy_DestroyNull)<sp/>{<sp/><ref refid="sync_8h_1a1c43d9c6e10ff2e6c05632151e5bc29e" kindref="member">co_sync_destroy</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="test-sync_8cpp_1a31028b91566b4072b287db15abcc5fbe" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_SyncCreate,<sp/>CoSyncDestroy_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>dev_holder-&gt;CreateAndInsertObj(obj1005,<sp/>0x1005u);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a1c43d9c6e10ff2e6c05632151e5bc29e" kindref="member">co_sync_destroy</ref>(sync);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">TEST_GROUP_BASE(CO_Sync,<sp/>CO_SyncBase)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/>sync;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;CoObjTHolder&gt;<sp/>obj1006;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;CoObjTHolder&gt;<sp/>obj1019;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>obj<sp/>0x1006,<sp/>sub<sp/>0x00<sp/>contains<sp/>communication<sp/>cycle<sp/>period<sp/>in<sp/>us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CreateObj1006AndSetPeriod(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>period)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder-&gt;CreateAndInsertObj(obj1006,<sp/>0x1006u);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>obj1006-&gt;InsertAndSetSub(0x00u,<sp/><ref refid="type_8h_1ace37d6d1726eec18d1f71dc30022e81c" kindref="member">CO_DEFTYPE_UNSIGNED32</ref>,<sp/>period);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>obj<sp/>0x1019u,<sp/>sub<sp/>0x00<sp/>contains<sp/>synchronous<sp/>counter<sp/>overflow<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CreateObj1019AndSetCntOverflow(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>overflow)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder-&gt;CreateAndInsertObj(obj1019,<sp/>0x1019u);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>obj1019-&gt;InsertAndSetSub(0x00u,<sp/><ref refid="type_8h_1a89b5006fcb2fd8be6e5626c6874b0f03" kindref="member">CO_DEFTYPE_UNSIGNED8</ref>,<sp/>overflow);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CheckSubDnIndDefault(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/><ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>idx,<sp/>0x00u);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(sub<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="obj_8h_1aa9fac5fdd8d282698d2806d70ea37be0" kindref="member">co_sub_dn_ind_t</ref>*<sp/>ind<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="obj_8h_1a54e4be22a5e680f79cf55a54189ae08a" kindref="member">co_sub_get_dn_ind</ref>(sub,<sp/>&amp;ind,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>FUNCTIONPOINTERS_EQUAL(&amp;<ref refid="detail_2obj_8h_1a1999a87e59907e3d70ff782c699983e9" kindref="member">co_sub_default_dn_ind</ref>,<sp/>ind);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>data);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="co-sub-dn-ind_8hpp_1a70362635bdf552ca4fc7094c0b3317a8" kindref="member">CheckSubDnIndIsSet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sub<sp/>=<sp/><ref refid="dev_8h_1a07fdc7406e5737f20cacd8ca12f11491" kindref="member">co_dev_find_sub</ref>(dev,<sp/>idx,<sp/>0x00u);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(sub<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="obj_8h_1aa9fac5fdd8d282698d2806d70ea37be0" kindref="member">co_sub_dn_ind_t</ref>*<sp/>ind<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="obj_8h_1a54e4be22a5e680f79cf55a54189ae08a" kindref="member">co_sub_get_dn_ind</ref>(sub,<sp/>&amp;ind,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(ind<sp/>!=<sp/>&amp;<ref refid="detail_2obj_8h_1a1999a87e59907e3d70ff782c699983e9" kindref="member">co_sub_default_dn_ind</ref>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>POINTERS_EQUAL(sync,<sp/>data);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SyncSetErrSetInd(<ref refid="sync_8h_1a3093c3f7f219d13b2e8fa33ce12260ec" kindref="member">co_sync_err_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>err,<sp/><ref refid="sync_8h_1a66878ed7fb18646f0bedfe3a85172446" kindref="member">co_sync_ind_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ind)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sync_8h_1a384461e8f9630b097dd73ea3b445a1b1" kindref="member">co_sync_set_err</ref>(sync,<sp/>err,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sync_8h_1a569a573842321e22d363beb38006c444" kindref="member">co_sync_set_ind</ref>(sync,<sp/>ind,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SyncSetSendSetInd(<ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>send,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sync_8h_1a66878ed7fb18646f0bedfe3a85172446" kindref="member">co_sync_ind_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ind)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" kindref="member">can_net_set_send_func</ref>(net,<sp/>send,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sync_8h_1a569a573842321e22d363beb38006c444" kindref="member">co_sync_set_ind</ref>(sync,<sp/>ind,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>StartSYNC()<sp/>{<sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);<sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>TEST_BASE_SETUP();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder-&gt;CreateAndInsertObj(obj1005,<sp/>0x1005u);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>SyncErr::Clear();</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>SyncInd::Clear();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>CanSend::Clear();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(sync<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sync_8h_1a1c43d9c6e10ff2e6c05632151e5bc29e" kindref="member">co_sync_destroy</ref>(sync);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>sync<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>TEST_BASE_TEARDOWN();</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"></codeline>
+<codeline lineno="306" refid="test-sync_8cpp_1a68a932a082ed050eadd1b92cfe0ebb4e" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncGetInd_PointersNull)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1ad61e709223f6e271c5e5d1dc61afd1f3" kindref="member">co_sync_get_ind</ref>(sync,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="test-sync_8cpp_1a6376326def9bb873549d5aba93a2f897" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncGetInd)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a66878ed7fb18646f0bedfe3a85172446" kindref="member">co_sync_ind_t</ref>*<sp/>ind<sp/>=<sp/>SyncInd::func;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dataptr<sp/>=<sp/>&amp;data;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1ad61e709223f6e271c5e5d1dc61afd1f3" kindref="member">co_sync_get_ind</ref>(sync,<sp/>&amp;ind,<sp/>&amp;dataptr);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ind);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>dataptr);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"></codeline>
+<codeline lineno="331"></codeline>
+<codeline lineno="339" refid="test-sync_8cpp_1a4e1868bf325b60eaa4a20e737cd9c12a" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncSetInd)<sp/>{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a569a573842321e22d363beb38006c444" kindref="member">co_sync_set_ind</ref>(sync,<sp/>SyncInd::func,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a66878ed7fb18646f0bedfe3a85172446" kindref="member">co_sync_ind_t</ref>*<sp/>ind<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ret_pdata<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1ad61e709223f6e271c5e5d1dc61afd1f3" kindref="member">co_sync_get_ind</ref>(sync,<sp/>&amp;ind,<sp/>&amp;ret_pdata);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(SyncInd::func,<sp/>ind);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;data,<sp/>ret_pdata);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"></codeline>
+<codeline lineno="355"></codeline>
+<codeline lineno="361" refid="test-sync_8cpp_1a1528af8dd8445fa95f53aaf7d8b4bba3" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncGetErr_PointersNull)<sp/>{</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a10628db1f68f9d2abf24e5ae6dfc609a" kindref="member">co_sync_get_err</ref>(sync,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="test-sync_8cpp_1a46c594bc65a1c010bf1a6258d69d3bf9" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncGetErr)<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a3093c3f7f219d13b2e8fa33ce12260ec" kindref="member">co_sync_err_t</ref>*<sp/>err<sp/>=<sp/>SyncErr::func;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dataptr<sp/>=<sp/>&amp;data;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a10628db1f68f9d2abf24e5ae6dfc609a" kindref="member">co_sync_get_err</ref>(sync,<sp/>&amp;err,<sp/>&amp;dataptr);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>err);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>dataptr);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"></codeline>
+<codeline lineno="386"></codeline>
+<codeline lineno="394" refid="test-sync_8cpp_1a8112b674c3b920d976087d0868812fd0" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncSetErr)<sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a384461e8f9630b097dd73ea3b445a1b1" kindref="member">co_sync_set_err</ref>(sync,<sp/>SyncErr::func,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a3093c3f7f219d13b2e8fa33ce12260ec" kindref="member">co_sync_err_t</ref>*<sp/>err<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ret_pdata<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a10628db1f68f9d2abf24e5ae6dfc609a" kindref="member">co_sync_get_err</ref>(sync,<sp/>&amp;err,<sp/>&amp;ret_pdata);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(SyncErr::func,<sp/>err);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;data,<sp/>ret_pdata);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"></codeline>
+<codeline lineno="410"></codeline>
+<codeline lineno="424" refid="test-sync_8cpp_1a4a2633d1e4f4ae9bacfb7f409d87438c" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStart_NoObj1006NoObj1019)<sp/>{</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1005u);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446" refid="test-sync_8cpp_1a6f2776c6e378788928883ef16a9aba8d" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStart_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x01u);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x01u);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1005u);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1006u);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1019u);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="test-sync_8cpp_1a805d547f6fd26ebde6e43b3191b9eee2" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStart_AlreadyStarted)<sp/>{</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x01u);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x01u);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/>CHECK(!<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"></codeline>
+<codeline lineno="480"></codeline>
+<codeline lineno="489" refid="test-sync_8cpp_1a33251975b5644cb129213111f0af41c9" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncIsStopped_BeforeAfterStart)<sp/>{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x01u);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x01u);</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="497"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"></codeline>
+<codeline lineno="503"></codeline>
+<codeline lineno="518" refid="test-sync_8cpp_1a3e6eb87dc954447946c4e62a55e08515" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStart_IsProducer)<sp/>{</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID<sp/>|<sp/><ref refid="sync_8h_1ae69d44f76b0f500e4a6189f567e258ed" kindref="member">CO_SYNC_COBID_PRODUCER</ref>);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x01u);</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1005u);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1006u);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543" refid="test-sync_8cpp_1aa29dc0063ed2e173f120ebf21f49ee97" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStart_FrameBitSet)<sp/>{</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID<sp/>|<sp/><ref refid="sync_8h_1a49b5c762817a4ea472ab0e2fcd88963d" kindref="member">CO_SYNC_COBID_FRAME</ref>);</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x01u);</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1005u);</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1006u);</highlight></codeline>
+<codeline lineno="552"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569" refid="test-sync_8cpp_1a0acd84f9e4d65d0030905919eebf994c" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStart_PeriodValueZero)<sp/>{</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID<sp/>|<sp/><ref refid="sync_8h_1ae69d44f76b0f500e4a6189f567e258ed" kindref="member">CO_SYNC_COBID_PRODUCER</ref>);</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x00u);</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/>SyncSetSendSetInd(CanSend::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a733ea84f3e31396493a7af32d7cbfc15" kindref="member">co_sync_start</ref>(sync);</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1005u);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/>CheckSubDnIndIsSet(0x1006u);</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{10L,<sp/>0L};</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp));</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>CanSend::GetNumCalled());</highlight></codeline>
+<codeline lineno="583"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"></codeline>
+<codeline lineno="589"></codeline>
+<codeline lineno="595" refid="test-sync_8cpp_1ad8d454cf5c9e562af0db086876354f1d" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStop_NotStarted)<sp/>{<sp/><ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop</ref>(sync);<sp/>}</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607" refid="test-sync_8cpp_1a316e022903c594ff948abaa55ca099e4" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStop_NoObj1019NoObj1006)<sp/>{</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop</ref>(sync);</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/>CheckSubDnIndDefault(0x1005u);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="625" refid="test-sync_8cpp_1a67eb2205fb8b6f9ca12e9f3c1f2edea6" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncStop_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x01u);</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x00000001u);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop</ref>(sync);</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/>CheckSubDnIndDefault(0x1005u);</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/>CheckSubDnIndDefault(0x1006u);</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/>CheckSubDnIndDefault(0x1019u);</highlight></codeline>
+<codeline lineno="636"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"></codeline>
+<codeline lineno="642"></codeline>
+<codeline lineno="651" refid="test-sync_8cpp_1a38a39b81f68ef8a65bf88114285c2f9f" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncIsStopped_BeforeAfterStop)<sp/>{</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(0x01u);</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x01u);</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/>CHECK_FALSE(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><ref refid="sync_8h_1a999b4865e97444f2f39acd36207ff6e5" kindref="member">co_sync_stop</ref>(sync);</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/>CHECK(<ref refid="sync_8h_1a8e25aedfa4456eb081d6fc87886179cc" kindref="member">co_sync_is_stopped</ref>(sync));</highlight></codeline>
+<codeline lineno="660"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"></codeline>
+<codeline lineno="666"></codeline>
+<codeline lineno="673" refid="test-sync_8cpp_1a0d8ad5c5546a2ea7e36431a9b6966af3" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncRecv_NoErrFuncNoIndFunc)<sp/>{</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>DEV_ID;</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="685"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695" refid="test-sync_8cpp_1a915b88ef32bd8f039cc0e7a0144de1a5" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncRecv_ErrHandlerOnly_NoIndFunc)<sp/>{</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/>SyncSetErrSetInd(SyncErr::func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>DEV_ID;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/>CHECK(SyncErr::called);</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncErr::data);</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x8240u,<sp/>SyncErr::eec);</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x10u,<sp/>SyncErr::er);</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(sync,<sp/>SyncErr::sync);</highlight></codeline>
+<codeline lineno="713"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="722"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>counter<sp/>set<sp/>to<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="723" refid="test-sync_8cpp_1a73ad2c2d6a1d67f1573755eb63ee28f5" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncRecv_IndFuncOnly_NoErrHandler)<sp/>{</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/>SyncSetErrSetInd(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::func);</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"></highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>DEV_ID;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"></highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"></highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="740"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"></highlight></codeline>
+<codeline lineno="752" refid="test-sync_8cpp_1abbf69b83400a58f2a16f6c9e138ec359" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncRecv_OverflowSetToOne)<sp/>{</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x01u);</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/>SyncSetErrSetInd(SyncErr::func,<sp/>SyncInd::func);</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>DEV_ID;</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/>CHECK(SyncErr::called);</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncErr::data);</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x8240u,<sp/>SyncErr::eec);</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x10u,<sp/>SyncErr::er);</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(sync,<sp/>SyncErr::sync);</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="775"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"></highlight></codeline>
+<codeline lineno="786" refid="test-sync_8cpp_1a7d6b8cdada9c01ac8bd77ca83039c0e3" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncRecv_OverflowSetToOneEqualToMsgLen)<sp/>{</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x01u);</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/>SyncSetErrSetInd(SyncErr::func,<sp/>SyncInd::func);</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"></highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="793"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>DEV_ID;</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a12e8389ecebff10d0b92b1a2c281e48f" kindref="member">data</ref>[0]<sp/>=<sp/>0x42u;</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"></highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/>CHECK(!SyncErr::called);</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x42u,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="806"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"></highlight></codeline>
+<codeline lineno="817" refid="test-sync_8cpp_1a002eec504b9f98955565e557f4897cd9" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncRecv_Nominal)<sp/>{</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID);</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/>SyncSetErrSetInd(SyncErr::func,<sp/>SyncInd::func);</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="821"><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"><sp/><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>msg<sp/>=<sp/><ref refid="msg_8h_1adae54901d79c929851c38c78620dd76d" kindref="member">CAN_MSG_INIT</ref>;</highlight></codeline>
+<codeline lineno="823"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>=<sp/>DEV_ID;</highlight></codeline>
+<codeline lineno="824"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a34d655061b20b5c16113c8c444595d33" kindref="member">flags</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="825"><highlight class="normal"><sp/><sp/>msg.<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"></highlight></codeline>
+<codeline lineno="827"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(net,<sp/>&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"></highlight></codeline>
+<codeline lineno="829"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ret);</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/>CHECK(!SyncErr::called);</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="835"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"></highlight></codeline>
+<codeline lineno="838"></codeline>
+<codeline lineno="841"></codeline>
+<codeline lineno="854" refid="test-sync_8cpp_1acee008993ae81857663101ebd9f694c4" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncTimer_ExtendedCANID)<sp/>{</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(500u);</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID<sp/>|<sp/><ref refid="sync_8h_1ae69d44f76b0f500e4a6189f567e258ed" kindref="member">CO_SYNC_COBID_PRODUCER</ref><sp/>|<sp/><ref refid="sync_8h_1a49b5c762817a4ea472ab0e2fcd88963d" kindref="member">CO_SYNC_COBID_FRAME</ref>);</highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><sp/><sp/>SyncSetSendSetInd(CanSend::Func,<sp/>SyncInd::func);</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{0L,<sp/>600000L};</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"></highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="863"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="865"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="867"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(CanSend::GetNumCalled(),<sp/>&gt;,<sp/>0);</highlight></codeline>
+<codeline lineno="869"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(DEV_ID,<sp/>CanSend::msg.</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="870"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="msg_8h_1ad140c0263c405d8a59caa34cf0786299a655b60a1111aa11cc8008076864f583a" kindref="member">CAN_FLAG_IDE</ref>,<sp/>CanSend::msg.flags);</highlight></codeline>
+<codeline lineno="871"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.len);</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.data[0]);</highlight></codeline>
+<codeline lineno="873"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884" refid="test-sync_8cpp_1aeb83dfb4b16f2c85dd4900c5983d7792" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncTimer_NoIndMaxCntNotSet)<sp/>{</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(500u);</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID<sp/>|<sp/><ref refid="sync_8h_1ae69d44f76b0f500e4a6189f567e258ed" kindref="member">CO_SYNC_COBID_PRODUCER</ref>);</highlight></codeline>
+<codeline lineno="887"><highlight class="normal"><sp/><sp/>SyncSetSendSetInd(CanSend::Func,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{0L,<sp/>600000L};</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight></codeline>
+<codeline lineno="891"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="892"><highlight class="normal"></highlight></codeline>
+<codeline lineno="893"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="894"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(CanSend::GetNumCalled(),<sp/>&gt;,<sp/>0);</highlight></codeline>
+<codeline lineno="895"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(DEV_ID,<sp/>CanSend::msg.</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="896"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.flags);</highlight></codeline>
+<codeline lineno="897"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.len);</highlight></codeline>
+<codeline lineno="898"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.data[0]);</highlight></codeline>
+<codeline lineno="899"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="900"><highlight class="normal"></highlight></codeline>
+<codeline lineno="912" refid="test-sync_8cpp_1a85825c19954f68c94e8d92666d291b07" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncTimer_MaxCntSet)<sp/>{</highlight></codeline>
+<codeline lineno="913"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(500u);</highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><sp/><sp/>CreateObj1019AndSetCntOverflow(0x02u);</highlight></codeline>
+<codeline lineno="915"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID<sp/>|<sp/><ref refid="sync_8h_1ae69d44f76b0f500e4a6189f567e258ed" kindref="member">CO_SYNC_COBID_PRODUCER</ref>);</highlight></codeline>
+<codeline lineno="916"><highlight class="normal"><sp/><sp/>SyncSetSendSetInd(CanSend::Func,<sp/>SyncInd::func);</highlight></codeline>
+<codeline lineno="917"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp[2]<sp/>=<sp/>{{0L,<sp/>600000L},<sp/>{0L,<sp/>1200000L}};</highlight></codeline>
+<codeline lineno="919"><highlight class="normal"></highlight></codeline>
+<codeline lineno="920"><highlight class="normal"><sp/><sp/>SyncInd::cnt<sp/>=<sp/>2u;</highlight></codeline>
+<codeline lineno="921"><highlight class="normal"></highlight></codeline>
+<codeline lineno="922"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp[0]);</highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight></codeline>
+<codeline lineno="924"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="925"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="926"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="927"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="928"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="929"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(CanSend::GetNumCalled(),<sp/>&gt;,<sp/>0);</highlight></codeline>
+<codeline lineno="930"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(DEV_ID,<sp/>CanSend::msg.</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="931"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.flags);</highlight></codeline>
+<codeline lineno="932"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CanSend::msg.len);</highlight></codeline>
+<codeline lineno="933"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CanSend::msg.data[0]);</highlight></codeline>
+<codeline lineno="934"><highlight class="normal"></highlight></codeline>
+<codeline lineno="935"><highlight class="normal"><sp/><sp/>SyncInd::Clear();</highlight></codeline>
+<codeline lineno="936"><highlight class="normal"><sp/><sp/>CanSend::Clear();</highlight></codeline>
+<codeline lineno="937"><highlight class="normal"></highlight></codeline>
+<codeline lineno="938"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret2<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp[1]);</highlight></codeline>
+<codeline lineno="939"><highlight class="normal"></highlight></codeline>
+<codeline lineno="940"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret2);</highlight></codeline>
+<codeline lineno="941"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="943"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="944"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="945"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(CanSend::GetNumCalled(),<sp/>&gt;,<sp/>0);</highlight></codeline>
+<codeline lineno="946"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(DEV_ID,<sp/>CanSend::msg.</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="947"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.flags);</highlight></codeline>
+<codeline lineno="948"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1u,<sp/>CanSend::msg.len);</highlight></codeline>
+<codeline lineno="949"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2u,<sp/>CanSend::msg.data[0]);</highlight></codeline>
+<codeline lineno="950"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="951"><highlight class="normal"></highlight></codeline>
+<codeline lineno="962" refid="test-sync_8cpp_1a816379bf7bba43584ad83c14951024e1" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(CO_Sync,<sp/>CoSyncTimer)<sp/>{</highlight></codeline>
+<codeline lineno="963"><highlight class="normal"><sp/><sp/>CreateObj1006AndSetPeriod(500u);</highlight></codeline>
+<codeline lineno="964"><highlight class="normal"><sp/><sp/>SetCobid(DEV_ID<sp/>|<sp/><ref refid="sync_8h_1ae69d44f76b0f500e4a6189f567e258ed" kindref="member">CO_SYNC_COBID_PRODUCER</ref>);</highlight></codeline>
+<codeline lineno="965"><highlight class="normal"><sp/><sp/>SyncSetSendSetInd(CanSend::Func,<sp/>SyncInd::func);</highlight></codeline>
+<codeline lineno="966"><highlight class="normal"><sp/><sp/>StartSYNC();</highlight></codeline>
+<codeline lineno="967"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>tp<sp/>=<sp/>{0L,<sp/>600000L};</highlight></codeline>
+<codeline lineno="968"><highlight class="normal"></highlight></codeline>
+<codeline lineno="969"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(net,<sp/>&amp;tp);</highlight></codeline>
+<codeline lineno="970"><highlight class="normal"></highlight></codeline>
+<codeline lineno="971"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="972"><highlight class="normal"><sp/><sp/>CHECK(SyncInd::called);</highlight></codeline>
+<codeline lineno="973"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>SyncInd::data);</highlight></codeline>
+<codeline lineno="974"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>SyncInd::cnt);</highlight></codeline>
+<codeline lineno="975"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sync,<sp/>SyncInd::sync);</highlight></codeline>
+<codeline lineno="976"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(CanSend::GetNumCalled(),<sp/>&gt;,<sp/>0);</highlight></codeline>
+<codeline lineno="977"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(DEV_ID,<sp/>CanSend::msg.</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="978"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.flags);</highlight></codeline>
+<codeline lineno="979"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.len);</highlight></codeline>
+<codeline lineno="980"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0u,<sp/>CanSend::msg.data[0]);</highlight></codeline>
+<codeline lineno="981"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="982"><highlight class="normal"></highlight></codeline>
+<codeline lineno="984"><highlight class="normal"></highlight></codeline>
+<codeline lineno="985"><highlight class="normal">TEST_GROUP_BASE(Co_SyncAllocation,<sp/>CO_SyncBase)<sp/>{</highlight></codeline>
+<codeline lineno="986"><highlight class="normal"><sp/><sp/><ref refid="structco__sync" kindref="compound">co_sync_t</ref>*<sp/>sync;</highlight></codeline>
+<codeline lineno="987"><highlight class="normal"><sp/><sp/><ref refid="classAllocators_1_1Limited" kindref="compound">Allocators::Limited</ref><sp/>limitedAllocator;</highlight></codeline>
+<codeline lineno="988"><highlight class="normal"></highlight></codeline>
+<codeline lineno="989"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{</highlight></codeline>
+<codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/>TEST_BASE_SETUP();</highlight></codeline>
+<codeline lineno="991"><highlight class="normal"></highlight></codeline>
+<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(net);</highlight></codeline>
+<codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/>net<sp/>=<sp/><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(limitedAllocator.ToAllocT(),<sp/>0);</highlight></codeline>
+<codeline lineno="994"><highlight class="normal"></highlight></codeline>
+<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/>dev_holder-&gt;CreateAndInsertObj(obj1005,<sp/>0x1005u);</highlight></codeline>
+<codeline lineno="996"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="997"><highlight class="normal"></highlight></codeline>
+<codeline lineno="998"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{</highlight></codeline>
+<codeline lineno="999"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sync_8h_1a1c43d9c6e10ff2e6c05632151e5bc29e" kindref="member">co_sync_destroy</ref>(sync);</highlight></codeline>
+<codeline lineno="1000"><highlight class="normal"><sp/><sp/><sp/><sp/>TEST_BASE_TEARDOWN();</highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1002"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1006"></codeline>
+<codeline lineno="1013" refid="test-sync_8cpp_1abe36c3a95bf8f7c5ad4e13e564585f46" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(Co_SyncAllocation,<sp/>CoSyncCreate_NoMoreMemory)<sp/>{</highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"><sp/><sp/>limitedAllocator.LimitAllocationTo(0u);</highlight></codeline>
+<codeline lineno="1015"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1016"><highlight class="normal"><sp/><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1018"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>sync);</highlight></codeline>
+<codeline lineno="1019"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1020"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1030" refid="test-sync_8cpp_1a8dd3c9044681b40a721207bd28f06a9b" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(Co_SyncAllocation,<sp/>CoSyncCreate_MemoryOnlyForSyncT)<sp/>{</highlight></codeline>
+<codeline lineno="1031"><highlight class="normal"><sp/><sp/>limitedAllocator.LimitAllocationTo(<ref refid="sync_8h_1a3d7834c56acf49f6de7c9255fcab5ca1" kindref="member">co_sync_sizeof</ref>());</highlight></codeline>
+<codeline lineno="1032"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1033"><highlight class="normal"><sp/><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="1034"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1035"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>sync);</highlight></codeline>
+<codeline lineno="1036"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1037"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1049" refid="test-sync_8cpp_1a31fc3c097ea8bde855e68d091a729097" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(Co_SyncAllocation,<sp/>CoSyncCreate_MemoryOnlyForSyncTAndRecv)<sp/>{</highlight></codeline>
+<codeline lineno="1050"><highlight class="normal"><sp/><sp/>limitedAllocator.LimitAllocationTo(<ref refid="sync_8h_1a3d7834c56acf49f6de7c9255fcab5ca1" kindref="member">co_sync_sizeof</ref>()<sp/>+<sp/><ref refid="net_8h_1af21ea95695f61835d14aed2aa4367395" kindref="member">can_recv_sizeof</ref>());</highlight></codeline>
+<codeline lineno="1051"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1052"><highlight class="normal"><sp/><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="1053"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1054"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>sync);</highlight></codeline>
+<codeline lineno="1055"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1056"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1068" refid="test-sync_8cpp_1a62b183b1150268edefee3ad998c44bfe" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(Co_SyncAllocation,<sp/>CoSyncCreate_MemoryOnlyForSyncTAndTimer)<sp/>{</highlight></codeline>
+<codeline lineno="1069"><highlight class="normal"><sp/><sp/>limitedAllocator.LimitAllocationTo(<ref refid="sync_8h_1a3d7834c56acf49f6de7c9255fcab5ca1" kindref="member">co_sync_sizeof</ref>()<sp/>+<sp/><ref refid="net_8h_1a667123ea92fcaab84617e5ca7eb5fbe0" kindref="member">can_timer_sizeof</ref>());</highlight></codeline>
+<codeline lineno="1070"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1071"><highlight class="normal"><sp/><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="1072"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1073"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>sync);</highlight></codeline>
+<codeline lineno="1074"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1075"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1088" refid="test-sync_8cpp_1ab00d5b38850d67d07237786677c95624" refkind="member"><highlight class="normal"><ref refid="test-sync_8cpp_1a38e10c18203712ae40697d6a38ae45f4" kindref="member">TEST</ref>(Co_SyncAllocation,<sp/>CoSyncCreate_AllNecessaryMemoryAvailable)<sp/>{</highlight></codeline>
+<codeline lineno="1089"><highlight class="normal"><sp/><sp/>limitedAllocator.LimitAllocationTo(<ref refid="sync_8h_1a3d7834c56acf49f6de7c9255fcab5ca1" kindref="member">co_sync_sizeof</ref>()<sp/>+<sp/><ref refid="net_8h_1af21ea95695f61835d14aed2aa4367395" kindref="member">can_recv_sizeof</ref>()<sp/>+</highlight></codeline>
+<codeline lineno="1090"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a667123ea92fcaab84617e5ca7eb5fbe0" kindref="member">can_timer_sizeof</ref>());</highlight></codeline>
+<codeline lineno="1091"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1092"><highlight class="normal"><sp/><sp/>sync<sp/>=<sp/><ref refid="sync_8h_1a62e6ed494d1994805f805b5507b7eae1" kindref="member">co_sync_create</ref>(net,<sp/>dev);</highlight></codeline>
+<codeline lineno="1093"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1094"><highlight class="normal"><sp/><sp/>CHECK(sync<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1095"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1096"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/co/test-sync.cpp"/>
+  </compounddef>
+</doxygen>

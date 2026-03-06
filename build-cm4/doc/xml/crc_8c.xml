@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="crc_8c" kind="file" language="C++">
+    <compoundname>crc.c</compoundname>
+    <includes refid="lib_2co_2co_8h" local="yes">co.h</includes>
+    <includes refid="crc_8h" local="no">lely/co/crc.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="8">
+        <label>lely/co/crc.h</label>
+        <link refid="crc_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/co/crc.c</label>
+        <link refid="crc_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="crc_8c_1a35ba16d71094133c2810f6d0511b8c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint_least16_t</type>
+        <definition>uint_least16_t co_crc</definition>
+        <argsstring>(uint_least16_t crc, const uint_least8_t *bp, size_t n)</argsstring>
+        <name>co_crc</name>
+        <param>
+          <type>uint_least16_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t *</type>
+          <declname>bp</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Computes a CRC-16 checksum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an implementation of the CRC16-CCITT specification based on the 0x1021 generator polynomial. It uses a table with precomputed values for efficiency.</para>
+<para>As per section 7.2.4.3.16 in CiA 301 version 4.2.0, the CRC of &quot;123456789&quot; (with an initial value of 0x0000) is 0x31c3.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>crc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the initial value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the bytes to be hashed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes to hash.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the updated CRC. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/crc.c" line="28" column="1" bodyfile="lib/co/crc.c" bodystart="28" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen library; it contains the implementation of the Cyclic Redundancy Check (CRC) function. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="crc_8h" kindref="compound">lely/co/crc.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2016-2019 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2co_2co_8h" kindref="compound">co.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="crc_8h" kindref="compound">lely/co/crc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">uint_least16_t</highlight></codeline>
+<codeline lineno="28" refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" refkind="member"><highlight class="normal"><ref refid="crc_8c_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(uint_least16_t<sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>*bp,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>table<sp/>contains<sp/>precomputed<sp/>CRC-16<sp/>checksums<sp/>for<sp/>each<sp/>of<sp/>the<sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bytes.<sp/>The<sp/>table<sp/>was<sp/>computed<sp/>with<sp/>the<sp/>following<sp/>code:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least16_t<sp/>tab[256];</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(size_t<sp/>n<sp/>=<sp/>0;<sp/>n<sp/>&lt;<sp/>256;<sp/>n++)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least16_t<sp/>crc<sp/>=<sp/>n<sp/>&lt;&lt;<sp/>8;</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(size_t<sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>8;<sp/>k++)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(crc<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>(crc<sp/>&lt;&lt;<sp/>1)<sp/>^<sp/>0x1021;</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tab[n]<sp/>=<sp/>crc;</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least16_t<sp/>tab[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000,<sp/>0x1021,<sp/>0x2042,<sp/>0x3063,<sp/>0x4084,<sp/>0x50a5,<sp/>0x60c6,<sp/>0x70e7,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8108,<sp/>0x9129,<sp/>0xa14a,<sp/>0xb16b,<sp/>0xc18c,<sp/>0xd1ad,<sp/>0xe1ce,<sp/>0xf1ef,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1231,<sp/>0x0210,<sp/>0x3273,<sp/>0x2252,<sp/>0x52b5,<sp/>0x4294,<sp/>0x72f7,<sp/>0x62d6,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9339,<sp/>0x8318,<sp/>0xb37b,<sp/>0xa35a,<sp/>0xd3bd,<sp/>0xc39c,<sp/>0xf3ff,<sp/>0xe3de,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2462,<sp/>0x3443,<sp/>0x0420,<sp/>0x1401,<sp/>0x64e6,<sp/>0x74c7,<sp/>0x44a4,<sp/>0x5485,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xa56a,<sp/>0xb54b,<sp/>0x8528,<sp/>0x9509,<sp/>0xe5ee,<sp/>0xf5cf,<sp/>0xc5ac,<sp/>0xd58d,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3653,<sp/>0x2672,<sp/>0x1611,<sp/>0x0630,<sp/>0x76d7,<sp/>0x66f6,<sp/>0x5695,<sp/>0x46b4,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xb75b,<sp/>0xa77a,<sp/>0x9719,<sp/>0x8738,<sp/>0xf7df,<sp/>0xe7fe,<sp/>0xd79d,<sp/>0xc7bc,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x48c4,<sp/>0x58e5,<sp/>0x6886,<sp/>0x78a7,<sp/>0x0840,<sp/>0x1861,<sp/>0x2802,<sp/>0x3823,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xc9cc,<sp/>0xd9ed,<sp/>0xe98e,<sp/>0xf9af,<sp/>0x8948,<sp/>0x9969,<sp/>0xa90a,<sp/>0xb92b,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5af5,<sp/>0x4ad4,<sp/>0x7ab7,<sp/>0x6a96,<sp/>0x1a71,<sp/>0x0a50,<sp/>0x3a33,<sp/>0x2a12,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xdbfd,<sp/>0xcbdc,<sp/>0xfbbf,<sp/>0xeb9e,<sp/>0x9b79,<sp/>0x8b58,<sp/>0xbb3b,<sp/>0xab1a,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6ca6,<sp/>0x7c87,<sp/>0x4ce4,<sp/>0x5cc5,<sp/>0x2c22,<sp/>0x3c03,<sp/>0x0c60,<sp/>0x1c41,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xedae,<sp/>0xfd8f,<sp/>0xcdec,<sp/>0xddcd,<sp/>0xad2a,<sp/>0xbd0b,<sp/>0x8d68,<sp/>0x9d49,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7e97,<sp/>0x6eb6,<sp/>0x5ed5,<sp/>0x4ef4,<sp/>0x3e13,<sp/>0x2e32,<sp/>0x1e51,<sp/>0x0e70,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xff9f,<sp/>0xefbe,<sp/>0xdfdd,<sp/>0xcffc,<sp/>0xbf1b,<sp/>0xaf3a,<sp/>0x9f59,<sp/>0x8f78,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9188,<sp/>0x81a9,<sp/>0xb1ca,<sp/>0xa1eb,<sp/>0xd10c,<sp/>0xc12d,<sp/>0xf14e,<sp/>0xe16f,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1080,<sp/>0x00a1,<sp/>0x30c2,<sp/>0x20e3,<sp/>0x5004,<sp/>0x4025,<sp/>0x7046,<sp/>0x6067,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x83b9,<sp/>0x9398,<sp/>0xa3fb,<sp/>0xb3da,<sp/>0xc33d,<sp/>0xd31c,<sp/>0xe37f,<sp/>0xf35e,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02b1,<sp/>0x1290,<sp/>0x22f3,<sp/>0x32d2,<sp/>0x4235,<sp/>0x5214,<sp/>0x6277,<sp/>0x7256,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xb5ea,<sp/>0xa5cb,<sp/>0x95a8,<sp/>0x8589,<sp/>0xf56e,<sp/>0xe54f,<sp/>0xd52c,<sp/>0xc50d,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x34e2,<sp/>0x24c3,<sp/>0x14a0,<sp/>0x0481,<sp/>0x7466,<sp/>0x6447,<sp/>0x5424,<sp/>0x4405,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xa7db,<sp/>0xb7fa,<sp/>0x8799,<sp/>0x97b8,<sp/>0xe75f,<sp/>0xf77e,<sp/>0xc71d,<sp/>0xd73c,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x26d3,<sp/>0x36f2,<sp/>0x0691,<sp/>0x16b0,<sp/>0x6657,<sp/>0x7676,<sp/>0x4615,<sp/>0x5634,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xd94c,<sp/>0xc96d,<sp/>0xf90e,<sp/>0xe92f,<sp/>0x99c8,<sp/>0x89e9,<sp/>0xb98a,<sp/>0xa9ab,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x5844,<sp/>0x4865,<sp/>0x7806,<sp/>0x6827,<sp/>0x18c0,<sp/>0x08e1,<sp/>0x3882,<sp/>0x28a3,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xcb7d,<sp/>0xdb5c,<sp/>0xeb3f,<sp/>0xfb1e,<sp/>0x8bf9,<sp/>0x9bd8,<sp/>0xabbb,<sp/>0xbb9a,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4a75,<sp/>0x5a54,<sp/>0x6a37,<sp/>0x7a16,<sp/>0x0af1,<sp/>0x1ad0,<sp/>0x2ab3,<sp/>0x3a92,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xfd2e,<sp/>0xed0f,<sp/>0xdd6c,<sp/>0xcd4d,<sp/>0xbdaa,<sp/>0xad8b,<sp/>0x9de8,<sp/>0x8dc9,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7c26,<sp/>0x6c07,<sp/>0x5c64,<sp/>0x4c45,<sp/>0x3ca2,<sp/>0x2c83,<sp/>0x1ce0,<sp/>0x0cc1,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xef1f,<sp/>0xff3e,<sp/>0xcf5d,<sp/>0xdf7c,<sp/>0xaf9b,<sp/>0xbfba,<sp/>0x8fd9,<sp/>0x9ff8,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x6e17,<sp/>0x7e36,<sp/>0x4e55,<sp/>0x5e74,<sp/>0x2e93,<sp/>0x3eb2,<sp/>0x0ed1,<sp/>0x1ef0</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bp<sp/>&amp;&amp;<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n--)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>explicit<sp/>casts<sp/>to<sp/>satisfy<sp/>SonarCloud<sp/>rules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>index<sp/>=</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bp<sp/>^<sp/>(uint_least8_t)(crc<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least16_t<sp/>lookup<sp/>=<sp/>tab[index];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>(uint_least16_t)(</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lookup<sp/>^<sp/>(uint_least16_t)(crc<sp/>&lt;&lt;<sp/>8));</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bp++;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/co/crc.c"/>
+  </compounddef>
+</doxygen>

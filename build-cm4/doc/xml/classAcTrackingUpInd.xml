@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classAcTrackingUpInd" kind="class" language="C++" prot="public">
+    <compoundname>AcTrackingUpInd</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classAcTrackingUpInd_1a821edc8dbbbf8675b3ef0410a45e358b" prot="public" static="yes" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t AcTrackingUpInd::last_ac</definition>
+        <argsstring></argsstring>
+        <name>last_ac</name>
+        <initializer>= 0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="2702" column="26" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="2702" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classAcTrackingUpInd_1abeaf2e26849b216d817c9f30e373dc26" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>static co_unsigned32_t AcTrackingUpInd::Func</definition>
+        <argsstring>(const co_sub_t *const sub, struct co_sdo_req *const req, co_unsigned32_t ac, void *const)</argsstring>
+        <name>Func</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *const</type>
+          <declname>sub</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *const</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>void * const</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="2705" column="3" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="2705" bodyend="2718"/>
+      </memberdef>
+      <memberdef kind="function" id="classAcTrackingUpInd_1a2f8526f245789748121d3623f0a14f72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AcTrackingUpInd::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="2721" column="3" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="2721" bodyend="2723"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Spy for <ref refid="obj_8h_1a48fac3932d2be917ea30a193a972f7c2" kindref="member">co_sub_up_ind_t</ref> indication function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-ssdo.cpp" line="2700" column="1" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="2700" bodyend="2724"/>
+    <listofallmembers>
+      <member refid="classAcTrackingUpInd_1a2f8526f245789748121d3623f0a14f72" prot="public" virt="non-virtual"><scope>AcTrackingUpInd</scope><name>Clear</name></member>
+      <member refid="classAcTrackingUpInd_1abeaf2e26849b216d817c9f30e373dc26" prot="public" virt="non-virtual"><scope>AcTrackingUpInd</scope><name>Func</name></member>
+      <member refid="classAcTrackingUpInd_1a821edc8dbbbf8675b3ef0410a45e358b" prot="public" virt="non-virtual"><scope>AcTrackingUpInd</scope><name>last_ac</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

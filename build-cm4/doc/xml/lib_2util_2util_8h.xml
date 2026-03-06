@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="lib_2util_2util_8h" kind="file" language="C++">
+    <compoundname>util.h</compoundname>
+    <includes refid="include_2lely_2util_2util_8h" local="no">lely/util/util.h</includes>
+    <includedby refid="bits_8c" local="yes">lib/util/bits.c</includedby>
+    <includedby refid="cmp_8c" local="yes">lib/util/cmp.c</includedby>
+    <includedby refid="diag_8c" local="yes">lib/util/diag.c</includedby>
+    <includedby refid="dllist_8c" local="yes">lib/util/dllist.c</includedby>
+    <includedby refid="endian_8c" local="yes">lib/util/endian.c</includedby>
+    <includedby refid="error_8c" local="yes">lib/util/error.c</includedby>
+    <includedby refid="membuf_8c" local="yes">lib/util/membuf.c</includedby>
+    <includedby refid="memory_8c" local="yes">lib/util/memory.c</includedby>
+    <includedby refid="pheap_8c" local="yes">lib/util/pheap.c</includedby>
+    <includedby refid="rbtree_8c" local="yes">lib/util/rbtree.c</includedby>
+    <includedby refid="time_8c" local="yes">lib/util/time.c</includedby>
+    <includedby refid="ustring_8c" local="yes">lib/util/ustring.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/util/util.h</label>
+        <link refid="lib_2util_2util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>lib/util/cmp.c</label>
+        <link refid="cmp_8c"/>
+      </node>
+      <node id="9">
+        <label>lib/util/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+      <node id="1">
+        <label>lib/util/util.h</label>
+        <link refid="lib_2util_2util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/util/diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="10">
+        <label>lib/util/pheap.c</label>
+        <link refid="pheap_8c"/>
+      </node>
+      <node id="7">
+        <label>lib/util/error.c</label>
+        <link refid="error_8c"/>
+      </node>
+      <node id="12">
+        <label>lib/util/time.c</label>
+        <link refid="time_8c"/>
+      </node>
+      <node id="2">
+        <label>lib/util/bits.c</label>
+        <link refid="bits_8c"/>
+      </node>
+      <node id="5">
+        <label>lib/util/dllist.c</label>
+        <link refid="dllist_8c"/>
+      </node>
+      <node id="11">
+        <label>lib/util/rbtree.c</label>
+        <link refid="rbtree_8c"/>
+      </node>
+      <node id="8">
+        <label>lib/util/membuf.c</label>
+        <link refid="membuf_8c"/>
+      </node>
+      <node id="6">
+        <label>lib/util/endian.c</label>
+        <link refid="endian_8c"/>
+      </node>
+      <node id="13">
+        <label>lib/util/ustring.c</label>
+        <link refid="ustring_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lib_2util_2util_8h_1ae4a23a942b464ca8242ce4e0d736417d" prot="public" static="no">
+        <name>ALIGNED_ALLOC_BITS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>The minimum alignment (in bits) of heap-allocated objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This corresponds to the number of least-significant bits in a pointer guaranteed to be zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/util.h" line="42" column="9" bodyfile="lib/util/util.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2util_2util_8h_1a048cd31cda1f3658e1e94597a57d5bd1" prot="public" static="no">
+        <name>ALIGNED_ALLOC_SIZE</name>
+        <initializer>((size_t)(1 &lt;&lt; (<ref refid="lib_2util_2util_8h_1ae4a23a942b464ca8242ce4e0d736417d" kindref="member">ALIGNED_ALLOC_BITS</ref>)))</initializer>
+        <briefdescription>
+<para>The minimum alignment (in bytes) of heap-allocated objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/util/util.h" line="50" column="9" bodyfile="lib/util/util.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the internal header file of the utilities library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2013-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_INTERN_UTIL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_INTERN_UTIL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2util_2util_8h" kindref="compound">lely/util/util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>!LELY_NO_HOSTED<sp/>&amp;&amp;<sp/>defined(_POSIX_C_SOURCE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="unistd_8h" kindref="compound">unistd.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ALIGNED_ALLOC_BITS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__WORDSIZE<sp/>==<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="lib_2util_2util_8h_1ae4a23a942b464ca8242ce4e0d736417d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALIGNED_ALLOC_BITS<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALIGNED_ALLOC_BITS<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ALIGNED_ALLOC_SIZE</highlight></codeline>
+<codeline lineno="50" refid="lib_2util_2util_8h_1a048cd31cda1f3658e1e94597a57d5bd1" refkind="member"><highlight class="preprocessor">#define<sp/>ALIGNED_ALLOC_SIZE<sp/>((size_t)(1<sp/>&lt;&lt;<sp/>(ALIGNED_ALLOC_BITS)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lely<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">util<sp/>{}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lely</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_UTIL_INTERN_UTIL_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/util/util.h"/>
+  </compounddef>
+</doxygen>

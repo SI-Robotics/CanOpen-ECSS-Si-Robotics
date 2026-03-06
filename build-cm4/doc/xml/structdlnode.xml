@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdlnode" kind="struct" language="C++" prot="public">
+    <compoundname>dlnode</compoundname>
+    <includes refid="dllist_8h" local="no">dllist.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdlnode_1ab2cf741aef502debdefa33c6307b9bcb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlnode" kindref="compound">dlnode</ref> *</type>
+        <definition>struct dlnode* dlnode::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+<para>A pointer to the previous node in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/dllist.h" line="43" column="13" bodyfile="include/lely/util/dllist.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdlnode_1a5afb087275b129fe1402753ca99f6a6a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlnode" kindref="compound">dlnode</ref> *</type>
+        <definition>struct dlnode* dlnode::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+<para>A pointer to the next node in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/dllist.h" line="45" column="13" bodyfile="include/lely/util/dllist.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A node in a doubly-linked list. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To associate a value with a node, embed the node in a struct containing the value and use <ref refid="include_2lely_2util_2util_8h_1a026477dab7d696e7a49042759f166cfa" kindref="member">structof()</ref> to obtain the struct from the node. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/util/dllist.h" line="41" column="1" bodyfile="include/lely/util/dllist.h" bodystart="41" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structdlnode_1a5afb087275b129fe1402753ca99f6a6a" prot="public" virt="non-virtual"><scope>dlnode</scope><name>next</name></member>
+      <member refid="structdlnode_1ab2cf741aef502debdefa33c6307b9bcb" prot="public" virt="non-virtual"><scope>dlnode</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

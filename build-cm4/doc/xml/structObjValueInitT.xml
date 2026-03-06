@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObjValueInitT" kind="struct" language="C++" prot="public">
+    <compoundname>ObjValueInitT</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; Idx &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ObjInitT&lt; Idx &gt;::template SubT</basecompoundref>
+    <includes refid="obj-init_8hpp" local="no">obj-init.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>co_unsigned16_t</type>
+        <declname>Idx</declname>
+        <defname>Idx</defname>
+      </param>
+      <param>
+        <type>co_unsigned16_t</type>
+        <declname>Deftype</declname>
+        <defname>Deftype</defname>
+      </param>
+      <param>
+        <type>typename <ref refid="structCoType" kindref="compound">CoType</ref>&lt; Deftype &gt;::type</type>
+        <declname>Default_val</declname>
+        <defname>Default_val</defname>
+        <defval>0</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structObjValueInitT_1ae8313a2dc00a492ba33858abc30c6d80" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjValueInitT&lt; Idx, Deftype, Default_val &gt;::min_idx</definition>
+        <argsstring></argsstring>
+        <name>min_idx</name>
+        <initializer>= Idx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="60" column="32" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjValueInitT_1ab2cb6c513bd6369ca8e29c9af7680a43" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjValueInitT&lt; Idx, Deftype, Default_val &gt;::max_idx</definition>
+        <argsstring></argsstring>
+        <name>max_idx</name>
+        <initializer>= Idx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="61" column="32" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Single-entry CANopen object initialization information template class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ObjValueInitT&lt; Idx, Deftype, Default_val &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::template SubT</label>
+      </node>
+      <node id="2">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ObjValueInitT&lt; Idx, Deftype, Default_val &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::template SubT</label>
+      </node>
+      <node id="2">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/obj-init.hpp" line="57" column="1" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="59" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>ObjValueInitT</scope><name>idx</name></member>
+      <member refid="structObjValueInitT_1ab2cb6c513bd6369ca8e29c9af7680a43" prot="public" virt="non-virtual"><scope>ObjValueInitT</scope><name>max_idx</name></member>
+      <member refid="structObjValueInitT_1ae8313a2dc00a492ba33858abc30c6d80" prot="public" virt="non-virtual"><scope>ObjValueInitT</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

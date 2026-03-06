@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoArrays" kind="class" language="C++" prot="public">
+    <compoundname>CoArrays</compoundname>
+    <includes refid="array-init_8hpp" local="no">array-init.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCoArrays_1a15f3792790dd3ba620d1223fbd2399e4" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structco__array" kindref="compound">co_array</ref> &gt;</type>
+        <definition>std::list&lt;co_array&gt; CoArrays::arrays</definition>
+        <argsstring></argsstring>
+        <name>arrays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/array-init.hpp" line="93" column="13" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoArrays_1a12ceb6a98909e8ddff591d3a516f02b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T CoArrays::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/array-init.hpp" line="38" column="3" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="38" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoArrays_1a858ba64d3de4c23119605f9dc87ea7fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T CoArrays::DeadBeef</definition>
+        <argsstring>()</argsstring>
+        <name>DeadBeef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/array-init.hpp" line="49" column="3" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="49" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoArrays_1accc45e6e754bc5cafdff2a264cd1e86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoArrays::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/array-init.hpp" line="61" column="3" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoArrays_1a8bdc6783dcd235ea5353de58a48d5411" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoArrays::IsEmptyInitialized</definition>
+        <argsstring>(const void *const arr) const</argsstring>
+        <name>IsEmptyInitialized</name>
+        <param>
+          <type>const void *const</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/array-init.hpp" line="68" column="3" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="68" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCoArrays_1a1d91ef8873a9eb1ef62d7b362e8c630c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structco__array" kindref="compound">co_array</ref> *</type>
+        <definition>co_array* CoArrays::Push</definition>
+        <argsstring>(const co_array &amp;arr)</argsstring>
+        <name>Push</name>
+        <param>
+          <type>const <ref refid="structco__array" kindref="compound">co_array</ref> &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/array-init.hpp" line="80" column="3" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoArrays_1aa10a757a22da47beb85b9dca8ae5ecc3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T CoArrays::Make</definition>
+        <argsstring>(const co_array &amp;arr)</argsstring>
+        <name>Make</name>
+        <param>
+          <type>const <ref refid="structco__array" kindref="compound">co_array</ref> &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/array-init.hpp" line="87" column="3" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="87" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper for <ref refid="structco__array" kindref="compound">co_array</ref> that separates unit-tests from memory allocation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows for the same unit tests to run with dynamic allocation disabled or enabled. </para>
+    </detaileddescription>
+    <location file="unit-tests/co/holder/array-init.hpp" line="34" column="1" bodyfile="unit-tests/co/holder/array-init.hpp" bodystart="34" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classCoArrays_1a15f3792790dd3ba620d1223fbd2399e4" prot="private" virt="non-virtual"><scope>CoArrays</scope><name>arrays</name></member>
+      <member refid="classCoArrays_1accc45e6e754bc5cafdff2a264cd1e86b" prot="public" virt="non-virtual"><scope>CoArrays</scope><name>Clear</name></member>
+      <member refid="classCoArrays_1a858ba64d3de4c23119605f9dc87ea7fd" prot="public" virt="non-virtual"><scope>CoArrays</scope><name>DeadBeef</name></member>
+      <member refid="classCoArrays_1a12ceb6a98909e8ddff591d3a516f02b1" prot="public" virt="non-virtual"><scope>CoArrays</scope><name>Init</name></member>
+      <member refid="classCoArrays_1a8bdc6783dcd235ea5353de58a48d5411" prot="public" virt="non-virtual"><scope>CoArrays</scope><name>IsEmptyInitialized</name></member>
+      <member refid="classCoArrays_1aa10a757a22da47beb85b9dca8ae5ecc3" prot="private" virt="non-virtual"><scope>CoArrays</scope><name>Make</name></member>
+      <member refid="classCoArrays_1a1d91ef8873a9eb1ef62d7b362e8c630c" prot="private" virt="non-virtual"><scope>CoArrays</scope><name>Push</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

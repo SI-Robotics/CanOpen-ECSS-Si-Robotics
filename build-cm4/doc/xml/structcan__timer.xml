@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcan__timer" kind="struct" language="C++" prot="public">
+    <compoundname>can_timer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcan__timer_1a5e8c18ca7fed66c8fd1f750290335a6b" prot="public" static="no" mutable="no">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* can_timer::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+<para>A pointer to the memory allocator used to allocate this struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="81" column="9" bodyfile="lib/can/net.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__timer_1a2b12517c4081bb2225f7b273eb4d56f6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref></type>
+        <definition>struct pnode can_timer::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+<para>The node of this timer in the tree of timers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="81" column="9" bodyfile="lib/can/net.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__timer_1a2e085106f71e18782bbbfe59de3a3c58" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* can_timer::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to the network interface with which this timer is registered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="88" column="11" bodyfile="lib/can/net.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__timer_1aa9d8e135551f0afc9298731273007d64" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref></type>
+        <definition>struct timespec can_timer::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>The time at which the timer should trigger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="88" column="11" bodyfile="lib/can/net.c" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__timer_1ac1cb735b670406224a4428ec63c6d3ea" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref></type>
+        <definition>struct timespec can_timer::interval</definition>
+        <argsstring></argsstring>
+        <name>interval</name>
+        <briefdescription>
+<para>The interval between successive triggers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="88" column="11" bodyfile="lib/can/net.c" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__timer_1a4bcca3f62522735e59aabf31b12ebbd7" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref> *</type>
+        <definition>can_timer_func_t* can_timer::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+<para>A pointer to the callback function invoked by <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="94" column="18" bodyfile="lib/can/net.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__timer_1a334945b95ab1db2ed72964f569e05f73" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* can_timer::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>A pointer to the user-specified data for <ref refid="structcan__timer_1a4bcca3f62522735e59aabf31b12ebbd7" kindref="member">func</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="96" column="6" bodyfile="lib/can/net.c" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CAN timer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="3">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/can/net.c" line="79" column="1" bodyfile="lib/can/net.c" bodystart="79" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structcan__timer_1a5e8c18ca7fed66c8fd1f750290335a6b" prot="public" virt="non-virtual"><scope>can_timer</scope><name>alloc</name></member>
+      <member refid="structcan__timer_1a334945b95ab1db2ed72964f569e05f73" prot="public" virt="non-virtual"><scope>can_timer</scope><name>data</name></member>
+      <member refid="structcan__timer_1a4bcca3f62522735e59aabf31b12ebbd7" prot="public" virt="non-virtual"><scope>can_timer</scope><name>func</name></member>
+      <member refid="structcan__timer_1ac1cb735b670406224a4428ec63c6d3ea" prot="public" virt="non-virtual"><scope>can_timer</scope><name>interval</name></member>
+      <member refid="structcan__timer_1a2e085106f71e18782bbbfe59de3a3c58" prot="public" virt="non-virtual"><scope>can_timer</scope><name>net</name></member>
+      <member refid="structcan__timer_1a2b12517c4081bb2225f7b273eb4d56f6" prot="public" virt="non-virtual"><scope>can_timer</scope><name>node</name></member>
+      <member refid="structcan__timer_1aa9d8e135551f0afc9298731273007d64" prot="public" virt="non-virtual"><scope>can_timer</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSyncErr" kind="class" language="C++" prot="public">
+    <compoundname>SyncErr</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classSyncErr_1a0625981417d4387f5601222a918e6dcc" prot="public" static="yes" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a068d4a2b91ca4c31f876ccb32043ca5f" kindref="member">co_sync_t</ref> *</type>
+        <definition>co_sync_t * SyncErr::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="79" column="20" bodyfile="unit-tests/co/test-sync.cpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSyncErr_1ada15a6be1c929df98a4952eebccfeaaa" prot="public" static="yes" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t SyncErr::eec</definition>
+        <argsstring></argsstring>
+        <name>eec</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="80" column="26" bodyfile="unit-tests/co/test-sync.cpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSyncErr_1a30eee3654c602c10b70a1b289d849516" prot="public" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t SyncErr::er</definition>
+        <argsstring></argsstring>
+        <name>er</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="81" column="25" bodyfile="unit-tests/co/test-sync.cpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSyncErr_1a4c11dda6be0b6bf6db73ac03af001889" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * SyncErr::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="82" column="15" bodyfile="unit-tests/co/test-sync.cpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSyncErr_1aff6a7b89c47d52323a573d0276f64a32" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool SyncErr::called</definition>
+        <argsstring></argsstring>
+        <name>called</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="83" column="15" bodyfile="unit-tests/co/test-sync.cpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classSyncErr_1a3a0054c5c9780fa22e3438cbf1196937" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SyncErr::func</definition>
+        <argsstring>(co_sync_t *const sync_, const co_unsigned16_t eec_, const co_unsigned8_t er_, void *const data_)</argsstring>
+        <name>func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a068d4a2b91ca4c31f876ccb32043ca5f" kindref="member">co_sync_t</ref> *const</type>
+          <declname>sync_</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>eec_</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>er_</declname>
+        </param>
+        <param>
+          <type>void *const</type>
+          <declname>data_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="86" column="3" bodyfile="unit-tests/co/test-sync.cpp" bodystart="86" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classSyncErr_1a2c66f0851eadb56622e453d5d654fef6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SyncErr::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-sync.cpp" line="97" column="3" bodyfile="unit-tests/co/test-sync.cpp" bodystart="97" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="sync_8h_1a3093c3f7f219d13b2e8fa33ce12260ec" kindref="member">co_sync_err_t</ref> spy. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_sync</label>
+        <link refid="structco__sync"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SyncErr</label>
+        <link refid="classSyncErr"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sync</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="11">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/test-sync.cpp" line="77" column="1" bodyfile="unit-tests/co/test-sync.cpp" bodystart="77" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classSyncErr_1aff6a7b89c47d52323a573d0276f64a32" prot="public" virt="non-virtual"><scope>SyncErr</scope><name>called</name></member>
+      <member refid="classSyncErr_1a2c66f0851eadb56622e453d5d654fef6" prot="public" virt="non-virtual"><scope>SyncErr</scope><name>Clear</name></member>
+      <member refid="classSyncErr_1a4c11dda6be0b6bf6db73ac03af001889" prot="public" virt="non-virtual"><scope>SyncErr</scope><name>data</name></member>
+      <member refid="classSyncErr_1ada15a6be1c929df98a4952eebccfeaaa" prot="public" virt="non-virtual"><scope>SyncErr</scope><name>eec</name></member>
+      <member refid="classSyncErr_1a30eee3654c602c10b70a1b289d849516" prot="public" virt="non-virtual"><scope>SyncErr</scope><name>er</name></member>
+      <member refid="classSyncErr_1a3a0054c5c9780fa22e3438cbf1196937" prot="public" virt="non-virtual"><scope>SyncErr</scope><name>func</name></member>
+      <member refid="classSyncErr_1a0625981417d4387f5601222a918e6dcc" prot="public" virt="non-virtual"><scope>SyncErr</scope><name>sync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

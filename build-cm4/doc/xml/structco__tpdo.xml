@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__tpdo" kind="struct" language="C++" prot="public">
+    <compoundname>co_tpdo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__tpdo_1a521399417cde2b37b9df5be5298f8e2a" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_tpdo::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="50" column="11" bodyfile="lib/co/tpdo.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a834a73ad0ab77fe2bd3594bdb6d864b2" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_tpdo::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to a CANopen device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="52" column="10" bodyfile="lib/co/tpdo.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a1d381c396661134b8d210b495af9353d" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_tpdo::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+<para>The PDO number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="54" column="17" bodyfile="lib/co/tpdo.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a25539ba3b2615e44402a9b4f6b010251" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool co_tpdo::stopped</definition>
+        <argsstring></argsstring>
+        <name>stopped</name>
+        <briefdescription>
+<para>A flag specifying whether the Transmit-PDO service is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="56" column="6" bodyfile="lib/co/tpdo.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1ab7236bca3b69df8d2783e5e5265e0983" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__pdo__comm__par" kindref="compound">co_pdo_comm_par</ref></type>
+        <definition>struct co_pdo_comm_par co_tpdo::comm</definition>
+        <argsstring></argsstring>
+        <name>comm</name>
+        <briefdescription>
+<para>The PDO communication parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="56" column="6" bodyfile="lib/co/tpdo.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1aa8344e47abeceb53971eaf39c85a01c7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__pdo__map__par" kindref="compound">co_pdo_map_par</ref></type>
+        <definition>struct co_pdo_map_par co_tpdo::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+<para>The PDO mapping parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="56" column="6" bodyfile="lib/co/tpdo.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1adf6b5d1b48b34611cfd2052d137796e3" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_tpdo::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="62" column="12" bodyfile="lib/co/tpdo.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1afc92bf3667ec7ab28688d1e267150ff0" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_tpdo::timer_event</definition>
+        <argsstring></argsstring>
+        <name>timer_event</name>
+        <briefdescription>
+<para>A pointer to the CAN timer for events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="64" column="13" bodyfile="lib/co/tpdo.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a6640ccfe7b57029d38027a08c3d875d8" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_tpdo::timer_swnd</definition>
+        <argsstring></argsstring>
+        <name>timer_swnd</name>
+        <briefdescription>
+<para>A pointer to the CAN timer for the synchronous time window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="66" column="13" bodyfile="lib/co/tpdo.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a4449333c35b60667bdfbd1ed57fef949" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>struct can_msg co_tpdo::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+<para>A buffered CAN frame, used for RTR-only or event-driven TPDOs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="66" column="13" bodyfile="lib/co/tpdo.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1aeba6f68f0deb2d221c18d8c944bea60d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref></type>
+        <definition>struct timespec co_tpdo::inhibit</definition>
+        <argsstring></argsstring>
+        <name>inhibit</name>
+        <briefdescription>
+<para>The time at which the next event-driven TPDO may be sent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="66" column="13" bodyfile="lib/co/tpdo.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a0072cf5532533798cdb6c721a996c527" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int co_tpdo::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating the occurrence of an event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="72" column="14" bodyfile="lib/co/tpdo.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a1edd7c7745fa7dbfa47791d8bf7db571" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int co_tpdo::swnd</definition>
+        <argsstring></argsstring>
+        <name>swnd</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating the synchronous time window has expired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="74" column="14" bodyfile="lib/co/tpdo.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1ac31246b13e980f37d0f6d401df776dd8" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_tpdo::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <briefdescription>
+<para>The SYNC start value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="76" column="16" bodyfile="lib/co/tpdo.c" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a726de431340a6ab66c541613ca52dec1" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_tpdo::cnt</definition>
+        <argsstring></argsstring>
+        <name>cnt</name>
+        <briefdescription>
+<para>The SYNC counter value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="78" column="16" bodyfile="lib/co/tpdo.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1aecd6b08e3f8b3ec997fa7e7288bdbdd1" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref></type>
+        <definition>struct co_sdo_req co_tpdo::req</definition>
+        <argsstring></argsstring>
+        <name>req</name>
+        <briefdescription>
+<para>The CANopen SDO upload request used for reading sub-objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="78" column="16" bodyfile="lib/co/tpdo.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a8583ae97284b610030e07c55918a2903" prot="public" static="no" mutable="no">
+        <type><ref refid="tpdo_8h_1a8ac969224989b9bf8714198073a387c3" kindref="member">co_tpdo_ind_t</ref> *</type>
+        <definition>co_tpdo_ind_t* co_tpdo::ind</definition>
+        <argsstring></argsstring>
+        <name>ind</name>
+        <briefdescription>
+<para>A pointer to the indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="82" column="15" bodyfile="lib/co/tpdo.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1ac9616dc2fd5f814e89c3bb495c4240a2" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_tpdo::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__tpdo_1a8583ae97284b610030e07c55918a2903" kindref="member">ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="84" column="6" bodyfile="lib/co/tpdo.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a61c4d79ed0ad516b1577e9c7a1a5dba9" prot="public" static="no" mutable="no">
+        <type><ref refid="tpdo_8h_1a02b57554b633198518f9988525fb8843" kindref="member">co_tpdo_sample_ind_t</ref> *</type>
+        <definition>co_tpdo_sample_ind_t* co_tpdo::sample_ind</definition>
+        <argsstring></argsstring>
+        <name>sample_ind</name>
+        <briefdescription>
+<para>A pointer to the sampling indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="86" column="22" bodyfile="lib/co/tpdo.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__tpdo_1a35523f1658fad4db1023d24e61acac85" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_tpdo::sample_data</definition>
+        <argsstring></argsstring>
+        <name>sample_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__tpdo_1a61c4d79ed0ad516b1577e9c7a1a5dba9" kindref="member">sample_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/tpdo.c" line="88" column="6" bodyfile="lib/co/tpdo.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen Transmit-PDO. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>can_msg</label>
+        <link refid="structcan__msg"/>
+      </node>
+      <node id="11">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>co_sdo_req</label>
+        <link refid="structco__sdo__req"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>membuf</edgelabel>
+          <edgelabel>membuf_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="16">
+        <label>co_pdo_map_par</label>
+        <link refid="structco__pdo__map__par"/>
+      </node>
+      <node id="12">
+        <label>co_pdo_comm_par</label>
+        <link refid="structco__pdo__comm__par"/>
+      </node>
+      <node id="1">
+        <label>co_tpdo</label>
+        <link refid="structco__tpdo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>timer_event</edgelabel>
+          <edgelabel>timer_swnd</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>comm</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="10">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/tpdo.c" line="48" column="1" bodyfile="lib/co/tpdo.c" bodystart="48" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structco__tpdo_1a726de431340a6ab66c541613ca52dec1" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>cnt</name></member>
+      <member refid="structco__tpdo_1ab7236bca3b69df8d2783e5e5265e0983" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>comm</name></member>
+      <member refid="structco__tpdo_1ac9616dc2fd5f814e89c3bb495c4240a2" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>data</name></member>
+      <member refid="structco__tpdo_1a834a73ad0ab77fe2bd3594bdb6d864b2" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>dev</name></member>
+      <member refid="structco__tpdo_1a0072cf5532533798cdb6c721a996c527" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>event</name></member>
+      <member refid="structco__tpdo_1a8583ae97284b610030e07c55918a2903" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>ind</name></member>
+      <member refid="structco__tpdo_1aeba6f68f0deb2d221c18d8c944bea60d" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>inhibit</name></member>
+      <member refid="structco__tpdo_1aa8344e47abeceb53971eaf39c85a01c7" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>map</name></member>
+      <member refid="structco__tpdo_1a4449333c35b60667bdfbd1ed57fef949" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>msg</name></member>
+      <member refid="structco__tpdo_1a521399417cde2b37b9df5be5298f8e2a" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>net</name></member>
+      <member refid="structco__tpdo_1a1d381c396661134b8d210b495af9353d" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>num</name></member>
+      <member refid="structco__tpdo_1adf6b5d1b48b34611cfd2052d137796e3" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>recv</name></member>
+      <member refid="structco__tpdo_1aecd6b08e3f8b3ec997fa7e7288bdbdd1" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>req</name></member>
+      <member refid="structco__tpdo_1a35523f1658fad4db1023d24e61acac85" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>sample_data</name></member>
+      <member refid="structco__tpdo_1a61c4d79ed0ad516b1577e9c7a1a5dba9" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>sample_ind</name></member>
+      <member refid="structco__tpdo_1a25539ba3b2615e44402a9b4f6b010251" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>stopped</name></member>
+      <member refid="structco__tpdo_1a1edd7c7745fa7dbfa47791d8bf7db571" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>swnd</name></member>
+      <member refid="structco__tpdo_1ac31246b13e980f37d0f6d401df776dd8" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>sync</name></member>
+      <member refid="structco__tpdo_1afc92bf3667ec7ab28688d1e267150ff0" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>timer_event</name></member>
+      <member refid="structco__tpdo_1a6640ccfe7b57029d38027a08c3d875d8" prot="public" virt="non-virtual"><scope>co_tpdo</scope><name>timer_swnd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

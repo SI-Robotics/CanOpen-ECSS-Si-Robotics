@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__nmt__state" kind="struct" language="C++" prot="public">
+    <compoundname>co_nmt_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__nmt__state_1ae2077fbeff4da46e5008f9dda73d561f" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8c_1aae3d5d4d2caa6a2bfa3c23c8124dcdac" kindref="member">co_nmt_state_t</ref> *(*</type>
+        <definition>co_nmt_state_t*(* co_nmt_state::on_enter) (co_nmt_t *nmt)</definition>
+        <argsstring>)(co_nmt_t *nmt)</argsstring>
+        <name>on_enter</name>
+        <briefdescription>
+<para>A pointer to the function invoked when a new state is entered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="549" column="1" bodyfile="lib/co/nmt.c" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__nmt__state_1add20f0e088e06b5021c926422e4aa010" prot="public" static="no" mutable="no">
+        <type><ref refid="nmt_8c_1aae3d5d4d2caa6a2bfa3c23c8124dcdac" kindref="member">co_nmt_state_t</ref> *(*</type>
+        <definition>co_nmt_state_t*(* co_nmt_state::on_cs) (co_nmt_t *nmt, co_unsigned8_t cs)</definition>
+        <argsstring>)(co_nmt_t *nmt, co_unsigned8_t cs)</argsstring>
+        <name>on_cs</name>
+        <briefdescription>
+<para>A pointer to the transition function invoked when an NMT command is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT master/slave service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the NMT command specifier (one of <ref refid="nmt_8h_1a202b304592528282279f0c6958398993" kindref="member">CO_NMT_CS_START</ref>, <ref refid="nmt_8h_1a7b2a1196f3bd072a506ecad42a834123" kindref="member">CO_NMT_CS_STOP</ref>, <ref refid="nmt_8h_1a5a86dc0c967ef353b5fc8c600b7e0aab" kindref="member">CO_NMT_CS_ENTER_PREOP</ref>, <ref refid="nmt_8h_1a5e194752689e37ca12536cc2e15d618d" kindref="member">CO_NMT_CS_RESET_NODE</ref> or <ref refid="nmt_8h_1af642f7206a3adaad2089197004e1a5d8" kindref="member">CO_NMT_CS_RESET_COMM</ref>).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the next state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt.c" line="561" column="1" bodyfile="lib/co/nmt.c" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen NMT state. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>co_nmt_state</label>
+        <link refid="structco__nmt__state"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>on_cs</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/nmt.c" line="547" column="1" bodyfile="lib/co/nmt.c" bodystart="547" bodyend="578"/>
+    <listofallmembers>
+      <member refid="structco__nmt__state_1add20f0e088e06b5021c926422e4aa010" prot="public" virt="non-virtual"><scope>co_nmt_state</scope><name>on_cs</name></member>
+      <member refid="structco__nmt__state_1ae2077fbeff4da46e5008f9dda73d561f" prot="public" virt="non-virtual"><scope>co_nmt_state</scope><name>on_enter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

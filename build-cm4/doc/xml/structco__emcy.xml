@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__emcy" kind="struct" language="C++" prot="public">
+    <compoundname>co_emcy</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__emcy_1aa21793a46b629949b17f2b3e93d721b2" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_emcy::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="89" column="11" bodyfile="lib/co/emcy.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1a689a0a46c5b25548285f85cd70f92dce" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_emcy::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to a CANopen device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="91" column="10" bodyfile="lib/co/emcy.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1ab575e343079f3ef72afa43603261fb66" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool co_emcy::stopped</definition>
+        <argsstring></argsstring>
+        <name>stopped</name>
+        <briefdescription>
+<para>A flag specifying whether the EMCY service is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="93" column="6" bodyfile="lib/co/emcy.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1a8d3b57f77e4b008b1d339e45572ee2e5" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *</type>
+        <definition>co_sub_t* co_emcy::sub_1001_00</definition>
+        <argsstring></argsstring>
+        <name>sub_1001_00</name>
+        <briefdescription>
+<para>A pointer to the error register object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="95" column="10" bodyfile="lib/co/emcy.c" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1a195d1393f8c4caa4b9b5b9d20bf40719" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1aff557961d96aebf0e1f648852a6fbfe1" kindref="member">co_obj_t</ref> *</type>
+        <definition>co_obj_t* co_emcy::obj_1003</definition>
+        <argsstring></argsstring>
+        <name>obj_1003</name>
+        <briefdescription>
+<para>A pointer to the pre-defined error field object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="97" column="10" bodyfile="lib/co/emcy.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1a4f8812cbf2231353faad9224ce30de4e" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_emcy::nmsg</definition>
+        <argsstring></argsstring>
+        <name>nmsg</name>
+        <briefdescription>
+<para>The number of messages in <ref refid="structco__emcy_1aa49750377730eac8a7060be7e641a939" kindref="member">msgs</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="99" column="8" bodyfile="lib/co/emcy.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1aa49750377730eac8a7060be7e641a939" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__emcy__msg" kindref="compound">co_emcy_msg</ref></type>
+        <definition>struct co_emcy_msg co_emcy::msgs[CO_EMCY_MAX_NMSG]</definition>
+        <argsstring>[CO_EMCY_MAX_NMSG]</argsstring>
+        <name>msgs</name>
+        <briefdescription>
+<para>An array of EMCY messages. The first element is the most recent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="99" column="8" bodyfile="lib/co/emcy.c" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1aa98f8242bfd79cf1b6381acf2280086d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcan__buf" kindref="compound">can_buf</ref></type>
+        <definition>struct can_buf co_emcy::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+<para>The CAN frame buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="99" column="8" bodyfile="lib/co/emcy.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1a3e0b0e0d97d3547a08657fb78000c746" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcan__msg" kindref="compound">can_msg</ref></type>
+        <definition>struct can_msg co_emcy::begin[CO_EMCY_CAN_BUF_SIZE]</definition>
+        <argsstring>[CO_EMCY_CAN_BUF_SIZE]</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>The static memory buffer used by <ref refid="structco__emcy_1aa98f8242bfd79cf1b6381acf2280086d" kindref="member">buf</ref> in the absence of dynamic memory allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="99" column="8" bodyfile="lib/co/emcy.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1a2951c69adc16b497d26abfbc3a310ddc" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_emcy::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+<para>A pointer to the CAN timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="116" column="13" bodyfile="lib/co/emcy.c" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1acacfcb84f4078e36b88f3fdeb8b1c5fe" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref></type>
+        <definition>struct timespec co_emcy::inhibit</definition>
+        <argsstring></argsstring>
+        <name>inhibit</name>
+        <briefdescription>
+<para>The time at which the next EMCY message may be sent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="116" column="13" bodyfile="lib/co/emcy.c" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1a7ee152c29bf4aade76ec6ae199e8ba10" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__emcy__node" kindref="compound">co_emcy_node</ref></type>
+        <definition>struct co_emcy_node co_emcy::nodes[CO_NUM_NODES]</definition>
+        <argsstring>[CO_NUM_NODES]</argsstring>
+        <name>nodes</name>
+        <briefdescription>
+<para>An array of pointers to remote nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="116" column="13" bodyfile="lib/co/emcy.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1ad3feecbfedb87364030d5b1529a42453" prot="public" static="no" mutable="no">
+        <type><ref refid="emcy_8h_1a8652dd7515e8e374bbe3a2287ff34727" kindref="member">co_emcy_ind_t</ref> *</type>
+        <definition>co_emcy_ind_t* co_emcy::ind</definition>
+        <argsstring></argsstring>
+        <name>ind</name>
+        <briefdescription>
+<para>A pointer to the indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="122" column="15" bodyfile="lib/co/emcy.c" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__emcy_1ab7f43f772c00836533eb41e074702937" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_emcy::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__emcy_1ad3feecbfedb87364030d5b1529a42453" kindref="member">ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="124" column="6" bodyfile="lib/co/emcy.c" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen EMCY producer/consumer service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>co_obj</label>
+        <link refid="structco__obj"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_emcy</label>
+        <link refid="structco__emcy"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>obj_1003</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inhibit</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>nodes</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>begin</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>sub_1001_00</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>msgs</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>can_msg</label>
+        <link refid="structcan__msg"/>
+      </node>
+      <node id="9">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>co_emcy_node</label>
+        <link refid="structco__emcy__node"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>co_sub</label>
+        <link refid="structco__sub"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>max</edgelabel>
+          <edgelabel>min</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>can_buf</label>
+        <link refid="structcan__buf"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>co_emcy_msg</label>
+        <link refid="structco__emcy__msg"/>
+      </node>
+      <node id="17">
+        <label>co_val</label>
+        <link refid="unionco__val"/>
+      </node>
+      <node id="8">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="10">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/emcy.c" line="87" column="1" bodyfile="lib/co/emcy.c" bodystart="87" bodyend="125"/>
+    <listofallmembers>
+      <member refid="structco__emcy_1a3e0b0e0d97d3547a08657fb78000c746" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>begin</name></member>
+      <member refid="structco__emcy_1aa98f8242bfd79cf1b6381acf2280086d" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>buf</name></member>
+      <member refid="structco__emcy_1ab7f43f772c00836533eb41e074702937" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>data</name></member>
+      <member refid="structco__emcy_1a689a0a46c5b25548285f85cd70f92dce" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>dev</name></member>
+      <member refid="structco__emcy_1ad3feecbfedb87364030d5b1529a42453" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>ind</name></member>
+      <member refid="structco__emcy_1acacfcb84f4078e36b88f3fdeb8b1c5fe" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>inhibit</name></member>
+      <member refid="structco__emcy_1aa49750377730eac8a7060be7e641a939" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>msgs</name></member>
+      <member refid="structco__emcy_1aa21793a46b629949b17f2b3e93d721b2" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>net</name></member>
+      <member refid="structco__emcy_1a4f8812cbf2231353faad9224ce30de4e" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>nmsg</name></member>
+      <member refid="structco__emcy_1a7ee152c29bf4aade76ec6ae199e8ba10" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>nodes</name></member>
+      <member refid="structco__emcy_1a195d1393f8c4caa4b9b5b9d20bf40719" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>obj_1003</name></member>
+      <member refid="structco__emcy_1ab575e343079f3ef72afa43603261fb66" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>stopped</name></member>
+      <member refid="structco__emcy_1a8d3b57f77e4b008b1d339e45572ee2e5" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>sub_1001_00</name></member>
+      <member refid="structco__emcy_1a2951c69adc16b497d26abfbc3a310ddc" prot="public" virt="non-virtual"><scope>co_emcy</scope><name>timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

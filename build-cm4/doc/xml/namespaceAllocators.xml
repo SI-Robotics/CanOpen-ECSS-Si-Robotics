@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceAllocators" kind="namespace" language="C++">
+    <compoundname>Allocators</compoundname>
+    <innerclass refid="classAllocators_1_1Limited" prot="public">Allocators::Limited</innerclass>
+    <innerclass refid="classAllocators_1_1PoolAllocator" prot="public">Allocators::PoolAllocator</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="default_8hpp_1a76d8d8cf74c865fd568381e9fa75a36c" prot="public" static="no">
+        <type><ref refid="classAllocators_1_1PoolAllocator" kindref="compound">PoolAllocator</ref>&lt; POOL_SIZE &gt;</type>
+        <definition>using Allocators::Default = typedef PoolAllocator&lt;POOL_SIZE&gt;</definition>
+        <argsstring></argsstring>
+        <name>Default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/default.hpp" line="40" column="1" bodyfile="unit-tests/libtest/allocators/default.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="default_8hpp_1a5e3ee0aec1355960985dcd8e4eea42ad" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t Allocators::POOL_SIZE</definition>
+        <argsstring></argsstring>
+        <name>POOL_SIZE</name>
+        <initializer>= 128u * 1024u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/default.hpp" line="39" column="14" bodyfile="unit-tests/libtest/allocators/default.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/allocators/default.hpp" line="36" column="1"/>
+  </compounddef>
+</doxygen>

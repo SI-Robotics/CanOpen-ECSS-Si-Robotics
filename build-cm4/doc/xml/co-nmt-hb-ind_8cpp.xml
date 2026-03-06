@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="co-nmt-hb-ind_8cpp" kind="file" language="C++">
+    <compoundname>co-nmt-hb-ind.cpp</compoundname>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes local="no">CppUTestExt/MockSupport.h</includes>
+    <includes refid="co-nmt-hb-ind_8hpp" local="yes">co-nmt-hb-ind.hpp</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>stdbool.h</label>
+      </node>
+      <node id="13">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/tools/co-nmt-hb-ind.cpp</label>
+        <link refid="co-nmt-hb-ind_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>limits.h</label>
+      </node>
+      <node id="10">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/co/nmt.h</label>
+        <link refid="nmt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>co-nmt-hb-ind.hpp</label>
+        <link refid="co-nmt-hb-ind_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CppUTestExt/MockSupport.h</label>
+      </node>
+      <node id="16">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="6">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTestExt/MockSupport.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="co-nmt-hb-ind_8hpp" kindref="compound">co-nmt-hb-ind.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>CoNmtHbInd::num_called<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref>*<sp/>CoNmtHbInd::nmt_<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">co_unsigned8_t<sp/>CoNmtHbInd::id_<sp/>=<sp/>255u;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/>CoNmtHbInd::state_<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(-1);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref><sp/>CoNmtHbInd::reason_<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(-1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>CoNmtHbInd::data_<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CoNmtHbInd::skipCallToDefaultInd<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">CoNmtHbInd::Func(<ref refid="structco__nmt" kindref="compound">co_nmt_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nmt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/>state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref><sp/>reason,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>num_called++;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>nmt_<sp/>=<sp/>nmt;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>id_<sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>state_<sp/>=<sp/>state;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>reason_<sp/>=<sp/>reason;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>data_<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!skipCallToDefaultInd)<sp/><ref refid="nmt_8h_1aad7937958ca9d72bfbb36f66b7a4d4dd" kindref="member">co_nmt_on_hb</ref>(nmt,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>state,<sp/>reason);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">CoNmtHbInd::Clear()<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>num_called<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>nmt_<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>id_<sp/>=<sp/>255u;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>state_<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(-1);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>reason_<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(-1);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>data_<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>skipCallToDefaultInd<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">CoNmtHbInd::Check(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nmt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/>state,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref><sp/>reason,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(nmt,<sp/>nmt_);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>id_);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(state,<sp/>state_);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(reason,<sp/>reason_);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(data,<sp/>data_);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">CoNmtHbInd::SkipCallToDefaultInd()<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>skipCallToDefaultInd<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="nmt_8h_1a8625d5788e64421b19ef19deac4d4fe8" kindref="member">co_nmt_hb_ind_t</ref>*</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">CoNmtHbIndMock::GetFunc()<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>mock(</highlight><highlight class="stringliteral">&quot;ConNmtHbIndMock&quot;</highlight><highlight class="normal">).strictOrder();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[](<ref refid="structco__nmt" kindref="compound">co_nmt_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nmt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>id,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/>state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref><sp/>reason,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>mock(</highlight><highlight class="stringliteral">&quot;CoNmtHbIndMock&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.actualCall(</highlight><highlight class="stringliteral">&quot;co_nmt_hb_ind_t&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;nmt&quot;</highlight><highlight class="normal">,<sp/>nmt)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;state&quot;</highlight><highlight class="normal">,<sp/>state)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">,<sp/>reason)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">,<sp/>data);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nmt_8h_1aad7937958ca9d72bfbb36f66b7a4d4dd" kindref="member">co_nmt_on_hb</ref>(nmt,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>state,<sp/>reason);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">CoNmtHbIndMock::GetData()<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;indData;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">CoNmtHbIndMock::Expect(<ref refid="structco__nmt" kindref="compound">co_nmt_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nmt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/>state,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref><sp/>reason)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>mock(</highlight><highlight class="stringliteral">&quot;CoNmtHbIndMock&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.expectOneCall(</highlight><highlight class="stringliteral">&quot;co_nmt_hb_ind_t&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;nmt&quot;</highlight><highlight class="normal">,<sp/>nmt)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;state&quot;</highlight><highlight class="normal">,<sp/>state)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">,<sp/>reason)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.withParameter(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">,<sp/>&amp;indData);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/libtest/tools/co-nmt-hb-ind.cpp"/>
+  </compounddef>
+</doxygen>

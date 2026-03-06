@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structrbnode" kind="struct" language="C++" prot="public">
+    <compoundname>rbnode</compoundname>
+    <includes refid="rbtree_8h" local="no">rbtree.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrbnode_1acef5efee9aed4a68463d269abbc09d14" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* rbnode::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>A pointer to the key for this node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The key MUST be set before the node is inserted into a tree and MUST NOT be modified while the node is part of the tree. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="60" column="12" bodyfile="include/lely/util/rbtree.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrbnode_1afc3eb51f72c291870f4bb8cc631d2fce" prot="public" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t rbnode::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>A pointer to the parent node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The least significant bit contains the color of this node (0 = black, 1 = red). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="65" column="11" bodyfile="include/lely/util/rbtree.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrbnode_1a079337ce0b6a84f59162a3ca60445011" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbnode::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+<para>A pointer to the left child node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="67" column="13" bodyfile="include/lely/util/rbtree.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrbnode_1a76b1a4f6c0dcadb4f06b25c183d59a6e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbnode::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+<para>A pointer to the right child node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="69" column="13" bodyfile="include/lely/util/rbtree.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A node in a red-black tree. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To associate a value with a node, embed the node in a struct containing the value and use <ref refid="include_2lely_2util_2util_8h_1a026477dab7d696e7a49042759f166cfa" kindref="member">structof()</ref> to obtain the struct from the node.</para>
+<para><simplesect kind="see"><para><ref refid="structrbtree" kindref="compound">rbtree</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/util/rbtree.h" line="54" column="1" bodyfile="include/lely/util/rbtree.h" bodystart="54" bodyend="70"/>
+    <listofallmembers>
+      <member refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" prot="public" virt="non-virtual"><scope>rbnode</scope><name>key</name></member>
+      <member refid="structrbnode_1a079337ce0b6a84f59162a3ca60445011" prot="public" virt="non-virtual"><scope>rbnode</scope><name>left</name></member>
+      <member refid="structrbnode_1afc3eb51f72c291870f4bb8cc631d2fce" prot="public" virt="non-virtual"><scope>rbnode</scope><name>parent</name></member>
+      <member refid="structrbnode_1a76b1a4f6c0dcadb4f06b25c183d59a6e" prot="public" virt="non-virtual"><scope>rbnode</scope><name>right</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

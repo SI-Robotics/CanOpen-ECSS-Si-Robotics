@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1029ErrorBehavior" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1029ErrorBehavior</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; 0x1029u &gt;</basecompoundref>
+    <includes refid="error-behavior-object_8hpp" local="no">error-behavior-object.hpp</includes>
+    <innerclass refid="structObj1029ErrorBehavior_1_1Sub00HighestSubidxSupported" prot="public">Obj1029ErrorBehavior::Sub00HighestSubidxSupported</innerclass>
+    <innerclass refid="structObj1029ErrorBehavior_1_1Sub01CommError" prot="public">Obj1029ErrorBehavior::Sub01CommError</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structObj1029ErrorBehavior_1ae533a1cdc2d1815ded31748aba055abd" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t Obj1029ErrorBehavior::CHANGE_TO_PREOP</definition>
+        <argsstring></argsstring>
+        <name>CHANGE_TO_PREOP</name>
+        <initializer>= 0x00u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/error-behavior-object.hpp" line="30" column="31" bodyfile="unit-tests/co/obj-init/error-behavior-object.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1029ErrorBehavior_1a8e91617fe026aacea3b8316ca5f5257c" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t Obj1029ErrorBehavior::NO_CHANGE</definition>
+        <argsstring></argsstring>
+        <name>NO_CHANGE</name>
+        <initializer>= 0x01u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/error-behavior-object.hpp" line="31" column="31" bodyfile="unit-tests/co/obj-init/error-behavior-object.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1029ErrorBehavior_1a75c64b3e9e3e8eb65a18f77d650e7825" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t Obj1029ErrorBehavior::CHANGE_TO_STOP</definition>
+        <argsstring></argsstring>
+        <name>CHANGE_TO_STOP</name>
+        <initializer>= 0x02u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/error-behavior-object.hpp" line="32" column="31" bodyfile="unit-tests/co/obj-init/error-behavior-object.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>0x1029: Error behavior object </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1029u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1029ErrorBehavior</label>
+        <link refid="structObj1029ErrorBehavior"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1029u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1029ErrorBehavior</label>
+        <link refid="structObj1029ErrorBehavior"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/error-behavior-object.hpp" line="29" column="1" bodyfile="unit-tests/co/obj-init/error-behavior-object.hpp" bodystart="29" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structObj1029ErrorBehavior_1ae533a1cdc2d1815ded31748aba055abd" prot="public" virt="non-virtual"><scope>Obj1029ErrorBehavior</scope><name>CHANGE_TO_PREOP</name></member>
+      <member refid="structObj1029ErrorBehavior_1a75c64b3e9e3e8eb65a18f77d650e7825" prot="public" virt="non-virtual"><scope>Obj1029ErrorBehavior</scope><name>CHANGE_TO_STOP</name></member>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1029ErrorBehavior</scope><name>idx</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>Obj1029ErrorBehavior</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>Obj1029ErrorBehavior</scope><name>min_idx</name></member>
+      <member refid="structObj1029ErrorBehavior_1a8e91617fe026aacea3b8316ca5f5257c" prot="public" virt="non-virtual"><scope>Obj1029ErrorBehavior</scope><name>NO_CHANGE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,451 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-mempool_8cpp" kind="file" language="C++">
+    <compoundname>test-mempool.cpp</compoundname>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes local="no">cstring</includes>
+    <includes refid="mempool_8h" local="no">lely/util/mempool.h</includes>
+    <includes refid="error_8h" local="no">lely/util/error.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>unit-tests/util/test-mempool.cpp</label>
+        <link refid="test-mempool_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="5">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="4">
+        <label>lely/util/mempool.h</label>
+        <link refid="mempool_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>mempool_init()</header>
+      <memberdef kind="function" id="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPoolInit, MemPool_Init)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPoolInit</type>
+        </param>
+        <param>
+          <type>MemPool_Init</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> an uninitialized memory pool and a memory buffer </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="mempool_8h_1a6d8041e4b2854058c728a95e501c639a" kindref="member">mempool_init()</ref> is called with a pointer to the pool, the memory buffer and its size</para>
+<para><bold>Then</bold> a pointer to an abstract allocator (alloc_t) is returned with non-null function pointers, memory pool is initialized with the memory buffer and points at it beginning </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="47" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="47" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>mem_size()</header>
+      <memberdef kind="function" id="test-mempool_8cpp_1a451b80c6a53f83d16ccdb57d2d888fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Size)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Size</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to an allocator (alloc_t) based on memory pool, with no prior allocations </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size()</ref> is called</para>
+<para><bold>Then</bold> zero is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="84" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>mem_capacity()</header>
+      <memberdef kind="function" id="test-mempool_8cpp_1a294af0a3d43eb7f1209d15af7f8d5118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Capacity)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Capacity</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to an allocator (alloc_t) based on memory pool </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity()</ref> is called</para>
+<para><bold>Then</bold> total memory pool size is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="96" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>mem_alloc()</header>
+      <memberdef kind="function" id="test-mempool_8cpp_1ab5c92fb58ccd4b258ff16a70d9ea6287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Alloc)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Alloc</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to an allocator (alloc_t) based on memory pool, with no prior allocations </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with zero alignment and non-zero allocation size</para>
+<para><bold>Then</bold> a pointer pointing to memory pool&apos;s buffer first byte is returned; <ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size()</ref> returns requested allocation size, remaining capacity returned by <ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity()</ref> is lower by requested size </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="113" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="test-mempool_8cpp_1a1cd87fb22f087c63bf5cb5343d1aa80f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Alloc_RespectsAlignment)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Alloc_RespectsAlignment</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to an allocator (alloc_t) based on memory pool, with no prior allocations </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called twice with non-zero alignment and non-zero size that&apos;s not a multiple of alignment&apos;s value</para>
+<para><bold>Then</bold> both calls return non-null pointers that point into memory pool&apos;s buffer and are apart by requested allocation size rounded up to a multiple of requested alignment; <ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size()</ref> returns twice the requested allocation size plus required padding, remaining capacity is lowered by same value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="134" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="134" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="test-mempool_8cpp_1ab2c275d9257ea17b10fa5f6fcab4c391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Alloc_IncorrectAlignment)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Alloc_IncorrectAlignment</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to an allocator (alloc_t) based on memory pool, with no prior allocations </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with non-zero alignment that&apos;s not a power of 2 and non-zero size</para>
+<para><bold>Then</bold> a null pointer is returned, nothing is changed, ERRNUM_INVAL error number is set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="155" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="155" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="test-mempool_8cpp_1acbeb7e72d16a9f2b9401ac9a6db85406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Alloc_OutOfMemory)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Alloc_OutOfMemory</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to an allocator (alloc_t) based on memory pool, with no prior allocations </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with zero alignment and size that&apos;s greater than memory pool&apos;s buffer size</para>
+<para><bold>Then</bold> a null pointer is returned, nothing is changed, ERRNUM_NOMEM error number is set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="174" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="174" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="test-mempool_8cpp_1a7780dd60e807e0d456eab7f754fcd176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Alloc_SizeZero)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Alloc_SizeZero</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a pointer to an allocator (alloc_t) based on memory pool, with no prior allocations </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with zero alignment and zero size</para>
+<para><bold>Then</bold> a null pointer is returned, nothing is changed; no error is reported </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="192" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="192" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>mem_free()</header>
+      <memberdef kind="function" id="test-mempool_8cpp_1af5cc69201f03c83b77806d14dcd6c14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemPool, MemPool_Free_DoesNothing)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <param>
+          <type>MemPool_Free_DoesNothing</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> pointers to an allocator (alloc_t) based on memory pool and some allocated memory </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free()</ref> is called with a pointer to allocated memory</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="214" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="214" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-mempool_8cpp_1adf6b1266c3f5e43e2453d5a0c1cd87d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_MemPoolInit)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_MemPoolInit</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="34" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="test-mempool_8cpp_1acb2894c304d6155a8ce83e5746d8b3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_MemPool)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_MemPool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-mempool.cpp" line="66" column="1" bodyfile="unit-tests/util/test-mempool.cpp" bodystart="66" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="mempool_8h" kindref="compound">lely/util/mempool.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="error_8h" kindref="compound">lely/util/error.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_MemPoolInit){};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"></codeline>
+<codeline lineno="47" refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPoolInit,<sp/>MemPool_Init)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="structmempool" kindref="compound">mempool</ref><sp/>pool;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[size]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>alloc<sp/>=<sp/><ref refid="mempool_8h_1a6d8041e4b2854058c728a95e501c639a" kindref="member">mempool_init</ref>(&amp;pool,<sp/>buffer,<sp/>size);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>CHECK((*alloc)-&gt;alloc<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>CHECK((*alloc)-&gt;free<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>CHECK((*alloc)-&gt;size<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>CHECK((*alloc)-&gt;capacity<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(pool.<ref refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" kindref="member">beg</ref>,<sp/>buffer);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(pool.<ref refid="structmempool_1a0841f2c587fa4d06c905593528ae830e" kindref="member">end</ref>,<sp/>buffer<sp/>+<sp/>size);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(pool.<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref>,<sp/>buffer);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_MemPool)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>POOL_SIZE<sp/>=<sp/>1024u;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="structmempool" kindref="compound">mempool</ref><sp/>pool;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref>*<sp/>alloc<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>memory[POOL_SIZE]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>TEST_SETUP()<sp/>{<sp/>alloc<sp/>=<sp/><ref refid="mempool_8h_1a6d8041e4b2854058c728a95e501c639a" kindref="member">mempool_init</ref>(&amp;pool,<sp/>memory,<sp/>POOL_SIZE);<sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"></codeline>
+<codeline lineno="84" refid="test-mempool_8cpp_1a451b80c6a53f83d16ccdb57d2d888fa7" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Size)<sp/>{<sp/>CHECK_EQUAL(0,<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc));<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"></codeline>
+<codeline lineno="90"></codeline>
+<codeline lineno="96" refid="test-mempool_8cpp_1a294af0a3d43eb7f1209d15af7f8d5118" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Capacity)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(POOL_SIZE,<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(alloc));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"></codeline>
+<codeline lineno="104"></codeline>
+<codeline lineno="113" refid="test-mempool_8cpp_1ab5c92fb58ccd4b258ff16a70d9ea6287" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Alloc)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>allocationSize<sp/>=<sp/>10u;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(alloc,<sp/>0,<sp/>allocationSize);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(memory,<sp/>result);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(allocationSize,<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(POOL_SIZE<sp/>-<sp/>allocationSize,<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(alloc));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="test-mempool_8cpp_1a1cd87fb22f087c63bf5cb5343d1aa80f" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Alloc_RespectsAlignment)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>allocationSize<sp/>=<sp/>11u;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>alignment<sp/>=<sp/>2u;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result1<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(alloc,<sp/>alignment,<sp/>allocationSize);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result2<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(alloc,<sp/>alignment,<sp/>allocationSize);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(memory,<sp/>result1);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(memory<sp/>+<sp/>allocationSize<sp/>+<sp/>1u,<sp/>result2);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(2u<sp/>*<sp/>allocationSize<sp/>+<sp/>1u,<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(POOL_SIZE<sp/>-<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc),<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(alloc));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="test-mempool_8cpp_1ab2c275d9257ea17b10fa5f6fcab4c391" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Alloc_IncorrectAlignment)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>allocationSize<sp/>=<sp/>10u;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(alloc,<sp/>3u,<sp/>allocationSize);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>result);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(POOL_SIZE,<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(alloc));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" kindref="member">ERRNUM_INVAL</ref>,<sp/><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>());</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="test-mempool_8cpp_1acbeb7e72d16a9f2b9401ac9a6db85406" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Alloc_OutOfMemory)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>allocationSize<sp/>=<sp/>POOL_SIZE<sp/>+<sp/>1u;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(alloc,<sp/>0,<sp/>allocationSize);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>result);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc));</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(POOL_SIZE,<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(alloc));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" kindref="member">ERRNUM_NOMEM</ref>,<sp/><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>());</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="test-mempool_8cpp_1a7780dd60e807e0d456eab7f754fcd176" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Alloc_SizeZero)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aecf2b7ffb9089c277d3e32983ae3b725" kindref="member">ERRNUM_SUCCESS</ref>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(alloc,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>result);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc));</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(POOL_SIZE,<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(alloc));</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>());</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"></codeline>
+<codeline lineno="207"></codeline>
+<codeline lineno="214" refid="test-mempool_8cpp_1af5cc69201f03c83b77806d14dcd6c14e" refkind="member"><highlight class="normal"><ref refid="test-mempool_8cpp_1a9a6c51bde635086bdb75d7dd397d67d0" kindref="member">TEST</ref>(Util_MemPool,<sp/>MemPool_Free_DoesNothing)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>allocationSize<sp/>=<sp/>10u;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(alloc,<sp/>0,<sp/>allocationSize);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free</ref>(alloc,<sp/>result);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(memory,<sp/>result);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(allocationSize,<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(alloc));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(POOL_SIZE<sp/>-<sp/>allocationSize,<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(alloc));</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/util/test-mempool.cpp"/>
+  </compounddef>
+</doxygen>

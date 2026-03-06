@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mempool_8h" kind="file" language="C++">
+    <compoundname>mempool.h</compoundname>
+    <includes refid="memory_8h" local="no">lely/util/memory.h</includes>
+    <includedby refid="mempool_8c" local="no">lib/util/mempool.c</includedby>
+    <includedby refid="pool_8hpp" local="no">unit-tests/libtest/allocators/pool.hpp</includedby>
+    <includedby refid="test-mempool_8cpp" local="no">unit-tests/util/test-mempool.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/util/mempool.h</label>
+        <link refid="mempool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>unit-tests/can/test-net.cpp</label>
+        <link refid="test-net_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="3">
+        <label>unit-tests/libtest/allocators/pool.hpp</label>
+        <link refid="pool_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>unit-tests/util/test-mempool.cpp</label>
+        <link refid="test-mempool_8cpp"/>
+      </node>
+      <node id="18">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/libtest/allocators/default.hpp</label>
+        <link refid="default_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="22">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/lely/util/mempool.h</label>
+        <link refid="mempool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="2">
+        <label>lib/util/mempool.c</label>
+        <link refid="mempool_8c"/>
+      </node>
+      <node id="20">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="21">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="23">
+        <label>unit-tests/libtest/allocators/limited.hpp</label>
+        <link refid="limited_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="17">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmempool" prot="public">mempool</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mempool_8h_1a6d8041e4b2854058c728a95e501c639a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* mempool_init</definition>
+        <argsstring>(struct mempool *pool, void *memory, size_t size)</argsstring>
+        <name>mempool_init</name>
+        <param>
+          <type>struct <ref refid="structmempool" kindref="compound">mempool</ref> *</type>
+          <declname>pool</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>memory</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Initialized a memory pool allocator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: This allocator never really frees memory - this allocation scheme should be used in systems that initialize once at the start and can work with fixed memory buffers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the memory pool. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the memory region to be used by the pool. MUST NOT be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes availabe at <bold>memory</bold>. MUST NOT be zero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the allocator interface.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/mempool.h" line="63" column="9" bodyfile="lib/util/mempool.c" bodystart="95" bodyend="108" declfile="include/lely/util/mempool.h" declline="63" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the utilities library; it contains memory pool based allocator declaration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020 N7 Space sp. z o.o.</para>
+</simplesect>
+Memory pool allocator was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_MEMPOOL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_MEMPOOL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="memory_8h" kindref="compound">lely/util/memory.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structmempool" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmempool" kindref="compound">mempool</ref><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="structmempool_1ab36cf4ed6ac8315cf6c2cda71db12cd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structalloc__vtbl" kindref="compound">alloc_vtbl</ref><sp/>*<ref refid="structmempool_1ab36cf4ed6ac8315cf6c2cda71db12cd9" kindref="member">vtbl</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" kindref="member">beg</ref>;</highlight></codeline>
+<codeline lineno="39" refid="structmempool_1a0841f2c587fa4d06c905593528ae830e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structmempool_1a0841f2c587fa4d06c905593528ae830e" kindref="member">end</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" kindref="member">cur</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="mempool_8h_1a6d8041e4b2854058c728a95e501c639a" kindref="member">mempool_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmempool" kindref="compound">mempool</ref><sp/>*pool,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*memory,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_UTIL_MEMPOOL_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/util/mempool.h"/>
+  </compounddef>
+</doxygen>

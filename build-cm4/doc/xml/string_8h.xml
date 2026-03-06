@@ -1,0 +1,1007 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="string_8h" kind="file" language="C++">
+    <compoundname>string.h</compoundname>
+    <includes refid="features_8h" local="no">lely/compat/features.h</includes>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+    <includedby refid="cmp_8h" local="no">include/lely/util/cmp.h</includedby>
+    <includedby refid="endian_8h" local="no">include/lely/util/endian.h</includedby>
+    <includedby refid="membuf_8h" local="no">include/lely/util/membuf.h</includedby>
+    <includedby refid="emcy_8c" local="no">lib/co/emcy.c</includedby>
+    <includedby refid="nmt_8c" local="no">lib/co/nmt.c</includedby>
+    <includedby refid="obj_8c" local="no">lib/co/obj.c</includedby>
+    <includedby refid="ssdo_8c" local="no">lib/co/ssdo.c</includedby>
+    <includedby refid="val_8c" local="no">lib/co/val.c</includedby>
+    <includedby refid="string_8c" local="no">lib/compat/string.c</includedby>
+    <includedby refid="diag_8c" local="no">lib/util/diag.c</includedby>
+    <includedby refid="error_8c" local="no">lib/util/error.c</includedby>
+    <includedby refid="test-csdo_8cpp" local="no">unit-tests/co/test-csdo.cpp</includedby>
+    <includedby refid="test-string_8cpp" local="no">unit-tests/compat/test-string.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>include/lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="39">
+        <label>include/lely/co/csdo.h</label>
+        <link refid="csdo_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lib/util/cmp.c</label>
+        <link refid="cmp_8c"/>
+      </node>
+      <node id="58">
+        <label>unit-tests/libtest/tools/co-sub-up-ind.hpp</label>
+        <link refid="co-sub-up-ind_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="22">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="37">
+        <label>include/lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>unit-tests/compat/test-string.cpp</label>
+        <link refid="test-string_8cpp"/>
+      </node>
+      <node id="57">
+        <label>unit-tests/libtest/tools/lely-unit-test.cpp</label>
+        <link refid="lely-unit-test_8cpp"/>
+      </node>
+      <node id="20">
+        <label>unit-tests/libtest/tools/can-send.hpp</label>
+        <link refid="can-send_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="63">
+        <label>lib/compat/string.c</label>
+        <link refid="string_8c"/>
+      </node>
+      <node id="28">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="13">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="2">
+        <label>include/lely/util/cmp.h</label>
+        <link refid="cmp_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lib/co/val.c</label>
+        <link refid="val_8c"/>
+      </node>
+      <node id="47">
+        <label>lib/co/rpdo.c</label>
+        <link refid="rpdo_8c"/>
+      </node>
+      <node id="42">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="5">
+        <label>lib/co/obj.c</label>
+        <link refid="obj_8c"/>
+      </node>
+      <node id="18">
+        <label>unit-tests/co/test-sdo.cpp</label>
+        <link refid="test-sdo_8cpp"/>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-val.cpp</label>
+        <link refid="test-val_8cpp"/>
+      </node>
+      <node id="54">
+        <label>unit-tests/libtest/tools/co-sub-dn-ind.cpp</label>
+        <link refid="co-sub-dn-ind_8cpp"/>
+      </node>
+      <node id="43">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="64">
+        <label>lib/util/diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="26">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/libtest/tools/can-send.cpp</label>
+        <link refid="can-send_8cpp"/>
+      </node>
+      <node id="65">
+        <label>lib/util/error.c</label>
+        <link refid="error_8c"/>
+      </node>
+      <node id="61">
+        <label>unit-tests/libtest/override/lelyutil-membuf.cpp</label>
+        <link refid="lelyutil-membuf_8cpp"/>
+      </node>
+      <node id="38">
+        <label>include/lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="23">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/can/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="10">
+        <label>lib/co/csdo.c</label>
+        <link refid="csdo_8c"/>
+      </node>
+      <node id="48">
+        <label>lib/co/sdo.c</label>
+        <link refid="sdo_8c"/>
+      </node>
+      <node id="49">
+        <label>lib/co/sdo.h</label>
+        <link refid="lib_2co_2sdo_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>unit-tests/util/test-cmp.cpp</label>
+        <link refid="test-cmp_8cpp"/>
+      </node>
+      <node id="40">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="53">
+        <label>unit-tests/libtest/tools/co-sub-dn-ind.hpp</label>
+        <link refid="co-sub-dn-ind_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="29">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="46">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="17">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="51">
+        <label>lib/co/tpdo.c</label>
+        <link refid="tpdo_8c"/>
+      </node>
+      <node id="45">
+        <label>include/lely/co/ssdo.h</label>
+        <link refid="ssdo_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>lib/util/membuf.c</label>
+        <link refid="membuf_8c"/>
+      </node>
+      <node id="25">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="14">
+        <label>lib/util/endian.c</label>
+        <link refid="endian_8c"/>
+      </node>
+      <node id="59">
+        <label>unit-tests/libtest/tools/co-sub-up-ind.cpp</label>
+        <link refid="co-sub-up-ind_8cpp"/>
+      </node>
+      <node id="62">
+        <label>unit-tests/util/test-membuf.cpp</label>
+        <link refid="test-membuf_8cpp"/>
+      </node>
+      <node id="4">
+        <label>lib/co/dev.c</label>
+        <link refid="dev_8c"/>
+      </node>
+      <node id="32">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="35">
+        <label>unit-tests/libtest/tools/sdo-init-expected-data.cpp</label>
+        <link refid="sdo-init-expected-data_8cpp"/>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="34">
+        <label>unit-tests/libtest/tools/sdo-create-message.cpp</label>
+        <link refid="sdo-create-message_8cpp"/>
+      </node>
+      <node id="27">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="50">
+        <label>lib/co/sync.c</label>
+        <link refid="sync_8c"/>
+      </node>
+      <node id="12">
+        <label>lib/co/pdo.c</label>
+        <link refid="pdo_8c"/>
+      </node>
+      <node id="55">
+        <label>unit-tests/libtest/tools/lely-unit-test.hpp</label>
+        <link refid="lely-unit-test_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>unit-tests/util/test-endian.cpp</label>
+        <link refid="test-endian_8cpp"/>
+      </node>
+      <node id="30">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="11">
+        <label>lib/co/emcy.c</label>
+        <link refid="emcy_8c"/>
+      </node>
+      <node id="1">
+        <label>include/lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="9">
+        <label>include/lely/util/endian.h</label>
+        <link refid="endian_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="44">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="string_8h_1a30c75e139b07107ef1c8d3f8490aee7d" prot="public" static="no">
+        <name>memcpy</name>
+        <initializer><ref refid="string_8c_1a354cd7c7b26ba1c4afabfc5e0ecdb1d7" kindref="member">lely_compat_memcpy</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="40" column="9" bodyfile="include/lely/compat/string.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="string_8h_1a7263e7ed2c459f2c42e067c30775ed41" prot="public" static="no">
+        <name>memmove</name>
+        <initializer><ref refid="string_8c_1a8368d138c27fbd8f6c7d939c7f13f14d" kindref="member">lely_compat_memmove</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="44" column="9" bodyfile="include/lely/compat/string.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="string_8h_1a7804c1bd203df33ebf99ffdd999bacb1" prot="public" static="no">
+        <name>memcmp</name>
+        <initializer><ref refid="string_8c_1a17cdb2eb194469f3a32d7d581fabbd18" kindref="member">lely_compat_memcmp</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="48" column="9" bodyfile="include/lely/compat/string.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="string_8h_1a6b5d9a1031ac2602e31df1ba551bfafe" prot="public" static="no">
+        <name>strcmp</name>
+        <initializer><ref refid="string_8c_1aef65e445168dcd83788d6a5c0ce769ae" kindref="member">lely_compat_strcmp</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="52" column="9" bodyfile="include/lely/compat/string.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="string_8h_1a7463baf5fb1b8c9bc859d5352d97313a" prot="public" static="no">
+        <name>strncmp</name>
+        <initializer><ref refid="string_8c_1ab5dedf85c069545cdaa539d4dd26c3d9" kindref="member">lely_compat_strncmp</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="56" column="9" bodyfile="include/lely/compat/string.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="string_8h_1aac7987d1560131b4de61d23504cb3a0c" prot="public" static="no">
+        <name>memset</name>
+        <initializer><ref refid="string_8c_1a6bca26d4590453b9f3f65cd0d087da6f" kindref="member">lely_compat_memset</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="60" column="9" bodyfile="include/lely/compat/string.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="string_8h_1a417fef1b5cd577cfc9a2836bb40fa885" prot="public" static="no">
+        <name>strlen</name>
+        <initializer><ref refid="string_8c_1a2c76a64938cb08613194c875dd06c261" kindref="member">lely_compat_strlen</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="64" column="9" bodyfile="include/lely/compat/string.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="string_8h_1a6bd766a5e6cefc1f45487ca1e870741f" prot="public" static="no">
+        <name>strnlen</name>
+        <initializer><ref refid="string_8c_1ab838bfcb96a1f11152e31497d7b49cca" kindref="member">lely_compat_strnlen</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="180" column="9" bodyfile="include/lely/compat/string.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="string_8h_1a354cd7c7b26ba1c4afabfc5e0ecdb1d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lely_compat_memcpy</definition>
+        <argsstring>(void *s1, const void *s2, size_t n)</argsstring>
+        <name>lely_compat_memcpy</name>
+        <param>
+          <type>void *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Copies <bold>n</bold> bytes from the object pointed to by <bold>s2</bold> into the object pointed to by <bold>s1</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If copying takes place between objects that overlap, the behavior is undefined.</para>
+<para><simplesect kind="return"><para><bold>s1</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="74" column="6" bodyfile="lib/compat/string.c" bodystart="29" bodyend="36" declfile="include/lely/compat/string.h" declline="74" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="string_8h_1a8368d138c27fbd8f6c7d939c7f13f14d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lely_compat_memmove</definition>
+        <argsstring>(void *s1, const void *s2, size_t n)</argsstring>
+        <name>lely_compat_memmove</name>
+        <param>
+          <type>void *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Copies <bold>n</bold> bytes from the object pointed to by <bold>s2</bold> into the object pointed to by <bold>s1</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Copying takes place as if the <bold>n</bold> bytes from the object pointed to by <bold>s2</bold> are first copied into a temporary array of <bold>n</bold> bytes that does not overlap the objects pointed to by <bold>s1</bold> and <bold>s2</bold>, and then the <bold>n</bold> bytes from the temporary array are copied into the object pointed to by <bold>s1</bold>.</para>
+<para><simplesect kind="return"><para><bold>s1</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="86" column="6" bodyfile="lib/compat/string.c" bodystart="39" bodyend="53" declfile="include/lely/compat/string.h" declline="86" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="string_8h_1a17cdb2eb194469f3a32d7d581fabbd18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lely_compat_memcmp</definition>
+        <argsstring>(const void *s1, const void *s2, size_t n)</argsstring>
+        <name>lely_compat_memcmp</name>
+        <param>
+          <type>const void *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Compares the first <bold>n</bold> bytes (each interpreted as an <computeroutput>unsigned char</computeroutput>) of the object pointed to by <bold>s1</bold> to the first <bold>n</bold> btyes of the object pointed to by <bold>s2</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The sign of a non-zero return value shall be determined by the sign of the difference between the values of the first pair of bytes (both interpreted as type <computeroutput>unsigned char</computeroutput>) that differ in the objects being compared.</para>
+<para><simplesect kind="return"><para>an integer greater than, equal to, or less than 0, if the object pointed to by <bold>s1</bold> is greater than, equal to, or less than the object pointed to by <bold>s2</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="101" column="5" bodyfile="lib/compat/string.c" bodystart="56" bodyend="65" declfile="include/lely/compat/string.h" declline="101" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="string_8h_1aef65e445168dcd83788d6a5c0ce769ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lely_compat_strcmp</definition>
+        <argsstring>(const char *s1, const char *s2)</argsstring>
+        <name>lely_compat_strcmp</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>Compares the string pointed to by <bold>s1</bold> to the string pointed to by <bold>s2</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The sign of a non-zero return value shall be determined by the sign of the difference between the values of the first pair of bytes (both interpreted as type <computeroutput>unsigned char</computeroutput>) that differ in the strings being compared.</para>
+<para><simplesect kind="return"><para>an integer greater than, equal to, or less than 0, if the string pointed to by <bold>s1</bold> is greater than, equal to, or less than the string pointed to by <bold>s2</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="115" column="5" bodyfile="lib/compat/string.c" bodystart="68" bodyend="78" declfile="include/lely/compat/string.h" declline="115" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="string_8h_1ab5dedf85c069545cdaa539d4dd26c3d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lely_compat_strncmp</definition>
+        <argsstring>(const char *s1, const char *s2, size_t n)</argsstring>
+        <name>lely_compat_strncmp</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Compares not more than <bold>n</bold> bytes (bytes that follow a null character are not compared) from the array pointed to by <bold>s1</bold> to the array pointed to by <bold>s2</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The sign of a non-zero return value shall be determined by the sign of the difference between the values of the first pair of bytes (both interpreted as type <computeroutput>unsigned char</computeroutput>) that differ in the strings being compared.</para>
+<para><simplesect kind="return"><para>an integer greater than, equal to, or less than 0, if the possible null-terminated array pointed to by <bold>s1</bold> is greater than, equal to, or less than the possibly null-terminated array pointed to by <bold>s2</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="130" column="5" bodyfile="lib/compat/string.c" bodystart="81" bodyend="92" declfile="include/lely/compat/string.h" declline="130" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="string_8h_1a6bca26d4590453b9f3f65cd0d087da6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lely_compat_memset</definition>
+        <argsstring>(void *s, int c, size_t n)</argsstring>
+        <name>lely_compat_memset</name>
+        <param>
+          <type>void *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Copies <bold>c</bold> (converted to an <computeroutput>unsigned char</computeroutput>) into each of the first <bold>n</bold> bytes of the object pointed to by <bold>s</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>s</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="138" column="6" bodyfile="lib/compat/string.c" bodystart="95" bodyend="101" declfile="include/lely/compat/string.h" declline="138" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="string_8h_1a2c76a64938cb08613194c875dd06c261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lely_compat_strlen</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>lely_compat_strlen</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Computes the length of the string pointed to by <bold>s</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of bytes that precede the terminating null character. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="145" column="8" bodyfile="lib/compat/string.c" bodystart="104" bodyend="110" declfile="include/lely/compat/string.h" declline="145" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="string_8h_1ab838bfcb96a1f11152e31497d7b49cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t lely_compat_strnlen</definition>
+        <argsstring>(const char *s, size_t maxlen)</argsstring>
+        <name>lely_compat_strnlen</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>maxlen</declname>
+        </param>
+        <briefdescription>
+<para>Computes the length of the string at <bold>s</bold>, not including the terminating null byte. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>At most <bold>maxlen</bold> characters are examined.</para>
+<para><simplesect kind="return"><para>the smaller of the length of the string at <bold>s</bold> or <bold>maxlen</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/string.h" line="190" column="8" bodyfile="lib/compat/string.c" bodystart="150" bodyend="156" declfile="include/lely/compat/string.h" declline="190" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the C11 and POSIX compatibility library; it includes <computeroutput>&lt;<ref refid="string_8h" kindref="compound">string.h</ref>&gt;</computeroutput> and defines any missing functionality. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2015-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_COMPAT_STRING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_COMPAT_STRING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="features_8h" kindref="compound">lely/compat/features.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_HOSTED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="string_8h" kindref="compound">string.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_HOSTED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>memcpy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>memcpy<sp/>lely_compat_memcpy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>memmove</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>memmove<sp/>lely_compat_memmove</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>memcmp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>memcmp<sp/>lely_compat_memcmp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>strcmp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strcmp<sp/>lely_compat_strcmp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>strncmp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strncmp<sp/>lely_compat_strncmp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>memset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>memset<sp/>lely_compat_memset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>strlen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strlen<sp/>lely_compat_strlen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="string_8h_1a354cd7c7b26ba1c4afabfc5e0ecdb1d7" kindref="member">lely_compat_memcpy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*s2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="string_8h_1a8368d138c27fbd8f6c7d939c7f13f14d" kindref="member">lely_compat_memmove</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*s2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="string_8h_1a17cdb2eb194469f3a32d7d581fabbd18" kindref="member">lely_compat_memcmp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*s2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="string_8h_1aef65e445168dcd83788d6a5c0ce769ae" kindref="member">lely_compat_strcmp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s2);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="string_8h_1ab5dedf85c069545cdaa539d4dd26c3d9" kindref="member">lely_compat_strncmp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="string_8h_1a6bca26d4590453b9f3f65cd0d087da6f" kindref="member">lely_compat_memset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="string_8h_1a2c76a64938cb08613194c875dd06c261" kindref="member">lely_compat_strlen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LELY_NO_HOSTED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(_MSC_VER<sp/>&gt;=<sp/>1400)<sp/>&amp;&amp;<sp/>!(_POSIX_C_SOURCE<sp/>&gt;=<sp/>200809L)<sp/>\</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>!defined(__MINGW32__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*strdup(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(_POSIX_C_SOURCE<sp/>&gt;=<sp/>200809L)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*strndup(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_HOSTED<sp/>\</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(!(_MSC_VER<sp/>&gt;=<sp/>1400)<sp/>&amp;&amp;<sp/>!(_POSIX_C_SOURCE<sp/>&gt;=<sp/>200809L)<sp/>\</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>!defined(__MINGW32__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>strnlen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strnlen<sp/>lely_compat_strnlen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="string_8h_1ab838bfcb96a1f11152e31497d7b49cca" kindref="member">lely_compat_strnlen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>maxlen);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_COMPAT_STRING_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/compat/string.h"/>
+  </compounddef>
+</doxygen>

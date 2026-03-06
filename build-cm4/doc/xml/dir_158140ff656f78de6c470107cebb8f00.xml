@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_158140ff656f78de6c470107cebb8f00" kind="dir">
+    <compoundname>lib/util</compoundname>
+    <innerfile refid="bits_8c">bits.c</innerfile>
+    <innerfile refid="cmp_8c">cmp.c</innerfile>
+    <innerfile refid="diag_8c">diag.c</innerfile>
+    <innerfile refid="dllist_8c">dllist.c</innerfile>
+    <innerfile refid="endian_8c">endian.c</innerfile>
+    <innerfile refid="error_8c">error.c</innerfile>
+    <innerfile refid="membuf_8c">membuf.c</innerfile>
+    <innerfile refid="memory_8c">memory.c</innerfile>
+    <innerfile refid="mempool_8c">mempool.c</innerfile>
+    <innerfile refid="pheap_8c">pheap.c</innerfile>
+    <innerfile refid="rbtree_8c">rbtree.c</innerfile>
+    <innerfile refid="time_8c">time.c</innerfile>
+    <innerfile refid="ustring_8c">ustring.c</innerfile>
+    <innerfile refid="lib_2util_2util_8h">util.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/util/"/>
+  </compounddef>
+</doxygen>

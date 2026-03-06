@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="nmt__hb_8h" kind="file" language="C++">
+    <compoundname>nmt_hb.h</compoundname>
+    <includes refid="lib_2co_2co_8h" local="yes">co.h</includes>
+    <includes refid="nmt_8h" local="no">lely/co/nmt.h</includes>
+    <includedby refid="nmt_8c" local="yes">lib/co/nmt.c</includedby>
+    <includedby refid="nmt__hb_8c" local="yes">lib/co/nmt_hb.c</includedby>
+    <includedby refid="nmt-alloc-sizes_8hpp" local="no">unit-tests/co/common/nmt-alloc-sizes.hpp</includedby>
+    <includedby refid="test-nmt-hb_8cpp" local="no">unit-tests/co/test-nmt-hb.cpp</includedby>
+    <includedby refid="test-nmt_8cpp" local="no">unit-tests/co/test-nmt.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stdbool.h</label>
+      </node>
+      <node id="13">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/co/nmt_hb.h</label>
+        <link refid="nmt__hb_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="11">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/co/nmt.h</label>
+        <link refid="nmt_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/co/nmt_hb.c</label>
+        <link refid="nmt__hb_8c"/>
+      </node>
+      <node id="1">
+        <label>lib/co/nmt_hb.h</label>
+        <link refid="nmt__hb_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="2">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" prot="public" static="no">
+        <type>struct <ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb</ref></type>
+        <definition>typedef struct co_nmt_hb co_nmt_hb_t</definition>
+        <argsstring></argsstring>
+        <name>co_nmt_hb_t</name>
+        <briefdescription>
+<para>An opaque CANopen NMT heartbeat consumer type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="1" column="0" bodyfile="lib/co/nmt_hb.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nmt__hb_8h_1ade97b13bd684ed8f0786c3ca045ab121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_hb_ind</definition>
+        <argsstring>(co_nmt_t *nmt, co_unsigned8_t id, co_nmt_ec_state_t state, co_nmt_ec_reason_t reason, co_unsigned8_t st)</argsstring>
+        <name>co_nmt_hb_ind</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref></type>
+          <declname>reason</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>The CANopen NMT heartbeat indication function, invoked when a heartbeat event occurs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT master/slave service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the node-ID (in the range [1..127]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates whether the event occurred (<ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78a9a7a1f2ca9d3b5ddd0421006412de5ac" kindref="member">CO_NMT_EC_OCCURRED</ref>) or was resolved (<ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78aaf807830442432d4a6f57094d21d3e1d" kindref="member">CO_NMT_EC_RESOLVED</ref>). Note that heartbeat state change events only occur and are never resolved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates whether the event occurred because of a timeout (<ref refid="nmt_8h_1a3064c748aafccad0447f9ce06179fb2caa823145c981a391750ee1698e4187cac" kindref="member">CO_NMT_EC_TIMEOUT</ref>) or a state change (<ref refid="nmt_8h_1a3064c748aafccad0447f9ce06179fb2ca7db00cb951a2ca19ea157d5a90fdc8e9" kindref="member">CO_NMT_EC_STATE</ref>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the state of the node (if <bold>reason</bold> is <ref refid="nmt_8h_1a3064c748aafccad0447f9ce06179fb2ca7db00cb951a2ca19ea157d5a90fdc8e9" kindref="member">CO_NMT_EC_STATE</ref>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="50" column="6" bodyfile="lib/co/nmt.c" bodystart="2216" bodyend="2229" declfile="lib/co/nmt_hb.h" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8h_1a46544ba3203ba13335dd276a5ed3e048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_nmt_hb_alignof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_nmt_hb_alignof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the alignment (in bytes) of the <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="54" column="8" bodyfile="lib/co/nmt_hb.c" bodystart="79" bodyend="82" declfile="lib/co/nmt_hb.h" declline="54" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8h_1a6d85291114bba6ac7f6623ff45bb32a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_nmt_hb_sizeof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_nmt_hb_sizeof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size (in bytes) of the <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="57" column="8" bodyfile="lib/co/nmt_hb.c" bodystart="85" bodyend="88" declfile="lib/co/nmt_hb.h" declline="57" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8h_1a9d49cd7b18c82225e6877da6711da22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+        <definition>co_nmt_hb_t* co_nmt_hb_create</definition>
+        <argsstring>(can_net_t *net, co_nmt_t *nmt)</argsstring>
+        <name>co_nmt_hb_create</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new CANopen NMT heartbeat consumer service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT master/slave service.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to a new heartbeat consumer service, or NULL on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="nmt__hb_8h_1a30d47b9c9eda7b3ee602cec90dbcbf58" kindref="member">co_nmt_hb_destroy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="70" column="13" bodyfile="lib/co/nmt_hb.c" bodystart="91" bodyend="113" declfile="lib/co/nmt_hb.h" declline="70" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8h_1a30d47b9c9eda7b3ee602cec90dbcbf58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_hb_destroy</definition>
+        <argsstring>(co_nmt_hb_t *hb)</argsstring>
+        <name>co_nmt_hb_destroy</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a CANopen NMT heartbeat consumer service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="nmt__hb_8h_1a9d49cd7b18c82225e6877da6711da22e" kindref="member">co_nmt_hb_create()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="73" column="6" bodyfile="lib/co/nmt_hb.c" bodystart="116" bodyend="122" declfile="lib/co/nmt_hb.h" declline="73" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8h_1ab3937ca1bc3d9873fb5d55c4ee48c14c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* co_nmt_hb_get_alloc</definition>
+        <argsstring>(const co_nmt_hb_t *hb)</argsstring>
+        <name>co_nmt_hb_get_alloc</name>
+        <param>
+          <type>const <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="81" column="9" bodyfile="lib/co/nmt_hb.c" bodystart="125" bodyend="130" declfile="lib/co/nmt_hb.h" declline="81" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8h_1a3fbc5990a93518914bd89c1ca1a1da58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_hb_set_1016</definition>
+        <argsstring>(co_nmt_hb_t *hb, co_unsigned8_t id, co_unsigned16_t ms)</argsstring>
+        <name>co_nmt_hb_set_1016</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>Processes the value of CANopen object 1016 (Consumer heartbeat time) for the specified heartbeat consumer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the node-ID is valid and the heartbeat time is non-zero, the heartbeat consumer is activated. Note that this only activates the CAN frame receiver for heartbeat messages. The CAN timer for heartbeat events is not activated until the first heartbeat message is received or <ref refid="nmt__hb_8h_1af948edee625eb4f4743da60a6cb57ed4" kindref="member">co_nmt_hb_set_st()</ref> is invoked.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a heartbeat consumer service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the node-ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the heartbeat time (in milliseconds). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="95" column="6" bodyfile="lib/co/nmt_hb.c" bodystart="133" bodyend="148" declfile="lib/co/nmt_hb.h" declline="95" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8h_1af948edee625eb4f4743da60a6cb57ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_hb_set_st</definition>
+        <argsstring>(co_nmt_hb_t *hb, co_unsigned8_t st)</argsstring>
+        <name>co_nmt_hb_set_st</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Sets the expected state of a remote NMT node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the heartbeat consumer is active, invocation of this function is equivalent to reception of a heartbeat message with the specified state and will (re)activate the CAN timer for heartbeat events.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a heartbeat consumer service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the state of the node (excluding the toggle bit). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.h" line="106" column="6" bodyfile="lib/co/nmt_hb.c" bodystart="151" bodyend="161" declfile="lib/co/nmt_hb.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the internal header file of the NMT heartbeat consumer declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="nmt_8h" kindref="compound">lely/co/nmt.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_INTERN_NMT_HB_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_INTERN_NMT_HB_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2co_2co_8h" kindref="compound">co.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="nmt_8h" kindref="compound">lely/co/nmt.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb</ref><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8h_1ade97b13bd684ed8f0786c3ca045ab121" kindref="member">co_nmt_hb_ind</ref>(<ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*<ref refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" kindref="member">nmt</ref>,<sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/><ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref><sp/>reason,<sp/>co_unsigned8_t<sp/><ref refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" kindref="member">st</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8h_1a46544ba3203ba13335dd276a5ed3e048" kindref="member">co_nmt_hb_alignof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8h_1a6d85291114bba6ac7f6623ff45bb32a0" kindref="member">co_nmt_hb_sizeof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*<ref refid="nmt__hb_8h_1a9d49cd7b18c82225e6877da6711da22e" kindref="member">co_nmt_hb_create</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" kindref="member">net</ref>,<sp/><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*<ref refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" kindref="member">nmt</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8h_1a30d47b9c9eda7b3ee602cec90dbcbf58" kindref="member">co_nmt_hb_destroy</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>allocator<sp/>used<sp/>to<sp/>allocate<sp/>the<sp/>NMT<sp/>heartbeat</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>consumer<sp/>service.</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>@see<sp/>can_net_get_alloc()</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*co_nmt_hb_get_alloc(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8h_1a3fbc5990a93518914bd89c1ca1a1da58" kindref="member">co_nmt_hb_set_1016</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb,<sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>co_unsigned16_t<sp/><ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8h_1af948edee625eb4f4743da60a6cb57ed4" kindref="member">co_nmt_hb_set_st</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb,<sp/>co_unsigned8_t<sp/><ref refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" kindref="member">st</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CO_INTERN_NMT_HB_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/co/nmt_hb.h"/>
+  </compounddef>
+</doxygen>

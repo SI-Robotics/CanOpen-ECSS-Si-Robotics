@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classAcTrackingDnInd" kind="class" language="C++" prot="public">
+    <compoundname>AcTrackingDnInd</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classAcTrackingDnInd_1adb693b59ed99aa855b8090ca27a919a3" prot="public" static="yes" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t AcTrackingDnInd::last_ac</definition>
+        <argsstring></argsstring>
+        <name>last_ac</name>
+        <initializer>= 0u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="3245" column="26" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="3245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAcTrackingDnInd_1a5f299b4d3e8dc218f773ac40a008dca7" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool AcTrackingDnInd::was_called</definition>
+        <argsstring></argsstring>
+        <name>was_called</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="3246" column="15" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="3246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classAcTrackingDnInd_1a02ca78bf27474d50b8671bf76c566c3c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>static co_unsigned32_t AcTrackingDnInd::Func</definition>
+        <argsstring>(co_sub_t *const sub, struct co_sdo_req *const req, co_unsigned32_t ac, void *const)</argsstring>
+        <name>Func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *const</type>
+          <declname>sub</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *const</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>void * const</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="3249" column="3" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="3249" bodyend="3265"/>
+      </memberdef>
+      <memberdef kind="function" id="classAcTrackingDnInd_1a26e89ab7a08fa49946905dc8cb5d0d4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AcTrackingDnInd::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-ssdo.cpp" line="3268" column="3" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="3268" bodyend="3271"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Spy for <ref refid="obj_8h_1aa9fac5fdd8d282698d2806d70ea37be0" kindref="member">co_sub_dn_ind_t</ref> indication function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-ssdo.cpp" line="3243" column="1" bodyfile="unit-tests/co/test-ssdo.cpp" bodystart="3243" bodyend="3272"/>
+    <listofallmembers>
+      <member refid="classAcTrackingDnInd_1a26e89ab7a08fa49946905dc8cb5d0d4e" prot="public" virt="non-virtual"><scope>AcTrackingDnInd</scope><name>Clear</name></member>
+      <member refid="classAcTrackingDnInd_1a02ca78bf27474d50b8671bf76c566c3c" prot="public" virt="non-virtual"><scope>AcTrackingDnInd</scope><name>Func</name></member>
+      <member refid="classAcTrackingDnInd_1adb693b59ed99aa855b8090ca27a919a3" prot="public" virt="non-virtual"><scope>AcTrackingDnInd</scope><name>last_ac</name></member>
+      <member refid="classAcTrackingDnInd_1a5f299b4d3e8dc218f773ac40a008dca7" prot="public" virt="non-virtual"><scope>AcTrackingDnInd</scope><name>was_called</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

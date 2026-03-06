@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_4f95dc2142b21fa91e85d4d07facf434" kind="dir">
+    <compoundname>lib/co</compoundname>
+    <innerfile refid="lib_2co_2co_8h">co.h</innerfile>
+    <innerfile refid="crc_8c">crc.c</innerfile>
+    <innerfile refid="csdo_8c">csdo.c</innerfile>
+    <innerfile refid="dev_8c">dev.c</innerfile>
+    <innerfile refid="emcy_8c">emcy.c</innerfile>
+    <innerfile refid="nmt_8c">nmt.c</innerfile>
+    <innerfile refid="nmt__hb_8c">nmt_hb.c</innerfile>
+    <innerfile refid="nmt__hb_8h">nmt_hb.h</innerfile>
+    <innerfile refid="nmt__rdn_8c">nmt_rdn.c</innerfile>
+    <innerfile refid="nmt__rdn_8h">nmt_rdn.h</innerfile>
+    <innerfile refid="nmt__srv_8c">nmt_srv.c</innerfile>
+    <innerfile refid="nmt__srv_8h">nmt_srv.h</innerfile>
+    <innerfile refid="obj_8c">obj.c</innerfile>
+    <innerfile refid="pdo_8c">pdo.c</innerfile>
+    <innerfile refid="rpdo_8c">rpdo.c</innerfile>
+    <innerfile refid="sdo_8c">sdo.c</innerfile>
+    <innerfile refid="lib_2co_2sdo_8h">sdo.h</innerfile>
+    <innerfile refid="ssdo_8c">ssdo.c</innerfile>
+    <innerfile refid="sync_8c">sync.c</innerfile>
+    <innerfile refid="tpdo_8c">tpdo.c</innerfile>
+    <innerfile refid="type_8c">type.c</innerfile>
+    <innerfile refid="val_8c">val.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/co/"/>
+  </compounddef>
+</doxygen>

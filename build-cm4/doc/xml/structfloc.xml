@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structfloc" kind="struct" language="C++" prot="public">
+    <compoundname>floc</compoundname>
+    <includes refid="diag_8h" local="no">diag.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfloc_1aaa97e50d7cd33c3ec58f355ad45f6329" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* floc::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+<para>The name of the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="41" column="12" bodyfile="include/lely/util/diag.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfloc_1a716f6625c668fda4432f608121a012d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int floc::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+<para>The line number (starting from 1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="43" column="5" bodyfile="include/lely/util/diag.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfloc_1aaa9662e5b7b4fa8479dfb034e5d96dd8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int floc::column</definition>
+        <argsstring></argsstring>
+        <name>column</name>
+        <briefdescription>
+<para>The column number (starting from 1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/diag.h" line="45" column="5" bodyfile="include/lely/util/diag.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A location in a text file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/util/diag.h" line="39" column="1" bodyfile="include/lely/util/diag.h" bodystart="39" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structfloc_1aaa9662e5b7b4fa8479dfb034e5d96dd8" prot="public" virt="non-virtual"><scope>floc</scope><name>column</name></member>
+      <member refid="structfloc_1aaa97e50d7cd33c3ec58f355ad45f6329" prot="public" virt="non-virtual"><scope>floc</scope><name>filename</name></member>
+      <member refid="structfloc_1a716f6625c668fda4432f608121a012d2" prot="public" virt="non-virtual"><scope>floc</scope><name>line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

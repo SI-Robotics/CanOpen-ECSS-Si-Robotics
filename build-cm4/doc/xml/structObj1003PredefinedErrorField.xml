@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1003PredefinedErrorField" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1003PredefinedErrorField</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; 0x1003u &gt;</basecompoundref>
+    <innerclass refid="structObj1003PredefinedErrorField_1_1Sub00NumberOfErrors" prot="public">Obj1003PredefinedErrorField::Sub00NumberOfErrors</innerclass>
+    <innerclass refid="structObj1003PredefinedErrorField_1_1SubNStandardErrorField" prot="public">Obj1003PredefinedErrorField::SubNStandardErrorField</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1003u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1003PredefinedErrorField</label>
+        <link refid="structObj1003PredefinedErrorField"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1003u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1003PredefinedErrorField</label>
+        <link refid="structObj1003PredefinedErrorField"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/emcy-predefined-error-field.hpp" line="29" column="1" bodyfile="unit-tests/co/obj-init/emcy-predefined-error-field.hpp" bodystart="29" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1003PredefinedErrorField</scope><name>idx</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>Obj1003PredefinedErrorField</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>Obj1003PredefinedErrorField</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

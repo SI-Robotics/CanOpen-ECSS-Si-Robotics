@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structmembuf" kind="struct" language="C++" prot="public">
+    <compoundname>membuf</compoundname>
+    <includes refid="membuf_8h" local="no">membuf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmembuf_1aedc006e3ebd07df30e86d1904371b329" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* membuf::cur</definition>
+        <argsstring></argsstring>
+        <name>cur</name>
+        <briefdescription>
+<para>A pointer to one past the last byte written to the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/membuf.h" line="38" column="6" bodyfile="include/lely/util/membuf.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmembuf_1a3c270e160882509a6178302f030d1035" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* membuf::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>A pointer to the first byte in the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/membuf.h" line="40" column="6" bodyfile="include/lely/util/membuf.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmembuf_1a02ec2cfc539883f36c200205261dc4bb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* membuf::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>A pointer to one past the last byte in the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/membuf.h" line="42" column="6" bodyfile="include/lely/util/membuf.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A memory buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/util/membuf.h" line="36" column="1" bodyfile="include/lely/util/membuf.h" bodystart="36" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structmembuf_1a3c270e160882509a6178302f030d1035" prot="public" virt="non-virtual"><scope>membuf</scope><name>begin</name></member>
+      <member refid="structmembuf_1aedc006e3ebd07df30e86d1904371b329" prot="public" virt="non-virtual"><scope>membuf</scope><name>cur</name></member>
+      <member refid="structmembuf_1a02ec2cfc539883f36c200205261dc4bb" prot="public" virt="non-virtual"><scope>membuf</scope><name>end</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

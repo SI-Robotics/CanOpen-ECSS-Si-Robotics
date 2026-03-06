@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structatomic__flag" kind="struct" language="C++" prot="public">
+    <compoundname>atomic_flag</compoundname>
+    <includes refid="stdatomic_8h" local="no">stdatomic.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structatomic__flag_1a95330f357b7ffee51a6b7a1fb11f4473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atomic_flag::_Atomic</definition>
+        <argsstring>(ATOMIC_BOOL_TYPE) _value_</argsstring>
+        <name>_Atomic</name>
+        <param>
+          <type>ATOMIC_BOOL_TYPE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/compat/stdatomic.h" line="200" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An atomic type providing the classic test-and-set functionality. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It has two states, set and clear. Operations on objects of this type are lock free. </para>
+    </detaileddescription>
+    <location file="include/lely/compat/stdatomic.h" line="199" column="1" bodyfile="include/lely/compat/stdatomic.h" bodystart="199" bodyend="201"/>
+    <listofallmembers>
+      <member refid="structatomic__flag_1a95330f357b7ffee51a6b7a1fb11f4473" prot="public" virt="non-virtual"><scope>atomic_flag</scope><name>_Atomic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

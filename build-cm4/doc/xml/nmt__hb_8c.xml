@@ -1,0 +1,825 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="nmt__hb_8c" kind="file" language="C++">
+    <compoundname>nmt_hb.c</compoundname>
+    <includes refid="nmt__hb_8h" local="yes">nmt_hb.h</includes>
+    <includes refid="lib_2co_2co_8h" local="yes">co.h</includes>
+    <includes refid="dev_8h" local="no">lely/co/dev.h</includes>
+    <includes refid="diag_8h" local="no">lely/util/diag.h</includes>
+    <includes local="no">assert.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>stdbool.h</label>
+      </node>
+      <node id="25">
+        <label>stdarg.h</label>
+      </node>
+      <node id="26">
+        <label>assert.h</label>
+      </node>
+      <node id="24">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>lely/util/diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/co/nmt_hb.c</label>
+        <link refid="nmt__hb_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nmt_hb.h</label>
+        <link refid="nmt__hb_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="12">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/co/nmt.h</label>
+        <link refid="nmt_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>lely/co/dev.h</label>
+        <link refid="dev_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>lely/co/def/basic.def</label>
+      </node>
+      <node id="15">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structco__nmt__hb" prot="public">co_nmt_hb</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nmt__hb_8c_1aca01c44ba1e6d08ef180c959b74580ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * co_nmt_hb_alloc</definition>
+        <argsstring>(can_net_t *net)</argsstring>
+        <name>co_nmt_hb_alloc</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+<para>Allocates memory for <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> object using allocator from <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="234" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="234" bodyend="244" declfile="lib/co/nmt_hb.c" declline="52" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a419e583c133b40d85cebbf56b180cbb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void co_nmt_hb_free</definition>
+        <argsstring>(co_nmt_hb_t *hb)</argsstring>
+        <name>co_nmt_hb_free</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <briefdescription>
+<para>Frees memory allocated for <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="247" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="247" bodyend="250" declfile="lib/co/nmt_hb.c" declline="55" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a3c0316f3a5dee3dd971fa77abcad74e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+        <definition>static co_nmt_hb_t * co_nmt_hb_init</definition>
+        <argsstring>(co_nmt_hb_t *hb, can_net_t *net, co_nmt_t *nmt)</argsstring>
+        <name>co_nmt_hb_init</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <briefdescription>
+<para>Initializes <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="253" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="253" bodyend="291" declfile="lib/co/nmt_hb.c" declline="58" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a621de1a64023c06d8210f0742fb8f948" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void co_nmt_hb_fini</definition>
+        <argsstring>(co_nmt_hb_t *hb)</argsstring>
+        <name>co_nmt_hb_fini</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <briefdescription>
+<para>Finalizes <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="294" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="294" bodyend="300" declfile="lib/co/nmt_hb.c" declline="62" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1ad0250926c709d37c27118da2ab724cff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int co_nmt_hb_recv</definition>
+        <argsstring>(const struct can_msg *msg, void *data)</argsstring>
+        <name>co_nmt_hb_recv</name>
+        <param>
+          <type>const struct <ref refid="structcan__msg" kindref="compound">can_msg</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>The CAN receive callback function for a heartbeat consumer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="164" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="164" bodyend="214" declfile="lib/co/nmt_hb.c" declline="69" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a71998e05dab6f803c345bec3bca652ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int co_nmt_hb_timer</definition>
+        <argsstring>(const struct timespec *tp, void *data)</argsstring>
+        <name>co_nmt_hb_timer</name>
+        <param>
+          <type>const struct <ref refid="structtimespec" kindref="compound">timespec</ref> *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>The CAN timer callback function for a heartbeat consumer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="217" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="217" bodyend="231" declfile="lib/co/nmt_hb.c" declline="76" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a46544ba3203ba13335dd276a5ed3e048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_nmt_hb_alignof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_nmt_hb_alignof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the alignment (in bytes) of the <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="79" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a6d85291114bba6ac7f6623ff45bb32a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_nmt_hb_sizeof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_nmt_hb_sizeof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size (in bytes) of the <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="85" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a9d49cd7b18c82225e6877da6711da22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+        <definition>co_nmt_hb_t* co_nmt_hb_create</definition>
+        <argsstring>(can_net_t *net, co_nmt_t *nmt)</argsstring>
+        <name>co_nmt_hb_create</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new CANopen NMT heartbeat consumer service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT master/slave service.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to a new heartbeat consumer service, or NULL on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="nmt__hb_8h_1a30d47b9c9eda7b3ee602cec90dbcbf58" kindref="member">co_nmt_hb_destroy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="91" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="91" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a30d47b9c9eda7b3ee602cec90dbcbf58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_hb_destroy</definition>
+        <argsstring>(co_nmt_hb_t *hb)</argsstring>
+        <name>co_nmt_hb_destroy</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a CANopen NMT heartbeat consumer service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="nmt__hb_8h_1a9d49cd7b18c82225e6877da6711da22e" kindref="member">co_nmt_hb_create()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="116" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1ab3937ca1bc3d9873fb5d55c4ee48c14c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* co_nmt_hb_get_alloc</definition>
+        <argsstring>(const co_nmt_hb_t *hb)</argsstring>
+        <name>co_nmt_hb_get_alloc</name>
+        <param>
+          <type>const <ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="125" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1a3fbc5990a93518914bd89c1ca1a1da58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_hb_set_1016</definition>
+        <argsstring>(co_nmt_hb_t *hb, co_unsigned8_t id, co_unsigned16_t ms)</argsstring>
+        <name>co_nmt_hb_set_1016</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>Processes the value of CANopen object 1016 (Consumer heartbeat time) for the specified heartbeat consumer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the node-ID is valid and the heartbeat time is non-zero, the heartbeat consumer is activated. Note that this only activates the CAN frame receiver for heartbeat messages. The CAN timer for heartbeat events is not activated until the first heartbeat message is received or <ref refid="nmt__hb_8h_1af948edee625eb4f4743da60a6cb57ed4" kindref="member">co_nmt_hb_set_st()</ref> is invoked.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a heartbeat consumer service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the node-ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the heartbeat time (in milliseconds). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="133" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="133" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__hb_8c_1af948edee625eb4f4743da60a6cb57ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_hb_set_st</definition>
+        <argsstring>(co_nmt_hb_t *hb, co_unsigned8_t st)</argsstring>
+        <name>co_nmt_hb_set_st</name>
+        <param>
+          <type><ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref> *</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Sets the expected state of a remote NMT node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the heartbeat consumer is active, invocation of this function is equivalent to reception of a heartbeat message with the specified state and will (re)activate the CAN timer for heartbeat events.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a heartbeat consumer service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the state of the node (excluding the toggle bit). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_hb.c" line="151" column="1" bodyfile="lib/co/nmt_hb.c" bodystart="151" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen library; it contains the implementation of the NMT heartbeat consumer functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="nmt__hb_8h" kindref="compound">lib/co/nmt_hb.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nmt__hb_8h" kindref="compound">nmt_hb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2co_2co_8h" kindref="compound">co.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dev_8h" kindref="compound">lely/co/dev.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="diag_8h" kindref="compound">lely/util/diag.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structco__nmt__hb" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb</ref><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" kindref="member">net</ref>;</highlight></codeline>
+<codeline lineno="36" refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*<ref refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" kindref="member">nmt</ref>;</highlight></codeline>
+<codeline lineno="38" refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref>;</highlight></codeline>
+<codeline lineno="40" refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*<ref refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" kindref="member">st</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned16_t<sp/><ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/><ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="nmt__hb_8c_1aca01c44ba1e6d08ef180c959b74580ff" kindref="member">co_nmt_hb_alloc</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*net);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8c_1a419e583c133b40d85cebbf56b180cbb2" kindref="member">co_nmt_hb_free</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*<ref refid="nmt__hb_8c_1a3c0316f3a5dee3dd971fa77abcad74e1" kindref="member">co_nmt_hb_init</ref>(</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb,<sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*net,<sp/><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*nmt);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8c_1a621de1a64023c06d8210f0742fb8f948" kindref="member">co_nmt_hb_fini</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8c_1ad0250926c709d37c27118da2ab724cff" kindref="member">co_nmt_hb_recv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="nmt__hb_8c_1a71998e05dab6f803c345bec3bca652ed" kindref="member">co_nmt_hb_timer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>*tp,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="nmt__hb_8c_1a46544ba3203ba13335dd276a5ed3e048" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a46544ba3203ba13335dd276a5ed3e048" kindref="member">co_nmt_hb_alignof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="features_8h_1afcb8d15f870cea9564e9e367085258da" kindref="member">_Alignof</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="nmt__hb_8c_1a6d85291114bba6ac7f6623ff45bb32a0" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a6d85291114bba6ac7f6623ff45bb32a0" kindref="member">co_nmt_hb_sizeof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="nmt__hb_8h_1aaf0cbe8899cf86139e45a378716ed72e" kindref="member">co_nmt_hb_t</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="91" refid="nmt__hb_8c_1a9d49cd7b18c82225e6877da6711da22e" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a9d49cd7b18c82225e6877da6711da22e" kindref="member">co_nmt_hb_create</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*net,<sp/><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*nmt)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb<sp/>=<sp/><ref refid="nmt__hb_8c_1aca01c44ba1e6d08ef180c959b74580ff" kindref="member">co_nmt_hb_alloc</ref>(net);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hb)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errc<sp/>=<sp/><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_alloc_hb;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="nmt__hb_8c_1a3c0316f3a5dee3dd971fa77abcad74e1" kindref="member">co_nmt_hb_init</ref>(hb,<sp/>net,<sp/>nmt))<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errc<sp/>=<sp/><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_init_hb;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hb;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">error_init_hb:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt__hb_8c_1a419e583c133b40d85cebbf56b180cbb2" kindref="member">co_nmt_hb_free</ref>(hb);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">error_alloc_hb:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc</ref>(errc);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="nmt__hb_8c_1a30d47b9c9eda7b3ee602cec90dbcbf58" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a30d47b9c9eda7b3ee602cec90dbcbf58" kindref="member">co_nmt_hb_destroy</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hb)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt__hb_8c_1a621de1a64023c06d8210f0742fb8f948" kindref="member">co_nmt_hb_fini</ref>(hb);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt__hb_8c_1a419e583c133b40d85cebbf56b180cbb2" kindref="member">co_nmt_hb_free</ref>(hb);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">co_nmt_hb_get_alloc(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a8628a4e7d5510b43ab465cafa226e15a" kindref="member">can_net_get_alloc</ref>(hb-&gt;<ref refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" kindref="member">net</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="nmt__hb_8c_1a3fbc5990a93518914bd89c1ca1a1da58" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a3fbc5990a93518914bd89c1ca1a1da58" kindref="member">co_nmt_hb_set_1016</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb,<sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>co_unsigned16_t<sp/>ms)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop</ref>(hb-&gt;<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop</ref>(hb-&gt;<ref refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" kindref="member">timer</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" kindref="member">st</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref><sp/>=<sp/>ms;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref><sp/>=<sp/><ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78aaf807830442432d4a6f57094d21d3e1d" kindref="member">CO_NMT_EC_RESOLVED</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>&amp;&amp;<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>&lt;=<sp/><ref refid="dev_8h_1a556e1a707509d088324a156d99bf7da6" kindref="member">CO_NUM_NODES</ref><sp/>&amp;&amp;<sp/>hb-&gt;<ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(hb-&gt;<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" kindref="member">net</ref>,<sp/><ref refid="nmt_8h_1a3ded35156a587940f6d9f4e0ac187eec" kindref="member">CO_NMT_EC_CANID</ref>(hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>),<sp/>0);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="nmt__hb_8c_1af948edee625eb4f4743da60a6cb57ed4" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1af948edee625eb4f4743da60a6cb57ed4" kindref="member">co_nmt_hb_set_st</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb,<sp/>co_unsigned8_t<sp/>st)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>&amp;&amp;<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>&lt;=<sp/><ref refid="dev_8h_1a556e1a707509d088324a156d99bf7da6" kindref="member">CO_NUM_NODES</ref><sp/>&amp;&amp;<sp/>hb-&gt;<ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" kindref="member">st</ref><sp/>=<sp/>st;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref><sp/>=<sp/><ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78aaf807830442432d4a6f57094d21d3e1d" kindref="member">CO_NMT_EC_RESOLVED</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>CAN<sp/>timer<sp/>for<sp/>the<sp/>heartbeat<sp/>consumer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a6aedb3ac49d2c5c54be443bb10949a79" kindref="member">can_timer_timeout</ref>(hb-&gt;<ref refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" kindref="member">timer</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" kindref="member">net</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="nmt__hb_8c_1ad0250926c709d37c27118da2ab724cff" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1ad0250926c709d37c27118da2ab724cff" kindref="member">co_nmt_hb_recv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(msg);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>&amp;&amp;<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>&lt;=<sp/><ref refid="dev_8h_1a556e1a707509d088324a156d99bf7da6" kindref="member">CO_NUM_NODES</ref>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(msg-&gt;<ref refid="structcan__msg_1a25d0c02e5ce3932642e4c98821ada62c" kindref="member">id</ref><sp/>==<sp/>(uint_least32_t)<ref refid="nmt_8h_1a3ded35156a587940f6d9f4e0ac187eec" kindref="member">CO_NMT_EC_CANID</ref>(hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>));</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Obtain<sp/>the<sp/>node<sp/>status<sp/>from<sp/>the<sp/>CAN<sp/>frame.<sp/>Ignore<sp/>if<sp/>the<sp/>toggle<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>set,<sp/>since<sp/>then<sp/>it<sp/>is<sp/>not<sp/>a<sp/>heartbeat<sp/>message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg-&gt;<ref refid="structcan__msg_1a65a02552407656ea310316cb76e919f7" kindref="member">len</ref><sp/>&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>st<sp/>=<sp/>msg-&gt;<ref refid="structcan__msg_1a12e8389ecebff10d0b92b1a2c281e48f" kindref="member">data</ref>[0];</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(st<sp/>&amp;<sp/><ref refid="nmt_8h_1ab313094091c9085e9989a757b035895d" kindref="member">CO_NMT_ST_TOGGLE</ref>)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_CO_NMT_BOOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb-&gt;<ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>might<sp/>happen<sp/>upon<sp/>receipt<sp/>of<sp/>a<sp/>boot-up<sp/>message.<sp/>The<sp/>&apos;boot<sp/>slave&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>process<sp/>has<sp/>disabled<sp/>the<sp/>heartbeat<sp/>consumer,<sp/>but<sp/>the<sp/>event<sp/>has</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>already<sp/>been<sp/>scheduled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hb-&gt;<ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref>)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>state.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/>old_st<sp/>=<sp/>hb-&gt;<ref refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" kindref="member">st</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref><sp/>old_state<sp/>=<sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt__hb_8c_1af948edee625eb4f4743da60a6cb57ed4" kindref="member">co_nmt_hb_set_st</ref>(hb,<sp/>st);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(old_state<sp/>==<sp/><ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78a9a7a1f2ca9d3b5ddd0421006412de5ac" kindref="member">CO_NMT_EC_OCCURRED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" kindref="member">diag</ref>(<ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a6257591d5b5e5c0d1ab70e8a1bfbf5be" kindref="member">DIAG_INFO</ref>,<sp/>0,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NMT:<sp/>heartbeat<sp/>time<sp/>out<sp/>resolved<sp/>for<sp/>node<sp/>%d&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>a<sp/>heartbeat<sp/>timeout<sp/>event<sp/>occurred,<sp/>notify<sp/>the<sp/>user<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>has<sp/>been<sp/>resolved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8c_1ade97b13bd684ed8f0786c3ca045ab121" kindref="member">co_nmt_hb_ind</ref>(hb-&gt;<ref refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" kindref="member">nmt</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref>,<sp/><ref refid="nmt_8h_1a3064c748aafccad0447f9ce06179fb2caa823145c981a391750ee1698e4187cac" kindref="member">CO_NMT_EC_TIMEOUT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Notify<sp/>the<sp/>application<sp/>of<sp/>the<sp/>occurrence<sp/>of<sp/>a<sp/>state<sp/>change.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(st<sp/>!=<sp/>old_st)<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" kindref="member">diag</ref>(<ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a6257591d5b5e5c0d1ab70e8a1bfbf5be" kindref="member">DIAG_INFO</ref>,<sp/>0,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NMT:<sp/>heartbeat<sp/>state<sp/>change<sp/>occurred<sp/>for<sp/>node<sp/>%d&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8c_1ade97b13bd684ed8f0786c3ca045ab121" kindref="member">co_nmt_hb_ind</ref>(hb-&gt;<ref refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" kindref="member">nmt</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>,<sp/><ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78a9a7a1f2ca9d3b5ddd0421006412de5ac" kindref="member">CO_NMT_EC_OCCURRED</ref>,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8h_1a3064c748aafccad0447f9ce06179fb2ca7db00cb951a2ca19ea157d5a90fdc8e9" kindref="member">CO_NMT_EC_STATE</ref>,<sp/>st);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="nmt__hb_8c_1a71998e05dab6f803c345bec3bca652ed" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a71998e05dab6f803c345bec3bca652ed" kindref="member">co_nmt_hb_timer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>*tp,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)tp;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Notify<sp/>the<sp/>application<sp/>of<sp/>the<sp/>occurrence<sp/>of<sp/>a<sp/>heartbeat<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>event.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8h_1adfeca19e501c967a99795f1fb2d29f73" kindref="member">diag</ref>(<ref refid="diag_8h_1a99d5b1c815779e8cef37923a81971ca2a6257591d5b5e5c0d1ab70e8a1bfbf5be" kindref="member">DIAG_INFO</ref>,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;NMT:<sp/>heartbeat<sp/>time<sp/>out<sp/>occurred<sp/>for<sp/>node<sp/>%d&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref><sp/>=<sp/><ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78a9a7a1f2ca9d3b5ddd0421006412de5ac" kindref="member">CO_NMT_EC_OCCURRED</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8c_1ade97b13bd684ed8f0786c3ca045ab121" kindref="member">co_nmt_hb_ind</ref>(hb-&gt;<ref refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" kindref="member">nmt</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref>,<sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref>,<sp/><ref refid="nmt_8h_1a3064c748aafccad0447f9ce06179fb2caa823145c981a391750ee1698e4187cac" kindref="member">CO_NMT_EC_TIMEOUT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="234" refid="nmt__hb_8c_1aca01c44ba1e6d08ef180c959b74580ff" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1aca01c44ba1e6d08ef180c959b74580ff" kindref="member">co_nmt_hb_alloc</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*net)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(<ref refid="net_8h_1a8628a4e7d5510b43ab465cafa226e15a" kindref="member">can_net_get_alloc</ref>(net),<sp/><ref refid="nmt__hb_8c_1a46544ba3203ba13335dd276a5ed3e048" kindref="member">co_nmt_hb_alignof</ref>(),</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt__hb_8c_1a6d85291114bba6ac7f6623ff45bb32a0" kindref="member">co_nmt_hb_sizeof</ref>());</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hb)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" kindref="member">net</ref><sp/>=<sp/>net;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hb;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="nmt__hb_8c_1a419e583c133b40d85cebbf56b180cbb2" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a419e583c133b40d85cebbf56b180cbb2" kindref="member">co_nmt_hb_free</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free</ref>(co_nmt_hb_get_alloc(hb),<sp/>hb);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="253" refid="nmt__hb_8c_1a3c0316f3a5dee3dd971fa77abcad74e1" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a3c0316f3a5dee3dd971fa77abcad74e1" kindref="member">co_nmt_hb_init</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb,<sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*net,<sp/><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*nmt)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(net);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(nmt);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a5cdfffd0f7c088d1d9dd692533275bc8" kindref="member">net</ref><sp/>=<sp/>net;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1aa992f292560f22d5400e41af4cd21c09" kindref="member">nmt</ref><sp/>=<sp/>nmt;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref><sp/>=<sp/><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(co_nmt_hb_get_alloc(hb));</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hb-&gt;<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errc<sp/>=<sp/><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_create_recv;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func</ref>(hb-&gt;<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref>,<sp/>&amp;<ref refid="nmt__hb_8c_1ad0250926c709d37c27118da2ab724cff" kindref="member">co_nmt_hb_recv</ref>,<sp/>hb);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" kindref="member">timer</ref><sp/>=<sp/><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(co_nmt_hb_get_alloc(hb));</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hb-&gt;<ref refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" kindref="member">timer</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errc<sp/>=<sp/><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc</ref>();</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error_create_timer;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(hb-&gt;<ref refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" kindref="member">timer</ref>,<sp/>&amp;<ref refid="nmt__hb_8c_1a71998e05dab6f803c345bec3bca652ed" kindref="member">co_nmt_hb_timer</ref>,<sp/>hb);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1a1a1080ac9ecc27bdac70bf659cde36c0" kindref="member">id</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1aaf76e566ae5e26100c549a52a7402d81" kindref="member">st</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1acef5957350ea0ab8cd93491d7b0b76e3" kindref="member">ms</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hb-&gt;<ref refid="structco__nmt__hb_1ae763676110115c09bc632ce39bcf3fc9" kindref="member">state</ref><sp/>=<sp/><ref refid="nmt_8h_1aa4260852c472279ae9839a29319b9a78aaf807830442432d4a6f57094d21d3e1d" kindref="member">CO_NMT_EC_RESOLVED</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hb;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>can_timer_destroy(hb-&gt;timer);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal">error_create_timer:</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(hb-&gt;<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref>);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">error_create_recv:</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc</ref>(errc);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="nmt__hb_8c_1a621de1a64023c06d8210f0742fb8f948" refkind="member"><highlight class="normal"><ref refid="nmt__hb_8c_1a621de1a64023c06d8210f0742fb8f948" kindref="member">co_nmt_hb_fini</ref>(<ref refid="structco__nmt__hb" kindref="compound">co_nmt_hb_t</ref><sp/>*hb)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(hb);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(hb-&gt;<ref refid="structco__nmt__hb_1a20aa6a344a9bc0cdbf5f04b3e6f5cd09" kindref="member">timer</ref>);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(hb-&gt;<ref refid="structco__nmt__hb_1ae518bcb5c46f7c39e9d0a6bd8dab02e3" kindref="member">recv</ref>);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/co/nmt_hb.c"/>
+  </compounddef>
+</doxygen>

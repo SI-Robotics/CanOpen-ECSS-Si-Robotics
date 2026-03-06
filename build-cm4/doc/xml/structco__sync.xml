@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__sync" kind="struct" language="C++" prot="public">
+    <compoundname>co_sync</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__sync_1a61d8d41528b508c33e35a4fdc018b0de" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_sync::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="41" column="11" bodyfile="lib/co/sync.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1aa2f4f0f6f9d5b7685259a98f77590a99" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_sync::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to a CANopen device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="43" column="10" bodyfile="lib/co/sync.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1a7dd377262d796b0d225e22cc65544d1d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool co_sync::stopped</definition>
+        <argsstring></argsstring>
+        <name>stopped</name>
+        <briefdescription>
+<para>A flag specifying whether the SYNC service is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="45" column="6" bodyfile="lib/co/sync.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1a5f4240603fe0b42b6e2854809e5a6d47" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_sync::cobid</definition>
+        <argsstring></argsstring>
+        <name>cobid</name>
+        <briefdescription>
+<para>The SYNC COB-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="47" column="17" bodyfile="lib/co/sync.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1a721bd9481900ef9fd8008eaffc035442" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_sync::us</definition>
+        <argsstring></argsstring>
+        <name>us</name>
+        <briefdescription>
+<para>The communication cycle period (in microseconds). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="49" column="17" bodyfile="lib/co/sync.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1a9aa61e99c1bfea1256d7901c2db9d3d6" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_sync::max_cnt</definition>
+        <argsstring></argsstring>
+        <name>max_cnt</name>
+        <briefdescription>
+<para>The synchronous counter overflow value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="51" column="16" bodyfile="lib/co/sync.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1aa42c9696af2582d81b17f0c50a7257d5" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_sync::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="53" column="12" bodyfile="lib/co/sync.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1a7b2a1384b2d19fc2552072d3a7145b6e" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_sync::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+<para>A pointer to the CAN timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="55" column="13" bodyfile="lib/co/sync.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1aa1ed1ea39c244b1a83e6307780af24d7" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_sync::cnt</definition>
+        <argsstring></argsstring>
+        <name>cnt</name>
+        <briefdescription>
+<para>The counter value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="57" column="16" bodyfile="lib/co/sync.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1aec227b9b34f49b16b8d719de4ad5b3ce" prot="public" static="no" mutable="no">
+        <type><ref refid="sync_8h_1a66878ed7fb18646f0bedfe3a85172446" kindref="member">co_sync_ind_t</ref> *</type>
+        <definition>co_sync_ind_t* co_sync::ind</definition>
+        <argsstring></argsstring>
+        <name>ind</name>
+        <briefdescription>
+<para>A pointer to the indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="59" column="15" bodyfile="lib/co/sync.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1a70bdcec9698e16b51ab6a0803448854e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_sync::ind_data</definition>
+        <argsstring></argsstring>
+        <name>ind_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__sync_1aec227b9b34f49b16b8d719de4ad5b3ce" kindref="member">ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="61" column="6" bodyfile="lib/co/sync.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1a5eee69c94994b5e4ee50259be51799c0" prot="public" static="no" mutable="no">
+        <type><ref refid="sync_8h_1a3093c3f7f219d13b2e8fa33ce12260ec" kindref="member">co_sync_err_t</ref> *</type>
+        <definition>co_sync_err_t* co_sync::err</definition>
+        <argsstring></argsstring>
+        <name>err</name>
+        <briefdescription>
+<para>A pointer to the error handling function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="63" column="15" bodyfile="lib/co/sync.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sync_1aae02d32639de1f6cd4b01dac4347407c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_sync::err_data</definition>
+        <argsstring></argsstring>
+        <name>err_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__sync_1a5eee69c94994b5e4ee50259be51799c0" kindref="member">err</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sync.c" line="65" column="6" bodyfile="lib/co/sync.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen SYNC producer/consumer service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_sync</label>
+        <link refid="structco__sync"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="10">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/sync.c" line="39" column="1" bodyfile="lib/co/sync.c" bodystart="39" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structco__sync_1aa1ed1ea39c244b1a83e6307780af24d7" prot="public" virt="non-virtual"><scope>co_sync</scope><name>cnt</name></member>
+      <member refid="structco__sync_1a5f4240603fe0b42b6e2854809e5a6d47" prot="public" virt="non-virtual"><scope>co_sync</scope><name>cobid</name></member>
+      <member refid="structco__sync_1aa2f4f0f6f9d5b7685259a98f77590a99" prot="public" virt="non-virtual"><scope>co_sync</scope><name>dev</name></member>
+      <member refid="structco__sync_1a5eee69c94994b5e4ee50259be51799c0" prot="public" virt="non-virtual"><scope>co_sync</scope><name>err</name></member>
+      <member refid="structco__sync_1aae02d32639de1f6cd4b01dac4347407c" prot="public" virt="non-virtual"><scope>co_sync</scope><name>err_data</name></member>
+      <member refid="structco__sync_1aec227b9b34f49b16b8d719de4ad5b3ce" prot="public" virt="non-virtual"><scope>co_sync</scope><name>ind</name></member>
+      <member refid="structco__sync_1a70bdcec9698e16b51ab6a0803448854e" prot="public" virt="non-virtual"><scope>co_sync</scope><name>ind_data</name></member>
+      <member refid="structco__sync_1a9aa61e99c1bfea1256d7901c2db9d3d6" prot="public" virt="non-virtual"><scope>co_sync</scope><name>max_cnt</name></member>
+      <member refid="structco__sync_1a61d8d41528b508c33e35a4fdc018b0de" prot="public" virt="non-virtual"><scope>co_sync</scope><name>net</name></member>
+      <member refid="structco__sync_1aa42c9696af2582d81b17f0c50a7257d5" prot="public" virt="non-virtual"><scope>co_sync</scope><name>recv</name></member>
+      <member refid="structco__sync_1a7dd377262d796b0d225e22cc65544d1d" prot="public" virt="non-virtual"><scope>co_sync</scope><name>stopped</name></member>
+      <member refid="structco__sync_1a7b2a1384b2d19fc2552072d3a7145b6e" prot="public" virt="non-virtual"><scope>co_sync</scope><name>timer</name></member>
+      <member refid="structco__sync_1a721bd9481900ef9fd8008eaffc035442" prot="public" virt="non-virtual"><scope>co_sync</scope><name>us</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

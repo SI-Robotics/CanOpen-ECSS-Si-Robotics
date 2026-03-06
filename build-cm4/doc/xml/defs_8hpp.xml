@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="defs_8hpp" kind="file" language="C++">
+    <compoundname>defs.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="call-wrapper_8hpp" local="yes">unit-tests/libtest/override/call-wrapper.hpp</includedby>
+    <includedby refid="lely-defs_8hpp" local="yes">unit-tests/libtest/override/lely-defs.hpp</includedby>
+    <includedby refid="libc-defs_8hpp" local="yes">unit-tests/libtest/override/libc-defs.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/override/defs.hpp</label>
+        <link refid="defs_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15">
+        <label>unit-tests/can/test-msg.cpp</label>
+        <link refid="test-msg_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/libtest/override/lelyutil-membuf.hpp</label>
+        <link refid="lelyutil-membuf_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-sdo.cpp</label>
+        <link refid="test-sdo_8cpp"/>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/override/defs.hpp</label>
+        <link refid="defs_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/libtest/override/lelyutil-membuf.cpp</label>
+        <link refid="lelyutil-membuf_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/libtest/override/lelyco-val.hpp</label>
+        <link refid="lelyco-val_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/libtest/override/libc-defs.hpp</label>
+        <link refid="libc-defs_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>unit-tests/libtest/override/call-wrapper.hpp</label>
+        <link refid="call-wrapper_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unit-tests/libtest/override/lely-defs.hpp</label>
+        <link refid="lely-defs_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>unit-tests/libtest/override/lelyco-val.cpp</label>
+        <link refid="lelyco-val_8cpp"/>
+      </node>
+      <node id="14">
+        <label>unit-tests/libtest/override/libc-stdio.hpp</label>
+        <link refid="libc-stdio_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceOverride">Override</innernamespace>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_OVERRIDE_DEFS_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_OVERRIDE_DEFS_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Override<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">enum<sp/>:<sp/>int32_t<sp/>{<sp/>AllCallsValid<sp/>=<sp/>-1,<sp/>NoneCallsValid<sp/>=<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Override</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>!LELY_OVERRIDE_DEFS_HPP_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/libtest/override/defs.hpp"/>
+  </compounddef>
+</doxygen>

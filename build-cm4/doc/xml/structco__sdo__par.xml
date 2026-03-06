@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__sdo__par" kind="struct" language="C++" prot="public">
+    <compoundname>co_sdo_par</compoundname>
+    <includes refid="include_2lely_2co_2sdo_8h" local="no">sdo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__sdo__par_1a34f68074185d112366ce960faeaa835f" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_sdo_par::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+<para>Highest sub-index supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="49" column="16" bodyfile="include/lely/co/sdo.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__par_1ad34e28d47a0ae2de04a8fe8455de8a90" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_sdo_par::cobid_req</definition>
+        <argsstring></argsstring>
+        <name>cobid_req</name>
+        <briefdescription>
+<para>COB-ID client -&gt; server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="51" column="17" bodyfile="include/lely/co/sdo.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__par_1a059b2306196e86ef0e6eb450e39bddbe" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_sdo_par::cobid_res</definition>
+        <argsstring></argsstring>
+        <name>cobid_res</name>
+        <briefdescription>
+<para>COB-ID server -&gt; client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="53" column="17" bodyfile="include/lely/co/sdo.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sdo__par_1aedbb4a63e97363e0c170eb52ec5b32a3" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_sdo_par::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>Node-ID of SDO&apos;s client resp. server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="55" column="16" bodyfile="include/lely/co/sdo.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An SDO parameter record. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/co/sdo.h" line="47" column="1" bodyfile="include/lely/co/sdo.h" bodystart="47" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structco__sdo__par_1ad34e28d47a0ae2de04a8fe8455de8a90" prot="public" virt="non-virtual"><scope>co_sdo_par</scope><name>cobid_req</name></member>
+      <member refid="structco__sdo__par_1a059b2306196e86ef0e6eb450e39bddbe" prot="public" virt="non-virtual"><scope>co_sdo_par</scope><name>cobid_res</name></member>
+      <member refid="structco__sdo__par_1aedbb4a63e97363e0c170eb52ec5b32a3" prot="public" virt="non-virtual"><scope>co_sdo_par</scope><name>id</name></member>
+      <member refid="structco__sdo__par_1a34f68074185d112366ce960faeaa835f" prot="public" virt="non-virtual"><scope>co_sdo_par</scope><name>n</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

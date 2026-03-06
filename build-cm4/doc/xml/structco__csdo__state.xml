@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__csdo__state" kind="struct" language="C++" prot="public">
+    <compoundname>co_csdo_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__csdo__state_1ae07331a4f252308f8ddfbf377f4ddbb7" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8c_1ac7008597a61acd5e22d6fb0fb9aaa591" kindref="member">co_csdo_state_t</ref> *(*</type>
+        <definition>co_csdo_state_t*(* co_csdo_state::on_enter) (co_csdo_t *sdo)</definition>
+        <argsstring>)(co_csdo_t *sdo)</argsstring>
+        <name>on_enter</name>
+        <briefdescription>
+<para>A pointer to the function invoked when a new state is entered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="220" column="1" bodyfile="lib/co/csdo.c" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo__state_1a247e1508957186b13e54a4dd1990ed4d" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8c_1ac7008597a61acd5e22d6fb0fb9aaa591" kindref="member">co_csdo_state_t</ref> *(*</type>
+        <definition>co_csdo_state_t*(* co_csdo_state::on_abort) (co_csdo_t *sdo, co_unsigned32_t ac)</definition>
+        <argsstring>)(co_csdo_t *sdo, co_unsigned32_t ac)</argsstring>
+        <name>on_abort</name>
+        <briefdescription>
+<para>A pointer to the transition function invoked when an abort code has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a Client-SDO service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the abort code.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the next state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="230" column="1" bodyfile="lib/co/csdo.c" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo__state_1a3f1212c700dcefeaf11e1ea33b80225a" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8c_1ac7008597a61acd5e22d6fb0fb9aaa591" kindref="member">co_csdo_state_t</ref> *(*</type>
+        <definition>co_csdo_state_t*(* co_csdo_state::on_time) (co_csdo_t *sdo, const struct timespec *tp)</definition>
+        <argsstring>)(co_csdo_t *sdo, const struct timespec *tp)</argsstring>
+        <name>on_time</name>
+        <briefdescription>
+<para>A pointer to the transition function invoked when a timeout occurs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a Client-SDO service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the current time.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the next state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="239" column="1" bodyfile="lib/co/csdo.c" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo__state_1aa2b66bff09af2bddd80484571074d52b" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8c_1ac7008597a61acd5e22d6fb0fb9aaa591" kindref="member">co_csdo_state_t</ref> *(*</type>
+        <definition>co_csdo_state_t*(* co_csdo_state::on_recv) (co_csdo_t *sdo, const struct can_msg *msg)</definition>
+        <argsstring>)(co_csdo_t *sdo, const struct can_msg *msg)</argsstring>
+        <name>on_recv</name>
+        <briefdescription>
+<para>A pointer to the transition function invoked when a CAN frame has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a Client-SDO service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the received CAN frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the next state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="249" column="1" bodyfile="lib/co/csdo.c" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo__state_1a21894476f3c0b7fb722eb51f459fa30b" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* co_csdo_state::on_leave) (co_csdo_t *sdo)</definition>
+        <argsstring>)(co_csdo_t *sdo)</argsstring>
+        <name>on_leave</name>
+        <briefdescription>
+<para>A pointer to the function invoked when the current state is left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="251" column="1" bodyfile="lib/co/csdo.c" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen Client-SDO state. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>co_csdo_state</label>
+        <link refid="structco__csdo__state"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/csdo.c" line="218" column="1" bodyfile="lib/co/csdo.c" bodystart="218" bodyend="252"/>
+    <listofallmembers>
+      <member refid="structco__csdo__state_1a247e1508957186b13e54a4dd1990ed4d" prot="public" virt="non-virtual"><scope>co_csdo_state</scope><name>on_abort</name></member>
+      <member refid="structco__csdo__state_1ae07331a4f252308f8ddfbf377f4ddbb7" prot="public" virt="non-virtual"><scope>co_csdo_state</scope><name>on_enter</name></member>
+      <member refid="structco__csdo__state_1a21894476f3c0b7fb722eb51f459fa30b" prot="public" virt="non-virtual"><scope>co_csdo_state</scope><name>on_leave</name></member>
+      <member refid="structco__csdo__state_1aa2b66bff09af2bddd80484571074d52b" prot="public" virt="non-virtual"><scope>co_csdo_state</scope><name>on_recv</name></member>
+      <member refid="structco__csdo__state_1a3f1212c700dcefeaf11e1ea33b80225a" prot="public" virt="non-virtual"><scope>co_csdo_state</scope><name>on_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

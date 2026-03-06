@@ -1,0 +1,46 @@
+liblely_util_la-mempool.lo: \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/mempool.c \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/stddef.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/features.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/limits.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/limits.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/error.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/mempool.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/memory.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/util.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint-gcc.h
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/stddef.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/features.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/limits.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/limits.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/error.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/mempool.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/memory.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/util.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint-gcc.h:

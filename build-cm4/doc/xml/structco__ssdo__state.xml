@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__ssdo__state" kind="struct" language="C++" prot="public">
+    <compoundname>co_ssdo_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__ssdo__state_1a95fbb232ef5921037037c0fc246aaa3b" prot="public" static="no" mutable="no">
+        <type><ref refid="ssdo_8c_1ac9af319e43dda2756cb51d7868ef3407" kindref="member">co_ssdo_state_t</ref> *(*</type>
+        <definition>co_ssdo_state_t*(* co_ssdo_state::on_abort) (co_ssdo_t *sdo, co_unsigned32_t ac)</definition>
+        <argsstring>)(co_ssdo_t *sdo, co_unsigned32_t ac)</argsstring>
+        <name>on_abort</name>
+        <briefdescription>
+<para>A pointer to the transition function invoked when an abort code has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a Server-SDO service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the abort code.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the next state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="211" column="1" bodyfile="lib/co/ssdo.c" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo__state_1a83ddcd8ae5ad23ff4ab74e9c3f06c0fd" prot="public" static="no" mutable="no">
+        <type><ref refid="ssdo_8c_1ac9af319e43dda2756cb51d7868ef3407" kindref="member">co_ssdo_state_t</ref> *(*</type>
+        <definition>co_ssdo_state_t*(* co_ssdo_state::on_time) (co_ssdo_t *sdo, const struct timespec *tp)</definition>
+        <argsstring>)(co_ssdo_t *sdo, const struct timespec *tp)</argsstring>
+        <name>on_time</name>
+        <briefdescription>
+<para>A pointer to the transition function invoked when a timeout occurs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a Server-SDO service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the current time.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the next state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="220" column="1" bodyfile="lib/co/ssdo.c" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo__state_1a92e1555247b8e36c84401fba3036ac70" prot="public" static="no" mutable="no">
+        <type><ref refid="ssdo_8c_1ac9af319e43dda2756cb51d7868ef3407" kindref="member">co_ssdo_state_t</ref> *(*</type>
+        <definition>co_ssdo_state_t*(* co_ssdo_state::on_recv) (co_ssdo_t *sdo, const struct can_msg *msg)</definition>
+        <argsstring>)(co_ssdo_t *sdo, const struct can_msg *msg)</argsstring>
+        <name>on_recv</name>
+        <briefdescription>
+<para>A pointer to the transition function invoked when a CAN frame has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a Server-SDO service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the received CAN frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the next state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="230" column="1" bodyfile="lib/co/ssdo.c" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen Server-SDO state. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>co_ssdo_state</label>
+        <link refid="structco__ssdo__state"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/ssdo.c" line="201" column="1" bodyfile="lib/co/ssdo.c" bodystart="201" bodyend="231"/>
+    <listofallmembers>
+      <member refid="structco__ssdo__state_1a95fbb232ef5921037037c0fc246aaa3b" prot="public" virt="non-virtual"><scope>co_ssdo_state</scope><name>on_abort</name></member>
+      <member refid="structco__ssdo__state_1a92e1555247b8e36c84401fba3036ac70" prot="public" virt="non-virtual"><scope>co_ssdo_state</scope><name>on_recv</name></member>
+      <member refid="structco__ssdo__state_1a83ddcd8ae5ad23ff4ab74e9c3f06c0fd" prot="public" virt="non-virtual"><scope>co_ssdo_state</scope><name>on_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

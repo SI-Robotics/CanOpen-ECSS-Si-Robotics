@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObjInitT_1_1SubT" kind="struct" language="C++" prot="public">
+    <compoundname>ObjInitT::SubT</compoundname>
+    <includes refid="obj-init_8hpp" local="no">obj-init.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>co_unsigned8_t</type>
+        <declname>Subidx</declname>
+        <defname>Subidx</defname>
+      </param>
+      <param>
+        <type>co_unsigned16_t</type>
+        <declname>Deftype</declname>
+        <defname>Deftype</defname>
+      </param>
+      <param>
+        <type>typename <ref refid="structCoType" kindref="compound">CoType</ref>&lt; Deftype &gt;::type</type>
+        <declname>Default_val</declname>
+        <defname>Default_val</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>co_unsigned8_t</type>
+        <declname>Min_subidx</declname>
+        <defname>Min_subidx</defname>
+        <defval>0</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structObjInitT_1_1SubT_1a5dee2b5836789aac50a3a6883e63d8b3" prot="public" static="no">
+        <type>typename <ref refid="structCoType" kindref="compound">CoType</ref>&lt; Deftype &gt;::type</type>
+        <definition>using ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; Subidx, Deftype, Default_val, Min_subidx &gt;::sub_type =  typename CoType&lt;Deftype&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>sub_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="46" column="5" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structObjInitT_1_1SubT_1a34509352f31bea2526e8bdcb8de853f4" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; Subidx, Deftype, Default_val, Min_subidx &gt;::min_idx</definition>
+        <argsstring></argsstring>
+        <name>min_idx</name>
+        <initializer>= ObjInitT::min_idx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="43" column="34" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjInitT_1_1SubT_1a51133794b664fce91a57f351d069d920" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; Subidx, Deftype, Default_val, Min_subidx &gt;::max_idx</definition>
+        <argsstring></argsstring>
+        <name>max_idx</name>
+        <initializer>= ObjInitT::max_idx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="44" column="34" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjInitT_1_1SubT_1ad3b97cf113ff6f1cc9cd097f5b37ba07" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; Subidx, Deftype, Default_val, Min_subidx &gt;::subidx</definition>
+        <argsstring></argsstring>
+        <name>subidx</name>
+        <initializer>= Subidx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="47" column="33" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjInitT_1_1SubT_1a0cb33462688a6c42801a22685119a0f0" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; Subidx, Deftype, Default_val, Min_subidx &gt;::min_subidx</definition>
+        <argsstring></argsstring>
+        <name>min_subidx</name>
+        <initializer>= Min_subidx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="48" column="33" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjInitT_1_1SubT_1a058d71425a9d62638a48b817c04b0ad8" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; Subidx, Deftype, Default_val, Min_subidx &gt;::deftype</definition>
+        <argsstring></argsstring>
+        <name>deftype</name>
+        <initializer>= Deftype</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="49" column="34" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjInitT_1_1SubT_1a86b185a20c9f4761892b9643fc2f907d" prot="public" static="yes" mutable="no">
+        <type>const sub_type</type>
+        <definition>const sub_type ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::SubT&lt; Subidx, Deftype, Default_val, Min_subidx &gt;::default_val</definition>
+        <argsstring></argsstring>
+        <name>default_val</name>
+        <initializer>= Default_val</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="50" column="27" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CANopen sub-object initialization information template class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/obj-init/obj-init.hpp" line="42" column="3" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="42" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1_1SubT_1a86b185a20c9f4761892b9643fc2f907d" prot="public" virt="non-virtual"><scope>ObjInitT::SubT</scope><name>default_val</name></member>
+      <member refid="structObjInitT_1_1SubT_1a058d71425a9d62638a48b817c04b0ad8" prot="public" virt="non-virtual"><scope>ObjInitT::SubT</scope><name>deftype</name></member>
+      <member refid="structObjInitT_1_1SubT_1a51133794b664fce91a57f351d069d920" prot="public" virt="non-virtual"><scope>ObjInitT::SubT</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1_1SubT_1a34509352f31bea2526e8bdcb8de853f4" prot="public" virt="non-virtual"><scope>ObjInitT::SubT</scope><name>min_idx</name></member>
+      <member refid="structObjInitT_1_1SubT_1a0cb33462688a6c42801a22685119a0f0" prot="public" virt="non-virtual"><scope>ObjInitT::SubT</scope><name>min_subidx</name></member>
+      <member refid="structObjInitT_1_1SubT_1a5dee2b5836789aac50a3a6883e63d8b3" prot="public" virt="non-virtual"><scope>ObjInitT::SubT</scope><name>sub_type</name></member>
+      <member refid="structObjInitT_1_1SubT_1ad3b97cf113ff6f1cc9cd097f5b37ba07" prot="public" virt="non-virtual"><scope>ObjInitT::SubT</scope><name>subidx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

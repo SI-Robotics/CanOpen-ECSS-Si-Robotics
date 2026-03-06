@@ -1,0 +1,815 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="lelyco-val_8cpp" kind="file" language="C++">
+    <compoundname>lelyco-val.cpp</compoundname>
+    <includes refid="lelyco-val_8hpp" local="yes">lelyco-val.hpp</includes>
+    <includes local="no">type_traits</includes>
+    <includes local="no">dlfcn.h</includes>
+    <includes refid="type_8h" local="no">lely/co/type.h</includes>
+    <includes refid="val_8h" local="no">lely/co/val.h</includes>
+    <includes refid="override-test-plugin_8hpp" local="yes">override-test-plugin.hpp</includes>
+    <includes refid="call-wrapper_8hpp" local="yes">call-wrapper.hpp</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stdbool.h</label>
+      </node>
+      <node id="20">
+        <label>override-test-plugin.hpp</label>
+        <link refid="override-test-plugin_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="15">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="13">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>defs.hpp</label>
+        <link refid="defs_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>limits.h</label>
+      </node>
+      <node id="23">
+        <label>CppUTest/TestPlugin.h</label>
+      </node>
+      <node id="21">
+        <label>stack</label>
+      </node>
+      <node id="19">
+        <label>lely/co/val.h</label>
+        <link refid="val_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lelyco-val.hpp</label>
+        <link refid="lelyco-val_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="24">
+        <label>call-wrapper.hpp</label>
+        <link refid="call-wrapper_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely-defs.hpp</label>
+        <link refid="lely-defs_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/override/lelyco-val.cpp</label>
+        <link refid="lelyco-val_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>type_traits</label>
+      </node>
+      <node id="14">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dlfcn.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="lelyco-val_8cpp_1ac413e7543ee73ed34bbb3de593df9dd0" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t co_val_read_vc</definition>
+        <argsstring></argsstring>
+        <name>co_val_read_vc</name>
+        <initializer>= Override::AllCallsValid</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="40" column="16" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1a940ecc9812e461ac6923d7079c950657" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t co_val_write_vc</definition>
+        <argsstring></argsstring>
+        <name>co_val_write_vc</name>
+        <initializer>= Override::AllCallsValid</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="41" column="16" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1a30573e0e7d1f198cec08f7106a49ba4a" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t co_val_make_vc</definition>
+        <argsstring></argsstring>
+        <name>co_val_make_vc</name>
+        <initializer>= Override::AllCallsValid</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="42" column="16" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1a6c479f012daac766eef27fb3aa485fe5" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t co_val_init_min_vc</definition>
+        <argsstring></argsstring>
+        <name>co_val_init_min_vc</name>
+        <initializer>= Override::AllCallsValid</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="43" column="16" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1aa4d4b0550da41c546491b5059e1ea969" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t co_val_init_max_vc</definition>
+        <argsstring></argsstring>
+        <name>co_val_init_max_vc</name>
+        <initializer>= Override::AllCallsValid</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="44" column="16" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1a3de25d7f239877f05d8781d139eceed4" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t co_val_init_vc</definition>
+        <argsstring></argsstring>
+        <name>co_val_init_vc</name>
+        <initializer>= Override::AllCallsValid</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="45" column="16" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1aad70b80d6b69e98c297e28699e61735d" prot="public" static="no" mutable="no">
+        <type>decltype(<ref refid="lelyco-val_8cpp_1a4aa89e90fc67552e51fd34ddefd97f77" kindref="member">co_val_read</ref>)</type>
+        <definition>decltype(co_val_read) __real_co_val_read</definition>
+        <argsstring></argsstring>
+        <name>__real_co_val_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="81" column="17" declfile="unit-tests/libtest/override/lelyco-val.cpp" declline="81" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1abd67168f8bd260f6804a3a80148115d6" prot="public" static="no" mutable="no">
+        <type>decltype(<ref refid="lelyco-val_8cpp_1af2dee9b51e3bdb426cfe378cb410f49b" kindref="member">co_val_write</ref>)</type>
+        <definition>decltype(co_val_write) __real_co_val_write</definition>
+        <argsstring></argsstring>
+        <name>__real_co_val_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="82" column="17" declfile="unit-tests/libtest/override/lelyco-val.cpp" declline="82" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1a357f29d565279ddc5787f8b7b4f9c217" prot="public" static="no" mutable="no">
+        <type>decltype(<ref refid="lelyco-val_8cpp_1a4f70d71d384122f3fbb467f97c30a18c" kindref="member">co_val_make</ref>)</type>
+        <definition>decltype(co_val_make) __real_co_val_make</definition>
+        <argsstring></argsstring>
+        <name>__real_co_val_make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="83" column="17" declfile="unit-tests/libtest/override/lelyco-val.cpp" declline="83" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1ae140a71748c1a7401819d9afcce77770" prot="public" static="no" mutable="no">
+        <type>decltype(<ref refid="lelyco-val_8cpp_1a7c91a7fd1a51a45d959baa67b6d917c5" kindref="member">co_val_init_min</ref>)</type>
+        <definition>decltype(co_val_init_min) __real_co_val_init_min</definition>
+        <argsstring></argsstring>
+        <name>__real_co_val_init_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="84" column="17" declfile="unit-tests/libtest/override/lelyco-val.cpp" declline="84" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1a3243c694f2227ab589881cdcdad29608" prot="public" static="no" mutable="no">
+        <type>decltype(<ref refid="lelyco-val_8cpp_1a59c40577be738b56d8c8889beadcb48f" kindref="member">co_val_init_max</ref>)</type>
+        <definition>decltype(co_val_init_max) __real_co_val_init_max</definition>
+        <argsstring></argsstring>
+        <name>__real_co_val_init_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="85" column="17" declfile="unit-tests/libtest/override/lelyco-val.cpp" declline="85" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="lelyco-val_8cpp_1ae704c92676884d6013a0428fb35fcef2" prot="public" static="no" mutable="no">
+        <type>decltype(<ref refid="lelyco-val_8cpp_1a85e8a9b91bb0a5ac2629b2a295fb8c51" kindref="member">co_val_init</ref>)</type>
+        <definition>decltype(co_val_init) __real_co_val_init</definition>
+        <argsstring></argsstring>
+        <name>__real_co_val_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="86" column="17" declfile="unit-tests/libtest/override/lelyco-val.cpp" declline="86" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lelyco-val_8cpp_1a4aa89e90fc67552e51fd34ddefd97f77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t LELY_OVERRIDE()</type>
+        <definition>size_t LELY_OVERRIDE() co_val_read</definition>
+        <argsstring>(const co_unsigned16_t type, void *const val, const uint_least8_t *const begin, const uint_least8_t *const end)</argsstring>
+        <name>co_val_read</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t *</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const uint_least8_t *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Reads a value of the specified data type from a memory buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type (in the range [1..27]). This MUST be the object index of one of the static data types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store the value. On success, if <bold>val</bold> is not NULL, *<bold>val</bold> contains the read value. On error, *<bold>val</bold> is left untouched. In the case of strings or domains, <bold>val</bold> MUST be the address of a pointer. Note that this value is <emphasis>not</emphasis> finalized before the read value is stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the start of the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to one past the last byte in the buffer. At most <computeroutput>end - begin</computeroutput> bytes are read. For strings and domains, all bytes are considered to be part of the value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes read, or 0 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="val_8h_1a55dcb40756568853658e9734283ccc7d" kindref="member">co_val_write()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="92" column="1" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="92" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8cpp_1af2dee9b51e3bdb426cfe378cb410f49b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t LELY_OVERRIDE()</type>
+        <definition>size_t LELY_OVERRIDE() co_val_write</definition>
+        <argsstring>(const co_unsigned16_t type, const void *const val, uint_least8_t *const begin, uint_least8_t *const end)</argsstring>
+        <name>co_val_write</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>uint_least8_t *</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>uint_least8_t *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Writes a value of the specified data type to a memory buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type (in the range [1..27]). This MUST be the object index of one of the static data types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the value to be written. In case of strings or domains, this MUST be the address of pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the start of the buffer. If <bold>begin</bold> is NULL, nothing is written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to one past the last byte in the buffer. If <bold>end</bold> is not NULL, and the buffer is too small (i.e., <computeroutput>end - begin</computeroutput> is less than the return value), nothing is written.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes that would have been written had the buffer been sufficiently large, or 0 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="val_8h_1a1e1751e129f4a5c51e19954e842c97b1" kindref="member">co_val_read()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="101" column="1" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8cpp_1a4f70d71d384122f3fbb467f97c30a18c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t LELY_OVERRIDE()</type>
+        <definition>size_t LELY_OVERRIDE() co_val_make</definition>
+        <argsstring>(const co_unsigned16_t type, void *const val, const void *const ptr, const size_t n)</argsstring>
+        <name>co_val_make</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a value of the specified data type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type (in the range [1..27]). This MUST be the object index of one of the static data types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the value to be constructed. In the case of strings or domains, this MUST be the address of pointer. Note that this value is <emphasis>not</emphasis> finalized before the copy is performed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the bytes to be copied. In case of strings or domains, <bold>ptr</bold> MUST point to the first byte in the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes at <bold>ptr</bold>. In case of strings, <bold>n</bold> SHOULD exclude the terminating null byte(s).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes copied (i.e., <bold>n</bold>), or 0 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="110" column="1" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8cpp_1a7c91a7fd1a51a45d959baa67b6d917c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int LELY_OVERRIDE()</type>
+        <definition>int LELY_OVERRIDE() co_val_init_min</definition>
+        <argsstring>(const co_unsigned16_t type, void *const val)</argsstring>
+        <name>co_val_init_min</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a value of the specified data type with its lower limit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type (in the range [1..27]). This MUST be the object index of one of the static data types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the value to be initialized. In the case of strings or domains, this MUST be the address of pointer, which will be set to NULL.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="val_8h_1ad4ded48de4e0d862023d96b01822e6f4" kindref="member">co_val_fini()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="118" column="1" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8cpp_1a59c40577be738b56d8c8889beadcb48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int LELY_OVERRIDE()</type>
+        <definition>int LELY_OVERRIDE() co_val_init_max</definition>
+        <argsstring>(const co_unsigned16_t type, void *const val)</argsstring>
+        <name>co_val_init_max</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a value of the specified data type with its upper limit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type (in the range [1..27]). This MUST be the object index of one of the static data types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the value to be initialized. In the case of strings or domains, this MUST be the address of pointer, which will be set to NULL.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="val_8h_1ad4ded48de4e0d862023d96b01822e6f4" kindref="member">co_val_fini()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="125" column="1" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="125" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8cpp_1a85e8a9b91bb0a5ac2629b2a295fb8c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int LELY_OVERRIDE()</type>
+        <definition>int LELY_OVERRIDE() co_val_init</definition>
+        <argsstring>(const co_unsigned16_t type, void *const val)</argsstring>
+        <name>co_val_init</name>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a value of the specified data type to zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type (in the range [1..27]). This MUST be the object index of one of the static data types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the value to be initialized. In the case of strings or domains, this MUST be the address of pointer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="val_8h_1ad4ded48de4e0d862023d96b01822e6f4" kindref="member">co_val_fini()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.cpp" line="132" column="1" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="132" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lelyco-val_8hpp" kindref="compound">lelyco-val.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_LELY_OVERRIDE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dlfcn.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="type_8h" kindref="compound">lely/co/type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="val_8h" kindref="compound">lely/co/val.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="override-test-plugin_8hpp" kindref="compound">override-test-plugin.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="call-wrapper_8hpp" kindref="compound">call-wrapper.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classOverride_1_1OverridePlugin" kindref="compound">Override::OverridePlugin</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>1.<sp/>Initialize<sp/>valid<sp/>calls<sp/>global<sp/>variable<sp/>for<sp/>each<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>co_val_read_vc<sp/>=<sp/>Override::AllCallsValid;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>co_val_write_vc<sp/>=<sp/>Override::AllCallsValid;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>co_val_make_vc<sp/>=<sp/>Override::AllCallsValid;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>co_val_init_min_vc<sp/>=<sp/>Override::AllCallsValid;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>co_val_init_max_vc<sp/>=<sp/>Override::AllCallsValid;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>co_val_init_vc<sp/>=<sp/>Override::AllCallsValid;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="lelyco-val_8hpp_1ac1480e748bb897474791b8d70b860c49" refkind="member"><highlight class="normal"><ref refid="lelyco-val_8cpp_1a4aa89e90fc67552e51fd34ddefd97f77" kindref="member">LelyOverride::co_val_read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>valid_calls)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>OverridePlugin::getCurrent()-&gt;setForNextTest(co_val_read_vc,<sp/>valid_calls);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="lelyco-val_8hpp_1aac48b5c1a49de3e6335341a0348afa73" refkind="member"><highlight class="normal"><ref refid="lelyco-val_8cpp_1af2dee9b51e3bdb426cfe378cb410f49b" kindref="member">LelyOverride::co_val_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>valid_calls)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>OverridePlugin::getCurrent()-&gt;setForNextTest(co_val_write_vc,<sp/>valid_calls);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="lelyco-val_8hpp_1a8d0caed56ac8aa795f9caa2e1534dec1" refkind="member"><highlight class="normal"><ref refid="lelyco-val_8cpp_1a4f70d71d384122f3fbb467f97c30a18c" kindref="member">LelyOverride::co_val_make</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>valid_calls)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>OverridePlugin::getCurrent()-&gt;setForNextTest(co_val_make_vc,<sp/>valid_calls);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="lelyco-val_8hpp_1a616b04a9d46c3979f67c355d890660a6" refkind="member"><highlight class="normal"><ref refid="lelyco-val_8cpp_1a7c91a7fd1a51a45d959baa67b6d917c5" kindref="member">LelyOverride::co_val_init_min</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>valid_calls)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>OverridePlugin::getCurrent()-&gt;setForNextTest(co_val_init_min_vc,<sp/>valid_calls);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="lelyco-val_8hpp_1af83433e0e6858e961294a31616f5be8c" refkind="member"><highlight class="normal"><ref refid="lelyco-val_8cpp_1a59c40577be738b56d8c8889beadcb48f" kindref="member">LelyOverride::co_val_init_max</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>valid_calls)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>OverridePlugin::getCurrent()-&gt;setForNextTest(co_val_init_max_vc,<sp/>valid_calls);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="lelyco-val_8hpp_1a9e2b99b6af3c2d46838334c73cdbed08" refkind="member"><highlight class="normal"><ref refid="lelyco-val_8cpp_1a85e8a9b91bb0a5ac2629b2a295fb8c51" kindref="member">LelyOverride::co_val_init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>valid_calls)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>OverridePlugin::getCurrent()-&gt;setForNextTest(co_val_init_vc,<sp/>valid_calls);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_ENABLE_SHARED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>2.<sp/>Extern<sp/>&quot;real&quot;<sp/>function<sp/>signature.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>decltype(<ref refid="lelyco-val_8cpp_1a4aa89e90fc67552e51fd34ddefd97f77" kindref="member">co_val_read</ref>)<sp/>__real_co_val_read;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>decltype(<ref refid="lelyco-val_8cpp_1af2dee9b51e3bdb426cfe378cb410f49b" kindref="member">co_val_write</ref>)<sp/>__real_co_val_write;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>decltype(<ref refid="lelyco-val_8cpp_1a4f70d71d384122f3fbb467f97c30a18c" kindref="member">co_val_make</ref>)<sp/>__real_co_val_make;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>decltype(<ref refid="lelyco-val_8cpp_1a7c91a7fd1a51a45d959baa67b6d917c5" kindref="member">co_val_init_min</ref>)<sp/>__real_co_val_init_min;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>decltype(<ref refid="lelyco-val_8cpp_1a59c40577be738b56d8c8889beadcb48f" kindref="member">co_val_init_max</ref>)<sp/>__real_co_val_init_max;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>decltype(<ref refid="lelyco-val_8cpp_1a85e8a9b91bb0a5ac2629b2a295fb8c51" kindref="member">co_val_init</ref>)<sp/>__real_co_val_init;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>3.<sp/>Override<sp/>function<sp/>definition<sp/>with<sp/>both<sp/>exact<sp/>and<sp/>&quot;wrap&quot;<sp/>version.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="lelyco-val_8cpp_1a4aa89e90fc67552e51fd34ddefd97f77" refkind="member"><highlight class="normal">LELY_OVERRIDE(<ref refid="lelyco-val_8cpp_1a4aa89e90fc67552e51fd34ddefd97f77" kindref="member">co_val_read</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>val,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>begin,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>end)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fun<sp/>=<sp/>LELY_WRAP_CALL_TO(<ref refid="lelyco-val_8cpp_1a4aa89e90fc67552e51fd34ddefd97f77" kindref="member">co_val_read</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fun.IsCallValid(co_val_read_vc))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fun.call(type,<sp/>val,<sp/>begin,<sp/>end);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="lelyco-val_8cpp_1af2dee9b51e3bdb426cfe378cb410f49b" refkind="member"><highlight class="normal">LELY_OVERRIDE(<ref refid="lelyco-val_8cpp_1af2dee9b51e3bdb426cfe378cb410f49b" kindref="member">co_val_write</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>val,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>begin,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>end)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fun<sp/>=<sp/>LELY_WRAP_CALL_TO(<ref refid="lelyco-val_8cpp_1af2dee9b51e3bdb426cfe378cb410f49b" kindref="member">co_val_write</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fun.IsCallValid(co_val_write_vc))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fun.call(type,<sp/>val,<sp/>begin,<sp/>end);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="lelyco-val_8cpp_1a4f70d71d384122f3fbb467f97c30a18c" refkind="member"><highlight class="normal">LELY_OVERRIDE(<ref refid="lelyco-val_8cpp_1a4f70d71d384122f3fbb467f97c30a18c" kindref="member">co_val_make</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>val,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fun<sp/>=<sp/>LELY_WRAP_CALL_TO(<ref refid="lelyco-val_8cpp_1a4f70d71d384122f3fbb467f97c30a18c" kindref="member">co_val_make</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fun.IsCallValid(co_val_make_vc))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fun.call(type,<sp/>val,<sp/>ptr,<sp/>n);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="lelyco-val_8cpp_1a7c91a7fd1a51a45d959baa67b6d917c5" refkind="member"><highlight class="normal">LELY_OVERRIDE(<ref refid="lelyco-val_8cpp_1a7c91a7fd1a51a45d959baa67b6d917c5" kindref="member">co_val_init_min</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fun<sp/>=<sp/>LELY_WRAP_CALL_TO(<ref refid="lelyco-val_8cpp_1a7c91a7fd1a51a45d959baa67b6d917c5" kindref="member">co_val_init_min</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fun.IsCallValid(co_val_init_min_vc))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fun.call(type,<sp/>val);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="lelyco-val_8cpp_1a59c40577be738b56d8c8889beadcb48f" refkind="member"><highlight class="normal">LELY_OVERRIDE(<ref refid="lelyco-val_8cpp_1a59c40577be738b56d8c8889beadcb48f" kindref="member">co_val_init_max</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fun<sp/>=<sp/>LELY_WRAP_CALL_TO(<ref refid="lelyco-val_8cpp_1a59c40577be738b56d8c8889beadcb48f" kindref="member">co_val_init_max</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fun.IsCallValid(co_val_init_max_vc))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fun.call(type,<sp/>val);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="lelyco-val_8cpp_1a85e8a9b91bb0a5ac2629b2a295fb8c51" refkind="member"><highlight class="normal">LELY_OVERRIDE(<ref refid="lelyco-val_8cpp_1a85e8a9b91bb0a5ac2629b2a295fb8c51" kindref="member">co_val_init</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fun<sp/>=<sp/>LELY_WRAP_CALL_TO(<ref refid="lelyco-val_8cpp_1a85e8a9b91bb0a5ac2629b2a295fb8c51" kindref="member">co_val_init</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fun.IsCallValid(co_val_init_vc))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fun.call(type,<sp/>val);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>HAVE_LELY_OVERRIDE</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/libtest/override/lelyco-val.cpp"/>
+  </compounddef>
+</doxygen>

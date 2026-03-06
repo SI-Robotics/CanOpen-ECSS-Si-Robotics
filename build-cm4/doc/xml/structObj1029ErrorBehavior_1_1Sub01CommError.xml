@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1029ErrorBehavior_1_1Sub01CommError" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1029ErrorBehavior::Sub01CommError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SubT&lt; 0x01u, CO_DEFTYPE_UNSIGNED8, CHANGE_TO_PREOP &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Obj1029ErrorBehavior::Sub01CommError</label>
+        <link refid="structObj1029ErrorBehavior_1_1Sub01CommError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x01u, CO_DEFTYPE_UNSIGNED8, CHANGE_TO_PREOP &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Obj1029ErrorBehavior::Sub01CommError</label>
+        <link refid="structObj1029ErrorBehavior_1_1Sub01CommError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x01u, CO_DEFTYPE_UNSIGNED8, CHANGE_TO_PREOP &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/error-behavior-object.hpp" line="36" column="3" bodyfile="unit-tests/co/obj-init/error-behavior-object.hpp" bodystart="36" bodyend="36"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

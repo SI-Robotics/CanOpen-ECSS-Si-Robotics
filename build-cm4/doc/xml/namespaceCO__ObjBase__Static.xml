@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCO__ObjBase__Static" kind="namespace" language="C++">
+    <compoundname>CO_ObjBase_Static</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test-obj_8cpp_1aaf0e41c35b0199a18af71c73db58b74f" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CO_ObjBase_Static::dn_ind_func_counter</definition>
+        <argsstring></argsstring>
+        <name>dn_ind_func_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-obj.cpp" line="138" column="15" bodyfile="unit-tests/co/test-obj.cpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test-obj_8cpp_1aa2ace0fab818d0ba2479eeb3bd365613" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CO_ObjBase_Static::up_ind_func_counter</definition>
+        <argsstring></argsstring>
+        <name>up_ind_func_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-obj.cpp" line="139" column="15" bodyfile="unit-tests/co/test-obj.cpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-obj.cpp" line="137" column="1"/>
+  </compounddef>
+</doxygen>

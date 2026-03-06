@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structalloc__vtbl" kind="struct" language="C++" prot="public">
+    <compoundname>alloc_vtbl</compoundname>
+    <includes refid="memory_8h" local="no">memory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structalloc__vtbl_1a540e2514b965432417337e6922c86140" prot="public" static="no" mutable="no">
+        <type>void *(*</type>
+        <definition>void*(* alloc_vtbl::alloc) (alloc_t *alloc, size_t alignment, size_t size)</definition>
+        <argsstring>)(alloc_t *alloc, size_t alignment, size_t size)</argsstring>
+        <name>alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/memory.h" line="38" column="1" bodyfile="include/lely/util/memory.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structalloc__vtbl_1ac5ac19464b439856fda636b61532d930" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* alloc_vtbl::free) (alloc_t *alloc, void *ptr)</definition>
+        <argsstring>)(alloc_t *alloc, void *ptr)</argsstring>
+        <name>free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/memory.h" line="39" column="1" bodyfile="include/lely/util/memory.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structalloc__vtbl_1a93c3b597fe8a0c375429c5d0568c1370" prot="public" static="no" mutable="no">
+        <type>size_t(*</type>
+        <definition>size_t(* alloc_vtbl::size) (const alloc_t *alloc)</definition>
+        <argsstring>)(const alloc_t *alloc)</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/memory.h" line="40" column="1" bodyfile="include/lely/util/memory.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structalloc__vtbl_1aefb86ffdf558a9bb1b459d114efda4b5" prot="public" static="no" mutable="no">
+        <type>size_t(*</type>
+        <definition>size_t(* alloc_vtbl::capacity) (const alloc_t *alloc)</definition>
+        <argsstring>)(const alloc_t *alloc)</argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/memory.h" line="41" column="1" bodyfile="include/lely/util/memory.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The virtual table for memory allcators. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/util/memory.h" line="37" column="1" bodyfile="include/lely/util/memory.h" bodystart="37" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structalloc__vtbl_1a540e2514b965432417337e6922c86140" prot="public" virt="non-virtual"><scope>alloc_vtbl</scope><name>alloc</name></member>
+      <member refid="structalloc__vtbl_1aefb86ffdf558a9bb1b459d114efda4b5" prot="public" virt="non-virtual"><scope>alloc_vtbl</scope><name>capacity</name></member>
+      <member refid="structalloc__vtbl_1ac5ac19464b439856fda636b61532d930" prot="public" virt="non-virtual"><scope>alloc_vtbl</scope><name>free</name></member>
+      <member refid="structalloc__vtbl_1a93c3b597fe8a0c375429c5d0568c1370" prot="public" virt="non-virtual"><scope>alloc_vtbl</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

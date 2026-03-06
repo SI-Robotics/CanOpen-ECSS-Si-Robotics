@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="detail_2obj_8h" kind="file" language="C++">
+    <compoundname>obj.h</compoundname>
+    <includes refid="obj_8h" local="no">lely/co/obj.h</includes>
+    <includes refid="val_8h" local="no">lely/co/val.h</includes>
+    <includes refid="rbtree_8h" local="no">lely/util/rbtree.h</includes>
+    <includedby refid="dev_8c" local="no">lib/co/dev.c</includedby>
+    <includedby refid="obj_8c" local="no">lib/co/obj.c</includedby>
+    <includedby refid="obj_8hpp" local="no">unit-tests/co/holder/obj.hpp</includedby>
+    <includedby refid="sub_8hpp" local="no">unit-tests/co/holder/sub.hpp</includedby>
+    <includedby refid="test-sync_8cpp" local="no">unit-tests/co/test-sync.cpp</includedby>
+    <includedby refid="co-sub-dn-ind_8cpp" local="no">unit-tests/libtest/tools/co-sub-dn-ind.cpp</includedby>
+    <includedby refid="co-sub-up-ind_8cpp" local="no">unit-tests/libtest/tools/co-sub-up-ind.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stdbool.h</label>
+      </node>
+      <node id="17">
+        <label>assert.h</label>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/co/obj.h</label>
+        <link refid="obj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="15">
+        <label>lely/co/val.h</label>
+        <link refid="val_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/co/def/basic.def</label>
+      </node>
+      <node id="16">
+        <label>lely/util/rbtree.h</label>
+        <link refid="rbtree_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/co/detail/obj.h</label>
+        <link refid="detail_2obj_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="29">
+        <label>unit-tests/co/obj-init/sdo-client-par.hpp</label>
+        <link refid="sdo-client-par_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="5">
+        <label>unit-tests/co/holder/dev.hpp</label>
+        <link refid="dev_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/co/obj.c</label>
+        <link refid="obj_8c"/>
+      </node>
+      <node id="31">
+        <label>unit-tests/co/obj-init/tpdo-comm-par.hpp</label>
+        <link refid="tpdo-comm-par_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>unit-tests/libtest/tools/co-sub-dn-ind.cpp</label>
+        <link refid="co-sub-dn-ind_8cpp"/>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="27">
+        <label>unit-tests/co/obj-init/rpdo-comm-par.hpp</label>
+        <link refid="rpdo-comm-par_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="30">
+        <label>unit-tests/co/obj-init/sdo-server-par.hpp</label>
+        <link refid="sdo-server-par_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/co/holder/obj.hpp</label>
+        <link refid="obj_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="23">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="28">
+        <label>unit-tests/co/obj-init/rpdo-map-par.hpp</label>
+        <link refid="rpdo-map-par_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>unit-tests/libtest/tools/co-sub-up-ind.cpp</label>
+        <link refid="co-sub-up-ind_8cpp"/>
+      </node>
+      <node id="2">
+        <label>lib/co/dev.c</label>
+        <link refid="dev_8c"/>
+      </node>
+      <node id="1">
+        <label>include/lely/co/detail/obj.h</label>
+        <link refid="detail_2obj_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/co/holder/sub.hpp</label>
+        <link refid="sub_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="32">
+        <label>unit-tests/co/obj-init/tpdo-map-par.hpp</label>
+        <link refid="tpdo-map-par_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="25">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="21">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structco__obj" prot="public">co_obj</innerclass>
+    <innerclass refid="structco__sub" prot="public">co_sub</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="detail_2obj_8h_1a1999a87e59907e3d70ff782c699983e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_sub_default_dn_ind</definition>
+        <argsstring>(co_sub_t *sub, struct co_sdo_req *req, co_unsigned32_t ac, void *data)</argsstring>
+        <name>co_sub_default_dn_ind</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *</type>
+          <declname>sub</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>The default download indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="obj_8h_1aa9fac5fdd8d282698d2806d70ea37be0" kindref="member">co_sub_dn_ind_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="101" column="17" bodyfile="lib/co/obj.c" bodystart="1074" bodyend="1089" declfile="include/lely/co/detail/obj.h" declline="101" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="detail_2obj_8h_1a8255b2e6afa19795ac165c2b3a276fe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_sub_default_up_ind</definition>
+        <argsstring>(const co_sub_t *sub, struct co_sdo_req *req, co_unsigned32_t ac, void *data)</argsstring>
+        <name>co_sub_default_up_ind</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *</type>
+          <declname>sub</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>The default upload indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="obj_8h_1a48fac3932d2be917ea30a193a972f7c2" kindref="member">co_sub_up_ind_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="105" column="17" bodyfile="lib/co/obj.c" bodystart="1092" bodyend="1105" declfile="include/lely/co/detail/obj.h" declline="105" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the internal header file of the object dictionary. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="obj_8h" kindref="compound">lely/co/obj.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2021 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_DETAIL_OBJ_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_DETAIL_OBJ_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="obj_8h" kindref="compound">lely/co/obj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="val_8h" kindref="compound">lely/co/val.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="rbtree_8h" kindref="compound">lely/util/rbtree.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structco__obj" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__obj" kindref="compound">co_obj</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/><ref refid="structco__obj_1a0c972674e4ef689e1e014227dedb58de" kindref="member">node</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structco__obj_1a51c9df1e3478e267b6ae465abd4ee29d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*<ref refid="structco__obj_1a51c9df1e3478e267b6ae465abd4ee29d" kindref="member">dev</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structco__obj_1ad6c3c5a9a6d6bbd98bf161a678f029be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned16_t<sp/><ref refid="structco__obj_1ad6c3c5a9a6d6bbd98bf161a678f029be" kindref="member">idx</ref>;</highlight></codeline>
+<codeline lineno="39" refid="structco__obj_1a92de0da7fbcccb76e58473b726ae795f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__obj_1a92de0da7fbcccb76e58473b726ae795f" kindref="member">code</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_OBJ_NAME</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/><ref refid="structco__obj_1aa8a7bce3f2d2720b15375e60ce184d44" kindref="member">tree</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structco__obj_1adaddcb0d0cb2d19038821f2e642877a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structco__obj_1adaddcb0d0cb2d19038821f2e642877a6" kindref="member">val</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structco__sub_1a6795276d9644f34d65b2e6af4a7955e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structco__obj_1a210ae5bfb9d2d53d5135299ac1d62101" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structco__sub" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__sub" kindref="compound">co_sub</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/><ref refid="structco__sub_1a6795276d9644f34d65b2e6af4a7955e4" kindref="member">node</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structco__sub_1a811c8a0dedfd4069a64976b10646a18d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__obj" kindref="compound">co_obj_t</ref><sp/>*<ref refid="structco__sub_1a811c8a0dedfd4069a64976b10646a18d" kindref="member">obj</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structco__sub_1a235f5e6dd04a2a6e137d7c43e2e995b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__sub_1a235f5e6dd04a2a6e137d7c43e2e995b1" kindref="member">subidx</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structco__sub_1a9f754e2b728125c7d95953ac6d165f6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned16_t<sp/><ref refid="structco__sub_1a207a7ee2c0d9c17607cffb730c2065bf" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_OBJ_NAME</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_OBJ_LIMITS</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionco__val" kindref="compound">co_val</ref><sp/><ref refid="structco__sub_1a470e2977613dfbcfe99e1e079ac877d4" kindref="member">min</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionco__val" kindref="compound">co_val</ref><sp/><ref refid="structco__sub_1a9f754e2b728125c7d95953ac6d165f6b" kindref="member">max</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_OBJ_DEFAULT</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionco__val" kindref="compound">co_val</ref><sp/>def;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77" refid="structco__sub_1ad43282432a126494386196fbdaf919f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structco__sub_1ad43282432a126494386196fbdaf919f2" kindref="member">val</ref>;</highlight></codeline>
+<codeline lineno="79" refid="structco__sub_1a34785e2555462fdbc1afd839fdb44f63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least32_t<sp/><ref refid="structco__sub_1a34785e2555462fdbc1afd839fdb44f63" kindref="member">access</ref><sp/>:<sp/>5;</highlight></codeline>
+<codeline lineno="81" refid="structco__sub_1a98f9d706e0c48d2a897365539b206d26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least32_t<sp/><ref refid="structco__sub_1a98f9d706e0c48d2a897365539b206d26" kindref="member">pdo_mapping</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="83" refid="structco__sub_1a63abaedff68b9dec1e6539fe30b3bc94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least32_t<sp/><ref refid="structco__sub_1a63abaedff68b9dec1e6539fe30b3bc94" kindref="member">flags</ref><sp/>:<sp/>26;</highlight></codeline>
+<codeline lineno="85" refid="structco__sub_1a6739cb7c0a1c8bef600f4043fd656356" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="obj_8h_1aa9fac5fdd8d282698d2806d70ea37be0" kindref="member">co_sub_dn_ind_t</ref><sp/>*<ref refid="structco__sub_1a6739cb7c0a1c8bef600f4043fd656356" kindref="member">dn_ind</ref>;</highlight></codeline>
+<codeline lineno="87" refid="structco__sub_1a2ad10cb3a3a78ddf3c793acd229ab297" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structco__sub_1a2ad10cb3a3a78ddf3c793acd229ab297" kindref="member">dn_data</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_CO_OBJ_UPLOAD</highlight></codeline>
+<codeline lineno="90" refid="structco__sub_1ad7aa54dd4fe610acc7f83ffcf147ccf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="obj_8h_1a48fac3932d2be917ea30a193a972f7c2" kindref="member">co_sub_up_ind_t</ref><sp/>*<ref refid="structco__sub_1ad7aa54dd4fe610acc7f83ffcf147ccf9" kindref="member">up_ind</ref>;</highlight></codeline>
+<codeline lineno="92" refid="structco__sub_1abc2cd891cfd0e10d0596bc39cf44f886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structco__sub_1abc2cd891cfd0e10d0596bc39cf44f886" kindref="member">up_data</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">co_unsigned32_t<sp/><ref refid="detail_2obj_8h_1a1999a87e59907e3d70ff782c699983e9" kindref="member">co_sub_default_dn_ind</ref>(<ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>ac,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="structco__obj_1a0c972674e4ef689e1e014227dedb58de" refkind="member"><highlight class="normal">co_unsigned32_t<sp/><ref refid="detail_2obj_8h_1a8255b2e6afa19795ac165c2b3a276fe6" kindref="member">co_sub_default_up_ind</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__sub" kindref="compound">co_sub_t</ref><sp/>*sub,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/>co_unsigned32_t<sp/>ac,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CO_DETAIL_OBJ_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/co/detail/obj.h"/>
+  </compounddef>
+</doxygen>

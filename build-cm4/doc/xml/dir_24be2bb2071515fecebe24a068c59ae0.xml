@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_24be2bb2071515fecebe24a068c59ae0" kind="dir">
+    <compoundname>unit-tests/libtest/override</compoundname>
+    <innerfile refid="call-wrapper_8hpp">call-wrapper.hpp</innerfile>
+    <innerfile refid="defs_8hpp">defs.hpp</innerfile>
+    <innerfile refid="lely-defs_8hpp">lely-defs.hpp</innerfile>
+    <innerfile refid="lelyco-val_8cpp">lelyco-val.cpp</innerfile>
+    <innerfile refid="lelyco-val_8hpp">lelyco-val.hpp</innerfile>
+    <innerfile refid="lelyutil-membuf_8cpp">lelyutil-membuf.cpp</innerfile>
+    <innerfile refid="lelyutil-membuf_8hpp">lelyutil-membuf.hpp</innerfile>
+    <innerfile refid="libc-defs_8hpp">libc-defs.hpp</innerfile>
+    <innerfile refid="libc-stdio_8hpp">libc-stdio.hpp</innerfile>
+    <innerfile refid="override-test-plugin_8cpp">override-test-plugin.cpp</innerfile>
+    <innerfile refid="override-test-plugin_8hpp">override-test-plugin.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/override/"/>
+  </compounddef>
+</doxygen>

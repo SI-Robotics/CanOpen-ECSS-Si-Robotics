@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCO__NmtSdo1016" kind="namespace" language="C++">
+    <compoundname>CO_NmtSdo1016</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test-nmt-sdo_8cpp_1a699adf9bcdfdf18fe679c3ddfe8c23d2" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t CO_NmtSdo1016::HB_NODE_ID</definition>
+        <argsstring></argsstring>
+        <name>HB_NODE_ID</name>
+        <initializer>= 0x05u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-nmt-sdo.cpp" line="112" column="29" bodyfile="unit-tests/co/test-nmt-sdo.cpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test-nmt-sdo_8cpp_1a00d0a37010767b39e68622c601b310ed" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t CO_NmtSdo1016::HB_TIMEOUT_MS</definition>
+        <argsstring></argsstring>
+        <name>HB_TIMEOUT_MS</name>
+        <initializer>= 500u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-nmt-sdo.cpp" line="113" column="30" bodyfile="unit-tests/co/test-nmt-sdo.cpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-nmt-sdo.cpp" line="111" column="1"/>
+  </compounddef>
+</doxygen>

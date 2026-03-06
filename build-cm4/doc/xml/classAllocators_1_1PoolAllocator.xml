@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classAllocators_1_1PoolAllocator" kind="class" language="C++" prot="public">
+    <compoundname>Allocators::PoolAllocator</compoundname>
+    <includes refid="pool_8hpp" local="no">pool.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>PoolSize</declname>
+        <defname>PoolSize</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllocators_1_1PoolAllocator_1a2741997627a55149f0b3ba2bbc2e1c49" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Allocators::PoolAllocator&lt; PoolSize &gt;::memory[PoolSize]</definition>
+        <argsstring>[PoolSize]</argsstring>
+        <name>memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/pool.hpp" line="44" column="11" bodyfile="unit-tests/libtest/allocators/pool.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocators_1_1PoolAllocator_1a1c7a5055562d9fe5626c273a503c59be" prot="private" static="no" mutable="no">
+        <type><ref refid="structmempool" kindref="compound">mempool</ref></type>
+        <definition>mempool Allocators::PoolAllocator&lt; PoolSize &gt;::pool</definition>
+        <argsstring></argsstring>
+        <name>pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/pool.hpp" line="45" column="11" bodyfile="unit-tests/libtest/allocators/pool.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocators_1_1PoolAllocator_1a5c3cac5e81e83ddb444c354b2ace9ecf" prot="private" static="no" mutable="no">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+        <definition>alloc_t* const Allocators::PoolAllocator&lt; PoolSize &gt;::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/pool.hpp" line="46" column="17" bodyfile="unit-tests/libtest/allocators/pool.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllocators_1_1PoolAllocator_1a27a2546614c1b837b725395905b213cc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Allocators::PoolAllocator&lt; PoolSize &gt;::PoolAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>PoolAllocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/pool.hpp" line="36" column="12" bodyfile="unit-tests/libtest/allocators/pool.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1PoolAllocator_1a13d167774992aa58c314b1c8c3ce4032" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* Allocators::PoolAllocator&lt; PoolSize &gt;::ToAllocT</definition>
+        <argsstring>() const</argsstring>
+        <name>ToAllocT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/pool.hpp" line="39" column="3" bodyfile="unit-tests/libtest/allocators/pool.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Memory pool based allocator (see <ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref>). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/allocators/pool.hpp" line="34" column="1" bodyfile="unit-tests/libtest/allocators/pool.hpp" bodystart="34" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classAllocators_1_1PoolAllocator_1a5c3cac5e81e83ddb444c354b2ace9ecf" prot="private" virt="non-virtual"><scope>Allocators::PoolAllocator</scope><name>alloc</name></member>
+      <member refid="classAllocators_1_1PoolAllocator_1a2741997627a55149f0b3ba2bbc2e1c49" prot="private" virt="non-virtual"><scope>Allocators::PoolAllocator</scope><name>memory</name></member>
+      <member refid="classAllocators_1_1PoolAllocator_1a1c7a5055562d9fe5626c273a503c59be" prot="private" virt="non-virtual"><scope>Allocators::PoolAllocator</scope><name>pool</name></member>
+      <member refid="classAllocators_1_1PoolAllocator_1a27a2546614c1b837b725395905b213cc" prot="public" virt="non-virtual"><scope>Allocators::PoolAllocator</scope><name>PoolAllocator</name></member>
+      <member refid="classAllocators_1_1PoolAllocator_1a13d167774992aa58c314b1c8c3ce4032" prot="public" virt="non-virtual"><scope>Allocators::PoolAllocator</scope><name>ToAllocT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

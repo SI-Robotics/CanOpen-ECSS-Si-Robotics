@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ssdo_8h" kind="file" language="C++">
+    <compoundname>ssdo.h</compoundname>
+    <includes refid="net_8h" local="no">lely/can/net.h</includes>
+    <includes refid="include_2lely_2co_2sdo_8h" local="no">lely/co/sdo.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="nmt__srv_8c" local="no">lib/co/nmt_srv.c</includedby>
+    <includedby refid="ssdo_8c" local="no">lib/co/ssdo.c</includedby>
+    <includedby refid="nmt-alloc-sizes_8hpp" local="no">unit-tests/co/common/nmt-alloc-sizes.hpp</includedby>
+    <includedby refid="test-nmt-srv_8cpp" local="no">unit-tests/co/test-nmt-srv.cpp</includedby>
+    <includedby refid="test-nmt_8cpp" local="no">unit-tests/co/test-nmt.cpp</includedby>
+    <includedby refid="test-ssdo-sdo_8cpp" local="no">unit-tests/co/test-ssdo-sdo.cpp</includedby>
+    <includedby refid="test-ssdo_8cpp" local="no">unit-tests/co/test-ssdo.cpp</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stdbool.h</label>
+      </node>
+      <node id="21">
+        <label>assert.h</label>
+      </node>
+      <node id="19">
+        <label>lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="6">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/co/ssdo.h</label>
+        <link refid="ssdo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/co/ssdo.h</label>
+        <link refid="ssdo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ssdo_8h_1a3f4fdb0581530872587325160e0097b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_ssdo_alignof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_ssdo_alignof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the alignment (in bytes) of the <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="35" column="8" bodyfile="lib/co/ssdo.c" bodystart="586" bodyend="589" declfile="include/lely/co/ssdo.h" declline="35" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1aaeafdd7880a328a3b92239f5113ac747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_ssdo_sizeof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_ssdo_sizeof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size (in bytes) of the <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="38" column="8" bodyfile="lib/co/ssdo.c" bodystart="592" bodyend="595" declfile="include/lely/co/ssdo.h" declline="38" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1afdb4239ad4f417f5517ccf670312b2da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+        <definition>co_ssdo_t* co_ssdo_create</definition>
+        <argsstring>(can_net_t *net, co_dev_t *dev, co_unsigned8_t num)</argsstring>
+        <name>co_ssdo_create</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new CANopen Server-SDO service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The service is stopped after creation and SHOULD be started with <ref refid="ssdo_8h_1a0d9e073c7171672856d58b44b2867440" kindref="member">co_ssdo_start()</ref> before use.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device describing the server. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the SDO number (in the range [1..128]). Except when <bold>num</bold> is 1, the SDO parameter record MUST exist in the object dictionary of <bold>dev</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to a new Server-SDO service, or NULL on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="ssdo_8h_1a3d235774ae42ffb40afd07aaed300dff" kindref="member">co_ssdo_destroy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="55" column="11" bodyfile="lib/co/ssdo.c" bodystart="598" bodyend="622" declfile="include/lely/co/ssdo.h" declline="55" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1a3d235774ae42ffb40afd07aaed300dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_ssdo_destroy</definition>
+        <argsstring>(co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_destroy</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a CANopen Server-SDO service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="ssdo_8h_1afdb4239ad4f417f5517ccf670312b2da" kindref="member">co_ssdo_create()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="58" column="6" bodyfile="lib/co/ssdo.c" bodystart="625" bodyend="632" declfile="include/lely/co/ssdo.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1a0d9e073c7171672856d58b44b2867440" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_ssdo_start</definition>
+        <argsstring>(co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_start</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Starts a Server-SDO service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="post"><para>on success, <ref refid="ssdo_8h_1ac5a9ea6a5ddfda8e297cc613c05c3d89" kindref="member">co_ssdo_is_stopped()</ref> returns <bold>false</bold>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="ssdo_8h_1a106e58fcb4be7a50addd8e5e5c0f7752" kindref="member">co_ssdo_stop()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="67" column="6" bodyfile="lib/co/ssdo.c" bodystart="635" bodyend="656" declfile="include/lely/co/ssdo.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1a106e58fcb4be7a50addd8e5e5c0f7752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_ssdo_stop</definition>
+        <argsstring>(co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_stop</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Stops a Server-SDO service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Any ongoing request is aborted.</para>
+<para><simplesect kind="post"><para><ref refid="ssdo_8h_1ac5a9ea6a5ddfda8e297cc613c05c3d89" kindref="member">co_ssdo_is_stopped()</ref> returns <bold>true</bold>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="ssdo_8h_1a0d9e073c7171672856d58b44b2867440" kindref="member">co_ssdo_start()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="76" column="6" bodyfile="lib/co/ssdo.c" bodystart="659" bodyend="679" declfile="include/lely/co/ssdo.h" declline="76" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1ac5a9ea6a5ddfda8e297cc613c05c3d89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool co_ssdo_is_stopped</definition>
+        <argsstring>(const co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_is_stopped</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Returns <bold>true</bold> if the specified Server-SDO service is stopped, and <bold>false</bold> if not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="ssdo_8h_1a0d9e073c7171672856d58b44b2867440" kindref="member">co_ssdo_start</ref>, <ref refid="ssdo_8h_1a106e58fcb4be7a50addd8e5e5c0f7752" kindref="member">co_ssdo_stop()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="84" column="6" bodyfile="lib/co/ssdo.c" bodystart="682" bodyend="687" declfile="include/lely/co/ssdo.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1a69415851441294d6cdaf9c417f56a418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* co_ssdo_get_alloc</definition>
+        <argsstring>(const co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_get_alloc</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="91" column="9" bodyfile="lib/co/ssdo.c" bodystart="690" bodyend="695" declfile="include/lely/co/ssdo.h" declline="91" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1af081f48eaa7a81d665a5e8254ee8bf7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_ssdo_get_net</definition>
+        <argsstring>(const co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_get_net</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the CAN network of a Server-SDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="94" column="11" bodyfile="lib/co/ssdo.c" bodystart="698" bodyend="703" declfile="include/lely/co/ssdo.h" declline="94" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1a035745727382d536e98a3ddcad9d4e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_ssdo_get_dev</definition>
+        <argsstring>(const co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_get_dev</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the CANopen device of a Server-SDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="97" column="10" bodyfile="lib/co/ssdo.c" bodystart="706" bodyend="711" declfile="include/lely/co/ssdo.h" declline="97" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1a276dab46fb400f500859960a8912ff31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_ssdo_get_num</definition>
+        <argsstring>(const co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_get_num</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Returns the SDO number of a Server-SDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="100" column="16" bodyfile="lib/co/ssdo.c" bodystart="714" bodyend="719" declfile="include/lely/co/ssdo.h" declline="100" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1ae9e0a03ec2da19c327ef114393bdb69d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct <ref refid="structco__sdo__par" kindref="compound">co_sdo_par</ref> *</type>
+        <definition>const struct co_sdo_par* co_ssdo_get_par</definition>
+        <argsstring>(const co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_get_par</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the SDO parameter record of a Server-SDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="103" column="23" bodyfile="lib/co/ssdo.c" bodystart="722" bodyend="727" declfile="include/lely/co/ssdo.h" declline="103" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1a071f46cf403b0082b9110b36d146813d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_least32_t</type>
+        <definition>int_least32_t co_ssdo_get_timeout</definition>
+        <argsstring>(const co_ssdo_t *sdo)</argsstring>
+        <name>co_ssdo_get_timeout</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <briefdescription>
+<para>Returns the timeout (in milliseconds) of a Server-SDO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A return value of 0 (the default) means no timeout is being used.</para>
+<para><simplesect kind="see"><para><ref refid="ssdo_8h_1afee1bfe8871acd5c50a4acf0e54c7024" kindref="member">co_ssdo_set_timeout()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="111" column="15" bodyfile="lib/co/ssdo.c" bodystart="730" bodyend="735" declfile="include/lely/co/ssdo.h" declline="111" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="ssdo_8h_1afee1bfe8871acd5c50a4acf0e54c7024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_ssdo_set_timeout</definition>
+        <argsstring>(co_ssdo_t *sdo, int_least32_t timeout)</argsstring>
+        <name>co_ssdo_set_timeout</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a7202c88af2a64a5c6c765b0693aa7f2a" kindref="member">co_ssdo_t</ref> *</type>
+          <declname>sdo</declname>
+        </param>
+        <param>
+          <type>int_least32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Sets the timeout of a Server-SDO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the timeout expires before receiving a request from a client, the server aborts the transfer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a Server-SDO service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the timeout (in milliseconds). A value of 0 (the default) disables the timeout.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="ssdo_8h_1a071f46cf403b0082b9110b36d146813d" kindref="member">co_ssdo_get_timeout()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/ssdo.h" line="123" column="6" bodyfile="lib/co/ssdo.c" bodystart="738" bodyend="746" declfile="include/lely/co/ssdo.h" declline="123" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the CANopen library; it contains the Server-SDO declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_SSDO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_SSDO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="net_8h" kindref="compound">lely/can/net.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2co_2sdo_8h" kindref="compound">lely/co/sdo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="ssdo_8h_1a3f4fdb0581530872587325160e0097b2" kindref="member">co_ssdo_alignof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="ssdo_8h_1aaeafdd7880a328a3b92239f5113ac747" kindref="member">co_ssdo_sizeof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*<ref refid="ssdo_8h_1afdb4239ad4f417f5517ccf670312b2da" kindref="member">co_ssdo_create</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*net,<sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*dev,<sp/>co_unsigned8_t<sp/>num);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ssdo_8h_1a3d235774ae42ffb40afd07aaed300dff" kindref="member">co_ssdo_destroy</ref>(<ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ssdo_8h_1a0d9e073c7171672856d58b44b2867440" kindref="member">co_ssdo_start</ref>(<ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ssdo_8h_1a106e58fcb4be7a50addd8e5e5c0f7752" kindref="member">co_ssdo_stop</ref>(<ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ssdo_8h_1ac5a9ea6a5ddfda8e297cc613c05c3d89" kindref="member">co_ssdo_is_stopped</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>allocator<sp/>used<sp/>to<sp/>allocate<sp/>a<sp/>Server-SDO.</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/>@see<sp/>can_net_get_alloc()</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*co_ssdo_get_alloc(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="ssdo_8h_1af081f48eaa7a81d665a5e8254ee8bf7c" kindref="member">co_ssdo_get_net</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*<ref refid="ssdo_8h_1a035745727382d536e98a3ddcad9d4e12" kindref="member">co_ssdo_get_dev</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">co_unsigned8_t<sp/><ref refid="ssdo_8h_1a276dab46fb400f500859960a8912ff31" kindref="member">co_ssdo_get_num</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__sdo__par" kindref="compound">co_sdo_par</ref><sp/>*<ref refid="ssdo_8h_1ae9e0a03ec2da19c327ef114393bdb69d" kindref="member">co_ssdo_get_par</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">int_least32_t<sp/><ref refid="ssdo_8h_1a071f46cf403b0082b9110b36d146813d" kindref="member">co_ssdo_get_timeout</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ssdo_8h_1afee1bfe8871acd5c50a4acf0e54c7024" kindref="member">co_ssdo_set_timeout</ref>(<ref refid="structco__ssdo" kindref="compound">co_ssdo_t</ref><sp/>*sdo,<sp/>int_least32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CO_SSDO_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/co/ssdo.h"/>
+  </compounddef>
+</doxygen>

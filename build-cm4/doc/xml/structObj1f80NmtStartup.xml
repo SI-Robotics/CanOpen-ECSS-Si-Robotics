@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1f80NmtStartup" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1f80NmtStartup</compoundname>
+    <basecompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1f80u, CO_DEFTYPE_UNSIGNED32 &gt;</basecompoundref>
+    <includes refid="nmt-startup_8hpp" local="no">nmt-startup.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structObj1f80NmtStartup_1a5706f63dc15b9454de6accf416ed347c" prot="public" static="yes" mutable="no">
+        <type>const sub_type</type>
+        <definition>const sub_type Obj1f80NmtStartup::MASTER_BIT</definition>
+        <argsstring></argsstring>
+        <name>MASTER_BIT</name>
+        <initializer>= 0x01u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-startup.hpp" line="30" column="25" bodyfile="unit-tests/co/obj-init/nmt-startup.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1f80NmtStartup_1a7df42443f68bcf4ab2911805e102e70f" prot="public" static="yes" mutable="no">
+        <type>const sub_type</type>
+        <definition>const sub_type Obj1f80NmtStartup::AUTOSTART_BIT</definition>
+        <argsstring></argsstring>
+        <name>AUTOSTART_BIT</name>
+        <initializer>= 0x04u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-startup.hpp" line="31" column="25" bodyfile="unit-tests/co/obj-init/nmt-startup.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1f80NmtStartup_1ab30b3b75d5441f80f698a36134eabaa5" prot="public" static="yes" mutable="no">
+        <type>const sub_type</type>
+        <definition>const sub_type Obj1f80NmtStartup::RESET_NODES_ON_ERR</definition>
+        <argsstring></argsstring>
+        <name>RESET_NODES_ON_ERR</name>
+        <initializer>= 0x10u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-startup.hpp" line="32" column="25" bodyfile="unit-tests/co/obj-init/nmt-startup.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObj1f80NmtStartup_1a27a0830693f3217f289794985b47b3df" prot="public" static="yes" mutable="no">
+        <type>const sub_type</type>
+        <definition>const sub_type Obj1f80NmtStartup::STOP_NODES_ON_ERR</definition>
+        <argsstring></argsstring>
+        <name>STOP_NODES_ON_ERR</name>
+        <initializer>= 0x40u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-startup.hpp" line="33" column="25" bodyfile="unit-tests/co/obj-init/nmt-startup.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>0x1f80: NMT Start-up </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjValueInitT&lt; 0x1f80u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjInitT&lt; Idx &gt;::template SubT&lt; 0x00u, Deftype, 0  &gt;</label>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1f80NmtStartup</label>
+        <link refid="structObj1f80NmtStartup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjValueInitT&lt; 0x1f80u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjInitT&lt; Idx &gt;::template SubT&lt; 0x00u, Deftype, 0  &gt;</label>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1f80NmtStartup</label>
+        <link refid="structObj1f80NmtStartup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/nmt-startup.hpp" line="29" column="1" bodyfile="unit-tests/co/obj-init/nmt-startup.hpp" bodystart="29" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structObj1f80NmtStartup_1a7df42443f68bcf4ab2911805e102e70f" prot="public" virt="non-virtual"><scope>Obj1f80NmtStartup</scope><name>AUTOSTART_BIT</name></member>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1f80NmtStartup</scope><name>idx</name></member>
+      <member refid="structObj1f80NmtStartup_1a5706f63dc15b9454de6accf416ed347c" prot="public" virt="non-virtual"><scope>Obj1f80NmtStartup</scope><name>MASTER_BIT</name></member>
+      <member refid="structObjValueInitT_1ab2cb6c513bd6369ca8e29c9af7680a43" prot="public" virt="non-virtual"><scope>Obj1f80NmtStartup</scope><name>max_idx</name></member>
+      <member refid="structObjValueInitT_1ae8313a2dc00a492ba33858abc30c6d80" prot="public" virt="non-virtual"><scope>Obj1f80NmtStartup</scope><name>min_idx</name></member>
+      <member refid="structObj1f80NmtStartup_1ab30b3b75d5441f80f698a36134eabaa5" prot="public" virt="non-virtual"><scope>Obj1f80NmtStartup</scope><name>RESET_NODES_ON_ERR</name></member>
+      <member refid="structObj1f80NmtStartup_1a27a0830693f3217f289794985b47b3df" prot="public" virt="non-virtual"><scope>Obj1f80NmtStartup</scope><name>STOP_NODES_ON_ERR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

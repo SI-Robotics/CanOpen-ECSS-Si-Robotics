@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOverride_1_1OverridePlugin" kind="class" language="C++" prot="public">
+    <compoundname>Override::OverridePlugin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestPlugin</basecompoundref>
+    <includes refid="override-test-plugin_8hpp" local="no">override-test-plugin.hpp</includes>
+    <innerclass refid="classOverridePlugin_1_1CleanUp" prot="public">OverridePlugin::CleanUp</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOverride_1_1OverridePlugin_1aa09f72549989e727c763b80d7ee2af82" prot="private" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref> &gt;</type>
+        <definition>std::stack&lt;CleanUp&gt; Override::OverridePlugin::cleanups</definition>
+        <argsstring></argsstring>
+        <name>cleanups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.hpp" line="50" column="14" bodyfile="unit-tests/libtest/override/override-test-plugin.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOverride_1_1OverridePlugin_1a1e94c22fc15bf5aa33469a07e5fa52aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OverridePlugin::OverridePlugin</definition>
+        <argsstring>()</argsstring>
+        <name>OverridePlugin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.hpp" line="39" column="3" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverride_1_1OverridePlugin_1a1412afb30d35a9792ad732ce909ef700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OverridePlugin::~OverridePlugin</definition>
+        <argsstring>() override</argsstring>
+        <name>~OverridePlugin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.hpp" line="40" column="3" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverride_1_1OverridePlugin_1ae65f8a13a26537c919f4c2c42bcb40fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OverridePlugin::postTestAction</definition>
+        <argsstring>(UtestShell &amp;shell, TestResult &amp;result) override</argsstring>
+        <name>postTestAction</name>
+        <param>
+          <type>UtestShell &amp;</type>
+          <declname>shell</declname>
+        </param>
+        <param>
+          <type>TestResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.hpp" line="44" column="8" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverride_1_1OverridePlugin_1ab541143432a39bf4197361d1698d7869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OverridePlugin::setForNextTest</definition>
+        <argsstring>(int32_t &amp;vc, int32_t target_value)</argsstring>
+        <name>setForNextTest</name>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>vc</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>target_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.hpp" line="46" column="8" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOverride_1_1OverridePlugin_1ab56de13cff24f3570776715340eb48bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOverride_1_1OverridePlugin" kindref="compound">OverridePlugin</ref> *</type>
+        <definition>OverridePlugin * OverridePlugin::getCurrent</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.hpp" line="42" column="25" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CppUTest plugin for override methods. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Maintains proper &apos;valid calls&apos; values across tests. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Override::OverridePlugin</label>
+        <link refid="classOverride_1_1OverridePlugin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TestPlugin</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Override::OverridePlugin</label>
+        <link refid="classOverride_1_1OverridePlugin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TestPlugin</label>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/libtest/override/override-test-plugin.hpp" line="37" column="1" bodyfile="unit-tests/libtest/override/override-test-plugin.hpp" bodystart="37" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classOverride_1_1OverridePlugin_1aa09f72549989e727c763b80d7ee2af82" prot="private" virt="non-virtual"><scope>Override::OverridePlugin</scope><name>cleanups</name></member>
+      <member refid="classOverride_1_1OverridePlugin_1ab56de13cff24f3570776715340eb48bc" prot="public" virt="non-virtual"><scope>Override::OverridePlugin</scope><name>getCurrent</name></member>
+      <member refid="classOverride_1_1OverridePlugin_1a1e94c22fc15bf5aa33469a07e5fa52aa" prot="public" virt="non-virtual"><scope>Override::OverridePlugin</scope><name>OverridePlugin</name></member>
+      <member refid="classOverride_1_1OverridePlugin_1ae65f8a13a26537c919f4c2c42bcb40fb" prot="public" virt="non-virtual"><scope>Override::OverridePlugin</scope><name>postTestAction</name></member>
+      <member refid="classOverride_1_1OverridePlugin_1ab541143432a39bf4197361d1698d7869" prot="public" virt="non-virtual"><scope>Override::OverridePlugin</scope><name>setForNextTest</name></member>
+      <member refid="classOverride_1_1OverridePlugin_1a1412afb30d35a9792ad732ce909ef700" prot="public" virt="non-virtual"><scope>Override::OverridePlugin</scope><name>~OverridePlugin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

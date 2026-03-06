@@ -1,0 +1,1662 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="include_2lely_2co_2sdo_8h" kind="file" language="C++">
+    <compoundname>sdo.h</compoundname>
+    <includes refid="type_8h" local="no">lely/co/type.h</includes>
+    <includes refid="membuf_8h" local="no">lely/util/membuf.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="csdo_8h" local="no">include/lely/co/csdo.h</includedby>
+    <includedby refid="ssdo_8h" local="no">include/lely/co/ssdo.h</includedby>
+    <includedby refid="emcy_8c" local="no">lib/co/emcy.c</includedby>
+    <includedby refid="nmt_8c" local="no">lib/co/nmt.c</includedby>
+    <includedby refid="obj_8c" local="no">lib/co/obj.c</includedby>
+    <includedby refid="pdo_8c" local="no">lib/co/pdo.c</includedby>
+    <includedby refid="rpdo_8c" local="no">lib/co/rpdo.c</includedby>
+    <includedby refid="sdo_8c" local="no">lib/co/sdo.c</includedby>
+    <includedby refid="lib_2co_2sdo_8h" local="no">lib/co/sdo.h</includedby>
+    <includedby refid="sync_8c" local="no">lib/co/sync.c</includedby>
+    <includedby refid="tpdo_8c" local="no">lib/co/tpdo.c</includedby>
+    <includedby refid="val_8c" local="no">lib/co/val.c</includedby>
+    <includedby refid="test-csdo_8cpp" local="no">unit-tests/co/test-csdo.cpp</includedby>
+    <includedby refid="test-emcy-sdo_8cpp" local="no">unit-tests/co/test-emcy-sdo.cpp</includedby>
+    <includedby refid="test-nmt-sdo_8cpp" local="no">unit-tests/co/test-nmt-sdo.cpp</includedby>
+    <includedby refid="test-obj_8cpp" local="no">unit-tests/co/test-obj.cpp</includedby>
+    <includedby refid="test-pdo_8cpp" local="no">unit-tests/co/test-pdo.cpp</includedby>
+    <includedby refid="test-rpdo-sdo_8cpp" local="no">unit-tests/co/test-rpdo-sdo.cpp</includedby>
+    <includedby refid="test-rpdo_8cpp" local="no">unit-tests/co/test-rpdo.cpp</includedby>
+    <includedby refid="test-sdo_8cpp" local="no">unit-tests/co/test-sdo.cpp</includedby>
+    <includedby refid="test-ssdo-sdo_8cpp" local="no">unit-tests/co/test-ssdo-sdo.cpp</includedby>
+    <includedby refid="test-ssdo_8cpp" local="no">unit-tests/co/test-ssdo.cpp</includedby>
+    <includedby refid="test-sync-sdo_8cpp" local="no">unit-tests/co/test-sync-sdo.cpp</includedby>
+    <includedby refid="test-tpdo-sdo_8cpp" local="no">unit-tests/co/test-tpdo-sdo.cpp</includedby>
+    <includedby refid="test-tpdo_8cpp" local="no">unit-tests/co/test-tpdo.cpp</includedby>
+    <includedby refid="test-val_8cpp" local="no">unit-tests/co/test-val.cpp</includedby>
+    <includedby refid="co-sub-dn-ind_8hpp" local="no">unit-tests/libtest/tools/co-sub-dn-ind.hpp</includedby>
+    <includedby refid="co-sub-up-ind_8hpp" local="no">unit-tests/libtest/tools/co-sub-up-ind.hpp</includedby>
+    <includedby refid="lely-unit-test_8cpp" local="no">unit-tests/libtest/tools/lely-unit-test.cpp</includedby>
+    <includedby refid="lely-unit-test_8hpp" local="no">unit-tests/libtest/tools/lely-unit-test.hpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stdbool.h</label>
+      </node>
+      <node id="15">
+        <label>assert.h</label>
+      </node>
+      <node id="13">
+        <label>lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>include/lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/lely/co/csdo.h</label>
+        <link refid="csdo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>unit-tests/libtest/tools/co-sub-up-ind.hpp</label>
+        <link refid="co-sub-up-ind_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="40">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="43">
+        <label>unit-tests/libtest/tools/lely-unit-test.cpp</label>
+        <link refid="lely-unit-test_8cpp"/>
+      </node>
+      <node id="5">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="18">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="28">
+        <label>lib/co/val.c</label>
+        <link refid="val_8c"/>
+      </node>
+      <node id="23">
+        <label>lib/co/rpdo.c</label>
+        <link refid="rpdo_8c"/>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="21">
+        <label>lib/co/obj.c</label>
+        <link refid="obj_8c"/>
+      </node>
+      <node id="32">
+        <label>unit-tests/co/test-sdo.cpp</label>
+        <link refid="test-sdo_8cpp"/>
+      </node>
+      <node id="34">
+        <label>unit-tests/co/test-val.cpp</label>
+        <link refid="test-val_8cpp"/>
+      </node>
+      <node id="36">
+        <label>unit-tests/libtest/tools/co-sub-dn-ind.cpp</label>
+        <link refid="co-sub-dn-ind_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="41">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/co/csdo.c</label>
+        <link refid="csdo_8c"/>
+      </node>
+      <node id="24">
+        <label>lib/co/sdo.c</label>
+        <link refid="sdo_8c"/>
+      </node>
+      <node id="25">
+        <label>lib/co/sdo.h</label>
+        <link refid="lib_2co_2sdo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="35">
+        <label>unit-tests/libtest/tools/co-sub-dn-ind.hpp</label>
+        <link refid="co-sub-dn-ind_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="30">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="27">
+        <label>lib/co/tpdo.c</label>
+        <link refid="tpdo_8c"/>
+      </node>
+      <node id="17">
+        <label>include/lely/co/ssdo.h</label>
+        <link refid="ssdo_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="45">
+        <label>unit-tests/libtest/tools/co-sub-up-ind.cpp</label>
+        <link refid="co-sub-up-ind_8cpp"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="39">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="31">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="26">
+        <label>lib/co/sync.c</label>
+        <link refid="sync_8c"/>
+      </node>
+      <node id="22">
+        <label>lib/co/pdo.c</label>
+        <link refid="pdo_8c"/>
+      </node>
+      <node id="37">
+        <label>unit-tests/libtest/tools/lely-unit-test.hpp</label>
+        <link refid="lely-unit-test_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="20">
+        <label>lib/co/emcy.c</label>
+        <link refid="emcy_8c"/>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structco__sdo__par" prot="public">co_sdo_par</innerclass>
+    <innerclass refid="structco__sdo__req" prot="public">co_sdo_req</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" prot="public" static="no">
+        <name>CO_SDO_COBID_VALID</name>
+        <initializer>UINT32_C(0x80000000)</initializer>
+        <briefdescription>
+<para>The bit in the SDO COB-ID specifying whether the SDO exists and is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="35" column="9" bodyfile="include/lely/co/sdo.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1aa7df4b67b1c4a4ac637064a4320ecb8e" prot="public" static="no">
+        <name>CO_SDO_COBID_FRAME</name>
+        <initializer>UINT32_C(0x20000000)</initializer>
+        <briefdescription>
+<para>The bit in the SDO COB-ID specifying whether to use an 11-bit (0) or 29-bit (1) CAN-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="41" column="9" bodyfile="include/lely/co/sdo.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a6fc635f9e3b258497084bc7ec35d261f" prot="public" static="no">
+        <name>CO_DEFSTRUCT_SDO_PAR</name>
+        <initializer>0x0022</initializer>
+        <briefdescription>
+<para>The data type (and object index) of an SDO parameter record. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="44" column="9" bodyfile="include/lely/co/sdo.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a1a91c53ae75370c1dc40eae381ccfd7b" prot="public" static="no">
+        <name>CO_SDO_PAR_INIT</name>
+        <initializer>	{ \
+		3, <ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>, <ref refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" kindref="member">CO_SDO_COBID_VALID</ref>, 0 \
+	}</initializer>
+        <briefdescription>
+<para>The static initializer for struct <ref refid="structco__sdo__par" kindref="compound">co_sdo_par</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="59" column="9" bodyfile="include/lely/co/sdo.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a3a17949a27aecb23f2c67e37ed10278f" prot="public" static="no">
+        <name>CO_SDO_AC_TOGGLE</name>
+        <initializer>UINT32_C(0x05030000)</initializer>
+        <briefdescription>
+<para>SDO abort code: Toggle bit not altered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="65" column="9" bodyfile="include/lely/co/sdo.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ad9bef457fcd403465d7a37d9ea2d1d3c" prot="public" static="no">
+        <name>CO_SDO_AC_TIMEOUT</name>
+        <initializer>UINT32_C(0x05040000)</initializer>
+        <briefdescription>
+<para>SDO abort code: SDO protocol timed out. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="68" column="9" bodyfile="include/lely/co/sdo.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a54bb32cdbdb7cd47b483aafb4cafb89e" prot="public" static="no">
+        <name>CO_SDO_AC_NO_CS</name>
+        <initializer>UINT32_C(0x05040001)</initializer>
+        <briefdescription>
+<para>SDO abort code: Client/server command specifier not valid or unknown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="71" column="9" bodyfile="include/lely/co/sdo.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ac09d6da500956e74120f194ff18857d8" prot="public" static="no">
+        <name>CO_SDO_AC_BLK_SIZE</name>
+        <initializer>UINT32_C(0x05040002)</initializer>
+        <briefdescription>
+<para>SDO abort code: Invalid block size (block mode only). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="74" column="9" bodyfile="include/lely/co/sdo.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a6a51de2de61f5c4320ee390053f5b57d" prot="public" static="no">
+        <name>CO_SDO_AC_BLK_SEQ</name>
+        <initializer>UINT32_C(0x05040003)</initializer>
+        <briefdescription>
+<para>SDO abort code: Invalid sequence number (block mode only). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="77" column="9" bodyfile="include/lely/co/sdo.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ae2757ff4f932931bd46827e8e6f09260" prot="public" static="no">
+        <name>CO_SDO_AC_BLK_CRC</name>
+        <initializer>UINT32_C(0x05040004)</initializer>
+        <briefdescription>
+<para>SDO abort code: CRC error (block mode only). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="80" column="9" bodyfile="include/lely/co/sdo.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ae89d662d579885efebe5b9d6fc462a01" prot="public" static="no">
+        <name>CO_SDO_AC_NO_MEM</name>
+        <initializer>UINT32_C(0x05040005)</initializer>
+        <briefdescription>
+<para>SDO abort code: Out of memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="83" column="9" bodyfile="include/lely/co/sdo.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a6a82593734e990a8aa1c7574610f8c08" prot="public" static="no">
+        <name>CO_SDO_AC_NO_ACCESS</name>
+        <initializer>UINT32_C(0x06010000)</initializer>
+        <briefdescription>
+<para>SDO abort code: Unsupported access to an object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="86" column="9" bodyfile="include/lely/co/sdo.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a25c2cb12afcaa27882ab855475cc73f8" prot="public" static="no">
+        <name>CO_SDO_AC_NO_READ</name>
+        <initializer>UINT32_C(0x06010001)</initializer>
+        <briefdescription>
+<para>SDO abort code: Attempt to read a write only object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="89" column="9" bodyfile="include/lely/co/sdo.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1af36abf5094e1cfeff01144b7ebaaa65f" prot="public" static="no">
+        <name>CO_SDO_AC_NO_WRITE</name>
+        <initializer>UINT32_C(0x06010002)</initializer>
+        <briefdescription>
+<para>SDO abort code: Attempt to write a read only object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="92" column="9" bodyfile="include/lely/co/sdo.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" prot="public" static="no">
+        <name>CO_SDO_AC_NO_OBJ</name>
+        <initializer>UINT32_C(0x06020000)</initializer>
+        <briefdescription>
+<para>SDO abort code: Object does not exist in the object dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="95" column="9" bodyfile="include/lely/co/sdo.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ad06a23376e63fb3f9d2c788e17810ad2" prot="public" static="no">
+        <name>CO_SDO_AC_NO_PDO</name>
+        <initializer>UINT32_C(0x06040041)</initializer>
+        <briefdescription>
+<para>SDO abort code: Object cannot be mapped to the PDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="98" column="9" bodyfile="include/lely/co/sdo.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" prot="public" static="no">
+        <name>CO_SDO_AC_PDO_LEN</name>
+        <initializer>UINT32_C(0x06040042)</initializer>
+        <briefdescription>
+<para>SDO abort code: The number and length of the objects to be mapped would exceed the PDO length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="104" column="9" bodyfile="include/lely/co/sdo.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a794aeab4a922e25e8c1959d23acabfaa" prot="public" static="no">
+        <name>CO_SDO_AC_PARAM</name>
+        <initializer>UINT32_C(0x06040043)</initializer>
+        <briefdescription>
+<para>SDO abort code: General parameter incompatibility reason. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="107" column="9" bodyfile="include/lely/co/sdo.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ae7656d49c01f463ce399033f12bcd500" prot="public" static="no">
+        <name>CO_SDO_AC_COMPAT</name>
+        <initializer>UINT32_C(0x06040047)</initializer>
+        <briefdescription>
+<para>SDO abort code: General internal incompatibility in the device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="110" column="9" bodyfile="include/lely/co/sdo.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a7b4f4048653b6bc31dd2110a82ff8e46" prot="public" static="no">
+        <name>CO_SDO_AC_HARDWARE</name>
+        <initializer>UINT32_C(0x06060000)</initializer>
+        <briefdescription>
+<para>SDO abort code: Access failed due to a hardware error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="113" column="9" bodyfile="include/lely/co/sdo.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a67474a6c016ca18469eca529353ebb5a" prot="public" static="no">
+        <name>CO_SDO_AC_TYPE_LEN</name>
+        <initializer>UINT32_C(0x06070010)</initializer>
+        <briefdescription>
+<para>SDO abort code: Data type does not match, length of service parameter does not match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="119" column="9" bodyfile="include/lely/co/sdo.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a3ab1d4126e511e6b468fd0c47e34c204" prot="public" static="no">
+        <name>CO_SDO_AC_TYPE_LEN_HI</name>
+        <initializer>UINT32_C(0x06070012)</initializer>
+        <briefdescription>
+<para>SDO abort code: Data type does not match, length of service parameter too high. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="125" column="9" bodyfile="include/lely/co/sdo.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a07d93b8232ddebe30d283be060a22675" prot="public" static="no">
+        <name>CO_SDO_AC_TYPE_LEN_LO</name>
+        <initializer>UINT32_C(0x06070013)</initializer>
+        <briefdescription>
+<para>SDO abort code: Data type does not match, length of service parameter too low. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="131" column="9" bodyfile="include/lely/co/sdo.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" prot="public" static="no">
+        <name>CO_SDO_AC_NO_SUB</name>
+        <initializer>UINT32_C(0x06090011)</initializer>
+        <briefdescription>
+<para>SDO abort code: Sub-index does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="134" column="9" bodyfile="include/lely/co/sdo.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ac539ad462212ab0edd967ec8b73707f1" prot="public" static="no">
+        <name>CO_SDO_AC_PARAM_VAL</name>
+        <initializer>UINT32_C(0x06090030)</initializer>
+        <briefdescription>
+<para>SDO abort code: Invalid value for parameter (download only). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="137" column="9" bodyfile="include/lely/co/sdo.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a9d4ba7d30b0cba232e5794952ed4233f" prot="public" static="no">
+        <name>CO_SDO_AC_PARAM_HI</name>
+        <initializer>UINT32_C(0x06090031)</initializer>
+        <briefdescription>
+<para>SDO abort code: Value of parameter written too high (download only). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="140" column="9" bodyfile="include/lely/co/sdo.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a1fb4dc24e82f867714effcf49ca74f2f" prot="public" static="no">
+        <name>CO_SDO_AC_PARAM_LO</name>
+        <initializer>UINT32_C(0x06090032)</initializer>
+        <briefdescription>
+<para>SDO abort code: Value of parameter written too low (download only). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="143" column="9" bodyfile="include/lely/co/sdo.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1afe9244eadac596610bf16e301d6c4ac5" prot="public" static="no">
+        <name>CO_SDO_AC_PARAM_RANGE</name>
+        <initializer>UINT32_C(0x06090036)</initializer>
+        <briefdescription>
+<para>SDO abort code: Maximum value is less than minimum value (download only). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="146" column="9" bodyfile="include/lely/co/sdo.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a8e5a7e1f408affc34381bc860af821d7" prot="public" static="no">
+        <name>CO_SDO_AC_NO_SDO</name>
+        <initializer>UINT32_C(0x060a0023)</initializer>
+        <briefdescription>
+<para>SDO abort code: Resource not available: SDO connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="149" column="9" bodyfile="include/lely/co/sdo.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a72b11ca6f2d1d6323056312dabbb51f8" prot="public" static="no">
+        <name>CO_SDO_AC_ERROR</name>
+        <initializer>UINT32_C(0x08000000)</initializer>
+        <briefdescription>
+<para>SDO abort code: General error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="152" column="9" bodyfile="include/lely/co/sdo.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a7951b06286161ce06f762bd8b09f040e" prot="public" static="no">
+        <name>CO_SDO_AC_DATA</name>
+        <initializer>UINT32_C(0x08000020)</initializer>
+        <briefdescription>
+<para>SDO abort code: Data cannot be transferred or stored to the application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="155" column="9" bodyfile="include/lely/co/sdo.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ac1f9aa157688d12f92b098d5aa44961e" prot="public" static="no">
+        <name>CO_SDO_AC_DATA_CTL</name>
+        <initializer>UINT32_C(0x08000021)</initializer>
+        <briefdescription>
+<para>SDO abort code: Data cannot be transferred or stored to the application because of local control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="161" column="9" bodyfile="include/lely/co/sdo.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a91229d6f5f70c545fb1741a7a1aba7e5" prot="public" static="no">
+        <name>CO_SDO_AC_DATA_DEV</name>
+        <initializer>UINT32_C(0x08000022)</initializer>
+        <briefdescription>
+<para>SDO abort code: Data cannot be transferred or stored to the application because of the present device state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="167" column="9" bodyfile="include/lely/co/sdo.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a34fadcf2f547fec7cb3e364016f120a2" prot="public" static="no">
+        <name>CO_SDO_AC_NO_OD</name>
+        <initializer>UINT32_C(0x08000023)</initializer>
+        <briefdescription>
+<para>SDO abort code: Object dictionary dynamic generation fails or no object dictionary is present (e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>object dictionary is generated from file and generation fails because of a file error). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="174" column="9" bodyfile="include/lely/co/sdo.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ab399074c40f12667681127c9e9ac7a0e" prot="public" static="no">
+        <name>CO_SDO_AC_NO_DATA</name>
+        <initializer>UINT32_C(0x08000024)</initializer>
+        <briefdescription>
+<para>SDO abort code: No data available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="177" column="9" bodyfile="include/lely/co/sdo.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1adff8e21f6e9b6bf5efaaf25fd1a9c6d3" prot="public" static="no">
+        <name>CO_SDO_REQ_MEMBUF_SIZE</name>
+        <initializer>8</initializer>
+        <briefdescription>
+<para>The default size (in bytes) of an SDO upload/download request memory buffer in the absence of dynamic memory allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default size is large enough to accomodate all basic data types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="186" column="9" bodyfile="include/lely/co/sdo.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1ae3ad39390f8bb3dcac790f13286692a0" prot="public" static="no">
+        <name>CO_NUM_SDOS</name>
+        <initializer>128</initializer>
+        <briefdescription>
+<para>The maximum number of Client/Server-SDOs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="191" column="9" bodyfile="include/lely/co/sdo.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="include_2lely_2co_2sdo_8h_1a822ffaf7d8903d808e7838abd8167a66" prot="public" static="no">
+        <name>CO_SDO_REQ_INIT</name>
+        <param><defname>req</defname></param>
+        <initializer>	{ \
+		0, NULL, 0, 0, &amp;(req).membuf_, \
+				{ (req).begin_, (req).begin_, \
+					(req).begin_ + <ref refid="include_2lely_2co_2sdo_8h_1adff8e21f6e9b6bf5efaaf25fd1a9c6d3" kindref="member">CO_SDO_REQ_MEMBUF_SIZE</ref> }, \
+		{ \
+			0 \
+		} \
+	}</initializer>
+        <briefdescription>
+<para>The static initializer for struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="232" column="9" bodyfile="include/lely/co/sdo.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1ac4d4efe09f15892a13f6f20271b279b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* co_sdo_ac2str</definition>
+        <argsstring>(co_unsigned32_t ac)</argsstring>
+        <name>co_sdo_ac2str</name>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+<para>Returns a string describing an SDO abort code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="253" column="12" bodyfile="lib/co/sdo.c" bodystart="57" bodyend="106" declfile="include/lely/co/sdo.h" declline="253" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1a9f239f9e9712b8120dc32b4c00628835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_sdo_req_init</definition>
+        <argsstring>(struct co_sdo_req *req, struct membuf *buf)</argsstring>
+        <name>co_sdo_req_init</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a CANopen SDO upload/download request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen SDO download request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the memory buffer used to store the serialized value. If NULL, an internal buffer is used.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="include_2lely_2co_2sdo_8h_1a62160f6d2c9ece52a06c1892c34c472f" kindref="member">co_sdo_req_fini()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="264" column="6" bodyfile="lib/co/sdo.c" bodystart="109" bodyend="116" declfile="include/lely/co/sdo.h" declline="264" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1a62160f6d2c9ece52a06c1892c34c472f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_sdo_req_fini</definition>
+        <argsstring>(struct co_sdo_req *req)</argsstring>
+        <name>co_sdo_req_fini</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+<para>Finalizes a CANopen SDO upload/download request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="include_2lely_2co_2sdo_8h_1a9f239f9e9712b8120dc32b4c00628835" kindref="member">co_sdo_req_init()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="267" column="6" bodyfile="lib/co/sdo.c" bodystart="119" bodyend="124" declfile="include/lely/co/sdo.h" declline="267" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1aada01998badaf53e901e9a9fedf054a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_sdo_req_clear</definition>
+        <argsstring>(struct co_sdo_req *req)</argsstring>
+        <name>co_sdo_req_clear</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+<para>Clears a CANopen SDO upload/download request, including its buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="270" column="6" bodyfile="lib/co/sdo.c" bodystart="127" bodyend="134" declfile="include/lely/co/sdo.h" declline="270" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1a8dc8161db0a12148da429336ed3f85c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool co_sdo_req_first</definition>
+        <argsstring>(const struct co_sdo_req *req)</argsstring>
+        <name>co_sdo_req_first</name>
+        <param>
+          <type>const struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+<para>Returns <bold>true</bold> if the specified request includes the first segment, and <bold>false</bold> otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="384" column="1" bodyfile="include/lely/co/sdo.h" bodystart="384" bodyend="387" declfile="include/lely/co/sdo.h" declline="276" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1aef8084ad6b5a178e3179df7e8cb03403" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool co_sdo_req_last</definition>
+        <argsstring>(const struct co_sdo_req *req)</argsstring>
+        <name>co_sdo_req_last</name>
+        <param>
+          <type>const struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+<para>Returns <bold>true</bold> if the specified request includes the last segment, and <bold>false</bold> otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="390" column="1" bodyfile="include/lely/co/sdo.h" bodystart="390" bodyend="393" declfile="include/lely/co/sdo.h" declline="282" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1ad58f8ddc7ce7aad5ac65c5404fab8f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int co_sdo_req_dn</definition>
+        <argsstring>(struct co_sdo_req *req, const void **pptr, size_t *pnbyte, co_unsigned32_t *pac)</argsstring>
+        <name>co_sdo_req_dn</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>const void **</type>
+          <declname>pptr</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>pnbyte</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t *</type>
+          <declname>pac</declname>
+        </param>
+        <briefdescription>
+<para>Copies the next segment of the specified CANopen SDO download request to the internal buffer and, on the last segment, returns the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen SDO download request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a pointer which, on success, points to the first byte in the buffer (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pnbyte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value which, on success, contains the total number of bytes in the buffer (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value which, on error, contains the SDO abort code (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if all segments have been copied, and -1 if one or more segments remain or an error has occurred. In the latter case, *<bold>pac</bold> contains the SDO abort code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="300" column="5" bodyfile="lib/co/sdo.c" bodystart="137" bodyend="158" declfile="include/lely/co/sdo.h" declline="300" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int co_sdo_req_dn_val</definition>
+        <argsstring>(struct co_sdo_req *req, co_unsigned16_t type, void *val, co_unsigned32_t *pac)</argsstring>
+        <name>co_sdo_req_dn_val</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t *</type>
+          <declname>pac</declname>
+        </param>
+        <briefdescription>
+<para>Copies the next segment of the specified CANopen SDO download request to the internal buffer and, on the last segment, reads the value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen SDO download request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type of the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the value to be downloaded (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value which, on error, contains the SDO abort code (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if all segments have been copied and the value has been read, and -1 if one or more segments remain or an error has occurred. In the latter case, *<bold>pac</bold> contains the SDO abort code.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="val_8h_1a1e1751e129f4a5c51e19954e842c97b1" kindref="member">co_val_read()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="319" column="5" bodyfile="lib/co/sdo.c" bodystart="161" bodyend="199" declfile="include/lely/co/sdo.h" declline="319" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1a74a0664122607b0982c68afac878afc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int co_sdo_req_dn_file</definition>
+        <argsstring>(struct co_sdo_req *req, const char *filename, co_unsigned32_t *pac)</argsstring>
+        <name>co_sdo_req_dn_file</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t *</type>
+          <declname>pac</declname>
+        </param>
+        <briefdescription>
+<para>Copies the next segment of the specified CANopen SDO download request to the internal buffer and, on the last segment, writes the value to the specified file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen SDO download request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the name of the file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value which, on error, contains the SDO abort code (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if all segments have been copied and the value has been read, and -1 if one or more segments remain or an error has occurred. In the latter case, *<bold>pac</bold> contains the SDO abort code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="336" column="5" declfile="include/lely/co/sdo.h" declline="336" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1ac3db841177631aa15d6c3af4889cc2d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_sdo_req_up</definition>
+        <argsstring>(struct co_sdo_req *req, const void *ptr, size_t n)</argsstring>
+        <name>co_sdo_req_up</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Writes the specified bytes to a buffer and constructs a CANopen SDO upload request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen SDO upload request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the bytes to be uploaded. It is the responsibility of the user to ensure that the buffer remains valid until the request completes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes at <bold>ptr</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="349" column="6" bodyfile="lib/co/sdo.c" bodystart="249" bodyend="258" declfile="include/lely/co/sdo.h" declline="349" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1a4c3d79540ba199e9354bdd73b2dc0f82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int co_sdo_req_up_val</definition>
+        <argsstring>(struct co_sdo_req *req, co_unsigned16_t type, const void *val, co_unsigned32_t *pac)</argsstring>
+        <name>co_sdo_req_up_val</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t *</type>
+          <declname>pac</declname>
+        </param>
+        <briefdescription>
+<para>Writes the specified value to a buffer and constructs a CANopen SDO upload request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen SDO upload request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type of the value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the value to be uploaded. In case of string or domains, this MUST be the address of pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value which, on error, contains the SDO abort code (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, *<bold>pac</bold> contains the SDO abort code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="365" column="5" bodyfile="lib/co/sdo.c" bodystart="261" bodyend="293" declfile="include/lely/co/sdo.h" declline="365" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2lely_2co_2sdo_8h_1a8698917a1a6d1266e7ba41ad32de5be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int co_sdo_req_up_file</definition>
+        <argsstring>(struct co_sdo_req *req, const char *filename, co_unsigned32_t *pac)</argsstring>
+        <name>co_sdo_req_up_file</name>
+        <param>
+          <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t *</type>
+          <declname>pac</declname>
+        </param>
+        <briefdescription>
+<para>Loads the specified file into a buffer and constructs a CANopen SDO upload request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen SDO upload request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the name of the file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of a value which, on error, contains the SDO abort code (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, *<bold>pac</bold> contains the SDO abort code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/sdo.h" line="380" column="5" declfile="include/lely/co/sdo.h" declline="380" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the CANopen library; it contains the Service Data Object (SDO) declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_SDO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_SDO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="type_8h" kindref="compound">lely/co/type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="membuf_8h" kindref="compound">lely/util/membuf.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_SDO_INLINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_SDO_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="include_2lely_2co_2sdo_8h_1ac2da4e5a29faf5e2d9013cd895d09c0d" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_COBID_VALID<sp/>UINT32_C(0x80000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="include_2lely_2co_2sdo_8h_1aa7df4b67b1c4a4ac637064a4320ecb8e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_COBID_FRAME<sp/>UINT32_C(0x20000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="include_2lely_2co_2sdo_8h_1a6fc635f9e3b258497084bc7ec35d261f" refkind="member"><highlight class="preprocessor">#define<sp/>CO_DEFSTRUCT_SDO_PAR<sp/>0x0022</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="structco__sdo__par" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__sdo__par" kindref="compound">co_sdo_par</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structco__sdo__par_1a34f68074185d112366ce960faeaa835f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__sdo__par_1a34f68074185d112366ce960faeaa835f" kindref="member">n</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structco__sdo__par_1ad34e28d47a0ae2de04a8fe8455de8a90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/><ref refid="structco__sdo__par_1ad34e28d47a0ae2de04a8fe8455de8a90" kindref="member">cobid_req</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structco__sdo__par_1a059b2306196e86ef0e6eb450e39bddbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/><ref refid="structco__sdo__par_1a059b2306196e86ef0e6eb450e39bddbe" kindref="member">cobid_res</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structco__sdo__par_1aedbb4a63e97363e0c170eb52ec5b32a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned8_t<sp/><ref refid="structco__sdo__par_1aedbb4a63e97363e0c170eb52ec5b32a3" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="include_2lely_2co_2sdo_8h_1a1a91c53ae75370c1dc40eae381ccfd7b" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_PAR_INIT<sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3,<sp/>CO_SDO_COBID_VALID,<sp/>CO_SDO_COBID_VALID,<sp/>0<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="include_2lely_2co_2sdo_8h_1a3a17949a27aecb23f2c67e37ed10278f" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_TOGGLE<sp/>UINT32_C(0x05030000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="include_2lely_2co_2sdo_8h_1ad9bef457fcd403465d7a37d9ea2d1d3c" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_TIMEOUT<sp/>UINT32_C(0x05040000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="include_2lely_2co_2sdo_8h_1a54bb32cdbdb7cd47b483aafb4cafb89e" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_CS<sp/>UINT32_C(0x05040001)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="include_2lely_2co_2sdo_8h_1ac09d6da500956e74120f194ff18857d8" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_BLK_SIZE<sp/>UINT32_C(0x05040002)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="include_2lely_2co_2sdo_8h_1a6a51de2de61f5c4320ee390053f5b57d" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_BLK_SEQ<sp/>UINT32_C(0x05040003)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="include_2lely_2co_2sdo_8h_1ae2757ff4f932931bd46827e8e6f09260" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_BLK_CRC<sp/>UINT32_C(0x05040004)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="include_2lely_2co_2sdo_8h_1ae89d662d579885efebe5b9d6fc462a01" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_MEM<sp/>UINT32_C(0x05040005)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="include_2lely_2co_2sdo_8h_1a6a82593734e990a8aa1c7574610f8c08" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_ACCESS<sp/>UINT32_C(0x06010000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="include_2lely_2co_2sdo_8h_1a25c2cb12afcaa27882ab855475cc73f8" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_READ<sp/>UINT32_C(0x06010001)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="include_2lely_2co_2sdo_8h_1af36abf5094e1cfeff01144b7ebaaa65f" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_WRITE<sp/>UINT32_C(0x06010002)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="include_2lely_2co_2sdo_8h_1a9e5a02d8054993e6659df57f34d2adcc" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_OBJ<sp/>UINT32_C(0x06020000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="include_2lely_2co_2sdo_8h_1ad06a23376e63fb3f9d2c788e17810ad2" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_PDO<sp/>UINT32_C(0x06040041)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="include_2lely_2co_2sdo_8h_1acd6b037a08e94d3b3b00c90b901cd8c2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_AC_PDO_LEN<sp/>UINT32_C(0x06040042)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="include_2lely_2co_2sdo_8h_1a794aeab4a922e25e8c1959d23acabfaa" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_PARAM<sp/>UINT32_C(0x06040043)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="include_2lely_2co_2sdo_8h_1ae7656d49c01f463ce399033f12bcd500" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_COMPAT<sp/>UINT32_C(0x06040047)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="include_2lely_2co_2sdo_8h_1a7b4f4048653b6bc31dd2110a82ff8e46" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_HARDWARE<sp/>UINT32_C(0x06060000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="include_2lely_2co_2sdo_8h_1a67474a6c016ca18469eca529353ebb5a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_AC_TYPE_LEN<sp/>UINT32_C(0x06070010)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="include_2lely_2co_2sdo_8h_1a3ab1d4126e511e6b468fd0c47e34c204" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_AC_TYPE_LEN_HI<sp/>UINT32_C(0x06070012)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="include_2lely_2co_2sdo_8h_1a07d93b8232ddebe30d283be060a22675" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_AC_TYPE_LEN_LO<sp/>UINT32_C(0x06070013)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="include_2lely_2co_2sdo_8h_1abb50061b8c99efec25de108c98d4bc3c" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_SUB<sp/>UINT32_C(0x06090011)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="include_2lely_2co_2sdo_8h_1ac539ad462212ab0edd967ec8b73707f1" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_PARAM_VAL<sp/>UINT32_C(0x06090030)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="include_2lely_2co_2sdo_8h_1a9d4ba7d30b0cba232e5794952ed4233f" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_PARAM_HI<sp/>UINT32_C(0x06090031)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="include_2lely_2co_2sdo_8h_1a1fb4dc24e82f867714effcf49ca74f2f" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_PARAM_LO<sp/>UINT32_C(0x06090032)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="include_2lely_2co_2sdo_8h_1afe9244eadac596610bf16e301d6c4ac5" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_PARAM_RANGE<sp/>UINT32_C(0x06090036)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="include_2lely_2co_2sdo_8h_1a8e5a7e1f408affc34381bc860af821d7" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_SDO<sp/>UINT32_C(0x060a0023)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="include_2lely_2co_2sdo_8h_1a72b11ca6f2d1d6323056312dabbb51f8" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_ERROR<sp/>UINT32_C(0x08000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="include_2lely_2co_2sdo_8h_1a7951b06286161ce06f762bd8b09f040e" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_DATA<sp/>UINT32_C(0x08000020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="include_2lely_2co_2sdo_8h_1ac1f9aa157688d12f92b098d5aa44961e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_AC_DATA_CTL<sp/>UINT32_C(0x08000021)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="include_2lely_2co_2sdo_8h_1a91229d6f5f70c545fb1741a7a1aba7e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_AC_DATA_DEV<sp/>UINT32_C(0x08000022)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="include_2lely_2co_2sdo_8h_1a34fadcf2f547fec7cb3e364016f120a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_OD<sp/>UINT32_C(0x08000023)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="include_2lely_2co_2sdo_8h_1ab399074c40f12667681127c9e9ac7a0e" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_AC_NO_DATA<sp/>UINT32_C(0x08000024)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CO_SDO_REQ_MEMBUF_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="include_2lely_2co_2sdo_8h_1adff8e21f6e9b6bf5efaaf25fd1a9c6d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_REQ_MEMBUF_SIZE<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="include_2lely_2co_2sdo_8h_1ae3ad39390f8bb3dcac790f13286692a0" refkind="member"><highlight class="preprocessor">#define<sp/>CO_NUM_SDOS<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="structco__sdo__req" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>{</highlight></codeline>
+<codeline lineno="200" refid="structco__sdo__req_1a3f40a5845cd58a318bec048270d16a04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req_1a3f40a5845cd58a318bec048270d16a04" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="202" refid="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structco__sdo__req_1a49d35e8b9a72d3427c965f3c08487de7" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="204" refid="structco__sdo__req_1abfe41b89a836e6f5fa58ac816b25ea94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req_1abfe41b89a836e6f5fa58ac816b25ea94" kindref="member">nbyte</ref>;</highlight></codeline>
+<codeline lineno="209" refid="structco__sdo__req_1a15559c73eafd9a1fb19589b277c4d60d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req_1a15559c73eafd9a1fb19589b277c4d60d" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="215" refid="structco__sdo__req_1a2bd8c452c4652eb2668c57d4f939c680" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmembuf" kindref="compound">membuf</ref><sp/>*<ref refid="structco__sdo__req_1a2bd8c452c4652eb2668c57d4f939c680" kindref="member">membuf</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmembuf" kindref="compound">membuf</ref><sp/><ref refid="structco__sdo__req_1ab7ed7a3f3f0054b65778e3b698fba328" kindref="member">membuf_</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="structco__sdo__req_1ad3ce844ce637d38f30ea368bd5776c16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req_1ad3ce844ce637d38f30ea368bd5776c16" kindref="member">begin_</ref>[<ref refid="include_2lely_2co_2sdo_8h_1adff8e21f6e9b6bf5efaaf25fd1a9c6d3" kindref="member">CO_SDO_REQ_MEMBUF_SIZE</ref>];</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor">#if<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="include_2lely_2co_2sdo_8h_1a822ffaf7d8903d808e7838abd8167a66" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_REQ_INIT(req)<sp/>\</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>NULL,<sp/>0,<sp/>0,<sp/>&amp;(req).membuf_,<sp/>\</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>(req).begin_,<sp/>(req).begin_,<sp/>\</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(req).begin_<sp/>+<sp/>CO_SDO_REQ_MEMBUF_SIZE<sp/>},<sp/>\</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/>\</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_REQ_INIT(req)<sp/>\</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>NULL,<sp/>0,<sp/>0,<sp/>&amp;(req).membuf_,<sp/>MEMBUF_INIT<sp/>\</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2lely_2co_2sdo_8h_1ac4d4efe09f15892a13f6f20271b279b4" kindref="member">co_sdo_ac2str</ref>(co_unsigned32_t<sp/>ac);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a9f239f9e9712b8120dc32b4c00628835" kindref="member">co_sdo_req_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmembuf" kindref="compound">membuf</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a62160f6d2c9ece52a06c1892c34c472f" kindref="member">co_sdo_req_fini</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1aada01998badaf53e901e9a9fedf054a1" kindref="member">co_sdo_req_clear</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal">LELY_CO_SDO_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a8dc8161db0a12148da429336ed3f85c5" kindref="member">co_sdo_req_first</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">LELY_CO_SDO_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1aef8084ad6b5a178e3179df7e8cb03403" kindref="member">co_sdo_req_last</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1ad58f8ddc7ce7aad5ac65c5404fab8f3c" kindref="member">co_sdo_req_dn</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*pnbyte,</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>*pac);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a3755a15620c5cc1d965ee4863189f901" kindref="member">co_sdo_req_dn_val</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/>co_unsigned16_t<sp/>type,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val,</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>*pac);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="include_2lely_2co_2sdo_8h_1a74a0664122607b0982c68afac878afc5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a74a0664122607b0982c68afac878afc5" kindref="member">co_sdo_req_dn_file</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>*pac);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1ac3db841177631aa15d6c3af4889cc2d4" kindref="member">co_sdo_req_up</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a4c3d79540ba199e9354bdd73b2dc0f82" kindref="member">co_sdo_req_up_val</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/>co_unsigned16_t<sp/>type,</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val,<sp/>co_unsigned32_t<sp/>*pac);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="include_2lely_2co_2sdo_8h_1a8698917a1a6d1266e7ba41ad32de5be3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2lely_2co_2sdo_8h_1a8698917a1a6d1266e7ba41ad32de5be3" kindref="member">co_sdo_req_up_file</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>co_unsigned32_t<sp/>*pac);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal">LELY_CO_SDO_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="include_2lely_2co_2sdo_8h_1a8dc8161db0a12148da429336ed3f85c5" refkind="member"><highlight class="normal"><ref refid="include_2lely_2co_2sdo_8h_1a8dc8161db0a12148da429336ed3f85c5" kindref="member">co_sdo_req_first</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req)</highlight></codeline>
+<codeline lineno="385"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>req-&gt;<ref refid="structco__sdo__req_1a15559c73eafd9a1fb19589b277c4d60d" kindref="member">offset</ref><sp/>==<sp/>0u;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal">LELY_CO_SDO_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390" refid="include_2lely_2co_2sdo_8h_1aef8084ad6b5a178e3179df7e8cb03403" refkind="member"><highlight class="normal"><ref refid="include_2lely_2co_2sdo_8h_1aef8084ad6b5a178e3179df7e8cb03403" kindref="member">co_sdo_req_last</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref><sp/>*req)</highlight></codeline>
+<codeline lineno="391"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>req-&gt;<ref refid="structco__sdo__req_1a15559c73eafd9a1fb19589b277c4d60d" kindref="member">offset</ref><sp/>+<sp/>req-&gt;<ref refid="structco__sdo__req_1abfe41b89a836e6f5fa58ac816b25ea94" kindref="member">nbyte</ref><sp/>&gt;=<sp/>req-&gt;<ref refid="structco__sdo__req_1a3f40a5845cd58a318bec048270d16a04" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CO_SDO_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/co/sdo.h"/>
+  </compounddef>
+</doxygen>

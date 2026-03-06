@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-ustring_8cpp" kind="file" language="C++">
+    <compoundname>test-ustring.cpp</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="ustring_8h" local="no">lely/util/ustring.h</includes>
+    <includes refid="include_2lely_2util_2util_8h" local="no">lely/util/util.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>assert.h</label>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>unit-tests/util/test-ustring.cpp</label>
+        <link refid="test-ustring_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="4">
+        <label>lely/util/ustring.h</label>
+        <link refid="ustring_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>str16len()</header>
+      <memberdef kind="function" id="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16Len_Empty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16Len_Empty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len()</ref> is called with a pointer to an empty 16-bit Unicode string</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="47" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1aea976ec59656f949ea5d68b28d71b6be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16Len_OneLength)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16Len_OneLength</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len()</ref> is called with a pointer to a 16-bit Unicode string with one character</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="55" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1abaaf14f4e5ebb458aa45c318b89518fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16Len_FullString)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16Len_FullString</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len()</ref> is called with a pointer to a 16-bit Unicode string with multiple characters</para>
+<para><bold>Then</bold> the number of characters in the string is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="63" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>str16ncpy()</header>
+      <memberdef kind="function" id="test-ustring_8cpp_1a489cf3da5dd49509dcd0cf3bb199f38b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCpy_Zero)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCpy_Zero</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy()</ref> is called with two null pointers and zero characters to copy</para>
+<para><bold>Then</bold> a null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="78" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a0d26ddd2e154c7731facda4f1dca5dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCpy_EmptySrcZeroBuffer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCpy_EmptySrcZeroBuffer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy()</ref> is called with a null pointer as destination, a pointer to an empty 16-bit Unicode string as source and zero characters to copy</para>
+<para><bold>Then</bold> a null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="88" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a8911b347be45ab2129d08fc88f20b0a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCpy_EmptySrcExactBuffer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCpy_EmptySrcExactBuffer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a single 16-bit character destination buffer </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy()</ref> is called with a pointer to the destination buffer, a pointer to an empty 16-bit Unicode string as source and 1 character to copy</para>
+<para><bold>Then</bold> a pointer to the buffer is returned, the buffer contains the null character </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="102" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="102" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1ae02c0408089d5db30b31f431fb94dc90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCpy_EmptySrcBigBuffer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCpy_EmptySrcBigBuffer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a destination buffer for 16-bit characters </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy()</ref> is called with a pointer to the destination buffer, a pointer to an empty 16-bit Unicode string as source and a number of characters to copy equal to the length of the buffer</para>
+<para><bold>Then</bold> a pointer to the buffer is returned, the buffer is zeroed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="118" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="118" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a1047005303c6dfad7352a813ef33b0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCpy_TooBigBuffer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCpy_TooBigBuffer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a destination buffer for 16-bit characters </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy()</ref> is called with a pointer to the destination buffer, a pointer to a non-empty 16-bit Unicode string shorter than the buffer as source and a number of characters to copy equal to the length of the buffer</para>
+<para><bold>Then</bold> a pointer to the buffer is returned, the buffer contains the string as prefix and remaining characters are zeroed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="137" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="137" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1ae5b24b55160035957e2ac350d5f49578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCpy_TooSmallBuffer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCpy_TooSmallBuffer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a destination buffer for 16-bit characters </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy()</ref> is called with a pointer to the destination buffer, a pointer to a non-empty 16-bit Unicode string longer than the buffer as source and a number of characters to copy equal to the length of the buffer</para>
+<para><bold>Then</bold> a pointer to the buffer is returned, the buffer is filled until its end with prefix characters of the string </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="162" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="162" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a18323412f1909d121b4685d71fa5618a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCpy_ExactBuffer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCpy_ExactBuffer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> a destination buffer for 16-bit characters </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy()</ref> is called with a pointer to the destination buffer, a pointer to a non-empty 16-bit Unicode string of equal length to the buffer as source and a number of characters to copy equal to the length of the string</para>
+<para><bold>Then</bold> a pointer to the buffer is returned, the buffer contains the same characters as the string but is not null-terminated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="182" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="182" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>str16ncmp()</header>
+      <memberdef kind="function" id="test-ustring_8cpp_1a6334289784f2a9336ea8135f3db60e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_Zero)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_Zero</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two null pointers and zero characters to compare</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="203" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1ae24cb824db086229df1b1e65cbe8772b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_EmptyStrFirst)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_EmptyStrFirst</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different 16-bit Unicode strings and one character to compare, the first string is empty, the second is not</para>
+<para><bold>Then</bold> a value less than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="214" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a9faf13efdec8a26f7a28f2e2eee06fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_EmptyStrSecond)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_EmptyStrSecond</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different 16-bit Unicode strings and one character to compare, the second string is empty, the first is not</para>
+<para><bold>Then</bold> a value greater than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="225" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a4e30402192035335c71ae376994a128b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_Equal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_Equal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to the same 16-bit Unicode string and full string length to compare</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="235" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1ae3f46e1fe51e90785ac02c2815314c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_EqualSmallN)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_EqualSmallN</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to the same 16-bit Unicode string and a number of characters to compare less than the length of the string</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="246" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a18bdb32c66005de195468146ec734ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_EqualEmpty)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_EqualEmpty</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to empty 16-bit Unicode strings and one character to compare</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="256" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="256" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1ac91e9af8cebacee280257cc9b96e1229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_LessThan)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_LessThan</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the longer one, the longer string is passed as first argument, the shorter string starts with a character that&apos;s greater than the first character of the longer string</para>
+<para><bold>Then</bold> a value less than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="269" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="269" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1aaaeafc89f9f0dc4cb2ee81c993c37e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_GreaterThan)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_GreaterThan</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the longer one, the shorter string is passed as first argument, the shorter string starts with a character that&apos;s greater than the first character of the longer string</para>
+<para><bold>Then</bold> a value greater than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="284" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="284" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a99fe1fc7cafc97bf68875cd36df4442e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_CommonPrefixGreaterThan)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_CommonPrefixGreaterThan</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the longer one, the shorter string is passed as first argument, both strings have a common prefix until the shorter string&apos;s last character that&apos;s greater than the corresponding character of the longer string</para>
+<para><bold>Then</bold> a value greater than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="299" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="299" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a60f0279763c9908c06f69602a9bd4718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_CommonPrefixLessThan)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_CommonPrefixLessThan</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the longer one, the longer string is passed as first argument, both strings have a common prefix until the shorter string&apos;s last character that&apos;s greater than the corresponding character of the longer string</para>
+<para><bold>Then</bold> a value less than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="315" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="315" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a9bc1e509412aa9a9f7a3e074fcc01d14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_CommonPrefixGreaterThan_ExactN)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_CommonPrefixGreaterThan_ExactN</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the shorter one, the shorter string is passed as first argument, both strings have a common prefix until the shorter string&apos;s last character that&apos;s greater than the corresponding character of the longer string</para>
+<para><bold>Then</bold> a value greater than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="331" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="331" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1abe596d61b6ae43926abf05dcd3d39b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_CommonPrefixLessThan_ExactN)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_CommonPrefixLessThan_ExactN</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the shorter one, the longer string is passed as first argument, both strings have a common prefix until the shorter string&apos;s last character that&apos;s greater than the corresponding character of the longer string</para>
+<para><bold>Then</bold> a value less than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="347" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="347" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1aa5c5f8bacde817cb937c4582e84059a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_ShorterStrFirst)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_ShorterStrFirst</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the longer one, the shorter string is passed as first argument, the shorter string is a prefix of the longer string</para>
+<para><bold>Then</bold> a value less than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="362" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="362" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="test-ustring_8cpp_1a9ba27c54108117ebbb115893207aa42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(UTIL_UString, Str16NCmp_ShorterStrSecond)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <param>
+          <type>Str16NCmp_ShorterStrSecond</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp()</ref> is called with two pointers to different non-empty 16-bit Unicode strings of different lengths and the length of the longer one, the longer string is passed as first argument, the shorter string is a prefix of the longer string</para>
+<para><bold>Then</bold> a value greater than 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="377" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="377" bodyend="382"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-ustring_8cpp_1a47871ff60013f69a8be2b8765c737d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(UTIL_UString)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>UTIL_UString</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-ustring.cpp" line="34" column="1" bodyfile="unit-tests/util/test-ustring.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ustring_8h" kindref="compound">lely/util/ustring.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2util_2util_8h" kindref="compound">lely/util/util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(UTIL_UString)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TEST_STR<sp/>=<sp/>u</highlight><highlight class="stringliteral">&quot;abcdefg&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>TEST_LEN<sp/>=<sp/>7u;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"></codeline>
+<codeline lineno="47" refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16Len_Empty)<sp/>{<sp/>CHECK_EQUAL(0,<sp/><ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len</ref>(u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="test-ustring_8cpp_1aea976ec59656f949ea5d68b28d71b6be" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16Len_OneLength)<sp/>{<sp/>CHECK_EQUAL(1,<sp/><ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len</ref>(u</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="test-ustring_8cpp_1abaaf14f4e5ebb458aa45c318b89518fc" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16Len_FullString)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(TEST_LEN,<sp/><ref refid="ustring_8h_1ae703034d5e1071141af66c168015d4f7" kindref="member">str16len</ref>(TEST_STR));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"></codeline>
+<codeline lineno="71"></codeline>
+<codeline lineno="78" refid="test-ustring_8cpp_1a489cf3da5dd49509dcd0cf3bb199f38b" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCpy_Zero)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="test-ustring_8cpp_1a0d26ddd2e154c7731facda4f1dca5dd1" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCpy_EmptySrcZeroBuffer)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ret);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="test-ustring_8cpp_1a8911b347be45ab2129d08fc88f20b0a9" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCpy_EmptySrcExactBuffer)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>char16_t<sp/>buf<sp/>=<sp/>u</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(&amp;buf,<sp/>u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>1u);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(ret,<sp/>&amp;buf);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(u</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">,<sp/>buf);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="test-ustring_8cpp_1ae02c0408089d5db30b31f431fb94dc90" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCpy_EmptySrcBigBuffer)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>std::array&lt;char16_t,<sp/>5u&gt;<sp/>buf;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>buf.fill(u</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(buf.data(),<sp/>u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>buf.size());</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(&amp;buf,<sp/>ret);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>item<sp/>:<sp/>buf)<sp/>CHECK_EQUAL(u</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">,<sp/>item);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="test-ustring_8cpp_1a1047005303c6dfad7352a813ef33b0e4" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCpy_TooBigBuffer)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_LEN<sp/>=<sp/>10u;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>char16_t<sp/>buf[BUF_LEN];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>memset(buf,<sp/>u</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/>BUF_LEN<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char16_t));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(buf,<sp/>TEST_STR,<sp/>BUF_LEN);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(buf,<sp/>ret);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>BUF_LEN;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>TEST_LEN)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CHECK_EQUAL(TEST_STR[i],<sp/>buf[i]);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CHECK_EQUAL(u</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">,<sp/>buf[i]);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="test-ustring_8cpp_1ae5b24b55160035957e2ac350d5f49578" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCpy_TooSmallBuffer)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_LEN<sp/>=<sp/>5u;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>char16_t<sp/>buf[BUF_LEN];</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>memset(buf,<sp/>u</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/>BUF_LEN<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char16_t));</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(buf,<sp/>TEST_STR,<sp/>BUF_LEN);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(buf,<sp/>ret);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>BUF_LEN;<sp/>++i)<sp/>CHECK_EQUAL(TEST_STR[i],<sp/>buf[i]);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="test-ustring_8cpp_1a18323412f1909d121b4685d71fa5618a" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCpy_ExactBuffer)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>char16_t<sp/>buf[TEST_LEN];</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>memset(buf,<sp/>u</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/>TEST_LEN<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char16_t));</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(buf,<sp/>TEST_STR,<sp/>TEST_LEN);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(buf,<sp/>ret);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>TEST_LEN;<sp/>++i)<sp/>CHECK_EQUAL(TEST_STR[i],<sp/>buf[i]);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"></codeline>
+<codeline lineno="196"></codeline>
+<codeline lineno="203" refid="test-ustring_8cpp_1a6334289784f2a9336ea8135f3db60e9b" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_Zero)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0));</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="test-ustring_8cpp_1ae24cb824db086229df1b1e65cbe8772b" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_EmptyStrFirst)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>TEST_STR,<sp/>1u));</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="test-ustring_8cpp_1a9faf13efdec8a26f7a28f2e2eee06fcd" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_EmptyStrSecond)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(TEST_STR,<sp/>u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>1u));</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="test-ustring_8cpp_1a4e30402192035335c71ae376994a128b" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_Equal)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(TEST_STR,<sp/>TEST_STR,<sp/>TEST_LEN));</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="test-ustring_8cpp_1ae3f46e1fe51e90785ac02c2815314c40" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_EqualSmallN)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(TEST_STR,<sp/>TEST_STR,<sp/>3u));</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="test-ustring_8cpp_1a18bdb32c66005de195468146ec734ac6" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_EqualEmpty)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>u</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>1u));</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="test-ustring_8cpp_1ac91e9af8cebacee280257cc9b96e1229" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_LessThan)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>test_str[]<sp/>=<sp/>u</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(TEST_STR,<sp/>test_str,<sp/>TEST_LEN));</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="test-ustring_8cpp_1aaaeafc89f9f0dc4cb2ee81c993c37e36" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_GreaterThan)<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>char16_t<sp/>test_str[]<sp/>=<sp/>u</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(test_str,<sp/>TEST_STR,<sp/>TEST_LEN));</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="test-ustring_8cpp_1a99fe1fc7cafc97bf68875cd36df4442e" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_CommonPrefixGreaterThan)<sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/>char16_t<sp/>test_str[]<sp/>=<sp/>u</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(test_str,<sp/>TEST_STR,<sp/>2u);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(test_str,<sp/>TEST_STR,<sp/>TEST_LEN));</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="test-ustring_8cpp_1a60f0279763c9908c06f69602a9bd4718" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_CommonPrefixLessThan)<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/>char16_t<sp/>test_str[]<sp/>=<sp/>u</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(test_str,<sp/>TEST_STR,<sp/>2u);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(TEST_STR,<sp/>test_str,<sp/>TEST_LEN));</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="test-ustring_8cpp_1a9bc1e509412aa9a9f7a3e074fcc01d14" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_CommonPrefixGreaterThan_ExactN)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/>char16_t<sp/>test_str[]<sp/>=<sp/>u</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(test_str,<sp/>TEST_STR,<sp/>2u);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(test_str,<sp/>TEST_STR,<sp/>3u));</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="test-ustring_8cpp_1abe596d61b6ae43926abf05dcd3d39b07" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_CommonPrefixLessThan_ExactN)<sp/>{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/>char16_t<sp/>test_str[]<sp/>=<sp/>u</highlight><highlight class="stringliteral">&quot;xyz&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(test_str,<sp/>TEST_STR,<sp/>2u);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(TEST_STR,<sp/>test_str,<sp/>3u));</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362" refid="test-ustring_8cpp_1aa5c5f8bacde817cb937c4582e84059a1" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_ShorterStrFirst)<sp/>{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/>char16_t<sp/>test_str[TEST_LEN<sp/>-<sp/>2]<sp/>=<sp/>{u</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(test_str,<sp/>TEST_STR,<sp/>TEST_LEN<sp/>-<sp/>3);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(test_str,<sp/>TEST_STR,<sp/>TEST_LEN));</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="test-ustring_8cpp_1a9ba27c54108117ebbb115893207aa42d" refkind="member"><highlight class="normal"><ref refid="test-ustring_8cpp_1aba05d0fc4eb9ed2ee472b035f88e827b" kindref="member">TEST</ref>(UTIL_UString,<sp/>Str16NCmp_ShorterStrSecond)<sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/>char16_t<sp/>test_str[TEST_LEN<sp/>-<sp/>2]<sp/>=<sp/>{u</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><ref refid="ustring_8h_1ac92769e1ef28e06b193d4f496ae3981a" kindref="member">str16ncpy</ref>(test_str,<sp/>TEST_STR,<sp/>TEST_LEN<sp/>-<sp/>3);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/><ref refid="ustring_8h_1a560d760517a23822b02157683735204e" kindref="member">str16ncmp</ref>(TEST_STR,<sp/>test_str,<sp/>TEST_LEN));</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/util/test-ustring.cpp"/>
+  </compounddef>
+</doxygen>

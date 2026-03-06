@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoCsdoUpCon" kind="class" language="C++" prot="public">
+    <compoundname>CoCsdoUpCon</compoundname>
+    <includes refid="co-csdo-up-con_8hpp" local="no">co-csdo-up-con.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a8d9ce9ca25bc56afa70660476a8d4066" prot="public" static="yes" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+        <definition>co_csdo_t * CoCsdoUpCon::sdo</definition>
+        <argsstring></argsstring>
+        <name>sdo</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="31" column="20" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a02f178f8a9d6ec9b265afef982d9763a" prot="public" static="yes" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t CoCsdoUpCon::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="32" column="26" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a08fab0c2df5eef0e9f69a5e24710ebc4" prot="public" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoCsdoUpCon::subidx</definition>
+        <argsstring></argsstring>
+        <name>subidx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="33" column="25" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a8b81bb4779c4051b9c82e15ae90ae0c1" prot="public" static="yes" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t CoCsdoUpCon::ac</definition>
+        <argsstring></argsstring>
+        <name>ac</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="34" column="26" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a5b0f7e1b8d2882b63c62271df64d9b99" prot="public" static="yes" mutable="no">
+        <type>const void *</type>
+        <definition>const void * CoCsdoUpCon::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="35" column="21" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a4398cd7933634700202d1cc63928c3e2" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoCsdoUpCon::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="36" column="17" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1abbdd8289f93274fc5a5801490003240c" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * CoCsdoUpCon::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="37" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a3afcb22d811dbb10e8f798f30123b003" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoCsdoUpCon::num_called</definition>
+        <argsstring></argsstring>
+        <name>num_called</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="38" column="17" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1a10598199aba768f95f0c57622caad39f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t CoCsdoUpCon::BUFSIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFSIZE</name>
+        <initializer>= 4u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="39" column="27" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoUpCon_1ab05807250ab4c7a73746fd4b07bb9da1" prot="public" static="yes" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t CoCsdoUpCon::buf</definition>
+        <argsstring>[BUFSIZE]</argsstring>
+        <name>buf</name>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="40" column="24" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCoCsdoUpCon_1a96ea8bd727cfe5d317a05a74820d90ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoCsdoUpCon::func</definition>
+        <argsstring>(co_csdo_t *sdo_, co_unsigned16_t idx_, co_unsigned8_t subidx_, co_unsigned32_t ac_, const void *ptr_, size_t n_, void *data_)</argsstring>
+        <name>func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+          <declname>sdo_</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac_</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>ptr_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n_</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="42" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.cpp" bodystart="44" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoUpCon_1aed92d709b8281fe46e7c3cb6b9fcc1bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoCsdoUpCon::Check</definition>
+        <argsstring>(const co_csdo_t *sdo_, co_unsigned16_t idx_, co_unsigned8_t subidx_, co_unsigned32_t ac_, const void *ptr_, size_t n_, const void *data_)</argsstring>
+        <name>Check</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+          <declname>sdo_</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac_</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>ptr_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n_</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="45" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.cpp" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoUpCon_1aeefab3883a4495d2730e6b69b83448f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoCsdoUpCon::CheckNonempty</definition>
+        <argsstring>(const co_csdo_t *sdo_, co_unsigned16_t idx_, co_unsigned8_t subidx_, co_unsigned32_t ac_, size_t n_, const void *data_)</argsstring>
+        <name>CheckNonempty</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+          <declname>sdo_</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n_</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="48" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.cpp" bodystart="90" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoUpCon_1aaf9c685802dcb4546111b81e2790b4b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoCsdoUpCon::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="51" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.cpp" bodystart="62" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoUpCon_1a960f7ecbaa612eda1e9807c983de6e1c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool CoCsdoUpCon::Called</definition>
+        <argsstring>()</argsstring>
+        <name>Called</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="54" column="3" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="csdo_8h_1a1bf888569d9456fde6f2468361589c15" kindref="member">co_csdo_up_con_t</ref> mock. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>co_sdo_par</label>
+        <link refid="structco__sdo__par"/>
+      </node>
+      <node id="5">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CoCsdoUpCon</label>
+        <link refid="classCoCsdoUpCon"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sdo</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_csdo</label>
+        <link refid="structco__csdo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>dn_buf</edgelabel>
+          <edgelabel>up_buf</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>dn_dcf</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>co_csdo_dn_dcf</label>
+        <link refid="structco__csdo__dn__dcf"/>
+      </node>
+      <node id="3">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="15">
+        <label>co_csdo_state</label>
+        <link refid="structco__csdo__state"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="12">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/libtest/tools/co-csdo-up-con.hpp" line="29" column="1" bodyfile="unit-tests/libtest/tools/co-csdo-up-con.hpp" bodystart="29" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classCoCsdoUpCon_1a8b81bb4779c4051b9c82e15ae90ae0c1" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>ac</name></member>
+      <member refid="classCoCsdoUpCon_1ab05807250ab4c7a73746fd4b07bb9da1" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>buf</name></member>
+      <member refid="classCoCsdoUpCon_1a10598199aba768f95f0c57622caad39f" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>BUFSIZE</name></member>
+      <member refid="classCoCsdoUpCon_1a960f7ecbaa612eda1e9807c983de6e1c" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>Called</name></member>
+      <member refid="classCoCsdoUpCon_1aed92d709b8281fe46e7c3cb6b9fcc1bf" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>Check</name></member>
+      <member refid="classCoCsdoUpCon_1aeefab3883a4495d2730e6b69b83448f2" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>CheckNonempty</name></member>
+      <member refid="classCoCsdoUpCon_1aaf9c685802dcb4546111b81e2790b4b6" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>Clear</name></member>
+      <member refid="classCoCsdoUpCon_1abbdd8289f93274fc5a5801490003240c" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>data</name></member>
+      <member refid="classCoCsdoUpCon_1a96ea8bd727cfe5d317a05a74820d90ee" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>func</name></member>
+      <member refid="classCoCsdoUpCon_1a02f178f8a9d6ec9b265afef982d9763a" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>idx</name></member>
+      <member refid="classCoCsdoUpCon_1a4398cd7933634700202d1cc63928c3e2" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>n</name></member>
+      <member refid="classCoCsdoUpCon_1a3afcb22d811dbb10e8f798f30123b003" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>num_called</name></member>
+      <member refid="classCoCsdoUpCon_1a5b0f7e1b8d2882b63c62271df64d9b99" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>ptr</name></member>
+      <member refid="classCoCsdoUpCon_1a8d9ce9ca25bc56afa70660476a8d4066" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>sdo</name></member>
+      <member refid="classCoCsdoUpCon_1a08fab0c2df5eef0e9f69a5e24710ebc4" prot="public" virt="non-virtual"><scope>CoCsdoUpCon</scope><name>subidx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

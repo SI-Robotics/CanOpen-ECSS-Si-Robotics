@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_0f8d08bbbebf6b74c3a3824768b11939" kind="dir">
+    <compoundname>unit-tests/co/obj-init</compoundname>
+    <innerfile refid="emcy-error-register_8hpp">emcy-error-register.hpp</innerfile>
+    <innerfile refid="emcy-predefined-error-field_8hpp">emcy-predefined-error-field.hpp</innerfile>
+    <innerfile refid="error-behavior-object_8hpp">error-behavior-object.hpp</innerfile>
+    <innerfile refid="nmt-hb-consumer_8hpp">nmt-hb-consumer.hpp</innerfile>
+    <innerfile refid="nmt-hb-producer_8hpp">nmt-hb-producer.hpp</innerfile>
+    <innerfile refid="nmt-redundancy_8hpp">nmt-redundancy.hpp</innerfile>
+    <innerfile refid="nmt-slave-assignment_8hpp">nmt-slave-assignment.hpp</innerfile>
+    <innerfile refid="nmt-startup_8hpp">nmt-startup.hpp</innerfile>
+    <innerfile refid="obj-init_8hpp">obj-init.hpp</innerfile>
+    <innerfile refid="request-nmt_8hpp">request-nmt.hpp</innerfile>
+    <innerfile refid="rpdo-comm-par_8hpp">rpdo-comm-par.hpp</innerfile>
+    <innerfile refid="rpdo-map-par_8hpp">rpdo-map-par.hpp</innerfile>
+    <innerfile refid="sdo-client-par_8hpp">sdo-client-par.hpp</innerfile>
+    <innerfile refid="sdo-server-par_8hpp">sdo-server-par.hpp</innerfile>
+    <innerfile refid="sync-cobid_8hpp">sync-cobid.hpp</innerfile>
+    <innerfile refid="sync-window-length_8hpp">sync-window-length.hpp</innerfile>
+    <innerfile refid="tpdo-comm-par_8hpp">tpdo-comm-par.hpp</innerfile>
+    <innerfile refid="tpdo-map-par_8hpp">tpdo-map-par.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/obj-init/"/>
+  </compounddef>
+</doxygen>

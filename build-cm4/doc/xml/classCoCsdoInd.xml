@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoCsdoInd" kind="class" language="C++" prot="public">
+    <compoundname>CoCsdoInd</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCoCsdoInd_1af78481eaed423661734d81763c8a226d" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+        <definition>const co_csdo_t * CoCsdoInd::csdo_</definition>
+        <argsstring></argsstring>
+        <name>csdo_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="987" column="26" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="987" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoInd_1a33ebf7bf01841c3e9b459eab6bef0bd1" prot="private" static="yes" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t CoCsdoInd::idx_</definition>
+        <argsstring></argsstring>
+        <name>idx_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="988" column="26" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="988" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoInd_1ab6adc05b8b8d31be1aedcfdb1ab95230" prot="private" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoCsdoInd::subidx_</definition>
+        <argsstring></argsstring>
+        <name>subidx_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="989" column="25" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoInd_1aa592e5b250d58f803978efc7dd9714fd" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoCsdoInd::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="990" column="17" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoInd_1a8fb90d4e6ead10a4919f5f0f3bfbb5c2" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoCsdoInd::nbyte_</definition>
+        <argsstring></argsstring>
+        <name>nbyte_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="991" column="17" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoInd_1a0b54ddb3446b18fe949dd3d28a9949d4" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * CoCsdoInd::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="992" column="15" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoInd_1a46f6345de4797f37bfe59eec27084817" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoCsdoInd::num_called</definition>
+        <argsstring></argsstring>
+        <name>num_called</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="993" column="17" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="993" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCoCsdoInd_1a73f679e7f56c76f247618c2b174099dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CoCsdoInd::Func</definition>
+        <argsstring>(const co_csdo_t *const csdo, const co_unsigned16_t idx, const co_unsigned8_t subidx, const size_t size, const size_t nbyte, void *const data)</argsstring>
+        <name>Func</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *const</type>
+          <declname>csdo</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <param>
+          <type>void *const</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="936" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="936" bodyend="947"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoInd_1ae9f041d00fdde6cc3cc9c9eb5c9c49cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CoCsdoInd::Check</definition>
+        <argsstring>(const co_csdo_t *const csdo, const co_unsigned16_t idx, const co_unsigned8_t subidx, const size_t size, const size_t nbyte, const void *const data)</argsstring>
+        <name>Check</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *const</type>
+          <declname>csdo</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="950" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="950" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoInd_1a24e5a37b723ce16186632ce45f07695b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CoCsdoInd::CheckAndClear</definition>
+        <argsstring>(const co_csdo_t *const csdo, const co_unsigned16_t idx, const co_unsigned8_t subidx, const size_t size, const size_t nbyte, const void *const data)</argsstring>
+        <name>CheckAndClear</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *const</type>
+          <declname>csdo</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="962" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="962" bodyend="967"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoInd_1a39cabc6fbc6842732f6bab82dcbf8217" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t CoCsdoInd::GetNumCalled</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumCalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="970" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="970" bodyend="972"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoInd_1a0c26cd806c1cfeede2678a79ba9a436e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CoCsdoInd::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="975" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="975" bodyend="984"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="csdo_8h_1aaad164051bf9ecec74c626c5b05597c2" kindref="member">co_csdo_ind_t</ref> mock. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-csdo.cpp" line="933" column="1" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="933" bodyend="994"/>
+    <listofallmembers>
+      <member refid="classCoCsdoInd_1ae9f041d00fdde6cc3cc9c9eb5c9c49cc" prot="public" virt="non-virtual"><scope>CoCsdoInd</scope><name>Check</name></member>
+      <member refid="classCoCsdoInd_1a24e5a37b723ce16186632ce45f07695b" prot="public" virt="non-virtual"><scope>CoCsdoInd</scope><name>CheckAndClear</name></member>
+      <member refid="classCoCsdoInd_1a0c26cd806c1cfeede2678a79ba9a436e" prot="public" virt="non-virtual"><scope>CoCsdoInd</scope><name>Clear</name></member>
+      <member refid="classCoCsdoInd_1af78481eaed423661734d81763c8a226d" prot="private" virt="non-virtual"><scope>CoCsdoInd</scope><name>csdo_</name></member>
+      <member refid="classCoCsdoInd_1a0b54ddb3446b18fe949dd3d28a9949d4" prot="private" virt="non-virtual"><scope>CoCsdoInd</scope><name>data_</name></member>
+      <member refid="classCoCsdoInd_1a73f679e7f56c76f247618c2b174099dc" prot="public" virt="non-virtual"><scope>CoCsdoInd</scope><name>Func</name></member>
+      <member refid="classCoCsdoInd_1a39cabc6fbc6842732f6bab82dcbf8217" prot="public" virt="non-virtual"><scope>CoCsdoInd</scope><name>GetNumCalled</name></member>
+      <member refid="classCoCsdoInd_1a33ebf7bf01841c3e9b459eab6bef0bd1" prot="private" virt="non-virtual"><scope>CoCsdoInd</scope><name>idx_</name></member>
+      <member refid="classCoCsdoInd_1a8fb90d4e6ead10a4919f5f0f3bfbb5c2" prot="private" virt="non-virtual"><scope>CoCsdoInd</scope><name>nbyte_</name></member>
+      <member refid="classCoCsdoInd_1a46f6345de4797f37bfe59eec27084817" prot="private" virt="non-virtual"><scope>CoCsdoInd</scope><name>num_called</name></member>
+      <member refid="classCoCsdoInd_1aa592e5b250d58f803978efc7dd9714fd" prot="private" virt="non-virtual"><scope>CoCsdoInd</scope><name>size_</name></member>
+      <member refid="classCoCsdoInd_1ab6adc05b8b8d31be1aedcfdb1ab95230" prot="private" virt="non-virtual"><scope>CoCsdoInd</scope><name>subidx_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

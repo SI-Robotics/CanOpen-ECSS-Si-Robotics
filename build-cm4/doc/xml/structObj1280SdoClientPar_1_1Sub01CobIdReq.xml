@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1280SdoClientPar_1_1Sub01CobIdReq" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1280SdoClientPar::Sub01CobIdReq</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SubT&lt; 0x01u, CO_DEFTYPE_UNSIGNED32 &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Obj1280SdoClientPar::Sub01CobIdReq</label>
+        <link refid="structObj1280SdoClientPar_1_1Sub01CobIdReq"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x01u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Obj1280SdoClientPar::Sub01CobIdReq</label>
+        <link refid="structObj1280SdoClientPar_1_1Sub01CobIdReq"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SubT&lt; 0x01u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/sdo-client-par.hpp" line="33" column="3" bodyfile="unit-tests/co/obj-init/sdo-client-par.hpp" bodystart="33" bodyend="33"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

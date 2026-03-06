@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classEmcySend" kind="class" language="C++" prot="public">
+    <compoundname>EmcySend</compoundname>
+    <basecompoundref refid="classCanSend" prot="public" virt="non-virtual">CanSend</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEmcySend_1a3707470d99987c1d1f08c7024515fff6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EmcySend::CheckMsg</definition>
+        <argsstring>(const co_unsigned32_t msg_id, const co_unsigned16_t eec, const co_unsigned8_t er, const co_unsigned8_t *const msef)</argsstring>
+        <name>CheckMsg</name>
+        <param>
+          <type>const co_unsigned32_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>eec</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>er</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t *const</type>
+          <declname>msef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-emcy.cpp" line="638" column="3" bodyfile="unit-tests/co/test-emcy.cpp" bodystart="638" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="classEmcySend_1a1dea23a59a36521bd827676520dee23d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EmcySend::CheckMsef</definition>
+        <argsstring>(const co_unsigned8_t *const msef)</argsstring>
+        <name>CheckMsef</name>
+        <param>
+          <type>const co_unsigned8_t *const</type>
+          <declname>msef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-emcy.cpp" line="661" column="3" bodyfile="unit-tests/co/test-emcy.cpp" bodystart="661" bodyend="667"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref> mock dedicated for EMCY tests. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CanSend</label>
+        <link refid="classCanSend"/>
+      </node>
+      <node id="1">
+        <label>EmcySend</label>
+        <link refid="classEmcySend"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>can_msg</label>
+        <link refid="structcan__msg"/>
+      </node>
+      <node id="2">
+        <label>CanSend</label>
+        <link refid="classCanSend"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>msg</edgelabel>
+          <edgelabel>msg_buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EmcySend</label>
+        <link refid="classEmcySend"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/test-emcy.cpp" line="635" column="1" bodyfile="unit-tests/co/test-emcy.cpp" bodystart="635" bodyend="668"/>
+    <listofallmembers>
+      <member refid="classCanSend_1a362e82676cded4d9e5328752d9cd7383" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>bus_id</name></member>
+      <member refid="classCanSend_1a871666a343f74cc673bd355171b8e449" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>CheckFunc</name></member>
+      <member refid="classEmcySend_1a1dea23a59a36521bd827676520dee23d" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>CheckMsef</name></member>
+      <member refid="classEmcySend_1a3707470d99987c1d1f08c7024515fff6" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>CheckMsg</name></member>
+      <member refid="classCanSend_1ab9bd4d190ac5d2ad863e9dc6aeb00017" prot="public" virt="non-virtual" ambiguityscope="CanSend::"><scope>EmcySend</scope><name>CheckMsg</name></member>
+      <member refid="classCanSend_1adec8b917ca9b36472e809ebc3d419d3c" prot="public" virt="non-virtual" ambiguityscope="CanSend::"><scope>EmcySend</scope><name>CheckMsg</name></member>
+      <member refid="classCanSend_1a5e5225e6406280e3b3aceba1e27ccf65" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>Clear</name></member>
+      <member refid="classCanSend_1ae8e674df4756acfbd497b3bc25c5ef54" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>Func</name></member>
+      <member refid="classCanSend_1a0f642ab698bb389c23048e5717903297" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>GetNumCalled</name></member>
+      <member refid="classCanSend_1ac2fb8850331d264f93baa3a406f5d79d" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>msg</name></member>
+      <member refid="classCanSend_1a5f6dd6cd76700cb6efd91e9221182b35" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>msg_buf</name></member>
+      <member refid="classCanSend_1a2707dee4d72aefc8280ab45c54edb7e8" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>MsgSeq</name></member>
+      <member refid="classCanSend_1a98cb78bbc7b7652df7812dc26574efc7" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>ret</name></member>
+      <member refid="classCanSend_1a16b3491fb5953ba63ed52391438ef0f5" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>SetCheckSeq</name></member>
+      <member refid="classCanSend_1aea2464dc5a1f482527dbdb4ce2be5196" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>SetMsgBuf</name></member>
+      <member refid="classCanSend_1abbf9075c4b9ac30ff045c0a18d37cddd" prot="public" virt="non-virtual"><scope>EmcySend</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

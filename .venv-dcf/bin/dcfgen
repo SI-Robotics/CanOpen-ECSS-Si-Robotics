@@ -1,0 +1,6 @@
+#!/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/.venv-dcf/bin/python3
+import sys
+from dcfgen.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

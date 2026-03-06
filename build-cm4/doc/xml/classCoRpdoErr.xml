@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoRpdoErr" kind="class" language="C++" prot="public">
+    <compoundname>CoRpdoErr</compoundname>
+    <includes refid="co-rpdo-err_8hpp" local="no">co-rpdo-err.hpp</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCoRpdoErr_1abf2274e551fab89874f163c8d6f29a52" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoRpdoErr::num_called_</definition>
+        <argsstring></argsstring>
+        <name>num_called_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="42" column="17" bodyfile="unit-tests/libtest/tools/co-rpdo-err.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoRpdoErr_1a0054b92fb14bcd8c8e5f852fb72cbdae" prot="private" static="yes" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1abc83397110d6ebbc0ccdd3267aaeb277" kindref="member">co_rpdo_t</ref> *</type>
+        <definition>co_rpdo_t * CoRpdoErr::pdo_</definition>
+        <argsstring></argsstring>
+        <name>pdo_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="44" column="20" bodyfile="unit-tests/libtest/tools/co-rpdo-err.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoRpdoErr_1a697c4f11057833f0c2fc2ae83135c8a1" prot="private" static="yes" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t CoRpdoErr::eec_</definition>
+        <argsstring></argsstring>
+        <name>eec_</name>
+        <initializer>= <ref refid="val_8h_1aedcff244751318e1a7a20c2d57ef9949" kindref="member">CO_UNSIGNED16_MAX</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="45" column="26" bodyfile="unit-tests/libtest/tools/co-rpdo-err.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoRpdoErr_1a1f26c038afc66c4e3714e1dbe0aadfba" prot="private" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoRpdoErr::er_</definition>
+        <argsstring></argsstring>
+        <name>er_</name>
+        <initializer>= <ref refid="val_8h_1a1e2fe780c6ee613001ed700957580150" kindref="member">CO_UNSIGNED8_MAX</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="46" column="25" bodyfile="unit-tests/libtest/tools/co-rpdo-err.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoRpdoErr_1a4dfd82b60762820a5c24c2c1eb1e2582" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * CoRpdoErr::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="47" column="15" bodyfile="unit-tests/libtest/tools/co-rpdo-err.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCoRpdoErr_1a9ad641dbd2329c4e1aa0d04af83253db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoRpdoErr::Func</definition>
+        <argsstring>(co_rpdo_t *pdo, co_unsigned16_t eec, co_unsigned8_t er, void *data)</argsstring>
+        <name>Func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1abc83397110d6ebbc0ccdd3267aaeb277" kindref="member">co_rpdo_t</ref> *</type>
+          <declname>pdo</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>eec</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>er</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="31" column="15" bodyfile="unit-tests/libtest/tools/co-rpdo-err.cpp" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoRpdoErr_1af9636d6cb7a9a04b35e71be996fdaab7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoRpdoErr::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="33" column="15" bodyfile="unit-tests/libtest/tools/co-rpdo-err.cpp" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoRpdoErr_1ae62666504664403e9f41f942ff2785b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoRpdoErr::Check</definition>
+        <argsstring>(const co_rpdo_t *pdo, co_unsigned16_t eec, co_unsigned8_t er, const void *data)</argsstring>
+        <name>Check</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1abc83397110d6ebbc0ccdd3267aaeb277" kindref="member">co_rpdo_t</ref> *</type>
+          <declname>pdo</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>eec</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>er</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="34" column="15" bodyfile="unit-tests/libtest/tools/co-rpdo-err.cpp" bodystart="62" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoRpdoErr_1af2fbe639ba42a785bb5fc755a2950e88" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t CoRpdoErr::GetNumCalled</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumCalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="37" column="3" bodyfile="unit-tests/libtest/tools/co-rpdo-err.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="rpdo_8h_1a1b0927f7a6806f2260f772f3b4545928" kindref="member">co_rpdo_err_t</ref> mock. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/co-rpdo-err.hpp" line="29" column="1" bodyfile="unit-tests/libtest/tools/co-rpdo-err.hpp" bodystart="29" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classCoRpdoErr_1ae62666504664403e9f41f942ff2785b3" prot="public" virt="non-virtual"><scope>CoRpdoErr</scope><name>Check</name></member>
+      <member refid="classCoRpdoErr_1af9636d6cb7a9a04b35e71be996fdaab7" prot="public" virt="non-virtual"><scope>CoRpdoErr</scope><name>Clear</name></member>
+      <member refid="classCoRpdoErr_1a4dfd82b60762820a5c24c2c1eb1e2582" prot="private" virt="non-virtual"><scope>CoRpdoErr</scope><name>data_</name></member>
+      <member refid="classCoRpdoErr_1a697c4f11057833f0c2fc2ae83135c8a1" prot="private" virt="non-virtual"><scope>CoRpdoErr</scope><name>eec_</name></member>
+      <member refid="classCoRpdoErr_1a1f26c038afc66c4e3714e1dbe0aadfba" prot="private" virt="non-virtual"><scope>CoRpdoErr</scope><name>er_</name></member>
+      <member refid="classCoRpdoErr_1a9ad641dbd2329c4e1aa0d04af83253db" prot="public" virt="non-virtual"><scope>CoRpdoErr</scope><name>Func</name></member>
+      <member refid="classCoRpdoErr_1af2fbe639ba42a785bb5fc755a2950e88" prot="public" virt="non-virtual"><scope>CoRpdoErr</scope><name>GetNumCalled</name></member>
+      <member refid="classCoRpdoErr_1abf2274e551fab89874f163c8d6f29a52" prot="private" virt="non-virtual"><scope>CoRpdoErr</scope><name>num_called_</name></member>
+      <member refid="classCoRpdoErr_1a0054b92fb14bcd8c8e5f852fb72cbdae" prot="private" virt="non-virtual"><scope>CoRpdoErr</scope><name>pdo_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

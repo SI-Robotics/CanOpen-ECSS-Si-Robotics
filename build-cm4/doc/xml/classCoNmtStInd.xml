@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoNmtStInd" kind="class" language="C++" prot="public">
+    <compoundname>CoNmtStInd</compoundname>
+    <includes refid="co-nmt-st-ind_8hpp" local="no">co-nmt-st-ind.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classCoNmtStInd_1a3f4ceab7b86c0494014d0435fff63eea" prot="public" static="no">
+        <type>std::vector&lt; co_unsigned8_t &gt;</type>
+        <definition>using CoNmtStInd::Seq =  std::vector&lt;co_unsigned8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>Seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="34" column="3" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCoNmtStInd_1a1d6dcdfaad4992bd5e0a03f9fd783e4e" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoNmtStInd::num_called</definition>
+        <argsstring></argsstring>
+        <name>num_called</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="49" column="17" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtStInd_1af8f4704b7cd37ba7bc10b5e84be14a0d" prot="private" static="yes" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+        <definition>co_nmt_t * CoNmtStInd::nmt_</definition>
+        <argsstring></argsstring>
+        <name>nmt_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="50" column="19" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtStInd_1ace7a0fce426d7158629a40bd13180025" prot="private" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoNmtStInd::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <initializer>= <ref refid="val_8h_1a1e2fe780c6ee613001ed700957580150" kindref="member">CO_UNSIGNED8_MAX</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="51" column="25" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtStInd_1a08d5b270840665184666612364107bb2" prot="private" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoNmtStInd::st_</definition>
+        <argsstring></argsstring>
+        <name>st_</name>
+        <initializer>= <ref refid="val_8h_1a1e2fe780c6ee613001ed700957580150" kindref="member">CO_UNSIGNED8_MAX</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="52" column="25" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtStInd_1a901c9566ad3a98428c4d816271f7d927" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * CoNmtStInd::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="53" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtStInd_1a652d25830f39aeed390370a91f309a0d" prot="private" static="yes" mutable="no">
+        <type>std::function&lt; <ref refid="nmt_8h_1a68ac03befbe3a5e72bbfd426e0a8bcd2" kindref="member">co_nmt_st_ind_t</ref> &gt;</type>
+        <definition>std::function&lt; co_nmt_st_ind_t &gt; CoNmtStInd::checkFunc</definition>
+        <argsstring></argsstring>
+        <name>checkFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="55" column="24" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCoNmtStInd_1a847b038f57d60dfd6e0e65a7540ede62" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtStInd::Func</definition>
+        <argsstring>(co_nmt_t *nmt, co_unsigned8_t id, co_unsigned8_t st, void *data)</argsstring>
+        <name>Func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="36" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.cpp" bodystart="41" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtStInd_1a0eea1e4c09d9bbcc0ee038ea8d784133" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtStInd::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="38" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.cpp" bodystart="56" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtStInd_1a77505aaa0fd837859c54e9129a110bbe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtStInd::Check</definition>
+        <argsstring>(const co_nmt_t *nmt, co_unsigned8_t id, co_unsigned8_t st, const void *data)</argsstring>
+        <name>Check</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="39" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.cpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtStInd_1aa2cca803ba35eda0e0ff1e6790de7926" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t CoNmtStInd::GetNumCalled</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumCalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="42" column="3" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtStInd_1ac752eef25b0c11a6a6d82f63bc0f2a1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtStInd::SetCheckSeq</definition>
+        <argsstring>(const co_nmt_t *const nmt, const co_unsigned8_t id, const Seq &amp;stSeq)</argsstring>
+        <name>SetCheckSeq</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *const</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const Seq &amp;</type>
+          <declname>stSeq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="45" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.cpp" bodystart="76" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="nmt_8h_1a68ac03befbe3a5e72bbfd426e0a8bcd2" kindref="member">co_nmt_st_ind_t</ref> mock. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/co-nmt-st-ind.hpp" line="32" column="1" bodyfile="unit-tests/libtest/tools/co-nmt-st-ind.hpp" bodystart="32" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classCoNmtStInd_1a77505aaa0fd837859c54e9129a110bbe" prot="public" virt="non-virtual"><scope>CoNmtStInd</scope><name>Check</name></member>
+      <member refid="classCoNmtStInd_1a652d25830f39aeed390370a91f309a0d" prot="private" virt="non-virtual"><scope>CoNmtStInd</scope><name>checkFunc</name></member>
+      <member refid="classCoNmtStInd_1a0eea1e4c09d9bbcc0ee038ea8d784133" prot="public" virt="non-virtual"><scope>CoNmtStInd</scope><name>Clear</name></member>
+      <member refid="classCoNmtStInd_1a901c9566ad3a98428c4d816271f7d927" prot="private" virt="non-virtual"><scope>CoNmtStInd</scope><name>data_</name></member>
+      <member refid="classCoNmtStInd_1a847b038f57d60dfd6e0e65a7540ede62" prot="public" virt="non-virtual"><scope>CoNmtStInd</scope><name>Func</name></member>
+      <member refid="classCoNmtStInd_1aa2cca803ba35eda0e0ff1e6790de7926" prot="public" virt="non-virtual"><scope>CoNmtStInd</scope><name>GetNumCalled</name></member>
+      <member refid="classCoNmtStInd_1ace7a0fce426d7158629a40bd13180025" prot="private" virt="non-virtual"><scope>CoNmtStInd</scope><name>id_</name></member>
+      <member refid="classCoNmtStInd_1af8f4704b7cd37ba7bc10b5e84be14a0d" prot="private" virt="non-virtual"><scope>CoNmtStInd</scope><name>nmt_</name></member>
+      <member refid="classCoNmtStInd_1a1d6dcdfaad4992bd5e0a03f9fd783e4e" prot="private" virt="non-virtual"><scope>CoNmtStInd</scope><name>num_called</name></member>
+      <member refid="classCoNmtStInd_1a3f4ceab7b86c0494014d0435fff63eea" prot="public" virt="non-virtual"><scope>CoNmtStInd</scope><name>Seq</name></member>
+      <member refid="classCoNmtStInd_1ac752eef25b0c11a6a6d82f63bc0f2a1c" prot="public" virt="non-virtual"><scope>CoNmtStInd</scope><name>SetCheckSeq</name></member>
+      <member refid="classCoNmtStInd_1a08d5b270840665184666612364107bb2" prot="private" virt="non-virtual"><scope>CoNmtStInd</scope><name>st_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structrbtree" kind="struct" language="C++" prot="public">
+    <compoundname>rbtree</compoundname>
+    <includes refid="rbtree_8h" local="no">rbtree.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrbtree_1a05aa8f466e55f30978eeaa8e3657f298" prot="public" static="no" mutable="no">
+        <type><ref refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" kindref="member">rbtree_cmp_t</ref> *</type>
+        <definition>rbtree_cmp_t* rbtree::cmp</definition>
+        <argsstring></argsstring>
+        <name>cmp</name>
+        <briefdescription>
+<para>A pointer to the function used to compare two keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="94" column="14" bodyfile="include/lely/util/rbtree.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrbtree_1abd0a6e986acba39f103cb66fb1c3bd3b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbtree::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+<para>A pointer to the root node of the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="96" column="13" bodyfile="include/lely/util/rbtree.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrbtree_1a683522432cdda0b3bf320a6510fc9ae2" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t rbtree::num_nodes</definition>
+        <argsstring></argsstring>
+        <name>num_nodes</name>
+        <briefdescription>
+<para>The number of nodes stored in the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="98" column="8" bodyfile="include/lely/util/rbtree.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A red-black tree. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/util/rbtree.h" line="92" column="1" bodyfile="include/lely/util/rbtree.h" bodystart="92" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structrbtree_1a05aa8f466e55f30978eeaa8e3657f298" prot="public" virt="non-virtual"><scope>rbtree</scope><name>cmp</name></member>
+      <member refid="structrbtree_1a683522432cdda0b3bf320a6510fc9ae2" prot="public" virt="non-virtual"><scope>rbtree</scope><name>num_nodes</name></member>
+      <member refid="structrbtree_1abd0a6e986acba39f103cb66fb1c3bd3b" prot="public" virt="non-virtual"><scope>rbtree</scope><name>root</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

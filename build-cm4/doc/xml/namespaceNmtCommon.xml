@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNmtCommon" kind="namespace" language="C++">
+    <compoundname>NmtCommon</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1a8316b81089e6db1b71c29bf818c023c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetDcfParamsAllocSize</definition>
+        <argsstring>(const co_dev_t *const dev)</argsstring>
+        <name>GetDcfParamsAllocSize</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *const</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="39" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1ad012df2282b374a44269ba916586fef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetSlavesAllocSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetSlavesAllocSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="50" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="50" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1a8fa3671ff60daf1ce1095513a67e5106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetHbConsumersAllocSize</definition>
+        <argsstring>(const size_t hb_num)</argsstring>
+        <name>GetHbConsumersAllocSize</name>
+        <param>
+          <type>const size_t</type>
+          <declname>hb_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="62" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1a7c70b0467382d327ebdddf6835a31b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetSsdoAllocSize</definition>
+        <argsstring>(const size_t ssdo_num=1u)</argsstring>
+        <name>GetSsdoAllocSize</name>
+        <param>
+          <type>const size_t</type>
+          <declname>ssdo_num</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="67" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1a9ec0b966305e70c07f066255ad03885d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetServicesAllocSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetServicesAllocSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="73" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1a0ac7046d42132c4e9f836e86b4807e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetNmtTimersAllocSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetNmtTimersAllocSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="82" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="82" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1aadef2dd1100df0d19dc057b49129d3a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetNmtRecvsAllocSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetNmtRecvsAllocSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="91" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt-alloc-sizes_8hpp_1a8dbfe229e05a4834d443314d50d47df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NmtCommon::GetNmtRedundancyAllocSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetNmtRedundancyAllocSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="96" column="1" bodyfile="unit-tests/co/common/nmt-alloc-sizes.hpp" bodystart="96" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/common/nmt-alloc-sizes.hpp" line="37" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_9c86deac3cc52258a6d59da16d0c9a0b" kind="dir">
+    <compoundname>include/lely/can</compoundname>
+    <innerfile refid="buf_8h">buf.h</innerfile>
+    <innerfile refid="err_8h">err.h</innerfile>
+    <innerfile refid="msg_8h">msg.h</innerfile>
+    <innerfile refid="net_8h">net.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/can/"/>
+  </compounddef>
+</doxygen>

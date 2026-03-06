@@ -1,0 +1,92 @@
+liblely_co_la-dev.lo: \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/dev.c \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/co.h \
+ ../../config.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/co.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/util.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/features.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/limits.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/limits.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/detail/dev.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/dev.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/type.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/uchar.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint-gcc.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/float.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/float.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/type.def \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/basic.def \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/array.def \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/time.def \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/ecss.def \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/rbtree.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/detail/obj.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/obj.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/val.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/cmp.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/string.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/strings.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/def/type.def \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/diag.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/error.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/pdo.h
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/co.h:
+../../config.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/co.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/util.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/features.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/limits.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/limits.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/detail/dev.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/dev.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/type.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/uchar.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint-gcc.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/float.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/float.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/type.def:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/basic.def:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/array.def:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/time.def:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/def/ecss.def:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/rbtree.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/detail/obj.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/obj.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/val.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/cmp.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/string.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/strings.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/def/type.def:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/diag.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/error.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/pdo.h:

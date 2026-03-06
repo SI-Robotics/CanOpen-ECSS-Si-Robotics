@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceOverride" kind="namespace" language="C++">
+    <compoundname>Override</compoundname>
+    <innerclass refid="classOverride_1_1CallWrapper" prot="public">Override::CallWrapper</innerclass>
+    <innerclass refid="classOverride_1_1OverridePlugin" prot="public">Override::OverridePlugin</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="defs_8hpp_1a0be927bfd9bece4de4354ad6657fd349" prot="public" static="no" strong="no">
+        <type>int32_t</type>
+        <name>@1</name>
+        <enumvalue id="defs_8hpp_1a0be927bfd9bece4de4354ad6657fd349a1ee6a491f80b0ee2abb3f5623e739a21" prot="public">
+          <name>AllCallsValid</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8hpp_1a0be927bfd9bece4de4354ad6657fd349a9c67643e22c1c02f791e7c6fba235f57" prot="public">
+          <name>NoneCallsValid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of function override parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/defs.hpp" line="32" column="1" bodyfile="unit-tests/libtest/override/defs.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/override/call-wrapper.hpp" line="35" column="1"/>
+  </compounddef>
+</doxygen>

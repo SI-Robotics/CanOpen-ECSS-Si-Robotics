@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_73264594c6df1fbb7df611d560364214" kind="dir">
+    <compoundname>lib/compat</compoundname>
+    <innerfile refid="compat_8h">compat.h</innerfile>
+    <innerfile refid="stdatomic_8c">stdatomic.c</innerfile>
+    <innerfile refid="string_8c">string.c</innerfile>
+    <innerfile refid="strings_8c">strings.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/compat/"/>
+  </compounddef>
+</doxygen>

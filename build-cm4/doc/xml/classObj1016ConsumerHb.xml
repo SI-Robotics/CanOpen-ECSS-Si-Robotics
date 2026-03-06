@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classObj1016ConsumerHb" kind="class" language="C++" prot="public">
+    <compoundname>Obj1016ConsumerHb</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; 0x1016u &gt;</basecompoundref>
+    <includes refid="nmt-hb-consumer_8hpp" local="no">nmt-hb-consumer.hpp</includes>
+    <innerclass refid="structObj1016ConsumerHb_1_1Sub00HighestSubidxSupported" prot="public">Obj1016ConsumerHb::Sub00HighestSubidxSupported</innerclass>
+    <innerclass refid="structObj1016ConsumerHb_1_1SubNthConsumerHbTime" prot="public">Obj1016ConsumerHb::SubNthConsumerHbTime</innerclass>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classObj1016ConsumerHb_1a2bbf9c0d5fa3dedc60dacdf9b7f328b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SubNthConsumerHbTime::sub_type</type>
+        <definition>static SubNthConsumerHbTime::sub_type Obj1016ConsumerHb::MakeHbConsumerEntry</definition>
+        <argsstring>(const co_unsigned8_t node_id, const co_unsigned16_t ms)</argsstring>
+        <name>MakeHbConsumerEntry</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/nmt-hb-consumer.hpp" line="35" column="3" bodyfile="unit-tests/co/obj-init/nmt-hb-consumer.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>0x1016: Consumer heartbeat time </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1016u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1016ConsumerHb</label>
+        <link refid="classObj1016ConsumerHb"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1016u &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1016ConsumerHb</label>
+        <link refid="classObj1016ConsumerHb"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/nmt-hb-consumer.hpp" line="29" column="1" bodyfile="unit-tests/co/obj-init/nmt-hb-consumer.hpp" bodystart="29" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1016ConsumerHb</scope><name>idx</name></member>
+      <member refid="classObj1016ConsumerHb_1a2bbf9c0d5fa3dedc60dacdf9b7f328b6" prot="public" virt="non-virtual"><scope>Obj1016ConsumerHb</scope><name>MakeHbConsumerEntry</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>Obj1016ConsumerHb</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>Obj1016ConsumerHb</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

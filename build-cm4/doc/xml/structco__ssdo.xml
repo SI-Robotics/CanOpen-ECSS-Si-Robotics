@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__ssdo" kind="struct" language="C++" prot="public">
+    <compoundname>co_ssdo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__ssdo_1acefcd1be415f9ed1a75f35bf2ddfda5d" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_ssdo::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="75" column="11" bodyfile="lib/co/ssdo.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1adb5d048d8b8ed0e85738fbd63faccdb7" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_ssdo::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to a CANopen device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="77" column="10" bodyfile="lib/co/ssdo.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1afe81a6dbebaf78eab45b71027b7d8bf2" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_ssdo::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+<para>The SDO number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="79" column="16" bodyfile="lib/co/ssdo.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a13629d76fe8de0f400e5a5ce41634259" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__sdo__par" kindref="compound">co_sdo_par</ref></type>
+        <definition>struct co_sdo_par co_ssdo::par</definition>
+        <argsstring></argsstring>
+        <name>par</name>
+        <briefdescription>
+<para>The SDO parameter record. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="79" column="16" bodyfile="lib/co/ssdo.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a72542993b8dfea9154ac871d69fdb86b" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_ssdo::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="83" column="12" bodyfile="lib/co/ssdo.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1ae5a02d1297b8ac5cf701de2253f50139" prot="public" static="no" mutable="no">
+        <type>int_least32_t</type>
+        <definition>int_least32_t co_ssdo::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>The SDO timeout (in milliseconds). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="85" column="15" bodyfile="lib/co/ssdo.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1aa2f60318049244c7e8e8612f90d83d06" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_ssdo::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+<para>A pointer to the CAN timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="87" column="13" bodyfile="lib/co/ssdo.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a52e483e0c0f1fd1205d250d55d81ad4a" prot="public" static="no" mutable="no">
+        <type><ref refid="ssdo_8c_1ac9af319e43dda2756cb51d7868ef3407" kindref="member">co_ssdo_state_t</ref> *</type>
+        <definition>co_ssdo_state_t* co_ssdo::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>A pointer to the current state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="89" column="17" bodyfile="lib/co/ssdo.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a75e992108aa723f8395afb382e75eefb" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_ssdo::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <briefdescription>
+<para>The current object index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="91" column="17" bodyfile="lib/co/ssdo.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1adc2be40cee1a86330632520c872f72cc" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_ssdo::subidx</definition>
+        <argsstring></argsstring>
+        <name>subidx</name>
+        <briefdescription>
+<para>The current object sub-index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="93" column="16" bodyfile="lib/co/ssdo.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a0206d401478f8d33847ece4e1016d1ac" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_ssdo::toggle</definition>
+        <argsstring></argsstring>
+        <name>toggle</name>
+        <briefdescription>
+<para>The current value of the toggle bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="95" column="16" bodyfile="lib/co/ssdo.c" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a60f6571ff3938309476c8ec986721d3a" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_ssdo::blksize</definition>
+        <argsstring></argsstring>
+        <name>blksize</name>
+        <briefdescription>
+<para>The number of segments per block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="97" column="16" bodyfile="lib/co/ssdo.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a5b9fc5a618d1a14a233d3f342a897b05" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_ssdo::ackseq</definition>
+        <argsstring></argsstring>
+        <name>ackseq</name>
+        <briefdescription>
+<para>The sequence number of the last successfully received segment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="99" column="16" bodyfile="lib/co/ssdo.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a242955c94d91e4f5fcaea2507e670eff" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_ssdo::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <briefdescription>
+<para>The generated CRC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="101" column="17" bodyfile="lib/co/ssdo.c" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a0395e1bb34a1fc50adad34b6416d6621" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned co_ssdo::gencrc</definition>
+        <argsstring></argsstring>
+        <name>gencrc</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating whether a CRC should be generated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="103" column="10" bodyfile="lib/co/ssdo.c" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a81a8a4e9355bed8e2b4a933e836da1f2" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned co_ssdo::dn_ind</definition>
+        <argsstring></argsstring>
+        <name>dn_ind</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating whether the download indication function has been invoked at least once for the ongoing request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="108" column="10" bodyfile="lib/co/ssdo.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a057a29ba91bcaee08e5ac2893afce53e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__sdo__req" kindref="compound">co_sdo_req</ref></type>
+        <definition>struct co_sdo_req co_ssdo::req</definition>
+        <argsstring></argsstring>
+        <name>req</name>
+        <briefdescription>
+<para>The SDO request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="108" column="10" bodyfile="lib/co/ssdo.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a9b6af3f69b77cf75e74bfd7c1e2eb8f4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref></type>
+        <definition>struct membuf co_ssdo::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+<para>The buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="108" column="10" bodyfile="lib/co/ssdo.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1ac66d7e3a3d34e5f30e7dd9898bcc23c0" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_ssdo::nbyte</definition>
+        <argsstring></argsstring>
+        <name>nbyte</name>
+        <briefdescription>
+<para>The number of bytes in <ref refid="structco__ssdo_1a057a29ba91bcaee08e5ac2893afce53e" kindref="member">req</ref> already copied to <ref refid="structco__ssdo_1a9b6af3f69b77cf75e74bfd7c1e2eb8f4" kindref="member">buf</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="114" column="8" bodyfile="lib/co/ssdo.c" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__ssdo_1a31ea44f7177f5fcd00f4b40034d71754" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char co_ssdo::begin[CO_SSDO_MEMBUF_SIZE]</definition>
+        <argsstring>[CO_SSDO_MEMBUF_SIZE]</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>The static memory buffer used by <ref refid="structco__ssdo_1a9b6af3f69b77cf75e74bfd7c1e2eb8f4" kindref="member">buf</ref> in the absence of dynamic memory allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/ssdo.c" line="120" column="6" bodyfile="lib/co/ssdo.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen Server-SDO. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>co_sdo_par</label>
+        <link refid="structco__sdo__par"/>
+      </node>
+      <node id="4">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_ssdo</label>
+        <link refid="structco__ssdo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>req</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>co_sdo_req</label>
+        <link refid="structco__sdo__req"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>membuf</edgelabel>
+          <edgelabel>membuf_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="9">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="11">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>co_ssdo_state</label>
+        <link refid="structco__ssdo__state"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/ssdo.c" line="73" column="1" bodyfile="lib/co/ssdo.c" bodystart="73" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structco__ssdo_1a5b9fc5a618d1a14a233d3f342a897b05" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>ackseq</name></member>
+      <member refid="structco__ssdo_1a31ea44f7177f5fcd00f4b40034d71754" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>begin</name></member>
+      <member refid="structco__ssdo_1a60f6571ff3938309476c8ec986721d3a" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>blksize</name></member>
+      <member refid="structco__ssdo_1a9b6af3f69b77cf75e74bfd7c1e2eb8f4" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>buf</name></member>
+      <member refid="structco__ssdo_1a242955c94d91e4f5fcaea2507e670eff" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>crc</name></member>
+      <member refid="structco__ssdo_1adb5d048d8b8ed0e85738fbd63faccdb7" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>dev</name></member>
+      <member refid="structco__ssdo_1a81a8a4e9355bed8e2b4a933e836da1f2" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>dn_ind</name></member>
+      <member refid="structco__ssdo_1a0395e1bb34a1fc50adad34b6416d6621" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>gencrc</name></member>
+      <member refid="structco__ssdo_1a75e992108aa723f8395afb382e75eefb" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>idx</name></member>
+      <member refid="structco__ssdo_1ac66d7e3a3d34e5f30e7dd9898bcc23c0" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>nbyte</name></member>
+      <member refid="structco__ssdo_1acefcd1be415f9ed1a75f35bf2ddfda5d" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>net</name></member>
+      <member refid="structco__ssdo_1afe81a6dbebaf78eab45b71027b7d8bf2" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>num</name></member>
+      <member refid="structco__ssdo_1a13629d76fe8de0f400e5a5ce41634259" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>par</name></member>
+      <member refid="structco__ssdo_1a72542993b8dfea9154ac871d69fdb86b" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>recv</name></member>
+      <member refid="structco__ssdo_1a057a29ba91bcaee08e5ac2893afce53e" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>req</name></member>
+      <member refid="structco__ssdo_1a52e483e0c0f1fd1205d250d55d81ad4a" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>state</name></member>
+      <member refid="structco__ssdo_1adc2be40cee1a86330632520c872f72cc" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>subidx</name></member>
+      <member refid="structco__ssdo_1ae5a02d1297b8ac5cf701de2253f50139" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>timeout</name></member>
+      <member refid="structco__ssdo_1aa2f60318049244c7e8e8612f90d83d06" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>timer</name></member>
+      <member refid="structco__ssdo_1a0206d401478f8d33847ece4e1016d1ac" prot="public" virt="non-virtual"><scope>co_ssdo</scope><name>toggle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

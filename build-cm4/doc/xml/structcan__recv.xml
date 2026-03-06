@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcan__recv" kind="struct" language="C++" prot="public">
+    <compoundname>can_recv</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcan__recv_1a49d1b01f7d67dbbb03e01119b933be7b" prot="public" static="no" mutable="no">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* can_recv::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+<para>A pointer to the memory allocator used to allocate this struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="125" column="9" bodyfile="lib/can/net.c" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__recv_1a61319f02e41449852cecbefb4fb4b827" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref></type>
+        <definition>struct rbnode can_recv::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+<para>The node of this receiver in the tree of receivers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="125" column="9" bodyfile="lib/can/net.c" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__recv_1a2b7afa80ddd6054d218d5c3016b983e6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlnode" kindref="compound">dlnode</ref></type>
+        <definition>struct dlnode can_recv::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+<para>The list of CAN frame receivers with the same key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="125" column="9" bodyfile="lib/can/net.c" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* can_recv::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to the network interface with which this receiver is registered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="134" column="11" bodyfile="lib/can/net.c" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__recv_1a4b77bb5caec723642a650450c9383f5e" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8c_1a8e1adbb702eca918a2cd740a9a942aef" kindref="member">can_recv_key_t</ref></type>
+        <definition>can_recv_key_t can_recv::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>The key used in <ref refid="structcan__recv_1a61319f02e41449852cecbefb4fb4b827" kindref="member">node</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="136" column="16" bodyfile="lib/can/net.c" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__recv_1aca055564416f25c004178d5dccb09112" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref> *</type>
+        <definition>can_recv_func_t* can_recv::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+<para>A pointer to the callback function invoked by <ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="138" column="17" bodyfile="lib/can/net.c" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* can_recv::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>A pointer to the user-specified data for <ref refid="structcan__recv_1aca055564416f25c004178d5dccb09112" kindref="member">func</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="140" column="6" bodyfile="lib/can/net.c" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CAN frame receiver. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="7">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/can/net.c" line="123" column="1" bodyfile="lib/can/net.c" bodystart="123" bodyend="141"/>
+    <listofallmembers>
+      <member refid="structcan__recv_1a49d1b01f7d67dbbb03e01119b933be7b" prot="public" virt="non-virtual"><scope>can_recv</scope><name>alloc</name></member>
+      <member refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" prot="public" virt="non-virtual"><scope>can_recv</scope><name>data</name></member>
+      <member refid="structcan__recv_1aca055564416f25c004178d5dccb09112" prot="public" virt="non-virtual"><scope>can_recv</scope><name>func</name></member>
+      <member refid="structcan__recv_1a4b77bb5caec723642a650450c9383f5e" prot="public" virt="non-virtual"><scope>can_recv</scope><name>key</name></member>
+      <member refid="structcan__recv_1a2b7afa80ddd6054d218d5c3016b983e6" prot="public" virt="non-virtual"><scope>can_recv</scope><name>list</name></member>
+      <member refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" prot="public" virt="non-virtual"><scope>can_recv</scope><name>net</name></member>
+      <member refid="structcan__recv_1a61319f02e41449852cecbefb4fb4b827" prot="public" virt="non-virtual"><scope>can_recv</scope><name>node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

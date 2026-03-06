@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="pheap_8h" kind="file" language="C++">
+    <compoundname>pheap.h</compoundname>
+    <includes refid="features_8h" local="no">lely/compat/features.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+    <includedby refid="net_8c" local="no">lib/can/net.c</includedby>
+    <includedby refid="pheap_8c" local="no">lib/util/pheap.c</includedby>
+    <includedby refid="test-pheap_8cpp" local="no">unit-tests/util/test-pheap.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>assert.h</label>
+      </node>
+      <node id="2">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>include/lely/util/pheap.h</label>
+        <link refid="pheap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>unit-tests/util/test-pheap.cpp</label>
+        <link refid="test-pheap_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/util/pheap.c</label>
+        <link refid="pheap_8c"/>
+      </node>
+      <node id="2">
+        <label>lib/can/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="1">
+        <label>include/lely/util/pheap.h</label>
+        <link refid="pheap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpnode" prot="public">pnode</innerclass>
+    <innerclass refid="structpheap" prot="public">pheap</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="pheap_8h_1a4f8f3739878f7f1bf547f2cd9a3b2fad" prot="public" static="no">
+        <name>PNODE_INIT</name>
+        <initializer>	{ \
+		NULL, NULL, NULL, NULL \
+	}</initializer>
+        <briefdescription>
+<para>The static initializer for <ref refid="structpnode" kindref="compound">pnode</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="69" column="9" bodyfile="include/lely/util/pheap.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pheap_8h_1a20a5e32c2a4cf3d11231b6349ceb29a4" prot="public" static="no">
+        <name>PHEAP_INIT</name>
+        <initializer>	{ \
+		NULL, NULL, 0 \
+	}</initializer>
+        <briefdescription>
+<para>The static initializer for <ref refid="structpheap" kindref="compound">pheap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="98" column="9" bodyfile="include/lely/util/pheap.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" prot="public" static="no">
+        <name>pnode_foreach</name>
+        <param><defname>first</defname></param>
+        <param><defname>node</defname></param>
+        <initializer>pnode_foreach_(__LINE__, first, node)</initializer>
+        <briefdescription>
+<para>Iterates over each node in a pairing heap in unspecified order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is safe to remove the current node during the iteration. However, since <ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove()</ref> may change the order of the nodes, it is not guaranteed that all nodes will be visited.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the first node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the pointer to the nodes. This variable is declared in the scope of the loop.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="130" column="10" bodyfile="include/lely/util/pheap.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pheap_8h_1ab56f00bd1fb923299bb68eeb7974860e" prot="public" static="no">
+        <name>pnode_foreach_</name>
+        <param><defname>n</defname></param>
+        <param><defname>first</defname></param>
+        <param><defname>node</defname></param>
+        <initializer>pnode_foreach__(n, first, node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="132" column="10" bodyfile="include/lely/util/pheap.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pheap_8h_1a4a508100bdd5914fa2728ecd72f84d5f" prot="public" static="no">
+        <name>pnode_foreach__</name>
+        <param><defname>n</defname></param>
+        <param><defname>first</defname></param>
+        <param><defname>node</defname></param>
+        <initializer>	for (struct <ref refid="structpnode" kindref="compound">pnode</ref> *node = (first), \
+			  *_pnode_next_##n = (node) ? <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next</ref>(node) : NULL; \
+			(node); (node) = _pnode_next_##n, \
+			  _pnode_next_##n = (node) ? <ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next</ref>(node) : NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="133" column="9" bodyfile="include/lely/util/pheap.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pheap_8h_1ae072a1761a3845b6c9432042257bec91" prot="public" static="no">
+        <name>pheap_foreach</name>
+        <param><defname>heap</defname></param>
+        <param><defname>node</defname></param>
+        <initializer><ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach</ref> (<ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(heap), node)</initializer>
+        <briefdescription>
+<para>Iterates over each node in a pairing heap in unspecified order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" kindref="member">pnode_foreach()</ref>, <ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="207" column="9" bodyfile="include/lely/util/pheap.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int pheap_cmp_t(const void *p1, const void *p2)</definition>
+        <argsstring>(const void *p1, const void *p2)</argsstring>
+        <name>pheap_cmp_t</name>
+        <briefdescription>
+<para>The type of a comparison function suitable for use in a paring heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>p1</bold> and <bold>p2</bold> MUST be NULL or point to objects of the same type.</para>
+<para><simplesect kind="return"><para>an integer greater than, equal to, or less than 0 if the object at <bold>p1</bold> is greater than, equal to, or less than the object at <bold>p2</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="85" column="13" bodyfile="include/lely/util/pheap.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pheap_8h_1afd211eeefb84dd2b4509198adaa1b0cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pnode_init</definition>
+        <argsstring>(struct pnode *node, const void *key)</argsstring>
+        <name>pnode_init</name>
+        <param>
+          <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a node in a paring heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the node to be initialized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the key for this node. The key MUST NOT be modified while the node is part of a heap. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="210" column="1" bodyfile="include/lely/util/pheap.h" bodystart="210" bodyend="215" declfile="include/lely/util/pheap.h" declline="110" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+        <definition>struct pnode * pnode_next</definition>
+        <argsstring>(const struct pnode *node)</argsstring>
+        <name>pnode_next</name>
+        <param>
+          <type>const struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the next node (in unspecified order) in a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="218" column="1" bodyfile="include/lely/util/pheap.h" bodystart="218" bodyend="229" declfile="include/lely/util/pheap.h" declline="113" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1abf8210a361e60a430190c662b974a797" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pheap_init</definition>
+        <argsstring>(struct pheap *heap, pheap_cmp_t *cmp)</argsstring>
+        <name>pheap_init</name>
+        <param>
+          <type>struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type><ref refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" kindref="member">pheap_cmp_t</ref> *</type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>heap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the heap to be initialized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the function used to compare two keys. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="232" column="1" bodyfile="include/lely/util/pheap.h" bodystart="232" bodyend="240" declfile="include/lely/util/pheap.h" declline="145" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1af2317265d047b9da51422346ffe72703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pheap_empty</definition>
+        <argsstring>(const struct pheap *heap)</argsstring>
+        <name>pheap_empty</name>
+        <param>
+          <type>const struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>Returns <bold>true</bold> if the pairing heap is empty, and <bold>false</bold> if not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="243" column="1" bodyfile="include/lely/util/pheap.h" bodystart="243" bodyend="246" declfile="include/lely/util/pheap.h" declline="151" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t pheap_size</definition>
+        <argsstring>(const struct pheap *heap)</argsstring>
+        <name>pheap_size</name>
+        <param>
+          <type>const struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>Returns the size (in number of nodes) of a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(1) operation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="249" column="1" bodyfile="include/lely/util/pheap.h" bodystart="249" bodyend="254" declfile="include/lely/util/pheap.h" declline="157" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1a1865390f93f49c0386d16a1292510b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pheap_insert</definition>
+        <argsstring>(struct pheap *heap, struct pnode *node)</argsstring>
+        <name>pheap_insert</name>
+        <param>
+          <type>struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a node into a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(1) operation. This function does not check whether a node with the same key already exists, or whether the node is already part of another heap. It is the responsibility of the user to ensure that the node is not part of the heap before calling this function.</para>
+<para><simplesect kind="see"><para><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove()</ref>, <ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="168" column="6" bodyfile="lib/util/pheap.c" bodystart="35" bodyend="60" declfile="include/lely/util/pheap.h" declline="168" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pheap_remove</definition>
+        <argsstring>(struct pheap *heap, struct pnode *node)</argsstring>
+        <name>pheap_remove</name>
+        <param>
+          <type>struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Removes a node from a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an (amortized) O(log(n)) operation. It is the responsibility of the user to ensure that the node is part of the heap before calling this function.</para>
+<para><simplesect kind="see"><para><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert()</ref>, <ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="177" column="6" bodyfile="lib/util/pheap.c" bodystart="63" bodyend="93" declfile="include/lely/util/pheap.h" declline="177" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+        <definition>struct pnode* pheap_find</definition>
+        <argsstring>(const struct pheap *heap, const void *key)</argsstring>
+        <name>pheap_find</name>
+        <param>
+          <type>const struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds a node in a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(n) operation.</para>
+<para><simplesect kind="return"><para>a pointer to the node if found, or NULL if not.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="186" column="12" bodyfile="lib/util/pheap.c" bodystart="96" bodyend="119" declfile="include/lely/util/pheap.h" declline="186" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pheap_contains</definition>
+        <argsstring>(const struct pheap *heap, const struct pnode *node)</argsstring>
+        <name>pheap_contains</name>
+        <param>
+          <type>const struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a node is part of a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>true</bold> if the node was found in the heap, and <bold>false</bold> if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="194" column="6" bodyfile="lib/util/pheap.c" bodystart="122" bodyend="132" declfile="include/lely/util/pheap.h" declline="194" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+        <definition>struct pnode * pheap_first</definition>
+        <argsstring>(const struct pheap *heap)</argsstring>
+        <name>pheap_first</name>
+        <param>
+          <type>const struct <ref refid="structpheap" kindref="compound">pheap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the first (minimum) node in a pairing heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(1) operation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="257" column="1" bodyfile="include/lely/util/pheap.h" bodystart="257" bodyend="262" declfile="include/lely/util/pheap.h" declline="200" declcolumn="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the utilities library; it contains the <ulink url="https://en.wikipedia.org/wiki/Pairing_heap">pairing heap</ulink> declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A pairing heap is a half-sorted tree structure suitable for a priority queue. Compared to a self-balancing binary tree, insertion and retrieval of the first (minimum) element is faster (O(1) vs. O(log(n))), while finding an arbitrary element is slower (O(n) vs. O(log(n))).</para>
+<para>The pairing heap implemented here is generic and can be used for any kind of key-value pair; only (void) pointers to keys are stored. Upon initialization of the heap, the user is responsible for providing a suitable comparison function (<ref refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" kindref="member">pheap_cmp_t</ref>).</para>
+<para><simplesect kind="copyright"><para>2015-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_PHEAP_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_PHEAP_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="features_8h" kindref="compound">lely/compat/features.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_PHEAP_INLINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_PHEAP_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structpnode" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>{</highlight></codeline>
+<codeline lineno="59" refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structpnode_1a65384ee10be6b2c249f0e997cb841a68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*<ref refid="structpnode_1a65384ee10be6b2c249f0e997cb841a68" kindref="member">parent</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structpnode_1afc38237c842520749a966b89d54b6e9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*<ref refid="structpnode_1afc38237c842520749a966b89d54b6e9d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="65" refid="structpnode_1a9ac08cee497b9f360956e97de23a27dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*<ref refid="structpnode_1a9ac08cee497b9f360956e97de23a27dc" kindref="member">child</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="pheap_8h_1a4f8f3739878f7f1bf547f2cd9a3b2fad" refkind="member"><highlight class="preprocessor">#define<sp/>PNODE_INIT<sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>NULL,<sp/>NULL,<sp/>NULL<sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" kindref="member">pheap_cmp_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structpheap" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpheap" kindref="compound">pheap</ref><sp/>{</highlight></codeline>
+<codeline lineno="90" refid="structpheap_1a17952eab3e3c56dbd22ab2f7d39138dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" kindref="member">pheap_cmp_t</ref><sp/>*<ref refid="structpheap_1a17952eab3e3c56dbd22ab2f7d39138dc" kindref="member">cmp</ref>;</highlight></codeline>
+<codeline lineno="92" refid="structpheap_1a3329564b88014659df3d08fb1ca7065f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*<ref refid="structpheap_1a3329564b88014659df3d08fb1ca7065f" kindref="member">root</ref>;</highlight></codeline>
+<codeline lineno="94" refid="structpheap_1adcc1fc8fcad643b6af4ac4eae644029d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structpheap_1adcc1fc8fcad643b6af4ac4eae644029d" kindref="member">num_nodes</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="pheap_8h_1a20a5e32c2a4cf3d11231b6349ceb29a4" refkind="member"><highlight class="preprocessor">#define<sp/>PHEAP_INIT<sp/>\</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>NULL,<sp/>0<sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1afd211eeefb84dd2b4509198adaa1b0cb" kindref="member">pnode_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" kindref="member">key</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*<ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__COUNTER__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pnode_foreach(first,<sp/>node)<sp/>pnode_foreach_(__COUNTER__,<sp/>first,<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="pheap_8h_1a3cf6e5b6ed25213024221a4ad2ef484a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pnode_foreach(first,<sp/>node)<sp/>pnode_foreach_(__LINE__,<sp/>first,<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pnode_foreach_(n,<sp/>first,<sp/>node)<sp/>pnode_foreach__(n,<sp/>first,<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pnode_foreach__(n,<sp/>first,<sp/>node)<sp/>\</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(struct<sp/>pnode<sp/>*node<sp/>=<sp/>(first),<sp/>\</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*_pnode_next_##n<sp/>=<sp/>(node)<sp/>?<sp/>pnode_next(node)<sp/>:<sp/>NULL;<sp/>\</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(node);<sp/>(node)<sp/>=<sp/>_pnode_next_##n,<sp/>\</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_pnode_next_##n<sp/>=<sp/>(node)<sp/>?<sp/>pnode_next(node)<sp/>:<sp/>NULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1abf8210a361e60a430190c662b974a797" kindref="member">pheap_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap,<sp/><ref refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" kindref="member">pheap_cmp_t</ref><sp/>*cmp);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1af2317265d047b9da51422346ffe72703" kindref="member">pheap_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1a1865390f93f49c0386d16a1292510b48" kindref="member">pheap_insert</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1ae4b7e002bb914384713b16b557d52dc6" kindref="member">pheap_remove</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*<ref refid="pheap_8h_1a67aa0c00386903d4d484485c6837ed8b" kindref="member">pheap_find</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" kindref="member">key</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1a8e6fa1003a718ddcda9a8d645e7d0d52" kindref="member">pheap_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*<ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="pheap_8h_1ae072a1761a3845b6c9432042257bec91" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pheap_foreach(heap,<sp/>node)<sp/>pnode_foreach<sp/>(pheap_first(heap),<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="pheap_8h_1afd211eeefb84dd2b4509198adaa1b0cb" refkind="member"><highlight class="normal"><ref refid="pheap_8h_1afd211eeefb84dd2b4509198adaa1b0cb" kindref="member">pnode_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" kindref="member">key</ref>)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(node);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" kindref="member">key</ref><sp/>=<sp/><ref refid="structpnode_1ad7a3724434ff5d9a1362416dd1d0a747" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*</highlight></codeline>
+<codeline lineno="218" refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" refkind="member"><highlight class="normal"><ref refid="pheap_8h_1ac1925d937e9c67f8a74a9fae2b415c43" kindref="member">pnode_next</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(node);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node-&gt;<ref refid="structpnode_1a9ac08cee497b9f360956e97de23a27dc" kindref="member">child</ref>)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node-&gt;<ref refid="structpnode_1a9ac08cee497b9f360956e97de23a27dc" kindref="member">child</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node-&gt;<ref refid="structpnode_1afc38237c842520749a966b89d54b6e9d" kindref="member">next</ref>)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node-&gt;<ref refid="structpnode_1afc38237c842520749a966b89d54b6e9d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((node<sp/>=<sp/>node-&gt;<ref refid="structpnode_1a65384ee10be6b2c249f0e997cb841a68" kindref="member">parent</ref>));</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="pheap_8h_1abf8210a361e60a430190c662b974a797" refkind="member"><highlight class="normal"><ref refid="pheap_8h_1abf8210a361e60a430190c662b974a797" kindref="member">pheap_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap,<sp/><ref refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" kindref="member">pheap_cmp_t</ref><sp/>*cmp)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(heap);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(cmp);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap-&gt;<ref refid="structpheap_1a17952eab3e3c56dbd22ab2f7d39138dc" kindref="member">cmp</ref><sp/>=<sp/>cmp;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap-&gt;<ref refid="structpheap_1a3329564b88014659df3d08fb1ca7065f" kindref="member">root</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap-&gt;<ref refid="structpheap_1adcc1fc8fcad643b6af4ac4eae644029d" kindref="member">num_nodes</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="pheap_8h_1af2317265d047b9da51422346ffe72703" refkind="member"><highlight class="normal"><ref refid="pheap_8h_1af2317265d047b9da51422346ffe72703" kindref="member">pheap_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(heap)<sp/>==<sp/>0u;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" refkind="member"><highlight class="normal"><ref refid="pheap_8h_1a429be639b1cb57728d5b997da3a934b0" kindref="member">pheap_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(heap);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>heap-&gt;<ref refid="structpheap_1adcc1fc8fcad643b6af4ac4eae644029d" kindref="member">num_nodes</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal">LELY_UTIL_PHEAP_INLINE<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpnode" kindref="compound">pnode</ref><sp/>*</highlight></codeline>
+<codeline lineno="257" refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" refkind="member"><highlight class="normal"><ref refid="pheap_8h_1a1803a0da93595c64c55d617ea8d6de5c" kindref="member">pheap_first</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpheap" kindref="compound">pheap</ref><sp/>*heap)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(heap);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>heap-&gt;<ref refid="structpheap_1a3329564b88014659df3d08fb1ca7065f" kindref="member">root</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_UTIL_PHEAP_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/util/pheap.h"/>
+  </compounddef>
+</doxygen>

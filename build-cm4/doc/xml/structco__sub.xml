@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__sub" kind="struct" language="C++" prot="public">
+    <compoundname>co_sub</compoundname>
+    <includes refid="detail_2obj_8h" local="no">obj.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__sub_1a6795276d9644f34d65b2e6af4a7955e4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref></type>
+        <definition>struct rbnode co_sub::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+<para>The node of this sub-object in the tree of sub-objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="49" column="8" bodyfile="include/lely/co/detail/obj.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a811c8a0dedfd4069a64976b10646a18d" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1aff557961d96aebf0e1f648852a6fbfe1" kindref="member">co_obj_t</ref> *</type>
+        <definition>co_obj_t* co_sub::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+<para>A pointer to the CANopen object containing this sub-object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="57" column="10" bodyfile="include/lely/co/detail/obj.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a235f5e6dd04a2a6e137d7c43e2e995b1" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_sub::subidx</definition>
+        <argsstring></argsstring>
+        <name>subidx</name>
+        <briefdescription>
+<para>The object sub-index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="59" column="16" bodyfile="include/lely/co/detail/obj.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a207a7ee2c0d9c17607cffb730c2065bf" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_sub::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The data type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="61" column="17" bodyfile="include/lely/co/detail/obj.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a470e2977613dfbcfe99e1e079ac877d4" prot="public" static="no" mutable="no">
+        <type>union <ref refid="unionco__val" kindref="compound">co_val</ref></type>
+        <definition>union co_val co_sub::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+<para>The lower limit of the object value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="61" column="17" bodyfile="include/lely/co/detail/obj.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a9f754e2b728125c7d95953ac6d165f6b" prot="public" static="no" mutable="no">
+        <type>union <ref refid="unionco__val" kindref="compound">co_val</ref></type>
+        <definition>union co_val co_sub::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+<para>The upper limit of the object value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="61" column="17" bodyfile="include/lely/co/detail/obj.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1ad43282432a126494386196fbdaf919f2" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_sub::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+<para>A pointer to the sub-object value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="77" column="6" bodyfile="include/lely/co/detail/obj.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a34785e2555462fdbc1afd839fdb44f63" prot="public" static="no" mutable="no">
+        <type>uint_least32_t</type>
+        <definition>uint_least32_t co_sub::access</definition>
+        <argsstring></argsstring>
+        <name>access</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+<para>The access type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="79" column="16" bodyfile="include/lely/co/detail/obj.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a98f9d706e0c48d2a897365539b206d26" prot="public" static="no" mutable="no">
+        <type>uint_least32_t</type>
+        <definition>uint_least32_t co_sub::pdo_mapping</definition>
+        <argsstring></argsstring>
+        <name>pdo_mapping</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating if it is possible to map this object into a PDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="81" column="16" bodyfile="include/lely/co/detail/obj.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a63abaedff68b9dec1e6539fe30b3bc94" prot="public" static="no" mutable="no">
+        <type>uint_least32_t</type>
+        <definition>uint_least32_t co_sub::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <bitfield> 26</bitfield>
+        <briefdescription>
+<para>The object flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="83" column="16" bodyfile="include/lely/co/detail/obj.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a6739cb7c0a1c8bef600f4043fd656356" prot="public" static="no" mutable="no">
+        <type><ref refid="obj_8h_1aa9fac5fdd8d282698d2806d70ea37be0" kindref="member">co_sub_dn_ind_t</ref> *</type>
+        <definition>co_sub_dn_ind_t* co_sub::dn_ind</definition>
+        <argsstring></argsstring>
+        <name>dn_ind</name>
+        <briefdescription>
+<para>A pointer to the download indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="85" column="17" bodyfile="include/lely/co/detail/obj.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1a2ad10cb3a3a78ddf3c793acd229ab297" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_sub::dn_data</definition>
+        <argsstring></argsstring>
+        <name>dn_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__sub_1a6739cb7c0a1c8bef600f4043fd656356" kindref="member">dn_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="87" column="6" bodyfile="include/lely/co/detail/obj.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1ad7aa54dd4fe610acc7f83ffcf147ccf9" prot="public" static="no" mutable="no">
+        <type><ref refid="obj_8h_1a48fac3932d2be917ea30a193a972f7c2" kindref="member">co_sub_up_ind_t</ref> *</type>
+        <definition>co_sub_up_ind_t* co_sub::up_ind</definition>
+        <argsstring></argsstring>
+        <name>up_ind</name>
+        <briefdescription>
+<para>A pointer to the upload indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="90" column="17" bodyfile="include/lely/co/detail/obj.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__sub_1abc2cd891cfd0e10d0596bc39cf44f886" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_sub::up_data</definition>
+        <argsstring></argsstring>
+        <name>up_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__sub_1ad7aa54dd4fe610acc7f83ffcf147ccf9" kindref="member">up_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/obj.h" line="92" column="6" bodyfile="include/lely/co/detail/obj.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen sub-object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_obj</label>
+        <link refid="structco__obj"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_sub</label>
+        <link refid="structco__sub"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>max</edgelabel>
+          <edgelabel>min</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>co_val</label>
+        <link refid="unionco__val"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/co/detail/obj.h" line="53" column="1" bodyfile="include/lely/co/detail/obj.h" bodystart="53" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structco__sub_1a34785e2555462fdbc1afd839fdb44f63" prot="public" virt="non-virtual"><scope>co_sub</scope><name>access</name></member>
+      <member refid="structco__sub_1a2ad10cb3a3a78ddf3c793acd229ab297" prot="public" virt="non-virtual"><scope>co_sub</scope><name>dn_data</name></member>
+      <member refid="structco__sub_1a6739cb7c0a1c8bef600f4043fd656356" prot="public" virt="non-virtual"><scope>co_sub</scope><name>dn_ind</name></member>
+      <member refid="structco__sub_1a63abaedff68b9dec1e6539fe30b3bc94" prot="public" virt="non-virtual"><scope>co_sub</scope><name>flags</name></member>
+      <member refid="structco__sub_1a9f754e2b728125c7d95953ac6d165f6b" prot="public" virt="non-virtual"><scope>co_sub</scope><name>max</name></member>
+      <member refid="structco__sub_1a470e2977613dfbcfe99e1e079ac877d4" prot="public" virt="non-virtual"><scope>co_sub</scope><name>min</name></member>
+      <member refid="structco__sub_1a6795276d9644f34d65b2e6af4a7955e4" prot="public" virt="non-virtual"><scope>co_sub</scope><name>node</name></member>
+      <member refid="structco__sub_1a811c8a0dedfd4069a64976b10646a18d" prot="public" virt="non-virtual"><scope>co_sub</scope><name>obj</name></member>
+      <member refid="structco__sub_1a98f9d706e0c48d2a897365539b206d26" prot="public" virt="non-virtual"><scope>co_sub</scope><name>pdo_mapping</name></member>
+      <member refid="structco__sub_1a235f5e6dd04a2a6e137d7c43e2e995b1" prot="public" virt="non-virtual"><scope>co_sub</scope><name>subidx</name></member>
+      <member refid="structco__sub_1a207a7ee2c0d9c17607cffb730c2065bf" prot="public" virt="non-virtual"><scope>co_sub</scope><name>type</name></member>
+      <member refid="structco__sub_1abc2cd891cfd0e10d0596bc39cf44f886" prot="public" virt="non-virtual"><scope>co_sub</scope><name>up_data</name></member>
+      <member refid="structco__sub_1ad7aa54dd4fe610acc7f83ffcf147ccf9" prot="public" virt="non-virtual"><scope>co_sub</scope><name>up_ind</name></member>
+      <member refid="structco__sub_1ad43282432a126494386196fbdaf919f2" prot="public" virt="non-virtual"><scope>co_sub</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

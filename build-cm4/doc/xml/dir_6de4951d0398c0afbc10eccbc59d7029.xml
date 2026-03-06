@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_6de4951d0398c0afbc10eccbc59d7029" kind="dir">
+    <compoundname>unit-tests/compat</compoundname>
+    <innerfile refid="test-string_8cpp">test-string.cpp</innerfile>
+    <innerfile refid="test-strings_8cpp">test-strings.cpp</innerfile>
+    <innerfile refid="compat_2tests-main_8cpp">tests-main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/compat/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-memory_8cpp" kind="file" language="C++">
+    <compoundname>test-memory.cpp</compoundname>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes local="no">cstdint</includes>
+    <includes refid="memory_8h" local="no">lely/util/memory.h</includes>
+    <includes refid="error_8h" local="no">lely/util/error.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>unit-tests/util/test-memory.cpp</label>
+        <link refid="test-memory_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>mem_alloc()</header>
+      <memberdef kind="function" id="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemoryDefaultAllocator, MemAlloc_ZeroSize)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemoryDefaultAllocator</type>
+        </param>
+        <param>
+          <type>MemAlloc_ZeroSize</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with null pointer to allocator, any alignment value and zero size</para>
+<para><bold>Then</bold> null pointer is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="49" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="test-memory_8cpp_1a264a70b47c85e1176bbf7b10ce338dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemoryDefaultAllocator, MemAlloc_BadAlignment)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemoryDefaultAllocator</type>
+        </param>
+        <param>
+          <type>MemAlloc_BadAlignment</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with null pointer to allocator, non-zero alignment that&apos;s not a power of 2 and non-zero size</para>
+<para><bold>Then</bold> null pointer is returned, ERRNUM_INVAL error number is set <linebreak/>
+calls <ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="64" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="test-memory_8cpp_1ad59915b2e8529403887f7efecdd991e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemoryDefaultAllocator, MemAlloc_ZeroAlignment)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemoryDefaultAllocator</type>
+        </param>
+        <param>
+          <type>MemAlloc_ZeroAlignment</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with null pointer to allocator, zero (default) alignment and non-zero size</para>
+<para><bold>Then</bold> null pointer is returned, ERRNUM_NOMEM error number is set <linebreak/>
+calls set_serrnum() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="80" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="test-memory_8cpp_1a99fe6de3f7bdb0fa1756c39c927145a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemoryDefaultAllocator, MemAlloc_AnyAllocationFails)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemoryDefaultAllocator</type>
+        </param>
+        <param>
+          <type>MemAlloc_AnyAllocationFails</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc()</ref> is called with null pointer to allocator, non-zero alignment and non-zero size</para>
+<para><bold>Then</bold> null pointer is returned and ERRNUM_NOMEM error number is set <linebreak/>
+calls <ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="94" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="94" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>mem_size()</header>
+      <memberdef kind="function" id="test-memory_8cpp_1a0df5f29cdbe5dc705d8b80fd673fc6ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemoryDefaultAllocator, MemSize)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemoryDefaultAllocator</type>
+        </param>
+        <param>
+          <type>MemSize</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size()</ref> is called with null pointer to allocator</para>
+<para><bold>Then</bold> zero is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="115" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="115" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>mem_capacity()</header>
+      <memberdef kind="function" id="test-memory_8cpp_1a4dc930904c9f68ff7d01b44c7af9ef2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemoryDefaultAllocator, MemCapacity)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemoryDefaultAllocator</type>
+        </param>
+        <param>
+          <type>MemCapacity</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity()</ref> is called with null pointer to allocator</para>
+<para><bold>Then</bold> zero is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="131" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="131" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>mem_free()</header>
+      <memberdef kind="function" id="test-memory_8cpp_1abd030ca7feb7024a9726ebc8a46e4891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_MemoryDefaultAllocatorFree, MemFree)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_MemoryDefaultAllocatorFree</type>
+        </param>
+        <param>
+          <type>MemFree</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free()</ref> is called with null pointer to allocator and any pointer to be freed</para>
+<para><bold>Then</bold> nothing is changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="150" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-memory_8cpp_1a8d02288ba01e08edaf10ba2067f44f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_MemoryDefaultAllocator)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_MemoryDefaultAllocator</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="34" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="test-memory_8cpp_1a39e4dbd69cf68e330d1e5e82960d3ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_MemoryDefaultAllocatorFree)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_MemoryDefaultAllocatorFree</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-memory.cpp" line="139" column="1" bodyfile="unit-tests/util/test-memory.cpp" bodystart="139" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2024 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="memory_8h" kindref="compound">lely/util/memory.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="error_8h" kindref="compound">lely/util/error.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_MemoryDefaultAllocator)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>TEST_TEARDOWN()<sp/>{<sp/><ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ptr);<sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"></codeline>
+<codeline lineno="49" refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" refkind="member"><highlight class="normal"><ref refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" kindref="member">TEST</ref>(Util_MemoryDefaultAllocator,<sp/>MemAlloc_ZeroSize)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>ptr<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ptr);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="test-memory_8cpp_1a264a70b47c85e1176bbf7b10ce338dce" refkind="member"><highlight class="normal"><ref refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" kindref="member">TEST</ref>(Util_MemoryDefaultAllocator,<sp/>MemAlloc_BadAlignment)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>alignment<sp/>=<sp/>3u;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>ptr<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>alignment,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ptr);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" kindref="member">ERRNUM_INVAL</ref>,<sp/><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>());</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="test-memory_8cpp_1ad59915b2e8529403887f7efecdd991e2" refkind="member"><highlight class="normal"><ref refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" kindref="member">TEST</ref>(Util_MemoryDefaultAllocator,<sp/>MemAlloc_ZeroAlignment)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>ptr<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ptr);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" kindref="member">ERRNUM_NOMEM</ref>,<sp/><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="test-memory_8cpp_1a99fe6de3f7bdb0fa1756c39c927145a5" refkind="member"><highlight class="normal"><ref refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" kindref="member">TEST</ref>(Util_MemoryDefaultAllocator,<sp/>MemAlloc_AnyAllocationFails)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>ptr<sp/>=<sp/><ref refid="memory_8h_1a90830d17a2e79efd7d376803588fad48" kindref="member">mem_alloc</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">alignof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ptr);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" kindref="member">ERRNUM_NOMEM</ref>,<sp/><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>());</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"></codeline>
+<codeline lineno="115" refid="test-memory_8cpp_1a0df5f29cdbe5dc705d8b80fd673fc6ff" refkind="member"><highlight class="normal"><ref refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" kindref="member">TEST</ref>(Util_MemoryDefaultAllocator,<sp/>MemSize)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="memory_8h_1ac45d24195a7cd854df0667705f635e7c" kindref="member">mem_size</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"></codeline>
+<codeline lineno="125"></codeline>
+<codeline lineno="131" refid="test-memory_8cpp_1a4dc930904c9f68ff7d01b44c7af9ef2c" refkind="member"><highlight class="normal"><ref refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" kindref="member">TEST</ref>(Util_MemoryDefaultAllocator,<sp/>MemCapacity)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="memory_8h_1ae0dc2b3d76748dbd5b6a8f69da72bc44" kindref="member">mem_capacity</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ret);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_MemoryDefaultAllocatorFree){};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"></codeline>
+<codeline lineno="150" refid="test-memory_8cpp_1abd030ca7feb7024a9726ebc8a46e4891" refkind="member"><highlight class="normal"><ref refid="test-memory_8cpp_1ac94b1c61c48700a6f0924a8db10d5c65" kindref="member">TEST</ref>(Util_MemoryDefaultAllocatorFree,<sp/>MemFree)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>uint32_t<sp/>data<sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><ref refid="memory_8h_1aa42e1e26c4edb6451b7f1f2f3c87e5c3" kindref="member">mem_free</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>LELY_NO_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/util/test-memory.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+prefix=/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/install-cm4
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: liblely-co
+Description: Lely CANopen library
+URL: https://gitlab.com/lely_industries/lely-core
+Version: 3.5.0
+Requires: liblely-compat >= 3.5.0 liblely-util >= 3.5.0 liblely-can >= 3.5.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -llely-co

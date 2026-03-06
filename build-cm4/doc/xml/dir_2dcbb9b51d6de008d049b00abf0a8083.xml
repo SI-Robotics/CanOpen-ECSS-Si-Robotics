@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_2dcbb9b51d6de008d049b00abf0a8083" kind="dir">
+    <compoundname>unit-tests/util</compoundname>
+    <innerfile refid="test-bits_8cpp">test-bits.cpp</innerfile>
+    <innerfile refid="test-cmp_8cpp">test-cmp.cpp</innerfile>
+    <innerfile refid="test-dllist_8cpp">test-dllist.cpp</innerfile>
+    <innerfile refid="test-endian_8cpp">test-endian.cpp</innerfile>
+    <innerfile refid="test-error_8cpp">test-error.cpp</innerfile>
+    <innerfile refid="test-membuf_8cpp">test-membuf.cpp</innerfile>
+    <innerfile refid="test-memory_8cpp">test-memory.cpp</innerfile>
+    <innerfile refid="test-mempool_8cpp">test-mempool.cpp</innerfile>
+    <innerfile refid="test-pheap_8cpp">test-pheap.cpp</innerfile>
+    <innerfile refid="test-rbtree_8cpp">test-rbtree.cpp</innerfile>
+    <innerfile refid="test-time_8cpp">test-time.cpp</innerfile>
+    <innerfile refid="test-ustring_8cpp">test-ustring.cpp</innerfile>
+    <innerfile refid="test-util_8cpp">test-util.cpp</innerfile>
+    <innerfile refid="util_2tests-main_8cpp">tests-main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/util/"/>
+  </compounddef>
+</doxygen>

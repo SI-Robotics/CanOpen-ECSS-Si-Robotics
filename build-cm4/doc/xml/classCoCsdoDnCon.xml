@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoCsdoDnCon" kind="class" language="C++" prot="public">
+    <compoundname>CoCsdoDnCon</compoundname>
+    <includes refid="co-csdo-dn-con_8hpp" local="no">co-csdo-dn-con.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCoCsdoDnCon_1a46b5a0c2e5ae6f0d8550b6359938c19d" prot="public" static="yes" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+        <definition>co_csdo_t * CoCsdoDnCon::sdo</definition>
+        <argsstring></argsstring>
+        <name>sdo</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="31" column="20" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoDnCon_1a0fface02a7a708d6161f8825ae2705ca" prot="public" static="yes" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t CoCsdoDnCon::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="32" column="26" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoDnCon_1ac181add4e5c0fe9e64bf633b2ddf4322" prot="public" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoCsdoDnCon::subidx</definition>
+        <argsstring></argsstring>
+        <name>subidx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="33" column="25" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoDnCon_1ac2a57c900ca53be9d137a15c0e85f466" prot="public" static="yes" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t CoCsdoDnCon::ac</definition>
+        <argsstring></argsstring>
+        <name>ac</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="34" column="26" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoCsdoDnCon_1a4dfef708f6334693e885658c2ebf6267" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * CoCsdoDnCon::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="35" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCoCsdoDnCon_1a777de1e228540bb54043b3e5df89f335" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoCsdoDnCon::num_called</definition>
+        <argsstring></argsstring>
+        <name>num_called</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="54" column="17" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCoCsdoDnCon_1ad06c820e4f6660c5fd4a83ebbc5c7f0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoCsdoDnCon::Func</definition>
+        <argsstring>(co_csdo_t *sdo_, co_unsigned16_t idx_, co_unsigned8_t subidx_, co_unsigned32_t ac_, void *data_)</argsstring>
+        <name>Func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+          <declname>sdo_</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac_</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="37" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.cpp" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoDnCon_1ad19f2da2162cd6556f37431d91f9dbf8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoCsdoDnCon::Check</definition>
+        <argsstring>(const co_csdo_t *sdo_, co_unsigned16_t idx_, co_unsigned8_t subidx_, co_unsigned32_t ac_, const void *data_)</argsstring>
+        <name>Check</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1ac43ec77a897d3863d7cf75cb98ff0ee1" kindref="member">co_csdo_t</ref> *</type>
+          <declname>sdo_</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx_</declname>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>ac_</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="39" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.cpp" bodystart="62" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoDnCon_1a0742b0f64f16a8e1d49f87fe34626fb1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoCsdoDnCon::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="42" column="15" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.cpp" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoDnCon_1a9fb0b21cb147e97fded0f217692fec8d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool CoCsdoDnCon::Called</definition>
+        <argsstring>()</argsstring>
+        <name>Called</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="45" column="3" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoCsdoDnCon_1a34c392ebb010caf3e9199710ddf841e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t CoCsdoDnCon::GetNumCalled</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumCalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="49" column="3" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="csdo_8h_1a53d1efae13919692e196b2e6b636f7e8" kindref="member">co_csdo_dn_con_t</ref> mock. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CoCsdoDnCon</label>
+        <link refid="classCoCsdoDnCon"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sdo</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>co_sdo_par</label>
+        <link refid="structco__sdo__par"/>
+      </node>
+      <node id="5">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co_csdo</label>
+        <link refid="structco__csdo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>dn_buf</edgelabel>
+          <edgelabel>up_buf</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>dn_dcf</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>co_csdo_dn_dcf</label>
+        <link refid="structco__csdo__dn__dcf"/>
+      </node>
+      <node id="3">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="15">
+        <label>co_csdo_state</label>
+        <link refid="structco__csdo__state"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="12">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/libtest/tools/co-csdo-dn-con.hpp" line="29" column="1" bodyfile="unit-tests/libtest/tools/co-csdo-dn-con.hpp" bodystart="29" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classCoCsdoDnCon_1ac2a57c900ca53be9d137a15c0e85f466" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>ac</name></member>
+      <member refid="classCoCsdoDnCon_1a9fb0b21cb147e97fded0f217692fec8d" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>Called</name></member>
+      <member refid="classCoCsdoDnCon_1ad19f2da2162cd6556f37431d91f9dbf8" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>Check</name></member>
+      <member refid="classCoCsdoDnCon_1a0742b0f64f16a8e1d49f87fe34626fb1" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>Clear</name></member>
+      <member refid="classCoCsdoDnCon_1a4dfef708f6334693e885658c2ebf6267" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>data</name></member>
+      <member refid="classCoCsdoDnCon_1ad06c820e4f6660c5fd4a83ebbc5c7f0b" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>Func</name></member>
+      <member refid="classCoCsdoDnCon_1a34c392ebb010caf3e9199710ddf841e8" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>GetNumCalled</name></member>
+      <member refid="classCoCsdoDnCon_1a0fface02a7a708d6161f8825ae2705ca" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>idx</name></member>
+      <member refid="classCoCsdoDnCon_1a777de1e228540bb54043b3e5df89f335" prot="private" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>num_called</name></member>
+      <member refid="classCoCsdoDnCon_1a46b5a0c2e5ae6f0d8550b6359938c19d" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>sdo</name></member>
+      <member refid="classCoCsdoDnCon_1ac181add4e5c0fe9e64bf633b2ddf4322" prot="public" virt="non-virtual"><scope>CoCsdoDnCon</scope><name>subidx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

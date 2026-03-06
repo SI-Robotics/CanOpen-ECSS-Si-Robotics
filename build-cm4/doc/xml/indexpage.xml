@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Lely core libraries</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md_README"/> The Lely core libraries are a collection of C and C++ libraries and tools, providing hih-performance I/O and sensor/actuator control for robotics and IoT applications. The libraries are cross-platform and have few dependencies. They can be even be used on bare-metal microcontrollers with as little as 32 kB RAM.</para>
+<sect1 id="index_1autotoc_md1">
+<title>Overview</title>
+<para>The Lely core libraries consist of:<itemizedlist>
+<listitem><para>C11 and POSIX compatibility library (liblely-compat)</para>
+</listitem><listitem><para>Test Anything Protocol (TAP) library (liblely-tap)</para>
+</listitem><listitem><para>Utilities library (liblely-util)</para>
+</listitem><listitem><para>Event library (liblely-ev)</para>
+</listitem><listitem><para>Asynchronous I/O library (liblely-io2)</para>
+</listitem><listitem><para>CANopen library (liblely-co)</para>
+</listitem><listitem><para>C++ CANopen application library (liblely-coapp)</para>
+</listitem></itemizedlist>
+</para>
+<para>Click <ulink url="https://opensource.lely.com/canopen/docs/overview/">here</ulink> for more details.</para>
+</sect1>
+<sect1 id="index_1autotoc_md2">
+<title>Getting started</title>
+<sect2 id="index_1autotoc_md3">
+<title>Download</title>
+<para>Pre-built Debian packages are available on our <ulink url="https://launchpad.net/~lely/+archive/ubuntu/ppa">Ubuntu PPA</ulink>.</para>
+<para>You can download the source code from the <ulink url="https://gitlab.com/lely_industries/lely-core/-/releases">Releases</ulink> page, or clone this repository with <verbatim>$ git clone https://gitlab.com/lely_industries/lely-core.git
+</verbatim> </para>
+</sect2>
+<sect2 id="index_1autotoc_md4">
+<title>Build and install</title>
+<para>This project uses the GNU Build System (<computeroutput>configure</computeroutput>, <computeroutput>make</computeroutput>, <computeroutput>make install</computeroutput>), available on Linux and Windows (through <ulink url="https://www.cygwin.com/">Cygwin</ulink>). To build the libraries and tools, you need to install the autotools (autoconf, automake and libtool). After the initial clone or download of the source, generate the <computeroutput>configure</computeroutput> script by running <verbatim>$ autoreconf -i
+</verbatim> in root directory of the project. This step only has to be repeated if <computeroutput>configure.ac</computeroutput> or one the the <computeroutput>Makefile.am</computeroutput> files changes.</para>
+<para>First, configure the build system by running <verbatim>$ ./configure --disable-python
+</verbatim> If you do not want to clutter the source directories with object files, you can run <computeroutput>configure</computeroutput> from another directory. <computeroutput>--disable-python</computeroutput> disables the deprecated Python bindings. The <computeroutput>configure</computeroutput> script supports many other options. The full list can be shown with <verbatim>$ ./configure --help
+</verbatim> and is documented <ulink url="https://opensource.lely.com/canopen/docs/configuration/">here</ulink>.</para>
+<para>Once the build system is configured, the libraries and tools can be built with <verbatim>$ make
+</verbatim> The optional test suite can be run with <verbatim>$ make check
+</verbatim> If you have <ulink url="http://www.doxygen.org/">doxygen</ulink> and <ulink url="http://www.graphviz.org/">Graphviz</ulink> installed, you can build the HTML documentation of the API with <verbatim>$ make html
+</verbatim> Finally, install the binaries, headers and documentation by running <verbatim># make install
+</verbatim> as root.</para>
+<para>Click <ulink url="https://opensource.lely.com/canopen/docs/installation/">here</ulink> for more information about building the lely-core libraries from source, as well as instructions for cross-compilation.</para>
+<para>For more details on setup and tools used for the development of the library, you can check the <computeroutput>docker/</computeroutput> folder for all images used by the Continuous Integration system <ulink url="./.gitlab-ci.yml">configuration</ulink>. See <ref refid="md_docker_README" kindref="compound">docker/README.md</ref> more for details.</para>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md5">
+<title>ECSS Compliance</title>
+<para>The project is compliant with <ulink url="https://ecss.nl/">ECSS</ulink> requirements for space flight software criticality B.</para>
+<para>To enable compliance add <computeroutput>--enable-ecss-compliance</computeroutput> to build configuration.</para>
+<para>Only liblely-compat, liblely-util and liblely-co are included in the ECSS compliance mode.</para>
+<para>For criticality B validation Test Suite visit <ulink url="https://gitlab.com/n7space/canopen/test-suite">Test Suite</ulink>.</para>
+</sect1>
+<sect1 id="index_1autotoc_md6">
+<title>Documentation</title>
+<para>The doxygen-generated API documentation of the latest development version can be found <ulink url="http://lely_industries.gitlab.io/lely-core/doxygen/">here</ulink>.</para>
+</sect1>
+<sect1 id="index_1autotoc_md7">
+<title>Licensing</title>
+<para>Copyright 2013-2021 <ulink url="http://www.lely.com">Lely Industries N.V.</ulink></para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

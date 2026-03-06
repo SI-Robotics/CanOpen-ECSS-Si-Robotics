@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_7ae5515b8d3107a83fae3d43cae7652e" kind="dir">
+    <compoundname>include/lely/co/detail</compoundname>
+    <innerfile refid="detail_2dev_8h">dev.h</innerfile>
+    <innerfile refid="detail_2obj_8h">obj.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/co/detail/"/>
+  </compounddef>
+</doxygen>

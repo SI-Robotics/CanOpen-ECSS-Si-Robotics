@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classHolder" kind="class" language="C++" prot="public">
+    <compoundname>Holder</compoundname>
+    <includes refid="holder_8hpp" local="no">holder.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Item</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classHolder_1a8d95bf4b717cafa0d9ebc94340893a60" prot="private" static="no" mutable="no">
+        <type>Item</type>
+        <definition>Item Holder&lt; Item &gt;::item</definition>
+        <argsstring></argsstring>
+        <name>item</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/holder.hpp" line="55" column="8" bodyfile="unit-tests/co/holder/holder.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classHolder_1a170a9917cf3853b51ca969e3a9294b93" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Holder&lt; Item &gt;::Holder</definition>
+        <argsstring>()=default</argsstring>
+        <name>Holder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/holder.hpp" line="36" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHolder_1ad59deb9a4fe2c6537acce42e7dbc82e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Item *</type>
+        <definition>Item* Holder&lt; Item &gt;::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/holder.hpp" line="40" column="3" bodyfile="unit-tests/co/holder/holder.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classHolder_1a9c1acf25ee7d3f0d9e2c333bcbc998af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Item *</type>
+        <definition>Item* Holder&lt; Item &gt;::Take</definition>
+        <argsstring>()</argsstring>
+        <name>Take</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/holder.hpp" line="45" column="3" bodyfile="unit-tests/co/holder/holder.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classHolder_1ae77834c0ce75d610901582fb26c83ea6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Item *</type>
+        <definition>Item* Holder&lt; Item &gt;::Reclaim</definition>
+        <argsstring>()</argsstring>
+        <name>Reclaim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/holder.hpp" line="50" column="3" bodyfile="unit-tests/co/holder/holder.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic wrapper for C types that separates unit-tests from memory allocation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows for the same unit tests to run with dynamic allocation disabled or enabled. </para>
+    </detaileddescription>
+    <location file="unit-tests/co/holder/holder.hpp" line="32" column="1" bodyfile="unit-tests/co/holder/holder.hpp" bodystart="32" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classHolder_1ad59deb9a4fe2c6537acce42e7dbc82e9" prot="public" virt="non-virtual"><scope>Holder</scope><name>Get</name></member>
+      <member refid="classHolder_1a170a9917cf3853b51ca969e3a9294b93" prot="protected" virt="non-virtual"><scope>Holder</scope><name>Holder</name></member>
+      <member refid="classHolder_1a8d95bf4b717cafa0d9ebc94340893a60" prot="private" virt="non-virtual"><scope>Holder</scope><name>item</name></member>
+      <member refid="classHolder_1ae77834c0ce75d610901582fb26c83ea6" prot="public" virt="non-virtual"><scope>Holder</scope><name>Reclaim</name></member>
+      <member refid="classHolder_1a9c1acf25ee7d3f0d9e2c333bcbc998af" prot="public" virt="non-virtual"><scope>Holder</scope><name>Take</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

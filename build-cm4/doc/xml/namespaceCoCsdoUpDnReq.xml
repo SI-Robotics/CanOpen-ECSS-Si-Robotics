@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCoCsdoUpDnReq" kind="namespace" language="C++">
+    <compoundname>CoCsdoUpDnReq</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-csdo_8cpp_1a07d19cc8348fba11e540e6445104fc66" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CoCsdoUpDnReq::SetOneSecOnNet</definition>
+        <argsstring>(can_net_t *const net)</argsstring>
+        <name>SetOneSecOnNet</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *const</type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="2641" column="1" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="2641" bodyend="2644"/>
+      </memberdef>
+      <memberdef kind="function" id="test-csdo_8cpp_1a9c0291e643ddd377d5fbd1510718dec7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CoCsdoUpDnReq::AbortTransfer</definition>
+        <argsstring>(can_net_t *const net, const co_unsigned32_t can_id)</argsstring>
+        <name>AbortTransfer</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *const</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>const co_unsigned32_t</type>
+          <declname>can_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="2647" column="1" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="2647" bodyend="2650"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-csdo.cpp" line="2639" column="1"/>
+  </compounddef>
+</doxygen>

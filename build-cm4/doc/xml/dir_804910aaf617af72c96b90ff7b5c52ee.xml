@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_804910aaf617af72c96b90ff7b5c52ee" kind="dir">
+    <compoundname>include/lely</compoundname>
+    <innerdir refid="dir_9c86deac3cc52258a6d59da16d0c9a0b">include/lely/can</innerdir>
+    <innerdir refid="dir_b6150f6d9399c069178bd0d38431a7ff">include/lely/co</innerdir>
+    <innerdir refid="dir_25eff8b1b9ef259b94ef5afeebe1b126">include/lely/compat</innerdir>
+    <innerdir refid="dir_f2c4197e7fe0eb8ef875e584392bb02d">include/lely/util</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/"/>
+  </compounddef>
+</doxygen>

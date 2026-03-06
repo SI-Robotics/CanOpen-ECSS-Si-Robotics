@@ -1,0 +1,1724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="error_8h" kind="file" language="C++">
+    <compoundname>error.h</compoundname>
+    <includes refid="features_8h" local="no">lely/compat/features.h</includes>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+    <includedby refid="diag_8h" local="no">include/lely/util/diag.h</includedby>
+    <includedby refid="buf_8c" local="no">lib/can/buf.c</includedby>
+    <includedby refid="msg_8c" local="no">lib/can/msg.c</includedby>
+    <includedby refid="net_8c" local="no">lib/can/net.c</includedby>
+    <includedby refid="csdo_8c" local="no">lib/co/csdo.c</includedby>
+    <includedby refid="obj_8c" local="no">lib/co/obj.c</includedby>
+    <includedby refid="rpdo_8c" local="no">lib/co/rpdo.c</includedby>
+    <includedby refid="ssdo_8c" local="no">lib/co/ssdo.c</includedby>
+    <includedby refid="sync_8c" local="no">lib/co/sync.c</includedby>
+    <includedby refid="tpdo_8c" local="no">lib/co/tpdo.c</includedby>
+    <includedby refid="error_8c" local="no">lib/util/error.c</includedby>
+    <includedby refid="membuf_8c" local="no">lib/util/membuf.c</includedby>
+    <includedby refid="memory_8c" local="no">lib/util/memory.c</includedby>
+    <includedby refid="mempool_8c" local="no">lib/util/mempool.c</includedby>
+    <includedby refid="test-buf_8cpp" local="no">unit-tests/can/test-buf.cpp</includedby>
+    <includedby refid="test-msg_8cpp" local="no">unit-tests/can/test-msg.cpp</includedby>
+    <includedby refid="test-dev_8cpp" local="no">unit-tests/co/test-dev.cpp</includedby>
+    <includedby refid="test-nmt-sdo_8cpp" local="no">unit-tests/co/test-nmt-sdo.cpp</includedby>
+    <includedby refid="test-nmt-srv_8cpp" local="no">unit-tests/co/test-nmt-srv.cpp</includedby>
+    <includedby refid="test-rpdo_8cpp" local="no">unit-tests/co/test-rpdo.cpp</includedby>
+    <includedby refid="test-tpdo_8cpp" local="no">unit-tests/co/test-tpdo.cpp</includedby>
+    <includedby refid="test-val_8cpp" local="no">unit-tests/co/test-val.cpp</includedby>
+    <includedby refid="test-cpputest_8cpp" local="no">unit-tests/cpputest/test-cpputest.cpp</includedby>
+    <includedby refid="limited_8hpp" local="no">unit-tests/libtest/allocators/limited.hpp</includedby>
+    <includedby refid="test-error_8cpp" local="no">unit-tests/util/test-error.cpp</includedby>
+    <includedby refid="test-membuf_8cpp" local="no">unit-tests/util/test-membuf.cpp</includedby>
+    <includedby refid="test-memory_8cpp" local="no">unit-tests/util/test-memory.cpp</includedby>
+    <includedby refid="test-mempool_8cpp" local="no">unit-tests/util/test-mempool.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="38">
+        <label>unit-tests/can/test-net.cpp</label>
+        <link refid="test-net_8cpp"/>
+      </node>
+      <node id="26">
+        <label>lib/util/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+      <node id="46">
+        <label>unit-tests/util/test-error.cpp</label>
+        <link refid="test-error_8cpp"/>
+      </node>
+      <node id="31">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="41">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/lely/util/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/lely/util/diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>unit-tests/libtest/tools/lely-unit-test.cpp</label>
+        <link refid="lely-unit-test_8cpp"/>
+      </node>
+      <node id="8">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="49">
+        <label>unit-tests/util/test-mempool.cpp</label>
+        <link refid="test-mempool_8cpp"/>
+      </node>
+      <node id="48">
+        <label>unit-tests/util/test-memory.cpp</label>
+        <link refid="test-memory_8cpp"/>
+      </node>
+      <node id="44">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="29">
+        <label>unit-tests/can/test-msg.cpp</label>
+        <link refid="test-msg_8cpp"/>
+      </node>
+      <node id="21">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="10">
+        <label>lib/co/val.c</label>
+        <link refid="val_8c"/>
+      </node>
+      <node id="20">
+        <label>lib/co/rpdo.c</label>
+        <link refid="rpdo_8c"/>
+      </node>
+      <node id="28">
+        <label>unit-tests/can/test-buf.cpp</label>
+        <link refid="test-buf_8cpp"/>
+      </node>
+      <node id="19">
+        <label>lib/co/obj.c</label>
+        <link refid="obj_8c"/>
+      </node>
+      <node id="7">
+        <label>lib/co/nmt_rdn.c</label>
+        <link refid="nmt__rdn_8c"/>
+      </node>
+      <node id="35">
+        <label>unit-tests/co/test-val.cpp</label>
+        <link refid="test-val_8cpp"/>
+      </node>
+      <node id="6">
+        <label>lib/co/nmt_hb.c</label>
+        <link refid="nmt__hb_8c"/>
+      </node>
+      <node id="11">
+        <label>lib/util/diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="43">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="24">
+        <label>lib/util/error.c</label>
+        <link refid="error_8c"/>
+      </node>
+      <node id="16">
+        <label>lib/can/msg.c</label>
+        <link refid="msg_8c"/>
+      </node>
+      <node id="15">
+        <label>lib/can/buf.c</label>
+        <link refid="buf_8c"/>
+      </node>
+      <node id="39">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="42">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="17">
+        <label>lib/can/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="18">
+        <label>lib/co/csdo.c</label>
+        <link refid="csdo_8c"/>
+      </node>
+      <node id="9">
+        <label>lib/co/sdo.c</label>
+        <link refid="sdo_8c"/>
+      </node>
+      <node id="36">
+        <label>unit-tests/cpputest/test-cpputest.cpp</label>
+        <link refid="test-cpputest_8cpp"/>
+      </node>
+      <node id="5">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="30">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="23">
+        <label>lib/co/tpdo.c</label>
+        <link refid="tpdo_8c"/>
+      </node>
+      <node id="25">
+        <label>lib/util/membuf.c</label>
+        <link refid="membuf_8c"/>
+      </node>
+      <node id="32">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="47">
+        <label>unit-tests/util/test-membuf.cpp</label>
+        <link refid="test-membuf_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/co/dev.c</label>
+        <link refid="dev_8c"/>
+      </node>
+      <node id="34">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="40">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="22">
+        <label>lib/co/sync.c</label>
+        <link refid="sync_8c"/>
+      </node>
+      <node id="27">
+        <label>lib/util/mempool.c</label>
+        <link refid="mempool_8c"/>
+      </node>
+      <node id="45">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="4">
+        <label>lib/co/emcy.c</label>
+        <link refid="emcy_8c"/>
+      </node>
+      <node id="37">
+        <label>unit-tests/libtest/allocators/limited.hpp</label>
+        <link refid="limited_8hpp"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="error_8h_1a4795494e1429d588b3e932ca585f0436" prot="public" static="no" strong="no">
+        <type></type>
+        <name>errnum</name>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aecf2b7ffb9089c277d3e32983ae3b725" prot="public">
+          <name>ERRNUM_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No error reported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a936ef1f5a7c89cefe3de8db8e9cecb01" prot="public">
+          <name>ERRNUM_2BIG</name>
+          <briefdescription>
+<para>Argument list too long. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aa0014aaec4c918c62385f361b142889b" prot="public">
+          <name>ERRNUM_ACCES</name>
+          <briefdescription>
+<para>Permission denied. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aaf770b5061aac3ae52891c9e1c182e9f" prot="public">
+          <name>ERRNUM_ADDRINUSE</name>
+          <briefdescription>
+<para>Address in use. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aa10b17f315dfc146370c218a04f406cb" prot="public">
+          <name>ERRNUM_ADDRNOTAVAIL</name>
+          <briefdescription>
+<para>Address not available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a134352612b015e2a1458a424aba14f2c" prot="public">
+          <name>ERRNUM_AFNOSUPPORT</name>
+          <briefdescription>
+<para>Address family not supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ab00e35dc2b75d05c33defd03a6d0af16" prot="public">
+          <name>ERRNUM_AGAIN</name>
+          <briefdescription>
+<para>Resource unavailable, try again. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a47642de7f2b6e659e87863d5a86a7500" prot="public">
+          <name>ERRNUM_ALREADY</name>
+          <briefdescription>
+<para>Connection already in progress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a7188ad264fce36ecaca0bc54f0e33aa1" prot="public">
+          <name>ERRNUM_BADF</name>
+          <briefdescription>
+<para>Bad file descriptor. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a11d3e7da03fd4ca0e5cb1483388e8372" prot="public">
+          <name>ERRNUM_BADMSG</name>
+          <briefdescription>
+<para>Bad message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a50736269969c65e871cf78e25058503f" prot="public">
+          <name>ERRNUM_BUSY</name>
+          <briefdescription>
+<para>Device or resource busy. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436af4ca340639d6b2b876ad999fb7409fdc" prot="public">
+          <name>ERRNUM_CANCELED</name>
+          <briefdescription>
+<para>Operation canceled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a95e0a36fef2cc0ee7e772e383929672a" prot="public">
+          <name>ERRNUM_CHILD</name>
+          <briefdescription>
+<para>No child process. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aa3ed5a864035862e084fc39d9107a79d" prot="public">
+          <name>ERRNUM_CONNABORTED</name>
+          <briefdescription>
+<para>Connection aborted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ab68405cf1a7831cb9f326a8b2a19c02e" prot="public">
+          <name>ERRNUM_CONNREFUSED</name>
+          <briefdescription>
+<para>Connection refused. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436adf79206be7d9cf7d3893c5e538acd5db" prot="public">
+          <name>ERRNUM_CONNRESET</name>
+          <briefdescription>
+<para>Connection reset. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ac295b08ef933faa053299d12c0dbe4a1" prot="public">
+          <name>ERRNUM_DEADLK</name>
+          <briefdescription>
+<para>Resource deadlock would occur. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436af2dc567c71fd6ab9671783462a3325ed" prot="public">
+          <name>ERRNUM_DESTADDRREQ</name>
+          <briefdescription>
+<para>Destination address required. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ab771a8326086dfdc0e938de5c51ef3cb" prot="public">
+          <name>ERRNUM_DOM</name>
+          <briefdescription>
+<para>Mathematics argument out of domain of function. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ac2a29f5abdb86007303a3d1139ca2c7d" prot="public">
+          <name>ERRNUM_EXIST</name>
+          <briefdescription>
+<para>File exists. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ae2378d211b822066bc3ab14f80187843" prot="public">
+          <name>ERRNUM_FAULT</name>
+          <briefdescription>
+<para>Bad address. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a929c6162e567df4475c8e4f8deac529a" prot="public">
+          <name>ERRNUM_FBIG</name>
+          <briefdescription>
+<para>File too large. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ac0d1dd27bdccbe7313f9eac5fa196d12" prot="public">
+          <name>ERRNUM_HOSTUNREACH</name>
+          <briefdescription>
+<para>Host is unreachable. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a1b56661295b55d1d34c9674e0cd02771" prot="public">
+          <name>ERRNUM_IDRM</name>
+          <briefdescription>
+<para>Identifier removed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436adecd4129ca532cce95e8010604134bc2" prot="public">
+          <name>ERRNUM_ILSEQ</name>
+          <briefdescription>
+<para>Illegal byte sequence. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436adfe261e27f8fbef6ee75ccdbbdb2c334" prot="public">
+          <name>ERRNUM_INPROGRESS</name>
+          <briefdescription>
+<para>Operation in progress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a4015927989cbfb764e0369ceaf880d12" prot="public">
+          <name>ERRNUM_INTR</name>
+          <briefdescription>
+<para>Interrupted function. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" prot="public">
+          <name>ERRNUM_INVAL</name>
+          <briefdescription>
+<para>Invalid argument. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a65c9573b81cf26a85b37df5b858bd70a" prot="public">
+          <name>ERRNUM_IO</name>
+          <briefdescription>
+<para>I/O error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a5f0a423da082ba02a2cb8aa14e1ff875" prot="public">
+          <name>ERRNUM_ISCONN</name>
+          <briefdescription>
+<para>Socket is connected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ac466850f59ad3c3e474b59fe4d52c932" prot="public">
+          <name>ERRNUM_ISDIR</name>
+          <briefdescription>
+<para>Is a directory. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ae5497f7a94aab91e12f7cdb4608b7af5" prot="public">
+          <name>ERRNUM_LOOP</name>
+          <briefdescription>
+<para>Too many levels of symbolic links. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a9dbd816bf1f802639d23e923cc8b42db" prot="public">
+          <name>ERRNUM_MFILE</name>
+          <briefdescription>
+<para>File descriptor value too large. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a65503f437c193e36500f5444de182609" prot="public">
+          <name>ERRNUM_MLINK</name>
+          <briefdescription>
+<para>Too many links. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a2bf7eb17fccfbcc1f55a3ef83de5b5b6" prot="public">
+          <name>ERRNUM_MSGSIZE</name>
+          <briefdescription>
+<para>Message too large. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436af42c93acf953c1b370032f0fb52f8dce" prot="public">
+          <name>ERRNUM_NAMETOOLONG</name>
+          <briefdescription>
+<para>Filename too long. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a5f7524e3de0d51e47d8442157dfbf3c0" prot="public">
+          <name>ERRNUM_NETDOWN</name>
+          <briefdescription>
+<para>Network is down. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436abbc5e2fadad0a8b7818859cd3a04dcf4" prot="public">
+          <name>ERRNUM_NETRESET</name>
+          <briefdescription>
+<para>Connection aborted by network. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ae583cf952209971f4df5f6ea5064a814" prot="public">
+          <name>ERRNUM_NETUNREACH</name>
+          <briefdescription>
+<para>Network unreachable. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a6c0bb187330bf8b180a90cc4b4f98552" prot="public">
+          <name>ERRNUM_NFILE</name>
+          <briefdescription>
+<para>Too many files open in system. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ab1ca0d0ca0ad24698eeb265bf7a441c3" prot="public">
+          <name>ERRNUM_NOBUFS</name>
+          <briefdescription>
+<para>No buffer space available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ac2f6bbaa876e9700bb04a16a4661a3b1" prot="public">
+          <name>ERRNUM_NODATA</name>
+          <briefdescription>
+<para>No message is available on the STREAM head read queue. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ae20864231d2a16cbc017756c777e92a1" prot="public">
+          <name>ERRNUM_NODEV</name>
+          <briefdescription>
+<para>No such device. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a6b6f53b501c05e27c3fa149b92ad08e1" prot="public">
+          <name>ERRNUM_NOENT</name>
+          <briefdescription>
+<para>No such file or directory. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a949d82915a6b4f0a1ac2bc563489b06e" prot="public">
+          <name>ERRNUM_NOEXEC</name>
+          <briefdescription>
+<para>Executable file format error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436af62df7c20b53f0d0f4a9a16783db4735" prot="public">
+          <name>ERRNUM_NOLCK</name>
+          <briefdescription>
+<para>No locks available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" prot="public">
+          <name>ERRNUM_NOMEM</name>
+          <briefdescription>
+<para>Not enough space. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ab00d0e93a93ed324348a860ab2e6d950" prot="public">
+          <name>ERRNUM_NOMSG</name>
+          <briefdescription>
+<para>No message of the desired type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a4d5f360cfc9e62fd99289f97b9c7e4f4" prot="public">
+          <name>ERRNUM_NOPROTOOPT</name>
+          <briefdescription>
+<para>Protocol not available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a061fe9b2c6a2a81c157cd28f444b6dce" prot="public">
+          <name>ERRNUM_NOSPC</name>
+          <briefdescription>
+<para>No space left on device. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436adcad9af4a35ff9bcf48d11d8154cefbc" prot="public">
+          <name>ERRNUM_NOSR</name>
+          <briefdescription>
+<para>No STREAM resources. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436adda0803bb394b0a64014e83559439e91" prot="public">
+          <name>ERRNUM_NOSTR</name>
+          <briefdescription>
+<para>Not a STREAM. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a0b8abf82e49de8fbcab9a21fc3b3ae8d" prot="public">
+          <name>ERRNUM_NOSYS</name>
+          <briefdescription>
+<para>Function not supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a14449307067dadb76c0a21d7c75355e0" prot="public">
+          <name>ERRNUM_NOTCONN</name>
+          <briefdescription>
+<para>The socket is not connected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a9d814206048ae266b0d4a3dff06a8800" prot="public">
+          <name>ERRNUM_NOTDIR</name>
+          <briefdescription>
+<para>Not a directory or a symbolic link to a directory. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aa618c0babbf921e7d589d22f26c7fe49" prot="public">
+          <name>ERRNUM_NOTEMPTY</name>
+          <briefdescription>
+<para>Directory not empty. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436af5046ef6fbd26f4a6b2e8afddebe628b" prot="public">
+          <name>ERRNUM_NOTRECOVERABLE</name>
+          <briefdescription>
+<para>State not recoverable. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a98532431ea5162ccceb96b862916a50d" prot="public">
+          <name>ERRNUM_NOTSOCK</name>
+          <briefdescription>
+<para>Not a socket. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a95ad4fea6ad5eb27549450a66c1ccf26" prot="public">
+          <name>ERRNUM_NOTSUP</name>
+          <briefdescription>
+<para>Not supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a8431f75eed9ba906f23559dd7db79126" prot="public">
+          <name>ERRNUM_NOTTY</name>
+          <briefdescription>
+<para>Inappropriate I/O control operation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a14b18a545309c0a870246bea3d1b61ff" prot="public">
+          <name>ERRNUM_NXIO</name>
+          <briefdescription>
+<para>No such device or address. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a7395e00c51b7b68a27615e78113a0c89" prot="public">
+          <name>ERRNUM_OPNOTSUPP</name>
+          <briefdescription>
+<para>Operation not supported on socket. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ac7517c40bbaa6f9bb29d1c610bbfc8d0" prot="public">
+          <name>ERRNUM_OVERFLOW</name>
+          <briefdescription>
+<para>Value too large to be stored in data type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a10198fbb543a5d43427c879a5bcb51af" prot="public">
+          <name>ERRNUM_OWNERDEAD</name>
+          <briefdescription>
+<para>Previous owner died. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a8b849061c5cb64a7f25a4cc9adf6db22" prot="public">
+          <name>ERRNUM_PERM</name>
+          <briefdescription>
+<para>Operation not permitted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436acaa5293675df784d72e633345a344a1d" prot="public">
+          <name>ERRNUM_PIPE</name>
+          <briefdescription>
+<para>Broken pipe. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a103a6472140385b4fdb596cb7c5cd0d1" prot="public">
+          <name>ERRNUM_PROTO</name>
+          <briefdescription>
+<para>Protocol error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a8c2dcc0d4d661ab0f66aed6a808d61b3" prot="public">
+          <name>ERRNUM_PROTONOSUPPORT</name>
+          <briefdescription>
+<para>Protocol not supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aad249c7a8e4f27d5d4658b09214e7316" prot="public">
+          <name>ERRNUM_PROTOTYPE</name>
+          <briefdescription>
+<para>Protocol wrong type for socket. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a1fdcccfb231a76f4e620e86e2701c2f4" prot="public">
+          <name>ERRNUM_RANGE</name>
+          <briefdescription>
+<para>Result too large. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ab0542c61539b5256a8b0d63a7ee46c02" prot="public">
+          <name>ERRNUM_ROFS</name>
+          <briefdescription>
+<para>Read-only file system. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a46b7dc363b48413633caf908a72384d5" prot="public">
+          <name>ERRNUM_SPIPE</name>
+          <briefdescription>
+<para>Invalid seek. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a5fea15cc3c1b46f2bf70c019794048a7" prot="public">
+          <name>ERRNUM_SRCH</name>
+          <briefdescription>
+<para>No such process. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a9092392c77b9aff8d549e734a44bef46" prot="public">
+          <name>ERRNUM_TIME</name>
+          <briefdescription>
+<para>Stream ioctl() timeout. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a69a99803104d16953bb39d673100f9d3" prot="public">
+          <name>ERRNUM_TIMEDOUT</name>
+          <briefdescription>
+<para>Connection timed out. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436acf7aa885acc9741fe6fc50ea035554bb" prot="public">
+          <name>ERRNUM_TXTBSY</name>
+          <briefdescription>
+<para>Text file busy. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a0c51dee3e1f6523dfc28c99d36a7d3ca" prot="public">
+          <name>ERRNUM_WOULDBLOCK</name>
+          <briefdescription>
+<para>Operation would block. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ae9d8c56dc2a7cca27683e9df8e8b0ce2" prot="public">
+          <name>ERRNUM_XDEV</name>
+          <briefdescription>
+<para>Cross-device link. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aa1e7ef6aa4065e21a34a45c5fcbc7bc4" prot="public">
+          <name>ERRNUM_AI_AGAIN</name>
+          <briefdescription>
+<para>The name could not be resolved at this time. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Future attempts may succeed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a1e8284d934647dd3cff9aef176576cda" prot="public">
+          <name>ERRNUM_AI_BADFLAGS</name>
+          <briefdescription>
+<para>The flags had an invalid value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436aaae494400fb3bc42001558179853d81d" prot="public">
+          <name>ERRNUM_AI_FAIL</name>
+          <briefdescription>
+<para>A non-recoverable error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ad713028feef19084d65cbcb2ed1c5e13" prot="public">
+          <name>ERRNUM_AI_FAMILY</name>
+          <briefdescription>
+<para>The address family was not recognized or the address length was invalid for the specified family. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a06a28c5ff05987f56b22c81d1445ead4" prot="public">
+          <name>ERRNUM_AI_MEMORY</name>
+          <briefdescription>
+<para>There was a memory allocation failure. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ae924666625fd5ff7bf5055ea47229629" prot="public">
+          <name>ERRNUM_AI_NONAME</name>
+          <briefdescription>
+<para>The name does not resolve for the supplied parameters. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436acaa0ab193d17878d77733fdb9cc02255" prot="public">
+          <name>ERRNUM_AI_OVERFLOW</name>
+          <briefdescription>
+<para>An argument buffer overflowed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436ae0a9e14c8765fc8309f8d83011e1aefc" prot="public">
+          <name>ERRNUM_AI_SERVICE</name>
+          <briefdescription>
+<para>The service passed was not recognized for the specified socket type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a4795494e1429d588b3e932ca585f0436a6d02a79e487c6e0318cf10df56d8dde2" prot="public">
+          <name>ERRNUM_AI_SOCKTYPE</name>
+          <briefdescription>
+<para>The intended socket type was not recognized. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The platform-independent error numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="83" column="1" bodyfile="include/lely/util/error.h" bodystart="83" bodyend="268"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" prot="public" static="no">
+        <type>enum <ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref></type>
+        <definition>typedef enum errnum errnum_t</definition>
+        <argsstring></argsstring>
+        <name>errnum_t</name>
+        <briefdescription>
+<para>The platform-independent error numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="268" column="10"/>
+      </memberdef>
+      <memberdef kind="typedef" id="error_8h_1a2910ea88b5eed38f366b1b229d4ed0d6" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int get_errc_handler_t(void *data)</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>get_errc_handler_t</name>
+        <briefdescription>
+<para>The function type of a handler for <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation uses <computeroutput>GetLastError()</computeroutput> on Windows and <computeroutput>errno</computeroutput> on other platforms.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extra argument specified to set_errnum_get_handler().</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>most recently set error code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="284" column="13" bodyfile="include/lely/util/error.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="error_8h_1a1ac1cc75f944af2231629b1fb51a0c2f" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void set_errc_handler_t(int errc, void *handle)</definition>
+        <argsstring>(int errc, void *handle)</argsstring>
+        <name>set_errc_handler_t</name>
+        <briefdescription>
+<para>The function type of a handler for <ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation uses <computeroutput>SetLastError()</computeroutput> on Windows and <computeroutput>errno</computeroutput> on other platforms.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>errc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the most recent error code to be set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extra argument specified to set_errnum_set_handler(). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="295" column="14" bodyfile="include/lely/util/error.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="error_8h_1a269a7a682e3da02b425b1965a3fa2841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_errc_get_handler</definition>
+        <argsstring>(get_errc_handler_t **phandler, void **pdata)</argsstring>
+        <name>get_errc_get_handler</name>
+        <param>
+          <type><ref refid="error_8h_1a2910ea88b5eed38f366b1b229d4ed0d6" kindref="member">get_errc_handler_t</ref> **</type>
+          <declname>phandler</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the handler function for <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to the handler function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store the pointer to the extra argument for the handler function (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="error_8h_1a45f2dae3940cbaadcb6031ac2b252ae1" kindref="member">set_errc_get_handler()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="307" column="6" bodyfile="lib/util/error.c" bodystart="75" bodyend="81" declfile="include/lely/util/error.h" declline="307" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a45f2dae3940cbaadcb6031ac2b252ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_errc_get_handler</definition>
+        <argsstring>(set_errc_handler_t **phandler, void **pdata)</argsstring>
+        <name>set_errc_get_handler</name>
+        <param>
+          <type><ref refid="error_8h_1a1ac1cc75f944af2231629b1fb51a0c2f" kindref="member">set_errc_handler_t</ref> **</type>
+          <declname>phandler</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the handler function for <ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to the handler function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store the pointer to the extra argument for the handler function (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="error_8h_1a4ffb374bfe82795721e428e42c615f0a" kindref="member">set_errc_set_handler()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="319" column="6" bodyfile="lib/util/error.c" bodystart="84" bodyend="90" declfile="include/lely/util/error.h" declline="319" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a1a0452ac0880117dbd9efde4f9f152e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_errc_set_handler</definition>
+        <argsstring>(get_errc_handler_t *handler, void *data)</argsstring>
+        <name>get_errc_set_handler</name>
+        <param>
+          <type><ref refid="error_8h_1a2910ea88b5eed38f366b1b229d4ed0d6" kindref="member">get_errc_handler_t</ref> *</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref> handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to NULL, <computeroutput><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref></computeroutput> will always return 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handler to be used with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref> (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional pointer to an extra argument for the handler function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="330" column="6" bodyfile="lib/util/error.c" bodystart="93" bodyend="97" declfile="include/lely/util/error.h" declline="330" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a4ffb374bfe82795721e428e42c615f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_errc_set_handler</definition>
+        <argsstring>(set_errc_handler_t *handler, void *data)</argsstring>
+        <name>set_errc_set_handler</name>
+        <param>
+          <type><ref refid="error_8h_1a1ac1cc75f944af2231629b1fb51a0c2f" kindref="member">set_errc_handler_t</ref> *</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref> handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to NULL, <computeroutput><ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref></computeroutput> will not store the error code.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handler to be used with <ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref> (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional pointer to an extra argument for the handler function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="341" column="6" bodyfile="lib/util/error.c" bodystart="100" bodyend="104" declfile="include/lely/util/error.h" declline="341" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a05076d34af59b7e1c2dca0ba7d3629ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref></type>
+        <definition>errnum_t errc2num</definition>
+        <argsstring>(int errc)</argsstring>
+        <name>errc2num</name>
+        <param>
+          <type>int</type>
+          <declname>errc</declname>
+        </param>
+        <briefdescription>
+<para>Transforms a native error code to a platform-independent error number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="error_8h_1a22fd750b6498eb3a1a6504383e40f217" kindref="member">errnum2c()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="376" column="10" bodyfile="lib/util/error.c" bodystart="373" bodyend="632" declfile="include/lely/util/error.h" declline="376" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a22fd750b6498eb3a1a6504383e40f217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int errnum2c</definition>
+        <argsstring>(errnum_t errnum)</argsstring>
+        <name>errnum2c</name>
+        <param>
+          <type><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref></type>
+          <declname>errnum</declname>
+        </param>
+        <briefdescription>
+<para>Transforms a platform-independent error number to a native error code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>err2num() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="392" column="5" bodyfile="lib/util/error.c" bodystart="882" bodyend="1005" declfile="include/lely/util/error.h" declline="392" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a501e5c693244531fd60a57b69f3744b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_errc</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_errc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the last native error code set by <computeroutput><ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref></computeroutput> by invoking the handler set by <computeroutput><ref refid="error_8h_1a45f2dae3940cbaadcb6031ac2b252ae1" kindref="member">set_errc_get_handler()</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation returns the last (thread-specific) native error code set by a system call or library function. This is equivalent to <computeroutput>GetLastError()</computeroutput>/<computeroutput>WSAGetLastError()</computeroutput> on Windows, or <computeroutput>errno</computeroutput> on other platforms.</para>
+<para>This function returns the thread-specific error number.</para>
+<para><simplesect kind="see"><para><ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="407" column="5" bodyfile="lib/util/error.c" bodystart="1008" bodyend="1011" declfile="include/lely/util/error.h" declline="407" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_errc</definition>
+        <argsstring>(int errc)</argsstring>
+        <name>set_errc</name>
+        <param>
+          <type>int</type>
+          <declname>errc</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current native error code to <bold>errc</bold> by invoking the handler set by <computeroutput><ref refid="error_8h_1a4ffb374bfe82795721e428e42c615f0a" kindref="member">set_errc_set_handler()</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In case of the default implementation. this is equivalent to <computeroutput>SetLastError(errc)</computeroutput>/<computeroutput>WSASetLastError(errc)</computeroutput> on Windows, or <computeroutput>errno = errc</computeroutput> on other platforms.</para>
+<para><simplesect kind="see"><para><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="419" column="6" bodyfile="lib/util/error.c" bodystart="1014" bodyend="1018" declfile="include/lely/util/error.h" declline="419" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1aad2d3bedc56c1f7d260b60ff324cb4d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_errc_from_errno</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_errc_from_errno</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the native error code to the value corresponding to <computeroutput>errno</computeroutput>, if available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is equivalent to <computeroutput>errno2c(errno)</computeroutput>. If <computeroutput>LELY_NO_ERRNO</computeroutput>, this functions returns 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="426" column="5" bodyfile="lib/util/error.c" bodystart="1021" bodyend="1028" declfile="include/lely/util/error.h" declline="426" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1afe070f878613ece554c2c54e9f93259a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_errc_from_errno</definition>
+        <argsstring>(void)</argsstring>
+        <name>set_errc_from_errno</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sets the native error code to the value corresponding to <computeroutput>errno</computeroutput>, if available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is equivalent to <computeroutput>set_errc(errno2c(errno))</computeroutput>. If <computeroutput>LELY_NO_ERRNO</computeroutput> is defined, the native error code is set to 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="433" column="6" bodyfile="lib/util/error.c" bodystart="1031" bodyend="1038" declfile="include/lely/util/error.h" declline="433" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1aee8930c0e745a6b877ebbd299e201a75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref></type>
+        <definition>errnum_t get_errnum</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_errnum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the last (thread-specific) platform-independent error number set by a system call or library function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is equivalent to <computeroutput>errc2num(get_errc())</computeroutput> (or <computeroutput><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref></computeroutput> if <computeroutput>LELY_NO_ERRNO</computeroutput> is defined).</para>
+<para><simplesect kind="see"><para><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="519" column="1" bodyfile="include/lely/util/error.h" bodystart="519" bodyend="522" declfile="include/lely/util/error.h" declline="442" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1af01011939b8938d99601f0a911d39d03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_errnum</definition>
+        <argsstring>(errnum_t errnum)</argsstring>
+        <name>set_errnum</name>
+        <param>
+          <type><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref></type>
+          <declname>errnum</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current (thread-specific) platform-independent error number to <bold>errnum</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is equivalent to <computeroutput>set_errc(errnum2c(errnum))</computeroutput> (or <computeroutput>set_errnum(errnum)</computeroutput> if <computeroutput>LELY_NO_ERRNO</computeroutput> is defined).</para>
+<para><simplesect kind="see"><para><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/error.h" line="525" column="1" bodyfile="include/lely/util/error.h" bodystart="525" bodyend="528" declfile="include/lely/util/error.h" declline="451" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the utilities library; it contains the native and platform-independent error number declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The C standard defines the (thread-local) <computeroutput>errno</computeroutput> variable plus a small number of error numbers (which are guaranteed to be positive). POSIX platforms extend the list of pre-defined error numbers to cover all platform-specific errors. Windows defines a separate (thread-local) variable, accessible by <computeroutput>GetLastError()</computeroutput>/<computeroutput>SetLastError()</computeroutput>, for all system errors. A subset of these, accessible by <computeroutput>WSAGetLastError()</computeroutput>/<computeroutput>WSASetLastError()</computeroutput>, is used for Windows Sockets errors. On top of this, both POSIX and Windows maintain a list of error codes returned by the <computeroutput>getaddrinfo()</computeroutput> and <computeroutput>getnameinfo()</computeroutput> functions. On Windows these error codes have the same values as their corresponding system errors, while on Linux they all have negative values, allowing them to be distinguished from valid <computeroutput>errno</computeroutput> values. Unfortunately on Cygwin their values are positive and overlap with <computeroutput>errno</computeroutput> error numbers.</para>
+<para>In order to minimize information loss, we would like to keep track of platform-dependent error numbers when storing or propagating errors, but do so in a platform-independent way. <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref> and <ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc()</ref> provide access to the current (thread-local) error code. These functions are equivalent to <computeroutput>GetLastError()</computeroutput> and <computeroutput>SetLastError()</computeroutput> on Windows and map to <computeroutput>errno</computeroutput> on other platforms. Negative <computeroutput>errno</computeroutput> values are used to store the error codes returned by <computeroutput>getaddrinfo()</computeroutput> and <computeroutput>getnameinfo()</computeroutput>, even if the original error codes are positive (e.g., on Cygwin). Since Windows also uses <computeroutput>errno</computeroutput> (for standard C functions), <computeroutput>set_errc(errno2c(errno))</computeroutput> can be used to portably translate <computeroutput>errno</computeroutput> to a native error code (this is a no-op on POSIX platforms).</para>
+<para>When responding to errors it is desirable to have a list of platform-independent error numbers. The <ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref> data type provides the <computeroutput>ERRNUM_*</computeroutput> error values. These values are guaranteed to be positive, unique and to have the same value across all platforms. There is an <computeroutput>ERRNUM_*</computeroutput> value for each of the (non-reserved) POSIX error numbers as well as the error codes returned by <computeroutput>getaddrinfo()</computeroutput> and <computeroutput>getnameinfo()</computeroutput>. Translating between native and platform-independent error numbers can be done with <ref refid="error_8h_1a05076d34af59b7e1c2dca0ba7d3629ff" kindref="member">errc2num()</ref> and <ref refid="error_8h_1a22fd750b6498eb3a1a6504383e40f217" kindref="member">errnum2c()</ref>.</para>
+<para>If <computeroutput>LELY_NO_ERRNO</computeroutput> is defined, <computeroutput>&lt;errno.h&gt;</computeroutput> is not included and <computeroutput>errno</computeroutput> is not used. Instead, <computeroutput><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum()</ref></computeroutput> and <computeroutput><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum()</ref></computeroutput> store and retrieve the platform-independent error number in a static variable (thread-local if supported). This behavior can be overridden with <computeroutput><ref refid="error_8h_1a4ffb374bfe82795721e428e42c615f0a" kindref="member">set_errc_set_handler()</ref></computeroutput> and <computeroutput><ref refid="error_8h_1a1a0452ac0880117dbd9efde4f9f152e0" kindref="member">get_errc_set_handler()</ref></computeroutput>.</para>
+<para><simplesect kind="copyright"><para>2013-2021 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_ERROR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_ERROR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="features_8h" kindref="compound">lely/compat/features.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;winerror.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>!LELY_NO_HOSTED<sp/>&amp;&amp;<sp/>_POSIX_C_SOURCE<sp/>&gt;=<sp/>200112L<sp/>&amp;&amp;<sp/>!defined(__NEWLIB__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;netdb.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_ERROR_INLINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_ERROR_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="error_8h_1a4795494e1429d588b3e932ca585f0436" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aecf2b7ffb9089c277d3e32983ae3b725" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aecf2b7ffb9089c277d3e32983ae3b725" kindref="member">ERRNUM_SUCCESS</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="87" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a936ef1f5a7c89cefe3de8db8e9cecb01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a936ef1f5a7c89cefe3de8db8e9cecb01" kindref="member">ERRNUM_2BIG</ref>,</highlight></codeline>
+<codeline lineno="89" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa0014aaec4c918c62385f361b142889b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa0014aaec4c918c62385f361b142889b" kindref="member">ERRNUM_ACCES</ref>,</highlight></codeline>
+<codeline lineno="91" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aaf770b5061aac3ae52891c9e1c182e9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aaf770b5061aac3ae52891c9e1c182e9f" kindref="member">ERRNUM_ADDRINUSE</ref>,</highlight></codeline>
+<codeline lineno="93" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa10b17f315dfc146370c218a04f406cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa10b17f315dfc146370c218a04f406cb" kindref="member">ERRNUM_ADDRNOTAVAIL</ref>,</highlight></codeline>
+<codeline lineno="95" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a134352612b015e2a1458a424aba14f2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a134352612b015e2a1458a424aba14f2c" kindref="member">ERRNUM_AFNOSUPPORT</ref>,</highlight></codeline>
+<codeline lineno="97" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab00e35dc2b75d05c33defd03a6d0af16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab00e35dc2b75d05c33defd03a6d0af16" kindref="member">ERRNUM_AGAIN</ref>,</highlight></codeline>
+<codeline lineno="99" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a47642de7f2b6e659e87863d5a86a7500" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a47642de7f2b6e659e87863d5a86a7500" kindref="member">ERRNUM_ALREADY</ref>,</highlight></codeline>
+<codeline lineno="101" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a7188ad264fce36ecaca0bc54f0e33aa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a7188ad264fce36ecaca0bc54f0e33aa1" kindref="member">ERRNUM_BADF</ref>,</highlight></codeline>
+<codeline lineno="103" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a11d3e7da03fd4ca0e5cb1483388e8372" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a11d3e7da03fd4ca0e5cb1483388e8372" kindref="member">ERRNUM_BADMSG</ref>,</highlight></codeline>
+<codeline lineno="105" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a50736269969c65e871cf78e25058503f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a50736269969c65e871cf78e25058503f" kindref="member">ERRNUM_BUSY</ref>,</highlight></codeline>
+<codeline lineno="107" refid="error_8h_1a4795494e1429d588b3e932ca585f0436af4ca340639d6b2b876ad999fb7409fdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436af4ca340639d6b2b876ad999fb7409fdc" kindref="member">ERRNUM_CANCELED</ref>,</highlight></codeline>
+<codeline lineno="109" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a95e0a36fef2cc0ee7e772e383929672a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a95e0a36fef2cc0ee7e772e383929672a" kindref="member">ERRNUM_CHILD</ref>,</highlight></codeline>
+<codeline lineno="111" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa3ed5a864035862e084fc39d9107a79d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa3ed5a864035862e084fc39d9107a79d" kindref="member">ERRNUM_CONNABORTED</ref>,</highlight></codeline>
+<codeline lineno="113" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab68405cf1a7831cb9f326a8b2a19c02e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab68405cf1a7831cb9f326a8b2a19c02e" kindref="member">ERRNUM_CONNREFUSED</ref>,</highlight></codeline>
+<codeline lineno="115" refid="error_8h_1a4795494e1429d588b3e932ca585f0436adf79206be7d9cf7d3893c5e538acd5db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436adf79206be7d9cf7d3893c5e538acd5db" kindref="member">ERRNUM_CONNRESET</ref>,</highlight></codeline>
+<codeline lineno="117" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac295b08ef933faa053299d12c0dbe4a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac295b08ef933faa053299d12c0dbe4a1" kindref="member">ERRNUM_DEADLK</ref>,</highlight></codeline>
+<codeline lineno="119" refid="error_8h_1a4795494e1429d588b3e932ca585f0436af2dc567c71fd6ab9671783462a3325ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436af2dc567c71fd6ab9671783462a3325ed" kindref="member">ERRNUM_DESTADDRREQ</ref>,</highlight></codeline>
+<codeline lineno="121" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab771a8326086dfdc0e938de5c51ef3cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab771a8326086dfdc0e938de5c51ef3cb" kindref="member">ERRNUM_DOM</ref>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reserved<sp/>by<sp/>POSIX:<sp/>EDQUOT</highlight></codeline>
+<codeline lineno="124" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac2a29f5abdb86007303a3d1139ca2c7d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac2a29f5abdb86007303a3d1139ca2c7d" kindref="member">ERRNUM_EXIST</ref>,</highlight></codeline>
+<codeline lineno="126" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae2378d211b822066bc3ab14f80187843" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae2378d211b822066bc3ab14f80187843" kindref="member">ERRNUM_FAULT</ref>,</highlight></codeline>
+<codeline lineno="128" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a929c6162e567df4475c8e4f8deac529a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a929c6162e567df4475c8e4f8deac529a" kindref="member">ERRNUM_FBIG</ref>,</highlight></codeline>
+<codeline lineno="130" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac0d1dd27bdccbe7313f9eac5fa196d12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac0d1dd27bdccbe7313f9eac5fa196d12" kindref="member">ERRNUM_HOSTUNREACH</ref>,</highlight></codeline>
+<codeline lineno="132" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a1b56661295b55d1d34c9674e0cd02771" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a1b56661295b55d1d34c9674e0cd02771" kindref="member">ERRNUM_IDRM</ref>,</highlight></codeline>
+<codeline lineno="134" refid="error_8h_1a4795494e1429d588b3e932ca585f0436adecd4129ca532cce95e8010604134bc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436adecd4129ca532cce95e8010604134bc2" kindref="member">ERRNUM_ILSEQ</ref>,</highlight></codeline>
+<codeline lineno="136" refid="error_8h_1a4795494e1429d588b3e932ca585f0436adfe261e27f8fbef6ee75ccdbbdb2c334" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436adfe261e27f8fbef6ee75ccdbbdb2c334" kindref="member">ERRNUM_INPROGRESS</ref>,</highlight></codeline>
+<codeline lineno="138" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a4015927989cbfb764e0369ceaf880d12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a4015927989cbfb764e0369ceaf880d12" kindref="member">ERRNUM_INTR</ref>,</highlight></codeline>
+<codeline lineno="140" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa14da6ff3721f50ab3eabe52e03d2d10" kindref="member">ERRNUM_INVAL</ref>,</highlight></codeline>
+<codeline lineno="142" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a65c9573b81cf26a85b37df5b858bd70a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a65c9573b81cf26a85b37df5b858bd70a" kindref="member">ERRNUM_IO</ref>,</highlight></codeline>
+<codeline lineno="144" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a5f0a423da082ba02a2cb8aa14e1ff875" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a5f0a423da082ba02a2cb8aa14e1ff875" kindref="member">ERRNUM_ISCONN</ref>,</highlight></codeline>
+<codeline lineno="146" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac466850f59ad3c3e474b59fe4d52c932" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac466850f59ad3c3e474b59fe4d52c932" kindref="member">ERRNUM_ISDIR</ref>,</highlight></codeline>
+<codeline lineno="148" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae5497f7a94aab91e12f7cdb4608b7af5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae5497f7a94aab91e12f7cdb4608b7af5" kindref="member">ERRNUM_LOOP</ref>,</highlight></codeline>
+<codeline lineno="150" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a9dbd816bf1f802639d23e923cc8b42db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a9dbd816bf1f802639d23e923cc8b42db" kindref="member">ERRNUM_MFILE</ref>,</highlight></codeline>
+<codeline lineno="152" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a65503f437c193e36500f5444de182609" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a65503f437c193e36500f5444de182609" kindref="member">ERRNUM_MLINK</ref>,</highlight></codeline>
+<codeline lineno="154" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a2bf7eb17fccfbcc1f55a3ef83de5b5b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a2bf7eb17fccfbcc1f55a3ef83de5b5b6" kindref="member">ERRNUM_MSGSIZE</ref>,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reserved<sp/>by<sp/>POSIX:<sp/>EMULTIHOP</highlight></codeline>
+<codeline lineno="157" refid="error_8h_1a4795494e1429d588b3e932ca585f0436af42c93acf953c1b370032f0fb52f8dce" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436af42c93acf953c1b370032f0fb52f8dce" kindref="member">ERRNUM_NAMETOOLONG</ref>,</highlight></codeline>
+<codeline lineno="159" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a5f7524e3de0d51e47d8442157dfbf3c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a5f7524e3de0d51e47d8442157dfbf3c0" kindref="member">ERRNUM_NETDOWN</ref>,</highlight></codeline>
+<codeline lineno="161" refid="error_8h_1a4795494e1429d588b3e932ca585f0436abbc5e2fadad0a8b7818859cd3a04dcf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436abbc5e2fadad0a8b7818859cd3a04dcf4" kindref="member">ERRNUM_NETRESET</ref>,</highlight></codeline>
+<codeline lineno="163" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae583cf952209971f4df5f6ea5064a814" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae583cf952209971f4df5f6ea5064a814" kindref="member">ERRNUM_NETUNREACH</ref>,</highlight></codeline>
+<codeline lineno="165" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a6c0bb187330bf8b180a90cc4b4f98552" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a6c0bb187330bf8b180a90cc4b4f98552" kindref="member">ERRNUM_NFILE</ref>,</highlight></codeline>
+<codeline lineno="167" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab1ca0d0ca0ad24698eeb265bf7a441c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab1ca0d0ca0ad24698eeb265bf7a441c3" kindref="member">ERRNUM_NOBUFS</ref>,</highlight></codeline>
+<codeline lineno="169" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac2f6bbaa876e9700bb04a16a4661a3b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac2f6bbaa876e9700bb04a16a4661a3b1" kindref="member">ERRNUM_NODATA</ref>,</highlight></codeline>
+<codeline lineno="171" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae20864231d2a16cbc017756c777e92a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae20864231d2a16cbc017756c777e92a1" kindref="member">ERRNUM_NODEV</ref>,</highlight></codeline>
+<codeline lineno="173" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a6b6f53b501c05e27c3fa149b92ad08e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a6b6f53b501c05e27c3fa149b92ad08e1" kindref="member">ERRNUM_NOENT</ref>,</highlight></codeline>
+<codeline lineno="175" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a949d82915a6b4f0a1ac2bc563489b06e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a949d82915a6b4f0a1ac2bc563489b06e" kindref="member">ERRNUM_NOEXEC</ref>,</highlight></codeline>
+<codeline lineno="177" refid="error_8h_1a4795494e1429d588b3e932ca585f0436af62df7c20b53f0d0f4a9a16783db4735" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436af62df7c20b53f0d0f4a9a16783db4735" kindref="member">ERRNUM_NOLCK</ref>,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reserved<sp/>by<sp/>POSIX:<sp/>ENOLINK</highlight></codeline>
+<codeline lineno="180" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8f153dffb3ce81a3f9c5b12a3bd5b8f8" kindref="member">ERRNUM_NOMEM</ref>,</highlight></codeline>
+<codeline lineno="182" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab00d0e93a93ed324348a860ab2e6d950" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab00d0e93a93ed324348a860ab2e6d950" kindref="member">ERRNUM_NOMSG</ref>,</highlight></codeline>
+<codeline lineno="184" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a4d5f360cfc9e62fd99289f97b9c7e4f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a4d5f360cfc9e62fd99289f97b9c7e4f4" kindref="member">ERRNUM_NOPROTOOPT</ref>,</highlight></codeline>
+<codeline lineno="186" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a061fe9b2c6a2a81c157cd28f444b6dce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a061fe9b2c6a2a81c157cd28f444b6dce" kindref="member">ERRNUM_NOSPC</ref>,</highlight></codeline>
+<codeline lineno="188" refid="error_8h_1a4795494e1429d588b3e932ca585f0436adcad9af4a35ff9bcf48d11d8154cefbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436adcad9af4a35ff9bcf48d11d8154cefbc" kindref="member">ERRNUM_NOSR</ref>,</highlight></codeline>
+<codeline lineno="190" refid="error_8h_1a4795494e1429d588b3e932ca585f0436adda0803bb394b0a64014e83559439e91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436adda0803bb394b0a64014e83559439e91" kindref="member">ERRNUM_NOSTR</ref>,</highlight></codeline>
+<codeline lineno="192" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a0b8abf82e49de8fbcab9a21fc3b3ae8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a0b8abf82e49de8fbcab9a21fc3b3ae8d" kindref="member">ERRNUM_NOSYS</ref>,</highlight></codeline>
+<codeline lineno="194" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a14449307067dadb76c0a21d7c75355e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a14449307067dadb76c0a21d7c75355e0" kindref="member">ERRNUM_NOTCONN</ref>,</highlight></codeline>
+<codeline lineno="196" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a9d814206048ae266b0d4a3dff06a8800" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a9d814206048ae266b0d4a3dff06a8800" kindref="member">ERRNUM_NOTDIR</ref>,</highlight></codeline>
+<codeline lineno="198" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa618c0babbf921e7d589d22f26c7fe49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa618c0babbf921e7d589d22f26c7fe49" kindref="member">ERRNUM_NOTEMPTY</ref>,</highlight></codeline>
+<codeline lineno="200" refid="error_8h_1a4795494e1429d588b3e932ca585f0436af5046ef6fbd26f4a6b2e8afddebe628b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436af5046ef6fbd26f4a6b2e8afddebe628b" kindref="member">ERRNUM_NOTRECOVERABLE</ref>,</highlight></codeline>
+<codeline lineno="202" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a98532431ea5162ccceb96b862916a50d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a98532431ea5162ccceb96b862916a50d" kindref="member">ERRNUM_NOTSOCK</ref>,</highlight></codeline>
+<codeline lineno="204" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a95ad4fea6ad5eb27549450a66c1ccf26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a95ad4fea6ad5eb27549450a66c1ccf26" kindref="member">ERRNUM_NOTSUP</ref>,</highlight></codeline>
+<codeline lineno="206" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8431f75eed9ba906f23559dd7db79126" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8431f75eed9ba906f23559dd7db79126" kindref="member">ERRNUM_NOTTY</ref>,</highlight></codeline>
+<codeline lineno="208" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a14b18a545309c0a870246bea3d1b61ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a14b18a545309c0a870246bea3d1b61ff" kindref="member">ERRNUM_NXIO</ref>,</highlight></codeline>
+<codeline lineno="210" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a7395e00c51b7b68a27615e78113a0c89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a7395e00c51b7b68a27615e78113a0c89" kindref="member">ERRNUM_OPNOTSUPP</ref>,</highlight></codeline>
+<codeline lineno="212" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac7517c40bbaa6f9bb29d1c610bbfc8d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ac7517c40bbaa6f9bb29d1c610bbfc8d0" kindref="member">ERRNUM_OVERFLOW</ref>,</highlight></codeline>
+<codeline lineno="214" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a10198fbb543a5d43427c879a5bcb51af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a10198fbb543a5d43427c879a5bcb51af" kindref="member">ERRNUM_OWNERDEAD</ref>,</highlight></codeline>
+<codeline lineno="216" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8b849061c5cb64a7f25a4cc9adf6db22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8b849061c5cb64a7f25a4cc9adf6db22" kindref="member">ERRNUM_PERM</ref>,</highlight></codeline>
+<codeline lineno="218" refid="error_8h_1a4795494e1429d588b3e932ca585f0436acaa5293675df784d72e633345a344a1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436acaa5293675df784d72e633345a344a1d" kindref="member">ERRNUM_PIPE</ref>,</highlight></codeline>
+<codeline lineno="220" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a103a6472140385b4fdb596cb7c5cd0d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a103a6472140385b4fdb596cb7c5cd0d1" kindref="member">ERRNUM_PROTO</ref>,</highlight></codeline>
+<codeline lineno="222" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8c2dcc0d4d661ab0f66aed6a808d61b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a8c2dcc0d4d661ab0f66aed6a808d61b3" kindref="member">ERRNUM_PROTONOSUPPORT</ref>,</highlight></codeline>
+<codeline lineno="224" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aad249c7a8e4f27d5d4658b09214e7316" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aad249c7a8e4f27d5d4658b09214e7316" kindref="member">ERRNUM_PROTOTYPE</ref>,</highlight></codeline>
+<codeline lineno="226" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a1fdcccfb231a76f4e620e86e2701c2f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a1fdcccfb231a76f4e620e86e2701c2f4" kindref="member">ERRNUM_RANGE</ref>,</highlight></codeline>
+<codeline lineno="228" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab0542c61539b5256a8b0d63a7ee46c02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ab0542c61539b5256a8b0d63a7ee46c02" kindref="member">ERRNUM_ROFS</ref>,</highlight></codeline>
+<codeline lineno="230" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a46b7dc363b48413633caf908a72384d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a46b7dc363b48413633caf908a72384d5" kindref="member">ERRNUM_SPIPE</ref>,</highlight></codeline>
+<codeline lineno="232" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a5fea15cc3c1b46f2bf70c019794048a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a5fea15cc3c1b46f2bf70c019794048a7" kindref="member">ERRNUM_SRCH</ref>,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reserved<sp/>by<sp/>POSIX:<sp/>ESTALE</highlight></codeline>
+<codeline lineno="235" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a9092392c77b9aff8d549e734a44bef46" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a9092392c77b9aff8d549e734a44bef46" kindref="member">ERRNUM_TIME</ref>,</highlight></codeline>
+<codeline lineno="237" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a69a99803104d16953bb39d673100f9d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a69a99803104d16953bb39d673100f9d3" kindref="member">ERRNUM_TIMEDOUT</ref>,</highlight></codeline>
+<codeline lineno="239" refid="error_8h_1a4795494e1429d588b3e932ca585f0436acf7aa885acc9741fe6fc50ea035554bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436acf7aa885acc9741fe6fc50ea035554bb" kindref="member">ERRNUM_TXTBSY</ref>,</highlight></codeline>
+<codeline lineno="241" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a0c51dee3e1f6523dfc28c99d36a7d3ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a0c51dee3e1f6523dfc28c99d36a7d3ca" kindref="member">ERRNUM_WOULDBLOCK</ref>,</highlight></codeline>
+<codeline lineno="243" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae9d8c56dc2a7cca27683e9df8e8b0ce2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae9d8c56dc2a7cca27683e9df8e8b0ce2" kindref="member">ERRNUM_XDEV</ref>,</highlight></codeline>
+<codeline lineno="248" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa1e7ef6aa4065e21a34a45c5fcbc7bc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aa1e7ef6aa4065e21a34a45c5fcbc7bc4" kindref="member">ERRNUM_AI_AGAIN</ref>,</highlight></codeline>
+<codeline lineno="250" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a1e8284d934647dd3cff9aef176576cda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a1e8284d934647dd3cff9aef176576cda" kindref="member">ERRNUM_AI_BADFLAGS</ref>,</highlight></codeline>
+<codeline lineno="252" refid="error_8h_1a4795494e1429d588b3e932ca585f0436aaae494400fb3bc42001558179853d81d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436aaae494400fb3bc42001558179853d81d" kindref="member">ERRNUM_AI_FAIL</ref>,</highlight></codeline>
+<codeline lineno="257" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ad713028feef19084d65cbcb2ed1c5e13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ad713028feef19084d65cbcb2ed1c5e13" kindref="member">ERRNUM_AI_FAMILY</ref>,</highlight></codeline>
+<codeline lineno="259" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a06a28c5ff05987f56b22c81d1445ead4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a06a28c5ff05987f56b22c81d1445ead4" kindref="member">ERRNUM_AI_MEMORY</ref>,</highlight></codeline>
+<codeline lineno="261" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae924666625fd5ff7bf5055ea47229629" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae924666625fd5ff7bf5055ea47229629" kindref="member">ERRNUM_AI_NONAME</ref>,</highlight></codeline>
+<codeline lineno="263" refid="error_8h_1a4795494e1429d588b3e932ca585f0436acaa0ab193d17878d77733fdb9cc02255" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436acaa0ab193d17878d77733fdb9cc02255" kindref="member">ERRNUM_AI_OVERFLOW</ref>,</highlight></codeline>
+<codeline lineno="265" refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae0a9e14c8765fc8309f8d83011e1aefc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436ae0a9e14c8765fc8309f8d83011e1aefc" kindref="member">ERRNUM_AI_SERVICE</ref>,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436a6d02a79e487c6e0318cf10df56d8dde2" kindref="member">ERRNUM_AI_SOCKTYPE</ref></highlight></codeline>
+<codeline lineno="268" refid="error_8h_1a4795494e1429d588b3e932ca585f0436a6d02a79e487c6e0318cf10df56d8dde2" refkind="member"><highlight class="normal">}<sp/><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="error_8h_1a2910ea88b5eed38f366b1b229d4ed0d6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a2910ea88b5eed38f366b1b229d4ed0d6" kindref="member">get_errc_handler_t</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="error_8h_1a1ac1cc75f944af2231629b1fb51a0c2f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a1ac1cc75f944af2231629b1fb51a0c2f" kindref="member">set_errc_handler_t</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*handle);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a269a7a682e3da02b425b1965a3fa2841" kindref="member">get_errc_get_handler</ref>(<ref refid="error_8h_1a2910ea88b5eed38f366b1b229d4ed0d6" kindref="member">get_errc_handler_t</ref><sp/>**phandler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pdata);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a45f2dae3940cbaadcb6031ac2b252ae1" kindref="member">set_errc_get_handler</ref>(<ref refid="error_8h_1a1ac1cc75f944af2231629b1fb51a0c2f" kindref="member">set_errc_handler_t</ref><sp/>**phandler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pdata);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a1a0452ac0880117dbd9efde4f9f152e0" kindref="member">get_errc_set_handler</ref>(<ref refid="error_8h_1a2910ea88b5eed38f366b1b229d4ed0d6" kindref="member">get_errc_handler_t</ref><sp/>*handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a4ffb374bfe82795721e428e42c615f0a" kindref="member">set_errc_set_handler</ref>(<ref refid="error_8h_1a1ac1cc75f944af2231629b1fb51a0c2f" kindref="member">set_errc_handler_t</ref><sp/>*handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errno2c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/>errno2num(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc2no(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a05076d34af59b7e1c2dca0ba7d3629ff" kindref="member">errc2num</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errnum2no(<ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a22fd750b6498eb3a1a6504383e40f217" kindref="member">errnum2c</ref>(<ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1aad2d3bedc56c1f7d260b60ff324cb4d4" kindref="member">get_errc_from_errno</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1afe070f878613ece554c2c54e9f93259a" kindref="member">set_errc_from_errno</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*errno2str(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>);</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*errno2str_r(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*strerrbuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buflen);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*errc2str(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc);</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*errc2str_r(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*strerrbuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buflen);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*errnum2str(<ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*errnum2str_r(</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*strerrbuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buflen);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/><ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref></highlight></codeline>
+<codeline lineno="519" refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" refkind="member"><highlight class="normal"><ref refid="error_8h_1aee8930c0e745a6b877ebbd299e201a75" kindref="member">get_errnum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="520"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a05076d34af59b7e1c2dca0ba7d3629ff" kindref="member">errc2num</ref>(<ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc</ref>());</highlight></codeline>
+<codeline lineno="522"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="525" refid="error_8h_1af01011939b8938d99601f0a911d39d03" refkind="member"><highlight class="normal"><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum</ref>(<ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>)</highlight></codeline>
+<codeline lineno="526"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="error_8h_1a5370a94cb1a9f5edf5103d6e51df4637" kindref="member">set_errc</ref>(<ref refid="error_8h_1a22fd750b6498eb3a1a6504383e40f217" kindref="member">errnum2c</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>));</highlight></codeline>
+<codeline lineno="528"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="533"><highlight class="normal">errno2str(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>)</highlight></codeline>
+<codeline lineno="534"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errno2str_r(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>,<sp/>NULL,<sp/>0);</highlight></codeline>
+<codeline lineno="536"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="539"><highlight class="normal">errc2str(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errc)</highlight></codeline>
+<codeline lineno="540"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errc2str_r(errc,<sp/>NULL,<sp/>0);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="545"><highlight class="normal">errnum2str(<ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>)</highlight></codeline>
+<codeline lineno="546"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errc2str(<ref refid="error_8h_1a22fd750b6498eb3a1a6504383e40f217" kindref="member">errnum2c</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>));</highlight></codeline>
+<codeline lineno="548"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal">LELY_UTIL_ERROR_INLINE<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="551"><highlight class="normal">errnum2str_r(<ref refid="error_8h_1aad9b9e6bb80bcdac4132e0fab6d802e4" kindref="member">errnum_t</ref><sp/><ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*strerrbuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buflen)</highlight></codeline>
+<codeline lineno="552"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errc2str_r(<ref refid="error_8h_1a22fd750b6498eb3a1a6504383e40f217" kindref="member">errnum2c</ref>(<ref refid="error_8h_1a4795494e1429d588b3e932ca585f0436" kindref="member">errnum</ref>),<sp/>strerrbuf,<sp/>buflen);</highlight></codeline>
+<codeline lineno="554"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_NO_ERRNO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_UTIL_ERROR_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/util/error.h"/>
+  </compounddef>
+</doxygen>

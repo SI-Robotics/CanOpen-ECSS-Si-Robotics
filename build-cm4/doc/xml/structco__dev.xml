@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__dev" kind="struct" language="C++" prot="public">
+    <compoundname>co_dev</compoundname>
+    <includes refid="detail_2dev_8h" local="no">dev.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__dev_1ac635655935178b102d07b00d15129e67" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_dev::netid</definition>
+        <argsstring></argsstring>
+        <name>netid</name>
+        <briefdescription>
+<para>The network-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="34" column="16" bodyfile="include/lely/co/detail/dev.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1a22685b83cc0791ff91af323853e13251" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_dev::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The node-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="36" column="16" bodyfile="include/lely/co/detail/dev.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1ae86c5acfb61030301c66702d38b9f819" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbtree" kindref="compound">rbtree</ref></type>
+        <definition>struct rbtree co_dev::tree</definition>
+        <argsstring></argsstring>
+        <name>tree</name>
+        <briefdescription>
+<para>The tree containing the object dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="36" column="16" bodyfile="include/lely/co/detail/dev.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1aea0a501c4b7f5da314557b490e79a7c9" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev::vendor_id</definition>
+        <argsstring></argsstring>
+        <name>vendor_id</name>
+        <briefdescription>
+<para>The vendor ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="46" column="17" bodyfile="include/lely/co/detail/dev.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1aa5dcd22d34751cd95b7af3bcde1f467f" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev::product_code</definition>
+        <argsstring></argsstring>
+        <name>product_code</name>
+        <briefdescription>
+<para>The product code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="52" column="17" bodyfile="include/lely/co/detail/dev.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1a479c92dc07a0f0434214931bd05b3acb" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev::revision</definition>
+        <argsstring></argsstring>
+        <name>revision</name>
+        <briefdescription>
+<para>The revision number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="54" column="17" bodyfile="include/lely/co/detail/dev.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1a22d46be85c4c2fb06388cc7e3612b862" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned co_dev::baud</definition>
+        <argsstring></argsstring>
+        <name>baud</name>
+        <bitfield> 10</bitfield>
+        <briefdescription>
+<para>The supported bit rates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="60" column="10" bodyfile="include/lely/co/detail/dev.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1a3155c9f71f32ce3c976510301d987045" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_dev::rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <briefdescription>
+<para>The (pending) baudrate (in kbit/s). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="62" column="17" bodyfile="include/lely/co/detail/dev.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1abb029070a8d43e38c73560a573e4aee3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool co_dev::lss</definition>
+        <argsstring></argsstring>
+        <name>lss</name>
+        <briefdescription>
+<para>A flag specifying whether LSS is supported (1) or not (0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="64" column="6" bodyfile="include/lely/co/detail/dev.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1a15194334fee015e38790a20b5b1671b2" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_dev::dummy</definition>
+        <argsstring></argsstring>
+        <name>dummy</name>
+        <briefdescription>
+<para>The data types supported for mapping dummy entries in PDOs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="66" column="17" bodyfile="include/lely/co/detail/dev.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1a78e96b886546ca458eaa96c34c608c55" prot="public" static="no" mutable="no">
+        <type><ref refid="dev_8h_1a28351975c8b398cd9bcd425360185e76" kindref="member">co_dev_tpdo_event_ind_t</ref> *</type>
+        <definition>co_dev_tpdo_event_ind_t* co_dev::tpdo_event_ind</definition>
+        <argsstring></argsstring>
+        <name>tpdo_event_ind</name>
+        <briefdescription>
+<para>A pointer to the Transmit-PDO event indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="69" column="25" bodyfile="include/lely/co/detail/dev.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__dev_1a42bd9af84ff6cdee5acad261d933bae8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_dev::tpdo_event_data</definition>
+        <argsstring></argsstring>
+        <name>tpdo_event_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__dev_1a78e96b886546ca458eaa96c34c608c55" kindref="member">tpdo_event_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/detail/dev.h" line="71" column="6" bodyfile="include/lely/co/detail/dev.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen device. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/co/detail/dev.h" line="32" column="1" bodyfile="include/lely/co/detail/dev.h" bodystart="32" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structco__dev_1a22d46be85c4c2fb06388cc7e3612b862" prot="public" virt="non-virtual"><scope>co_dev</scope><name>baud</name></member>
+      <member refid="structco__dev_1a15194334fee015e38790a20b5b1671b2" prot="public" virt="non-virtual"><scope>co_dev</scope><name>dummy</name></member>
+      <member refid="structco__dev_1a22685b83cc0791ff91af323853e13251" prot="public" virt="non-virtual"><scope>co_dev</scope><name>id</name></member>
+      <member refid="structco__dev_1abb029070a8d43e38c73560a573e4aee3" prot="public" virt="non-virtual"><scope>co_dev</scope><name>lss</name></member>
+      <member refid="structco__dev_1ac635655935178b102d07b00d15129e67" prot="public" virt="non-virtual"><scope>co_dev</scope><name>netid</name></member>
+      <member refid="structco__dev_1aa5dcd22d34751cd95b7af3bcde1f467f" prot="public" virt="non-virtual"><scope>co_dev</scope><name>product_code</name></member>
+      <member refid="structco__dev_1a3155c9f71f32ce3c976510301d987045" prot="public" virt="non-virtual"><scope>co_dev</scope><name>rate</name></member>
+      <member refid="structco__dev_1a479c92dc07a0f0434214931bd05b3acb" prot="public" virt="non-virtual"><scope>co_dev</scope><name>revision</name></member>
+      <member refid="structco__dev_1a42bd9af84ff6cdee5acad261d933bae8" prot="public" virt="non-virtual"><scope>co_dev</scope><name>tpdo_event_data</name></member>
+      <member refid="structco__dev_1a78e96b886546ca458eaa96c34c608c55" prot="public" virt="non-virtual"><scope>co_dev</scope><name>tpdo_event_ind</name></member>
+      <member refid="structco__dev_1ae86c5acfb61030301c66702d38b9f819" prot="public" virt="non-virtual"><scope>co_dev</scope><name>tree</name></member>
+      <member refid="structco__dev_1aea0a501c4b7f5da314557b490e79a7c9" prot="public" virt="non-virtual"><scope>co_dev</scope><name>vendor_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

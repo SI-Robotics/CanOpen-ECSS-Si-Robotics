@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classAllocators_1_1Limited" kind="class" language="C++" prot="public">
+    <compoundname>Allocators::Limited</compoundname>
+    <includes refid="limited_8hpp" local="no">limited.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllocators_1_1Limited_1abb2d0ef15998bebb1e2d7d0fae0acbfc" prot="private" static="no" mutable="no">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref></type>
+        <definition>alloc_t Allocators::Limited::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="108" column="11" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocators_1_1Limited_1a4602719848a3b1c69b5a51438210897a" prot="private" static="no" mutable="no">
+        <type><ref refid="structalloc__vtbl" kindref="compound">alloc_vtbl</ref></type>
+        <definition>alloc_vtbl Allocators::Limited::vtbl</definition>
+        <argsstring></argsstring>
+        <name>vtbl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="109" column="14" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocators_1_1Limited_1a09fe1f0eb8a25a367e0ec7995927053f" prot="private" static="no" mutable="no">
+        <type><ref refid="classAllocators_1_1PoolAllocator" kindref="compound">Default</ref></type>
+        <definition>Default Allocators::Limited::inner</definition>
+        <argsstring></argsstring>
+        <name>inner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="110" column="11" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocators_1_1Limited_1a2d2a7bfa2b008c12f5a573cff712d256" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Allocators::Limited::allocationLimit</definition>
+        <argsstring></argsstring>
+        <name>allocationLimit</name>
+        <initializer>= std::numeric_limits&lt;size_t&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="111" column="10" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllocators_1_1Limited_1af16694d276fa985cf316fc1739436a9f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Allocators::Limited::Limited</definition>
+        <argsstring>()</argsstring>
+        <name>Limited</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="40" column="12" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1a1bf01edafe0fca3293baeaf5895fd316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Allocators::Limited::LimitAllocationTo</definition>
+        <argsstring>(const size_t limit)</argsstring>
+        <name>LimitAllocationTo</name>
+        <param>
+          <type>const size_t</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="48" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1a781852a10d7cd5083e751df18fb78861" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Allocators::Limited::GetAllocationLimit</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAllocationLimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="56" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1a8cbce603dd9aa4926e13499db4332e66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* Allocators::Limited::ToAllocT</definition>
+        <argsstring>() const</argsstring>
+        <name>ToAllocT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="61" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classAllocators_1_1Limited_1a38459de27c7d4f3ff73e01cb538c6dd6" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* Allocators::Limited::Alloc</definition>
+        <argsstring>(alloc_t *const alloc, const size_t alignment, const size_t size)</argsstring>
+        <name>Alloc</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="67" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="67" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1ab7ad134cba6f99d7053988bf5cef977d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Allocators::Limited::Free</definition>
+        <argsstring>(alloc_t *const alloc, void *const ptr)</argsstring>
+        <name>Free</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <param>
+          <type>void *const</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="81" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1ae1872e1b6382ffac66f5d41992ad75b9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t Allocators::Limited::Size</definition>
+        <argsstring>(const alloc_t *const alloc)</argsstring>
+        <name>Size</name>
+        <param>
+          <type>const <ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="86" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1aebebdd4a629746e98bd69b4b6afe98ff" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t Allocators::Limited::Capacity</definition>
+        <argsstring>(const alloc_t *const alloc)</argsstring>
+        <name>Capacity</name>
+        <param>
+          <type>const <ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="91" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1a9326c89207750e588cc87f9ac7c71eeb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classAllocators_1_1Limited" kindref="compound">Limited</ref> *</type>
+        <definition>static Limited* Allocators::Limited::Cast</definition>
+        <argsstring>(alloc_t *const alloc)</argsstring>
+        <name>Cast</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="96" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocators_1_1Limited_1a42094d10bbb7770f46b42ba9c6c9d718" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>static alloc_t* Allocators::Limited::Inner</definition>
+        <argsstring>(alloc_t *const alloc)</argsstring>
+        <name>Inner</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *const</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/allocators/limited.hpp" line="103" column="3" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Memory allocator that allows control over available memory left. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>See <ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref>. </para>
+    </detaileddescription>
+    <location file="unit-tests/libtest/allocators/limited.hpp" line="38" column="1" bodyfile="unit-tests/libtest/allocators/limited.hpp" bodystart="38" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classAllocators_1_1Limited_1abb2d0ef15998bebb1e2d7d0fae0acbfc" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>alloc</name></member>
+      <member refid="classAllocators_1_1Limited_1a38459de27c7d4f3ff73e01cb538c6dd6" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>Alloc</name></member>
+      <member refid="classAllocators_1_1Limited_1a2d2a7bfa2b008c12f5a573cff712d256" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>allocationLimit</name></member>
+      <member refid="classAllocators_1_1Limited_1aebebdd4a629746e98bd69b4b6afe98ff" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>Capacity</name></member>
+      <member refid="classAllocators_1_1Limited_1a9326c89207750e588cc87f9ac7c71eeb" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>Cast</name></member>
+      <member refid="classAllocators_1_1Limited_1ab7ad134cba6f99d7053988bf5cef977d" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>Free</name></member>
+      <member refid="classAllocators_1_1Limited_1a781852a10d7cd5083e751df18fb78861" prot="public" virt="non-virtual"><scope>Allocators::Limited</scope><name>GetAllocationLimit</name></member>
+      <member refid="classAllocators_1_1Limited_1a09fe1f0eb8a25a367e0ec7995927053f" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>inner</name></member>
+      <member refid="classAllocators_1_1Limited_1a42094d10bbb7770f46b42ba9c6c9d718" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>Inner</name></member>
+      <member refid="classAllocators_1_1Limited_1a1bf01edafe0fca3293baeaf5895fd316" prot="public" virt="non-virtual"><scope>Allocators::Limited</scope><name>LimitAllocationTo</name></member>
+      <member refid="classAllocators_1_1Limited_1af16694d276fa985cf316fc1739436a9f" prot="public" virt="non-virtual"><scope>Allocators::Limited</scope><name>Limited</name></member>
+      <member refid="classAllocators_1_1Limited_1ae1872e1b6382ffac66f5d41992ad75b9" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>Size</name></member>
+      <member refid="classAllocators_1_1Limited_1a8cbce603dd9aa4926e13499db4332e66" prot="public" virt="non-virtual"><scope>Allocators::Limited</scope><name>ToAllocT</name></member>
+      <member refid="classAllocators_1_1Limited_1a4602719848a3b1c69b5a51438210897a" prot="private" virt="non-virtual"><scope>Allocators::Limited</scope><name>vtbl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

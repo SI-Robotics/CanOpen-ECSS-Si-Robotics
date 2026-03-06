@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcan__net" kind="struct" language="C++" prot="public">
+    <compoundname>can_net</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcan__net_1a38caaebd84df3f192afcf6d641dd8906" prot="public" static="no" mutable="no">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* can_net::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+<para>A pointer to the memory allocator used to allocate this struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="38" column="9" bodyfile="lib/can/net.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1a4d7aa4148e64a575fb9d12248bcf9245" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpheap" kindref="compound">pheap</ref></type>
+        <definition>struct pheap can_net::timer_heap</definition>
+        <argsstring></argsstring>
+        <name>timer_heap</name>
+        <briefdescription>
+<para>The heap containing all timers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="38" column="9" bodyfile="lib/can/net.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1aad0c810bddb5197bb9b02c5768b89fc7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref></type>
+        <definition>struct timespec can_net::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+<para>The current time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="38" column="9" bodyfile="lib/can/net.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1a18c64be43ea3783792ff028be0af1135" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref></type>
+        <definition>struct timespec can_net::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+<para>The time at which the next timer triggers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="38" column="9" bodyfile="lib/can/net.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1ae45120ebe607cc517c26d4333b9992a8" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref> *</type>
+        <definition>can_timer_func_t* can_net::next_func</definition>
+        <argsstring></argsstring>
+        <name>next_func</name>
+        <briefdescription>
+<para>A pointer to the callback function invoked by <ref refid="net_8c_1a7b5554b07d6e94f189436568a617583f" kindref="member">can_net_set_next()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="46" column="18" bodyfile="lib/can/net.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1a063f233b158b0030646eeb4b97b22a7b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* can_net::next_data</definition>
+        <argsstring></argsstring>
+        <name>next_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structcan__net_1ae45120ebe607cc517c26d4333b9992a8" kindref="member">next_func</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="48" column="6" bodyfile="lib/can/net.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1a5e527d1efe7792363fbf0bb9f55a6d04" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrbtree" kindref="compound">rbtree</ref></type>
+        <definition>struct rbtree can_net::recv_tree</definition>
+        <argsstring></argsstring>
+        <name>recv_tree</name>
+        <briefdescription>
+<para>The tree containing all receivers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="48" column="6" bodyfile="lib/can/net.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1aef1ed82edc0edbb08c0f0987d83c1f24" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref> *</type>
+        <definition>can_send_func_t* can_net::send_func</definition>
+        <argsstring></argsstring>
+        <name>send_func</name>
+        <briefdescription>
+<para>A pointer to the callback function invoked by <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="52" column="17" bodyfile="lib/can/net.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1a4bfeb276c2b69d1e954f6530aa02b135" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* can_net::send_data</definition>
+        <argsstring></argsstring>
+        <name>send_data</name>
+        <briefdescription>
+<para>A pointer to the user-specified data for <ref refid="structcan__net_1aef1ed82edc0edbb08c0f0987d83c1f24" kindref="member">send_func</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="54" column="6" bodyfile="lib/can/net.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__net_1a58a6eac216e7fa50e51799b4010594bb" prot="public" static="no" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t can_net::active_bus</definition>
+        <argsstring></argsstring>
+        <name>active_bus</name>
+        <briefdescription>
+<para>The active CAN bus identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/can/net.c" line="56" column="15" bodyfile="lib/can/net.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CAN network interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="4">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/can/net.c" line="36" column="1" bodyfile="lib/can/net.c" bodystart="36" bodyend="57"/>
+    <listofallmembers>
+      <member refid="structcan__net_1a58a6eac216e7fa50e51799b4010594bb" prot="public" virt="non-virtual"><scope>can_net</scope><name>active_bus</name></member>
+      <member refid="structcan__net_1a38caaebd84df3f192afcf6d641dd8906" prot="public" virt="non-virtual"><scope>can_net</scope><name>alloc</name></member>
+      <member refid="structcan__net_1a18c64be43ea3783792ff028be0af1135" prot="public" virt="non-virtual"><scope>can_net</scope><name>next</name></member>
+      <member refid="structcan__net_1a063f233b158b0030646eeb4b97b22a7b" prot="public" virt="non-virtual"><scope>can_net</scope><name>next_data</name></member>
+      <member refid="structcan__net_1ae45120ebe607cc517c26d4333b9992a8" prot="public" virt="non-virtual"><scope>can_net</scope><name>next_func</name></member>
+      <member refid="structcan__net_1a5e527d1efe7792363fbf0bb9f55a6d04" prot="public" virt="non-virtual"><scope>can_net</scope><name>recv_tree</name></member>
+      <member refid="structcan__net_1a4bfeb276c2b69d1e954f6530aa02b135" prot="public" virt="non-virtual"><scope>can_net</scope><name>send_data</name></member>
+      <member refid="structcan__net_1aef1ed82edc0edbb08c0f0987d83c1f24" prot="public" virt="non-virtual"><scope>can_net</scope><name>send_func</name></member>
+      <member refid="structcan__net_1aad0c810bddb5197bb9b02c5768b89fc7" prot="public" virt="non-virtual"><scope>can_net</scope><name>time</name></member>
+      <member refid="structcan__net_1a4d7aa4148e64a575fb9d12248bcf9245" prot="public" virt="non-virtual"><scope>can_net</scope><name>timer_heap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

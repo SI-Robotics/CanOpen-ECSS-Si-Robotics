@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d2a15a08cae6f2f40dc4dd288e6cfed3" kind="dir">
+    <compoundname>unit-tests</compoundname>
+    <innerdir refid="dir_c8f05dc6cf2e781d8f9f5edbece4fef6">unit-tests/can</innerdir>
+    <innerdir refid="dir_1fc2874d7bca73bc35eee0339ec82ab5">unit-tests/co</innerdir>
+    <innerdir refid="dir_6de4951d0398c0afbc10eccbc59d7029">unit-tests/compat</innerdir>
+    <innerdir refid="dir_7c12cd466f6ec7f9a24558ddbdb61dbb">unit-tests/cpputest</innerdir>
+    <innerdir refid="dir_2adc83ffa9cbc033b64532efc3262d14">unit-tests/libtest</innerdir>
+    <innerdir refid="dir_2dcbb9b51d6de008d049b00abf0a8083">unit-tests/util</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/"/>
+  </compounddef>
+</doxygen>

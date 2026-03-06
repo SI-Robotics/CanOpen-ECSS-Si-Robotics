@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structmempool" kind="struct" language="C++" prot="public">
+    <compoundname>mempool</compoundname>
+    <includes refid="mempool_8h" local="no">mempool.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmempool_1ab36cf4ed6ac8315cf6c2cda71db12cd9" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="structalloc__vtbl" kindref="compound">alloc_vtbl</ref> *</type>
+        <definition>const struct alloc_vtbl* mempool::vtbl</definition>
+        <argsstring></argsstring>
+        <name>vtbl</name>
+        <briefdescription>
+<para>Pointer to &apos;virtual table&apos; of the allocator. Must be first field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/mempool.h" line="35" column="23" bodyfile="include/lely/util/mempool.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* mempool::beg</definition>
+        <argsstring></argsstring>
+        <name>beg</name>
+        <briefdescription>
+<para>A pointer to the first byte in the pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/mempool.h" line="37" column="6" bodyfile="include/lely/util/mempool.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmempool_1a0841f2c587fa4d06c905593528ae830e" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* mempool::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>A pointer one past the last byte in the pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/mempool.h" line="39" column="6" bodyfile="include/lely/util/mempool.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmempool_1a15773b6be24746ed92353ae85501fd8d" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* mempool::cur</definition>
+        <argsstring></argsstring>
+        <name>cur</name>
+        <briefdescription>
+<para>A pointer to next free byte in the pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/mempool.h" line="41" column="6" bodyfile="include/lely/util/mempool.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A memory pool. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mempool</label>
+        <link refid="structmempool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>vtbl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alloc_vtbl</label>
+        <link refid="structalloc__vtbl"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/util/mempool.h" line="33" column="1" bodyfile="include/lely/util/mempool.h" bodystart="33" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structmempool_1aeb118976b38d02a8c8e8356aa1a46f34" prot="public" virt="non-virtual"><scope>mempool</scope><name>beg</name></member>
+      <member refid="structmempool_1a15773b6be24746ed92353ae85501fd8d" prot="public" virt="non-virtual"><scope>mempool</scope><name>cur</name></member>
+      <member refid="structmempool_1a0841f2c587fa4d06c905593528ae830e" prot="public" virt="non-virtual"><scope>mempool</scope><name>end</name></member>
+      <member refid="structmempool_1ab36cf4ed6ac8315cf6c2cda71db12cd9" prot="public" virt="non-virtual"><scope>mempool</scope><name>vtbl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

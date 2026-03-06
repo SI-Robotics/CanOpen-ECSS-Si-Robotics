@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCO__NmtSdoConsts" kind="namespace" language="C++">
+    <compoundname>CO_NmtSdoConsts</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test-nmt-sdo_8cpp_1a3f9b813e48147f517e9b31fdabb25bfb" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned8_t</type>
+        <definition>const co_unsigned8_t CO_NmtSdoConsts::MASTER_DEV_ID</definition>
+        <argsstring></argsstring>
+        <name>MASTER_DEV_ID</name>
+        <initializer>= 0x01u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-nmt-sdo.cpp" line="59" column="29" bodyfile="unit-tests/co/test-nmt-sdo.cpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-nmt-sdo.cpp" line="58" column="1"/>
+  </compounddef>
+</doxygen>

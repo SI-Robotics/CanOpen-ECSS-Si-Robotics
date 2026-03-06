@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="override-test-plugin_8cpp" kind="file" language="C++">
+    <compoundname>override-test-plugin.cpp</compoundname>
+    <includes refid="override-test-plugin_8hpp" local="yes">override-test-plugin.hpp</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">CppUTest/TestRegistry.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>override-test-plugin.hpp</label>
+        <link refid="override-test-plugin_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/override/override-test-plugin.cpp</label>
+        <link refid="override-test-plugin_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CppUTest/TestPlugin.h</label>
+      </node>
+      <node id="3">
+        <label>stack</label>
+      </node>
+      <node id="4">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="7">
+        <label>CppUTest/TestRegistry.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOverridePlugin_1_1CleanUp" prot="public">OverridePlugin::CleanUp</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="override-test-plugin_8cpp_1adde6294552d35f3aa2861a3848e6c4f2" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char PLUGIN_NAME[]</definition>
+        <argsstring>[]</argsstring>
+        <name>PLUGIN_NAME</name>
+        <initializer>= &quot;LelyOverridePlugin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/override-test-plugin.cpp" line="31" column="19" bodyfile="unit-tests/libtest/override/override-test-plugin.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="override-test-plugin_8hpp" kindref="compound">override-test-plugin.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestRegistry.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classOverride_1_1OverridePlugin" kindref="compound">Override::OverridePlugin</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>PLUGIN_NAME[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;LelyOverridePlugin&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">OverridePlugin::OverridePlugin()<sp/>:<sp/>TestPlugin(PLUGIN_NAME)<sp/>{}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">OverridePlugin::~OverridePlugin()<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classOverridePlugin_1_1CleanUp" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">OverridePlugin::CleanUp</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>(int32_t&amp;<sp/>vc)<sp/>:<sp/>vc_(vc),<sp/>org_value_(vc)<sp/>{}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>~<ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>()<sp/>{<sp/>vc_<sp/>=<sp/>org_value_;<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>(<ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>&amp;<sp/>operator=(<ref refid="classOverridePlugin_1_1CleanUp" kindref="compound">CleanUp</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>int32_t&amp;<sp/>vc_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>org_value_;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">OverridePlugin::postTestAction(UtestShell&amp;,<sp/>TestResult&amp;)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!cleanups.empty())<sp/>cleanups.pop();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">OverridePlugin::setForNextTest(int32_t&amp;<sp/>vc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>target_value)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>cleanups.emplace(vc);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>vc<sp/>=<sp/>target_value;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="classOverride_1_1OverridePlugin" kindref="compound">OverridePlugin</ref>*</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">OverridePlugin::getCurrent()<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>registry<sp/>=<sp/>TestRegistry::getCurrentRegistry();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>assert(registry<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>plugin<sp/>=<sp/>registry-&gt;getPluginByName(PLUGIN_NAME);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>assert(plugin<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classOverride_1_1OverridePlugin" kindref="compound">OverridePlugin</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(plugin);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/libtest/override/override-test-plugin.cpp"/>
+  </compounddef>
+</doxygen>

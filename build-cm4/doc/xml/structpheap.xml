@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structpheap" kind="struct" language="C++" prot="public">
+    <compoundname>pheap</compoundname>
+    <includes refid="pheap_8h" local="no">pheap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpheap_1a17952eab3e3c56dbd22ab2f7d39138dc" prot="public" static="no" mutable="no">
+        <type><ref refid="pheap_8h_1ab58980df76561db4d65e7e8e177f6a47" kindref="member">pheap_cmp_t</ref> *</type>
+        <definition>pheap_cmp_t* pheap::cmp</definition>
+        <argsstring></argsstring>
+        <name>cmp</name>
+        <briefdescription>
+<para>A pointer to the function used to compare two keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="90" column="13" bodyfile="include/lely/util/pheap.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpheap_1a3329564b88014659df3d08fb1ca7065f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpnode" kindref="compound">pnode</ref> *</type>
+        <definition>struct pnode* pheap::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+<para>A pointer to the root node of the heap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="92" column="12" bodyfile="include/lely/util/pheap.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpheap_1adcc1fc8fcad643b6af4ac4eae644029d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pheap::num_nodes</definition>
+        <argsstring></argsstring>
+        <name>num_nodes</name>
+        <briefdescription>
+<para>The number of nodes stored in the heap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/pheap.h" line="94" column="8" bodyfile="include/lely/util/pheap.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A pairing heap. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/util/pheap.h" line="88" column="1" bodyfile="include/lely/util/pheap.h" bodystart="88" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structpheap_1a17952eab3e3c56dbd22ab2f7d39138dc" prot="public" virt="non-virtual"><scope>pheap</scope><name>cmp</name></member>
+      <member refid="structpheap_1adcc1fc8fcad643b6af4ac4eae644029d" prot="public" virt="non-virtual"><scope>pheap</scope><name>num_nodes</name></member>
+      <member refid="structpheap_1a3329564b88014659df3d08fb1ca7065f" prot="public" virt="non-virtual"><scope>pheap</scope><name>root</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1014 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="rbtree_8h" kind="file" language="C++">
+    <compoundname>rbtree.h</compoundname>
+    <includes refid="features_8h" local="no">lely/compat/features.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="stddef_8h" local="no">stddef.h</includes>
+    <includes refid="stdint_8h" local="no">stdint.h</includes>
+    <includedby refid="detail_2dev_8h" local="no">include/lely/co/detail/dev.h</includedby>
+    <includedby refid="detail_2obj_8h" local="no">include/lely/co/detail/obj.h</includedby>
+    <includedby refid="net_8c" local="no">lib/can/net.c</includedby>
+    <includedby refid="rbtree_8c" local="no">lib/util/rbtree.c</includedby>
+    <includedby refid="test-rbtree_8cpp" local="no">unit-tests/util/test-rbtree.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>assert.h</label>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>include/lely/util/rbtree.h</label>
+        <link refid="rbtree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="31">
+        <label>unit-tests/co/obj-init/sdo-client-par.hpp</label>
+        <link refid="sdo-client-par_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/co/holder/dev.hpp</label>
+        <link refid="dev_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="27">
+        <label>lib/co/obj.c</label>
+        <link refid="obj_8c"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/co/obj-init/tpdo-comm-par.hpp</label>
+        <link refid="tpdo-comm-par_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>unit-tests/libtest/tools/co-sub-dn-ind.cpp</label>
+        <link refid="co-sub-dn-ind_8cpp"/>
+      </node>
+      <node id="18">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="29">
+        <label>unit-tests/co/obj-init/rpdo-comm-par.hpp</label>
+        <link refid="rpdo-comm-par_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="32">
+        <label>unit-tests/co/obj-init/sdo-server-par.hpp</label>
+        <link refid="sdo-server-par_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="2">
+        <label>include/lely/co/detail/dev.h</label>
+        <link refid="detail_2dev_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>lib/can/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="28">
+        <label>unit-tests/co/holder/obj.hpp</label>
+        <link refid="obj_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-obj.cpp</label>
+        <link refid="test-obj_8cpp"/>
+      </node>
+      <node id="22">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="5">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unit-tests/co/test-pdo.cpp</label>
+        <link refid="test-pdo_8cpp"/>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="39">
+        <label>lib/util/rbtree.c</label>
+        <link refid="rbtree_8c"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/lely/util/rbtree.h</label>
+        <link refid="rbtree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>unit-tests/co/obj-init/rpdo-map-par.hpp</label>
+        <link refid="rpdo-map-par_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>unit-tests/libtest/tools/co-sub-up-ind.cpp</label>
+        <link refid="co-sub-up-ind_8cpp"/>
+      </node>
+      <node id="3">
+        <label>lib/co/dev.c</label>
+        <link refid="dev_8c"/>
+      </node>
+      <node id="26">
+        <label>include/lely/co/detail/obj.h</label>
+        <link refid="detail_2obj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="35">
+        <label>unit-tests/co/holder/sub.hpp</label>
+        <link refid="sub_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="40">
+        <label>unit-tests/util/test-rbtree.cpp</label>
+        <link refid="test-rbtree_8cpp"/>
+      </node>
+      <node id="34">
+        <label>unit-tests/co/obj-init/tpdo-map-par.hpp</label>
+        <link refid="tpdo-map-par_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="24">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="20">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrbnode" prot="public">rbnode</innerclass>
+    <innerclass refid="structrbtree" prot="public">rbtree</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rbtree_8h_1ae3bdbbe37b3723c1f3a2c899107e1f3c" prot="public" static="no">
+        <name>RBNODE_INIT</name>
+        <initializer>	{ \
+		NULL, 0, NULL, NULL \
+	}</initializer>
+        <briefdescription>
+<para>The static initializer for <ref refid="structrbnode" kindref="compound">rbnode</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="73" column="9" bodyfile="include/lely/util/rbtree.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rbtree_8h_1a89046898b33105eb667ba5f4652065ec" prot="public" static="no">
+        <name>RBTREE_INIT</name>
+        <initializer>	{ \
+		NULL, NULL, 0 \
+	}</initializer>
+        <briefdescription>
+<para>The static initializer for <ref refid="structrbtree" kindref="compound">rbtree</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="102" column="9" bodyfile="include/lely/util/rbtree.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" prot="public" static="no">
+        <name>rbnode_foreach</name>
+        <param><defname>first</defname></param>
+        <param><defname>node</defname></param>
+        <initializer>rbnode_foreach_(__LINE__, first, node)</initializer>
+        <briefdescription>
+<para>Iterates over each node in a red-black tree in ascending order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is safe to remove the current node during the iteration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the first node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the pointer to the nodes. This variable is declared in the scope of the loop.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="147" column="10" bodyfile="include/lely/util/rbtree.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rbtree_8h_1a2969f4ac194b261e4ded0d13f8f7283a" prot="public" static="no">
+        <name>rbnode_foreach_</name>
+        <param><defname>n</defname></param>
+        <param><defname>first</defname></param>
+        <param><defname>node</defname></param>
+        <initializer>rbnode_foreach__(n, first, node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="149" column="10" bodyfile="include/lely/util/rbtree.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rbtree_8h_1aa8a87f9ca0a0f56bb066dacb4d3c3789" prot="public" static="no">
+        <name>rbnode_foreach__</name>
+        <param><defname>n</defname></param>
+        <param><defname>first</defname></param>
+        <param><defname>node</defname></param>
+        <initializer>	for (struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *node = (first), \
+			*_rbnode_next_##n = (node) ? <ref refid="rbtree_8c_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(node) : NULL; \
+			(node); (node) = _rbnode_next_##n, \
+			_rbnode_next_##n = (node) ? <ref refid="rbtree_8c_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(node) : NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="151" column="9" bodyfile="include/lely/util/rbtree.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" prot="public" static="no">
+        <name>rbtree_foreach</name>
+        <param><defname>tree</defname></param>
+        <param><defname>node</defname></param>
+        <initializer><ref refid="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" kindref="member">rbnode_foreach</ref> (<ref refid="rbtree_8c_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(tree), node)</initializer>
+        <briefdescription>
+<para>Iterates over each node in a red-black tree in ascending order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" kindref="member">rbnode_foreach()</ref>, <ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="238" column="9" bodyfile="include/lely/util/rbtree.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int rbtree_cmp_t(const void *, const void *)</definition>
+        <argsstring>(const void *, const void *)</argsstring>
+        <name>rbtree_cmp_t</name>
+        <briefdescription>
+<para>The type of a comparison function suitable for use in a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>p1</bold> and <bold>p2</bold> MUST be NULL or point to objects of the same type.</para>
+<para><simplesect kind="return"><para>an integer greater than, equal to, or less than 0 if the object at <bold>p1</bold> is greater than, equal to, or less than the object at <bold>p2</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="89" column="13" bodyfile="include/lely/util/rbtree.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rbtree_8h_1a152b52c2f7cd21b31084a7604808fcf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rbnode_init</definition>
+        <argsstring>(struct rbnode *node, const void *key)</argsstring>
+        <name>rbnode_init</name>
+        <param>
+          <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a node in a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the node to be initialized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the key for this node. The key MUST NOT be modified while the node is part of a tree. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="241" column="1" bodyfile="include/lely/util/rbtree.h" bodystart="241" bodyend="249" declfile="include/lely/util/rbtree.h" declline="114" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbnode_prev</definition>
+        <argsstring>(const struct rbnode *node)</argsstring>
+        <name>rbnode_prev</name>
+        <param>
+          <type>const struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the previous (in-order) node in a red-black tree with respect to <bold>node</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is, at worst, an O(log(n)) operation.</para>
+<para><simplesect kind="see"><para><ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="122" column="13" bodyfile="lib/util/rbtree.c" bodystart="82" bodyend="96" declfile="include/lely/util/rbtree.h" declline="122" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbnode_next</definition>
+        <argsstring>(const struct rbnode *node)</argsstring>
+        <name>rbnode_next</name>
+        <param>
+          <type>const struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the next (in-order) node in a red-black tree with respect to <bold>node</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is, at worst, an O(log(n)) operation. However, visiting all nodes in order is an O(n) operation, and therefore, on average, O(1) for each node.</para>
+<para><simplesect kind="see"><para><ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="132" column="13" bodyfile="lib/util/rbtree.c" bodystart="99" bodyend="113" declfile="include/lely/util/rbtree.h" declline="132" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1a8b465047b051191f5fccb0d83c4a213b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void rbtree_init</definition>
+        <argsstring>(struct rbtree *tree, rbtree_cmp_t *cmp)</argsstring>
+        <name>rbtree_init</name>
+        <param>
+          <type>struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type><ref refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" kindref="member">rbtree_cmp_t</ref> *</type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the tree to be initialized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the function used to compare two keys. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="252" column="1" bodyfile="include/lely/util/rbtree.h" bodystart="252" bodyend="260" declfile="include/lely/util/rbtree.h" declline="164" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rbtree_empty</definition>
+        <argsstring>(const struct rbtree *tree)</argsstring>
+        <name>rbtree_empty</name>
+        <param>
+          <type>const struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Returns <bold>true</bold> if the red-black tree is empty, and <bold>false</bold> if not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="263" column="1" bodyfile="include/lely/util/rbtree.h" bodystart="263" bodyend="266" declfile="include/lely/util/rbtree.h" declline="170" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t rbtree_size</definition>
+        <argsstring>(const struct rbtree *tree)</argsstring>
+        <name>rbtree_size</name>
+        <param>
+          <type>const struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Returns the size (in number of nodes) of a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(1) operation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="269" column="1" bodyfile="include/lely/util/rbtree.h" bodystart="269" bodyend="274" declfile="include/lely/util/rbtree.h" declline="176" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rbtree_insert</definition>
+        <argsstring>(struct rbtree *tree, struct rbnode *node)</argsstring>
+        <name>rbtree_insert</name>
+        <param>
+          <type>struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a node into a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(log(n)) operation. This function does not check whether a node with the same key already exists, or whether the node is already part of another tree.</para>
+<para><simplesect kind="see"><para><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove()</ref>, <ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="185" column="6" bodyfile="lib/util/rbtree.c" bodystart="116" bodyend="190" declfile="include/lely/util/rbtree.h" declline="185" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rbtree_remove</definition>
+        <argsstring>(struct rbtree *tree, struct rbnode *node)</argsstring>
+        <name>rbtree_remove</name>
+        <param>
+          <type>struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Removes a node from a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(log(n)) operation.</para>
+<para><simplesect kind="see"><para><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="192" column="6" bodyfile="lib/util/rbtree.c" bodystart="193" bodyend="309" declfile="include/lely/util/rbtree.h" declline="192" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rbtree_contains</definition>
+        <argsstring>(const struct rbtree *tree, const struct rbnode *node)</argsstring>
+        <name>rbtree_contains</name>
+        <param>
+          <type>const struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a node is part of a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>true</bold> if the node was found in the tree, and <bold>false</bold> if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="200" column="6" bodyfile="lib/util/rbtree.c" bodystart="328" bodyend="338" declfile="include/lely/util/rbtree.h" declline="200" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbtree_find</definition>
+        <argsstring>(const struct rbtree *tree, const void *key)</argsstring>
+        <name>rbtree_find</name>
+        <param>
+          <type>const struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds a node in a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(log(n)) operation.</para>
+<para><simplesect kind="return"><para>a pointer to the node if found, or NULL if not.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="209" column="13" bodyfile="lib/util/rbtree.c" bodystart="312" bodyend="325" declfile="include/lely/util/rbtree.h" declline="209" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbtree_first</definition>
+        <argsstring>(const struct rbtree *tree)</argsstring>
+        <name>rbtree_first</name>
+        <param>
+          <type>const struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the first (leftmost) node in a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(log(n)) operation.</para>
+<para><simplesect kind="see"><para><ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="217" column="13" bodyfile="lib/util/rbtree.c" bodystart="341" bodyend="346" declfile="include/lely/util/rbtree.h" declline="217" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode* rbtree_last</definition>
+        <argsstring>(const struct rbtree *tree)</argsstring>
+        <name>rbtree_last</name>
+        <param>
+          <type>const struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the last (rightmost) node in a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(log(n)) operation.</para>
+<para><simplesect kind="see"><para><ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="225" column="13" bodyfile="lib/util/rbtree.c" bodystart="349" bodyend="354" declfile="include/lely/util/rbtree.h" declline="225" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct <ref refid="structrbnode" kindref="compound">rbnode</ref> *</type>
+        <definition>struct rbnode * rbtree_root</definition>
+        <argsstring>(const struct rbtree *tree)</argsstring>
+        <name>rbtree_root</name>
+        <param>
+          <type>const struct <ref refid="structrbtree" kindref="compound">rbtree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the root node in a red-black tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an O(1) operation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/rbtree.h" line="277" column="1" bodyfile="include/lely/util/rbtree.h" bodystart="277" bodyend="282" declfile="include/lely/util/rbtree.h" declline="231" declcolumn="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the utilities library; it contains the <ulink url="https://en.wikipedia.org/wiki/Red-black_tree">red-black tree</ulink> declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A red-black tree is a type of self-balancing binary tree. This implementation is based on chapters 12 and 13 in: <linebreak/>
+T. H. Cormen et al., <emphasis>Introduction to Algorithms</emphasis> (third edition), MIT Press (2009).</para>
+<para>The red-black tree implemented here is generic and can be used for any kind of key-value pair; only (void) pointers to keys are stored. Upon initialization of the tree, the user is responsible for providing a suitable comparison function (<ref refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" kindref="member">rbtree_cmp_t</ref>).</para>
+<para><simplesect kind="copyright"><para>2014-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_RBTREE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_RBTREE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="features_8h" kindref="compound">lely/compat/features.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stddef_8h" kindref="compound">stddef.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stdint_8h" kindref="compound">stdint.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_UTIL_RBTREE_INLINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_RBTREE_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structrbnode" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>{</highlight></codeline>
+<codeline lineno="60" refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="65" refid="structrbnode_1afc3eb51f72c291870f4bb8cc631d2fce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uintptr_t<sp/><ref refid="structrbnode_1afc3eb51f72c291870f4bb8cc631d2fce" kindref="member">parent</ref>;</highlight></codeline>
+<codeline lineno="67" refid="structrbnode_1a079337ce0b6a84f59162a3ca60445011" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="structrbnode_1a079337ce0b6a84f59162a3ca60445011" kindref="member">left</ref>;</highlight></codeline>
+<codeline lineno="69" refid="structrbnode_1a76b1a4f6c0dcadb4f06b25c183d59a6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="structrbnode_1a76b1a4f6c0dcadb4f06b25c183d59a6e" kindref="member">right</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="rbtree_8h_1ae3bdbbe37b3723c1f3a2c899107e1f3c" refkind="member"><highlight class="preprocessor">#define<sp/>RBNODE_INIT<sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>0,<sp/>NULL,<sp/>NULL<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" kindref="member">rbtree_cmp_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structrbtree" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>{</highlight></codeline>
+<codeline lineno="94" refid="structrbtree_1a05aa8f466e55f30978eeaa8e3657f298" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" kindref="member">rbtree_cmp_t</ref><sp/>*<ref refid="structrbtree_1a05aa8f466e55f30978eeaa8e3657f298" kindref="member">cmp</ref>;</highlight></codeline>
+<codeline lineno="96" refid="structrbtree_1abd0a6e986acba39f103cb66fb1c3bd3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="structrbtree_1abd0a6e986acba39f103cb66fb1c3bd3b" kindref="member">root</ref>;</highlight></codeline>
+<codeline lineno="98" refid="structrbtree_1a683522432cdda0b3bf320a6510fc9ae2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structrbtree_1a683522432cdda0b3bf320a6510fc9ae2" kindref="member">num_nodes</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="rbtree_8h_1a89046898b33105eb667ba5f4652065ec" refkind="member"><highlight class="preprocessor">#define<sp/>RBTREE_INIT<sp/>\</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>NULL,<sp/>0<sp/>\</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1a152b52c2f7cd21b31084a7604808fcf4" kindref="member">rbnode_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" kindref="member">key</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="rbtree_8h_1a197285761469bd963fa9f6a2aea0af71" kindref="member">rbnode_prev</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="rbtree_8h_1aee0be27dcfda693e850e203a0cf41c1a" kindref="member">rbnode_next</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__COUNTER__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rbnode_foreach(first,<sp/>node)<sp/>rbnode_foreach_(__COUNTER__,<sp/>first,<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="rbtree_8h_1a300809f98f845263f5b3f0bac21de386" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rbnode_foreach(first,<sp/>node)<sp/>rbnode_foreach_(__LINE__,<sp/>first,<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rbnode_foreach_(n,<sp/>first,<sp/>node)<sp/>rbnode_foreach__(n,<sp/>first,<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rbnode_foreach__(n,<sp/>first,<sp/>node)<sp/>\</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(struct<sp/>rbnode<sp/>*node<sp/>=<sp/>(first),<sp/>\</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*_rbnode_next_##n<sp/>=<sp/>(node)<sp/>?<sp/>rbnode_next(node)<sp/>:<sp/>NULL;<sp/>\</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(node);<sp/>(node)<sp/>=<sp/>_rbnode_next_##n,<sp/>\</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rbnode_next_##n<sp/>=<sp/>(node)<sp/>?<sp/>rbnode_next(node)<sp/>:<sp/>NULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1a8b465047b051191f5fccb0d83c4a213b" kindref="member">rbtree_init</ref>(</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree,<sp/><ref refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" kindref="member">rbtree_cmp_t</ref><sp/>*cmp);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1a1b7538fb126b2648c89c84f9fddc6070" kindref="member">rbtree_insert</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1ac96cf834794114dd2aa3c4242c991b78" kindref="member">rbtree_remove</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1abd11fc2ee56668b03fa2e858a08078c1" kindref="member">rbtree_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="rbtree_8h_1ae9ae0dca67dfff1e079e0e648e677e82" kindref="member">rbtree_find</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" kindref="member">key</ref>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="rbtree_8h_1ad9ac23cac826e2fb1bcdaae888e65f55" kindref="member">rbtree_first</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="rbtree_8h_1a2a3e812b0148382fd5e33cb06c575290" kindref="member">rbtree_last</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*<ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="rbtree_8h_1ae1380b6db996648dead04df29cbc3127" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rbtree_foreach(tree,<sp/>node)<sp/>rbnode_foreach<sp/>(rbtree_first(tree),<sp/>node)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="rbtree_8h_1a152b52c2f7cd21b31084a7604808fcf4" refkind="member"><highlight class="normal"><ref refid="rbtree_8h_1a152b52c2f7cd21b31084a7604808fcf4" kindref="member">rbnode_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" kindref="member">key</ref>)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(node);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" kindref="member">key</ref><sp/>=<sp/><ref refid="structrbnode_1acef5efee9aed4a68463d269abbc09d14" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structrbnode_1afc3eb51f72c291870f4bb8cc631d2fce" kindref="member">parent</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structrbnode_1a079337ce0b6a84f59162a3ca60445011" kindref="member">left</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;<ref refid="structrbnode_1a76b1a4f6c0dcadb4f06b25c183d59a6e" kindref="member">right</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="rbtree_8h_1a8b465047b051191f5fccb0d83c4a213b" refkind="member"><highlight class="normal"><ref refid="rbtree_8h_1a8b465047b051191f5fccb0d83c4a213b" kindref="member">rbtree_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree,<sp/><ref refid="rbtree_8h_1a5ececa7d88e15ca96bf8b4cd7e2adfb8" kindref="member">rbtree_cmp_t</ref><sp/>*cmp)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(tree);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(cmp);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tree-&gt;<ref refid="structrbtree_1a05aa8f466e55f30978eeaa8e3657f298" kindref="member">cmp</ref><sp/>=<sp/>cmp;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tree-&gt;<ref refid="structrbtree_1abd0a6e986acba39f103cb66fb1c3bd3b" kindref="member">root</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tree-&gt;<ref refid="structrbtree_1a683522432cdda0b3bf320a6510fc9ae2" kindref="member">num_nodes</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" refkind="member"><highlight class="normal"><ref refid="rbtree_8h_1ab035a9b193f13da02623033fd15506c6" kindref="member">rbtree_empty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(tree)<sp/>==<sp/>0u;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" refkind="member"><highlight class="normal"><ref refid="rbtree_8h_1aa73d39059f8f2ca4d81a8c421feea88b" kindref="member">rbtree_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(tree);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tree-&gt;<ref refid="structrbtree_1a683522432cdda0b3bf320a6510fc9ae2" kindref="member">num_nodes</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal">LELY_UTIL_RBTREE_INLINE<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrbnode" kindref="compound">rbnode</ref><sp/>*</highlight></codeline>
+<codeline lineno="277" refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" refkind="member"><highlight class="normal"><ref refid="rbtree_8h_1a77fcd4a79c535716021be52e41a45782" kindref="member">rbtree_root</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrbtree" kindref="compound">rbtree</ref><sp/>*tree)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(tree);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tree-&gt;<ref refid="structrbtree_1abd0a6e986acba39f103cb66fb1c3bd3b" kindref="member">root</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_UTIL_RBTREE_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/util/rbtree.h"/>
+  </compounddef>
+</doxygen>

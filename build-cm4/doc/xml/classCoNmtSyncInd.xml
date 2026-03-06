@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoNmtSyncInd" kind="class" language="C++" prot="public">
+    <compoundname>CoNmtSyncInd</compoundname>
+    <includes refid="co-nmt-sync-ind_8hpp" local="no">co-nmt-sync-ind.hpp</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCoNmtSyncInd_1aaaee394d5974c55d81d2565630b03f04" prot="private" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CoNmtSyncInd::num_called_</definition>
+        <argsstring></argsstring>
+        <name>num_called_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="40" column="17" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtSyncInd_1a12ac2fa89f66d9bc31b8a6a198e0f38f" prot="private" static="yes" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+        <definition>co_nmt_t * CoNmtSyncInd::nmt_</definition>
+        <argsstring></argsstring>
+        <name>nmt_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="42" column="19" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtSyncInd_1ac960a98d7249eb0a0a734ba4028e4bc4" prot="private" static="yes" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t CoNmtSyncInd::cnt_</definition>
+        <argsstring></argsstring>
+        <name>cnt_</name>
+        <initializer>= <ref refid="val_8h_1a1e2fe780c6ee613001ed700957580150" kindref="member">CO_UNSIGNED8_MAX</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="43" column="25" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoNmtSyncInd_1a1ce73a33430311ab4e76525dfa91ba0d" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void * CoNmtSyncInd::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="44" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCoNmtSyncInd_1ac04bdd249ce8d8228453791e968af3fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtSyncInd::Func</definition>
+        <argsstring>(co_nmt_t *nmt, co_unsigned8_t cnt, void *data)</argsstring>
+        <name>Func</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cnt</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="31" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.cpp" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtSyncInd_1a2f3478a485fef14aebdedd380b9cb376" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtSyncInd::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="32" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.cpp" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtSyncInd_1ae7351717c0fc14bd2d4e5b796f0fb432" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtSyncInd::Check</definition>
+        <argsstring>(const co_nmt_t *nmt, co_unsigned8_t cnt, const void *data)</argsstring>
+        <name>Check</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>cnt</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="33" column="15" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.cpp" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtSyncInd_1aacd5d71661fa896d711bf573e0002b81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t CoNmtSyncInd::GetNumCalled</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumCalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="35" column="3" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="nmt_8h_1a9e477885c11d1221907ff6cde3a50787" kindref="member">co_nmt_sync_ind_t</ref> mock. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" line="29" column="1" bodyfile="unit-tests/libtest/tools/co-nmt-sync-ind.hpp" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classCoNmtSyncInd_1ae7351717c0fc14bd2d4e5b796f0fb432" prot="public" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>Check</name></member>
+      <member refid="classCoNmtSyncInd_1a2f3478a485fef14aebdedd380b9cb376" prot="public" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>Clear</name></member>
+      <member refid="classCoNmtSyncInd_1ac960a98d7249eb0a0a734ba4028e4bc4" prot="private" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>cnt_</name></member>
+      <member refid="classCoNmtSyncInd_1a1ce73a33430311ab4e76525dfa91ba0d" prot="private" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>data_</name></member>
+      <member refid="classCoNmtSyncInd_1ac04bdd249ce8d8228453791e968af3fa" prot="public" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>Func</name></member>
+      <member refid="classCoNmtSyncInd_1aacd5d71661fa896d711bf573e0002b81" prot="public" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>GetNumCalled</name></member>
+      <member refid="classCoNmtSyncInd_1a12ac2fa89f66d9bc31b8a6a198e0f38f" prot="private" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>nmt_</name></member>
+      <member refid="classCoNmtSyncInd_1aaaee394d5974c55d81d2565630b03f04" prot="private" virt="non-virtual"><scope>CoNmtSyncInd</scope><name>num_called_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

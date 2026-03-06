@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoDevTHolder" kind="class" language="C++" prot="public">
+    <compoundname>CoDevTHolder</compoundname>
+    <basecompoundref refid="classHolder" prot="public" virt="non-virtual">Holder&lt; co_dev_t &gt;</basecompoundref>
+    <includes refid="dev_8hpp" local="no">dev.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoDevTHolder_1ab5d769d9d10119c1e13d262d2aa14782" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CoDevTHolder::CoDevTHolder</definition>
+        <argsstring>(const co_unsigned8_t id)</argsstring>
+        <name>CoDevTHolder</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/dev.hpp" line="46" column="12" bodyfile="unit-tests/co/holder/dev.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoDevTHolder_1a14d43ee408389b3f979ba89272786345" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoDevTHolder::CreateAndInsertObj</definition>
+        <argsstring>(std::unique_ptr&lt; CoObjTHolder &gt; &amp;obj_holder, const co_unsigned16_t idx)</argsstring>
+        <name>CreateAndInsertObj</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classCoObjTHolder" kindref="compound">CoObjTHolder</ref> &gt; &amp;</type>
+          <declname>obj_holder</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/dev.hpp" line="57" column="3" bodyfile="unit-tests/co/holder/dev.hpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoDevTHolder_1a2d82caf190773a180ff9b07d71175848" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoDevTHolder::CreateObj</definition>
+        <argsstring>(std::unique_ptr&lt; CoObjTHolder &gt; &amp;obj, const co_unsigned16_t idx=T::idx)</argsstring>
+        <name>CreateObj</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classCoObjTHolder" kindref="compound">CoObjTHolder</ref> &gt; &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>idx</declname>
+          <defval>T::idx</defval>
+        </param>
+        <briefdescription>
+<para>Create and insert a CANopen object based on meta-information from a template type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structObjInitT" kindref="compound">ObjInitT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/dev.hpp" line="72" column="3" bodyfile="unit-tests/co/holder/dev.hpp" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoDevTHolder_1ac1f085879ad39fccb1632b1bae44d9f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoDevTHolder::CreateObjValue</definition>
+        <argsstring>(std::unique_ptr&lt; CoObjTHolder &gt; &amp;obj, const typename T::sub_type val=T::default_val)</argsstring>
+        <name>CreateObjValue</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classCoObjTHolder" kindref="compound">CoObjTHolder</ref> &gt; &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const typename T::sub_type</type>
+          <declname>val</declname>
+          <defval>T::default_val</defval>
+        </param>
+        <briefdescription>
+<para>Create and insert a single-value CANopen object based on meta-information from a template type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structObjValueInitT" kindref="compound">ObjValueInitT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/dev.hpp" line="86" column="3" bodyfile="unit-tests/co/holder/dev.hpp" bodystart="86" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper for <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> that separates unit-tests from memory allocation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows for the same unit tests to run with dynamic allocation disabled or enabled. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Holder&lt; co_dev_t &gt;</label>
+        <link refid="classHolder"/>
+      </node>
+      <node id="1">
+        <label>CoDevTHolder</label>
+        <link refid="classCoDevTHolder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Holder&lt; co_dev_t &gt;</label>
+        <link refid="classHolder"/>
+      </node>
+      <node id="1">
+        <label>CoDevTHolder</label>
+        <link refid="classCoDevTHolder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/holder/dev.hpp" line="43" column="1" bodyfile="unit-tests/co/holder/dev.hpp" bodystart="43" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classCoDevTHolder_1ab5d769d9d10119c1e13d262d2aa14782" prot="public" virt="non-virtual"><scope>CoDevTHolder</scope><name>CoDevTHolder</name></member>
+      <member refid="classCoDevTHolder_1a14d43ee408389b3f979ba89272786345" prot="public" virt="non-virtual"><scope>CoDevTHolder</scope><name>CreateAndInsertObj</name></member>
+      <member refid="classCoDevTHolder_1a2d82caf190773a180ff9b07d71175848" prot="public" virt="non-virtual"><scope>CoDevTHolder</scope><name>CreateObj</name></member>
+      <member refid="classCoDevTHolder_1ac1f085879ad39fccb1632b1bae44d9f7" prot="public" virt="non-virtual"><scope>CoDevTHolder</scope><name>CreateObjValue</name></member>
+      <member refid="classHolder_1ad59deb9a4fe2c6537acce42e7dbc82e9" prot="public" virt="non-virtual"><scope>CoDevTHolder</scope><name>Get</name></member>
+      <member refid="classHolder_1a170a9917cf3853b51ca969e3a9294b93" prot="protected" virt="non-virtual"><scope>CoDevTHolder</scope><name>Holder</name></member>
+      <member refid="classHolder_1ae77834c0ce75d610901582fb26c83ea6" prot="public" virt="non-virtual"><scope>CoDevTHolder</scope><name>Reclaim</name></member>
+      <member refid="classHolder_1a9c1acf25ee7d3f0d9e2c333bcbc998af" prot="public" virt="non-virtual"><scope>CoDevTHolder</scope><name>Take</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__1003" kind="struct" language="C++" prot="public">
+    <compoundname>co_1003</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__1003_1ad3f86a445e053426fda1d01199fd92f0" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_1003::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+<para>Number of errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="130" column="16" bodyfile="lib/co/emcy.c" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__1003_1a04b04e268f0adbeb3e60b477afc942b8" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_1003::ef[0xfe]</definition>
+        <argsstring>[0xfe]</argsstring>
+        <name>ef</name>
+        <briefdescription>
+<para>An array of standard error fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/emcy.c" line="132" column="17" bodyfile="lib/co/emcy.c" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The pre-defined error field. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/co/emcy.c" line="128" column="1" bodyfile="lib/co/emcy.c" bodystart="128" bodyend="133"/>
+    <listofallmembers>
+      <member refid="structco__1003_1a04b04e268f0adbeb3e60b477afc942b8" prot="public" virt="non-virtual"><scope>co_1003</scope><name>ef</name></member>
+      <member refid="structco__1003_1ad3f86a445e053426fda1d01199fd92f0" prot="public" virt="non-virtual"><scope>co_1003</scope><name>n</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,709 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="lib_2co_2sdo_8h" kind="file" language="C++">
+    <compoundname>sdo.h</compoundname>
+    <includes refid="lib_2co_2co_8h" local="yes">co.h</includes>
+    <includes refid="include_2lely_2co_2sdo_8h" local="no">lely/co/sdo.h</includes>
+    <includedby refid="csdo_8c" local="yes">lib/co/csdo.c</includedby>
+    <includedby refid="ssdo_8c" local="yes">lib/co/ssdo.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stdbool.h</label>
+      </node>
+      <node id="17">
+        <label>assert.h</label>
+      </node>
+      <node id="15">
+        <label>lely/util/membuf.h</label>
+        <link refid="membuf_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="8">
+        <label>lely/co/sdo.h</label>
+        <link refid="include_2lely_2co_2sdo_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/co/sdo.h</label>
+        <link refid="lib_2co_2sdo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="2">
+        <label>lib/co/csdo.c</label>
+        <link refid="csdo_8c"/>
+      </node>
+      <node id="1">
+        <label>lib/co/sdo.h</label>
+        <link refid="lib_2co_2sdo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a210e4a4343ed72b903bbb491f173c185" prot="public" static="no">
+        <name>CO_SDO_CS_MASK</name>
+        <initializer>0xe0u</initializer>
+        <briefdescription>
+<para>The mask to extract the command specifier (CS) from an SDO command byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="31" column="9" bodyfile="lib/co/sdo.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a428c9c200f3e308daf034980d92e6705" prot="public" static="no">
+        <name>CO_SDO_CS_ABORT</name>
+        <initializer>0x80u</initializer>
+        <briefdescription>
+<para>The SDO client/server command specifier &apos;abort transfer&apos; request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="34" column="9" bodyfile="lib/co/sdo.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1ad15701b129f535d88a6809508ae533cb" prot="public" static="no">
+        <name>CO_SDO_SCS_DN_INI_RES</name>
+        <initializer>0x60u</initializer>
+        <briefdescription>
+<para>The SDO server command specifier &apos;download initiate&apos; response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="37" column="9" bodyfile="lib/co/sdo.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a3fc5d72df2f79d3bad11a55f85cb6a31" prot="public" static="no">
+        <name>CO_SDO_SCS_DN_SEG_RES</name>
+        <initializer>0x20u</initializer>
+        <briefdescription>
+<para>The SDO server command specifier &apos;download segment&apos; response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="40" column="9" bodyfile="lib/co/sdo.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a3f1f7ea44d889b9fd8c9a37df2d57634" prot="public" static="no">
+        <name>CO_SDO_SCS_UP_INI_RES</name>
+        <initializer>0x40u</initializer>
+        <briefdescription>
+<para>The SDO server command specifier &apos;upload initiate&apos; response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="43" column="9" bodyfile="lib/co/sdo.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a2a1fb338650d7e01eb2afb1480c202e7" prot="public" static="no">
+        <name>CO_SDO_SCS_UP_SEG_RES</name>
+        <initializer>0x00u</initializer>
+        <briefdescription>
+<para>The SDO server command specifier &apos;upload segment&apos; response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="46" column="9" bodyfile="lib/co/sdo.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a7e689ff511c60309c672dd19b79bd263" prot="public" static="no">
+        <name>CO_SDO_SCS_BLK_DN_RES</name>
+        <initializer>0xa0u</initializer>
+        <briefdescription>
+<para>The SDO server command specifier &apos;block download&apos; response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="49" column="9" bodyfile="lib/co/sdo.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a939141fa1ff0170af1affe7d8e74cd20" prot="public" static="no">
+        <name>CO_SDO_SCS_BLK_UP_RES</name>
+        <initializer>0xc0u</initializer>
+        <briefdescription>
+<para>The SDO server command specifier &apos;block upload&apos; response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="52" column="9" bodyfile="lib/co/sdo.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a1e58f67e944363a9312f33ad795a1189" prot="public" static="no">
+        <name>CO_SDO_CCS_DN_INI_REQ</name>
+        <initializer>0x20u</initializer>
+        <briefdescription>
+<para>The SDO client command specifier &apos;download initiate&apos; request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="55" column="9" bodyfile="lib/co/sdo.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a60ecfea2bd41bc55f40f9abedc6a2a33" prot="public" static="no">
+        <name>CO_SDO_CCS_DN_SEG_REQ</name>
+        <initializer>0x00u</initializer>
+        <briefdescription>
+<para>The SDO client command specifier &apos;download segment&apos; request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="58" column="9" bodyfile="lib/co/sdo.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a52e6acc2db6f614f2391eb2728eca572" prot="public" static="no">
+        <name>CO_SDO_CCS_UP_INI_REQ</name>
+        <initializer>0x40u</initializer>
+        <briefdescription>
+<para>The SDO client command specifier &apos;upload initiate&apos; request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="61" column="9" bodyfile="lib/co/sdo.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1adf854c28cb66ca22ece763521c799b1a" prot="public" static="no">
+        <name>CO_SDO_CCS_UP_SEG_REQ</name>
+        <initializer>0x60u</initializer>
+        <briefdescription>
+<para>The SDO client command specifier &apos;upload segment&apos; request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="64" column="9" bodyfile="lib/co/sdo.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a44b8b1fd8c207ff87f5bede2aed8d78e" prot="public" static="no">
+        <name>CO_SDO_CCS_BLK_DN_REQ</name>
+        <initializer>0xc0u</initializer>
+        <briefdescription>
+<para>The SDO client command specifier &apos;block download&apos; request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="67" column="9" bodyfile="lib/co/sdo.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1aca877ebd2887c91706a4488817bb6eec" prot="public" static="no">
+        <name>CO_SDO_CCS_BLK_UP_REQ</name>
+        <initializer>0xa0u</initializer>
+        <briefdescription>
+<para>The SDO client command specifier &apos;block upload&apos; request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="70" column="9" bodyfile="lib/co/sdo.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a5554a49618a261706f7356d0b6d4f8b8" prot="public" static="no">
+        <name>CO_SDO_SC_MASK</name>
+        <initializer>0x03u</initializer>
+        <briefdescription>
+<para>The mask to extract the subcommand (SC) from an SDO command byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="73" column="9" bodyfile="lib/co/sdo.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1af67e98b3d8045e4ee71189b99918da2a" prot="public" static="no">
+        <name>CO_SDO_SC_INI_BLK</name>
+        <initializer>0x00u</initializer>
+        <briefdescription>
+<para>The SDO server/client subcommand &apos;initiate download/upload&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="76" column="9" bodyfile="lib/co/sdo.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a316e1e04297ec60353b2dd523edab34d" prot="public" static="no">
+        <name>CO_SDO_SC_END_BLK</name>
+        <initializer>0x01u</initializer>
+        <briefdescription>
+<para>The SDO server/client subcommand &apos;end block download/upload&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="79" column="9" bodyfile="lib/co/sdo.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1abde3bbff60a2f360dc749ac48be2c189" prot="public" static="no">
+        <name>CO_SDO_SC_BLK_RES</name>
+        <initializer>0x02u</initializer>
+        <briefdescription>
+<para>The SDO client/client subcommand &apos;block download/upload&apos; response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="82" column="9" bodyfile="lib/co/sdo.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1ab1ccd72141050ac2541431a7025999bf" prot="public" static="no">
+        <name>CO_SDO_SC_START_UP</name>
+        <initializer>0x03u</initializer>
+        <briefdescription>
+<para>The SDO client subcommand &apos;start upload&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="85" column="9" bodyfile="lib/co/sdo.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a340bde92775cee26b1a21c250076b3a2" prot="public" static="no">
+        <name>CO_SDO_INI_SIZE_MASK</name>
+        <initializer>0x0fu</initializer>
+        <briefdescription>
+<para>The mask to extract the size indicator from an SDO command byte specifying an initiate download/upload request/response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="91" column="9" bodyfile="lib/co/sdo.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a6a89a1f5ba1e56961d8317e0086268c0" prot="public" static="no">
+        <name>CO_SDO_INI_SIZE_IND</name>
+        <initializer>0x01u</initializer>
+        <briefdescription>
+<para>The SDO size indicator flag indicating that the data set size is indicated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="94" column="9" bodyfile="lib/co/sdo.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1acfc334ae2557097b62cf1a14da21d2c0" prot="public" static="no">
+        <name>CO_SDO_INI_SIZE_EXP</name>
+        <initializer>0x02u</initializer>
+        <briefdescription>
+<para>The SDO size indicator flag indicating expedited transfer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="97" column="9" bodyfile="lib/co/sdo.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a269a53c8a334e09fa36b017fc4f7c2fc" prot="public" static="no">
+        <name>CO_SDO_INI_SIZE_EXP_GET</name>
+        <param><defname>cs</defname></param>
+        <initializer>(4u - (((cs)&amp;<ref refid="lib_2co_2sdo_8h_1a340bde92775cee26b1a21c250076b3a2" kindref="member">CO_SDO_INI_SIZE_MASK</ref>) &gt;&gt; 2))</initializer>
+        <briefdescription>
+<para>Retrieves the number of bytes containing expedited data from the SDO size indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="lib_2co_2sdo_8h_1a867c0aa4549018ca02d6ca84bbff673e" kindref="member">CO_SDO_INI_SIZE_EXP_SET()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="105" column="9" bodyfile="lib/co/sdo.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a867c0aa4549018ca02d6ca84bbff673e" prot="public" static="no">
+        <name>CO_SDO_INI_SIZE_EXP_SET</name>
+        <param><defname>n</defname></param>
+        <initializer>	((((4u - (n)) &lt;&lt; 2) | 0x03) &amp; <ref refid="lib_2co_2sdo_8h_1a340bde92775cee26b1a21c250076b3a2" kindref="member">CO_SDO_INI_SIZE_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Sets the SDO size indicator, indicating the expedited transfer of <bold>n</bold> bytes (in the range [1..4]). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="lib_2co_2sdo_8h_1a269a53c8a334e09fa36b017fc4f7c2fc" kindref="member">CO_SDO_INI_SIZE_EXP_GET()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="113" column="9" bodyfile="lib/co/sdo.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a199b6fc0fc3c78f2f90b448227801706" prot="public" static="no">
+        <name>CO_SDO_SEG_TOGGLE</name>
+        <initializer>0x10u</initializer>
+        <briefdescription>
+<para>The mask to get/set the toggle bit from an SDO command byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="117" column="9" bodyfile="lib/co/sdo.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a0f578db3ab9f2323d002f71649abae87" prot="public" static="no">
+        <name>CO_SDO_SEG_SIZE_MASK</name>
+        <initializer>0x0eu</initializer>
+        <briefdescription>
+<para>The mask to extract the size indicator from an SDO command byte specifying an download/upload segment request/response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="123" column="9" bodyfile="lib/co/sdo.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1aa6dd2e00ff14aafb1fcffbddc31c7696" prot="public" static="no">
+        <name>CO_SDO_SEG_SIZE_GET</name>
+        <param><defname>cs</defname></param>
+        <initializer>(7u - (((cs)&amp;<ref refid="lib_2co_2sdo_8h_1a0f578db3ab9f2323d002f71649abae87" kindref="member">CO_SDO_SEG_SIZE_MASK</ref>) &gt;&gt; 1))</initializer>
+        <briefdescription>
+<para>Retrieves the number of bytes containing segment data from the SDO size indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="lib_2co_2sdo_8h_1a2aab6732d53670d95dec691f616af0bf" kindref="member">CO_SDO_SEG_SIZE_SET()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="131" column="9" bodyfile="lib/co/sdo.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a2aab6732d53670d95dec691f616af0bf" prot="public" static="no">
+        <name>CO_SDO_SEG_SIZE_SET</name>
+        <param><defname>n</defname></param>
+        <initializer>(((7u - (n)) &lt;&lt; 1) &amp; <ref refid="lib_2co_2sdo_8h_1a0f578db3ab9f2323d002f71649abae87" kindref="member">CO_SDO_SEG_SIZE_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Sets the SDO size indicator, indicating <bold>n</bold> bytes contain segment data (in the range [0..7]). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="lib_2co_2sdo_8h_1aa6dd2e00ff14aafb1fcffbddc31c7696" kindref="member">CO_SDO_SEG_SIZE_GET()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="139" column="9" bodyfile="lib/co/sdo.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1aa8a64c90c8fdf3e561affff7b63c39a0" prot="public" static="no">
+        <name>CO_SDO_SEG_LAST</name>
+        <initializer>0x01u</initializer>
+        <briefdescription>
+<para>The mask to get/set the last segment bit from an SDO command byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="142" column="9" bodyfile="lib/co/sdo.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a1fa2c3377cc31e2ee76ab140d17a5ee5" prot="public" static="no">
+        <name>CO_SDO_BLK_SIZE_IND</name>
+        <initializer>0x02u</initializer>
+        <briefdescription>
+<para>The SDO size indicator flag indicating that the data set size is indicated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="145" column="9" bodyfile="lib/co/sdo.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a592b7ab28fbacf10623eaf367c1637a7" prot="public" static="no">
+        <name>CO_SDO_BLK_CRC</name>
+        <initializer>0x04u</initializer>
+        <briefdescription>
+<para>The SDO CRC support flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="148" column="9" bodyfile="lib/co/sdo.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a0a93cb436d01e9a74eb18541e0846232" prot="public" static="no">
+        <name>CO_SDO_SEQ_LAST</name>
+        <initializer>0x80u</initializer>
+        <briefdescription>
+<para>The mask to get/set the last segment bit from an SDO command byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="151" column="9" bodyfile="lib/co/sdo.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1ac419385fa4cfc79f969d27b77b19b44c" prot="public" static="no">
+        <name>CO_SDO_BLK_SIZE_MASK</name>
+        <initializer>0x1cu</initializer>
+        <briefdescription>
+<para>The mask to extract the size indicator from an SDO command byte specifying a block download/upload end request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="157" column="9" bodyfile="lib/co/sdo.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1aac977ad7e3ce06358a5e4d67b680b6d9" prot="public" static="no">
+        <name>CO_SDO_BLK_SIZE_GET</name>
+        <param><defname>cs</defname></param>
+        <initializer>(7 - (((cs)&amp;<ref refid="lib_2co_2sdo_8h_1ac419385fa4cfc79f969d27b77b19b44c" kindref="member">CO_SDO_BLK_SIZE_MASK</ref>) &gt;&gt; 2))</initializer>
+        <briefdescription>
+<para>Retrieves the number of bytes containing segment data from the SDO size indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="lib_2co_2sdo_8h_1a256626a4583e8d5ddda3cb1c3df879f5" kindref="member">CO_SDO_BLK_SIZE_SET()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="165" column="9" bodyfile="lib/co/sdo.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1a256626a4583e8d5ddda3cb1c3df879f5" prot="public" static="no">
+        <name>CO_SDO_BLK_SIZE_SET</name>
+        <param><defname>n</defname></param>
+        <initializer>(((7 - (n)) &lt;&lt; 2) &amp; <ref refid="lib_2co_2sdo_8h_1ac419385fa4cfc79f969d27b77b19b44c" kindref="member">CO_SDO_BLK_SIZE_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Sets the SDO size indicator, indicating <bold>n</bold> bytes contain segment data (in the range [0..7]). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="lib_2co_2sdo_8h_1aac977ad7e3ce06358a5e4d67b680b6d9" kindref="member">CO_SDO_BLK_SIZE_GET()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="173" column="9" bodyfile="lib/co/sdo.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lib_2co_2sdo_8h_1aa63d156dc29020d0b83eb6367126e510" prot="public" static="no">
+        <name>CO_SDO_MAX_SEQNO</name>
+        <initializer>127</initializer>
+        <briefdescription>
+<para>The maximum sequence number (or segments per block). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/sdo.h" line="176" column="9" bodyfile="lib/co/sdo.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the internal header file of the Service Data Object (SDO) declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="include_2lely_2co_2sdo_8h" kindref="compound">lely/co/sdo.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2016-2020 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_INTERN_SDO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_INTERN_SDO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2co_2co_8h" kindref="compound">co.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2lely_2co_2sdo_8h" kindref="compound">lely/co/sdo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="lib_2co_2sdo_8h_1a210e4a4343ed72b903bbb491f173c185" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CS_MASK<sp/>0xe0u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="lib_2co_2sdo_8h_1a428c9c200f3e308daf034980d92e6705" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CS_ABORT<sp/>0x80u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="lib_2co_2sdo_8h_1ad15701b129f535d88a6809508ae533cb" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SCS_DN_INI_RES<sp/>0x60u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="lib_2co_2sdo_8h_1a3fc5d72df2f79d3bad11a55f85cb6a31" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SCS_DN_SEG_RES<sp/>0x20u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="lib_2co_2sdo_8h_1a3f1f7ea44d889b9fd8c9a37df2d57634" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SCS_UP_INI_RES<sp/>0x40u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="lib_2co_2sdo_8h_1a2a1fb338650d7e01eb2afb1480c202e7" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SCS_UP_SEG_RES<sp/>0x00u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="lib_2co_2sdo_8h_1a7e689ff511c60309c672dd19b79bd263" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SCS_BLK_DN_RES<sp/>0xa0u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="lib_2co_2sdo_8h_1a939141fa1ff0170af1affe7d8e74cd20" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SCS_BLK_UP_RES<sp/>0xc0u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="lib_2co_2sdo_8h_1a1e58f67e944363a9312f33ad795a1189" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CCS_DN_INI_REQ<sp/>0x20u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="lib_2co_2sdo_8h_1a60ecfea2bd41bc55f40f9abedc6a2a33" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CCS_DN_SEG_REQ<sp/>0x00u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="lib_2co_2sdo_8h_1a52e6acc2db6f614f2391eb2728eca572" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CCS_UP_INI_REQ<sp/>0x40u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="lib_2co_2sdo_8h_1adf854c28cb66ca22ece763521c799b1a" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CCS_UP_SEG_REQ<sp/>0x60u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="lib_2co_2sdo_8h_1a44b8b1fd8c207ff87f5bede2aed8d78e" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CCS_BLK_DN_REQ<sp/>0xc0u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="lib_2co_2sdo_8h_1aca877ebd2887c91706a4488817bb6eec" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_CCS_BLK_UP_REQ<sp/>0xa0u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="lib_2co_2sdo_8h_1a5554a49618a261706f7356d0b6d4f8b8" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SC_MASK<sp/>0x03u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="lib_2co_2sdo_8h_1af67e98b3d8045e4ee71189b99918da2a" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SC_INI_BLK<sp/>0x00u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="lib_2co_2sdo_8h_1a316e1e04297ec60353b2dd523edab34d" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SC_END_BLK<sp/>0x01u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="lib_2co_2sdo_8h_1abde3bbff60a2f360dc749ac48be2c189" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SC_BLK_RES<sp/>0x02u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="lib_2co_2sdo_8h_1ab1ccd72141050ac2541431a7025999bf" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SC_START_UP<sp/>0x03u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="lib_2co_2sdo_8h_1a340bde92775cee26b1a21c250076b3a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_INI_SIZE_MASK<sp/>0x0fu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="lib_2co_2sdo_8h_1a6a89a1f5ba1e56961d8317e0086268c0" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_INI_SIZE_IND<sp/>0x01u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="lib_2co_2sdo_8h_1acfc334ae2557097b62cf1a14da21d2c0" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_INI_SIZE_EXP<sp/>0x02u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="lib_2co_2sdo_8h_1a269a53c8a334e09fa36b017fc4f7c2fc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_INI_SIZE_EXP_GET(cs)<sp/>(4u<sp/>-<sp/>(((cs)&amp;CO_SDO_INI_SIZE_MASK)<sp/>&gt;&gt;<sp/>2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="lib_2co_2sdo_8h_1a867c0aa4549018ca02d6ca84bbff673e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_INI_SIZE_EXP_SET(n)<sp/>\</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((4u<sp/>-<sp/>(n))<sp/>&lt;&lt;<sp/>2)<sp/>|<sp/>0x03)<sp/>&amp;<sp/>CO_SDO_INI_SIZE_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="lib_2co_2sdo_8h_1a199b6fc0fc3c78f2f90b448227801706" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SEG_TOGGLE<sp/>0x10u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="lib_2co_2sdo_8h_1a0f578db3ab9f2323d002f71649abae87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_SEG_SIZE_MASK<sp/>0x0eu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="lib_2co_2sdo_8h_1aa6dd2e00ff14aafb1fcffbddc31c7696" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_SEG_SIZE_GET(cs)<sp/>(7u<sp/>-<sp/>(((cs)&amp;CO_SDO_SEG_SIZE_MASK)<sp/>&gt;&gt;<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="lib_2co_2sdo_8h_1a2aab6732d53670d95dec691f616af0bf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_SEG_SIZE_SET(n)<sp/>(((7u<sp/>-<sp/>(n))<sp/>&lt;&lt;<sp/>1)<sp/>&amp;<sp/>CO_SDO_SEG_SIZE_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="lib_2co_2sdo_8h_1aa8a64c90c8fdf3e561affff7b63c39a0" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SEG_LAST<sp/>0x01u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="lib_2co_2sdo_8h_1a1fa2c3377cc31e2ee76ab140d17a5ee5" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_BLK_SIZE_IND<sp/>0x02u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="lib_2co_2sdo_8h_1a592b7ab28fbacf10623eaf367c1637a7" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_BLK_CRC<sp/>0x04u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="lib_2co_2sdo_8h_1a0a93cb436d01e9a74eb18541e0846232" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_SEQ_LAST<sp/>0x80u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="lib_2co_2sdo_8h_1ac419385fa4cfc79f969d27b77b19b44c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_BLK_SIZE_MASK<sp/>0x1cu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="lib_2co_2sdo_8h_1aac977ad7e3ce06358a5e4d67b680b6d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_BLK_SIZE_GET(cs)<sp/>(7<sp/>-<sp/>(((cs)&amp;CO_SDO_BLK_SIZE_MASK)<sp/>&gt;&gt;<sp/>2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="lib_2co_2sdo_8h_1a256626a4583e8d5ddda3cb1c3df879f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_SDO_BLK_SIZE_SET(n)<sp/>(((7<sp/>-<sp/>(n))<sp/>&lt;&lt;<sp/>2)<sp/>&amp;<sp/>CO_SDO_BLK_SIZE_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="lib_2co_2sdo_8h_1aa63d156dc29020d0b83eb6367126e510" refkind="member"><highlight class="preprocessor">#define<sp/>CO_SDO_MAX_SEQNO<sp/>127</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CO_INTERN_SDO_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/co/sdo.h"/>
+  </compounddef>
+</doxygen>

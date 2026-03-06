@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerdir refid="dir_c926ccd25fde7939feebe163e20903e5">lib/can</innerdir>
+    <innerdir refid="dir_4f95dc2142b21fa91e85d4d07facf434">lib/co</innerdir>
+    <innerdir refid="dir_73264594c6df1fbb7df611d560364214">lib/compat</innerdir>
+    <innerdir refid="dir_158140ff656f78de6c470107cebb8f00">lib/util</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/"/>
+  </compounddef>
+</doxygen>

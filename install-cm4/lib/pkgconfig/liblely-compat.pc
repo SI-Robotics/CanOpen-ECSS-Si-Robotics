@@ -1,0 +1,11 @@
+prefix=/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/install-cm4
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: liblely-compat
+Description: Lely C11 and POSIX compatibility library
+URL: https://gitlab.com/lely_industries/lely-core
+Version: 3.5.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -llely-compat 

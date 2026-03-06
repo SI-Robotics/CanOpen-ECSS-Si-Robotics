@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="docker_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Lely<sp/>core<sp/>libraries<sp/>-<sp/>development<sp/>docker<sp/>images</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>folder<sp/>contains<sp/>docker<sp/>images<sp/>configurations<sp/>used<sp/>by<sp/>Continous<sp/>Integration</highlight></codeline>
+<codeline><highlight class="normal">system<sp/>to<sp/>build<sp/>and<sp/>validate<sp/>lely-core<sp/>libraries.<sp/>The<sp/>same<sp/>contaniners<sp/>can<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">used<sp/>by<sp/>developers<sp/>to<sp/>quickly<sp/>set<sp/>up<sp/>local<sp/>development<sp/>environment.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Folder<sp/>structure</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Instead<sp/>of<sp/>a<sp/>single<sp/>huge<sp/>image,<sp/>various<sp/>tools<sp/>use<sp/>separate<sp/>images.</highlight></codeline>
+<codeline><highlight class="normal">It<sp/>makes<sp/>images<sp/>smaller<sp/>but<sp/>also<sp/>helps<sp/>isolating<sp/>various<sp/>validations.</highlight></codeline>
+<codeline><highlight class="normal">Each<sp/>image<sp/>configuration<sp/>file<sp/>(Dockerfile)<sp/>is<sp/>stored<sp/>in<sp/>separate<sp/>folder.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Dockerfiles<sp/>are<sp/>organized<sp/>in<sp/>following<sp/>folder<sp/>structure:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>`&lt;tool&gt;/Dockerfile`<sp/>-<sp/>for<sp/>tools<sp/>that<sp/>have<sp/>dedicated<sp/>base<sp/>container</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(e.g.<sp/>gcc)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>`&lt;tool&gt;/&lt;distribution&gt;/Dockerfile`<sp/>-<sp/>for<sp/>tools<sp/>that<sp/>needs<sp/>container</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>built<sp/>from<sp/>scratch<sp/>image<sp/>of</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selected<sp/>distribution</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>`&lt;tool&gt;`<sp/>name<sp/>corresponds<sp/>to<sp/>the<sp/>CI<sp/>task<sp/>defined<sp/>in<sp/>`.gitlab-ci.yml`,</highlight></codeline>
+<codeline><highlight class="normal">usually<sp/>name<sp/>of<sp/>the<sp/>tasks<sp/>include<sp/>the<sp/>name<sp/>of<sp/>the<sp/>used<sp/>container.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>CI<sp/>setup<sp/>can<sp/>be<sp/>treated<sp/>as<sp/>instruction<sp/>on<sp/>images<sp/>usage.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Some<sp/>of<sp/>the<sp/>images<sp/>that<sp/>needs<sp/>to<sp/>be<sp/>built<sp/>from<sp/>scratch<sp/>have<sp/>a<sp/>common<sp/>base<sp/>stored<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">`build/&lt;distribution&gt;`<sp/>which<sp/>allows<sp/>to<sp/>simply<sp/>share<sp/>layers<sp/>between<sp/>images.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>GitLab.com<sp/>Docker<sp/>Repository</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>images<sp/>used<sp/>by<sp/>project&apos;s<sp/>CI<sp/>system<sp/>can<sp/>be<sp/>directly<sp/>downloaded<sp/>from</highlight></codeline>
+<codeline><highlight class="normal">project&apos;s<sp/>GitLab.com<sp/>Docker<sp/>Registry.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>browse<sp/>available<sp/>images<sp/>go<sp/>to:</highlight></codeline>
+<codeline><highlight class="normal">`Project<sp/>GitLab.com<sp/>page<sp/>&gt;<sp/>Packages<sp/>&amp;<sp/>Registries<sp/>&gt;<sp/>Registry`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Each<sp/>available<sp/>image<sp/>has<sp/>an<sp/>icon<sp/>which<sp/>allows<sp/>to<sp/>copy<sp/>the<sp/>direct<sp/>link</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>selected<sp/>image<sp/>and<sp/>pass<sp/>it<sp/>to<sp/>Docker<sp/>commands.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>example:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`docker<sp/>run<sp/>-ti<sp/>registry.gitlab.com/n7space/canopen/lely-core/lcov:bullseye<sp/>bash`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">will<sp/>download<sp/>`lcov`<sp/>tool&apos;s<sp/>image<sp/>and<sp/>run<sp/>interactive<sp/>bash<sp/>in<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">NOTE:<sp/>Depending<sp/>on<sp/>user&apos;s<sp/>settings,<sp/>the<sp/>image<sp/>might<sp/>need<sp/>to<sp/>be<sp/>manually<sp/>pulled<sp/>from</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>registry<sp/>(using<sp/>`docker<sp/>pull`)<sp/>before<sp/>executing<sp/>`docker<sp/>run`.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Using<sp/>tools<sp/>from<sp/>images</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>execute<sp/>tools<sp/>provided<sp/>by<sp/>containers<sp/>`docker<sp/>run`<sp/>command<sp/>needs<sp/>to<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>tools<sp/>that<sp/>require<sp/>multiple<sp/>commands<sp/>to<sp/>be<sp/>called,<sp/>user<sp/>can:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>call<sp/>one<sp/>command<sp/>at<sp/>a<sp/>time,<sp/>prefixing<sp/>each<sp/>with<sp/>`docker<sp/>run<sp/>&lt;IMAGE&gt;`,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>create<sp/>shell<sp/>inside<sp/>container<sp/>by<sp/>calling<sp/>`docker<sp/>run<sp/>-ti<sp/>&lt;IMAGE&gt;<sp/>bash`</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>and<sp/>executing<sp/>all<sp/>commands<sp/>in<sp/>that<sp/>shell.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>is<sp/>recommended<sp/>in<sp/>second<sp/>approach<sp/>and<sp/>necessary<sp/>in<sp/>the<sp/>first<sp/>one<sp/>to<sp/>mount</highlight></codeline>
+<codeline><highlight class="normal">local<sp/>folder<sp/>inside<sp/>container<sp/>using<sp/>`-v<sp/>&lt;local<sp/>path&gt;:&lt;container<sp/>path&gt;`<sp/>switch.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Switching<sp/>working<sp/>directory<sp/>using<sp/>`--workdir<sp/>&lt;container<sp/>path&gt;`<sp/>can<sp/>be<sp/>helpful.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>is<sp/>worth<sp/>noting,<sp/>that<sp/>by<sp/>default<sp/>docker<sp/>will<sp/>run<sp/>container<sp/>as<sp/>`root`<sp/>user,</highlight></codeline>
+<codeline><highlight class="normal">so<sp/>all<sp/>files<sp/>created<sp/>by<sp/>container<sp/>in<sp/>mounted<sp/>volume/directory<sp/>will<sp/>be<sp/>owned<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">`root`,<sp/>which<sp/>might<sp/>be<sp/>incovinient.<sp/>One<sp/>of<sp/>the<sp/>solutions<sp/>is<sp/>to<sp/>pass</highlight></codeline>
+<codeline><highlight class="normal">`--user<sp/>$(id<sp/>-u):$(id<sp/>-g)`<sp/>switch<sp/>when<sp/>calling<sp/>build<sp/>commands.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>both<sp/>cases<sp/>`--rm`<sp/>switch<sp/>will<sp/>help<sp/>save<sp/>disk<sp/>space.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>example:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```<sp/>bash</highlight></codeline>
+<codeline><highlight class="normal">docker<sp/>run<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-v<sp/>$PWD:/home/dev/lely-core<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>--workdir<sp/>/home/dev/lely-core<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>--user<sp/>$(id<sp/>-u):$(id<sp/>-g)<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>--rm<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lely-core/gcc:10<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>autoreconf<sp/>-i</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">will<sp/>execute<sp/>autotools<sp/>autoreconf<sp/>inside<sp/>GCC<sp/>10<sp/>image</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>current<sp/>directory<sp/>as<sp/>working<sp/>directory.</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>this<sp/>command<sp/>to<sp/>succeed,<sp/>the<sp/>current<sp/>directory<sp/>should<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>root<sp/>folder<sp/>of<sp/>the<sp/>repository<sp/>checkout.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>use<sp/>some<sp/>features<sp/>of<sp/>the<sp/>library<sp/>setting<sp/>up<sp/>the<sp/>environment<sp/>variables<sp/>is<sp/>required.<sp/>It<sp/>can<sp/>be<sp/>achieved<sp/>by<sp/>creating<sp/>a<sp/>file<sp/>named,<sp/>for<sp/>example,<sp/>`env-variables.var`<sp/>containing<sp/>the<sp/>entries<sp/>in<sp/>the<sp/>following<sp/>format:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">VARIABLE_NAME1=VALUE1</highlight></codeline>
+<codeline><highlight class="normal">VARIABLE_NAME2=VALUE2</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>that<sp/>the<sp/>option<sp/>`--env-file<sp/>env-variables.var`<sp/>can<sp/>be<sp/>added<sp/>to<sp/>the<sp/>`docker<sp/>run`<sp/>command<sp/>to<sp/>load<sp/>these<sp/>values<sp/>into<sp/>the<sp/>container.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Building<sp/>image<sp/>locally</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Dockerfiles<sp/>are<sp/>prepared<sp/>for<sp/>building<sp/>images<sp/>targeting<sp/>CI<sp/>and<sp/>Docker<sp/>Registry,</highlight></codeline>
+<codeline><highlight class="normal">so<sp/>building<sp/>them<sp/>locally<sp/>does<sp/>not<sp/>follow<sp/>common<sp/>Docker<sp/>patterns.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Images<sp/>assume<sp/>they<sp/>are<sp/>downloaded<sp/>from<sp/>registry,<sp/>so<sp/>names<sp/>should<sp/>be<sp/>prefixed</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>with<sp/>some<sp/>`prefix/`<sp/>and<sp/>`REGISTRY=prefix`<sp/>argument<sp/>passed<sp/>while<sp/>building.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Some<sp/>tools<sp/>require<sp/>additional<sp/>arguments<sp/>(like<sp/>tool<sp/>version,<sp/>e.g.<sp/>gcc).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Example<sp/>-<sp/>building<sp/>_lcov_<sp/>image,<sp/>which<sp/>depends<sp/>on<sp/>_build_<sp/>image.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>In<sp/>`build/bullseye/`<sp/>:<sp/>`docker<sp/>build<sp/>-t<sp/>lely-core/build:bullseye<sp/>.`</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>2.<sp/>In<sp/>`lcov/bullseye/`<sp/>:<sp/>`docker<sp/>build<sp/>-t<sp/>lely-core/lcov:bullseye<sp/>--build-arg<sp/>REGISTRY=lely-core<sp/>.`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Example<sp/>-<sp/>building<sp/>_gcc_<sp/>image<sp/>for<sp/>GCC<sp/>10.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>In<sp/>`gcc/`<sp/>:<sp/>`docker<sp/>build<sp/>-t<sp/>lely-core/gcc:10<sp/>--build-arg<sp/>__GNUC__=10<sp/>.`</highlight></codeline>
+    </programlisting>
+    <location file="docker/README.md"/>
+  </compounddef>
+</doxygen>

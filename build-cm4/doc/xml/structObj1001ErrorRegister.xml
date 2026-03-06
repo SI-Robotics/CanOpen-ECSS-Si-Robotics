@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObj1001ErrorRegister" kind="struct" language="C++" prot="public">
+    <compoundname>Obj1001ErrorRegister</compoundname>
+    <basecompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1001u, CO_DEFTYPE_UNSIGNED8 &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjValueInitT&lt; 0x1001u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::template SubT</label>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1001ErrorRegister</label>
+        <link refid="structObj1001ErrorRegister"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjValueInitT&lt; 0x1001u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::template SubT</label>
+      </node>
+      <node id="3">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="1">
+        <label>Obj1001ErrorRegister</label>
+        <link refid="structObj1001ErrorRegister"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/emcy-error-register.hpp" line="29" column="1" bodyfile="unit-tests/co/obj-init/emcy-error-register.hpp" bodystart="29" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1001ErrorRegister</scope><name>idx</name></member>
+      <member refid="structObjValueInitT_1ab2cb6c513bd6369ca8e29c9af7680a43" prot="public" virt="non-virtual"><scope>Obj1001ErrorRegister</scope><name>max_idx</name></member>
+      <member refid="structObjValueInitT_1ae8313a2dc00a492ba33858abc30c6d80" prot="public" virt="non-virtual"><scope>Obj1001ErrorRegister</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

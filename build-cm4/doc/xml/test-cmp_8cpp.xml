@@ -1,0 +1,1007 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-cmp_8cpp" kind="file" language="C++">
+    <compoundname>test-cmp.cpp</compoundname>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="cmp_8h" local="no">lely/util/cmp.h</includes>
+    <includes local="no">lely/util/def/type.def</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/util/cmp.h</label>
+        <link refid="cmp_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lely/util/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/util/test-cmp.cpp</label>
+        <link refid="test-cmp_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/compat/strings.h</label>
+        <link refid="strings_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="9">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/compat/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>ptr_cmp()</header>
+      <memberdef kind="function" id="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, PtrCmp)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>PtrCmp</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> ptr_cmp() is called with two comparable pointers</para>
+<para><bold>Then</bold> -1 is returned if the first argument precedes the second one; 0 is returned if both arguments point to the same entity; 1 is returned if the second argument precedes the first one </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="43" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="43" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>str_cmp()</header>
+      <memberdef kind="function" id="test-cmp_8cpp_1abf42abe67d037611f6ba9862d0bf8fb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCmp_NullPointers)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCmp_NullPointers</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_cmp() is called with exactly one of the arguments being a null pointer</para>
+<para><bold>Then</bold> 1 is returned if the second argument is a null pointer; -1 is returned if the first argument is a null pointer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="65" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a87a12bb6dab833a92889d66908e71771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCmp_PointersEqual)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCmp_PointersEqual</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_cmp() is called with two pointers pointing to the same character array</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="78" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a7f7c35cb2235b17fef2095cc80302347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCmp_StringsEqual)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCmp_StringsEqual</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_cmp() is called with two pointers to different character arrays with identical contents</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="91" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="91" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a2eca95a3b8d8cb911399b31637cdca79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCmp_StrMoreChar)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCmp_StrMoreChar</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_cmp() is called with two pointers to different character arrays of same length and the first character of the first array is greater than the first character of the second array</para>
+<para><bold>Then</bold> a value greater than zero is returned <linebreak/>
+calls strcmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="106" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a7dacd29ce1657e93922d1bde560b6f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCmp_StrMoreNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCmp_StrMoreNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_cmp() is called with two pointers to different character arrays of different lengths, the shorter array is a prefix of the longer one and the longer array is passed as first argument</para>
+<para><bold>Then</bold> a value greater than zero is returned <linebreak/>
+calls strcmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="121" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="121" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1ae6530ea4256ace1ae1dc765953992299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCmp_StrLessChar)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCmp_StrLessChar</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_cmp() is called with two pointers to different character arrays of same length and the first character of the first array is less than the first character of the second array</para>
+<para><bold>Then</bold> a value less than zero is returned <linebreak/>
+calls strcmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="136" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="136" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1ab8c9b24dc65150af2524f82482859e0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCmp_StrLessNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCmp_StrLessNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_cmp() is called with two pointers to different character arrays of different lengths, the shorter array is a prefix of the longer one and the shorter array is passed as first argument</para>
+<para><bold>Then</bold> a value less than zero is returned <linebreak/>
+calls strcmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="151" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="151" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>str_case_cmp()</header>
+      <memberdef kind="function" id="test-cmp_8cpp_1a4ac5c928ccb54462822fbe658fb7d447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCaseCmp_NullPointers)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCaseCmp_NullPointers</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_case_cmp() is called with exactly one of the arguments being a null pointer</para>
+<para><bold>Then</bold> 1 is returned if the second argument is a null pointer; -1 is returned if the first argument is a null pointer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="170" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="170" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a5e85868db5032b7ab36d39ad666e7c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCaseCmp_PointersEqual)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCaseCmp_PointersEqual</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_case_cmp() is called with two pointers pointing to the same character array</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="184" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="184" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1adf2d82d684eb59a170552e9d684af0ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCaseCmp_Equal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCaseCmp_Equal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_case_cmp() is called with two pointers to different character arrays of same length with same characters but of different case</para>
+<para><bold>Then</bold> 0 is returned <linebreak/>
+calls strcasecmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="198" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="198" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a3caaef14cec6f159f0cda14c9f961c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCaseCmp_StrMoreChar)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCaseCmp_StrMoreChar</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_case_cmp() is called with two pointers to different character arrays of same length with common case insensitive prefixes and first different character being greater in the first array</para>
+<para><bold>Then</bold> a value greater than zero is returned <linebreak/>
+calls strcasecmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="213" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="213" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1ac37c07350ac1119029f68fe926a1821f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCaseCmp_StrMoreNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCaseCmp_StrMoreNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_case_cmp() is called with two pointers to different character arrays of different lengths, the shorter array is a case insensitive prefix of the longer one and the longer array is passed as first argument</para>
+<para><bold>Then</bold> a value greater than zero is returned <linebreak/>
+calls strcasecmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="229" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="229" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a17cf18d0299cebf2f81ce59c98676f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCaseCmp_StrLessChar)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCaseCmp_StrLessChar</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_case_cmp() is called with two pointers to different character arrays of same length with common case insensitive prefixes and first different character being greater in the second array</para>
+<para><bold>Then</bold> a value less than zero is returned <linebreak/>
+calls strcasecmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="244" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="244" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a4bd8d6120d1d93956163acea98d906d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, StrCaseCmp_StrLessNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>StrCaseCmp_StrLessNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> str_case_cmp() is called with two pointers to different character arrays of different lengths, the shorter array is a case insensitive prefix of the longer one and the longer array is passed as second argument</para>
+<para><bold>Then</bold> a value less than zero is returned <linebreak/>
+calls strcasecmp() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="260" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="260" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>basic type comparison functions</header>
+      <memberdef kind="function" id="test-cmp_8cpp_1affaefc4a096cc6678aeda096040410e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, TypeCmp_Equal)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>TypeCmp_Equal</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> {typename}_cmp() (e.g. uint32_cmp()) is called with pointers to variables with same value</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="278" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="278" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a0ff5c655563c8adf253961de0608844b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, TypeCmp_FirstGreater)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>TypeCmp_FirstGreater</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> {typename}_cmp() (e.g. uint32_cmp()) is called with two pointers where the first pointer points to the greater variable</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="300" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="300" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1ab3d3dd620fa7a779dd08a6461b9438eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, TypeCmp_SecondGreater)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>TypeCmp_SecondGreater</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> {typename}_cmp() (e.g. uint32_cmp()) is called with two pointers where the second pointer points to the greater variable</para>
+<para><bold>Then</bold> -1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="322" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="322" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1ad05164d45292df73f6ad8c2be9a3bce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, TypeCmp_PtrEqual)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>TypeCmp_PtrEqual</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> {typename}_cmp() (e.g. uint32_cmp()) is called with two pointers to same variable</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="344" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="344" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1aefcc085a76d1b50302d13f4017ef9635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, TypeCmp_FirstPtrNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>TypeCmp_FirstPtrNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> {typename}_cmp() (e.g. uint32_cmp()) is called with a null pointer as first argument and a non-null pointer as second argument</para>
+<para><bold>Then</bold> -1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="365" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="365" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1afee2946fb69edfb404472f5b664c984d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, TypeCmp_SecondPtrNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>TypeCmp_SecondPtrNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> {typename}_cmp() (e.g. uint32_cmp()) is called with a non-null pointer as first argument and a null pointer as second argument</para>
+<para><bold>Then</bold> 1 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="386" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="386" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="test-cmp_8cpp_1a242a1d72039a4d1edfe03163a228cf1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Util_Cmp, TypeCmp_BothPtrNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <param>
+          <type>TypeCmp_BothPtrNull</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> N/A </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> {typename}_cmp() (e.g. uint32_cmp()) is called with two null pointers</para>
+<para><bold>Then</bold> 0 is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="406" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="406" bodyend="417"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="test-cmp_8cpp_1a45cfa8334d8d1fa8d3e3fbf9aa51e9b3" prot="public" static="no">
+        <name>LELY_UTIL_DEFINE_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>  { \
+    const type a = static_cast&lt;type&gt;(1); \
+    const type b = static_cast&lt;type&gt;(1); \
+\
+    const auto cmp = name##_cmp(&amp;a, &amp;b); \
+\
+    CHECK_EQUAL_TEXT(0, cmp, &quot;checked type: &lt;&quot; #name &quot;&gt;&quot;); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="281" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="test-cmp_8cpp_1a45cfa8334d8d1fa8d3e3fbf9aa51e9b3" prot="public" static="no">
+        <name>LELY_UTIL_DEFINE_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>  { \
+    const type a = static_cast&lt;type&gt;(1); \
+    const type b = static_cast&lt;type&gt;(0); \
+\
+    const auto cmp = name##_cmp(&amp;a, &amp;b); \
+\
+    CHECK_EQUAL_TEXT(1, cmp, &quot;checked type: &lt;&quot; #name &quot;&gt;&quot;); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="303" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="test-cmp_8cpp_1a45cfa8334d8d1fa8d3e3fbf9aa51e9b3" prot="public" static="no">
+        <name>LELY_UTIL_DEFINE_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>  { \
+    const type a = static_cast&lt;type&gt;(0); \
+    const type b = static_cast&lt;type&gt;(1); \
+\
+    const auto cmp = name##_cmp(&amp;a, &amp;b); \
+\
+    CHECK_EQUAL_TEXT(-1, cmp, &quot;checked type: &lt;&quot; #name &quot;&gt;&quot;); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="325" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="test-cmp_8cpp_1a45cfa8334d8d1fa8d3e3fbf9aa51e9b3" prot="public" static="no">
+        <name>LELY_UTIL_DEFINE_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>  { \
+    const type a{}; \
+\
+    const auto cmp = name##_cmp(&amp;a, &amp;a); \
+\
+    CHECK_EQUAL_TEXT(0, cmp, &quot;checked type: &lt;&quot; #name &quot;&gt;&quot;); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="347" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="test-cmp_8cpp_1a45cfa8334d8d1fa8d3e3fbf9aa51e9b3" prot="public" static="no">
+        <name>LELY_UTIL_DEFINE_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>  { \
+    const type a{}; \
+\
+    const auto cmp = name##_cmp(nullptr, &amp;a); \
+\
+    CHECK_EQUAL_TEXT(-1, cmp, &quot;checked type: &lt;&quot; #name &quot;&gt;&quot;); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="368" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="test-cmp_8cpp_1a45cfa8334d8d1fa8d3e3fbf9aa51e9b3" prot="public" static="no">
+        <name>LELY_UTIL_DEFINE_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>  { \
+    const type a{}; \
+\
+    const auto cmp = name##_cmp(&amp;a, nullptr); \
+\
+    CHECK_EQUAL_TEXT(1, cmp, &quot;checked type: &lt;&quot; #name &quot;&gt;&quot;); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="389" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="test-cmp_8cpp_1a45cfa8334d8d1fa8d3e3fbf9aa51e9b3" prot="public" static="no">
+        <name>LELY_UTIL_DEFINE_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>  { \
+    const auto cmp = name##_cmp(nullptr, nullptr); \
+\
+    CHECK_EQUAL_TEXT(0, cmp, &quot;checked type: &lt;&quot; #name &quot;&gt;&quot;); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="409" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-cmp_8cpp_1a86d4b6fe18a9467e1a8048f8d851368f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(Util_Cmp)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>Util_Cmp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/util/test-cmp.cpp" line="31" column="1" bodyfile="unit-tests/util/test-cmp.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cmp_8h" kindref="compound">lely/util/cmp.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(Util_Cmp){};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"></codeline>
+<codeline lineno="43" refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>PtrCmp)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>tab[2]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p1<sp/>=<sp/>&amp;tab[0];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p2<sp/>=<sp/>&amp;tab[1];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(-1,<sp/>ptr_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>ptr_cmp(p1,<sp/>p1));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>ptr_cmp(p2,<sp/>p1));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"></codeline>
+<codeline lineno="57"></codeline>
+<codeline lineno="65" refid="test-cmp_8cpp_1abf42abe67d037611f6ba9862d0bf8fb2" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCmp_NullPointers)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>str_cmp(p,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(-1,<sp/>str_cmp(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>p));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="test-cmp_8cpp_1a87a12bb6dab833a92889d66908e71771" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCmp_PointersEqual)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p2<sp/>=<sp/>p1;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>str_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="test-cmp_8cpp_1a7f7c35cb2235b17fef2095cc80302347" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCmp_StringsEqual)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%arhgesvdfg45-&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%arhgesvdfg45-&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>str_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="test-cmp_8cpp_1a2eca95a3b8d8cb911399b31637cdca79" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCmp_StrMoreChar)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;brhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/>str_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="test-cmp_8cpp_1a7dacd29ce1657e93922d1bde560b6f1b" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCmp_StrMoreNull)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesvv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/>str_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="test-cmp_8cpp_1ae6530ea4256ace1ae1dc765953992299" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCmp_StrLessChar)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;brhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;hrhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/>str_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="test-cmp_8cpp_1ab8c9b24dc65150af2524f82482859e0c" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCmp_StrLessNull)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesvddd&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/>str_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"></codeline>
+<codeline lineno="162"></codeline>
+<codeline lineno="170" refid="test-cmp_8cpp_1a4ac5c928ccb54462822fbe658fb7d447" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCaseCmp_NullPointers)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p2<sp/>=<sp/>p1;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(1,<sp/>str_case_cmp(p1,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(-1,<sp/>str_case_cmp(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>p2));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="test-cmp_8cpp_1a5e85868db5032b7ab36d39ad666e7c5e" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCaseCmp_PointersEqual)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p2<sp/>=<sp/>p1;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>str_case_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="test-cmp_8cpp_1adf2d82d684eb59a170552e9d684af0ea" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCaseCmp_Equal)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ArhGesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0,<sp/>str_case_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="test-cmp_8cpp_1a3caaef14cec6f159f0cda14c9f961c28" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCaseCmp_StrMoreChar)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesverh&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ArhGesvaaa&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/>str_case_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="test-cmp_8cpp_1ac37c07350ac1119029f68fe926a1821f" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCaseCmp_StrMoreNull)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesverh&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ArhGesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&lt;,<sp/>str_case_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="test-cmp_8cpp_1a17cf18d0299cebf2f81ce59c98676f65" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCaseCmp_StrLessChar)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesvaaa&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ArhGesvegr&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/>str_case_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="test-cmp_8cpp_1a4bd8d6120d1d93956163acea98d906d6" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>StrCaseCmp_StrLessNull)<sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p1[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;arhgesv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>p2[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ArhGesvegr&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/>CHECK_COMPARE(0,<sp/>&gt;,<sp/>str_case_cmp(p1,<sp/>p2));</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"></codeline>
+<codeline lineno="271"></codeline>
+<codeline lineno="278" refid="test-cmp_8cpp_1affaefc4a096cc6678aeda096040410e0" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>TypeCmp_Equal)<sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>clangformat_fix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>(void)clangformat_fix;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DEFINE_TYPE(name,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="283"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>a<sp/>=<sp/>static_cast&lt;type&gt;(1);<sp/>\</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>b<sp/>=<sp/>static_cast&lt;type&gt;(1);<sp/>\</highlight></codeline>
+<codeline lineno="285"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="286"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>auto<sp/>cmp<sp/>=<sp/>name##_cmp(&amp;a,<sp/>&amp;b);<sp/>\</highlight></codeline>
+<codeline lineno="287"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="288"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CHECK_EQUAL_TEXT(0,<sp/>cmp,<sp/>&quot;checked<sp/>type:<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>#name<sp/>&quot;&gt;&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/util/def/type.def&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_UTIL_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="test-cmp_8cpp_1a0ff5c655563c8adf253961de0608844b" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>TypeCmp_FirstGreater)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>clangformat_fix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>(void)clangformat_fix;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DEFINE_TYPE(name,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="304"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>a<sp/>=<sp/>static_cast&lt;type&gt;(1);<sp/>\</highlight></codeline>
+<codeline lineno="306"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>b<sp/>=<sp/>static_cast&lt;type&gt;(0);<sp/>\</highlight></codeline>
+<codeline lineno="307"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="308"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>auto<sp/>cmp<sp/>=<sp/>name##_cmp(&amp;a,<sp/>&amp;b);<sp/>\</highlight></codeline>
+<codeline lineno="309"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="310"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CHECK_EQUAL_TEXT(1,<sp/>cmp,<sp/>&quot;checked<sp/>type:<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>#name<sp/>&quot;&gt;&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/util/def/type.def&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(build/include)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_UTIL_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="test-cmp_8cpp_1ab3d3dd620fa7a779dd08a6461b9438eb" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>TypeCmp_SecondGreater)<sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>clangformat_fix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/>(void)clangformat_fix;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DEFINE_TYPE(name,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="326"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="327"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>a<sp/>=<sp/>static_cast&lt;type&gt;(0);<sp/>\</highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>b<sp/>=<sp/>static_cast&lt;type&gt;(1);<sp/>\</highlight></codeline>
+<codeline lineno="329"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="330"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>auto<sp/>cmp<sp/>=<sp/>name##_cmp(&amp;a,<sp/>&amp;b);<sp/>\</highlight></codeline>
+<codeline lineno="331"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="332"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CHECK_EQUAL_TEXT(-1,<sp/>cmp,<sp/>&quot;checked<sp/>type:<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>#name<sp/>&quot;&gt;&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/util/def/type.def&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(build/include)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_UTIL_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344" refid="test-cmp_8cpp_1ad05164d45292df73f6ad8c2be9a3bce0" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>TypeCmp_PtrEqual)<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>clangformat_fix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/>(void)clangformat_fix;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DEFINE_TYPE(name,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="348"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="349"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>a{};<sp/>\</highlight></codeline>
+<codeline lineno="350"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="351"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>auto<sp/>cmp<sp/>=<sp/>name##_cmp(&amp;a,<sp/>&amp;a);<sp/>\</highlight></codeline>
+<codeline lineno="352"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="353"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CHECK_EQUAL_TEXT(0,<sp/>cmp,<sp/>&quot;checked<sp/>type:<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>#name<sp/>&quot;&gt;&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/util/def/type.def&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(build/include)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_UTIL_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="test-cmp_8cpp_1aefcc085a76d1b50302d13f4017ef9635" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>TypeCmp_FirstPtrNull)<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>clangformat_fix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/>(void)clangformat_fix;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DEFINE_TYPE(name,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="369"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="370"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>a{};<sp/>\</highlight></codeline>
+<codeline lineno="371"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="372"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>auto<sp/>cmp<sp/>=<sp/>name##_cmp(nullptr,<sp/>&amp;a);<sp/>\</highlight></codeline>
+<codeline lineno="373"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="374"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CHECK_EQUAL_TEXT(-1,<sp/>cmp,<sp/>&quot;checked<sp/>type:<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>#name<sp/>&quot;&gt;&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/util/def/type.def&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(build/include)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_UTIL_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386" refid="test-cmp_8cpp_1afee2946fb69edfb404472f5b664c984d" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>TypeCmp_SecondPtrNull)<sp/>{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>clangformat_fix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/>(void)clangformat_fix;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DEFINE_TYPE(name,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="390"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="391"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>type<sp/>a{};<sp/>\</highlight></codeline>
+<codeline lineno="392"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="393"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>auto<sp/>cmp<sp/>=<sp/>name##_cmp(&amp;a,<sp/>nullptr);<sp/>\</highlight></codeline>
+<codeline lineno="394"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="395"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CHECK_EQUAL_TEXT(1,<sp/>cmp,<sp/>&quot;checked<sp/>type:<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>#name<sp/>&quot;&gt;&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/util/def/type.def&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(build/include)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_UTIL_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406" refid="test-cmp_8cpp_1a242a1d72039a4d1edfe03163a228cf1b" refkind="member"><highlight class="normal"><ref refid="test-cmp_8cpp_1ae1c825ea486ecc999970120f2b4a729b" kindref="member">TEST</ref>(Util_Cmp,<sp/>TypeCmp_BothPtrNull)<sp/>{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>clangformat_fix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/>(void)clangformat_fix;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_UTIL_DEFINE_TYPE(name,<sp/>type)<sp/>\</highlight></codeline>
+<codeline lineno="410"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="411"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>auto<sp/>cmp<sp/>=<sp/>name##_cmp(nullptr,<sp/>nullptr);<sp/>\</highlight></codeline>
+<codeline lineno="412"><highlight class="preprocessor">\</highlight></codeline>
+<codeline lineno="413"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CHECK_EQUAL_TEXT(0,<sp/>cmp,<sp/>&quot;checked<sp/>type:<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>#name<sp/>&quot;&gt;&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lely/util/def/type.def&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(build/include)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LELY_UTIL_DEFINE_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/util/test-cmp.cpp"/>
+  </compounddef>
+</doxygen>

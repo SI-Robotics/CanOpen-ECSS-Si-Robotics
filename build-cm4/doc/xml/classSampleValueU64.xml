@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSampleValueU64" kind="class" language="C++" prot="public">
+    <compoundname>SampleValueU64</compoundname>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classSampleValueU64_1a700f843ed1417432978a8ec47704b5c5" prot="private" static="no">
+        <type>co_unsigned64_t</type>
+        <definition>using SampleValueU64::sub_type64 =  co_unsigned64_t</definition>
+        <argsstring></argsstring>
+        <name>sub_type64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1005" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classSampleValueU64_1aa22b480337877f2ec07f7c17c5db9ec5" prot="private" static="no">
+        <type>std::vector&lt; uint_least8_t &gt;</type>
+        <definition>using SampleValueU64::segment_data_t =  std::vector&lt;uint_least8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>segment_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1006" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSampleValueU64_1a00da28fb273091b391c1cef7ec9ebcff" prot="private" static="no" mutable="no">
+        <type>sub_type64</type>
+        <definition>sub_type64 SampleValueU64::VAL</definition>
+        <argsstring></argsstring>
+        <name>VAL</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1047" column="14" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSampleValueU64_1a0aeb6457dd2565c67ca2bb5938f0aa1a" prot="private" static="no" mutable="no">
+        <type>std::array&lt; uint_least8_t, sizeof(sub_type64)&gt;</type>
+        <definition>std::array&lt;uint_least8_t, sizeof(sub_type64)&gt; SampleValueU64::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1048" column="14" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSampleValueU64_1a1b59842e3824111878c171edb1ae9a84" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SampleValueU64::SampleValueU64</definition>
+        <argsstring>(const sub_type64 val=0x1234567890abcdefu)</argsstring>
+        <name>SampleValueU64</name>
+        <param>
+          <type>const sub_type64</type>
+          <declname>val</declname>
+          <defval>0x1234567890abcdefu</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1009" column="12" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1009" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU64_1a461c66525a4dd863c20c9b6f099982b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>segment_data_t</type>
+        <definition>segment_data_t SampleValueU64::GetFirstSegment</definition>
+        <argsstring>()</argsstring>
+        <name>GetFirstSegment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1015" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1015" bodyend="1021"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU64_1a83cb30c027a10ece5f42dfda16771e5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>segment_data_t</type>
+        <definition>segment_data_t SampleValueU64::GetLastSegment</definition>
+        <argsstring>()</argsstring>
+        <name>GetLastSegment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1024" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1024" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU64_1a1f95cb446b10da071b61d8b8d102af06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void* SampleValueU64::GetValPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1029" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1029" bodyend="1031"/>
+      </memberdef>
+      <memberdef kind="function" id="classSampleValueU64_1a58721c6e2c60f10064f35c06a9b0360d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* SampleValueU64::GetBufPtr</definition>
+        <argsstring>()</argsstring>
+        <name>GetBufPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1034" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1034" bodyend="1036"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classSampleValueU64_1a8f721459a3068c2950580ff4729848b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::array&lt; uint_least8_t, sizeof(sub_type64)&gt;</type>
+        <definition>static std::array&lt;uint_least8_t, sizeof(sub_type64)&gt; SampleValueU64::StLe64InArray</definition>
+        <argsstring>(const sub_type64 val)</argsstring>
+        <name>StLe64InArray</name>
+        <param>
+          <type>const sub_type64</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="1039" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1039" bodyend="1044"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Unsigned 64-bit sample value wrapper. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-csdo.cpp" line="1004" column="1" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="1004" bodyend="1049"/>
+    <listofallmembers>
+      <member refid="classSampleValueU64_1a0aeb6457dd2565c67ca2bb5938f0aa1a" prot="private" virt="non-virtual"><scope>SampleValueU64</scope><name>buf</name></member>
+      <member refid="classSampleValueU64_1a58721c6e2c60f10064f35c06a9b0360d" prot="public" virt="non-virtual"><scope>SampleValueU64</scope><name>GetBufPtr</name></member>
+      <member refid="classSampleValueU64_1a461c66525a4dd863c20c9b6f099982b2" prot="public" virt="non-virtual"><scope>SampleValueU64</scope><name>GetFirstSegment</name></member>
+      <member refid="classSampleValueU64_1a83cb30c027a10ece5f42dfda16771e5c" prot="public" virt="non-virtual"><scope>SampleValueU64</scope><name>GetLastSegment</name></member>
+      <member refid="classSampleValueU64_1a1f95cb446b10da071b61d8b8d102af06" prot="public" virt="non-virtual"><scope>SampleValueU64</scope><name>GetValPtr</name></member>
+      <member refid="classSampleValueU64_1a1b59842e3824111878c171edb1ae9a84" prot="public" virt="non-virtual"><scope>SampleValueU64</scope><name>SampleValueU64</name></member>
+      <member refid="classSampleValueU64_1aa22b480337877f2ec07f7c17c5db9ec5" prot="private" virt="non-virtual"><scope>SampleValueU64</scope><name>segment_data_t</name></member>
+      <member refid="classSampleValueU64_1a8f721459a3068c2950580ff4729848b1" prot="public" virt="non-virtual"><scope>SampleValueU64</scope><name>StLe64InArray</name></member>
+      <member refid="classSampleValueU64_1a700f843ed1417432978a8ec47704b5c5" prot="private" virt="non-virtual"><scope>SampleValueU64</scope><name>sub_type64</name></member>
+      <member refid="classSampleValueU64_1a00da28fb273091b391c1cef7ec9ebcff" prot="private" virt="non-virtual"><scope>SampleValueU64</scope><name>VAL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

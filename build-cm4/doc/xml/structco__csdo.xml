@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__csdo" kind="struct" language="C++" prot="public">
+    <compoundname>co_csdo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__csdo_1a0ae7e19190d613d12f56444ec367e07e" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* co_csdo::net</definition>
+        <argsstring></argsstring>
+        <name>net</name>
+        <briefdescription>
+<para>A pointer to a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="71" column="11" bodyfile="lib/co/csdo.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a1282cd7a96508ef3559fe4476b7a66d8" prot="public" static="no" mutable="no">
+        <type><ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+        <definition>co_dev_t* co_csdo::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>A pointer to a CANopen device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="73" column="10" bodyfile="lib/co/csdo.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aa5a31d28e04843235bd6f9234da39301" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_csdo::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+<para>The SDO number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="75" column="16" bodyfile="lib/co/csdo.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aeb0d8147011e183491e60f692e3192da" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__sdo__par" kindref="compound">co_sdo_par</ref></type>
+        <definition>struct co_sdo_par co_csdo::par</definition>
+        <argsstring></argsstring>
+        <name>par</name>
+        <briefdescription>
+<para>The SDO parameter record. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="75" column="16" bodyfile="lib/co/csdo.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a376b452db4f914eaf23e5f1945ea220c" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* co_csdo::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+<para>A pointer to the CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="79" column="12" bodyfile="lib/co/csdo.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a51b47218a5e10e50c3c884bf32ce0051" prot="public" static="no" mutable="no">
+        <type>int_least32_t</type>
+        <definition>int_least32_t co_csdo::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>The SDO timeout (in milliseconds). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="81" column="15" bodyfile="lib/co/csdo.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a74f735da47560131912fcf5cd170f5e0" prot="public" static="no" mutable="no">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* co_csdo::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+<para>A pointer to the CAN timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="83" column="13" bodyfile="lib/co/csdo.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a1c204736cae72db691559998ed5d3739" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8c_1ac7008597a61acd5e22d6fb0fb9aaa591" kindref="member">co_csdo_state_t</ref> *</type>
+        <definition>co_csdo_state_t* co_csdo::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>A pointer to the current state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="85" column="17" bodyfile="lib/co/csdo.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a46209440fefa0b3480fbe1a640d7a1f1" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_csdo::ac</definition>
+        <argsstring></argsstring>
+        <name>ac</name>
+        <briefdescription>
+<para>The current abort code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="87" column="17" bodyfile="lib/co/csdo.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a51570f6ff478bcf603ac4a3c3ed2a7af" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_csdo::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <briefdescription>
+<para>The current object index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="89" column="17" bodyfile="lib/co/csdo.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1ae8ae4b65d0521bffe4d54eccc9b1361d" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_csdo::subidx</definition>
+        <argsstring></argsstring>
+        <name>subidx</name>
+        <briefdescription>
+<para>The current object sub-index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="91" column="16" bodyfile="lib/co/csdo.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1adc7cdd916b78ce55584703d3f5f5ec24" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_csdo::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The data set size (in bytes). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="93" column="17" bodyfile="lib/co/csdo.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a7ddd8792a447571cace483538435876c" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_csdo::toggle</definition>
+        <argsstring></argsstring>
+        <name>toggle</name>
+        <briefdescription>
+<para>The current value of the toggle bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="95" column="16" bodyfile="lib/co/csdo.c" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a7d2fb1b8f4ede1c9e51b4f551d11c99e" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_csdo::blksize</definition>
+        <argsstring></argsstring>
+        <name>blksize</name>
+        <briefdescription>
+<para>The number of segments per block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="97" column="16" bodyfile="lib/co/csdo.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1abaf35156f8c559485be5cf14586ff4c3" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_csdo::ackseq</definition>
+        <argsstring></argsstring>
+        <name>ackseq</name>
+        <briefdescription>
+<para>The sequence number of the last successfully received segment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="99" column="16" bodyfile="lib/co/csdo.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a07c963fbe67bc62df20af88a51e43988" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned co_csdo::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>A flag indicating whether a CRC should be generated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="101" column="10" bodyfile="lib/co/csdo.c" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a87cbb90196ec2bc4bde7ce650d208eae" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref></type>
+        <definition>struct membuf co_csdo::dn_buf</definition>
+        <argsstring></argsstring>
+        <name>dn_buf</name>
+        <briefdescription>
+<para>The memory buffer used for download requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="101" column="10" bodyfile="lib/co/csdo.c" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a1f19842a293f902101d65ba306141f0a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref> *</type>
+        <definition>struct membuf* co_csdo::up_buf</definition>
+        <argsstring></argsstring>
+        <name>up_buf</name>
+        <briefdescription>
+<para>A pointer to the memory buffer used for upload requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="105" column="13" bodyfile="lib/co/csdo.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aa544ec528a29014b9081f0b1886b3221" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmembuf" kindref="compound">membuf</ref></type>
+        <definition>struct membuf co_csdo::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+<para>The memory buffer used for storing serialized values in the absence of a user-specified buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="105" column="13" bodyfile="lib/co/csdo.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aba96a3498c8a7b8c8737a33aea947551" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char co_csdo::begin[CO_CSDO_MEMBUF_SIZE]</definition>
+        <argsstring>[CO_CSDO_MEMBUF_SIZE]</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>The static memory buffer used by <ref refid="structco__csdo_1aa544ec528a29014b9081f0b1886b3221" kindref="member">buf</ref> in the absence of dynamic memory allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="116" column="6" bodyfile="lib/co/csdo.c" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a75ef70c1595f2a2d1283185a9f8f27ce" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8h_1a53d1efae13919692e196b2e6b636f7e8" kindref="member">co_csdo_dn_con_t</ref> *</type>
+        <definition>co_csdo_dn_con_t* co_csdo::dn_con</definition>
+        <argsstring></argsstring>
+        <name>dn_con</name>
+        <briefdescription>
+<para>A pointer to the download confirmation function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="119" column="18" bodyfile="lib/co/csdo.c" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a5d9517739bf908f610631c517f4e1cbf" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_csdo::dn_con_data</definition>
+        <argsstring></argsstring>
+        <name>dn_con_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__csdo_1a75ef70c1595f2a2d1283185a9f8f27ce" kindref="member">dn_con</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="121" column="6" bodyfile="lib/co/csdo.c" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a709e25066d78a9929aa7c9fce7675e19" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8h_1aaad164051bf9ecec74c626c5b05597c2" kindref="member">co_csdo_ind_t</ref> *</type>
+        <definition>co_csdo_ind_t* co_csdo::dn_ind</definition>
+        <argsstring></argsstring>
+        <name>dn_ind</name>
+        <briefdescription>
+<para>A pointer to the download progress indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="123" column="15" bodyfile="lib/co/csdo.c" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1a51c9907ae3976ee5e7e11793b6bf1411" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_csdo::dn_ind_data</definition>
+        <argsstring></argsstring>
+        <name>dn_ind_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__csdo_1a709e25066d78a9929aa7c9fce7675e19" kindref="member">dn_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="125" column="6" bodyfile="lib/co/csdo.c" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aee09bc50be66fbbfeee20b1037b34f86" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8h_1a1bf888569d9456fde6f2468361589c15" kindref="member">co_csdo_up_con_t</ref> *</type>
+        <definition>co_csdo_up_con_t* co_csdo::up_con</definition>
+        <argsstring></argsstring>
+        <name>up_con</name>
+        <briefdescription>
+<para>A pointer to the upload confirmation function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="127" column="18" bodyfile="lib/co/csdo.c" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aa74f46b51bd84ad4c0563c1d8489d40c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_csdo::up_con_data</definition>
+        <argsstring></argsstring>
+        <name>up_con_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__csdo_1aee09bc50be66fbbfeee20b1037b34f86" kindref="member">up_con</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="129" column="6" bodyfile="lib/co/csdo.c" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aa5cc578b0178c9ab568f8fdf2410506d" prot="public" static="no" mutable="no">
+        <type><ref refid="csdo_8h_1aaad164051bf9ecec74c626c5b05597c2" kindref="member">co_csdo_ind_t</ref> *</type>
+        <definition>co_csdo_ind_t* co_csdo::up_ind</definition>
+        <argsstring></argsstring>
+        <name>up_ind</name>
+        <briefdescription>
+<para>A pointer to the upload progress indication function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="131" column="15" bodyfile="lib/co/csdo.c" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1aaa4724882395b2975f2da42563bb113d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* co_csdo::up_ind_data</definition>
+        <argsstring></argsstring>
+        <name>up_ind_data</name>
+        <briefdescription>
+<para>A pointer to user-specified data for <ref refid="structco__csdo_1aa5cc578b0178c9ab568f8fdf2410506d" kindref="member">up_ind</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="133" column="6" bodyfile="lib/co/csdo.c" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__csdo_1af70c112d396e9bd3a5f4fc6b412c67a7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structco__csdo__dn__dcf" kindref="compound">co_csdo_dn_dcf</ref></type>
+        <definition>struct co_csdo_dn_dcf co_csdo::dn_dcf</definition>
+        <argsstring></argsstring>
+        <name>dn_dcf</name>
+        <briefdescription>
+<para>The state of the concise DCF download request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/csdo.c" line="133" column="6" bodyfile="lib/co/csdo.c" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CANopen Client-SDO. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>pheap</label>
+        <link refid="structpheap"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rbnode</label>
+        <link refid="structrbnode"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>co_sdo_par</label>
+        <link refid="structco__sdo__par"/>
+      </node>
+      <node id="4">
+        <label>rbtree</label>
+        <link refid="structrbtree"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>can_net</label>
+        <link refid="structcan__net"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>timer_heap</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>recv_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>can_timer</label>
+        <link refid="structcan__timer"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>interval</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>co_dev</label>
+        <link refid="structco__dev"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>co_csdo</label>
+        <link refid="structco__csdo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>dn_buf</edgelabel>
+          <edgelabel>up_buf</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dev</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>dn_dcf</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>timer</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>par</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>co_csdo_dn_dcf</label>
+        <link refid="structco__csdo__dn__dcf"/>
+      </node>
+      <node id="2">
+        <label>membuf</label>
+        <link refid="structmembuf"/>
+      </node>
+      <node id="14">
+        <label>co_csdo_state</label>
+        <link refid="structco__csdo__state"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>on_abort</edgelabel>
+          <edgelabel>on_enter</edgelabel>
+          <edgelabel>on_recv</edgelabel>
+          <edgelabel>on_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>timespec</label>
+        <link refid="structtimespec"/>
+      </node>
+      <node id="11">
+        <label>pnode</label>
+        <link refid="structpnode"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>can_recv</label>
+        <link refid="structcan__recv"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>net</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/co/csdo.c" line="69" column="1" bodyfile="lib/co/csdo.c" bodystart="69" bodyend="136"/>
+    <listofallmembers>
+      <member refid="structco__csdo_1a46209440fefa0b3480fbe1a640d7a1f1" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>ac</name></member>
+      <member refid="structco__csdo_1abaf35156f8c559485be5cf14586ff4c3" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>ackseq</name></member>
+      <member refid="structco__csdo_1aba96a3498c8a7b8c8737a33aea947551" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>begin</name></member>
+      <member refid="structco__csdo_1a7d2fb1b8f4ede1c9e51b4f551d11c99e" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>blksize</name></member>
+      <member refid="structco__csdo_1aa544ec528a29014b9081f0b1886b3221" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>buf</name></member>
+      <member refid="structco__csdo_1a07c963fbe67bc62df20af88a51e43988" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>crc</name></member>
+      <member refid="structco__csdo_1a1282cd7a96508ef3559fe4476b7a66d8" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>dev</name></member>
+      <member refid="structco__csdo_1a87cbb90196ec2bc4bde7ce650d208eae" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>dn_buf</name></member>
+      <member refid="structco__csdo_1a75ef70c1595f2a2d1283185a9f8f27ce" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>dn_con</name></member>
+      <member refid="structco__csdo_1a5d9517739bf908f610631c517f4e1cbf" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>dn_con_data</name></member>
+      <member refid="structco__csdo_1af70c112d396e9bd3a5f4fc6b412c67a7" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>dn_dcf</name></member>
+      <member refid="structco__csdo_1a709e25066d78a9929aa7c9fce7675e19" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>dn_ind</name></member>
+      <member refid="structco__csdo_1a51c9907ae3976ee5e7e11793b6bf1411" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>dn_ind_data</name></member>
+      <member refid="structco__csdo_1a51570f6ff478bcf603ac4a3c3ed2a7af" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>idx</name></member>
+      <member refid="structco__csdo_1a0ae7e19190d613d12f56444ec367e07e" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>net</name></member>
+      <member refid="structco__csdo_1aa5a31d28e04843235bd6f9234da39301" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>num</name></member>
+      <member refid="structco__csdo_1aeb0d8147011e183491e60f692e3192da" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>par</name></member>
+      <member refid="structco__csdo_1a376b452db4f914eaf23e5f1945ea220c" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>recv</name></member>
+      <member refid="structco__csdo_1adc7cdd916b78ce55584703d3f5f5ec24" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>size</name></member>
+      <member refid="structco__csdo_1a1c204736cae72db691559998ed5d3739" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>state</name></member>
+      <member refid="structco__csdo_1ae8ae4b65d0521bffe4d54eccc9b1361d" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>subidx</name></member>
+      <member refid="structco__csdo_1a51b47218a5e10e50c3c884bf32ce0051" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>timeout</name></member>
+      <member refid="structco__csdo_1a74f735da47560131912fcf5cd170f5e0" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>timer</name></member>
+      <member refid="structco__csdo_1a7ddd8792a447571cace483538435876c" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>toggle</name></member>
+      <member refid="structco__csdo_1a1f19842a293f902101d65ba306141f0a" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>up_buf</name></member>
+      <member refid="structco__csdo_1aee09bc50be66fbbfeee20b1037b34f86" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>up_con</name></member>
+      <member refid="structco__csdo_1aa74f46b51bd84ad4c0563c1d8489d40c" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>up_con_data</name></member>
+      <member refid="structco__csdo_1aa5cc578b0178c9ab568f8fdf2410506d" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>up_ind</name></member>
+      <member refid="structco__csdo_1aaa4724882395b2975f2da42563bb113d" prot="public" virt="non-virtual"><scope>co_csdo</scope><name>up_ind_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

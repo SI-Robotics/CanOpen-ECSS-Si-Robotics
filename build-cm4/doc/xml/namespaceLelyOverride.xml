@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceLelyOverride" kind="namespace" language="C++">
+    <compoundname>LelyOverride</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lelyco-val_8hpp_1ac1480e748bb897474791b8d70b860c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LelyOverride::co_val_read</definition>
+        <argsstring>(int32_t valid_calls)</argsstring>
+        <name>co_val_read</name>
+        <param>
+          <type>int32_t</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+<para>Setups number of valid calls to <ref refid="lelyco-val_8hpp_1ac1480e748bb897474791b8d70b860c49" kindref="member">co_val_read()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.hpp" line="35" column="6" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="48" bodyend="50" declfile="unit-tests/libtest/override/lelyco-val.hpp" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8hpp_1aac48b5c1a49de3e6335341a0348afa73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LelyOverride::co_val_write</definition>
+        <argsstring>(int32_t valid_calls)</argsstring>
+        <name>co_val_write</name>
+        <param>
+          <type>int32_t</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+<para>Setups number of valid calls to <ref refid="lelyco-val_8hpp_1aac48b5c1a49de3e6335341a0348afa73" kindref="member">co_val_write()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.hpp" line="40" column="6" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="53" bodyend="55" declfile="unit-tests/libtest/override/lelyco-val.hpp" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8hpp_1a8d0caed56ac8aa795f9caa2e1534dec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LelyOverride::co_val_make</definition>
+        <argsstring>(int32_t valid_calls)</argsstring>
+        <name>co_val_make</name>
+        <param>
+          <type>int32_t</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+<para>Setups number of valid calls to <ref refid="lelyco-val_8hpp_1a8d0caed56ac8aa795f9caa2e1534dec1" kindref="member">co_val_make()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.hpp" line="45" column="6" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="58" bodyend="60" declfile="unit-tests/libtest/override/lelyco-val.hpp" declline="45" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8hpp_1a616b04a9d46c3979f67c355d890660a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LelyOverride::co_val_init_min</definition>
+        <argsstring>(int32_t valid_calls)</argsstring>
+        <name>co_val_init_min</name>
+        <param>
+          <type>int32_t</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+<para>Setups number of valid calls to <ref refid="lelyco-val_8hpp_1a616b04a9d46c3979f67c355d890660a6" kindref="member">co_val_init_min()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.hpp" line="50" column="6" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="63" bodyend="65" declfile="unit-tests/libtest/override/lelyco-val.hpp" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8hpp_1af83433e0e6858e961294a31616f5be8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LelyOverride::co_val_init_max</definition>
+        <argsstring>(int32_t valid_calls)</argsstring>
+        <name>co_val_init_max</name>
+        <param>
+          <type>int32_t</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+<para>Setups number of valid calls to <ref refid="lelyco-val_8hpp_1af83433e0e6858e961294a31616f5be8c" kindref="member">co_val_init_max()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.hpp" line="55" column="6" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="68" bodyend="70" declfile="unit-tests/libtest/override/lelyco-val.hpp" declline="55" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyco-val_8hpp_1a9e2b99b6af3c2d46838334c73cdbed08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LelyOverride::co_val_init</definition>
+        <argsstring>(int32_t valid_calls)</argsstring>
+        <name>co_val_init</name>
+        <param>
+          <type>int32_t</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+<para>Setups number of valid calls to <ref refid="lelyco-val_8hpp_1a9e2b99b6af3c2d46838334c73cdbed08" kindref="member">co_val_init()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyco-val.hpp" line="60" column="6" bodyfile="unit-tests/libtest/override/lelyco-val.cpp" bodystart="73" bodyend="75" declfile="unit-tests/libtest/override/lelyco-val.hpp" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lelyutil-membuf_8hpp_1a6d891568486d26a12b312f5d5b1ba2fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LelyOverride::membuf_reserve</definition>
+        <argsstring>(int32_t valid_calls)</argsstring>
+        <name>membuf_reserve</name>
+        <param>
+          <type>int32_t</type>
+          <declname>valid_calls</declname>
+        </param>
+        <briefdescription>
+<para>Setups number of valid calls to <ref refid="lelyutil-membuf_8hpp_1a6d891568486d26a12b312f5d5b1ba2fb" kindref="member">membuf_reserve()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/override/lelyutil-membuf.hpp" line="35" column="6" bodyfile="unit-tests/libtest/override/lelyutil-membuf.cpp" bodystart="42" bodyend="44" declfile="unit-tests/libtest/override/lelyutil-membuf.hpp" declline="35" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/override/lelyco-val.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

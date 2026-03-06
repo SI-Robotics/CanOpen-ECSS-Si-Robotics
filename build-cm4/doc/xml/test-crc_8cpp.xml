@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="test-crc_8cpp" kind="file" language="C++">
+    <compoundname>test-crc.cpp</compoundname>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="crc_8h" local="no">lely/co/crc.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="3">
+        <label>lely/co/crc.h</label>
+        <link refid="crc_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/co/test-crc.cpp</label>
+        <link refid="test-crc_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>co_crc()</header>
+      <memberdef kind="function" id="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, NullBuffer)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>NullBuffer</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> any initial CRC value </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with no buffer</para>
+<para><bold>Then</bold> the same CRC value is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="40" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="test-crc_8cpp_1a7698b1f5abc0219a756bd1c582c80a10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, ZeroSize)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>ZeroSize</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> any initial CRC value </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with a buffer of zero size</para>
+<para><bold>Then</bold> the same CRC value is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="51" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="51" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="test-crc_8cpp_1a2c441b13211e489559bf82bdf6715b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, CheckZero)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>CheckZero</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> the initial CRC <computeroutput>0x0000</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with a buffer containing <computeroutput>0x00</computeroutput></para>
+<para><bold>Then</bold> <computeroutput>0x0000</computeroutput> is returned </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="64" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="test-crc_8cpp_1a6f4b3d1f9d9acd2bea7baf5eca562baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, VerifyCRCComplianceECSS_1)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>VerifyCRCComplianceECSS_1</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> the initial CRC <computeroutput>0xffff</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with a buffer containing <computeroutput>0x00 0x00</computeroutput></para>
+<para><bold>Then</bold> <computeroutput>0x1d0f</computeroutput> is returned</para>
+<para><simplesect kind="note"><para>This case is based on ECSS-E-ST-70-41C Annex B Table B-2. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="80" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="80" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="test-crc_8cpp_1a714e4b09cad012db89f9e9aa992b03bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, VerifyCRCComplianceECSS_2)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>VerifyCRCComplianceECSS_2</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> the initial CRC <computeroutput>0xffff</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with a buffer containing <computeroutput>0x00 0x00 0x00</computeroutput></para>
+<para><bold>Then</bold> <computeroutput>0xcc9c</computeroutput> is returned</para>
+<para><simplesect kind="note"><para>This case is based on ECSS-E-ST-70-41C Annex B Table B-2. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="96" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="96" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="test-crc_8cpp_1a58c1da5a672dcba993f12b00e6dd20bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, VerifyCRCComplianceECSS_3)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>VerifyCRCComplianceECSS_3</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> the initial CRC <computeroutput>0xffff</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with a buffer containing <computeroutput>0xab 0xcd 0xef 0x01</computeroutput></para>
+<para><bold>Then</bold> <computeroutput>0x04a2</computeroutput> is returned</para>
+<para><simplesect kind="note"><para>This case is based on ECSS-E-ST-70-41C Annex B Table B-2. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="112" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="112" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="test-crc_8cpp_1a4d529b1e693f09cc64a44a9abff8f746" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, VerifyCRCComplianceECSS_4)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>VerifyCRCComplianceECSS_4</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> the initial CRC <computeroutput>0xffff</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with a buffer containing <computeroutput>0x14 0x56 0xf8 0x9a 0x00 0x01</computeroutput></para>
+<para><bold>Then</bold> <computeroutput>0x7fd5</computeroutput> is returned</para>
+<para><simplesect kind="note"><para>This case is based on ECSS-E-ST-70-41C Annex B Table B-2. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="129" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="129" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="test-crc_8cpp_1a02e6265d00248c84bdcbb0ddc7b40e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(CO_Crc, VerifyCRC_CiA301)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <param>
+          <type>VerifyCRC_CiA301</type>
+        </param>
+        <briefdescription>
+<para><bold>Given</bold> the initial CRC <computeroutput>0x0000</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>When</bold> <ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc()</ref> is called with a buffer of characters <computeroutput>&quot;123456789&quot;</computeroutput></para>
+<para><bold>Then</bold> <computeroutput>0x31c3</computeroutput> is returned</para>
+<para><simplesect kind="note"><para>This case is based on section 7.2.4.3.16 in CiA 301 (version 4.2.0). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="146" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="146" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test-crc_8cpp_1ab5e23a5a8be3ea9fe300177e169d68c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_GROUP</definition>
+        <argsstring>(CO_Crc)</argsstring>
+        <name>TEST_GROUP</name>
+        <param>
+          <type>CO_Crc</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-crc.cpp" line="31" column="1" bodyfile="unit-tests/co/test-crc.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2020-2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="crc_8h" kindref="compound">lely/co/crc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="test-net_8cpp_1a7afab53ba1ed36d432267adef9d294e5" kindref="member">TEST_GROUP</ref>(CO_Crc){};</highlight></codeline>
+<codeline lineno="34"></codeline>
+<codeline lineno="40" refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>NullBuffer)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0x1234u,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x1234u,<sp/>crc);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="test-crc_8cpp_1a7698b1f5abc0219a756bd1c582c80a10" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>ZeroSize)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>buf[]<sp/>=<sp/>{0xffu};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0x0000u,<sp/>buf,<sp/>0);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x0000u,<sp/>crc);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="test-crc_8cpp_1a2c441b13211e489559bf82bdf6715b53" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>CheckZero)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_SIZE<sp/>=<sp/>1u;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>buf[BUF_SIZE]<sp/>=<sp/>{0x00u};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0x0000u,<sp/>buf,<sp/>BUF_SIZE);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x0000u,<sp/>crc);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="test-crc_8cpp_1a6f4b3d1f9d9acd2bea7baf5eca562baa" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>VerifyCRCComplianceECSS_1)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_SIZE<sp/>=<sp/>2u;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>buf[BUF_SIZE]<sp/>=<sp/>{0x00u,<sp/>0x00u};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0xffffu,<sp/>buf,<sp/>BUF_SIZE);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x1d0fu,<sp/>crc);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="test-crc_8cpp_1a714e4b09cad012db89f9e9aa992b03bf" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>VerifyCRCComplianceECSS_2)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_SIZE<sp/>=<sp/>3u;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>buf[BUF_SIZE]<sp/>=<sp/>{0x00u,<sp/>0x00u,<sp/>0x00u};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0xffffu,<sp/>buf,<sp/>BUF_SIZE);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0xcc9cu,<sp/>crc);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="test-crc_8cpp_1a58c1da5a672dcba993f12b00e6dd20bf" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>VerifyCRCComplianceECSS_3)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_SIZE<sp/>=<sp/>4u;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>buf[BUF_SIZE]<sp/>=<sp/>{0xabu,<sp/>0xcdu,<sp/>0xefu,<sp/>0x01u};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0xffffu,<sp/>buf,<sp/>BUF_SIZE);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x04a2u,<sp/>crc);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="test-crc_8cpp_1a4d529b1e693f09cc64a44a9abff8f746" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>VerifyCRCComplianceECSS_4)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_SIZE<sp/>=<sp/>6u;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>buf[BUF_SIZE]<sp/>=<sp/>{0x14u,<sp/>0x56u,<sp/>0xf8u,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9au,<sp/>0x00u,<sp/>0x01u};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0xffffu,<sp/>buf,<sp/>BUF_SIZE);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x7fd5u,<sp/>crc);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="test-crc_8cpp_1a02e6265d00248c84bdcbb0ddc7b40e2c" refkind="member"><highlight class="normal"><ref refid="test-crc_8cpp_1a450a66efd0cf000a769801c3546d1116" kindref="member">TEST</ref>(CO_Crc,<sp/>VerifyCRC_CiA301)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUF_SIZE<sp/>=<sp/>9u;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_least8_t<sp/>buf[BUF_SIZE]<sp/>=<sp/>{</highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;3&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;4&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;5&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;6&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;7&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>crc<sp/>=<sp/><ref refid="crc_8h_1a35ba16d71094133c2810f6d0511b8c92" kindref="member">co_crc</ref>(0x0000u,<sp/>buf,<sp/>BUF_SIZE);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(0x31c3u,<sp/>crc);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/co/test-crc.cpp"/>
+  </compounddef>
+</doxygen>

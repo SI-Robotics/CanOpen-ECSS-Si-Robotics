@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_2adc83ffa9cbc033b64532efc3262d14" kind="dir">
+    <compoundname>unit-tests/libtest</compoundname>
+    <innerdir refid="dir_a67abcfd9999a38c76310a0b87150d35">unit-tests/libtest/allocators</innerdir>
+    <innerdir refid="dir_24be2bb2071515fecebe24a068c59ae0">unit-tests/libtest/override</innerdir>
+    <innerdir refid="dir_991d32df2b40d96a28a191a37b25c77f">unit-tests/libtest/tools</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/"/>
+  </compounddef>
+</doxygen>

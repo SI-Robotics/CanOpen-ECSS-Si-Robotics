@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdllist" kind="struct" language="C++" prot="public">
+    <compoundname>dllist</compoundname>
+    <includes refid="dllist_8h" local="no">dllist.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdllist_1a48c8a29a1405a7b98adfa0ea1d5044ef" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlnode" kindref="compound">dlnode</ref> *</type>
+        <definition>struct dlnode* dllist::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <briefdescription>
+<para>A pointer to the first node in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/dllist.h" line="57" column="13" bodyfile="include/lely/util/dllist.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdllist_1a3ed8a7e02dbed6d25174cde8d1e438dd" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlnode" kindref="compound">dlnode</ref> *</type>
+        <definition>struct dlnode* dllist::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <briefdescription>
+<para>A pointer to the last node in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/util/dllist.h" line="59" column="13" bodyfile="include/lely/util/dllist.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A doubly-linked list. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dllist</label>
+        <link refid="structdllist"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>last</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dlnode</label>
+        <link refid="structdlnode"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/lely/util/dllist.h" line="55" column="1" bodyfile="include/lely/util/dllist.h" bodystart="55" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structdllist_1a48c8a29a1405a7b98adfa0ea1d5044ef" prot="public" virt="non-virtual"><scope>dllist</scope><name>first</name></member>
+      <member refid="structdllist_1a3ed8a7e02dbed6d25174cde8d1e438dd" prot="public" virt="non-virtual"><scope>dllist</scope><name>last</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

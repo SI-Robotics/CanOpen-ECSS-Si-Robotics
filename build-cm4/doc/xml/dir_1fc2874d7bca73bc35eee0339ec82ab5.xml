@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_1fc2874d7bca73bc35eee0339ec82ab5" kind="dir">
+    <compoundname>unit-tests/co</compoundname>
+    <innerdir refid="dir_11f2ddf9acf2421997c88978c4de6c8a">unit-tests/co/common</innerdir>
+    <innerdir refid="dir_a0e5dd269bc1bf74eefd9795b6012317">unit-tests/co/holder</innerdir>
+    <innerdir refid="dir_0f8d08bbbebf6b74c3a3824768b11939">unit-tests/co/obj-init</innerdir>
+    <innerfile refid="test-crc_8cpp">test-crc.cpp</innerfile>
+    <innerfile refid="test-csdo-sdo_8cpp">test-csdo-sdo.cpp</innerfile>
+    <innerfile refid="test-csdo_8cpp">test-csdo.cpp</innerfile>
+    <innerfile refid="test-dev_8cpp">test-dev.cpp</innerfile>
+    <innerfile refid="test-emcy-sdo_8cpp">test-emcy-sdo.cpp</innerfile>
+    <innerfile refid="test-emcy_8cpp">test-emcy.cpp</innerfile>
+    <innerfile refid="test-nmt-hb_8cpp">test-nmt-hb.cpp</innerfile>
+    <innerfile refid="test-nmt-rdn_8cpp">test-nmt-rdn.cpp</innerfile>
+    <innerfile refid="test-nmt-sdo_8cpp">test-nmt-sdo.cpp</innerfile>
+    <innerfile refid="test-nmt-srv_8cpp">test-nmt-srv.cpp</innerfile>
+    <innerfile refid="test-nmt_8cpp">test-nmt.cpp</innerfile>
+    <innerfile refid="test-obj_8cpp">test-obj.cpp</innerfile>
+    <innerfile refid="test-pdo_8cpp">test-pdo.cpp</innerfile>
+    <innerfile refid="test-rpdo-sdo_8cpp">test-rpdo-sdo.cpp</innerfile>
+    <innerfile refid="test-rpdo_8cpp">test-rpdo.cpp</innerfile>
+    <innerfile refid="test-sdo_8cpp">test-sdo.cpp</innerfile>
+    <innerfile refid="test-ssdo-sdo_8cpp">test-ssdo-sdo.cpp</innerfile>
+    <innerfile refid="test-ssdo_8cpp">test-ssdo.cpp</innerfile>
+    <innerfile refid="test-sync-sdo_8cpp">test-sync-sdo.cpp</innerfile>
+    <innerfile refid="test-sync_8cpp">test-sync.cpp</innerfile>
+    <innerfile refid="test-tpdo-sdo_8cpp">test-tpdo-sdo.cpp</innerfile>
+    <innerfile refid="test-tpdo_8cpp">test-tpdo.cpp</innerfile>
+    <innerfile refid="test-type_8cpp">test-type.cpp</innerfile>
+    <innerfile refid="test-val_8cpp">test-val.cpp</innerfile>
+    <innerfile refid="co_2tests-main_8cpp">tests-main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/"/>
+  </compounddef>
+</doxygen>

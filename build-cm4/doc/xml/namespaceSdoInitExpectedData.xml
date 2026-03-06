@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceSdoInitExpectedData" kind="namespace" language="C++">
+    <compoundname>SdoInitExpectedData</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sdo-init-expected-data_8hpp_1aa014d4fa8f6b5d3a371492cea9232fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint_least8_t &gt;</type>
+        <definition>std::vector&lt; uint_least8_t &gt; SdoInitExpectedData::Empty</definition>
+        <argsstring>(uint_least8_t cs, co_unsigned16_t idx=0, co_unsigned8_t subidx=0)</argsstring>
+        <name>Empty</name>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>cs</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-init-expected-data.hpp" line="32" column="13" bodyfile="unit-tests/libtest/tools/sdo-init-expected-data.cpp" bodystart="39" bodyend="47" declfile="unit-tests/libtest/tools/sdo-init-expected-data.hpp" declline="32" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-init-expected-data_8hpp_1a38c0ae531adb376e54b70dd479e95f9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint_least8_t &gt;</type>
+        <definition>std::vector&lt; uint_least8_t &gt; SdoInitExpectedData::U16</definition>
+        <argsstring>(uint_least8_t cs, co_unsigned16_t idx=0, co_unsigned8_t subidx=0, co_unsigned16_t val=0)</argsstring>
+        <name>U16</name>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>cs</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>val</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-init-expected-data.hpp" line="34" column="13" bodyfile="unit-tests/libtest/tools/sdo-init-expected-data.cpp" bodystart="50" bodyend="57" declfile="unit-tests/libtest/tools/sdo-init-expected-data.hpp" declline="34" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-init-expected-data_8hpp_1ab1d8632e4f02f86920573751892ce400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint_least8_t &gt;</type>
+        <definition>std::vector&lt; uint_least8_t &gt; SdoInitExpectedData::U32</definition>
+        <argsstring>(uint_least8_t cs, co_unsigned16_t idx=0, co_unsigned8_t subidx=0, co_unsigned32_t val=0)</argsstring>
+        <name>U32</name>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>cs</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>idx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>subidx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>co_unsigned32_t</type>
+          <declname>val</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-init-expected-data.hpp" line="37" column="13" bodyfile="unit-tests/libtest/tools/sdo-init-expected-data.cpp" bodystart="60" bodyend="67" declfile="unit-tests/libtest/tools/sdo-init-expected-data.hpp" declline="37" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sdo-init-expected-data_8hpp_1a723c5827204e54349802994cd16f792f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint_least8_t &gt;</type>
+        <definition>std::vector&lt; uint_least8_t &gt; SdoInitExpectedData::Segment</definition>
+        <argsstring>(uint_least8_t seqno, const std::vector&lt; uint_least8_t &gt; &amp;data)</argsstring>
+        <name>Segment</name>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>seqno</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint_least8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/sdo-init-expected-data.hpp" line="40" column="13" bodyfile="unit-tests/libtest/tools/sdo-init-expected-data.cpp" bodystart="70" bodyend="79" declfile="unit-tests/libtest/tools/sdo-init-expected-data.hpp" declline="40" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/sdo-init-expected-data.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

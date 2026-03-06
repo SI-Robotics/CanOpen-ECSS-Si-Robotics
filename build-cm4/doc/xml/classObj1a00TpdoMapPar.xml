@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classObj1a00TpdoMapPar" kind="class" language="C++" prot="public">
+    <compoundname>Obj1a00TpdoMapPar</compoundname>
+    <basecompoundref refid="structObjInitT" prot="public" virt="non-virtual">ObjInitT&lt; 0x1a00u, 0x1a00u, 0x1bffu &gt;</basecompoundref>
+    <includes refid="tpdo-map-par_8hpp" local="no">tpdo-map-par.hpp</includes>
+    <innerclass refid="structObj1a00TpdoMapPar_1_1Sub00NumOfMappedObjs" prot="public">Obj1a00TpdoMapPar::Sub00NumOfMappedObjs</innerclass>
+    <innerclass refid="structObj1a00TpdoMapPar_1_1SubNthAppObject" prot="public">Obj1a00TpdoMapPar::SubNthAppObject</innerclass>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classObj1a00TpdoMapPar_1a60c2331306cba9ee00e3c31e8566abb7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SubNthAppObject::sub_type</type>
+        <definition>static SubNthAppObject::sub_type Obj1a00TpdoMapPar::MakeMappingParam</definition>
+        <argsstring>(const co_unsigned16_t idx, const co_unsigned8_t subidx, const co_unsigned8_t bits_len)</argsstring>
+        <name>MakeMappingParam</name>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>bits_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/tpdo-map-par.hpp" line="36" column="3" bodyfile="unit-tests/co/obj-init/tpdo-map-par.hpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>0x1a00-0x1bff: TPDO mapping parameter </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Obj1a00TpdoMapPar</label>
+        <link refid="classObj1a00TpdoMapPar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1a00u, 0x1a00u, 0x1bffu &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Obj1a00TpdoMapPar</label>
+        <link refid="classObj1a00TpdoMapPar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ObjInitT&lt; 0x1a00u, 0x1a00u, 0x1bffu &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/obj-init/tpdo-map-par.hpp" line="30" column="1" bodyfile="unit-tests/co/obj-init/tpdo-map-par.hpp" bodystart="30" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>Obj1a00TpdoMapPar</scope><name>idx</name></member>
+      <member refid="classObj1a00TpdoMapPar_1a60c2331306cba9ee00e3c31e8566abb7" prot="public" virt="non-virtual"><scope>Obj1a00TpdoMapPar</scope><name>MakeMappingParam</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>Obj1a00TpdoMapPar</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>Obj1a00TpdoMapPar</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

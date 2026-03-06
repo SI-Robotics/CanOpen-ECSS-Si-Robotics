@@ -1,0 +1,776 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="nmt__rdn_8h" kind="file" language="C++">
+    <compoundname>nmt_rdn.h</compoundname>
+    <includes refid="lib_2co_2co_8h" local="yes">co.h</includes>
+    <includes refid="nmt_8h" local="no">lely/co/nmt.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="nmt_8c" local="yes">lib/co/nmt.c</includedby>
+    <includedby refid="nmt__rdn_8c" local="yes">lib/co/nmt_rdn.c</includedby>
+    <includedby refid="nmt-alloc-sizes_8hpp" local="no">unit-tests/co/common/nmt-alloc-sizes.hpp</includedby>
+    <includedby refid="nmt-redundancy_8hpp" local="no">unit-tests/co/obj-init/nmt-redundancy.hpp</includedby>
+    <includedby refid="test-nmt-rdn_8cpp" local="no">unit-tests/co/test-nmt-rdn.cpp</includedby>
+    <includedby refid="test-nmt-sdo_8cpp" local="no">unit-tests/co/test-nmt-sdo.cpp</includedby>
+    <includedby refid="test-nmt_8cpp" local="no">unit-tests/co/test-nmt.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stdbool.h</label>
+      </node>
+      <node id="13">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/co/nmt_rdn.h</label>
+        <link refid="nmt__rdn_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="11">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/co/nmt.h</label>
+        <link refid="nmt_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>co.h</label>
+        <link refid="lib_2co_2co_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/obj-init/nmt-redundancy.hpp</label>
+        <link refid="nmt-redundancy_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lib/co/nmt_rdn.c</label>
+        <link refid="nmt__rdn_8c"/>
+      </node>
+      <node id="1">
+        <label>lib/co/nmt_rdn.h</label>
+        <link refid="nmt__rdn_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="2">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="4">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="nmt__rdn_8h_1a9a3eec947a95da106a1910f1bf18ef05" prot="public" static="no">
+        <name>CO_NMT_RDN_MASTER_HB_IDX</name>
+        <initializer>1u</initializer>
+        <briefdescription>
+<para>The Redundancy Master Heartbeat Consumer index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="40" column="9" bodyfile="lib/co/nmt_rdn.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nmt__rdn_8h_1acff1cb1d635a52958c5569689241e769" prot="public" static="no">
+        <name>CO_NMT_RDN_REDUNDANCY_OBJ_IDX</name>
+        <initializer>0x2000u</initializer>
+        <briefdescription>
+<para>The index of the Redundancy Object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="45" column="9" bodyfile="lib/co/nmt_rdn.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nmt__rdn_8h_1aca63829e148d8bb84f69a7f90a1e40a2" prot="public" static="no">
+        <name>CO_NMT_REDUNDANCY_OBJ_MAX_IDX</name>
+        <initializer>4u</initializer>
+        <briefdescription>
+<para>The maximum number of the sub-indices in the Redundancy Object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="49" column="9" bodyfile="lib/co/nmt_rdn.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nmt__rdn_8h_1ae5a05effda6013fc52b75d5983dd3a11" prot="public" static="no">
+        <name>CO_NMT_RDN_BDEFAULT_SUBIDX</name>
+        <initializer>0x01u</initializer>
+        <briefdescription>
+<para>The Redundancy Object&apos;s sub-indices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="52" column="9" bodyfile="lib/co/nmt_rdn.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nmt__rdn_8h_1ab6451f1e16106560d8c03773263ccb01" prot="public" static="no">
+        <name>CO_NMT_RDN_TTOGGLE_SUBIDX</name>
+        <initializer>0x02u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="53" column="9" bodyfile="lib/co/nmt_rdn.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nmt__rdn_8h_1a5a45a3efe55c780d489b02ae61af9abf" prot="public" static="no">
+        <name>CO_NMT_RDN_NTOGGLE_SUBIDX</name>
+        <initializer>0x03u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="54" column="9" bodyfile="lib/co/nmt_rdn.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nmt__rdn_8h_1a9b8422444d3889f94c3344b9091dba04" prot="public" static="no">
+        <name>CO_NMT_RDN_CTOGGLE_SUBIDX</name>
+        <initializer>0x04u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="55" column="9" bodyfile="lib/co/nmt_rdn.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" prot="public" static="no">
+        <type>struct <ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn</ref></type>
+        <definition>typedef struct co_nmt_rdn co_nmt_rdn_t</definition>
+        <argsstring></argsstring>
+        <name>co_nmt_rdn_t</name>
+        <briefdescription>
+<para>An opaque CANopen NMT redundancy manager type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="1" column="0" bodyfile="lib/co/nmt_rdn.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nmt__rdn_8h_1aa1853350e1509b978e4ed4574f3ffc1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_ecss_rdn_ind</definition>
+        <argsstring>(co_nmt_t *nmt, uint_least8_t bus_id, co_nmt_ecss_rdn_reason_t reason)</argsstring>
+        <name>co_nmt_ecss_rdn_ind</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>bus_id</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1aca40ca0c64fc62699d8d25d31dca4ce9" kindref="member">co_nmt_ecss_rdn_reason_t</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>The CANopen NMT redundancy indication function, invoked when a redundancy event occurs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT master/slave service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bus_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a CAN bus identifier on which the event occurred. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates whether the event occurred because of a bus switch (<ref refid="nmt_8h_1a45273a8d2dbac682516a9abb2c111a4ca9529a14a17cee14a80fb7a1aff5d4230" kindref="member">CO_NMT_ECSS_RDN_BUS_SWITCH</ref>) or a no-master operation (<ref refid="nmt_8h_1a45273a8d2dbac682516a9abb2c111a4ca2290bdee72571756c466ea5bc22094e5" kindref="member">CO_NMT_ECSS_RDN_NO_MASTER</ref>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="71" column="6" bodyfile="lib/co/nmt.c" bodystart="2233" bodyend="2240" declfile="lib/co/nmt_rdn.h" declline="71" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1a7630d9e64cae27fe9a27760b89e65c68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool co_nmt_rdn_chk_dev</definition>
+        <argsstring>(const co_dev_t *dev)</argsstring>
+        <name>co_nmt_rdn_chk_dev</name>
+        <param>
+          <type>const <ref refid="include_2lely_2co_2co_8h_1a65292edb7f27e5d5fdcdbb6c1b2da9f1" kindref="member">co_dev_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the structure of the Redundancy object conforms to ECSS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CANopen device.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>true</bold> if the Redundancy Object is conformant (or not present), and <bold>false</bold> if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="82" column="6" bodyfile="lib/co/nmt_rdn.c" bodystart="90" bodyend="105" declfile="lib/co/nmt_rdn.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1aa6f97e13287abbebd0a1ba3b0f72a154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_nmt_rdn_alignof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_nmt_rdn_alignof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the alignment (in bytes) of the <ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="85" column="8" bodyfile="lib/co/nmt_rdn.c" bodystart="108" bodyend="111" declfile="lib/co/nmt_rdn.h" declline="85" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1a083122a56969f12c632e59a06eca0db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t co_nmt_rdn_sizeof</definition>
+        <argsstring>(void)</argsstring>
+        <name>co_nmt_rdn_sizeof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size (in bytes) of the <ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="88" column="8" bodyfile="lib/co/nmt_rdn.c" bodystart="114" bodyend="117" declfile="lib/co/nmt_rdn.h" declline="88" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1a8305a285be1fd4413838923a1cea66a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+        <definition>co_nmt_rdn_t* co_nmt_rdn_create</definition>
+        <argsstring>(can_net_t *net, co_nmt_t *nmt)</argsstring>
+        <name>co_nmt_rdn_create</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new CANopen NMT redundancy management service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT master/slave service.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to a new redundancy manger service, or NULL on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="nmt__rdn_8h_1ad6e52517b506748081012370ccd0d0ac" kindref="member">co_nmt_rdn_destroy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="101" column="14" bodyfile="lib/co/nmt_rdn.c" bodystart="120" bodyend="142" declfile="lib/co/nmt_rdn.h" declline="101" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1ad6e52517b506748081012370ccd0d0ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_rdn_destroy</definition>
+        <argsstring>(co_nmt_rdn_t *rdn)</argsstring>
+        <name>co_nmt_rdn_destroy</name>
+        <param>
+          <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a CANopen NMT heartbeat consumer service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="nmt__rdn_8h_1a8305a285be1fd4413838923a1cea66a1" kindref="member">co_nmt_rdn_create()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="104" column="6" bodyfile="lib/co/nmt_rdn.c" bodystart="145" bodyend="151" declfile="lib/co/nmt_rdn.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1a2212a8b1343981edf90b96c3cfe3a7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* co_nmt_rdn_get_alloc</definition>
+        <argsstring>(const co_nmt_rdn_t *rdn)</argsstring>
+        <name>co_nmt_rdn_get_alloc</name>
+        <param>
+          <type>const <ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the allocator used to allocate the NMT redundancy manager service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1a8628a4e7d5510b43ab465cafa226e15a" kindref="member">can_net_get_alloc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="112" column="9" bodyfile="lib/co/nmt_rdn.c" bodystart="154" bodyend="159" declfile="lib/co/nmt_rdn.h" declline="112" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1a27b0325ba330ffa03132dc91f51d6da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_rdn_set_alternate_bus_id</definition>
+        <argsstring>(co_nmt_rdn_t *rdn, co_unsigned8_t bus_id)</argsstring>
+        <name>co_nmt_rdn_set_alternate_bus_id</name>
+        <param>
+          <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>bus_id</declname>
+        </param>
+        <briefdescription>
+<para>Sets the alternate CAN bus identifier which the NMT redundancy manager service could utilize. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rdn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT redundancy manager service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bus_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a CAN bus identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="121" column="6" bodyfile="lib/co/nmt_rdn.c" bodystart="214" bodyend="219" declfile="lib/co/nmt_rdn.h" declline="121" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1a09ff0a7846b35595b0675d753205f81b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int co_nmt_rdn_set_master_id</definition>
+        <argsstring>(co_nmt_rdn_t *rdn, co_unsigned8_t id, co_unsigned16_t ms)</argsstring>
+        <name>co_nmt_rdn_set_master_id</name>
+        <param>
+          <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>co_unsigned16_t</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>Sets the Redundancy Master&apos;s Node-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rdn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an NMT redundancy manager service. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Redundancy Master&apos;s Node-ID (in the range [1..127]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Redundancy Master&apos;s heartbeat time (in milliseconds).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, the error code can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="133" column="5" bodyfile="lib/co/nmt_rdn.c" bodystart="222" bodyend="241" declfile="lib/co/nmt_rdn.h" declline="133" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1af3804b1feb41174884a3dcf38ce80e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_nmt_rdn_get_master_id</definition>
+        <argsstring>(const co_nmt_rdn_t *rdn)</argsstring>
+        <name>co_nmt_rdn_get_master_id</name>
+        <param>
+          <type>const <ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <briefdescription>
+<para>Returns the Redundancy Master node-ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="137" column="16" bodyfile="lib/co/nmt_rdn.c" bodystart="244" bodyend="252" declfile="lib/co/nmt_rdn.h" declline="137" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1af6b8c69fe00996b57788c490ec261dbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_rdn_select_default_bus</definition>
+        <argsstring>(co_nmt_rdn_t *rdn)</argsstring>
+        <name>co_nmt_rdn_select_default_bus</name>
+        <param>
+          <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <briefdescription>
+<para>Selects the default bus (Bdefault) as active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For slave nodes starts bus toggle timer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="141" column="6" bodyfile="lib/co/nmt_rdn.c" bodystart="162" bodyend="183" declfile="lib/co/nmt_rdn.h" declline="141" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1aac4ea6819a9451f8ec022109037255ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_rdn_set_active_bus_default</definition>
+        <argsstring>(co_nmt_rdn_t *rdn)</argsstring>
+        <name>co_nmt_rdn_set_active_bus_default</name>
+        <param>
+          <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <briefdescription>
+<para>Sets currently active bus as default (Bdefault) and reset counters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="144" column="6" bodyfile="lib/co/nmt_rdn.c" bodystart="186" bodyend="196" declfile="lib/co/nmt_rdn.h" declline="144" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="nmt__rdn_8h_1ab63efff0b7a3f00fdc90edb4c3e3346c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void co_nmt_rdn_slave_missed_hb</definition>
+        <argsstring>(co_nmt_rdn_t *rdn)</argsstring>
+        <name>co_nmt_rdn_slave_missed_hb</name>
+        <param>
+          <type><ref refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" kindref="member">co_nmt_rdn_t</ref> *</type>
+          <declname>rdn</declname>
+        </param>
+        <briefdescription>
+<para>Registers a missed Redundancy Master heartbeat message event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/co/nmt_rdn.h" line="147" column="6" bodyfile="lib/co/nmt_rdn.c" bodystart="199" bodyend="211" declfile="lib/co/nmt_rdn.h" declline="147" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the internal header file of the NMT redundancy manager declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="nmt_8h" kindref="compound">lely/co/nmt.h</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+The NMT redundancy manager was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="nmt__rdn_8h_1a6c0645b08ba439620a42167766f3f033" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CO_INTERN_NMT_RDN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CO_INTERN_NMT_RDN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2co_2co_8h" kindref="compound">co.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="nmt_8h" kindref="compound">lely/co/nmt.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn</ref><sp/><ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">#ifndef<sp/>CO_NMT_RDN_MASTER_HB_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="nmt__rdn_8h_1a9a3eec947a95da106a1910f1bf18ef05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_NMT_RDN_MASTER_HB_IDX<sp/>1u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor">#ifndef<sp/>CO_NMT_RDN_REDUNDANCY_OBJ_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="nmt__rdn_8h_1acff1cb1d635a52958c5569689241e769" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_NMT_RDN_REDUNDANCY_OBJ_IDX<sp/>0x2000u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="nmt__rdn_8h_1aca63829e148d8bb84f69a7f90a1e40a2" refkind="member"><highlight class="preprocessor">#define<sp/>CO_NMT_REDUNDANCY_OBJ_MAX_IDX<sp/>4u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="nmt__rdn_8h_1ae5a05effda6013fc52b75d5983dd3a11" refkind="member"><highlight class="preprocessor">#define<sp/>CO_NMT_RDN_BDEFAULT_SUBIDX<sp/>0x01u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_NMT_RDN_TTOGGLE_SUBIDX<sp/>0x02u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_NMT_RDN_NTOGGLE_SUBIDX<sp/>0x03u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CO_NMT_RDN_CTOGGLE_SUBIDX<sp/>0x04u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1aa1853350e1509b978e4ed4574f3ffc1c" kindref="member">co_nmt_ecss_rdn_ind</ref>(<ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*<ref refid="structco__nmt__rdn_1a6a010ef963d11f7959f2d6e7436b5b7b" kindref="member">nmt</ref>,<sp/>uint_least8_t<sp/>bus_id,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nmt_8h_1aca40ca0c64fc62699d8d25d31dca4ce9" kindref="member">co_nmt_ecss_rdn_reason_t</ref><sp/>reason);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1a7630d9e64cae27fe9a27760b89e65c68" kindref="member">co_nmt_rdn_chk_dev</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__dev" kindref="compound">co_dev_t</ref><sp/>*<ref refid="structco__nmt__rdn_1ad6083ead82226828f0ecace66f8a00c5" kindref="member">dev</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1aa6f97e13287abbebd0a1ba3b0f72a154" kindref="member">co_nmt_rdn_alignof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1a083122a56969f12c632e59a06eca0db0" kindref="member">co_nmt_rdn_sizeof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*<ref refid="nmt__rdn_8h_1a8305a285be1fd4413838923a1cea66a1" kindref="member">co_nmt_rdn_create</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structco__nmt__rdn_1ac26ec452071d53801a0eafb004c88608" kindref="member">net</ref>,<sp/><ref refid="structco__nmt" kindref="compound">co_nmt_t</ref><sp/>*<ref refid="structco__nmt__rdn_1a6a010ef963d11f7959f2d6e7436b5b7b" kindref="member">nmt</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1ad6e52517b506748081012370ccd0d0ac" kindref="member">co_nmt_rdn_destroy</ref>(<ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="nmt__rdn_8h_1a2212a8b1343981edf90b96c3cfe3a7f6" kindref="member">co_nmt_rdn_get_alloc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1a27b0325ba330ffa03132dc91f51d6da5" kindref="member">co_nmt_rdn_set_alternate_bus_id</ref>(<ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn,<sp/>co_unsigned8_t<sp/>bus_id);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1a09ff0a7846b35595b0675d753205f81b" kindref="member">co_nmt_rdn_set_master_id</ref>(</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn,<sp/>co_unsigned8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>co_unsigned16_t<sp/>ms);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">co_unsigned8_t<sp/><ref refid="nmt__rdn_8h_1af3804b1feb41174884a3dcf38ce80e93" kindref="member">co_nmt_rdn_get_master_id</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1af6b8c69fe00996b57788c490ec261dbf" kindref="member">co_nmt_rdn_select_default_bus</ref>(<ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1aac4ea6819a9451f8ec022109037255ff" kindref="member">co_nmt_rdn_set_active_bus_default</ref>(<ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nmt__rdn_8h_1ab63efff0b7a3f00fdc90edb4c3e3346c" kindref="member">co_nmt_rdn_slave_missed_hb</ref>(<ref refid="structco__nmt__rdn" kindref="compound">co_nmt_rdn_t</ref><sp/>*rdn);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CO_INTERN_NMT_RDN_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/co/nmt_rdn.h"/>
+  </compounddef>
+</doxygen>

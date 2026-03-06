@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__array__hdr" kind="struct" language="C++" prot="public">
+    <compoundname>co_array_hdr</compoundname>
+    <includes refid="val_8h" local="no">val.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__array__hdr_1a8688b49ef44f03b151d4ca81644439c8" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_array_hdr::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+<para>The total capacity (in bytes). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/val.h" line="332" column="8" bodyfile="include/lely/co/val.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__array__hdr_1a7561fef4aabaa9fb8264133a30a9fb3c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t co_array_hdr::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The current size (in bytes). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/val.h" line="334" column="8" bodyfile="include/lely/co/val.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The header directly preceding the bytes in a CANopen array. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/co/val.h" line="330" column="1" bodyfile="include/lely/co/val.h" bodystart="330" bodyend="335"/>
+    <listofallmembers>
+      <member refid="structco__array__hdr_1a8688b49ef44f03b151d4ca81644439c8" prot="public" virt="non-virtual"><scope>co_array_hdr</scope><name>capacity</name></member>
+      <member refid="structco__array__hdr_1a7561fef4aabaa9fb8264133a30a9fb3c" prot="public" virt="non-virtual"><scope>co_array_hdr</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

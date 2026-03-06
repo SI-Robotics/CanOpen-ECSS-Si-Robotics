@@ -1,0 +1,176 @@
+@INCLUDE=Doxyfile
+
+# ----------------------------------------------------------
+# XML output
+# ----------------------------------------------------------
+GENERATE_XML = YES
+
+# ----------------------------------------------------------
+# EXCLUDE libs
+# ----------------------------------------------------------
+EXCLUDE_PATTERNS       += */coapp/*
+EXCLUDE_PATTERNS       += */ev/*
+EXCLUDE_PATTERNS       += */io/*
+EXCLUDE_PATTERNS       += */io2/*
+EXCLUDE_PATTERNS       += */tap/*
+EXCLUDE_PATTERNS       += */include/lely/*.hpp
+
+# includes
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/chrono.hpp
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/stdio.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/stdlib.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/threads.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/bimap.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/coroutine.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/sllist.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/spscring.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/bitset.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/config.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/daemon.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/fiber.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/frbuf.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/fwbuf.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/lex.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/mkjmp.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/print.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/stop.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/can/socket.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/can/vci.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/dcf.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/gw.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/gw_txt.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/lss.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/sdev.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/time.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/wtm.h
+
+# lib/can
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/can/socket.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/can/vci.c
+
+# lib/compat
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/clock.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/getopt.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/stdio.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/stdlib.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/sleep.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/threads-pthread.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/threads-win32.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/compat/time.c
+
+# lib/co
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/dcf.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/gw.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/gw_txt.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/lss.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/nmt_boot.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/nmt_boot.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/nmt_cfg.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/nmt_cfg.h
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/sdev.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/time.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/co/wtm.c
+
+# lib/util
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/bimap.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/sllist.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/spscring.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/bitset.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/config.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/config_ini.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/daemon.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/fiber.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/frbuf.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/fwbuf.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/lex.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/mkjmp.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/print.c
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/lib/util/stop.c
+
+# unit-tests/util
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/unit-tests/util/test-bitset.cpp
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/unit-tests/util/test-mutex.cpp
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/unit-tests/util/test-sllist.cpp
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/unit-tests/util/test-spscring.cpp
+EXCLUDE                += /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/unit-tests/util/test-diag.cpp
+
+# ----------------------------------------------------------
+# Preprocessor
+# ----------------------------------------------------------
+
+PREDEFINED             =
+
+PREDEFINED             += DOXYGEN_SHOULD_SKIP_THIS
+
+PREDEFINED             += __STDC_VERSION__=199901L
+
+PREDEFINED             += __clang__=1
+PREDEFINED             += __clang_major__=6
+PREDEFINED             += __clang_minor__=0
+
+PREDEFINED             += __GNUC__=7
+PREDEFINED             += __GNUC_MINOR__=4
+
+PREDEFINED             += "_Alignas(x)="
+
+PREDEFINED             += "format_printf__(i, j)="
+
+PREDEFINED             += __WORDSIZE=64
+
+
+PREDEFINED             += LELY_UTIL_BITS_INLINE=inline
+PREDEFINED             += LELY_UTIL_CMP_INLINE=inline
+PREDEFINED             += LELY_UTIL_DIAG_INLINE=inline
+PREDEFINED             += LELY_UTIL_DLLIST_INLINE=inline
+PREDEFINED             += LELY_UTIL_ENDIAN_INLINE=inline
+PREDEFINED             += LELY_UTIL_ERROR_INLINE=inline
+PREDEFINED             += LELY_UTIL_MEMBUF_INLINE=inline
+PREDEFINED             += LELY_UTIL_PHEAP_INLINE=inline
+PREDEFINED             += LELY_UTIL_RBTREE_INLINE=inline
+PREDEFINED             += LELY_UTIL_TIME_INLINE=inline
+PREDEFINED             += LELY_UTIL_USTRING_INLINE=inline
+
+PREDEFINED             += LELY_CAN_BUF_INLINE=inline
+
+PREDEFINED             += LELY_CO_SDO_INLINE=inline
+
+PREDEFINED             += LELY_NO_HOSTED=1
+PREDEFINED             += LELY_NO_RT=1
+PREDEFINED             += LELY_NO_THREADS=1
+PREDEFINED             += LELY_NO_ERRNO=1
+PREDEFINED             += LELY_NO_MALLOC=1
+PREDEFINED             += LELY_NO_STDIO=1
+PREDEFINED             += LELY_NO_CXX=1
+PREDEFINED             += LELY_NO_DAEMON=1
+PREDEFINED             += LELY_NO_DIAG=1
+PREDEFINED             += LELY_NO_CANFD=1
+PREDEFINED             += LELY_NO_CO_DCF=1
+PREDEFINED             += LELY_NO_CO_DCF_RESTORE=1
+PREDEFINED             += LELY_NO_CO_OBJ_DEFAULT=1
+PREDEFINED             += LELY_NO_CO_OBJ_FILE=1
+PREDEFINED             += LELY_NO_CO_OBJ_LIMITS=0
+PREDEFINED             += LELY_NO_CO_OBJ_NAME=1
+PREDEFINED             += LELY_NO_CO_OBJ_UPLOAD=0
+PREDEFINED             += LELY_NO_CO_SDEV=1
+PREDEFINED             += LELY_NO_CO_CSDO=0
+PREDEFINED             += LELY_NO_CO_RPDO=0
+PREDEFINED             += LELY_NO_CO_TPDO=0
+PREDEFINED             += LELY_NO_CO_SYNC=0
+PREDEFINED             += LELY_NO_CO_TIME=1
+PREDEFINED             += LELY_NO_CO_EMCY=0
+PREDEFINED             += LELY_NO_CO_LSS=1
+PREDEFINED             += LELY_NO_CO_WTM=1
+PREDEFINED             += LELY_NO_CO_MASTER=0
+PREDEFINED             += LELY_NO_CO_NG=1
+PREDEFINED             += LELY_NO_CO_ECSS_REDUNDANCY=0
+PREDEFINED             += LELY_NO_CO_NMT_BOOT=1
+PREDEFINED             += LELY_NO_CO_NMT_CFG=1
+PREDEFINED             += LELY_NO_CO_GW=1
+PREDEFINED             += LELY_NO_CO_GW_TXT=1
+PREDEFINED             += LELY_NO_COAPP_MASTER=0
+PREDEFINED             += LELY_NO_COAPP_SLAVE=0
+
+# ----------------------------------------------------------
+# Warnings
+# ----------------------------------------------------------
+WARN_AS_ERROR          = FAIL_ON_WARNINGS

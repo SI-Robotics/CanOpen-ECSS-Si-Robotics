@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoObjTHolder" kind="class" language="C++" prot="public">
+    <compoundname>CoObjTHolder</compoundname>
+    <basecompoundref refid="classHolder" prot="public" virt="non-virtual">Holder&lt; co_obj_t &gt;</basecompoundref>
+    <includes refid="obj_8hpp" local="no">obj.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCoObjTHolder_1a32e911acca1b8cfd5ee5d154f6f04a43" prot="public" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t CoObjTHolder::PREALLOCATED_OBJ_SIZE</definition>
+        <argsstring></argsstring>
+        <name>PREALLOCATED_OBJ_SIZE</name>
+        <initializer>= 768u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="55" column="23" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCoObjTHolder_1a95f45df9f0a753e898a292ad52280297" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CoObjTHolder::val_data[PREALLOCATED_OBJ_SIZE]</definition>
+        <argsstring>[PREALLOCATED_OBJ_SIZE]</argsstring>
+        <name>val_data</name>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="58" column="8" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoObjTHolder_1a75d26d797976ca608b538a65c9a291ae" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classCoSubTHolder" kindref="compound">CoSubTHolder</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;CoSubTHolder&gt; &gt; CoObjTHolder::sub_holders</definition>
+        <argsstring></argsstring>
+        <name>sub_holders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="277" column="15" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoObjTHolder_1a3142bee77d240573422f8cc0fbf777c2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CoObjTHolder::CoObjTHolder</definition>
+        <argsstring>(const co_unsigned16_t idx)</argsstring>
+        <name>CoObjTHolder</name>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="51" column="12" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1a9dceb3c6188ef4898c9dd4820dbcd154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *</type>
+        <definition>co_sub_t* CoObjTHolder::InsertSub</definition>
+        <argsstring>(CoSubTHolder &amp;sub_holder)</argsstring>
+        <name>InsertSub</name>
+        <param>
+          <type><ref refid="classCoSubTHolder" kindref="compound">CoSubTHolder</ref> &amp;</type>
+          <declname>sub_holder</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a sub-object into a CANopen object taking the ownership of the sub-object pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On error sub-object holder retains ownership of the pointer. Method will assert if object&apos;s value memory capacity is exceeded.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sub_holder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a holder of the sub-object to be inserted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the inserted sub-object on success, or nullptr on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="82" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1a927cb68a2f09740926875a6797ea2d79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoObjTHolder::InsertAndSetSub</definition>
+        <argsstring>(const co_unsigned8_t subidx, const co_unsigned16_t type, const T val)</argsstring>
+        <name>InsertAndSetSub</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const co_unsigned16_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Construct a sub-object, insert it into a CANopen object and set its value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sub-object&apos;s holder is stored inside object&apos;s holder and can be accessed with <ref refid="classCoObjTHolder_1ab4ebb8ed3a544a46cf66d9933f6b30d5" kindref="member">GetSubs()</ref> method.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subidx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object sub-index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data type of the sub-object value (in the range [1..27]). This MUST be the object index of one of the static data types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sub-object&apos;s value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="104" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="104" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1ab4ebb8ed3a544a46cf66d9933f6b30d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classCoSubTHolder" kindref="compound">CoSubTHolder</ref> &gt; &gt; &amp;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;CoSubTHolder&gt; &gt;&amp; CoObjTHolder::GetSubs</definition>
+        <argsstring>()</argsstring>
+        <name>GetSubs</name>
+        <briefdescription>
+<para>Get the reference on sub-objects container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="121" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1a7b3aa916f178ec07926563c2353a5c03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="include_2lely_2co_2co_8h_1ad494a4916928fdaf6f2deea754a15a07" kindref="member">co_sub_t</ref> *</type>
+        <definition>co_sub_t* CoObjTHolder::GetLastSub</definition>
+        <argsstring>()</argsstring>
+        <name>GetLastSub</name>
+        <briefdescription>
+<para>Get the pointer to the last added sub-object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="129" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1aad14764af6782eb5b77e6f77bb96f177" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoObjTHolder::RemoveAndDestroyLastSub</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveAndDestroyLastSub</name>
+        <briefdescription>
+<para>Remove the last added sub-object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="137" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="137" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1aa4f18e8808060571f2495db81473a4c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoObjTHolder::EmplaceSub</definition>
+        <argsstring>(const co_unsigned8_t subidx, const typename T::sub_type val)</argsstring>
+        <name>EmplaceSub</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const typename T::sub_type</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Construct and insert a CANopen sub-object with a given sub-index and value, based on and checked against meta-information from a template type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structObjInitT_1_1SubT" kindref="compound">ObjInitT::SubT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="156" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="156" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1ac8ab9621c18b82e8978eaae9ab38368b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoObjTHolder::EmplaceSub</definition>
+        <argsstring>(const typename T::sub_type val=T::default_val)</argsstring>
+        <name>EmplaceSub</name>
+        <param>
+          <type>const typename T::sub_type</type>
+          <declname>val</declname>
+          <defval>T::default_val</defval>
+        </param>
+        <briefdescription>
+<para>Construct and insert a CANopen sub-object with a given value, based on and checked against meta-information from a template type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structObjInitT_1_1SubT" kindref="compound">ObjInitT::SubT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="173" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="173" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1a7a23fa553b12fefe4212cbf938f6b81d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoObjTHolder::SetSub</definition>
+        <argsstring>(const co_unsigned8_t subidx, const typename T::sub_type val)</argsstring>
+        <name>SetSub</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+        </param>
+        <param>
+          <type>const typename T::sub_type</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current value of a CANopen sub-object with a given sub-index, based on and checked against meta-information from a template type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structObjInitT_1_1SubT" kindref="compound">ObjInitT::SubT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="185" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="185" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1ac091f8b226016a96c189a45d328fe4ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoObjTHolder::SetSub</definition>
+        <argsstring>(const typename T::sub_type val)</argsstring>
+        <name>SetSub</name>
+        <param>
+          <type>const typename T::sub_type</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current value of a CANopen sub-object, based on and checked against meta-information from a template type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structObjInitT_1_1SubT" kindref="compound">ObjInitT::SubT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="203" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoObjTHolder_1a496497a295b9a94cdd7119b784bf84cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T::sub_type</type>
+        <definition>T::sub_type CoObjTHolder::GetSub</definition>
+        <argsstring>(const co_unsigned8_t subidx=T::subidx)</argsstring>
+        <name>GetSub</name>
+        <param>
+          <type>const co_unsigned8_t</type>
+          <declname>subidx</declname>
+          <defval>T::subidx</defval>
+        </param>
+        <briefdescription>
+<para>Gets the current value of a CANopen sub-object with the given sub-index, based on and checked against meta-information from a template type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structObjInitT_1_1SubT" kindref="compound">ObjInitT::SubT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="215" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="215" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classCoObjTHolder_1aa66936af52426a6d06ac460ea5755dc5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoObjTHolder::UpdateSubValues</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateSubValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/holder/obj.hpp" line="231" column="3" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="231" bodyend="274"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper for <ref refid="include_2lely_2co_2co_8h_1aff557961d96aebf0e1f648852a6fbfe1" kindref="member">co_obj_t</ref> that separates unit-tests from memory allocation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows for the same unit tests to run with dynamic allocation disabled or enabled. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Holder&lt; co_obj_t &gt;</label>
+        <link refid="classHolder"/>
+      </node>
+      <node id="1">
+        <label>CoObjTHolder</label>
+        <link refid="classCoObjTHolder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Holder&lt; co_obj_t &gt;</label>
+        <link refid="classHolder"/>
+      </node>
+      <node id="1">
+        <label>CoObjTHolder</label>
+        <link refid="classCoObjTHolder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unit-tests/co/holder/obj.hpp" line="47" column="1" bodyfile="unit-tests/co/holder/obj.hpp" bodystart="47" bodyend="278"/>
+    <listofallmembers>
+      <member refid="classCoObjTHolder_1a3142bee77d240573422f8cc0fbf777c2" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>CoObjTHolder</name></member>
+      <member refid="classCoObjTHolder_1aa4f18e8808060571f2495db81473a4c7" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>EmplaceSub</name></member>
+      <member refid="classCoObjTHolder_1ac8ab9621c18b82e8978eaae9ab38368b" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>EmplaceSub</name></member>
+      <member refid="classHolder_1ad59deb9a4fe2c6537acce42e7dbc82e9" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>Get</name></member>
+      <member refid="classCoObjTHolder_1a7b3aa916f178ec07926563c2353a5c03" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>GetLastSub</name></member>
+      <member refid="classCoObjTHolder_1a496497a295b9a94cdd7119b784bf84cd" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>GetSub</name></member>
+      <member refid="classCoObjTHolder_1ab4ebb8ed3a544a46cf66d9933f6b30d5" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>GetSubs</name></member>
+      <member refid="classHolder_1a170a9917cf3853b51ca969e3a9294b93" prot="protected" virt="non-virtual"><scope>CoObjTHolder</scope><name>Holder</name></member>
+      <member refid="classCoObjTHolder_1a927cb68a2f09740926875a6797ea2d79" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>InsertAndSetSub</name></member>
+      <member refid="classCoObjTHolder_1a9dceb3c6188ef4898c9dd4820dbcd154" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>InsertSub</name></member>
+      <member refid="classCoObjTHolder_1a32e911acca1b8cfd5ee5d154f6f04a43" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>PREALLOCATED_OBJ_SIZE</name></member>
+      <member refid="classHolder_1ae77834c0ce75d610901582fb26c83ea6" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>Reclaim</name></member>
+      <member refid="classCoObjTHolder_1aad14764af6782eb5b77e6f77bb96f177" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>RemoveAndDestroyLastSub</name></member>
+      <member refid="classCoObjTHolder_1a7a23fa553b12fefe4212cbf938f6b81d" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>SetSub</name></member>
+      <member refid="classCoObjTHolder_1ac091f8b226016a96c189a45d328fe4ef" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>SetSub</name></member>
+      <member refid="classCoObjTHolder_1a75d26d797976ca608b538a65c9a291ae" prot="private" virt="non-virtual"><scope>CoObjTHolder</scope><name>sub_holders</name></member>
+      <member refid="classHolder_1a9c1acf25ee7d3f0d9e2c333bcbc998af" prot="public" virt="non-virtual"><scope>CoObjTHolder</scope><name>Take</name></member>
+      <member refid="classCoObjTHolder_1aa66936af52426a6d06ac460ea5755dc5" prot="protected" virt="non-virtual"><scope>CoObjTHolder</scope><name>UpdateSubValues</name></member>
+      <member refid="classCoObjTHolder_1a95f45df9f0a753e898a292ad52280297" prot="private" virt="non-virtual"><scope>CoObjTHolder</scope><name>val_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

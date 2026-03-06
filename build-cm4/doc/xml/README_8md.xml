@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Lely<sp/>core<sp/>libraries</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Lely<sp/>core<sp/>libraries<sp/>are<sp/>a<sp/>collection<sp/>of<sp/>C<sp/>and<sp/>C++<sp/>libraries<sp/>and<sp/>tools,</highlight></codeline>
+<codeline><highlight class="normal">providing<sp/>hih-performance<sp/>I/O<sp/>and<sp/>sensor/actuator<sp/>control<sp/>for<sp/>robotics<sp/>and<sp/>IoT</highlight></codeline>
+<codeline><highlight class="normal">applications.<sp/>The<sp/>libraries<sp/>are<sp/>cross-platform<sp/>and<sp/>have<sp/>few<sp/>dependencies.<sp/>They</highlight></codeline>
+<codeline><highlight class="normal">can<sp/>be<sp/>even<sp/>be<sp/>used<sp/>on<sp/>bare-metal<sp/>microcontrollers<sp/>with<sp/>as<sp/>little<sp/>as<sp/>32<sp/>kB<sp/>RAM.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Overview</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Lely<sp/>core<sp/>libraries<sp/>consist<sp/>of:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>C11<sp/>and<sp/>POSIX<sp/>compatibility<sp/>library<sp/>(liblely-compat)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Test<sp/>Anything<sp/>Protocol<sp/>(TAP)<sp/>library<sp/>(liblely-tap)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Utilities<sp/>library<sp/>(liblely-util)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Event<sp/>library<sp/>(liblely-ev)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Asynchronous<sp/>I/O<sp/>library<sp/>(liblely-io2)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>CANopen<sp/>library<sp/>(liblely-co)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>C++<sp/>CANopen<sp/>application<sp/>library<sp/>(liblely-coapp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Click<sp/>[here](https://opensource.lely.com/canopen/docs/overview/)<sp/>for<sp/>more</highlight></codeline>
+<codeline><highlight class="normal">details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>started</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Download</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pre-built<sp/>Debian<sp/>packages<sp/>are<sp/>available<sp/>on<sp/>our</highlight></codeline>
+<codeline><highlight class="normal">[Ubuntu<sp/>PPA](https://launchpad.net/~lely/+archive/ubuntu/ppa).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>download<sp/>the<sp/>source<sp/>code<sp/>from<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">[Releases](https://gitlab.com/lely_industries/lely-core/-/releases)<sp/>page,<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">clone<sp/>this<sp/>repository<sp/>with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$<sp/>git<sp/>clone<sp/>https://gitlab.com/lely_industries/lely-core.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Build<sp/>and<sp/>install</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>project<sp/>uses<sp/>the<sp/>GNU<sp/>Build<sp/>System<sp/>(`configure`,<sp/>`make`,<sp/>`make<sp/>install`),</highlight></codeline>
+<codeline><highlight class="normal">available<sp/>on<sp/>Linux<sp/>and<sp/>Windows<sp/>(through<sp/>[Cygwin](https://www.cygwin.com/)).<sp/>To</highlight></codeline>
+<codeline><highlight class="normal">build<sp/>the<sp/>libraries<sp/>and<sp/>tools,<sp/>you<sp/>need<sp/>to<sp/>install<sp/>the<sp/>autotools<sp/>(autoconf,</highlight></codeline>
+<codeline><highlight class="normal">automake<sp/>and<sp/>libtool).<sp/>After<sp/>the<sp/>initial<sp/>clone<sp/>or<sp/>download<sp/>of<sp/>the<sp/>source,</highlight></codeline>
+<codeline><highlight class="normal">generate<sp/>the<sp/>`configure`<sp/>script<sp/>by<sp/>running</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$<sp/>autoreconf<sp/>-i</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">in<sp/>root<sp/>directory<sp/>of<sp/>the<sp/>project.<sp/>This<sp/>step<sp/>only<sp/>has<sp/>to<sp/>be<sp/>repeated<sp/>if</highlight></codeline>
+<codeline><highlight class="normal">`configure.ac`<sp/>or<sp/>one<sp/>the<sp/>the<sp/>`Makefile.am`<sp/>files<sp/>changes.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First,<sp/>configure<sp/>the<sp/>build<sp/>system<sp/>by<sp/>running</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$<sp/>./configure<sp/>--disable-python</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>do<sp/>not<sp/>want<sp/>to<sp/>clutter<sp/>the<sp/>source<sp/>directories<sp/>with<sp/>object<sp/>files,<sp/>you<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">run<sp/>`configure`<sp/>from<sp/>another<sp/>directory.<sp/>`--disable-python`<sp/>disables<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">deprecated<sp/>Python<sp/>bindings.<sp/>The<sp/>`configure`<sp/>script<sp/>supports<sp/>many<sp/>other<sp/>options.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>full<sp/>list<sp/>can<sp/>be<sp/>shown<sp/>with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$<sp/>./configure<sp/>--help</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">and<sp/>is<sp/>documented</highlight></codeline>
+<codeline><highlight class="normal">[here](https://opensource.lely.com/canopen/docs/configuration/).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Once<sp/>the<sp/>build<sp/>system<sp/>is<sp/>configured,<sp/>the<sp/>libraries<sp/>and<sp/>tools<sp/>can<sp/>be<sp/>built<sp/>with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$<sp/>make</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>optional<sp/>test<sp/>suite<sp/>can<sp/>be<sp/>run<sp/>with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$<sp/>make<sp/>check</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>have<sp/>[doxygen](http://www.doxygen.org/)<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">[Graphviz](http://www.graphviz.org/)<sp/>installed,<sp/>you<sp/>can<sp/>build<sp/>the<sp/>HTML</highlight></codeline>
+<codeline><highlight class="normal">documentation<sp/>of<sp/>the<sp/>API<sp/>with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$<sp/>make<sp/>html</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Finally,<sp/>install<sp/>the<sp/>binaries,<sp/>headers<sp/>and<sp/>documentation<sp/>by<sp/>running</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>make<sp/>install</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">as<sp/>root.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Click<sp/>[here](https://opensource.lely.com/canopen/docs/installation/)<sp/>for<sp/>more</highlight></codeline>
+<codeline><highlight class="normal">information<sp/>about<sp/>building<sp/>the<sp/>lely-core<sp/>libraries<sp/>from<sp/>source,<sp/>as<sp/>well<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">instructions<sp/>for<sp/>cross-compilation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>more<sp/>details<sp/>on<sp/>setup<sp/>and<sp/>tools<sp/>used<sp/>for<sp/>the<sp/>development<sp/>of<sp/>the<sp/>library,</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>can<sp/>check<sp/>the<sp/>`docker/`<sp/>folder<sp/>for<sp/>all<sp/>images<sp/>used<sp/>by<sp/>the<sp/>Continuous</highlight></codeline>
+<codeline><highlight class="normal">Integration<sp/>system<sp/>[configuration](./.gitlab-ci.yml).</highlight></codeline>
+<codeline><highlight class="normal">See<sp/>[docker/README.md](docker/README.md)<sp/>more<sp/>for<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>ECSS<sp/>Compliance</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>project<sp/>is<sp/>compliant<sp/>with<sp/>[ECSS](https://ecss.nl/)<sp/>requirements</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>space<sp/>flight<sp/>software<sp/>criticality<sp/>B.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>enable<sp/>compliance<sp/>add<sp/>`--enable-ecss-compliance`<sp/>to<sp/>build<sp/>configuration.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Only<sp/>liblely-compat,<sp/>liblely-util<sp/>and<sp/>liblely-co<sp/>are<sp/>included<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>ECSS<sp/>compliance<sp/>mode.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>criticality<sp/>B<sp/>validation<sp/>Test<sp/>Suite<sp/>visit</highlight></codeline>
+<codeline><highlight class="normal">[Test<sp/>Suite](https://gitlab.com/n7space/canopen/test-suite).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>doxygen-generated<sp/>API<sp/>documentation<sp/>of<sp/>the<sp/>latest<sp/>development<sp/>version<sp/>can<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">found<sp/>[here](http://lely_industries.gitlab.io/lely-core/doxygen/).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Licensing</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Copyright<sp/>2013-2021<sp/>[Lely<sp/>Industries<sp/>N.V.](http://www.lely.com)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline><highlight class="normal">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline><highlight class="normal">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline><highlight class="normal">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

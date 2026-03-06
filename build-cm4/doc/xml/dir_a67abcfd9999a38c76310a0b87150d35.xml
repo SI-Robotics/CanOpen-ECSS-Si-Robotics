@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a67abcfd9999a38c76310a0b87150d35" kind="dir">
+    <compoundname>unit-tests/libtest/allocators</compoundname>
+    <innerfile refid="default_8hpp">default.hpp</innerfile>
+    <innerfile refid="limited_8hpp">limited.hpp</innerfile>
+    <innerfile refid="pool_8hpp">pool.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/allocators/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="net_8h" kind="file" language="C++">
+    <compoundname>net.h</compoundname>
+    <includes refid="msg_8h" local="no">lely/can/msg.h</includes>
+    <includes refid="compat_2time_8h" local="no">lely/compat/time.h</includes>
+    <includes refid="memory_8h" local="no">lely/util/memory.h</includes>
+    <includedby refid="csdo_8h" local="no">include/lely/co/csdo.h</includedby>
+    <includedby refid="emcy_8h" local="no">include/lely/co/emcy.h</includedby>
+    <includedby refid="nmt_8h" local="no">include/lely/co/nmt.h</includedby>
+    <includedby refid="rpdo_8h" local="no">include/lely/co/rpdo.h</includedby>
+    <includedby refid="ssdo_8h" local="no">include/lely/co/ssdo.h</includedby>
+    <includedby refid="sync_8h" local="no">include/lely/co/sync.h</includedby>
+    <includedby refid="tpdo_8h" local="no">include/lely/co/tpdo.h</includedby>
+    <includedby refid="net_8c" local="no">lib/can/net.c</includedby>
+    <includedby refid="test-net_8cpp" local="no">unit-tests/can/test-net.cpp</includedby>
+    <includedby refid="nmt-alloc-sizes_8hpp" local="no">unit-tests/co/common/nmt-alloc-sizes.hpp</includedby>
+    <includedby refid="test-csdo-sdo_8cpp" local="no">unit-tests/co/test-csdo-sdo.cpp</includedby>
+    <includedby refid="test-dev_8cpp" local="no">unit-tests/co/test-dev.cpp</includedby>
+    <includedby refid="test-emcy_8cpp" local="no">unit-tests/co/test-emcy.cpp</includedby>
+    <includedby refid="test-nmt-srv_8cpp" local="no">unit-tests/co/test-nmt-srv.cpp</includedby>
+    <includedby refid="test-rpdo-sdo_8cpp" local="no">unit-tests/co/test-rpdo-sdo.cpp</includedby>
+    <includedby refid="test-rpdo_8cpp" local="no">unit-tests/co/test-rpdo.cpp</includedby>
+    <includedby refid="test-ssdo_8cpp" local="no">unit-tests/co/test-ssdo.cpp</includedby>
+    <includedby refid="test-sync_8cpp" local="no">unit-tests/co/test-sync.cpp</includedby>
+    <includedby refid="test-tpdo_8cpp" local="no">unit-tests/co/test-tpdo.cpp</includedby>
+    <includedby refid="can-send_8hpp" local="no">unit-tests/libtest/tools/can-send.hpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>lely/compat/time.h</label>
+        <link refid="compat_2time_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lely/can/msg.h</label>
+        <link refid="msg_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="5">
+        <label>lely/compat/sys/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lely/util/memory.h</label>
+        <link refid="memory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/lely/co/csdo.h</label>
+        <link refid="csdo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>unit-tests/can/test-net.cpp</label>
+        <link refid="test-net_8cpp"/>
+      </node>
+      <node id="30">
+        <label>unit-tests/libtest/tools/co-nmt-cs-ind.hpp</label>
+        <link refid="co-nmt-cs-ind_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>unit-tests/libtest/tools/co-tpdo-sample-ind.cpp</label>
+        <link refid="co-tpdo-sample-ind_8cpp"/>
+      </node>
+      <node id="40">
+        <label>include/lely/co/rpdo.h</label>
+        <link refid="rpdo_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>unit-tests/libtest/tools/co-nmt-rdn-ind.hpp</label>
+        <link refid="co-nmt-rdn-ind_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unit-tests/co/test-nmt-sdo.cpp</label>
+        <link refid="test-nmt-sdo_8cpp"/>
+      </node>
+      <node id="24">
+        <label>unit-tests/co/test-nmt-hb.cpp</label>
+        <link refid="test-nmt-hb_8cpp"/>
+      </node>
+      <node id="62">
+        <label>unit-tests/libtest/tools/can-send.hpp</label>
+        <link refid="can-send_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>unit-tests/libtest/tools/co-nmt-st-ind.cpp</label>
+        <link refid="co-nmt-st-ind_8cpp"/>
+      </node>
+      <node id="5">
+        <label>lib/co/nmt_srv.c</label>
+        <link refid="nmt__srv_8c"/>
+      </node>
+      <node id="29">
+        <label>lib/co/nmt_srv.h</label>
+        <link refid="nmt__srv_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>unit-tests/libtest/tools/co-tpdo-ind.hpp</label>
+        <link refid="co-tpdo-ind_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>unit-tests/co/test-ssdo.cpp</label>
+        <link refid="test-ssdo_8cpp"/>
+      </node>
+      <node id="48">
+        <label>lib/co/ssdo.c</label>
+        <link refid="ssdo_8c"/>
+      </node>
+      <node id="41">
+        <label>lib/co/rpdo.c</label>
+        <link refid="rpdo_8c"/>
+      </node>
+      <node id="8">
+        <label>unit-tests/co/test-emcy-sdo.cpp</label>
+        <link refid="test-emcy-sdo_8cpp"/>
+      </node>
+      <node id="31">
+        <label>unit-tests/libtest/tools/co-nmt-cs-ind.cpp</label>
+        <link refid="co-nmt-cs-ind_8cpp"/>
+      </node>
+      <node id="33">
+        <label>unit-tests/libtest/tools/co-nmt-hb-ind.cpp</label>
+        <link refid="co-nmt-hb-ind_8cpp"/>
+      </node>
+      <node id="27">
+        <label>unit-tests/co/obj-init/nmt-redundancy.hpp</label>
+        <link refid="nmt-redundancy_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>unit-tests/libtest/tools/co-rpdo-err.cpp</label>
+        <link refid="co-rpdo-err_8cpp"/>
+      </node>
+      <node id="26">
+        <label>lib/co/nmt_rdn.c</label>
+        <link refid="nmt__rdn_8c"/>
+      </node>
+      <node id="25">
+        <label>lib/co/nmt_rdn.h</label>
+        <link refid="nmt__rdn_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>unit-tests/libtest/tools/co-nmt-rdn-ind.cpp</label>
+        <link refid="co-nmt-rdn-ind_8cpp"/>
+      </node>
+      <node id="22">
+        <label>lib/co/nmt_hb.c</label>
+        <link refid="nmt__hb_8c"/>
+      </node>
+      <node id="21">
+        <label>lib/co/nmt_hb.h</label>
+        <link refid="nmt__hb_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>unit-tests/co/test-rpdo-sdo.cpp</label>
+        <link refid="test-rpdo-sdo_8cpp"/>
+      </node>
+      <node id="36">
+        <label>unit-tests/libtest/tools/co-nmt-st-ind.hpp</label>
+        <link refid="co-nmt-st-ind_8hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unit-tests/co/test-nmt.cpp</label>
+        <link refid="test-nmt_8cpp"/>
+      </node>
+      <node id="63">
+        <label>unit-tests/libtest/tools/can-send.cpp</label>
+        <link refid="can-send_8cpp"/>
+      </node>
+      <node id="7">
+        <label>unit-tests/co/test-csdo.cpp</label>
+        <link refid="test-csdo_8cpp"/>
+      </node>
+      <node id="28">
+        <label>unit-tests/co/test-nmt-rdn.cpp</label>
+        <link refid="test-nmt-rdn_8cpp"/>
+      </node>
+      <node id="46">
+        <label>unit-tests/libtest/tools/co-rpdo-ind.cpp</label>
+        <link refid="co-rpdo-ind_8cpp"/>
+      </node>
+      <node id="60">
+        <label>lib/can/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="3">
+        <label>lib/co/csdo.c</label>
+        <link refid="csdo_8c"/>
+      </node>
+      <node id="20">
+        <label>include/lely/co/nmt.h</label>
+        <link refid="nmt_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>unit-tests/libtest/tools/co-nmt-hb-ind.hpp</label>
+        <link refid="co-nmt-hb-ind_8hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>unit-tests/libtest/tools/co-rpdo-err.hpp</label>
+        <link refid="co-rpdo-err_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/co/nmt.c</label>
+        <link refid="nmt_8c"/>
+      </node>
+      <node id="39">
+        <label>unit-tests/libtest/tools/co-nmt-sync-ind.cpp</label>
+        <link refid="co-nmt-sync-ind_8cpp"/>
+      </node>
+      <node id="52">
+        <label>include/lely/co/tpdo.h</label>
+        <link refid="tpdo_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unit-tests/co/test-sync-sdo.cpp</label>
+        <link refid="test-sync-sdo_8cpp"/>
+      </node>
+      <node id="23">
+        <label>unit-tests/co/common/nmt-alloc-sizes.hpp</label>
+        <link refid="nmt-alloc-sizes_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>unit-tests/co/test-dev.cpp</label>
+        <link refid="test-dev_8cpp"/>
+      </node>
+      <node id="53">
+        <label>lib/co/tpdo.c</label>
+        <link refid="tpdo_8c"/>
+      </node>
+      <node id="49">
+        <label>include/lely/co/sync.h</label>
+        <link refid="sync_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>include/lely/co/ssdo.h</label>
+        <link refid="ssdo_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>include/lely/co/emcy.h</label>
+        <link refid="emcy_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>unit-tests/co/test-nmt-srv.cpp</label>
+        <link refid="test-nmt-srv_8cpp"/>
+      </node>
+      <node id="45">
+        <label>unit-tests/libtest/tools/co-rpdo-ind.hpp</label>
+        <link refid="co-rpdo-ind_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>unit-tests/co/test-tpdo.cpp</label>
+        <link refid="test-tpdo_8cpp"/>
+      </node>
+      <node id="38">
+        <label>unit-tests/libtest/tools/co-nmt-sync-ind.hpp</label>
+        <link refid="co-nmt-sync-ind_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unit-tests/co/test-emcy.cpp</label>
+        <link refid="test-emcy_8cpp"/>
+      </node>
+      <node id="58">
+        <label>unit-tests/libtest/tools/co-tpdo-sample-ind.hpp</label>
+        <link refid="co-tpdo-sample-ind_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/lely/can/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>unit-tests/co/test-rpdo.cpp</label>
+        <link refid="test-rpdo_8cpp"/>
+      </node>
+      <node id="50">
+        <label>lib/co/sync.c</label>
+        <link refid="sync_8c"/>
+      </node>
+      <node id="51">
+        <label>unit-tests/co/test-sync.cpp</label>
+        <link refid="test-sync_8cpp"/>
+      </node>
+      <node id="18">
+        <label>lib/co/emcy.c</label>
+        <link refid="emcy_8c"/>
+      </node>
+      <node id="16">
+        <label>unit-tests/co/test-tpdo-sdo.cpp</label>
+        <link refid="test-tpdo-sdo_8cpp"/>
+      </node>
+      <node id="57">
+        <label>unit-tests/libtest/tools/co-tpdo-ind.cpp</label>
+        <link refid="co-tpdo-ind_8cpp"/>
+      </node>
+      <node id="6">
+        <label>unit-tests/co/test-csdo-sdo.cpp</label>
+        <link refid="test-csdo-sdo_8cpp"/>
+      </node>
+      <node id="13">
+        <label>unit-tests/co/test-ssdo-sdo.cpp</label>
+        <link refid="test-ssdo-sdo_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="net_8h_1a05682d252d9579e99299e7b787691b3a" prot="public" static="no">
+        <type>struct <ref refid="structcan__net" kindref="compound">can_net</ref></type>
+        <definition>typedef struct can_net can_net_t</definition>
+        <argsstring></argsstring>
+        <name>can_net_t</name>
+        <briefdescription>
+<para>An opaque CAN network interface type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="1" column="0" bodyfile="include/lely/can/net.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" prot="public" static="no">
+        <type>struct <ref refid="structcan__timer" kindref="compound">can_timer</ref></type>
+        <definition>typedef struct can_timer can_timer_t</definition>
+        <argsstring></argsstring>
+        <name>can_timer_t</name>
+        <briefdescription>
+<para>An opaque CAN timer type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="1" column="0" bodyfile="include/lely/can/net.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="net_8h_1a2371d48d49dde6483ebd731c724951f4" prot="public" static="no">
+        <type>struct <ref refid="structcan__recv" kindref="compound">can_recv</ref></type>
+        <definition>typedef struct can_recv can_recv_t</definition>
+        <argsstring></argsstring>
+        <name>can_recv_t</name>
+        <briefdescription>
+<para>An opaque CAN frame receiver type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="1" column="0" bodyfile="include/lely/can/net.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="net_8h_1af288b5cded81c8efae024508d41173cc" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int can_timer_func_t(const struct timespec *tp, void *data)</definition>
+        <argsstring>(const struct timespec *tp, void *data)</argsstring>
+        <name>can_timer_func_t</name>
+        <briefdescription>
+<para>The type of a CAN timer callback function, invoked by a CAN timer when the time is updated, or by a CAN network interface when the time at which the next timer triggers is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the current time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to user-specified data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, implementations SHOULD set the error number with <computeroutput><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum()</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="56" column="13" bodyfile="include/lely/can/net.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int can_recv_func_t(const struct can_msg *msg, void *data)</definition>
+        <argsstring>(const struct can_msg *msg, void *data)</argsstring>
+        <name>can_recv_func_t</name>
+        <briefdescription>
+<para>The type of a CAN receive callback function, invoked by a CAN frame receiver when a frame is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the received CAN frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to user-specified data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, implementations SHOULD set the error number with <computeroutput><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum()</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="68" column="13" bodyfile="include/lely/can/net.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int can_send_func_t(const struct can_msg *msg, uint_least8_t bus_id, void *data)</definition>
+        <argsstring>(const struct can_msg *msg, uint_least8_t bus_id, void *data)</argsstring>
+        <name>can_send_func_t</name>
+        <briefdescription>
+<para>The type of a CAN send callback function, invoked by a CAN network interface when a frame needs to be sent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the CAN frame to be sent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bus_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a CAN bus identifier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to user-specified data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, implementations SHOULD set the error number with <computeroutput><ref refid="error_8h_1af01011939b8938d99601f0a911d39d03" kindref="member">set_errnum()</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="81" column="13" bodyfile="include/lely/can/net.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="net_8h_1ab46e5f327761cf226ac76c136aa3aab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t can_net_alignof</definition>
+        <argsstring>(void)</argsstring>
+        <name>can_net_alignof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the alignment (in bytes) of the <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="85" column="8" bodyfile="lib/can/net.c" bodystart="164" bodyend="167" declfile="include/lely/can/net.h" declline="85" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a01249c9ea6971f825bcd220fd644eb13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t can_net_sizeof</definition>
+        <argsstring>(void)</argsstring>
+        <name>can_net_sizeof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size (in bytes) of the <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="88" column="8" bodyfile="lib/can/net.c" bodystart="170" bodyend="173" declfile="include/lely/can/net.h" declline="88" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1ab6dbbcca3dfaba1396975badf4727786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+        <definition>can_net_t* can_net_create</definition>
+        <argsstring>(alloc_t *alloc, uint_least8_t bus_id)</argsstring>
+        <name>can_net_create</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+          <declname>alloc</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>bus_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alloc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a memory allocator. If <bold>alloc</bold> is NULL, the default memory allocator is used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bus_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the active CAN bus identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="99" column="11" bodyfile="lib/can/net.c" bodystart="176" bodyend="185" declfile="include/lely/can/net.h" declline="99" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_net_destroy</definition>
+        <argsstring>(can_net_t *net)</argsstring>
+        <name>can_net_destroy</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="102" column="6" bodyfile="lib/can/net.c" bodystart="188" bodyend="194" declfile="include/lely/can/net.h" declline="102" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a8628a4e7d5510b43ab465cafa226e15a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* can_net_get_alloc</definition>
+        <argsstring>(const can_net_t *net)</argsstring>
+        <name>can_net_get_alloc</name>
+        <param>
+          <type>const <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the allocator used to allocate the CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="108" column="9" bodyfile="lib/can/net.c" bodystart="197" bodyend="202" declfile="include/lely/can/net.h" declline="108" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_net_get_time</definition>
+        <argsstring>(const can_net_t *net, struct timespec *tp)</argsstring>
+        <name>can_net_get_time</name>
+        <param>
+          <type>const <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtimespec" kindref="compound">timespec</ref> *</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the current time of a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store the current time (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="118" column="6" bodyfile="lib/can/net.c" bodystart="205" bodyend="211" declfile="include/lely/can/net.h" declline="118" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1aea24ab259d504e8de39c9af85e447691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int can_net_set_time</definition>
+        <argsstring>(can_net_t *net, const struct timespec *tp)</argsstring>
+        <name>can_net_set_time</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structtimespec" kindref="compound">timespec</ref> *</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current time of a CAN network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This MAY invoke one or more CAN timer callback functions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the current time.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, the error code set by the first failed CAN timer callback function can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="133" column="5" bodyfile="lib/can/net.c" bodystart="214" bodyend="255" declfile="include/lely/can/net.h" declline="133" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1ab3851ccc7a12a460b130d445713e1d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_net_get_next_func</definition>
+        <argsstring>(const can_net_t *net, can_timer_func_t **pfunc, void **pdata)</argsstring>
+        <name>can_net_get_next_func</name>
+        <param>
+          <type>const <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref> **</type>
+          <declname>pfunc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the callback function invoked when the time at which the next CAN timer triggers is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pfunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to the callback function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to user-specified data (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1ac171ad107c9b4086fa3b7bd518837428" kindref="member">can_net_set_next_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="147" column="6" bodyfile="lib/can/net.c" bodystart="258" bodyend="267" declfile="include/lely/can/net.h" declline="147" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1ac171ad107c9b4086fa3b7bd518837428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_net_set_next_func</definition>
+        <argsstring>(can_net_t *net, can_timer_func_t *func, void *data)</argsstring>
+        <name>can_net_set_next_func</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref> *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the callback function invoked when the time at which the next CAN timer triggers is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the function to be invoked by <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to user-specified data (can be NULL). <bold>data</bold> is passed as the last parameter to <bold>func</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1ab3851ccc7a12a460b130d445713e1d81" kindref="member">can_net_get_next_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="161" column="6" bodyfile="lib/can/net.c" bodystart="270" bodyend="276" declfile="include/lely/can/net.h" declline="161" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref></type>
+        <definition>ssize_t can_net_recv</definition>
+        <argsstring>(can_net_t *net, const struct can_msg *msg, uint_least8_t bus_id)</argsstring>
+        <name>can_net_recv</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structcan__msg" kindref="compound">can_msg</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>bus_id</declname>
+        </param>
+        <briefdescription>
+<para>Receives a CAN frame with a network interface on the given bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the frame is received on the active bus, it is processed with the corresponding receiver(s). Otherwise, the frame is ignored. This function MAY invoke one or more CAN frame receiver callback functions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the CAN frame to be processed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bus_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a CAN bus identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of processed frames, or -1 on error. In the latter case, the error code set by the first failed CAN frame receiver callback function can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="177" column="9" bodyfile="lib/can/net.c" bodystart="279" bodyend="313" declfile="include/lely/can/net.h" declline="177" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int can_net_send</definition>
+        <argsstring>(can_net_t *net, const struct can_msg *msg)</argsstring>
+        <name>can_net_send</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structcan__msg" kindref="compound">can_msg</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Sends a CAN frame from a network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function invokes the callback function set by <ref refid="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" kindref="member">can_net_set_send_func()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the CAN frame to be sent.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, or -1 on error. In the latter case, the error code set by the CAN send callback function can be obtained with <ref refid="error_8h_1a501e5c693244531fd60a57b69f3744b8" kindref="member">get_errc()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="190" column="5" bodyfile="lib/can/net.c" bodystart="316" bodyend="327" declfile="include/lely/can/net.h" declline="190" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a705d0db5ebfa63ce737151f275ef5aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_net_get_send_func</definition>
+        <argsstring>(const can_net_t *net, can_send_func_t **pfunc, void **pdata)</argsstring>
+        <name>can_net_get_send_func</name>
+        <param>
+          <type>const <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref> **</type>
+          <declname>pfunc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the callback function used to send CAN frames from a network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pfunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to the callback function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to user-specified data (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" kindref="member">can_net_set_send_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="204" column="6" bodyfile="lib/can/net.c" bodystart="330" bodyend="339" declfile="include/lely/can/net.h" declline="204" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_net_set_send_func</definition>
+        <argsstring>(can_net_t *net, can_send_func_t *func, void *data)</argsstring>
+        <name>can_net_set_send_func</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref> *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the callback function used to send CAN frames from a network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the function to be invoked by <ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to user-specified data (can be NULL). <bold>data</bold> is passed as the last parameter to <bold>func</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a705d0db5ebfa63ce737151f275ef5aab" kindref="member">can_net_get_send_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="217" column="6" bodyfile="lib/can/net.c" bodystart="342" bodyend="348" declfile="include/lely/can/net.h" declline="217" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1ab92b71ff8f8ba394232a3cca01c250c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t can_net_get_active_bus</definition>
+        <argsstring>(const can_net_t *net)</argsstring>
+        <name>can_net_get_active_bus</name>
+        <param>
+          <type>const <ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <briefdescription>
+<para>Returns the active CAN bus identifier of the network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="220" column="15" bodyfile="lib/can/net.c" bodystart="351" bodyend="354" declfile="include/lely/can/net.h" declline="220" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1afcad2febbb8ae1ed0efd23e7ef115bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_net_set_active_bus</definition>
+        <argsstring>(can_net_t *net, uint_least8_t bus_id)</argsstring>
+        <name>can_net_set_active_bus</name>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>bus_id</declname>
+        </param>
+        <briefdescription>
+<para>Sets the active CAN bus of the network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bus_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a CAN bus identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="228" column="6" bodyfile="lib/can/net.c" bodystart="357" bodyend="360" declfile="include/lely/can/net.h" declline="228" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a976f53fca19ef5cddec3ba544d18e6b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t can_timer_alignof</definition>
+        <argsstring>(void)</argsstring>
+        <name>can_timer_alignof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the alignment (in bytes) of the <ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="231" column="8" bodyfile="lib/can/net.c" bodystart="363" bodyend="366" declfile="include/lely/can/net.h" declline="231" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a667123ea92fcaab84617e5ca7eb5fbe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t can_timer_sizeof</definition>
+        <argsstring>(void)</argsstring>
+        <name>can_timer_sizeof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size (in bytes) of the <ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="234" column="8" bodyfile="lib/can/net.c" bodystart="369" bodyend="372" declfile="include/lely/can/net.h" declline="234" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a1c2745823148cca7843f2a287b134662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+        <definition>can_timer_t* can_timer_create</definition>
+        <argsstring>(alloc_t *alloc)</argsstring>
+        <name>can_timer_create</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new CAN timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="237" column="13" bodyfile="lib/can/net.c" bodystart="375" bodyend="384" declfile="include/lely/can/net.h" declline="237" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_timer_destroy</definition>
+        <argsstring>(can_timer_t *timer)</argsstring>
+        <name>can_timer_destroy</name>
+        <param>
+          <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a CAN timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="240" column="6" bodyfile="lib/can/net.c" bodystart="387" bodyend="393" declfile="include/lely/can/net.h" declline="240" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a25085d8b8741c733ca4143a4636705aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* can_timer_get_alloc</definition>
+        <argsstring>(const can_timer_t *timer)</argsstring>
+        <name>can_timer_get_alloc</name>
+        <param>
+          <type>const <ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the allocator used to allocate the CAN timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="243" column="9" bodyfile="lib/can/net.c" bodystart="396" bodyend="401" declfile="include/lely/can/net.h" declline="243" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a36d401ad79d4af7d3378f2d5e47524eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_timer_get_func</definition>
+        <argsstring>(const can_timer_t *timer, can_timer_func_t **pfunc, void **pdata)</argsstring>
+        <name>can_timer_get_func</name>
+        <param>
+          <type>const <ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref> **</type>
+          <declname>pfunc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the callback function invoked when a CAN timer is triggered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN timer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pfunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to the callback function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to user-specified data (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="256" column="6" bodyfile="lib/can/net.c" bodystart="404" bodyend="413" declfile="include/lely/can/net.h" declline="256" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a2aacf7465e8d1b25a1246684d531141d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_timer_set_func</definition>
+        <argsstring>(can_timer_t *timer, can_timer_func_t *func, void *data)</argsstring>
+        <name>can_timer_set_func</name>
+        <param>
+          <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref> *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the callback function invoked when a CAN timer is triggered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN timer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the function to be invoked by <ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to user-specified data (can be NULL). <bold>data</bold> is passed as the last parameter to <bold>func</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a36d401ad79d4af7d3378f2d5e47524eb" kindref="member">can_timer_get_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="269" column="6" bodyfile="lib/can/net.c" bodystart="416" bodyend="422" declfile="include/lely/can/net.h" declline="269" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a123b6134f998861707ff38e25542be69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_timer_start</definition>
+        <argsstring>(can_timer_t *timer, can_net_t *net, const struct timespec *start, const struct timespec *interval)</argsstring>
+        <name>can_timer_start</name>
+        <param>
+          <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structtimespec" kindref="compound">timespec</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structtimespec" kindref="compound">timespec</ref> *</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+<para>Starts a CAN timer and registers it with a network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN timer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the <emphasis>absolute</emphasis> time of the next trigger of the timer. If <bold>start</bold> is NULL, the next trigger time is given by <bold>interval</bold> with respect to the current time as obtained with <ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time()</ref>. If <bold>interval</bold> is also NULL, the timer is stopped. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the interval between successive triggers of the timer. If <bold>interval</bold> is NULL, the timer only triggers once, at the time given by <bold>start</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="287" column="6" bodyfile="lib/can/net.c" bodystart="425" bodyend="453" declfile="include/lely/can/net.h" declline="287" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a06c23f4c94b879740322e74ab37c2bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_timer_stop</definition>
+        <argsstring>(can_timer_t *timer)</argsstring>
+        <name>can_timer_stop</name>
+        <param>
+          <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+<para>Stops a CAN timer and unregisters it with a network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="295" column="6" bodyfile="lib/can/net.c" bodystart="456" bodyend="469" declfile="include/lely/can/net.h" declline="295" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a6aedb3ac49d2c5c54be443bb10949a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_timer_timeout</definition>
+        <argsstring>(can_timer_t *timer, can_net_t *net, int_least32_t timeout)</argsstring>
+        <name>can_timer_timeout</name>
+        <param>
+          <type><ref refid="net_8h_1a6e87a63284f82db599b0fb8ba7709a7a" kindref="member">can_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>int_least32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Starts a CAN timer and registers it with a network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The timer will trigger only once.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN timer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the timeout (in milliseconds) with respect to the current time as obtained with <ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time()</ref>. If <bold>timeout</bold> is negative, the timer is stopped.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start()</ref>, <ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="309" column="6" bodyfile="lib/can/net.c" bodystart="472" bodyend="483" declfile="include/lely/can/net.h" declline="309" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a27d3fc2e719cf129195da888ca8c7efc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t can_recv_alignof</definition>
+        <argsstring>(void)</argsstring>
+        <name>can_recv_alignof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the alignment (in bytes) of <ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="313" column="8" bodyfile="lib/can/net.c" bodystart="486" bodyend="489" declfile="include/lely/can/net.h" declline="313" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1af21ea95695f61835d14aed2aa4367395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t can_recv_sizeof</definition>
+        <argsstring>(void)</argsstring>
+        <name>can_recv_sizeof</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size (in bytes) of <ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="315" column="8" bodyfile="lib/can/net.c" bodystart="492" bodyend="495" declfile="include/lely/can/net.h" declline="315" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+        <definition>can_recv_t* can_recv_create</definition>
+        <argsstring>(alloc_t *alloc)</argsstring>
+        <name>can_recv_create</name>
+        <param>
+          <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="318" column="12" bodyfile="lib/can/net.c" bodystart="498" bodyend="507" declfile="include/lely/can/net.h" declline="318" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_recv_destroy</definition>
+        <argsstring>(can_recv_t *recv)</argsstring>
+        <name>can_recv_destroy</name>
+        <param>
+          <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+          <declname>recv</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="321" column="6" bodyfile="lib/can/net.c" bodystart="510" bodyend="516" declfile="include/lely/can/net.h" declline="321" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a266fe67336789e37c35f4180cc51896a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref> *</type>
+        <definition>alloc_t* can_recv_get_alloc</definition>
+        <argsstring>(const can_recv_t *recv)</argsstring>
+        <name>can_recv_get_alloc</name>
+        <param>
+          <type>const <ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+          <declname>recv</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the allocator used to allocate the CAN frame receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="324" column="9" bodyfile="lib/can/net.c" bodystart="519" bodyend="524" declfile="include/lely/can/net.h" declline="324" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1addf2c35f7494a94230f10dfec5a00c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_recv_get_func</definition>
+        <argsstring>(const can_recv_t *recv, can_recv_func_t **pfunc, void **pdata)</argsstring>
+        <name>can_recv_get_func</name>
+        <param>
+          <type>const <ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+          <declname>recv</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref> **</type>
+          <declname>pfunc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the callback function used to process CAN frames with a receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN frame receiver. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pfunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to the callback function (can be NULL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address at which to store a pointer to user-specified data (can be NULL).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="337" column="6" bodyfile="lib/can/net.c" bodystart="527" bodyend="535" declfile="include/lely/can/net.h" declline="337" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_recv_set_func</definition>
+        <argsstring>(can_recv_t *recv, can_recv_func_t *func, void *data)</argsstring>
+        <name>can_recv_set_func</name>
+        <param>
+          <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+          <declname>recv</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref> *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the callback function used to process CAN frames with a receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN frame receiver. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the function to be invoked by <ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to user-specified data (can be NULL). <bold>data</bold> is passed as the last parameter to <bold>func</bold>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1addf2c35f7494a94230f10dfec5a00c27" kindref="member">can_recv_get_func()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="350" column="6" bodyfile="lib/can/net.c" bodystart="538" bodyend="544" declfile="include/lely/can/net.h" declline="350" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1adc986244d45548fb3315d12bb9961be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_recv_start</definition>
+        <argsstring>(can_recv_t *recv, can_net_t *net, uint_least32_t id, uint_least8_t flags)</argsstring>
+        <name>can_recv_start</name>
+        <param>
+          <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+          <declname>recv</declname>
+        </param>
+        <param>
+          <type><ref refid="net_8h_1a05682d252d9579e99299e7b787691b3a" kindref="member">can_net_t</ref> *</type>
+          <declname>net</declname>
+        </param>
+        <param>
+          <type>uint_least32_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Registers a CAN frame receiver with a network interface and starts processing frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN frame receiver. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>net</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a CAN network interface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the CAN identifier for which the receiver should be invoked. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the flags that should be set in every accepted frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="363" column="6" bodyfile="lib/can/net.c" bodystart="547" bodyend="566" declfile="include/lely/can/net.h" declline="363" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a5d44455603fb83a9a0382446a2ce2864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void can_recv_stop</definition>
+        <argsstring>(can_recv_t *recv)</argsstring>
+        <name>can_recv_stop</name>
+        <param>
+          <type><ref refid="net_8h_1a2371d48d49dde6483ebd731c724951f4" kindref="member">can_recv_t</ref> *</type>
+          <declname>recv</declname>
+        </param>
+        <briefdescription>
+<para>Stops a CAN frame receiver from processing frames and unregisters it with the network interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/can/net.h" line="372" column="6" bodyfile="lib/can/net.c" bodystart="569" bodyend="590" declfile="include/lely/can/net.h" declline="372" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file is part of the CAN library; it contains the CAN network interface declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2015-2021 Lely Industries N.V.</para>
+</simplesect>
+<simplesect kind="author"><para>J. S. Seldenthuis <ulink url="mailto:jseldenthuis@lely.com">jseldenthuis@lely.com</ulink></para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="net_8h_1a05682d252d9579e99299e7b787691b3a" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LELY_CAN_NET_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LELY_CAN_NET_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="msg_8h" kindref="compound">lely/can/msg.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="compat_2time_8h" kindref="compound">lely/compat/time.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="memory_8h" kindref="compound">lely/util/memory.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcan__net" kindref="compound">can_net</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcan__net" kindref="compound">can_net</ref><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcan__timer" kindref="compound">can_timer</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcan__timer" kindref="compound">can_timer</ref><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcan__recv" kindref="compound">can_recv</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcan__recv" kindref="compound">can_recv</ref><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="net_8h_1af288b5cded81c8efae024508d41173cc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>*tp,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref>(</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg,<sp/>uint_least8_t<sp/>bus_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="net_8h_1ab46e5f327761cf226ac76c136aa3aab3" kindref="member">can_net_alignof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a01249c9ea6971f825bcd220fd644eb13" kindref="member">can_net_sizeof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="net_8h_1ab6dbbcca3dfaba1396975badf4727786" kindref="member">can_net_create</ref>(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="structcan__recv_1a49d1b01f7d67dbbb03e01119b933be7b" kindref="member">alloc</ref>,<sp/>uint_least8_t<sp/>bus_id);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a5d81f37e851ce0d40b20f5c835d8dffe" kindref="member">can_net_destroy</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="net_8h_1a8628a4e7d5510b43ab465cafa226e15a" kindref="member">can_net_get_alloc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a222b8bcbf7eb61ea925d93f5bec2b3fa" kindref="member">can_net_get_time</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>*tp);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1aea24ab259d504e8de39c9af85e447691" kindref="member">can_net_set_time</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>*tp);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1ab3851ccc7a12a460b130d445713e1d81" kindref="member">can_net_get_next_func</ref>(</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref><sp/>**pfunc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pdata);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1ac171ad107c9b4086fa3b7bd518837428" kindref="member">can_net_set_next_func</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref><sp/>*<ref refid="structcan__recv_1aca055564416f25c004178d5dccb09112" kindref="member">func</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><ref refid="types_8h_1ab65ed42d67e6c517c746ff2a6a187016" kindref="member">ssize_t</ref><sp/><ref refid="net_8h_1a68e50b71c94d97dc74cdf7241eee3022" kindref="member">can_net_recv</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>bus_id);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a07b48c0e6a77f73732a3a498c7dc91a7" kindref="member">can_net_send</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcan__msg" kindref="compound">can_msg</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a705d0db5ebfa63ce737151f275ef5aab" kindref="member">can_net_get_send_func</ref>(</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref><sp/>**pfunc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pdata);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a3d29b5f7a2b44a528b07682d952e125b" kindref="member">can_net_set_send_func</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/><ref refid="net_8h_1a0a292b22b4f9258b7bdfaf4e9635fda1" kindref="member">can_send_func_t</ref><sp/>*<ref refid="structcan__recv_1aca055564416f25c004178d5dccb09112" kindref="member">func</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">uint_least8_t<sp/><ref refid="net_8h_1ab92b71ff8f8ba394232a3cca01c250c1" kindref="member">can_net_get_active_bus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1afcad2febbb8ae1ed0efd23e7ef115bc2" kindref="member">can_net_set_active_bus</ref>(<ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/>uint_least8_t<sp/>bus_id);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a976f53fca19ef5cddec3ba544d18e6b1" kindref="member">can_timer_alignof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a667123ea92fcaab84617e5ca7eb5fbe0" kindref="member">can_timer_sizeof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*<ref refid="net_8h_1a1c2745823148cca7843f2a287b134662" kindref="member">can_timer_create</ref>(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="structcan__recv_1a49d1b01f7d67dbbb03e01119b933be7b" kindref="member">alloc</ref>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1afee4efafc15aea2eb6e8d369bef428e0" kindref="member">can_timer_destroy</ref>(<ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*timer);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="net_8h_1a25085d8b8741c733ca4143a4636705aa" kindref="member">can_timer_get_alloc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*timer);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a36d401ad79d4af7d3378f2d5e47524eb" kindref="member">can_timer_get_func</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*timer,<sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref><sp/>**pfunc,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pdata);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a2aacf7465e8d1b25a1246684d531141d" kindref="member">can_timer_set_func</ref>(<ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*timer,<sp/><ref refid="net_8h_1af288b5cded81c8efae024508d41173cc" kindref="member">can_timer_func_t</ref><sp/>*<ref refid="structcan__recv_1aca055564416f25c004178d5dccb09112" kindref="member">func</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a123b6134f998861707ff38e25542be69" kindref="member">can_timer_start</ref>(<ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*timer,<sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>*start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtimespec" kindref="compound">timespec</ref><sp/>*interval);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a06c23f4c94b879740322e74ab37c2bad" kindref="member">can_timer_stop</ref>(<ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*timer);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a6aedb3ac49d2c5c54be443bb10949a79" kindref="member">can_timer_timeout</ref>(</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcan__timer" kindref="compound">can_timer_t</ref><sp/>*timer,<sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/>int_least32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a27d3fc2e719cf129195da888ca8c7efc" kindref="member">can_recv_alignof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="315"><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="net_8h_1af21ea95695f61835d14aed2aa4367395" kindref="member">can_recv_sizeof</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*<ref refid="net_8h_1aa079bc39b011a1ddb391e4ec91b71600" kindref="member">can_recv_create</ref>(<ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="structcan__recv_1a49d1b01f7d67dbbb03e01119b933be7b" kindref="member">alloc</ref>);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a8f2ac263d24de95225c1190f4046b2dd" kindref="member">can_recv_destroy</ref>(<ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*recv);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><ref refid="memory_8h_1a693f639f300fc9b0fb65dbf8c817ecc3" kindref="member">alloc_t</ref><sp/>*<ref refid="net_8h_1a266fe67336789e37c35f4180cc51896a" kindref="member">can_recv_get_alloc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*recv);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1addf2c35f7494a94230f10dfec5a00c27" kindref="member">can_recv_get_func</ref>(</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*recv,<sp/><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref><sp/>**pfunc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pdata);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a8c5eaa2be9810e92b2d03a600c605017" kindref="member">can_recv_set_func</ref>(<ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*recv,<sp/><ref refid="net_8h_1ab81f1cb5b7dc27e19c6ffda66395064e" kindref="member">can_recv_func_t</ref><sp/>*<ref refid="structcan__recv_1aca055564416f25c004178d5dccb09112" kindref="member">func</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcan__recv_1a4a3de7dd03815d190a6debbe3aefc57f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1adc986244d45548fb3315d12bb9961be9" kindref="member">can_recv_start</ref>(<ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*recv,<sp/><ref refid="structcan__net" kindref="compound">can_net_t</ref><sp/>*<ref refid="structcan__recv_1af67c759bae7f4b3b5c5c3738cdc6e833" kindref="member">net</ref>,<sp/>uint_least32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_least8_t<sp/>flags);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a5d44455603fb83a9a0382446a2ce2864" kindref="member">can_recv_stop</ref>(<ref refid="structcan__recv" kindref="compound">can_recv_t</ref><sp/>*recv);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!LELY_CAN_NET_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/lely/can/net.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classConciseDcf" kind="class" language="C++" prot="public">
+    <compoundname>ConciseDcf</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classConciseDcf_1af2ebfb5c0d37b3ea7bfa6fee4bf80548" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint_least8_t &gt;</type>
+        <definition>std::vector&lt;uint_least8_t&gt; ConciseDcf::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="92" column="15" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classConciseDcf_1af7ca0b1de6b0f935659839bd86c570f1" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConciseDcf::ConciseDcf</definition>
+        <argsstring>(std::initializer_list&lt; size_t &gt; type_sizes)</argsstring>
+        <name>ConciseDcf</name>
+        <param>
+          <type>std::initializer_list&lt; size_t &gt;</type>
+          <declname>type_sizes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="62" column="12" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="62" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classConciseDcf_1a544215e03c33be01e9d9532f0fa321f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>types</declname>
+            <defname>types</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classConciseDcf" kindref="compound">ConciseDcf</ref></type>
+        <definition>static ConciseDcf ConciseDcf::MakeForEntries</definition>
+        <argsstring>()</argsstring>
+        <name>MakeForEntries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="72" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConciseDcf_1acd989aee028efcb0bc1d800115c89b7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint_least8_t *</type>
+        <definition>uint_least8_t* ConciseDcf::Begin</definition>
+        <argsstring>()</argsstring>
+        <name>Begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="77" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classConciseDcf_1acffd4f5980fefd238944ade17c34f27e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint_least8_t *</type>
+        <definition>uint_least8_t* ConciseDcf::End</definition>
+        <argsstring>()</argsstring>
+        <name>End</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="82" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classConciseDcf_1ae097f898939372acf987efebfc73aa4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t ConciseDcf::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="87" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="87" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classConciseDcf_1ad72f170169db53c6ca99f5a52738ae6e" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>static constexpr size_t ConciseDcf::EntrySize</definition>
+        <argsstring>(const size_t type_size)</argsstring>
+        <name>EntrySize</name>
+        <param>
+          <type>const size_t</type>
+          <declname>type_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-csdo.cpp" line="95" column="3" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="95" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Concise DCF buffer builder. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-csdo.cpp" line="60" column="1" bodyfile="unit-tests/co/test-csdo.cpp" bodystart="60" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classConciseDcf_1acd989aee028efcb0bc1d800115c89b7a" prot="public" virt="non-virtual"><scope>ConciseDcf</scope><name>Begin</name></member>
+      <member refid="classConciseDcf_1af2ebfb5c0d37b3ea7bfa6fee4bf80548" prot="private" virt="non-virtual"><scope>ConciseDcf</scope><name>buffer</name></member>
+      <member refid="classConciseDcf_1af7ca0b1de6b0f935659839bd86c570f1" prot="private" virt="non-virtual"><scope>ConciseDcf</scope><name>ConciseDcf</name></member>
+      <member refid="classConciseDcf_1acffd4f5980fefd238944ade17c34f27e" prot="public" virt="non-virtual"><scope>ConciseDcf</scope><name>End</name></member>
+      <member refid="classConciseDcf_1ad72f170169db53c6ca99f5a52738ae6e" prot="private" virt="non-virtual"><scope>ConciseDcf</scope><name>EntrySize</name></member>
+      <member refid="classConciseDcf_1a544215e03c33be01e9d9532f0fa321f2" prot="public" virt="non-virtual"><scope>ConciseDcf</scope><name>MakeForEntries</name></member>
+      <member refid="classConciseDcf_1ae097f898939372acf987efebfc73aa4e" prot="public" virt="non-virtual"><scope>ConciseDcf</scope><name>Size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

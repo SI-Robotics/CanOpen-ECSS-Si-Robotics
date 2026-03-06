@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCoNmtHbIndMock" kind="class" language="C++" prot="public">
+    <compoundname>CoNmtHbIndMock</compoundname>
+    <includes refid="co-nmt-hb-ind_8hpp" local="no">co-nmt-hb-ind.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCoNmtHbIndMock_1a1145cf66542fdf2b382bafe148db45f5" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CoNmtHbIndMock::indData</definition>
+        <argsstring></argsstring>
+        <name>indData</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="65" column="12" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoNmtHbIndMock_1ac237e4693719782748a8443675086380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nmt_8h_1a8625d5788e64421b19ef19deac4d4fe8" kindref="member">co_nmt_hb_ind_t</ref> *</type>
+        <definition>co_nmt_hb_ind_t * CoNmtHbIndMock::GetFunc</definition>
+        <argsstring>()</argsstring>
+        <name>GetFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="58" column="19" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.cpp" bodystart="85" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtHbIndMock_1ab7a2d42939440e11f81058a6ff6e9d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * CoNmtHbIndMock::GetData</definition>
+        <argsstring>()</argsstring>
+        <name>GetData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="59" column="8" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.cpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoNmtHbIndMock_1a101631c7f44f69106e1bf89e8d4a169b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoNmtHbIndMock::Expect</definition>
+        <argsstring>(co_nmt_t *nmt, co_unsigned8_t id, co_nmt_ec_state_t state, co_nmt_ec_reason_t reason)</argsstring>
+        <name>Expect</name>
+        <param>
+          <type><ref refid="include_2lely_2co_2co_8h_1a12fe9d436d20874aa033404946a30000" kindref="member">co_nmt_t</ref> *</type>
+          <declname>nmt</declname>
+        </param>
+        <param>
+          <type>co_unsigned8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1a43f9cb87172e9294b661d7fce3bb6534" kindref="member">co_nmt_ec_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="nmt_8h_1ada8e39ee33acdaca72f81a65934d01cc" kindref="member">co_nmt_ec_reason_t</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="61" column="8" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.cpp" bodystart="108" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="nmt_8h_1a8625d5788e64421b19ef19deac4d4fe8" kindref="member">co_nmt_hb_ind_t</ref> mock that allows multiple calls. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" line="56" column="1" bodyfile="unit-tests/libtest/tools/co-nmt-hb-ind.hpp" bodystart="56" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classCoNmtHbIndMock_1a101631c7f44f69106e1bf89e8d4a169b" prot="public" virt="non-virtual"><scope>CoNmtHbIndMock</scope><name>Expect</name></member>
+      <member refid="classCoNmtHbIndMock_1ab7a2d42939440e11f81058a6ff6e9d05" prot="public" virt="non-virtual"><scope>CoNmtHbIndMock</scope><name>GetData</name></member>
+      <member refid="classCoNmtHbIndMock_1ac237e4693719782748a8443675086380" prot="public" virt="non-virtual"><scope>CoNmtHbIndMock</scope><name>GetFunc</name></member>
+      <member refid="classCoNmtHbIndMock_1a1145cf66542fdf2b382bafe148db45f5" prot="private" virt="non-virtual"><scope>CoNmtHbIndMock</scope><name>indData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

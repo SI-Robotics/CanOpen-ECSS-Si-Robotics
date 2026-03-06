@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="co-csdo-up-con_8cpp" kind="file" language="C++">
+    <compoundname>co-csdo-up-con.cpp</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes local="no">CppUTest/TestHarness.h</includes>
+    <includes refid="co-csdo-up-con_8hpp" local="yes">co-csdo-up-con.hpp</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>lely/util/util.h</label>
+        <link refid="include_2lely_2util_2util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stdbool.h</label>
+      </node>
+      <node id="12">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lely/compat/features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lely/co/def/type.def</label>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+        <link refid="stddef_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lely/util/float.h</label>
+        <link refid="float_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>limits.h</label>
+      </node>
+      <node id="1">
+        <label>unit-tests/libtest/tools/co-csdo-up-con.cpp</label>
+        <link refid="co-csdo-up-con_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lely/co/co.h</label>
+        <link refid="include_2lely_2co_2co_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CppUTest/TestHarness.h</label>
+      </node>
+      <node id="4">
+        <label>co-csdo-up-con.hpp</label>
+        <link refid="co-csdo-up-con_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lely/co/type.h</label>
+        <link refid="type_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lely/compat/uchar.h</label>
+        <link refid="uchar_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>This file is part of the CANopen Library Unit Test Suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>2021 N7 Space Sp. z o.o.</para>
+</simplesect>
+Unit Test Suite was developed under a programme of, and funded by, the European Space Agency.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CppUTest/TestHarness.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="co-csdo-up-con_8hpp" kindref="compound">co-csdo-up-con.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="structco__csdo" kindref="compound">co_csdo_t</ref>*<sp/>CoCsdoUpCon::sdo<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">co_unsigned16_t<sp/>CoCsdoUpCon::idx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">co_unsigned8_t<sp/>CoCsdoUpCon::subidx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">co_unsigned32_t<sp/>CoCsdoUpCon::ac<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>CoCsdoUpCon::ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>CoCsdoUpCon::n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>CoCsdoUpCon::data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>CoCsdoUpCon::num_called<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">uint_least8_t<sp/>CoCsdoUpCon::buf[CoCsdoUpCon::BUFSIZE]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">CoCsdoUpCon::func(<ref refid="structco__csdo" kindref="compound">co_csdo_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sdo_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>idx_,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>subidx_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>ac_,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptr_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n_,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>sdo<sp/>=<sp/>sdo_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>idx<sp/>=<sp/>idx_;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>subidx<sp/>=<sp/>subidx_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>ac<sp/>=<sp/>ac_;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>ptr<sp/>=<sp/>ptr_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>n<sp/>=<sp/>n_;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>data<sp/>=<sp/>data_;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr_<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>limit<sp/>=<sp/>BUFSIZE;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(buf,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">uint_least8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ptr_),<sp/>std::min(n_,<sp/>limit));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>num_called++;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">CoCsdoUpCon::Clear()<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>sdo<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>idx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>subidx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>ac<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>ptr<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>memset(buf,<sp/>0,<sp/>BUFSIZE);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>num_called<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">CoCsdoUpCon::Check(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__csdo" kindref="compound">co_csdo_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sdo_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>idx_,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>subidx_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>ac_,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptr_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n_,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sdo_,<sp/>sdo);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(idx_,<sp/>idx);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(subidx_,<sp/>subidx);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(ac_,<sp/>ac);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(ptr_,<sp/>ptr);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(n_,<sp/>n);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(data_,<sp/>data);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">CoCsdoUpCon::CheckNonempty(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structco__csdo" kindref="compound">co_csdo_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sdo_,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned16_t<sp/>idx_,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned8_t<sp/>subidx_,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>co_unsigned32_t<sp/>ac_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n_,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(sdo_,<sp/>sdo);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(idx_,<sp/>idx);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(subidx_,<sp/>subidx);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(ac_,<sp/>ac);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>CHECK(ptr<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>CHECK_EQUAL(n_,<sp/>n);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>POINTERS_EQUAL(data_,<sp/>data);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="unit-tests/libtest/tools/co-csdo-up-con.cpp"/>
+  </compounddef>
+</doxygen>

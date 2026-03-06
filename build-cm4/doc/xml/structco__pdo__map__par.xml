@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__pdo__map__par" kind="struct" language="C++" prot="public">
+    <compoundname>co_pdo_map_par</compoundname>
+    <includes refid="pdo_8h" local="no">pdo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" prot="public" static="no" mutable="no">
+        <type>co_unsigned8_t</type>
+        <definition>co_unsigned8_t co_pdo_map_par::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+<para>Number of mapped objects in PDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/pdo.h" line="80" column="16" bodyfile="include/lely/co/pdo.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__pdo__map__par_1afdcbea057e4faeee5b5add24160c548a" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_pdo_map_par::map[CO_PDO_NUM_MAPS]</definition>
+        <argsstring>[CO_PDO_NUM_MAPS]</argsstring>
+        <name>map</name>
+        <briefdescription>
+<para>An array of objects to be mapped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/pdo.h" line="82" column="17" bodyfile="include/lely/co/pdo.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A PDO mapping parameter record. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/co/pdo.h" line="78" column="1" bodyfile="include/lely/co/pdo.h" bodystart="78" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structco__pdo__map__par_1afdcbea057e4faeee5b5add24160c548a" prot="public" virt="non-virtual"><scope>co_pdo_map_par</scope><name>map</name></member>
+      <member refid="structco__pdo__map__par_1a45ac8a9bb9a6fbbf9ee4999ec9c65227" prot="public" virt="non-virtual"><scope>co_pdo_map_par</scope><name>n</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

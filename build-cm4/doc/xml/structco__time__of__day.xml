@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structco__time__of__day" kind="struct" language="C++" prot="public">
+    <compoundname>co_time_of_day</compoundname>
+    <includes refid="type_8h" local="no">type.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structco__time__of__day_1a89db4332c3bc8f7f8d9c6ce867fb49de" prot="public" static="no" mutable="no">
+        <type>co_unsigned32_t</type>
+        <definition>co_unsigned32_t co_time_of_day::ms</definition>
+        <argsstring></argsstring>
+        <name>ms</name>
+        <briefdescription>
+<para>Milliseconds after midnight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/type.h" line="140" column="17" bodyfile="include/lely/co/type.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structco__time__of__day_1aa319a2e21d5a6e415d59001695727e9b" prot="public" static="no" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t co_time_of_day::days</definition>
+        <argsstring></argsstring>
+        <name>days</name>
+        <briefdescription>
+<para>The number of days since January 1, 1984. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/lely/co/type.h" line="142" column="17" bodyfile="include/lely/co/type.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A 48-bit struct used to describe absolute and relative times. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lely/co/type.h" line="138" column="1" bodyfile="include/lely/co/type.h" bodystart="138" bodyend="143"/>
+    <listofallmembers>
+      <member refid="structco__time__of__day_1aa319a2e21d5a6e415d59001695727e9b" prot="public" virt="non-virtual"><scope>co_time_of_day</scope><name>days</name></member>
+      <member refid="structco__time__of__day_1a89db4332c3bc8f7f8d9c6ce867fb49de" prot="public" virt="non-virtual"><scope>co_time_of_day</scope><name>ms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

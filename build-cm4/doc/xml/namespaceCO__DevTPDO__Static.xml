@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCO__DevTPDO__Static" kind="namespace" language="C++">
+    <compoundname>CO_DevTPDO_Static</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test-dev_8cpp_1a9a77f454ef4a29efad9990b0fc020652" prot="public" static="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CO_DevTPDO_Static::tpdo_event_ind_counter</definition>
+        <argsstring></argsstring>
+        <name>tpdo_event_ind_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-dev.cpp" line="2572" column="15" bodyfile="unit-tests/co/test-dev.cpp" bodystart="2572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test-dev_8cpp_1a372c0a8ac8759e6ac76d87e993cc3c6f" prot="public" static="yes" mutable="no">
+        <type>co_unsigned16_t</type>
+        <definition>co_unsigned16_t CO_DevTPDO_Static::tpdo_event_ind_last_pdo_num</definition>
+        <argsstring></argsstring>
+        <name>tpdo_event_ind_last_pdo_num</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/test-dev.cpp" line="2573" column="24" bodyfile="unit-tests/co/test-dev.cpp" bodystart="2573" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="unit-tests/co/test-dev.cpp" line="2571" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c926ccd25fde7939feebe163e20903e5" kind="dir">
+    <compoundname>lib/can</compoundname>
+    <innerfile refid="buf_8c">buf.c</innerfile>
+    <innerfile refid="can_8h">can.h</innerfile>
+    <innerfile refid="msg_8c">msg.c</innerfile>
+    <innerfile refid="net_8c">net.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/can/"/>
+  </compounddef>
+</doxygen>

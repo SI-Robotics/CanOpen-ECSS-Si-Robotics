@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structObjInitT" kind="struct" language="C++" prot="public">
+    <compoundname>ObjInitT</compoundname>
+    <derivedcompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1f80u, CO_DEFTYPE_UNSIGNED32 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1017u, CO_DEFTYPE_UNSIGNED16 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1007u, CO_DEFTYPE_UNSIGNED32 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1001u, CO_DEFTYPE_UNSIGNED8 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; 0x1005u, CO_DEFTYPE_UNSIGNED32, 0x80u &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structObjValueInitT" prot="public" virt="non-virtual">ObjValueInitT&lt; Idx, Deftype, Default_val &gt;</derivedcompoundref>
+    <includes refid="obj-init_8hpp" local="no">obj-init.hpp</includes>
+    <innerclass refid="structObjInitT_1_1SubT" prot="public">ObjInitT::SubT</innerclass>
+    <templateparamlist>
+      <param>
+        <type>co_unsigned16_t</type>
+        <declname>Idx</declname>
+        <defname>Idx</defname>
+      </param>
+      <param>
+        <type>co_unsigned16_t</type>
+        <declname>Min_idx</declname>
+        <defname>Min_idx</defname>
+        <defval>Idx</defval>
+      </param>
+      <param>
+        <type>co_unsigned16_t</type>
+        <declname>Max_idx</declname>
+        <defname>Max_idx</defname>
+        <defval>Idx</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <initializer>= Idx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="34" column="32" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::min_idx</definition>
+        <argsstring></argsstring>
+        <name>min_idx</name>
+        <initializer>= Min_idx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="35" column="32" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" static="yes" mutable="no">
+        <type>const co_unsigned16_t</type>
+        <definition>const co_unsigned16_t ObjInitT&lt; Idx, Min_idx, Max_idx &gt;::max_idx</definition>
+        <argsstring></argsstring>
+        <name>max_idx</name>
+        <initializer>= Max_idx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unit-tests/co/obj-init/obj-init.hpp" line="36" column="32" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CANopen object initialization information template class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjValueInitT&lt; 0x1f80u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjValueInitT&lt; 0x1017u, CO_DEFTYPE_UNSIGNED16 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Obj1017ProducerHb</label>
+        <link refid="structObj1017ProducerHb"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Obj1007SyncWindowLength</label>
+        <link refid="structObj1007SyncWindowLength"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ObjValueInitT&lt; Idx, Deftype, Default_val &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ObjValueInitT&lt; 0x1001u, CO_DEFTYPE_UNSIGNED8 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ObjValueInitT&lt; 0x1007u, CO_DEFTYPE_UNSIGNED32 &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ObjInitT&lt; Idx, Min_idx, Max_idx &gt;</label>
+        <link refid="structObjInitT"/>
+      </node>
+      <node id="11">
+        <label>Obj1005CobidSync</label>
+        <link refid="structObj1005CobidSync"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Obj1001ErrorRegister</label>
+        <link refid="structObj1001ErrorRegister"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ObjValueInitT&lt; 0x1005u, CO_DEFTYPE_UNSIGNED32, 0x80u &gt;</label>
+        <link refid="structObjValueInitT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Obj1f80NmtStartup</label>
+        <link refid="structObj1f80NmtStartup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="unit-tests/co/obj-init/obj-init.hpp" line="33" column="1" bodyfile="unit-tests/co/obj-init/obj-init.hpp" bodystart="33" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structObjInitT_1a9a49db57bf8d548c51eaf28855b305af" prot="public" virt="non-virtual"><scope>ObjInitT</scope><name>idx</name></member>
+      <member refid="structObjInitT_1a61079fe97b6083cd5c218a1a2d5e1c49" prot="public" virt="non-virtual"><scope>ObjInitT</scope><name>max_idx</name></member>
+      <member refid="structObjInitT_1a260500a2f92640d4a9fca99ec59a9994" prot="public" virt="non-virtual"><scope>ObjInitT</scope><name>min_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
