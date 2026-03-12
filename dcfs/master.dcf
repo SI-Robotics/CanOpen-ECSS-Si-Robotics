@@ -1,0 +1,239 @@
+[DeviceInfo]
+VendorName=N7 Space Sp. z o.o.
+VendorNumber=0x004E3753
+BaudRate_10=1
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=1
+BaudRate_1000=1
+
+[DeviceComissioning]
+NodeID=0x01
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[OptionalObjects]
+SupportedObjects=9
+1=0x1005
+2=0x1016
+3=0x1017
+4=0x1019
+5=0x1280
+6=0x1400
+7=0x1600
+8=0x1F80
+9=0x1F81
+
+[ManufacturerObjects]
+SupportedObjects=3
+1=0x2000
+2=0x2100
+3=0x2101
+
+[1000]
+ParameterName=Device type
+DataType=0x0007
+AccessType=ro
+
+[1001]
+ParameterName=Error register
+DataType=0x0005
+AccessType=ro
+
+; SYNC consumer COB-ID
+[1005]
+ParameterName=COB-ID SYNC
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000080
+
+; Consumer heartbeat: monitor slave Node 0x02 with 550ms timeout
+; Value = (0x02 << 16) | 550 = 0x00020226
+[1016]
+SubNumber=2
+ParameterName=Consumer heartbeat time
+ObjectType=0x08
+
+[1016sub0]
+ParameterName=Highest sub-index supported
+DataType=0x0005
+AccessType=const
+DefaultValue=0x01
+
+[1016sub1]
+ParameterName=Consumer heartbeat time
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00020226
+
+; Heartbeat producer: 500ms (for slave redundancy manager to monitor)
+[1017]
+ParameterName=Producer heartbeat time
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+
+[1018]
+SubNumber=5
+ParameterName=Identity object
+ObjectType=0x09
+
+[1018sub0]
+ParameterName=Highest sub-index supported
+DataType=0x0005
+AccessType=const
+DefaultValue=0x04
+
+[1018sub1]
+ParameterName=Vendor-ID
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x004E3753
+
+[1018sub2]
+ParameterName=Product code
+DataType=0x0007
+AccessType=ro
+
+[1018sub3]
+ParameterName=Revision number
+DataType=0x0007
+AccessType=ro
+
+[1018sub4]
+ParameterName=Serial number
+DataType=0x0007
+AccessType=ro
+
+; Synchronous counter overflow value
+[1019]
+ParameterName=Synchronous counter overflow value
+DataType=0x0005
+AccessType=rw
+DefaultValue=16
+
+; SDO client to communicate with slave (Node 0x02)
+; COB-ID client->server: 0x600 + slave_id = 0x602
+; COB-ID server->client: 0x580 + slave_id = 0x582
+[1280]
+SubNumber=4
+ParameterName=SDO client parameter
+ObjectType=0x09
+
+[1280sub0]
+ParameterName=Highest sub-index supported
+DataType=0x0005
+AccessType=const
+DefaultValue=0x03
+
+[1280sub1]
+ParameterName=COB-ID client to server (tx)
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000602
+
+[1280sub2]
+ParameterName=COB-ID server to client (rx)
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000582
+
+[1280sub3]
+ParameterName=Node-ID of the SDO server
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x02
+
+; RPDO1 communication parameter: receive from slave's TPDO (COB-ID 0x182)
+[1400]
+SubNumber=3
+ParameterName=RPDO communication parameter
+ObjectType=0x09
+
+[1400sub0]
+ParameterName=Highest sub-index supported
+DataType=0x0005
+AccessType=const
+DefaultValue=0x02
+
+[1400sub1]
+ParameterName=COB-ID used by RPDO
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x182
+
+[1400sub2]
+ParameterName=Transmission type
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x03
+
+; RPDO1 mapping: same as slave's TPDO mapping
+[1600]
+ParameterName=RPDO mapping parameter
+ObjectType=0x09
+DataType=0x0007
+AccessType=rw
+CompactSubObj=2
+
+[1600Value]
+NrOfEntries=2
+1=0x21000020
+2=0x21010008
+
+; NMT startup: bit 0 set = this device is NMT master
+[1F80]
+ParameterName=NMT startup
+DataType=0x0007
+AccessType=rw
+ParameterValue=0x00000001
+
+; NMT slave assignment: slave Node 0x02
+[1F81]
+ParameterName=NMT slave assignment
+ObjectType=0x08
+DataType=0x0007
+AccessType=rw
+CompactSubObj=2
+
+[1F81Value]
+NrOfEntries=1
+2=0x00000001
+
+; Redundancy object: Bdefault = 0 (start on bus A)
+[2000]
+SubNumber=2
+ParameterName=Redundancy object
+ObjectType=0x09
+
+[2000sub0]
+ParameterName=Highest sub-index supported
+DataType=0x0005
+AccessType=const
+DefaultValue=0x01
+
+[2000sub1]
+ParameterName=Bdefault
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+
+; PDO-mapped data objects (for RPDO reception)
+[2100]
+ParameterName=TestUnsigned32
+DataType=0x0007
+AccessType=rw
+PDOMapping=1
+
+[2101]
+ParameterName=TestInteger8
+DataType=0x0002
+AccessType=rw
+PDOMapping=1

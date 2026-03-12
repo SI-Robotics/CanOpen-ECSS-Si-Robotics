@@ -20,7 +20,9 @@ liblely_co_la-ssdo.lo: \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/type.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/uchar.h \
  /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
- /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint-gcc.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/float.h \
  /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/float.h \
  /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -68,7 +70,9 @@ liblely_co_la-ssdo.lo: \
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/co/type.h:
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/compat/uchar.h:
 /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h:
-/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint-gcc.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
+/opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h:
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/lely-core/include/lely/util/float.h:
 /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/float.h:
 /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h:

@@ -171,8 +171,8 @@ am__define_uniq_tagged_files = \
 DIST_SUBDIRS = doc include lib python pkgconfig tools test unit-tests
 am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/config.h.in \
 	$(srcdir)/exec-wrapper.sh.in $(srcdir)/lcov-wrapper.sh.in \
-	README.md compile config.guess config.sub install-sh ltmain.sh \
-	missing tap-driver.sh
+	README.md compile config.guess config.sub depcomp install-sh \
+	ltmain.sh missing tap-driver.sh
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -229,7 +229,7 @@ AWK = mawk
 BINFMT_EXEC = qemu-arm-static
 CC = arm-none-eabi-gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -DHAVE_CONFIG_H -DCO_DEFTYPE_TIME_SCET=0x0060 -DCO_DEFTYPE_TIME_SUTC=0x0061 -DLELY_HAVE_ITIMERSPEC=1 -ffreestanding -mlittle-endian -mthumb -mcpu=cortex-m4 -ffunction-sections -mfloat-abi=hard -mfpu=fpv4-sp-d16 -ggdb3 -Wall -Wextra -pedantic -Werror
+CFLAGS = -O2 -ggdb3 -mcpu=cortex-m4 -mthumb -ffunction-sections -fdata-sections -mfloat-abi=hard -mfpu=fpv4-sp-d16   -DLELY_HAVE_ITIMERSPEC=1   -DLELY_NO_MALLOC   -DLELY_NO_CO_OBJ_NAME   -DLELY_NO_CO_OBJ_LIMITS   -DLELY_NO_CO_OBJ_DEFAULT   -DLELY_NO_CO_OBJ_UPLOAD   -DLELY_NO_THREADS   -DLELY_NO_STDIO -Wall -Wextra -pedantic -Werror
 CODE_COVERAGE_CFLAGS = 
 CODE_COVERAGE_CPPFLAGS = 
 CODE_COVERAGE_CXXFLAGS = 
@@ -275,7 +275,7 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LCOV = 
 LD = /opt/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/bin/ld
-LDFLAGS = -ffreestanding -mlittle-endian -mthumb -mcpu=cortex-m4 -ffunction-sections -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,--gc-sections -lnosys --specs=nosys.specs
+LDFLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -ffunction-sections -fdata-sections -Wl,--gc-sections --specs=nosys.specs
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool

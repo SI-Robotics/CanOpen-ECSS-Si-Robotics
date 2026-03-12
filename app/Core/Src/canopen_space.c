@@ -156,9 +156,9 @@ int canopen_space_init(const canopen_space_cfg_t* cfg)
   (void)co_dev_set_id(g_ctx.dev, (co_unsigned8_t)g_ctx.node_id);
   if (g_ctx.role == CO_ROLE_ACTUATOR)
   {
-    const co_unsigned16_t hb_ms = 100;
-    if (co_dev_set_val(g_ctx.dev, 0x1017, 0x00, &hb_ms, sizeof(hb_ms)) != sizeof(hb_ms))
-      die(34);
+//    const co_unsigned16_t hb_ms = 100;
+//    if (co_dev_set_val(g_ctx.dev, 0x1017, 0x00, &hb_ms, sizeof(hb_ms)) != sizeof(hb_ms))
+//      die(34);
   }
   else
   {

@@ -46,7 +46,8 @@ make install DESTDIR="$PWD/_stm32_install"
 
 cd python/dcf-tools
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate || source ./.venv-dcf/bin/activate
+
 pip install -U pip wheel
 pip install empy
 pip install pyyaml
@@ -62,6 +63,9 @@ cp test/co-nmt-slave.dcf  stm32/od/slave.dcf
 
 dcf2dev --header stm32/od/master.dcf od_master > stm32/od/od_master.h
 dcf2dev          stm32/od/master.dcf od_master > stm32/od/od_master.c
+
+dcf2dev --header dcfs/master.dcf od_master > dcfs/od_master.h
+dcf2dev          dcfs/master.dcf od_master > dcfs/od_master.c
 
 dcf2dev --header stm32/od/slave.dcf od_slave > stm32/od/od_slave.h
 dcf2dev          stm32/od/slave.dcf od_slave > stm32/od/od_slave.c
