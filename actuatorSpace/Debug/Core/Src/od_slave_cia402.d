@@ -1,4 +1,4 @@
-Core/Src/od_slave.o: ../Core/Src/od_slave.c \
+Core/Src/od_slave_cia402.o: ../Core/Src/od_slave_cia402.c \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/config.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/detail/dev.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/dev.h \

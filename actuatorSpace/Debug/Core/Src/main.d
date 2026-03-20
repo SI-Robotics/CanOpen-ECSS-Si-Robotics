@@ -53,11 +53,12 @@ Core/Src/main.o: ../Core/Src/main.c \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/dev.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/nmt.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/ssdo.h \
- /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/tpdo.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/rpdo.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/pdo.h \
+ /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/tpdo.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/util/error.h \
  /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/util/mempool.h \
- ../Core/Inc/od_slave.h
+ ../Core/Inc/od_slave_cia402.h
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/config.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -115,8 +116,9 @@ Core/Src/main.o: ../Core/Src/main.c \
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/dev.h:
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/nmt.h:
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/ssdo.h:
-/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/tpdo.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/rpdo.h:
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/pdo.h:
+/home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/co/tpdo.h:
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/util/error.h:
 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/include/lely/util/mempool.h:
-../Core/Inc/od_slave.h:
+../Core/Inc/od_slave_cia402.h:

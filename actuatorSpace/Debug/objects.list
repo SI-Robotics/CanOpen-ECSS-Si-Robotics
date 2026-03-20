@@ -1,7 +1,7 @@
 "./Core/Src/fdcan.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
-"./Core/Src/od_slave.o"
+"./Core/Src/od_slave_cia402.o"
 "./Core/Src/stm32g4xx_hal_msp.o"
 "./Core/Src/stm32g4xx_it.o"
 "./Core/Src/syscalls.o"
