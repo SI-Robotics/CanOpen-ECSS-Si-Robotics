@@ -1,0 +1,15 @@
+../Core/Src/canopen.c:17:13:HAL_LOG	2
+../Core/Src/canopen.c:25:13:HAL_LOGF	1
+../Core/Src/canopen.c:36:13:set_bdefault	2
+../Core/Src/canopen.c:42:13:set_ecss_timings	1
+../Core/Src/canopen.c:48:13:restart_hb	1
+../Core/Src/canopen.c:64:12:can_send_handler	2
+../Core/Src/canopen.c:71:16:canopen_init	10
+../Core/Src/canopen.c:163:6:canopen_process	5
+../Core/Src/canopen.c:201:13:cs_ind	14
+../Core/Src/canopen.c:265:13:hb_ind	8
+../Core/Src/canopen.c:308:13:rdn_ind	4
+../Core/Src/canopen.c:340:13:st_ind	16
+../Core/Src/canopen.c:396:13:nmt_sync_ind	2
+../Core/Src/canopen.c:406:13:tpdo_ind	3
+../Core/Src/canopen.c:413:13:rpdo_err	1

@@ -1,0 +1,5 @@
+../Core/Src/cia402.c:11:6:cia402_init	16	static
+../Core/Src/cia402.c:36:6:cia402_on_running	8	static
+../Core/Src/cia402.c:61:6:cia402_on_stopped	8	static
+../Core/Src/cia402.c:85:6:cia402_on_sync	104	static
+../Core/Src/cia402.c:171:6:cia402_on_tpdo	8	static

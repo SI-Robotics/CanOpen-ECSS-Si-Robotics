@@ -1,3 +1,5 @@
+"./Core/Src/canopen.o"
+"./Core/Src/cia402.o"
 "./Core/Src/fdcan.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
