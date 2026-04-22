@@ -10586,107 +10586,107 @@ LOAD /home/dawid/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externa
 LOAD /home/dawid/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /home/dawid/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a
 
-.debug_info     0x00000000    0x603a0
+.debug_info     0x00000000    0x6039b
  .debug_info    0x00000000     0x16ce ./Core/Src/canopen.o
  .debug_info    0x000016ce      0xb02 ./Core/Src/cia402.o
  .debug_info    0x000021d0      0xecd ./Core/Src/fdcan.o
  .debug_info    0x0000309d      0x2d1 ./Core/Src/gpio.o
- .debug_info    0x0000336e     0x1812 ./Core/Src/main.o
- .debug_info    0x00004b80     0x1e60 ./Core/Src/od_slave_cia402.o
- .debug_info    0x000069e0      0x2da ./Core/Src/stm32g4xx_hal_msp.o
- .debug_info    0x00006cba      0x63d ./Core/Src/stm32g4xx_it.o
- .debug_info    0x000072f7      0x6a3 ./Core/Src/syscalls.o
- .debug_info    0x0000799a      0x168 ./Core/Src/sysmem.o
- .debug_info    0x00007b02      0x58e ./Core/Src/system_stm32g4xx.o
- .debug_info    0x00008090      0xdac ./Core/Src/usart.o
- .debug_info    0x00008e3c       0x30 ./Core/Startup/startup_stm32g474retx.o
- .debug_info    0x00008e6c      0xb95 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
- .debug_info    0x00009a01      0xdf9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
- .debug_info    0x0000a7fa     0x18ba ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
- .debug_info    0x0000c0b4      0x772 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
- .debug_info    0x0000c826      0x944 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
- .debug_info    0x0000d16a      0xbf9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
- .debug_info    0x0000dd63      0xc5d ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
- .debug_info    0x0000e9c0     0x4854 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
- .debug_info    0x00013214      0xfdc ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
- .debug_info    0x000141f0     0x8a2a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_info    0x0001cc1a     0x7441 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
- .debug_info    0x0002405b     0x8c84 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_info    0x0002ccdf      0xffa /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
- .debug_info    0x0002dcd9     0x18f7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
- .debug_info    0x0002f5d0     0x2481 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
- .debug_info    0x00031a51     0x8f47 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
- .debug_info    0x0003a998     0x1e94 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
- .debug_info    0x0003c82c     0x324a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
- .debug_info    0x0003fa76     0x14a0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
- .debug_info    0x00040f16     0x6c3d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
- .debug_info    0x00047b53     0x2898 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
- .debug_info    0x0004a3eb     0x375d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
- .debug_info    0x0004db48      0x172 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
- .debug_info    0x0004dcba     0x3e89 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
- .debug_info    0x00051b43      0x165 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
- .debug_info    0x00051ca8     0x3b5f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
- .debug_info    0x00055807      0xbb2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
- .debug_info    0x000563b9     0x2cb3 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
- .debug_info    0x0005906c     0x2373 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
- .debug_info    0x0005b3df      0x666 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
- .debug_info    0x0005ba45      0x76b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
- .debug_info    0x0005c1b0      0x8cc /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_info    0x0005ca7c      0xc5b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
- .debug_info    0x0005d6d7      0x9ba /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
- .debug_info    0x0005e091     0x1ef3 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
- .debug_info    0x0005ff84      0x41c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
+ .debug_info    0x0000336e     0x180d ./Core/Src/main.o
+ .debug_info    0x00004b7b     0x1e60 ./Core/Src/od_slave_cia402.o
+ .debug_info    0x000069db      0x2da ./Core/Src/stm32g4xx_hal_msp.o
+ .debug_info    0x00006cb5      0x63d ./Core/Src/stm32g4xx_it.o
+ .debug_info    0x000072f2      0x6a3 ./Core/Src/syscalls.o
+ .debug_info    0x00007995      0x168 ./Core/Src/sysmem.o
+ .debug_info    0x00007afd      0x58e ./Core/Src/system_stm32g4xx.o
+ .debug_info    0x0000808b      0xdac ./Core/Src/usart.o
+ .debug_info    0x00008e37       0x30 ./Core/Startup/startup_stm32g474retx.o
+ .debug_info    0x00008e67      0xb95 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
+ .debug_info    0x000099fc      0xdf9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
+ .debug_info    0x0000a7f5     0x18ba ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
+ .debug_info    0x0000c0af      0x772 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
+ .debug_info    0x0000c821      0x944 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
+ .debug_info    0x0000d165      0xbf9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
+ .debug_info    0x0000dd5e      0xc5d ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
+ .debug_info    0x0000e9bb     0x4854 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
+ .debug_info    0x0001320f      0xfdc ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
+ .debug_info    0x000141eb     0x8a2a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_info    0x0001cc15     0x7441 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
+ .debug_info    0x00024056     0x8c84 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_info    0x0002ccda      0xffa /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
+ .debug_info    0x0002dcd4     0x18f7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
+ .debug_info    0x0002f5cb     0x2481 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
+ .debug_info    0x00031a4c     0x8f47 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
+ .debug_info    0x0003a993     0x1e94 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
+ .debug_info    0x0003c827     0x324a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
+ .debug_info    0x0003fa71     0x14a0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
+ .debug_info    0x00040f11     0x6c3d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
+ .debug_info    0x00047b4e     0x2898 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
+ .debug_info    0x0004a3e6     0x375d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
+ .debug_info    0x0004db43      0x172 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
+ .debug_info    0x0004dcb5     0x3e89 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
+ .debug_info    0x00051b3e      0x165 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
+ .debug_info    0x00051ca3     0x3b5f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
+ .debug_info    0x00055802      0xbb2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
+ .debug_info    0x000563b4     0x2cb3 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
+ .debug_info    0x00059067     0x2373 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
+ .debug_info    0x0005b3da      0x666 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
+ .debug_info    0x0005ba40      0x76b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
+ .debug_info    0x0005c1ab      0x8cc /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_info    0x0005ca77      0xc5b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
+ .debug_info    0x0005d6d2      0x9ba /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
+ .debug_info    0x0005e08c     0x1ef3 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
+ .debug_info    0x0005ff7f      0x41c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
 
-.debug_abbrev   0x00000000     0x9d46
+.debug_abbrev   0x00000000     0x9d1a
  .debug_abbrev  0x00000000      0x36d ./Core/Src/canopen.o
  .debug_abbrev  0x0000036d      0x20a ./Core/Src/cia402.o
  .debug_abbrev  0x00000577      0x1df ./Core/Src/fdcan.o
  .debug_abbrev  0x00000756       0xc6 ./Core/Src/gpio.o
- .debug_abbrev  0x0000081c      0x37e ./Core/Src/main.o
- .debug_abbrev  0x00000b9a      0x207 ./Core/Src/od_slave_cia402.o
- .debug_abbrev  0x00000da1       0xd9 ./Core/Src/stm32g4xx_hal_msp.o
- .debug_abbrev  0x00000e7a      0x15d ./Core/Src/stm32g4xx_it.o
- .debug_abbrev  0x00000fd7      0x1b6 ./Core/Src/syscalls.o
- .debug_abbrev  0x0000118d       0xbc ./Core/Src/sysmem.o
- .debug_abbrev  0x00001249      0x11a ./Core/Src/system_stm32g4xx.o
- .debug_abbrev  0x00001363      0x20d ./Core/Src/usart.o
- .debug_abbrev  0x00001570       0x24 ./Core/Startup/startup_stm32g474retx.o
- .debug_abbrev  0x00001594      0x271 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
- .debug_abbrev  0x00001805      0x31c ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
- .debug_abbrev  0x00001b21      0x1e7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
- .debug_abbrev  0x00001d08      0x1d2 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
- .debug_abbrev  0x00001eda      0x22c ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
- .debug_abbrev  0x00002106      0x2c9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
- .debug_abbrev  0x000023cf      0x261 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
- .debug_abbrev  0x00002630      0x304 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
- .debug_abbrev  0x00002934      0x2d2 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
- .debug_abbrev  0x00002c06      0x63a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_abbrev  0x00003240      0x609 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
- .debug_abbrev  0x00003849      0x6a7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_abbrev  0x00003ef0      0x447 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
- .debug_abbrev  0x00004337      0x472 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
- .debug_abbrev  0x000047a9      0x3e2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
- .debug_abbrev  0x00004b8b      0x647 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
- .debug_abbrev  0x000051d2      0x387 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
- .debug_abbrev  0x00005559      0x5f9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
- .debug_abbrev  0x00005b52      0x4f9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
- .debug_abbrev  0x0000604b      0x621 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
- .debug_abbrev  0x0000666c      0x58b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
- .debug_abbrev  0x00006bf7      0x62c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
- .debug_abbrev  0x00007223       0x8a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
- .debug_abbrev  0x000072ad      0x52b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
- .debug_abbrev  0x000077d8       0xbd /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
- .debug_abbrev  0x00007895      0x62e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
- .debug_abbrev  0x00007ec3      0x287 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
- .debug_abbrev  0x0000814a      0x60d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
- .debug_abbrev  0x00008757      0x32c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
- .debug_abbrev  0x00008a83      0x287 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
- .debug_abbrev  0x00008d0a      0x28d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
- .debug_abbrev  0x00008f97      0x2e0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_abbrev  0x00009277      0x2f8 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
- .debug_abbrev  0x0000956f      0x305 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
- .debug_abbrev  0x00009874      0x3cb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
- .debug_abbrev  0x00009c3f      0x107 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
+ .debug_abbrev  0x0000081c      0x352 ./Core/Src/main.o
+ .debug_abbrev  0x00000b6e      0x207 ./Core/Src/od_slave_cia402.o
+ .debug_abbrev  0x00000d75       0xd9 ./Core/Src/stm32g4xx_hal_msp.o
+ .debug_abbrev  0x00000e4e      0x15d ./Core/Src/stm32g4xx_it.o
+ .debug_abbrev  0x00000fab      0x1b6 ./Core/Src/syscalls.o
+ .debug_abbrev  0x00001161       0xbc ./Core/Src/sysmem.o
+ .debug_abbrev  0x0000121d      0x11a ./Core/Src/system_stm32g4xx.o
+ .debug_abbrev  0x00001337      0x20d ./Core/Src/usart.o
+ .debug_abbrev  0x00001544       0x24 ./Core/Startup/startup_stm32g474retx.o
+ .debug_abbrev  0x00001568      0x271 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
+ .debug_abbrev  0x000017d9      0x31c ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
+ .debug_abbrev  0x00001af5      0x1e7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
+ .debug_abbrev  0x00001cdc      0x1d2 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
+ .debug_abbrev  0x00001eae      0x22c ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
+ .debug_abbrev  0x000020da      0x2c9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
+ .debug_abbrev  0x000023a3      0x261 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
+ .debug_abbrev  0x00002604      0x304 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
+ .debug_abbrev  0x00002908      0x2d2 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
+ .debug_abbrev  0x00002bda      0x63a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_abbrev  0x00003214      0x609 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
+ .debug_abbrev  0x0000381d      0x6a7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_abbrev  0x00003ec4      0x447 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
+ .debug_abbrev  0x0000430b      0x472 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
+ .debug_abbrev  0x0000477d      0x3e2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
+ .debug_abbrev  0x00004b5f      0x647 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
+ .debug_abbrev  0x000051a6      0x387 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
+ .debug_abbrev  0x0000552d      0x5f9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
+ .debug_abbrev  0x00005b26      0x4f9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
+ .debug_abbrev  0x0000601f      0x621 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
+ .debug_abbrev  0x00006640      0x58b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
+ .debug_abbrev  0x00006bcb      0x62c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
+ .debug_abbrev  0x000071f7       0x8a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
+ .debug_abbrev  0x00007281      0x52b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
+ .debug_abbrev  0x000077ac       0xbd /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
+ .debug_abbrev  0x00007869      0x62e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
+ .debug_abbrev  0x00007e97      0x287 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
+ .debug_abbrev  0x0000811e      0x60d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
+ .debug_abbrev  0x0000872b      0x32c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
+ .debug_abbrev  0x00008a57      0x287 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
+ .debug_abbrev  0x00008cde      0x28d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
+ .debug_abbrev  0x00008f6b      0x2e0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_abbrev  0x0000924b      0x2f8 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
+ .debug_abbrev  0x00009543      0x305 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
+ .debug_abbrev  0x00009848      0x3cb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
+ .debug_abbrev  0x00009c13      0x107 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
 
 .debug_aranges  0x00000000     0x2a80
  .debug_aranges
@@ -10889,7 +10889,7 @@ LOAD /home/dawid/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externa
  .debug_rnglists
                 0x0000494a       0x49 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
 
-.debug_macro    0x00000000    0x2e3ca
+.debug_macro    0x00000000    0x2e3ac
  .debug_macro   0x00000000      0x4c7 ./Core/Src/canopen.o
  .debug_macro   0x000004c7      0xaba ./Core/Src/canopen.o
  .debug_macro   0x00000f81      0x19d ./Core/Src/canopen.o
@@ -10981,173 +10981,173 @@ LOAD /home/dawid/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externa
  .debug_macro   0x0002533c      0x1e1 ./Core/Src/fdcan.o
  .debug_macro   0x0002551d       0x5c ./Core/Src/fdcan.o
  .debug_macro   0x00025579      0x1e1 ./Core/Src/gpio.o
- .debug_macro   0x0002575a      0x50c ./Core/Src/main.o
- .debug_macro   0x00025c66       0x6a ./Core/Src/main.o
- .debug_macro   0x00025cd0      0x269 ./Core/Src/od_slave_cia402.o
- .debug_macro   0x00025f39       0x32 ./Core/Src/od_slave_cia402.o
- .debug_macro   0x00025f6b       0xa7 ./Core/Src/od_slave_cia402.o
- .debug_macro   0x00026012       0x12 ./Core/Src/od_slave_cia402.o
- .debug_macro   0x00026024      0x1fa ./Core/Src/od_slave_cia402.o
- .debug_macro   0x0002621e       0x6d ./Core/Src/od_slave_cia402.o
- .debug_macro   0x0002628b       0x10 ./Core/Src/od_slave_cia402.o
- .debug_macro   0x0002629b       0x10 ./Core/Src/od_slave_cia402.o
- .debug_macro   0x000262ab       0x10 ./Core/Src/od_slave_cia402.o
- .debug_macro   0x000262bb      0x1d7 ./Core/Src/stm32g4xx_hal_msp.o
- .debug_macro   0x00026492      0x1e1 ./Core/Src/stm32g4xx_it.o
- .debug_macro   0x00026673      0x27d ./Core/Src/syscalls.o
- .debug_macro   0x000268f0       0x10 ./Core/Src/syscalls.o
- .debug_macro   0x00026900       0x10 ./Core/Src/syscalls.o
- .debug_macro   0x00026910       0x10 ./Core/Src/syscalls.o
- .debug_macro   0x00026920       0x10 ./Core/Src/syscalls.o
- .debug_macro   0x00026930       0x1c ./Core/Src/syscalls.o
- .debug_macro   0x0002694c       0x52 ./Core/Src/syscalls.o
- .debug_macro   0x0002699e       0x22 ./Core/Src/syscalls.o
- .debug_macro   0x000269c0       0x10 ./Core/Src/syscalls.o
- .debug_macro   0x000269d0       0x52 ./Core/Src/syscalls.o
- .debug_macro   0x00026a22       0xcf ./Core/Src/syscalls.o
- .debug_macro   0x00026af1       0x1c ./Core/Src/syscalls.o
- .debug_macro   0x00026b0d       0x3d ./Core/Src/syscalls.o
- .debug_macro   0x00026b4a       0x5f ./Core/Src/syscalls.o
- .debug_macro   0x00026ba9      0x12c ./Core/Src/syscalls.o
- .debug_macro   0x00026cd5       0x16 ./Core/Src/syscalls.o
- .debug_macro   0x00026ceb       0x16 ./Core/Src/syscalls.o
- .debug_macro   0x00026d01       0x29 ./Core/Src/syscalls.o
- .debug_macro   0x00026d2a       0x10 ./Core/Src/syscalls.o
- .debug_macro   0x00026d3a      0x242 ./Core/Src/syscalls.o
- .debug_macro   0x00026f7c       0x10 ./Core/Src/syscalls.o
- .debug_macro   0x00026f8c      0x18a ./Core/Src/syscalls.o
- .debug_macro   0x00027116       0x16 ./Core/Src/syscalls.o
- .debug_macro   0x0002712c       0xce ./Core/Src/syscalls.o
- .debug_macro   0x000271fa      0x108 ./Core/Src/sysmem.o
- .debug_macro   0x00027302      0x23c ./Core/Src/sysmem.o
- .debug_macro   0x0002753e      0x1cd ./Core/Src/system_stm32g4xx.o
- .debug_macro   0x0002770b      0x1e1 ./Core/Src/usart.o
- .debug_macro   0x000278ec      0x21b ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
- .debug_macro   0x00027b07      0x1cd ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
- .debug_macro   0x00027cd4      0x2df ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
- .debug_macro   0x00027fb3      0x1d4 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
- .debug_macro   0x00028187      0x1f7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
- .debug_macro   0x0002837e      0x20f ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
- .debug_macro   0x0002858d      0x1f7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
- .debug_macro   0x00028784      0x1f8 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
- .debug_macro   0x0002897c      0x1d9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
- .debug_macro   0x00028b55      0x2eb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x00028e40      0xad2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x00029912       0x75 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x00029987       0xf4 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x00029a7b      0x190 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x00029c0b      0x370 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x00029f7b       0x6a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x00029fe5      0x3d6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x0002a3bb       0x22 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x0002a3dd       0x2a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x0002a407       0x3c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x0002a443       0xe6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x0002a529       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x0002a539       0x16 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_macro   0x0002a54f      0x2db /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
- .debug_macro   0x0002a82a       0x58 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
- .debug_macro   0x0002a882      0x376 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_macro   0x0002abf8       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_macro   0x0002ac08       0x16 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_macro   0x0002ac1e       0x34 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_macro   0x0002ac52       0x2e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_macro   0x0002ac80      0x236 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
- .debug_macro   0x0002aeb6       0x5e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
- .debug_macro   0x0002af14      0x264 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
- .debug_macro   0x0002b178       0x2e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
- .debug_macro   0x0002b1a6      0x2b6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
- .debug_macro   0x0002b45c       0x16 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
- .debug_macro   0x0002b472       0x28 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
- .debug_macro   0x0002b49a      0x2d6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
- .debug_macro   0x0002b770      0x256 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
- .debug_macro   0x0002b9c6      0x2c0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
- .debug_macro   0x0002bc86      0x22c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
- .debug_macro   0x0002beb2       0xf8 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
- .debug_macro   0x0002bfaa      0x2f1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
- .debug_macro   0x0002c29b      0x2bc /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
- .debug_macro   0x0002c557       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
- .debug_macro   0x0002c567      0x2c0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
- .debug_macro   0x0002c827      0x1aa /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
- .debug_macro   0x0002c9d1      0x2fb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
- .debug_macro   0x0002cccc      0x112 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
- .debug_macro   0x0002cdde      0x31d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
- .debug_macro   0x0002d0fb       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
- .debug_macro   0x0002d10b      0x183 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
- .debug_macro   0x0002d28e      0x248 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
- .debug_macro   0x0002d4d6       0x2f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
- .debug_macro   0x0002d505       0x32 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
- .debug_macro   0x0002d537      0x184 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
- .debug_macro   0x0002d6bb       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
- .debug_macro   0x0002d6cb       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
- .debug_macro   0x0002d6db       0xf6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
- .debug_macro   0x0002d7d1      0x12f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
- .debug_macro   0x0002d900      0x1aa /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_macro   0x0002daaa       0x94 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_macro   0x0002db3e      0x118 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_macro   0x0002dc56       0x4c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_macro   0x0002dca2       0x4a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_macro   0x0002dcec       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_macro   0x0002dcfc      0x1de /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_macro   0x0002deda      0x14f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
- .debug_macro   0x0002e029      0x12a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
- .debug_macro   0x0002e153       0x2c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
- .debug_macro   0x0002e17f      0x155 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
- .debug_macro   0x0002e2d4       0x2c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
- .debug_macro   0x0002e300       0xca /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
+ .debug_macro   0x0002575a      0x4ee ./Core/Src/main.o
+ .debug_macro   0x00025c48       0x6a ./Core/Src/main.o
+ .debug_macro   0x00025cb2      0x269 ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x00025f1b       0x32 ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x00025f4d       0xa7 ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x00025ff4       0x12 ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x00026006      0x1fa ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x00026200       0x6d ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x0002626d       0x10 ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x0002627d       0x10 ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x0002628d       0x10 ./Core/Src/od_slave_cia402.o
+ .debug_macro   0x0002629d      0x1d7 ./Core/Src/stm32g4xx_hal_msp.o
+ .debug_macro   0x00026474      0x1e1 ./Core/Src/stm32g4xx_it.o
+ .debug_macro   0x00026655      0x27d ./Core/Src/syscalls.o
+ .debug_macro   0x000268d2       0x10 ./Core/Src/syscalls.o
+ .debug_macro   0x000268e2       0x10 ./Core/Src/syscalls.o
+ .debug_macro   0x000268f2       0x10 ./Core/Src/syscalls.o
+ .debug_macro   0x00026902       0x10 ./Core/Src/syscalls.o
+ .debug_macro   0x00026912       0x1c ./Core/Src/syscalls.o
+ .debug_macro   0x0002692e       0x52 ./Core/Src/syscalls.o
+ .debug_macro   0x00026980       0x22 ./Core/Src/syscalls.o
+ .debug_macro   0x000269a2       0x10 ./Core/Src/syscalls.o
+ .debug_macro   0x000269b2       0x52 ./Core/Src/syscalls.o
+ .debug_macro   0x00026a04       0xcf ./Core/Src/syscalls.o
+ .debug_macro   0x00026ad3       0x1c ./Core/Src/syscalls.o
+ .debug_macro   0x00026aef       0x3d ./Core/Src/syscalls.o
+ .debug_macro   0x00026b2c       0x5f ./Core/Src/syscalls.o
+ .debug_macro   0x00026b8b      0x12c ./Core/Src/syscalls.o
+ .debug_macro   0x00026cb7       0x16 ./Core/Src/syscalls.o
+ .debug_macro   0x00026ccd       0x16 ./Core/Src/syscalls.o
+ .debug_macro   0x00026ce3       0x29 ./Core/Src/syscalls.o
+ .debug_macro   0x00026d0c       0x10 ./Core/Src/syscalls.o
+ .debug_macro   0x00026d1c      0x242 ./Core/Src/syscalls.o
+ .debug_macro   0x00026f5e       0x10 ./Core/Src/syscalls.o
+ .debug_macro   0x00026f6e      0x18a ./Core/Src/syscalls.o
+ .debug_macro   0x000270f8       0x16 ./Core/Src/syscalls.o
+ .debug_macro   0x0002710e       0xce ./Core/Src/syscalls.o
+ .debug_macro   0x000271dc      0x108 ./Core/Src/sysmem.o
+ .debug_macro   0x000272e4      0x23c ./Core/Src/sysmem.o
+ .debug_macro   0x00027520      0x1cd ./Core/Src/system_stm32g4xx.o
+ .debug_macro   0x000276ed      0x1e1 ./Core/Src/usart.o
+ .debug_macro   0x000278ce      0x21b ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
+ .debug_macro   0x00027ae9      0x1cd ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
+ .debug_macro   0x00027cb6      0x2df ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
+ .debug_macro   0x00027f95      0x1d4 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
+ .debug_macro   0x00028169      0x1f7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
+ .debug_macro   0x00028360      0x20f ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
+ .debug_macro   0x0002856f      0x1f7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
+ .debug_macro   0x00028766      0x1f8 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
+ .debug_macro   0x0002895e      0x1d9 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
+ .debug_macro   0x00028b37      0x2eb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x00028e22      0xad2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x000298f4       0x75 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x00029969       0xf4 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x00029a5d      0x190 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x00029bed      0x370 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x00029f5d       0x6a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x00029fc7      0x3d6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x0002a39d       0x22 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x0002a3bf       0x2a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x0002a3e9       0x3c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x0002a425       0xe6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x0002a50b       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x0002a51b       0x16 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_macro   0x0002a531      0x2db /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
+ .debug_macro   0x0002a80c       0x58 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
+ .debug_macro   0x0002a864      0x376 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_macro   0x0002abda       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_macro   0x0002abea       0x16 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_macro   0x0002ac00       0x34 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_macro   0x0002ac34       0x2e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_macro   0x0002ac62      0x236 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
+ .debug_macro   0x0002ae98       0x5e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
+ .debug_macro   0x0002aef6      0x264 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
+ .debug_macro   0x0002b15a       0x2e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
+ .debug_macro   0x0002b188      0x2b6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
+ .debug_macro   0x0002b43e       0x16 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
+ .debug_macro   0x0002b454       0x28 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
+ .debug_macro   0x0002b47c      0x2d6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
+ .debug_macro   0x0002b752      0x256 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
+ .debug_macro   0x0002b9a8      0x2c0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
+ .debug_macro   0x0002bc68      0x22c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
+ .debug_macro   0x0002be94       0xf8 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
+ .debug_macro   0x0002bf8c      0x2f1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
+ .debug_macro   0x0002c27d      0x2bc /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
+ .debug_macro   0x0002c539       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
+ .debug_macro   0x0002c549      0x2c0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
+ .debug_macro   0x0002c809      0x1aa /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
+ .debug_macro   0x0002c9b3      0x2fb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
+ .debug_macro   0x0002ccae      0x112 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
+ .debug_macro   0x0002cdc0      0x31d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
+ .debug_macro   0x0002d0dd       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
+ .debug_macro   0x0002d0ed      0x183 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
+ .debug_macro   0x0002d270      0x248 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
+ .debug_macro   0x0002d4b8       0x2f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
+ .debug_macro   0x0002d4e7       0x32 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
+ .debug_macro   0x0002d519      0x184 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
+ .debug_macro   0x0002d69d       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
+ .debug_macro   0x0002d6ad       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
+ .debug_macro   0x0002d6bd       0xf6 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
+ .debug_macro   0x0002d7b3      0x12f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
+ .debug_macro   0x0002d8e2      0x1aa /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_macro   0x0002da8c       0x94 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_macro   0x0002db20      0x118 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_macro   0x0002dc38       0x4c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_macro   0x0002dc84       0x4a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_macro   0x0002dcce       0x10 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_macro   0x0002dcde      0x1de /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_macro   0x0002debc      0x14f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
+ .debug_macro   0x0002e00b      0x12a /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
+ .debug_macro   0x0002e135       0x2c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
+ .debug_macro   0x0002e161      0x155 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
+ .debug_macro   0x0002e2b6       0x2c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
+ .debug_macro   0x0002e2e2       0xca /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
 
-.debug_line     0x00000000    0x36430
+.debug_line     0x00000000    0x3642c
  .debug_line    0x00000000     0x125d ./Core/Src/canopen.o
  .debug_line    0x0000125d      0xde1 ./Core/Src/cia402.o
  .debug_line    0x0000203e      0x883 ./Core/Src/fdcan.o
  .debug_line    0x000028c1      0x72c ./Core/Src/gpio.o
- .debug_line    0x00002fed     0x1123 ./Core/Src/main.o
- .debug_line    0x00004110      0xad0 ./Core/Src/od_slave_cia402.o
- .debug_line    0x00004be0      0x731 ./Core/Src/stm32g4xx_hal_msp.o
- .debug_line    0x00005311      0x822 ./Core/Src/stm32g4xx_it.o
- .debug_line    0x00005b33      0x887 ./Core/Src/syscalls.o
- .debug_line    0x000063ba      0x558 ./Core/Src/sysmem.o
- .debug_line    0x00006912      0x79c ./Core/Src/system_stm32g4xx.o
- .debug_line    0x000070ae      0x7ce ./Core/Src/usart.o
- .debug_line    0x0000787c       0x7b ./Core/Startup/startup_stm32g474retx.o
- .debug_line    0x000078f7      0xb58 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
- .debug_line    0x0000844f      0xceb ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
- .debug_line    0x0000913a     0x1954 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
- .debug_line    0x0000aa8e      0xb8c ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
- .debug_line    0x0000b61a      0xcc7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
- .debug_line    0x0000c2e1      0xf23 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
- .debug_line    0x0000d204     0x1235 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
- .debug_line    0x0000e439     0x3c09 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
- .debug_line    0x00012042      0xd7e ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
- .debug_line    0x00012dc0     0x407d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
- .debug_line    0x00016e3d     0x2dc9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
- .debug_line    0x00019c06     0x3905 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
- .debug_line    0x0001d50b      0x860 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
- .debug_line    0x0001dd6b      0xaa0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
- .debug_line    0x0001e80b     0x1154 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
- .debug_line    0x0001f95f     0x3d5c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
- .debug_line    0x000236bb      0xff2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
- .debug_line    0x000246ad     0x1374 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
- .debug_line    0x00025a21      0xc34 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
- .debug_line    0x00026655     0x2c9f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
- .debug_line    0x000292f4      0xfc7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
- .debug_line    0x0002a2bb     0x16fc /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
- .debug_line    0x0002b9b7      0x3cb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
- .debug_line    0x0002bd82     0x21ea /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
- .debug_line    0x0002df6c      0x331 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
- .debug_line    0x0002e29d     0x16f9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
- .debug_line    0x0002f996      0x741 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
- .debug_line    0x000300d7     0x16e7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
- .debug_line    0x000317be     0x14fb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
- .debug_line    0x00032cb9      0x4ea /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
- .debug_line    0x000331a3      0x41e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
- .debug_line    0x000335c1      0x509 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
- .debug_line    0x00033aca      0x73b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
- .debug_line    0x00034205      0x79d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
- .debug_line    0x000349a2     0x159d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
- .debug_line    0x00035f3f      0x4f1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
+ .debug_line    0x00002fed     0x111f ./Core/Src/main.o
+ .debug_line    0x0000410c      0xad0 ./Core/Src/od_slave_cia402.o
+ .debug_line    0x00004bdc      0x731 ./Core/Src/stm32g4xx_hal_msp.o
+ .debug_line    0x0000530d      0x822 ./Core/Src/stm32g4xx_it.o
+ .debug_line    0x00005b2f      0x887 ./Core/Src/syscalls.o
+ .debug_line    0x000063b6      0x558 ./Core/Src/sysmem.o
+ .debug_line    0x0000690e      0x79c ./Core/Src/system_stm32g4xx.o
+ .debug_line    0x000070aa      0x7ce ./Core/Src/usart.o
+ .debug_line    0x00007878       0x7b ./Core/Startup/startup_stm32g474retx.o
+ .debug_line    0x000078f3      0xb58 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
+ .debug_line    0x0000844b      0xceb ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
+ .debug_line    0x00009136     0x1954 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
+ .debug_line    0x0000aa8a      0xb8c ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
+ .debug_line    0x0000b616      0xcc7 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
+ .debug_line    0x0000c2dd      0xf23 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
+ .debug_line    0x0000d200     0x1235 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
+ .debug_line    0x0000e435     0x3c09 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
+ .debug_line    0x0001203e      0xd7e ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
+ .debug_line    0x00012dbc     0x407d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_line    0x00016e39     0x2dc9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
+ .debug_line    0x00019c02     0x3905 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_line    0x0001d507      0x860 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
+ .debug_line    0x0001dd67      0xaa0 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
+ .debug_line    0x0001e807     0x1154 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
+ .debug_line    0x0001f95b     0x3d5c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
+ .debug_line    0x000236b7      0xff2 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
+ .debug_line    0x000246a9     0x1374 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
+ .debug_line    0x00025a1d      0xc34 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
+ .debug_line    0x00026651     0x2c9f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
+ .debug_line    0x000292f0      0xfc7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
+ .debug_line    0x0002a2b7     0x16fc /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
+ .debug_line    0x0002b9b3      0x3cb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
+ .debug_line    0x0002bd7e     0x21ea /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
+ .debug_line    0x0002df68      0x331 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
+ .debug_line    0x0002e299     0x16f9 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
+ .debug_line    0x0002f992      0x741 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
+ .debug_line    0x000300d3     0x16e7 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
+ .debug_line    0x000317ba     0x14fb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
+ .debug_line    0x00032cb5      0x4ea /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
+ .debug_line    0x0003319f      0x41e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
+ .debug_line    0x000335bd      0x509 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_line    0x00033ac6      0x73b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
+ .debug_line    0x00034201      0x79d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
+ .debug_line    0x0003499e     0x159d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
+ .debug_line    0x00035f3b      0x4f1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
 
-.debug_str      0x00000000    0xfe4b9
+.debug_str      0x00000000    0xfe444
  .debug_str     0x00000000    0xed1d0 ./Core/Src/canopen.o
                               0xed89e (size before relaxing)
  .debug_str     0x000ed1d0      0x32c ./Core/Src/cia402.o
@@ -11156,95 +11156,95 @@ LOAD /home/dawid/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externa
                               0xe7458 (size before relaxing)
  .debug_str     0x000ee2b3       0x2c ./Core/Src/gpio.o
                               0xe6764 (size before relaxing)
- .debug_str     0x000ee2df      0x45d ./Core/Src/main.o
-                              0xede10 (size before relaxing)
- .debug_str     0x000ee73c     0x290d ./Core/Src/od_slave_cia402.o
+ .debug_str     0x000ee2df      0x3e8 ./Core/Src/main.o
+                              0xedd9b (size before relaxing)
+ .debug_str     0x000ee6c7     0x290d ./Core/Src/od_slave_cia402.o
                                0xa808 (size before relaxing)
- .debug_str     0x000f1049       0x4d ./Core/Src/stm32g4xx_hal_msp.o
+ .debug_str     0x000f0fd4       0x4d ./Core/Src/stm32g4xx_hal_msp.o
                               0xe6785 (size before relaxing)
- .debug_str     0x000f1096      0x10a ./Core/Src/stm32g4xx_it.o
+ .debug_str     0x000f1021      0x10a ./Core/Src/stm32g4xx_it.o
                               0xe6a6c (size before relaxing)
- .debug_str     0x000f11a0     0x215c ./Core/Src/syscalls.o
+ .debug_str     0x000f112b     0x215c ./Core/Src/syscalls.o
                                0x9f25 (size before relaxing)
- .debug_str     0x000f32fc       0x6b ./Core/Src/sysmem.o
+ .debug_str     0x000f3287       0x6b ./Core/Src/sysmem.o
                                0x6657 (size before relaxing)
- .debug_str     0x000f3367       0xdb ./Core/Src/system_stm32g4xx.o
+ .debug_str     0x000f32f2       0xdb ./Core/Src/system_stm32g4xx.o
                               0xe6814 (size before relaxing)
- .debug_str     0x000f3442       0xa8 ./Core/Src/usart.o
+ .debug_str     0x000f33cd       0xa8 ./Core/Src/usart.o
                               0xe701e (size before relaxing)
- .debug_str     0x000f34ea       0x44 ./Core/Startup/startup_stm32g474retx.o
+ .debug_str     0x000f3475       0x44 ./Core/Startup/startup_stm32g474retx.o
                                  0x94 (size before relaxing)
- .debug_str     0x000f352e      0x5d2 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
+ .debug_str     0x000f34b9      0x5d2 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
                               0xe7526 (size before relaxing)
- .debug_str     0x000f3b00      0x346 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
+ .debug_str     0x000f3a8b      0x346 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
                               0xe71e2 (size before relaxing)
- .debug_str     0x000f3e46     0x1181 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
+ .debug_str     0x000f3dd1     0x1181 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.o
                               0xe7dbb (size before relaxing)
- .debug_str     0x000f4fc7      0x15f ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
+ .debug_str     0x000f4f52      0x15f ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
                               0xe699f (size before relaxing)
- .debug_str     0x000f5126      0x4a5 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
+ .debug_str     0x000f50b1      0x4a5 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
                               0xe6d02 (size before relaxing)
- .debug_str     0x000f55cb      0x506 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
+ .debug_str     0x000f5556      0x506 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
                               0xe6f33 (size before relaxing)
- .debug_str     0x000f5ad1      0x414 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
+ .debug_str     0x000f5a5c      0x414 ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
                               0xe6f5d (size before relaxing)
- .debug_str     0x000f5ee5      0x9ff ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
+ .debug_str     0x000f5e70      0x9ff ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
                               0xe77cf (size before relaxing)
- .debug_str     0x000f68e4      0x26b ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
+ .debug_str     0x000f686f      0x26b ./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
                               0xe6fcd (size before relaxing)
- .debug_str     0x000f6b4f     0x1dfe /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
+ .debug_str     0x000f6ada     0x1dfe /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-csdo.o)
                                0xb8da (size before relaxing)
- .debug_str     0x000f894d      0xbea /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
+ .debug_str     0x000f88d8      0xbea /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-dev.o)
                                0xb0cf (size before relaxing)
- .debug_str     0x000f9537     0x11c4 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
+ .debug_str     0x000f94c2     0x11c4 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt.o)
                                0xc0af (size before relaxing)
- .debug_str     0x000fa6fb       0xbd /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
+ .debug_str     0x000fa686       0xbd /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_hb.o)
                                0x86ae (size before relaxing)
- .debug_str     0x000fa7b8      0x1b1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
+ .debug_str     0x000fa743      0x1b1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_rdn.o)
                                0x9337 (size before relaxing)
- .debug_str     0x000fa969      0x384 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
+ .debug_str     0x000fa8f4      0x384 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-nmt_srv.o)
                                0x9356 (size before relaxing)
- .debug_str     0x000faced      0x90c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
+ .debug_str     0x000fac78      0x90c /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-obj.o)
                                0xb581 (size before relaxing)
- .debug_str     0x000fb5f9      0x116 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
+ .debug_str     0x000fb584      0x116 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-pdo.o)
                                0x90a5 (size before relaxing)
- .debug_str     0x000fb70f      0x25d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
+ .debug_str     0x000fb69a      0x25d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-rpdo.o)
                                0xac24 (size before relaxing)
- .debug_str     0x000fb96c       0xbf /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
+ .debug_str     0x000fb8f7       0xbf /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sdo.o)
                                0x9c4b (size before relaxing)
- .debug_str     0x000fba2b      0x75f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
+ .debug_str     0x000fb9b6      0x75f /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-ssdo.o)
                                0xb517 (size before relaxing)
- .debug_str     0x000fc18a      0x1a5 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
+ .debug_str     0x000fc115      0x1a5 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-sync.o)
                                0xa8cc (size before relaxing)
- .debug_str     0x000fc32f      0x233 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
+ .debug_str     0x000fc2ba      0x233 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-tpdo.o)
                                0xacad (size before relaxing)
- .debug_str     0x000fc562       0xfb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
+ .debug_str     0x000fc4ed       0xfb /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-type.o)
                                0x7a40 (size before relaxing)
- .debug_str     0x000fc65d      0x387 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
+ .debug_str     0x000fc5e8      0x387 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-val.o)
                                0xa47b (size before relaxing)
- .debug_str     0x000fc9e4        0xd /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
+ .debug_str     0x000fc96f        0xd /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-crc.o)
                                0x68b9 (size before relaxing)
- .debug_str     0x000fc9f1      0x274 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
+ .debug_str     0x000fc97c      0x274 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-co.a(liblely_co_la-emcy.o)
                                0xad47 (size before relaxing)
- .debug_str     0x000fcc65       0xd1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
+ .debug_str     0x000fcbf0       0xd1 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-buf.o)
                                0x7229 (size before relaxing)
- .debug_str     0x000fcd36      0x707 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
+ .debug_str     0x000fccc1      0x707 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-can.a(liblely_can_la-net.o)
                                0x8233 (size before relaxing)
- .debug_str     0x000fd43d      0x20d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
+ .debug_str     0x000fd3c8      0x20d /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-endian.o)
                                0x7cb1 (size before relaxing)
- .debug_str     0x000fd64a      0x13b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
+ .debug_str     0x000fd5d5      0x13b /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-error.o)
                                0x64aa (size before relaxing)
- .debug_str     0x000fd785       0x63 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
+ .debug_str     0x000fd710       0x63 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-memory.o)
                                0x65d1 (size before relaxing)
- .debug_str     0x000fd7e8      0xa4e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
+ .debug_str     0x000fd773      0xa4e /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-mempool.o)
                                0x7fd7 (size before relaxing)
- .debug_str     0x000fe236       0x43 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
+ .debug_str     0x000fe1c1       0x43 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-membuf.o)
                                0x6763 (size before relaxing)
- .debug_str     0x000fe279       0x92 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
+ .debug_str     0x000fe204       0x92 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-pheap.o)
                                0x62e5 (size before relaxing)
- .debug_str     0x000fe30b      0x119 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
+ .debug_str     0x000fe296      0x119 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-util.a(liblely_util_la-rbtree.o)
                                0x6f1e (size before relaxing)
- .debug_str     0x000fe424       0x95 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
+ .debug_str     0x000fe3af       0x95 /home/dawid/Desktop/SIROBOTICS/GIT/CanOpen-ECSS-Si-Robotics/ecss/lely-core/_stm32_install/usr/local/lib/liblely-compat.a(liblely_compat_la-string.o)
                                0x5cbf (size before relaxing)
 
 .comment        0x00000000       0x87

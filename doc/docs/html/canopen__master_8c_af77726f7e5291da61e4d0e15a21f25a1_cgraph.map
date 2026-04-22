@@ -1,0 +1,4 @@
+<map id="HAL_LOGF" name="HAL_LOGF">
+<area shape="rect" id="node1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$canopen__master_8c.html#abf86800fa0c789a55a3d610d003e9c95" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="144,5,227,32"/>
+</map>

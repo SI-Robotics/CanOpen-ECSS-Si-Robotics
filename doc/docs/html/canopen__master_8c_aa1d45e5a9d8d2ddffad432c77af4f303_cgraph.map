@@ -1,0 +1,5 @@
+<map id="st_ind" name="st_ind">
+<area shape="rect" id="node1" title="NMT state change indication callback." alt="" coords="5,5,67,32"/>
+<area shape="rect" id="node2" href="$canopen__master_8c.html#af77726f7e5291da61e4d0e15a21f25a1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="115,5,205,32"/>
+<area shape="rect" id="node3" href="$canopen__master_8c.html#abf86800fa0c789a55a3d610d003e9c95" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="253,5,336,32"/>
+</map>

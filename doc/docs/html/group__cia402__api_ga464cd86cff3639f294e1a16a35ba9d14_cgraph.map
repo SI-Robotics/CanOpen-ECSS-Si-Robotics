@@ -1,0 +1,4 @@
+<map id="cia402_master_on_running" name="cia402_master_on_running">
+<area shape="rect" id="node1" title="Notifies the FSM that the slave has entered the OPERATIONAL state." alt="" coords="5,5,203,32"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#a3cbc5b5917bd2a2ce7b7c50b54291ec3" title="printf&#45;style UART logger; formats into a 128&#45;byte stack buffer." alt="" coords="251,5,305,32"/>
+</map>

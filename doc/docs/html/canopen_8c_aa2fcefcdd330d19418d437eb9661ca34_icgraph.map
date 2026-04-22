@@ -1,0 +1,4 @@
+<map id="rdn_ind" name="rdn_ind">
+<area shape="rect" id="node1" title="ECSS redundancy indication callback." alt="" coords="159,5,229,32"/>
+<area shape="rect" id="node2" href="$canopen_8h.html#a04bbd8129673054c076d83440f274ba3" title="Initialises the CANopen slave stack." alt="" coords="5,5,111,32"/>
+</map>

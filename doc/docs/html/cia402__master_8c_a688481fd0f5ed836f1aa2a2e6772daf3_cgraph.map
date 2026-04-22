@@ -1,0 +1,4 @@
+<map id="send_controlword" name="send_controlword">
+<area shape="rect" id="node1" title="Writes a Controlword value to the master OD and logs it." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#a3cbc5b5917bd2a2ce7b7c50b54291ec3" title="printf&#45;style UART logger; formats into a 128&#45;byte stack buffer." alt="" coords="191,5,245,32"/>
+</map>

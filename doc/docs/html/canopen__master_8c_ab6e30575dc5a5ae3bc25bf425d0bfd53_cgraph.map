@@ -1,0 +1,6 @@
+<map id="do_bus_switch" name="do_bus_switch">
+<area shape="rect" id="node1" title="Switches the active CAN bus between A and B." alt="" coords="5,31,123,57"/>
+<area shape="rect" id="node2" href="$canopen__master_8c.html#a3f7dfd2a4ec363b15470b7f8041c3247" title="Enters the fatal error state." alt="" coords="171,5,265,32"/>
+<area shape="rect" id="node3" href="$canopen__master_8c.html#af77726f7e5291da61e4d0e15a21f25a1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="313,31,404,57"/>
+<area shape="rect" id="node4" href="$canopen__master_8c.html#abf86800fa0c789a55a3d610d003e9c95" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="452,31,535,57"/>
+</map>

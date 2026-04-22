@@ -1,0 +1,14 @@
+<map id="HAL_LOG" name="HAL_LOG">
+<area shape="rect" id="node1" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="679,194,761,221"/>
+<area shape="rect" id="node2" href="$canopen__master_8c.html#af77726f7e5291da61e4d0e15a21f25a1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="540,194,631,221"/>
+<area shape="rect" id="node3" href="$canopen__master_8c.html#a55a2a6ab58b44c96bc66b4de866dc208" title="Lely CAN send callback registered with can_net_set_send_func()." alt="" coords="353,93,492,120"/>
+<area shape="rect" id="node4" href="$canopen__master_8c.html#a04bbd8129673054c076d83440f274ba3" title="Initialises the CANopen master stack." alt="" coords="194,245,299,272"/>
+<area shape="rect" id="node5" href="$canopen__master_8c.html#ab6e30575dc5a5ae3bc25bf425d0bfd53" title="Switches the active CAN bus between A and B." alt="" coords="188,17,305,44"/>
+<area shape="rect" id="node7" href="$canopen__master_8c.html#a3f7dfd2a4ec363b15470b7f8041c3247" title="Enters the fatal error state." alt="" coords="375,42,470,69"/>
+<area shape="rect" id="node8" href="$canopen__master_8c.html#ae8ca78378f7d967777f8d53b73960c18" title="Heartbeat consumer indication callback." alt="" coords="390,194,455,221"/>
+<area shape="rect" id="node9" href="$canopen__master_8c.html#a5551c9c99d480da6785bfcabb4c04f4b" title="RPDO error callback." alt="" coords="385,245,461,272"/>
+<area shape="rect" id="node10" href="$canopen__master_8c.html#ad7c95fbbe2c757a786f1e8b70fdf3b5e" title="RPDO received indication callback." alt="" coords="383,296,462,322"/>
+<area shape="rect" id="node11" href="$canopen__master_8c.html#aa1d45e5a9d8d2ddffad432c77af4f303" title="NMT state change indication callback." alt="" coords="392,346,453,373"/>
+<area shape="rect" id="node12" href="$canopen__master_8c.html#a97a98908743d728fc20c78a678d4dcca" title="TPDO transmission confirmation callback." alt="" coords="383,397,462,424"/>
+<area shape="rect" id="node6" href="$canopen__master_8c.html#aabb13d373ce903b7743c5230bd55dedf" title="Processes all pending CANopen events – call from the main loop." alt="" coords="5,17,140,44"/>
+</map>

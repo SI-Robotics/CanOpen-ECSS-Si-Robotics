@@ -1,0 +1,5 @@
+<map id="send_controlword" name="send_controlword">
+<area shape="rect" id="node1" title="Writes a Controlword value to the master OD and logs it." alt="" coords="253,31,391,57"/>
+<area shape="rect" id="node2" href="$group__cia402__api.html#gaab6a723ffc38a3b822865e906e5cf9de" title="Notifies the FSM that the slave has left the OPERATIONAL state." alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node3" href="$group__cia402__api.html#gacc6b2fa5093da42ee98095362339ce05" title="Main FSM tick – called on every SYNC frame." alt="" coords="16,56,195,83"/>
+</map>

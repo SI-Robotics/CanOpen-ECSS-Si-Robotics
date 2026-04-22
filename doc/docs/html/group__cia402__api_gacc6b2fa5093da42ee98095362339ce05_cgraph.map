@@ -1,0 +1,9 @@
+<map id="cia402_master_on_sync" name="cia402_master_on_sync">
+<area shape="rect" id="node1" title="Main FSM tick – called on every SYNC frame." alt="" coords="5,132,184,159"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#aafb0137aa988901af0ed29857b74567c" title="APPLICATION POINT – returns the target position for the current SYNC cycle." alt="" coords="232,5,424,32"/>
+<area shape="rect" id="node3" href="$cia402__master_8c.html#a3cbc5b5917bd2a2ce7b7c50b54291ec3" title="printf&#45;style UART logger; formats into a 128&#45;byte stack buffer." alt="" coords="472,107,527,133"/>
+<area shape="rect" id="node4" href="$cia402__master_8c.html#abbdb0c9a9a3dbc81e73d31a189d6ec29" title="Returns the masked drive state extracted from the last Statusword." alt="" coords="287,107,369,133"/>
+<area shape="rect" id="node5" href="$cia402__master_8c.html#a76c42b968c3fec3f7ca49983ff952749" title="SDO download confirmation callback." alt="" coords="279,157,377,184"/>
+<area shape="rect" id="node6" href="$cia402__master_8c.html#a688481fd0f5ed836f1aa2a2e6772daf3" title="Writes a Controlword value to the master OD and logs it." alt="" coords="259,208,397,235"/>
+<area shape="rect" id="node7" href="$cia402__master_8c.html#a1710143a954e8e90f7a1939ac4d950a4" title="Writes a target position to the master OD and updates the register mirror." alt="" coords="263,259,393,285"/>
+</map>

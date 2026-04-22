@@ -27,27 +27,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  000194b8  2**0
                   CONTENTS, READONLY
- 12 .debug_info   000603a0  00000000  00000000  000194e8  2**0
+ 12 .debug_info   0006039b  00000000  00000000  000194e8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00009d46  00000000  00000000  00079888  2**0
+ 13 .debug_abbrev 00009d1a  00000000  00000000  00079883  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00002a80  00000000  00000000  000835d0  2**3
+ 14 .debug_aranges 00002a80  00000000  00000000  000835a0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00004993  00000000  00000000  00086050  2**0
+ 15 .debug_rnglists 00004993  00000000  00000000  00086020  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0002e3ca  00000000  00000000  0008a9e3  2**0
+ 16 .debug_macro  0002e3ac  00000000  00000000  0008a9b3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00036430  00000000  00000000  000b8dad  2**0
+ 17 .debug_line   0003642c  00000000  00000000  000b8d5f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000fe4b9  00000000  00000000  000ef1dd  2**0
+ 18 .debug_str    000fe444  00000000  00000000  000ef18b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000087  00000000  00000000  001ed696  2**0
+ 19 .comment      00000087  00000000  00000000  001ed5cf  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000aa40  00000000  00000000  001ed720  2**2
+ 20 .debug_frame  0000aa40  00000000  00000000  001ed658  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000078  00000000  00000000  001f8160  2**0
+ 21 .debug_line_str 00000078  00000000  00000000  001f8098  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loclists 0002b487  00000000  00000000  001f81d8  2**0
+ 22 .debug_loclists 0002b487  00000000  00000000  001f8110  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -3791,7 +3791,7 @@ int main(void)
  8001cd8:	d005      	beq.n	8001ce6 <main+0x36>
  8001cda:	4b24      	ldr	r3, [pc, #144]	@ (8001d6c <main+0xbc>)
  8001cdc:	4a24      	ldr	r2, [pc, #144]	@ (8001d70 <main+0xc0>)
- 8001cde:	21e6      	movs	r1, #230	@ 0xe6
+ 8001cde:	21d4      	movs	r1, #212	@ 0xd4
  8001ce0:	4824      	ldr	r0, [pc, #144]	@ (8001d74 <main+0xc4>)
  8001ce2:	f00f ff71 	bl	8011bc8 <__assert_func>
   assert(HAL_FDCAN_Start(&hfdcan2) == HAL_OK);
@@ -3802,7 +3802,7 @@ int main(void)
  8001cf0:	d005      	beq.n	8001cfe <main+0x4e>
  8001cf2:	4b22      	ldr	r3, [pc, #136]	@ (8001d7c <main+0xcc>)
  8001cf4:	4a1e      	ldr	r2, [pc, #120]	@ (8001d70 <main+0xc0>)
- 8001cf6:	21e7      	movs	r1, #231	@ 0xe7
+ 8001cf6:	21d5      	movs	r1, #213	@ 0xd5
  8001cf8:	481e      	ldr	r0, [pc, #120]	@ (8001d74 <main+0xc4>)
  8001cfa:	f00f ff65 	bl	8011bc8 <__assert_func>
 
@@ -3842,7 +3842,7 @@ int main(void)
  8001d42:	d005      	beq.n	8001d50 <main+0xa0>
  8001d44:	4b0f      	ldr	r3, [pc, #60]	@ (8001d84 <main+0xd4>)
  8001d46:	4a0a      	ldr	r2, [pc, #40]	@ (8001d70 <main+0xc0>)
- 8001d48:	21f6      	movs	r1, #246	@ 0xf6
+ 8001d48:	21e4      	movs	r1, #228	@ 0xe4
  8001d4a:	480a      	ldr	r0, [pc, #40]	@ (8001d74 <main+0xc4>)
  8001d4c:	f00f ff3c 	bl	8011bc8 <__assert_func>
   cia402_init(canopen.dev);
@@ -3857,11 +3857,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
       canopen_process();
  8001d5a:	f7ff f823 	bl	8000da4 <canopen_process>
-                          CO_DEFTYPE_UNSIGNED16, &hb, NULL, NULL, NULL);
-        MAIN_LOGF("[SLAVE] t=%lums HB producer STOPPED (test 3.2)",HAL_GetTick());
-    }
-#endif
-#if !TPDO_FLOOD_TEST_ENABLE && !HB_STOP_TEST_ENABLE
+
     HAL_Delay(1);
  8001d5e:	2001      	movs	r0, #1
  8001d60:	f000 fee0 	bl	8002b24 <HAL_Delay>

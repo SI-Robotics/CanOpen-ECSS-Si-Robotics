@@ -1,0 +1,5 @@
+<map id="cia402_master_on_stopped" name="cia402_master_on_stopped">
+<area shape="rect" id="node1" title="Notifies the FSM that the slave has left the OPERATIONAL state." alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#a3cbc5b5917bd2a2ce7b7c50b54291ec3" title="printf&#45;style UART logger; formats into a 128&#45;byte stack buffer." alt="" coords="439,5,493,32"/>
+<area shape="rect" id="node3" href="$cia402__master_8c.html#a688481fd0f5ed836f1aa2a2e6772daf3" title="Writes a Controlword value to the master OD and logs it." alt="" coords="253,31,391,57"/>
+</map>

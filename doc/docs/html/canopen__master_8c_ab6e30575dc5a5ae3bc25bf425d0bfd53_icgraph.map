@@ -1,0 +1,4 @@
+<map id="do_bus_switch" name="do_bus_switch">
+<area shape="rect" id="node1" title="Switches the active CAN bus between A and B." alt="" coords="188,5,305,32"/>
+<area shape="rect" id="node2" href="$canopen__master_8c.html#aabb13d373ce903b7743c5230bd55dedf" title="Processes all pending CANopen events – call from the main loop." alt="" coords="5,5,140,32"/>
+</map>

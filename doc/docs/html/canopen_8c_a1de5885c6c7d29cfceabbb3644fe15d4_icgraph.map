@@ -1,0 +1,5 @@
+<map id="restart_hb" name="restart_hb">
+<area shape="rect" id="node1" title="Restarts the Heartbeat producer by writing the period to OD 0x1017." alt="" coords="277,5,365,32"/>
+<area shape="rect" id="node2" href="$canopen_8c.html#aa2fcefcdd330d19418d437eb9661ca34" title="ECSS redundancy indication callback." alt="" coords="159,5,229,32"/>
+<area shape="rect" id="node3" href="$canopen_8h.html#a04bbd8129673054c076d83440f274ba3" title="Initialises the CANopen slave stack." alt="" coords="5,5,111,32"/>
+</map>

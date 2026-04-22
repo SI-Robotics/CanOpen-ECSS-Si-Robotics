@@ -1,0 +1,4 @@
+<map id="cia402_master_set_target" name="cia402_master_set_target">
+<area shape="rect" id="node1" title="Sets the desired target position from outside the module." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#a1710143a954e8e90f7a1939ac4d950a4" title="Writes a target position to the master OD and updates the register mirror." alt="" coords="244,5,373,32"/>
+</map>

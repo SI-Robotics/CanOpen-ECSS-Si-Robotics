@@ -1,0 +1,4 @@
+<map id="cia402_master_init" name="cia402_master_init">
+<area shape="rect" id="node1" title="Initialises the CiA 402 master module." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#a3cbc5b5917bd2a2ce7b7c50b54291ec3" title="printf&#45;style UART logger; formats into a 128&#45;byte stack buffer." alt="" coords="200,5,255,32"/>
+</map>

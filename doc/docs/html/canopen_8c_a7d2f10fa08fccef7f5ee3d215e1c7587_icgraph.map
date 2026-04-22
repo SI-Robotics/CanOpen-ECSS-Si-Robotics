@@ -1,0 +1,6 @@
+<map id="set_bdefault" name="set_bdefault">
+<area shape="rect" id="node1" title="Writes the default active bus to the ECSS redundancy OD entry (0x2000 sub 1)." alt="" coords="277,31,380,57"/>
+<area shape="rect" id="node2" href="$canopen_8c.html#ab0665ced57ef0d349546ea5664733809" title="NMT command service indication callback." alt="" coords="163,5,225,32"/>
+<area shape="rect" id="node4" href="$canopen_8c.html#aa2fcefcdd330d19418d437eb9661ca34" title="ECSS redundancy indication callback." alt="" coords="159,56,229,83"/>
+<area shape="rect" id="node3" href="$canopen_8h.html#a04bbd8129673054c076d83440f274ba3" title="Initialises the CANopen slave stack." alt="" coords="5,31,111,57"/>
+</map>

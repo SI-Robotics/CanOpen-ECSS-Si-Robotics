@@ -1,0 +1,12 @@
+<map id="canopen_init" name="canopen_init">
+<area shape="rect" id="node1" title="Initialises the CANopen master stack." alt="" coords="5,183,111,209"/>
+<area shape="rect" id="node2" href="$canopen__master_8c.html#a55a2a6ab58b44c96bc66b4de866dc208" title="Lely CAN send callback registered with can_net_set_send_func()." alt="" coords="159,5,297,32"/>
+<area shape="rect" id="node3" href="$canopen__master_8c.html#af77726f7e5291da61e4d0e15a21f25a1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="345,208,436,235"/>
+<area shape="rect" id="node5" href="$canopen__master_8c.html#ae8ca78378f7d967777f8d53b73960c18" title="Heartbeat consumer indication callback." alt="" coords="195,107,261,133"/>
+<area shape="rect" id="node6" href="$canopen__master_8c.html#a0784dbb66ecd25392aa4bc6a4dfac9ac" title="NMT SYNC indication callback." alt="" coords="172,157,284,184"/>
+<area shape="rect" id="node7" href="$canopen__master_8c.html#a5551c9c99d480da6785bfcabb4c04f4b" title="RPDO error callback." alt="" coords="190,208,266,235"/>
+<area shape="rect" id="node8" href="$canopen__master_8c.html#ad7c95fbbe2c757a786f1e8b70fdf3b5e" title="RPDO received indication callback." alt="" coords="189,259,267,285"/>
+<area shape="rect" id="node9" href="$canopen__master_8c.html#aa1d45e5a9d8d2ddffad432c77af4f303" title="NMT state change indication callback." alt="" coords="197,309,259,336"/>
+<area shape="rect" id="node10" href="$canopen__master_8c.html#a97a98908743d728fc20c78a678d4dcca" title="TPDO transmission confirmation callback." alt="" coords="189,360,267,387"/>
+<area shape="rect" id="node4" href="$canopen__master_8c.html#abf86800fa0c789a55a3d610d003e9c95" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="484,208,567,235"/>
+</map>

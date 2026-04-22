@@ -1,0 +1,4 @@
+<map id="sdo_dn_con" name="sdo_dn_con">
+<area shape="rect" id="node1" title="SDO download confirmation callback." alt="" coords="232,5,331,32"/>
+<area shape="rect" id="node2" href="$group__cia402__api.html#gacc6b2fa5093da42ee98095362339ce05" title="Main FSM tick – called on every SYNC frame." alt="" coords="5,5,184,32"/>
+</map>

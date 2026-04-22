@@ -1,0 +1,4 @@
+<map id="canopen_t" name="canopen_t">
+<area shape="rect" id="node1" title="Runtime state of the CANopen slave layer." alt="" coords="22,95,111,121"/>
+<area shape="rect" id="node2" href="$structcanopen__config.html" title="Configuration structure passed to canopen_init()." alt="" coords="5,5,128,32"/>
+</map>

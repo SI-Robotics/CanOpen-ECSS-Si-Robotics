@@ -25,12 +25,6 @@
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN PD */
-#define TPDO_FLOOD_TEST_ENABLE   0
-#define TPDO_FLOOD_START_MS      20000u
-#define TPDO_FLOOD_EXTRA         9u
-
-#define HB_STOP_TEST_ENABLE   0
-#define HB_STOP_TEST_MS       25000u
 
 //#define TPDO_FLOOD_TEST_ENABLE   1
 //#define TPDO_FLOOD_START_MS      20000u
@@ -199,19 +193,7 @@ static void app_on_running(void)        { cia402_on_running();     }
 static void app_on_stopped(void)        { cia402_on_stopped();     }
 static void app_on_tpdo   (void)        { cia402_on_tpdo();        }
 
-#if TPDO_FLOOD_TEST_ENABLE
-static void send_extra_tpdo(void)
-{
-    struct can_msg msg = {0};
-    msg.id  = 0x180u + co_dev_get_id(canopen.dev);
-    msg.len = 8u;
-    uint16_t sw  = co_dev_get_val_u16(canopen.dev, 0x6041u, 0x00u);
-    int32_t  pos = co_dev_get_val_i32(canopen.dev, 0x6064u, 0x00u);
-    memcpy(&msg.data[0], &sw,  2u);
-    memcpy(&msg.data[2], &pos, 4u);
-    canopen.cfg.send(canopen.bus_id, &msg);
-}
-#endif
+
 
 /* USER CODE END 0 */
 
@@ -247,60 +229,16 @@ int main(void)
   cia402_init(canopen.dev);
 
 
-#if HB_STOP_TEST_ENABLE
-static bool hb_stopped = false;
-#endif
+
 
   /* USER CODE END 2 */
 
   while (true) {
     /* USER CODE BEGIN 3 */
       canopen_process();
-#if TPDO_FLOOD_TEST_ENABLE
-{
-    static bool     flood_active = false;
-    static uint32_t flood_count  = 0u;
 
-    if (!flood_active && HAL_GetTick() >= TPDO_FLOOD_START_MS)
-    {
-        flood_active = true;
-        HAL_UART_Transmit(&huart2,
-            (uint8_t *)"[SLAVE] TPDO flood START\r\n", 26, 100);
-    }
-
-    if (flood_active)
-    {
-        for (uint8_t i = 0u; i < TPDO_FLOOD_EXTRA; i++)
-        {
-            send_extra_tpdo();
-            flood_count++;
-        }
-
-        if (flood_count % 10000u == 0u)
-        {
-            char buf[64];
-            int len = snprintf(buf, sizeof(buf),
-                "[SLAVE] TPDO flood count=%lu\r\n",
-                (unsigned long)flood_count);
-            HAL_UART_Transmit(&huart2, (uint8_t *)buf,
-                              (uint16_t)len, 100);
-        }
-    }
-}
-#endif
-#if HB_STOP_TEST_ENABLE
-    if (!hb_stopped && HAL_GetTick() >= HB_STOP_TEST_MS)
-    {
-        hb_stopped = true;
-        const co_unsigned16_t hb = 0u;
-        co_dev_dn_val_req(canopen.dev, 0x1017u, 0x00u,
-                          CO_DEFTYPE_UNSIGNED16, &hb, NULL, NULL, NULL);
-        MAIN_LOGF("[SLAVE] t=%lums HB producer STOPPED (test 3.2)",HAL_GetTick());
-    }
-#endif
-#if !TPDO_FLOOD_TEST_ENABLE && !HB_STOP_TEST_ENABLE
     HAL_Delay(1);
-#endif
+
       /* USER CODE END 3 */
   }
 

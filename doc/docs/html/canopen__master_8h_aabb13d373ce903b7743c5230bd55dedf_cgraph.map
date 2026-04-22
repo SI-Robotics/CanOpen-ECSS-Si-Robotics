@@ -1,0 +1,7 @@
+<map id="canopen_process" name="canopen_process">
+<area shape="rect" id="node1" title="Processes all pending CANopen events – call from the main loop." alt="" coords="5,31,140,57"/>
+<area shape="rect" id="node2" href="$canopen__master_8c.html#ab6e30575dc5a5ae3bc25bf425d0bfd53" title="Switches the active CAN bus between A and B." alt="" coords="188,31,305,57"/>
+<area shape="rect" id="node3" href="$canopen__master_8c.html#a3f7dfd2a4ec363b15470b7f8041c3247" title="Enters the fatal error state." alt="" coords="353,5,448,32"/>
+<area shape="rect" id="node4" href="$canopen__master_8c.html#af77726f7e5291da61e4d0e15a21f25a1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="496,31,587,57"/>
+<area shape="rect" id="node5" href="$canopen__master_8c.html#abf86800fa0c789a55a3d610d003e9c95" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="635,31,717,57"/>
+</map>

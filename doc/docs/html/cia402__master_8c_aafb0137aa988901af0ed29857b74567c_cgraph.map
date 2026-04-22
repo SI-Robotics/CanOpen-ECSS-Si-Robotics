@@ -1,0 +1,4 @@
+<map id="cia402_master_get_target" name="cia402_master_get_target">
+<area shape="rect" id="node1" title="APPLICATION POINT – returns the target position for the current SYNC cycle." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#a3cbc5b5917bd2a2ce7b7c50b54291ec3" title="printf&#45;style UART logger; formats into a 128&#45;byte stack buffer." alt="" coords="245,5,300,32"/>
+</map>

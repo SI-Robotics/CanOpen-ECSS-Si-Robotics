@@ -1,0 +1,5 @@
+<map id="hb_ind" name="hb_ind">
+<area shape="rect" id="node1" title="Heartbeat consumer indication callback." alt="" coords="5,5,71,32"/>
+<area shape="rect" id="node2" href="$canopen_8c.html#af77726f7e5291da61e4d0e15a21f25a1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="119,5,209,32"/>
+<area shape="rect" id="node3" href="$canopen_8c.html#abf86800fa0c789a55a3d610d003e9c95" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="257,5,340,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="mlog" name="mlog">
+<area shape="rect" id="node1" title="printf&#45;style UART logger; formats into a 128&#45;byte stack buffer." alt="" coords="499,157,553,184"/>
+<area shape="rect" id="node2" href="$cia402__master_8c.html#aafb0137aa988901af0ed29857b74567c" title="APPLICATION POINT – returns the target position for the current SYNC cycle." alt="" coords="256,5,448,32"/>
+<area shape="rect" id="node3" href="$group__cia402__api.html#gacc6b2fa5093da42ee98095362339ce05" title="Main FSM tick – called on every SYNC frame." alt="" coords="16,132,195,159"/>
+<area shape="rect" id="node4" href="$group__cia402__api.html#gab314423fee9c60020b26b5c261445d50" title="Initialises the CiA 402 master module." alt="" coords="279,107,425,133"/>
+<area shape="rect" id="node5" href="$group__cia402__api.html#ga464cd86cff3639f294e1a16a35ba9d14" title="Notifies the FSM that the slave has entered the OPERATIONAL state." alt="" coords="253,157,451,184"/>
+<area shape="rect" id="node6" href="$group__cia402__api.html#gaab6a723ffc38a3b822865e906e5cf9de" title="Notifies the FSM that the slave has left the OPERATIONAL state." alt="" coords="5,284,205,311"/>
+<area shape="rect" id="node7" href="$cia402__master_8c.html#a76c42b968c3fec3f7ca49983ff952749" title="SDO download confirmation callback." alt="" coords="303,208,401,235"/>
+<area shape="rect" id="node8" href="$cia402__master_8c.html#a688481fd0f5ed836f1aa2a2e6772daf3" title="Writes a Controlword value to the master OD and logs it." alt="" coords="283,259,421,285"/>
+</map>

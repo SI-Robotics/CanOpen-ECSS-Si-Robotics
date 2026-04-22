@@ -1,0 +1,7 @@
+<map id="rdn_ind" name="rdn_ind">
+<area shape="rect" id="node1" title="ECSS redundancy indication callback." alt="" coords="5,56,76,83"/>
+<area shape="rect" id="node2" href="$canopen_8c.html#af77726f7e5291da61e4d0e15a21f25a1" title="printf&#45;style UART logger; formats into a 256&#45;byte stack buffer." alt="" coords="130,5,221,32"/>
+<area shape="rect" id="node4" href="$canopen_8c.html#a1de5885c6c7d29cfceabbb3644fe15d4" title="Restarts the Heartbeat producer by writing the period to OD 0x1017." alt="" coords="131,56,219,83"/>
+<area shape="rect" id="node5" href="$canopen_8c.html#a7d2f10fa08fccef7f5ee3d215e1c7587" title="Writes the default active bus to the ECSS redundancy OD entry (0x2000 sub 1)." alt="" coords="124,107,227,133"/>
+<area shape="rect" id="node3" href="$canopen_8c.html#abf86800fa0c789a55a3d610d003e9c95" title="Transmits a NUL&#45;terminated string over UART2 followed by CR+LF." alt="" coords="275,5,357,32"/>
+</map>

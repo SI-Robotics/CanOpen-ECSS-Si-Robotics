@@ -1,8 +1,0 @@
-<map id="inc/canopen_space.h" name="inc/canopen_space.h">
-<area shape="rect" id="node1" title="Lightweight CANopen/Lely&#45;core “space” wrapper (init/start/tick/rx/tx helpers)." alt="" coords="151,5,309,32"/>
-<area shape="rect" id="node2" href="$cia402__wrapper_8h.html" title="Minimal CiA&#45;402 helper wrapper for RPDO1/TPDO1 (master + actuator roles)." alt="" coords="60,80,219,107"/>
-<area shape="rect" id="node6" href="$canopen__space_8c.html" title="Implementation of lightweight CANopen/Lely&#45;core wrapper (init/start/tick/rx/tx)." alt="" coords="243,80,399,107"/>
-<area shape="rect" id="node3" href="$actuator_8h.html" title="Small driver/cache layer for CiA&#45;402 over CANopen (RPDO1/TPDO1)." alt="" coords="5,155,116,181"/>
-<area shape="rect" id="node5" href="$cia402__wrapper_8c.html" title="Implementation of minimal CiA&#45;402 helper wrapper for RPDO1/TPDO1." alt="" coords="140,155,299,181"/>
-<area shape="rect" id="node4" href="$actuator_8c.html" title="Implementation of actuator cache layer for CiA&#45;402 over CANopen (RPDO1/TPDO1)." alt="" coords="6,229,115,256"/>
-</map>
