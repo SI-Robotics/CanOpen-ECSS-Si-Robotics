@@ -1,0 +1,7 @@
+../Src/Base/Error.c:12:6:Error_Handler	4	static,ignoring_inline_asm
+../Src/Base/Error.c:26:6:NMI_Handler	4	static,ignoring_inline_asm
+../Src/Base/Error.c:39:6:HardFault_Handler	4	static,ignoring_inline_asm
+../Src/Base/Error.c:52:6:MemManage_Handler	4	static,ignoring_inline_asm
+../Src/Base/Error.c:65:6:BusFault_Handler	4	static,ignoring_inline_asm
+../Src/Base/Error.c:78:6:UsageFault_Handler	4	static,ignoring_inline_asm
+../Src/Base/Error.c:91:6:DebugMon_Handler	4	static,ignoring_inline_asm

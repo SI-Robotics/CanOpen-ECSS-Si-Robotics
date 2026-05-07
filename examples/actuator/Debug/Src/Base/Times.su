@@ -1,0 +1,6 @@
+../Src/Base/Times.c:13:6:Time_IncreaseTime	4	static,ignoring_inline_asm
+../Src/Base/Times.c:21:9:Time_GetModuleStruct	4	static
+../Src/Base/Times.c:26:6:Time_Init	8	static
+../Src/Base/Times.c:31:6:Time_Delay	32	static
+../Src/Base/Times.c:79:6:Time_TimeoutExpired	24	static,ignoring_inline_asm
+../Src/Base/Times.c:96:10:Time_GetTimeMs	4	static

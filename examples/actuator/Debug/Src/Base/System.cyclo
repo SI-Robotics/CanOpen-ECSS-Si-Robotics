@@ -1,0 +1,2 @@
+../Src/Base/System.c:9:6:System_Init	1
+../Src/Base/System.c:16:6:System_EnableFPU	1

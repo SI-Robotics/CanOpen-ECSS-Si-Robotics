@@ -1,0 +1,7 @@
+"./Src/Base/Error.o"
+"./Src/Base/System.o"
+"./Src/Base/Times.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32g474retx.o"
